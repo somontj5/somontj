@@ -7,7 +7,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # ==== НАСТРОЙКИ — проверьте и поправьте после первого запуска ====
-SEARCH_URL = os.environ.get("SOMON_URL", "https://somon.tj/telefony/")
+SEARCH_URL = os.environ.get("SOMON_URL", "https://somon.tj/telefonyi-i-svyaz/mobilnyie-telefonyi/")
 SEEN_FILE = "seen_ids.json"
 PRICE_HISTORY_FILE = "price_history.jsonl"
 SEARCHES_FILE = "searches.json"

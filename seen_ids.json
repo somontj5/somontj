@@ -1,14 +1,14 @@
 {
   "61287000": {
     "notified": true,
-    "photo_ok": false
+    "photo_ok": true
   },
   "19054128": {
     "notified": true,
-    "photo_ok": false
+    "photo_ok": true
   },
   "39966128": {
     "notified": true,
-    "photo_ok": false
+    "photo_ok": true
   }
 }

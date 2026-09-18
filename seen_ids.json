@@ -1026,7 +1026,7 @@
   "52312512": {
     "logged": true,
     "notified": true,
-    "photo_ok": false,
+    "photo_ok": true,
     "condition": "Б/у",
     "memory": 512,
     "official_fields": {
@@ -1047,7 +1047,7 @@
   "39713128": {
     "logged": true,
     "notified": true,
-    "photo_ok": false,
+    "photo_ok": true,
     "condition": "Б/у",
     "memory": 128,
     "official_fields": {

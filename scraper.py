@@ -83,7 +83,7 @@ def clean_title(raw_text):
 
     cond_match = CONDITION_RE.search(text)
     if cond_match:
-        title = text[:cond_match.start()].strip()
+        title = PRICE_RE.sub("", text[:cond_match.start()]).strip()
         condition = cond_match.group(1)
         memory = int(cond_match.group(2))
     else:
@@ -234,7 +234,7 @@ def main():
                 photo_urls = fetch_photo_urls(item["url"])
                 photo_analysis = analyze_photos(photo_urls)
                 text = (
-                    f"🔔 Новое объявление ({', '.join(matched)})\n\n{item['title']}\n"
+                    f"🔔 Новое об��явление ({', '.join(matched)})\n\n{item['title']}\n"
                     f"💰 {item['price'] if item['price'] else '—'} TJS\n"
                     f"🔗 {item['url']}\n\n📸 Анализ фото:\n{photo_analysis}"
                 )

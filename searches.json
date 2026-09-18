@@ -1,6 +1,1 @@
-[
-  {"name": "iPhone 13 128GB", "query": "iphone 13", "min_memory": 128, "max_price": 3000}
-]
-[
-  {"name": "honor", "query": "honor", "min_memory": 128, "max_price": 3000}
-]
+[{"name": "honor", "query": "honor", "min_memory": 128, "max_price": 3000}]

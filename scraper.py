@@ -11,6 +11,9 @@ SEARCH_URL = os.environ.get(
     "SOMON_URL",
     "https://m.somon.tj/telefonyi-i-svyaz/mobilnyie-telefonyi/"
 )
+# По умолчанию проверяем все объявления на странице категории, а не только
+# объявления, совпавшие с поисковыми словами из Telegram.
+FULL_PAGE_SCAN = os.environ.get("FULL_PAGE_SCAN", "1").lower() not in {"0", "false", "no"}
 SEEN_FILE = "seen_ids.json"
 PRICE_HISTORY_FILE = "price_history.jsonl"
 SEARCHES_FILE = "searches.json"
@@ -174,6 +177,8 @@ def clean_title(raw_text):
 
 
 def fetch_listings():
+    # SEARCH_URL намеренно не изменяется: всегда загружается переданная страница
+    # категории телефонов целиком.
     resp = requests.get(SEARCH_URL, headers=HEADERS, timeout=20)
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "html.parser")
@@ -189,7 +194,7 @@ def fetch_listings():
         if href.startswith("/"):
             href = "https://m.somon.tj" + href
 
-        raw_text = a.get_text(strip=True)
+        raw_text = a.get_text(" ", strip=True)
         if not raw_text or len(raw_text) < 5:
             continue
 
@@ -319,7 +324,12 @@ def main():
             save_seen(seen)
 
         matched = [s["name"] for s in searches if matches_search(item, s)]
-        if not matched:
+        # FULL_PAGE_SCAN включает каждое объявление, найденное на странице
+        # категории. Telegram-фильтры при этом сохраняются и продолжают работать
+        # как дополнительные метки для подходящих объявлений.
+        if FULL_PAGE_SCAN:
+            matched = matched or ["вся страница телефонов"]
+        elif not matched:
             continue
 
         if entry.get("photo_ok"):

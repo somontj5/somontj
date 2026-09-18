@@ -101,7 +101,7 @@
   "91058256": {
     "logged": true,
     "notified": true,
-    "photo_ok": false,
+    "photo_ok": true,
     "condition": "Б/у",
     "memory": 256,
     "description": "Samsung Galaxy S10+ 5G Gold 8/256 2 599 c. №16108879 in Душанбе  - Samsung - бесплатные объявления куплю продам б/у Somon.tj Категории Найти Вход Подать объявление Мобильная версия сайта Связаться с нами Карта сайта Карта районов Помощь Безопасность Наши вакансии Пользовательское соглашение Оферта на оказание платных услуг Лицензионный договор Политика конфиденциальности Прейскурант Архив редакций Правил сайта Cезон отзывов в Somon.tj Подать объявление Наведите камеру и установите приложение larixonclassifieds.com Найти Все объявления Телефоны и связь Мобильные телефоны Samsung Samsung Galaxy S10+ 5G Gold 8/256 Душанбе Сегодня 344 ID: 16108879 157 1 / 2 IMEI телефона в белом списке IMEI : 3519221 XXXXXX 0 Модель : Samsung Galaxy S10 (SM-G9730) Модель: Galaxy S10+ Состояние: Б/у Встроенная память: 256 gb Описание ПАЧКА НАВ АЦ РОССИЯ РАВОН КАРДАН ИСТИФОДА ШДАГИ НЕСТ ВОПШЕ РАСТАМОШКА КАРДАГИ ТАЕРАЙ СИМКАРТА БЗАН ИСТИФОДА БАР БАРОИ РАСТАМОШКАИ ТЕЛ ГАРАНТИЯ ДОДА МЕШАВАД АЛИШИ НЕСТ ФАКАТ ФРУШИЯ ОХИРИ НАРХ ШАЙ 2 599 c. Показать телефон Начать чат Whatsapp Парвиз На сайте с Апреля 2026 37 активных объявлений Пожаловаться",
@@ -669,7 +669,7 @@
   "67316256": {
     "logged": true,
     "notified": true,
-    "photo_ok": false,
+    "photo_ok": true,
     "condition": "Б/у",
     "memory": 256,
     "official_fields": {
@@ -690,7 +690,7 @@
   "74217256": {
     "logged": true,
     "notified": true,
-    "photo_ok": false,
+    "photo_ok": true,
     "condition": "Б/у",
     "memory": 256,
     "official_fields": {
@@ -732,7 +732,7 @@
   "81058256": {
     "logged": true,
     "notified": true,
-    "photo_ok": false,
+    "photo_ok": true,
     "condition": "Б/у",
     "memory": 256,
     "official_fields": {
@@ -858,7 +858,7 @@
   "44181464": {
     "logged": true,
     "notified": true,
-    "photo_ok": false,
+    "photo_ok": true,
     "condition": "Б/у",
     "memory": 128,
     "official_fields": {
@@ -1231,6 +1231,12 @@
     },
     "notified": true,
     "photo_ok": false,
+    "logged": true
+  },
+  "11285200": {
+    "logged": true
+  },
+  "60118256": {
     "logged": true
   }
 }

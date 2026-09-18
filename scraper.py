@@ -191,6 +191,11 @@ def main():
         print(soup.get_text()[:2000])
         return
 
+    print(f"Поисков загружено: {len(searches)}")
+    print(f"Найдено объявлений на странице: {len(listings)}")
+    for item in listings[:10]:
+        print(f" - {item['title']!r} | цена: {item['price']} | id: {item['id']}")
+
     for item in listings:
         matched = [s["name"] for s in searches if matches_search(item, s)]
         if not matched:

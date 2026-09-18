@@ -69,12 +69,36 @@ def send_telegram(text):
 
 # ---------- Somon.tj ----------
 
+CONDITION_RE = re.compile(r"(Новый|Б/у|Б\.у\.|Восстановлен\w*)\s*·\s*(\d+)\s*gb", re.IGNORECASE)
+NOISE_RE = re.compile(r"Еще\s*\d+\s*фото|VIP|IMEI\s*проверен", re.IGNORECASE)
+PRICE_RE = re.compile(r"(\d[\d\s]{2,})\s*[cс].")
+
+
+def clean_title(raw_text):
+    text = NOISE_RE.sub("", raw_text)
+    price_match = PRICE_RE.search(text)
+    price = int(price_match.group(1).replace(" ", "")) if price_match else None
+    if price_match:
+        text = text[price_match.end():]
+
+    cond_match = CONDITION_RE.search(text)
+    if cond_match:
+        title = text[:cond_match.start()].strip()
+        condition = cond_match.group(1)
+        memory = int(cond_match.group(2))
+    else:
+        title = text.strip()
+        condition = None
+        memory = None
+
+    return title, price, condition, memory
+
+
 def fetch_listings():
     resp = requests.get(SEARCH_URL, headers=HEADERS, timeout=20)
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "html.parser")
 
-    # ЗАМЕНИТЬ после первого запуска на точный селектор Somon.tj
     candidate_links = soup.find_all("a", href=re.compile(r"/adv/|/item/|\d{5,}"))
 
     listings, seen_links = [], set()
@@ -86,19 +110,19 @@ def fetch_listings():
         if href.startswith("/"):
             href = "https://somon.tj" + href
 
-        title = a.get_text(strip=True)
-        if not title or len(title) < 5:
+        raw_text = a.get_text(strip=True)
+        if not raw_text or len(raw_text) < 5:
             continue
 
-        price = None
-        parent = a.find_parent()
-        if parent:
-            m = re.search(r"(\d[\d\s]{2,})\s*(TJS|сомони|смн)", parent.get_text(), re.IGNORECASE)
-            if m:
-                price = int(m.group(1).replace(" ", ""))
+        title, price, condition, memory = clean_title(raw_text)
+        if not title:
+            continue
 
         ad_id = re.sub(r"\D", "", href)[-8:] or href
-        listings.append({"id": ad_id, "title": title, "price": price, "url": href})
+        listings.append({
+            "id": ad_id, "title": title, "price": price,
+            "condition": condition, "memory": memory, "url": href,
+        })
 
     return listings, soup
 
@@ -168,8 +192,7 @@ def matches_search(item, search):
     if search.get("max_price") and item["price"] and item["price"] > search["max_price"]:
         return False
     if search.get("min_memory"):
-        m = re.search(r"(\d+)\s*gb", title)
-        if not m or int(m.group(1)) < search["min_memory"]:
+        if not item.get("memory") or item["memory"] < search["min_memory"]:
             return False
     return True
 

@@ -37,8 +37,12 @@ PHOTO_PROMPT = (
 
 def load_json(path, default):
     if os.path.exists(path):
-        with open(path, "r", encoding="utf-8") as f:
-            return json.load(f)
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except json.JSONDecodeError as e:
+            print(f"⚠️ Ошибка в файле {path}: {e}. Использую значение по умолчанию.")
+            return default
     return default
 
 
@@ -234,7 +238,7 @@ def main():
                 photo_urls = fetch_photo_urls(item["url"])
                 photo_analysis = analyze_photos(photo_urls)
                 text = (
-                    f"🔔 Новое об��явление ({', '.join(matched)})\n\n{item['title']}\n"
+                    f"🔔 Новое объявление ({', '.join(matched)})\n\n{item['title']}\n"
                     f"💰 {item['price'] if item['price'] else '—'} TJS\n"
                     f"🔗 {item['url']}\n\n📸 Анализ фото:\n{photo_analysis}"
                 )

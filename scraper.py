@@ -6,11 +6,15 @@ import base64
 import requests
 from bs4 import BeautifulSoup
 
-# ==== НАСТРОЙКИ — проверьте и поправьте после первого запуска ====
-SEARCH_URL = os.environ.get("SOMON_URL", "https://somon.tj/telefonyi-i-svyaz/mobilnyie-telefonyi/")
+# ==== НАСТРОЙКИ ====
+SEARCH_URL = os.environ.get(
+    "SOMON_URL",
+    "https://m.somon.tj/telefonyi-i-svyaz/mobilnyie-telefonyi/"
+)
 SEEN_FILE = "seen_ids.json"
 PRICE_HISTORY_FILE = "price_history.jsonl"
 SEARCHES_FILE = "searches.json"
+OFFSET_FILE = "telegram_offset.json"
 
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
@@ -28,9 +32,20 @@ HEADERS = {
 PHOTO_PROMPT = (
     "Ты — эксперт по оценке состояния б/у смартфонов. Осмотри фото объявления и опиши "
     "на русском: 1) царапины/трещины на экране; 2) повреждения корпуса; "
-    "3) общее состояние (как новое/хорошее/среднее/плохое). Если не видно чётко — так и напиши. "
-    "Кратко, 3-5 строк."
+    "3) любые значки, наклейки или плашки, видимые на самих фото (например VIP, NEW, скидка); "
+    "4) общее состояние (как новое/хорошее/среднее/плохое). Если не видно чётко — так и напиши. "
+    "Кратко, 4-6 строк."
 )
+
+TRANSLIT_MAP = {
+    "iphone": ["айфон"], "samsung": ["самсунг"], "honor": ["хонор"],
+    "xiaomi": ["сяоми", "ксиаоми"], "redmi": ["редми"],
+    "huawei": ["хуавей"], "google": ["гугл"], "pixel": ["пиксель"],
+}
+
+CONDITION_RE = re.compile(r"(Новый|Б/у|Б\.у\.|Восстановлен\w*)\s*·\s*(\d+)\s*gb", re.IGNORECASE)
+NOISE_RE = re.compile(r"Еще\s*\d+\s*фото|VIP|IMEI\s*проверен", re.IGNORECASE)
+PRICE_RE = re.compile(r"(\d[\d\s]{2,})\s*[cс]\.")
 
 
 # ---------- Хранилище ----------
@@ -59,7 +74,7 @@ def log_price(item):
         }, ensure_ascii=False) + "\n")
 
 
-# ---------- Telegram ----------
+# ---------- Telegram: отправка ----------
 
 def send_telegram(text):
     try:
@@ -71,12 +86,73 @@ def send_telegram(text):
         print("Не удалось отправить в Telegram:", e)
 
 
+# ---------- Telegram: команды управления поиском ----------
+
+def check_telegram_commands(searches):
+    offset = load_json(OFFSET_FILE, {"offset": 0}).get("offset", 0)
+    try:
+        resp = requests.get(
+            f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/getUpdates",
+            params={"offset": offset}, timeout=15,
+        )
+        resp.raise_for_status()
+        updates = resp.json().get("result", [])
+    except Exception as e:
+        print("Не удалось получить команды из Telegram:", e)
+        return searches
+
+    changed = False
+    for upd in updates:
+        offset = upd["update_id"] + 1
+        text = upd.get("message", {}).get("text", "")
+
+        if text.startswith("/add "):
+            try:
+                parts = [p.strip() for p in text[len("/add "):].split("|")]
+                name = parts[0]
+                keywords = [k.strip() for k in parts[1].split(",")] if len(parts) > 1 and parts[1] else None
+                max_price = int(parts[2]) if len(parts) > 2 and parts[2] else None
+                min_memory = int(parts[3]) if len(parts) > 3 and parts[3] else None
+
+                new_search = {"name": name}
+                if keywords:
+                    new_search["query"] = keywords
+                if max_price:
+                    new_search["max_price"] = max_price
+                if min_memory:
+                    new_search["min_memory"] = min_memory
+
+                searches = [s for s in searches if s["name"] != name] + [new_search]
+                changed = True
+                send_telegram(f"✅ Поиск «{name}» сохранён.")
+            except Exception as e:
+                send_telegram(f"⚠️ Формат: /add Название | слово1,слово2 | макс_цена | мин_память\nОшибка: {e}")
+
+        elif text.startswith("/del "):
+            name = text[len("/del "):].strip()
+            before = len(searches)
+            searches = [s for s in searches if s["name"] != name]
+            changed = True
+            send_telegram(f"🗑 Удалён «{name}»." if len(searches) < before else f"⚠️ «{name}» не найден.")
+
+        elif text.strip() == "/list":
+            if searches:
+                lines = [f"• {s['name']}: {s.get('query', '—')}, до {s.get('max_price', '∞')} TJS" for s in searches]
+                send_telegram("📋 Поиски:\n" + "\n".join(lines))
+            else:
+                send_telegram("Поисков пока нет.")
+
+    if changed:
+        with open(SEARCHES_FILE, "w", encoding="utf-8") as f:
+            json.dump(searches, f, ensure_ascii=False, indent=2)
+
+    with open(OFFSET_FILE, "w", encoding="utf-8") as f:
+        json.dump({"offset": offset}, f)
+
+    return searches
+
+
 # ---------- Somon.tj ----------
-
-CONDITION_RE = re.compile(r"(Новый|Б/у|Б\.у\.|Восстановлен\w*)\s*·\s*(\d+)\s*gb", re.IGNORECASE)
-NOISE_RE = re.compile(r"Еще\s*\d+\s*фото|VIP|IMEI\s*проверен", re.IGNORECASE)
-PRICE_RE = re.compile(r"(\d[\d\s]{2,})\s*[cс].")
-
 
 def clean_title(raw_text):
     text = NOISE_RE.sub("", raw_text)
@@ -112,7 +188,7 @@ def fetch_listings():
             continue
         seen_links.add(href)
         if href.startswith("/"):
-            href = "https://somon.tj" + href
+            href = "https://m.somon.tj" + href
 
         raw_text = a.get_text(strip=True)
         if not raw_text or len(raw_text) < 5:
@@ -144,7 +220,7 @@ def fetch_photo_urls(ad_url):
         if src.startswith("//"):
             src = "https:" + src
         elif src.startswith("/"):
-            src = "https://somon.tj" + src
+            src = "https://m.somon.tj" + src
         if "somon" in src and any(e in src.lower() for e in [".jpg", ".jpeg", ".png", ".webp"]):
             if src not in seen:
                 seen.add(src)
@@ -189,10 +265,20 @@ def analyze_photos(photo_urls):
 
 # ---------- Поиск ----------
 
+def keyword_variants(keyword):
+    keyword = keyword.lower()
+    return [keyword] + TRANSLIT_MAP.get(keyword, [])
+
+
 def matches_search(item, search):
     title = item["title"].lower()
-    if search["query"].lower() not in title:
-        return False
+    query = search.get("query")
+
+    if query:
+        keywords = query if isinstance(query, list) else [query]
+        if not any(any(v in title for v in keyword_variants(k)) for k in keywords):
+            return False
+
     if search.get("max_price") and item["price"] and item["price"] > search["max_price"]:
         return False
     if search.get("min_memory"):
@@ -206,6 +292,7 @@ def matches_search(item, search):
 def main():
     seen = load_json(SEEN_FILE, {})
     searches = load_json(SEARCHES_FILE, [])
+    searches = check_telegram_commands(searches)
 
     try:
         listings, soup = fetch_listings()
@@ -224,39 +311,44 @@ def main():
         print(f" - {item['title']!r} | цена: {item['price']} | id: {item['id']}")
 
     for item in listings:
+        entry = seen.get(item["id"], {})
+
+        if not entry.get("logged"):
+            log_price(item)
+            entry["logged"] = True
+            seen[item["id"]] = entry
+            save_seen(seen)
+
         matched = [s["name"] for s in searches if matches_search(item, s)]
         if not matched:
             continue
 
-        entry = seen.get(item["id"])
-        if entry and entry.get("photo_ok"):
+        if entry.get("photo_ok"):
             continue
 
         try:
-            if entry is None:
-                log_price(item)
-                photo_urls = fetch_photo_urls(item["url"])
-                photo_analysis = analyze_photos(photo_urls)
+            photo_urls = fetch_photo_urls(item["url"])
+            photo_analysis = analyze_photos(photo_urls)
+            photo_ok = "не удался" not in photo_analysis
+
+            if not entry.get("notified"):
                 text = (
                     f"🔔 Новое объявление ({', '.join(matched)})\n\n{item['title']}\n"
                     f"💰 {item['price'] if item['price'] else '—'} TJS\n"
                     f"🔗 {item['url']}\n\n📸 Анализ фото:\n{photo_analysis}"
                 )
                 send_telegram(text)
-                time.sleep(1.5)
-            else:
-                photo_urls = fetch_photo_urls(item["url"])
-                photo_analysis = analyze_photos(photo_urls)
-                if "не удался" not in photo_analysis:
-                    send_telegram(f"📸 Обновление по объявлению:\n{item['url']}\n\n{photo_analysis}")
-                    time.sleep(1.5)
+                entry["notified"] = True
+            elif photo_ok:
+                send_telegram(f"📸 Обновление по объявлению:\n{item['url']}\n\n{photo_analysis}")
 
-            photo_ok = "не удался" not in photo_analysis
-            seen[item["id"]] = {"notified": True, "photo_ok": photo_ok}
+            entry["photo_ok"] = photo_ok
+            seen[item["id"]] = entry
+            time.sleep(1.5)
         except Exception as e:
             print("Ошибка при обработке объявления", item["id"], ":", e)
         finally:
-            save_seen(seen)  # сохраняем после каждого объявления, а не в конце
+            save_seen(seen)
 
 
 if __name__ == "__main__":

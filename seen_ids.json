@@ -1188,7 +1188,8 @@
       "raw_text": "Анализ не удался"
     },
     "notified": true,
-    "photo_ok": false
+    "photo_ok": false,
+    "logged": true
   },
   "32612512": {
     "condition": "Новый",
@@ -1208,7 +1209,8 @@
       "raw_text": "Анализ не удался"
     },
     "notified": true,
-    "photo_ok": false
+    "photo_ok": false,
+    "logged": true
   },
   "82612256": {
     "condition": "Новый",
@@ -1228,6 +1230,7 @@
       "raw_text": "Анализ не удался"
     },
     "notified": true,
-    "photo_ok": false
+    "photo_ok": false,
+    "logged": true
   }
 }

@@ -1,14 +1,181 @@
 {
   "61287000": {
     "notified": true,
-    "photo_ok": true
+    "photo_ok": true,
+    "logged": true
   },
   "19054128": {
     "notified": true,
-    "photo_ok": true
+    "photo_ok": true,
+    "logged": true
   },
   "39966128": {
     "notified": true,
     "photo_ok": true
+  },
+  "28617256": {
+    "logged": true
+  },
+  "84317256": {
+    "logged": true
+  },
+  "76418256": {
+    "logged": true
+  },
+  "91058256": {
+    "logged": true
+  },
+  "58816256": {
+    "logged": true
+  },
+  "82568300": {
+    "logged": true
+  },
+  "81282026": {
+    "logged": true
+  },
+  "18617256": {
+    "logged": true
+  },
+  "95394256": {
+    "logged": true
+  },
+  "57512256": {
+    "logged": true
+  },
+  "65059616": {
+    "logged": true
+  },
+  "14812256": {
+    "logged": true
+  },
+  "99817256": {
+    "logged": true
+  },
+  "05817256": {
+    "logged": true
+  },
+  "52612256": {
+    "logged": true
+  },
+  "53317256": {
+    "logged": true
+  },
+  "62117512": {
+    "logged": true
+  },
+  "00217256": {
+    "logged": true
+  },
+  "78578256": {
+    "logged": true
+  },
+  "28912256": {
+    "logged": true
+  },
+  "71282026": {
+    "logged": true
+  },
+  "07448128": {
+    "logged": true
+  },
+  "41282025": {
+    "logged": true
+  },
+  "19744864": {
+    "logged": true
+  },
+  "08816128": {
+    "logged": true
+  },
+  "14088256": {
+    "logged": true
+  },
+  "08816256": {
+    "logged": true
+  },
+  "61282025": {
+    "logged": true
+  },
+  "66420249": {
+    "logged": true
+  },
+  "82562026": {
+    "logged": true
+  },
+  "22568300": {
+    "logged": true
+  },
+  "67316256": {
+    "logged": true
+  },
+  "74217256": {
+    "logged": true
+  },
+  "69138256": {
+    "logged": true
+  },
+  "81058256": {
+    "logged": true
+  },
+  "28517256": {
+    "logged": true
+  },
+  "75472826": {
+    "logged": true
+  },
+  "61205408": {
+    "logged": true
+  },
+  "61288256": {
+    "logged": true
+  },
+  "87126512": {
+    "logged": true
+  },
+  "44181464": {
+    "logged": true
+  },
+  "50138256": {
+    "logged": true
+  },
+  "12258256": {
+    "logged": true
+  },
+  "92312256": {
+    "logged": true
+  },
+  "92212256": {
+    "logged": true
+  },
+  "32017256": {
+    "logged": true
+  },
+  "62413128": {
+    "logged": true
+  },
+  "75713128": {
+    "logged": true
+  },
+  "52312512": {
+    "logged": true
+  },
+  "39713128": {
+    "logged": true
+  },
+  "51616512": {
+    "logged": true
+  },
+  "26105512": {
+    "logged": true
+  },
+  "35238256": {
+    "logged": true
+  },
+  "40725256": {
+    "logged": true
+  },
+  "80238256": {
+    "logged": true
   }
 }

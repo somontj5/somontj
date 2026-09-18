@@ -23,7 +23,7 @@ TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
 GEMINI_URL = (
     "https://generativelanguage.googleapis.com/v1beta/models/"
-    f"gemini-3.6-flash:generateContent?key={GEMINI_API_KEY}"
+    f"gemini-3.5-flash-lite:generateContent?key={GEMINI_API_KEY}"
 )
 
 HEADERS = {
@@ -341,7 +341,7 @@ def build_prompt(item, stats):
   "reasoning": "коротко почему такой вердикт, с учётом цены, состояния и рынка",
   "confidence": 0.0
 }}
-Считай "недооценено" только если после вычета возможного ремонта телефон реально можно перепродать дороже с запасом, а не просто "дешевле среднего на глаз". Если данных мало — verdict "недостаточно данных", не выдумывай.
+Считай "недооценено" только если после вычета возможного ремонта телефон реально можно перепродать дорож�[...]
 """.strip()
 
 

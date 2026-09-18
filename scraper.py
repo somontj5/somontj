@@ -45,7 +45,13 @@ TRANSLIT_MAP = {
     "huawei": ["хуавей"], "google": ["гугл"], "pixel": ["пиксель"],
 }
 
-CONDITION_RE = re.compile(r"(Новый|Б/у|Б\.у\.|Восстановлен\w*)\s*·\s*(\d+)\s*gb", re.IGNORECASE)
+# Состояние на Somon.tj встречается как «Новый», «Б/у», «Б.у.» или
+# «Восстановлен». Объём памяти после состояния может быть указан, а может нет.
+CONDITION_RE = re.compile(
+    r"\b(Новый|Б\s*/\s*у|Б\s*\.\s*у\.?|Восстановлен\w*)\b"
+    r"(?:\s*[·|,;—-]\s*(\d+)\s*gb)?",
+    re.IGNORECASE,
+)
 NOISE_RE = re.compile(r"Еще\s*\d+\s*фото|VIP|IMEI\s*проверен", re.IGNORECASE)
 PRICE_RE = re.compile(r"(\d[\d\s]{2,})\s*[cс]\.")
 
@@ -72,7 +78,8 @@ def log_price(item):
     with open(PRICE_HISTORY_FILE, "a", encoding="utf-8") as f:
         f.write(json.dumps({
             "id": item["id"], "title": item["title"],
-            "price": item["price"], "date": time.strftime("%Y-%m-%d"),
+            "price": item["price"], "condition": item.get("condition"),
+            "memory": item.get("memory"), "date": time.strftime("%Y-%m-%d"),
         }, ensure_ascii=False) + "\n")
 
 
@@ -156,6 +163,24 @@ def check_telegram_commands(searches):
 
 # ---------- Somon.tj ----------
 
+def normalize_condition(value):
+    value = re.sub(r"\s+", "", value.lower())
+    if value.startswith("нов"):
+        return "Новый"
+    if value.startswith("б/") or value.startswith("б."):
+        return "Б/у"
+    if value.startswith("восстанов"):
+        return "Восстановлен"
+    return value
+
+
+def extract_condition(text):
+    match = CONDITION_RE.search(text)
+    if not match:
+        return None
+    return normalize_condition(match.group(1))
+
+
 def clean_title(raw_text):
     text = NOISE_RE.sub("", raw_text)
     price_match = PRICE_RE.search(text)
@@ -166,14 +191,22 @@ def clean_title(raw_text):
     cond_match = CONDITION_RE.search(text)
     if cond_match:
         title = PRICE_RE.sub("", text[:cond_match.start()]).strip()
-        condition = cond_match.group(1)
-        memory = int(cond_match.group(2))
+        condition = normalize_condition(cond_match.group(1))
+        memory = int(cond_match.group(2)) if cond_match.group(2) else None
     else:
         title = text.strip()
         condition = None
         memory = None
 
     return title, price, condition, memory
+
+
+def fetch_condition(ad_url):
+    """Берёт состояние из полной карточки, где Somon.tj показывает обязательную информацию."""
+    resp = requests.get(ad_url, headers=HEADERS, timeout=20)
+    resp.raise_for_status()
+    soup = BeautifulSoup(resp.text, "html.parser")
+    return extract_condition(soup.get_text(" ", strip=True))
 
 
 def fetch_listings():
@@ -201,6 +234,14 @@ def fetch_listings():
         title, price, condition, memory = clean_title(raw_text)
         if not title:
             continue
+
+        # На странице списка состояние иногда отсутствует, хотя оно есть в
+        # карточке объявления в строке «Обязательная информация».
+        if not condition:
+            try:
+                condition = fetch_condition(href)
+            except Exception as e:
+                print("Не удалось получить состояние объявления", href, ":", e)
 
         ad_id = re.sub(r"\D", "", href)[-8:] or href
         listings.append({
@@ -312,10 +353,15 @@ def main():
     print(f"Поисков загружено: {len(searches)}")
     print(f"Найдено объявлений на странице: {len(listings)}")
     for item in listings[:10]:
-        print(f" - {item['title']!r} | цена: {item['price']} | id: {item['id']}")
+        print(f" - {item['title']!r} | цена: {item['price']} | состояние: {item.get('condition') or '—'} | id: {item['id']}")
 
     for item in listings:
         entry = seen.get(item["id"], {})
+
+        # Сохраняем состояние и память не только в объявлении Telegram, но и
+        # в seen_ids.json для уже обработанных лотов.
+        entry["condition"] = item.get("condition")
+        entry["memory"] = item.get("memory")
 
         if not entry.get("logged"):
             log_price(item)
@@ -341,8 +387,11 @@ def main():
             photo_ok = "не удался" not in photo_analysis
 
             if not entry.get("notified"):
+                condition_text = item.get("condition") or "не указано"
+                memory_text = f" | {item['memory']} GB" if item.get("memory") else ""
                 text = (
                     f"🔔 Новое объявление ({', '.join(matched)})\n\n{item['title']}\n"
+                    f"📱 Состояние: {condition_text}{memory_text}\n"
                     f"💰 {item['price'] if item['price'] else '—'} TJS\n"
                     f"🔗 {item['url']}\n\n📸 Анализ фото:\n{photo_analysis}"
                 )

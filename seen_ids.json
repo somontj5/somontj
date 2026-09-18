@@ -26,10 +26,14 @@
     "logged": true
   },
   "58816256": {
-    "logged": true
+    "logged": true,
+    "notified": true,
+    "photo_ok": false
   },
   "82568300": {
-    "logged": true
+    "logged": true,
+    "notified": true,
+    "photo_ok": false
   },
   "81282026": {
     "logged": true
@@ -71,7 +75,9 @@
     "logged": true
   },
   "28912256": {
-    "logged": true
+    "logged": true,
+    "notified": true,
+    "photo_ok": false
   },
   "71282026": {
     "logged": true

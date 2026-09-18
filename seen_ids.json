@@ -900,7 +900,7 @@
   "12258256": {
     "logged": true,
     "notified": true,
-    "photo_ok": false,
+    "photo_ok": true,
     "condition": "Б/у",
     "memory": 256,
     "official_fields": {
@@ -921,7 +921,7 @@
   "92312256": {
     "logged": true,
     "notified": true,
-    "photo_ok": false,
+    "photo_ok": true,
     "condition": "Б/у",
     "memory": 256,
     "official_fields": {
@@ -942,7 +942,7 @@
   "92212256": {
     "logged": true,
     "notified": true,
-    "photo_ok": false,
+    "photo_ok": true,
     "condition": "Б/у",
     "memory": 256,
     "official_fields": {
@@ -984,7 +984,7 @@
   "62413128": {
     "logged": true,
     "notified": true,
-    "photo_ok": false,
+    "photo_ok": true,
     "condition": "Б/у",
     "memory": 128,
     "official_fields": {
@@ -1005,7 +1005,7 @@
   "75713128": {
     "logged": true,
     "notified": true,
-    "photo_ok": false,
+    "photo_ok": true,
     "condition": "Б/у",
     "memory": 128,
     "official_fields": {

@@ -13,6 +13,7 @@ SEARCH_URL = os.environ.get(
     "https://m.somon.tj/telefonyi-i-svyaz/mobilnyie-telefonyi/sostoyanie---1/?ordering=newest"
 )
 MAX_NEW_ITEMS_PER_RUN = int(os.environ.get("MAX_NEW_ITEMS_PER_RUN", "5"))
+SIMILAR_EXAMPLES_LIMIT = 5
 
 SEEN_FILE = "seen_ids.json"
 PRICE_HISTORY_FILE = "price_history.jsonl"
@@ -107,7 +108,10 @@ def log_full_analysis(item, analysis, verdict):
             "price": item["price"], "condition": item.get("condition"),
             "memory_gb": item.get("memory"), "description": item.get("description", ""),
             "model_key": extract_model_key(item["title"]),
-            "photo_analysis": analysis, "market_verdict": verdict,
+            "visible_defects": analysis.get("visible_defects", []),
+            "positive_features": analysis.get("positive_features", []),
+            "overall_visual_condition": analysis.get("overall_visual_condition"),
+            "market_verdict": verdict,
             "url": item["url"], "collected_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
         }, ensure_ascii=False) + "\n")
 
@@ -121,10 +125,9 @@ def log_rejected(item, analysis):
         }, ensure_ascii=False) + "\n")
 
 
-def market_stats_for(title, condition, exclude_id):
-    """Медиана/минимум по похожим прошлым объявлениям — сравнение по бренду+модели, не по словам."""
-    key = extract_model_key(title)
-    if not key or not os.path.exists(PRICE_HISTORY_FILE):
+def market_stats_for(model_key, condition, exclude_id):
+    """Быстрая числовая сводка (мин/медиана) по похожим прошлым объявлениям."""
+    if not model_key or not os.path.exists(PRICE_HISTORY_FILE):
         return None
 
     prices = []
@@ -138,13 +141,38 @@ def market_stats_for(title, condition, exclude_id):
                 continue
             if condition and rec.get("condition") and rec.get("condition") != condition:
                 continue
-            if rec.get("model_key") != key:
+            if rec.get("model_key") != model_key:
                 continue
             prices.append(rec["price"])
 
     if len(prices) < 3:
         return None
     return {"count": len(prices), "min": min(prices), "median": round(statistics.median(prices))}
+
+
+def similar_full_analyses(model_key, condition, exclude_id, limit=SIMILAR_EXAMPLES_LIMIT):
+    """До `limit` самых свежих ПОЛНЫХ разборов похожих лотов — с дефектами и вердиктом,
+    чтобы Gemini сравнивал конкретику, а не только цену."""
+    if not model_key or not os.path.exists(PRICE_HISTORY_FILE):
+        return []
+
+    matches = []
+    with open(PRICE_HISTORY_FILE, "r", encoding="utf-8") as f:
+        for line in f:
+            try:
+                rec = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            if rec.get("type") != "full_analysis" or rec.get("id") == exclude_id:
+                continue
+            if rec.get("model_key") != model_key:
+                continue
+            if condition and rec.get("condition") and rec.get("condition") != condition:
+                continue
+            matches.append(rec)
+
+    matches.sort(key=lambda r: r.get("collected_at", ""), reverse=True)
+    return matches[:limit]
 
 
 # ---------- Telegram: отправка ----------
@@ -349,12 +377,30 @@ def fetch_detail(ad_url):
 
 # ---------- Gemini ----------
 
-def build_prompt(item, stats):
+def format_similar_examples(examples):
+    if not examples:
+        return "Похожих проверенных лотов этой модели в базе пока нет."
+
+    lines = ["Похожие проверенные лоты этой модели, разобранные ранее (от новых к старым):"]
+    for i, rec in enumerate(examples, 1):
+        defects = ", ".join(rec.get("visible_defects") or []) or "не обнаружены"
+        positives = ", ".join(rec.get("positive_features") or []) or "—"
+        lines.append(
+            f"{i}. Цена {rec.get('price', '—')} TJS, состояние по фото: "
+            f"{rec.get('overall_visual_condition', 'неизвестно')}, "
+            f"дефекты: {defects}, плюсы: {positives} — вердикт тогда: {rec.get('market_verdict', '—')}"
+        )
+    return "\n".join(lines)
+
+
+def build_prompt(item, stats, similar_examples):
     stats_text = (
-        f"По базе похожих объявлений: минимальная цена {stats['min']} TJS, "
-        f"медианная {stats['median']} TJS, найдено {stats['count']} похожих."
-        if stats else "Своих данных по похожим объявлениям пока недостаточно."
+        f"Числовая сводка по базе: минимальная цена {stats['min']} TJS, "
+        f"медианная {stats['median']} TJS, всего похожих объявлений {stats['count']}."
+        if stats else "Числовых данных по рынку пока недостаточно."
     )
+    examples_text = format_similar_examples(similar_examples)
+
     return f"""
 Ты — эксперт по оценке б/у смартфонов для перепродажи. Изучи текст объявления и фото.
 
@@ -365,9 +411,11 @@ def build_prompt(item, stats):
 
 {stats_text}
 
-Если своих данных по рынку недостаточно или хочешь свериться — используй поиск Google, чтобы проверить
-актуальную цену такой модели б/у в Таджикистане и примерную стоимость ремонта видимых повреждений
-(например, замена экрана), и учти это в вердикте.
+{examples_text}
+
+Важно: сравни дефекты ЭТОГО лота с дефектами похожих лотов выше по списку. Если у этого лота дефектов
+меньше или они мельче, а цена та же или ниже — это сильный сигнал "недооценено". Если дефектов больше
+или они серьёзнее при той же цене — наоборот. Не ориентируйся только на медиану цены, сравнивай конкретику.
 
 Верни ТОЛЬКО JSON без markdown, строго такой формы:
 {{
@@ -376,10 +424,10 @@ def build_prompt(item, stats):
   "positive_features": [],
   "market_verdict": "недооценено|справедливая цена|переоценено|недостаточно данных",
   "estimated_resale_price": null,
-  "reasoning": "коротко почему такой вердикт, с учётом цены, состояния, рынка и, если искал — данных из интернета",
+  "reasoning": "коротко почему такой вердикт, со ссылкой на конкретное сравнение с похожими лотами выше",
   "confidence": 0.0
 }}
-Считай "недооценено" только если после вычета возможного ремонта телефон реально можно перепродать дороже с запасом, а не просто "дешевле среднего на глаз". Если данных мало — verdict "недостаточно данных", не выдумывай.
+Считай "недооценено" только если после вычета возможного ремонта телефон реально можно перепродать дороже с запасом. Если данных мало — verdict "недостаточно данных", не выдумывай.
 """.strip()
 
 
@@ -397,8 +445,8 @@ def parse_gemini_json(text):
     return {"market_verdict": "недостаточно данных", "reasoning": "не удалось разобрать ответ", "visible_defects": []}
 
 
-def analyze_listing(item, photo_urls, stats):
-    parts = [{"text": build_prompt(item, stats)}]
+def analyze_listing(item, photo_urls, stats, similar_examples):
+    parts = [{"text": build_prompt(item, stats, similar_examples)}]
     for url in photo_urls:
         try:
             img = requests.get(url, headers=HEADERS, timeout=15)
@@ -409,9 +457,7 @@ def analyze_listing(item, photo_urls, stats):
             print("Не удалось скачать фото:", url, e)
 
     try:
-        resp = requests.post(GEMINI_URL, json={
-            "contents": [{"parts": parts}],
-        }, timeout=60)
+        resp = requests.post(GEMINI_URL, json={"contents": [{"parts": parts}]}, timeout=60)
         if resp.ok:
             return parse_gemini_json(resp.json()["candidates"][0]["content"]["parts"][0]["text"])
         print("Ошибка Gemini:", resp.status_code, resp.text[:800])
@@ -495,8 +541,11 @@ def main():
             item["memory"] = memory or item.get("memory")
             item["description"] = description
 
-            stats = market_stats_for(item["title"], item.get("condition"), item["id"])
-            analysis = analyze_listing(item, photo_urls, stats)
+            model_key = extract_model_key(item["title"])
+            stats = market_stats_for(model_key, item.get("condition"), item["id"])
+            similar_examples = similar_full_analyses(model_key, item.get("condition"), item["id"])
+
+            analysis = analyze_listing(item, photo_urls, stats, similar_examples)
             verdict = analysis.get("market_verdict", "недостаточно данных")
 
             log_full_analysis(item, analysis, verdict)

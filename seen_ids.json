@@ -2009,9 +2009,27 @@
     "photo_ok": true
   },
   "62492864": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true
   },
   "71624718": {
     "logged": true
+  },
+  "65214128": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true
+  },
+  "65414256": {
+    "logged": true,
+    "photo_ok": true
+  },
+  "16263875": {
+    "logged": true,
+    "photo_ok": true
+  },
+  "16228113": {
+    "logged": true,
+    "photo_ok": true
   }
 }

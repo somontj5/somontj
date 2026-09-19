@@ -14,6 +14,7 @@ SEARCH_URL = os.environ.get(
 )
 MAX_NEW_ITEMS_PER_RUN = int(os.environ.get("MAX_NEW_ITEMS_PER_RUN", "5"))
 SIMILAR_EXAMPLES_LIMIT = 5
+GEMINI_DAILY_LIMIT_PER_KEY = int(os.environ.get("GEMINI_DAILY_LIMIT_PER_KEY", "450"))
 
 SEEN_FILE = "seen_ids.json"
 PRICE_HISTORY_FILE = "price_history.jsonl"
@@ -22,14 +23,16 @@ SEARCHES_FILE = "searches.json"
 OFFSET_FILE = "telegram_offset.json"
 MODE_FILE = "search_mode.json"
 SUBSCRIBERS_FILE = "subscribers.json"
+GEMINI_DAILY_FILE = "gemini_daily_usage.json"
 
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
-TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]  # используется только как "затравка" при первом запуске
-GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
-GEMINI_URL = (
-    "https://generativelanguage.googleapis.com/v1beta/models/"
-    f"gemini-3.5-flash-lite:generateContent?key={GEMINI_API_KEY}"
-)
+TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]  # затравка для subscribers.json при первом запуске
+
+GEMINI_KEYS = []
+if os.environ.get("GEMINI_API_KEY"):
+    GEMINI_KEYS.append({"name": "key1", "key": os.environ["GEMINI_API_KEY"]})
+if os.environ.get("GEMINI_API_KEY_2"):
+    GEMINI_KEYS.append({"name": "key2", "key": os.environ["GEMINI_API_KEY_2"]})
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -71,7 +74,6 @@ def save_seen(seen):
 
 
 def extract_model_key(title):
-    """Бренд + основная модель, без цвета/региона/мусора — надёжный ключ для сравнения."""
     words = re.findall(r"[a-zа-я0-9]+", title.lower())
     brand = next((w for w in words if w in KNOWN_BRANDS), None)
     if not brand:
@@ -168,12 +170,36 @@ def similar_full_analyses(model_key, condition, exclude_id, limit=SIMILAR_EXAMPL
     return matches[:limit]
 
 
+# ---------- Gemini: дневной учёт по каждому ключу отдельно ----------
+
+def get_daily_usage():
+    data = load_json(GEMINI_DAILY_FILE, {})
+    today = time.strftime("%Y-%m-%d")
+    if data.get("date") != today:
+        data = {"date": today}
+    for k in GEMINI_KEYS:
+        data.setdefault(k["name"], 0)
+    return data
+
+
+def save_daily_usage(data):
+    with open(GEMINI_DAILY_FILE, "w", encoding="utf-8") as f:
+        json.dump(data, f)
+
+
+def pick_available_key(usage):
+    for k in GEMINI_KEYS:
+        if usage.get(k["name"], 0) < GEMINI_DAILY_LIMIT_PER_KEY:
+            return k
+    return None
+
+
 # ---------- Telegram: подписчики и отправка ----------
 
 def load_subscribers():
     subs = load_json(SUBSCRIBERS_FILE, None)
     if subs is None:
-        subs = [TELEGRAM_CHAT_ID]  # затравка — вы сами, при первом запуске
+        subs = [TELEGRAM_CHAT_ID]
         save_subscribers(subs)
     return subs
 
@@ -409,7 +435,7 @@ def fetch_detail(ad_url):
     return condition, memory, description, photo_urls[:4]
 
 
-# ---------- Gemini ----------
+# ---------- Gemini: анализ ----------
 
 def format_similar_examples(examples):
     if not examples:
@@ -477,7 +503,14 @@ def parse_gemini_json(text):
     return {"market_verdict": "недостаточно данных", "reasoning": "не удалось разобрать ответ", "visible_defects": []}
 
 
-def analyze_listing(item, photo_urls, stats, similar_examples):
+def analyze_listing(item, photo_urls, stats, similar_examples, usage):
+    """Сама выбирает ключ с оставшейся квотой. Если оба исчерпаны — не делает сетевой запрос вообще."""
+    key_info = pick_available_key(usage)
+    if not key_info:
+        return {"market_verdict": "недостаточно данных",
+                "reasoning": "дневной лимит Gemini исчерпан на всех ключах, анализ отложен",
+                "visible_defects": []}
+
     parts = [{"text": build_prompt(item, stats, similar_examples)}]
     for url in photo_urls:
         try:
@@ -488,13 +521,26 @@ def analyze_listing(item, photo_urls, stats, similar_examples):
         except Exception as e:
             print("Не удалось скачать фото:", url, e)
 
+    url = (
+        "https://generativelanguage.googleapis.com/v1beta/models/"
+        f"gemini-3.5-flash-lite:generateContent?key={key_info['key']}"
+    )
     try:
-        resp = requests.post(GEMINI_URL, json={"contents": [{"parts": parts}]}, timeout=60)
+        resp = requests.post(url, json={"contents": [{"parts": parts}]}, timeout=60)
+        usage[key_info["name"]] = usage.get(key_info["name"], 0) + 1
+        save_daily_usage(usage)
+
         if resp.ok:
             return parse_gemini_json(resp.json()["candidates"][0]["content"]["parts"][0]["text"])
+
+        if resp.status_code == 429:
+            print(f"Gemini: {key_info['name']} исчерпал квоту, больше не используется сегодня")
+            usage[key_info["name"]] = GEMINI_DAILY_LIMIT_PER_KEY
+            save_daily_usage(usage)
         print("Ошибка Gemini:", resp.status_code, resp.text[:800])
     except Exception as e:
         print("Сбой Gemini:", e)
+
     return {"market_verdict": "недостаточно данных", "reasoning": "анализ не удался", "visible_defects": []}
 
 
@@ -534,6 +580,7 @@ def main():
     subscribers = load_subscribers()
     searches, subscribers = check_telegram_commands(load_json(SEARCHES_FILE, []), subscribers)
     mode = get_mode()
+    usage = get_daily_usage()
 
     try:
         listings, soup = fetch_listings()
@@ -545,7 +592,9 @@ def main():
         print("Объявления не найдены:", soup.get_text()[:2000])
         return
 
-    print(f"Режим: {MODES[mode]}; поисков: {len(searches)}; объявлений: {len(listings)}; подписчиков: {len(subscribers)}")
+    usage_str = ", ".join(f"{k['name']}: {usage.get(k['name'], 0)}/{GEMINI_DAILY_LIMIT_PER_KEY}" for k in GEMINI_KEYS)
+    print(f"Режим: {MODES[mode]}; поисков: {len(searches)}; объявлений: {len(listings)}; "
+          f"подписчиков: {len(subscribers)}; Gemini сегодня — {usage_str}")
 
     for item in listings:
         entry = seen.get(item["id"], {})
@@ -576,7 +625,7 @@ def main():
             stats = market_stats_for(model_key, item.get("condition"), item["id"])
             similar_examples = similar_full_analyses(model_key, item.get("condition"), item["id"])
 
-            analysis = analyze_listing(item, photo_urls, stats, similar_examples)
+            analysis = analyze_listing(item, photo_urls, stats, similar_examples, usage)
             verdict = analysis.get("market_verdict", "недостаточно данных")
 
             log_full_analysis(item, analysis, verdict)

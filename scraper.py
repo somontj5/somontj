@@ -21,9 +21,10 @@ REJECTED_FILE = "rejected_lots.jsonl"
 SEARCHES_FILE = "searches.json"
 OFFSET_FILE = "telegram_offset.json"
 MODE_FILE = "search_mode.json"
+SUBSCRIBERS_FILE = "subscribers.json"
 
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
-TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
+TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]  # используется только как "затравка" при первом запуске
 GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
 GEMINI_URL = (
     "https://generativelanguage.googleapis.com/v1beta/models/"
@@ -90,7 +91,6 @@ def extract_model_key(title):
 
 
 def log_market_point(item):
-    """Дешёвая запись для базы цен — для ВСЕХ объявлений, включая VIP."""
     with open(PRICE_HISTORY_FILE, "a", encoding="utf-8") as f:
         f.write(json.dumps({
             "type": "market_point", "id": item["id"], "title": item["title"],
@@ -126,10 +126,8 @@ def log_rejected(item, analysis):
 
 
 def market_stats_for(model_key, condition, exclude_id):
-    """Быстрая числовая сводка (мин/медиана) по похожим прошлым объявлениям."""
     if not model_key or not os.path.exists(PRICE_HISTORY_FILE):
         return None
-
     prices = []
     with open(PRICE_HISTORY_FILE, "r", encoding="utf-8") as f:
         for line in f:
@@ -144,18 +142,14 @@ def market_stats_for(model_key, condition, exclude_id):
             if rec.get("model_key") != model_key:
                 continue
             prices.append(rec["price"])
-
     if len(prices) < 3:
         return None
     return {"count": len(prices), "min": min(prices), "median": round(statistics.median(prices))}
 
 
 def similar_full_analyses(model_key, condition, exclude_id, limit=SIMILAR_EXAMPLES_LIMIT):
-    """До `limit` самых свежих ПОЛНЫХ разборов похожих лотов — с дефектами и вердиктом,
-    чтобы Gemini сравнивал конкретику, а не только цену."""
     if not model_key or not os.path.exists(PRICE_HISTORY_FILE):
         return []
-
     matches = []
     with open(PRICE_HISTORY_FILE, "r", encoding="utf-8") as f:
         for line in f:
@@ -170,21 +164,39 @@ def similar_full_analyses(model_key, condition, exclude_id, limit=SIMILAR_EXAMPL
             if condition and rec.get("condition") and rec.get("condition") != condition:
                 continue
             matches.append(rec)
-
     matches.sort(key=lambda r: r.get("collected_at", ""), reverse=True)
     return matches[:limit]
 
 
-# ---------- Telegram: отправка ----------
+# ---------- Telegram: подписчики и отправка ----------
 
-def send_telegram(text):
+def load_subscribers():
+    subs = load_json(SUBSCRIBERS_FILE, None)
+    if subs is None:
+        subs = [TELEGRAM_CHAT_ID]  # затравка — вы сами, при первом запуске
+        save_subscribers(subs)
+    return subs
+
+
+def save_subscribers(subs):
+    with open(SUBSCRIBERS_FILE, "w", encoding="utf-8") as f:
+        json.dump(subs, f, ensure_ascii=False, indent=2)
+
+
+def send_telegram(chat_id, text):
     try:
         resp = requests.post(f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage",
-                              data={"chat_id": TELEGRAM_CHAT_ID, "text": text}, timeout=15)
+                              data={"chat_id": chat_id, "text": text}, timeout=15)
         if not resp.ok:
-            print("Ошибка Telegram:", resp.status_code, resp.text)
+            print("Ошибка Telegram:", chat_id, resp.status_code, resp.text)
     except Exception as e:
-        print("Не удалось отправить в Telegram:", e)
+        print("Не удалось отправить в Telegram:", chat_id, e)
+
+
+def broadcast_telegram(subscribers, text):
+    for chat_id in subscribers:
+        send_telegram(chat_id, text)
+        time.sleep(0.3)
 
 
 # ---------- Режим и команды ----------
@@ -199,7 +211,7 @@ def get_mode():
     return mode if mode in MODES else "params"
 
 
-def check_telegram_commands(searches):
+def check_telegram_commands(searches, subscribers):
     offset = load_json(OFFSET_FILE, {"offset": 0}).get("offset", 0)
     try:
         resp = requests.get(f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/getUpdates",
@@ -208,28 +220,40 @@ def check_telegram_commands(searches):
         updates = resp.json().get("result", [])
     except Exception as e:
         print("Не удалось получить команды из Telegram:", e)
-        return searches
+        return searches, subscribers
 
-    changed = False
+    searches_changed = False
+    subs_changed = False
+
     for upd in updates:
         offset = upd["update_id"] + 1
-        text = upd.get("message", {}).get("text", "").strip()
+        message = upd.get("message", {})
+        chat_id = str(message.get("chat", {}).get("id", ""))
+        text = message.get("text", "").strip()
+        if not chat_id or not text:
+            continue
+
+        if chat_id not in subscribers:
+            subscribers = subscribers + [chat_id]
+            subs_changed = True
+            send_telegram(chat_id, "✅ Вы подписаны на уведомления о выгодных объявлениях. /help — список команд.")
+
         command, _, argument = text.partition(" ")
         command = command.split("@", 1)[0].lower()
 
         if command in ("/all", "/used", "/params"):
             mode = command[1:]
             set_mode(mode)
-            send_telegram(f"✅ Режим поиска: {MODES[mode]}.")
+            send_telegram(chat_id, f"✅ Режим поиска: {MODES[mode]}.")
         elif command == "/mode":
             aliases = {"all": "all", "все": "all", "used": "used", "бу": "used", "б/у": "used",
                        "params": "params", "параметры": "params"}
             mode = aliases.get(argument.lower())
             if mode:
                 set_mode(mode)
-                send_telegram(f"✅ Режим поиска: {MODES[mode]}.")
+                send_telegram(chat_id, f"✅ Режим поиска: {MODES[mode]}.")
             else:
-                send_telegram("Формат: /mode all | used | params")
+                send_telegram(chat_id, "Формат: /mode all | used | params")
         elif command == "/add":
             try:
                 parts = [p.strip() for p in argument.split("|")]
@@ -243,28 +267,40 @@ def check_telegram_commands(searches):
                 if len(parts) > 3 and parts[3]:
                     new_search["min_memory"] = int(parts[3])
                 searches = [s for s in searches if s["name"] != new_search["name"]] + [new_search]
-                changed = True
-                send_telegram(f"✅ Параметры «{new_search['name']}» сохранены.")
+                searches_changed = True
+                send_telegram(chat_id, f"✅ Параметры «{new_search['name']}» сохранены.")
             except Exception as e:
-                send_telegram(f"⚠️ Формат: /add Название | слова | макс_цена | мин_память\nОшибка: {e}")
+                send_telegram(chat_id, f"⚠️ Формат: /add Название | слова | макс_цена | мин_память\nОшибка: {e}")
         elif command == "/del":
             name = argument.strip()
             before = len(searches)
             searches = [s for s in searches if s["name"] != name]
-            changed = True
-            send_telegram(f"🗑 Удалён «{name}»." if len(searches) < before else f"⚠️ «{name}» не найден.")
+            searches_changed = True
+            send_telegram(chat_id, f"🗑 Удалён «{name}»." if len(searches) < before else f"⚠️ «{name}» не найден.")
         elif command == "/list":
             lines = [f"• {s['name']}: {s.get('query', '—')}, до {s.get('max_price', '∞')}" for s in searches]
-            send_telegram(f"🔎 Режим: {MODES[get_mode()]}\n" + ("\n".join(lines) if lines else "Параметров нет."))
+            send_telegram(chat_id, f"🔎 Режим: {MODES[get_mode()]}\n" + ("\n".join(lines) if lines else "Параметров нет."))
+        elif command == "/subscribers":
+            send_telegram(chat_id, f"👥 Подписчиков: {len(subscribers)}")
+        elif command == "/stop":
+            if chat_id in subscribers:
+                subscribers = [s for s in subscribers if s != chat_id]
+                subs_changed = True
+                send_telegram(chat_id, "🔕 Вы отписаны от уведомлений.")
         elif command == "/help":
-            send_telegram("Команды:\n/all /used /params — режим\n/add Название | слова | макс_цена | мин_память\n/del Название\n/list")
+            send_telegram(chat_id, "Команды:\n/all /used /params — режим поиска\n"
+                                    "/add Название | слова | макс_цена | мин_память\n"
+                                    "/del Название\n/list — список поисков\n"
+                                    "/subscribers — сколько подписчиков\n/stop — отписаться")
 
-    if changed:
+    if searches_changed:
         with open(SEARCHES_FILE, "w", encoding="utf-8") as f:
             json.dump(searches, f, ensure_ascii=False, indent=2)
+    if subs_changed:
+        save_subscribers(subscribers)
     with open(OFFSET_FILE, "w", encoding="utf-8") as f:
         json.dump({"offset": offset}, f)
-    return searches
+    return searches, subscribers
 
 
 # ---------- Разбор Somon.tj ----------
@@ -325,7 +361,6 @@ def labeled_value(soup, labels):
 
 
 def fetch_listings():
-    """Лёгкий проход по странице категории (уже отфильтрованной по Б/у на уровне сайта)."""
     resp = requests.get(SEARCH_URL, headers=HEADERS, timeout=20)
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "html.parser")
@@ -351,7 +386,6 @@ def fetch_listings():
 
 
 def fetch_detail(ad_url):
-    """Дорогой шаг — вызывается только для кандидатов на полный анализ."""
     resp = requests.get(ad_url, headers=HEADERS, timeout=20)
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "html.parser")
@@ -380,7 +414,6 @@ def fetch_detail(ad_url):
 def format_similar_examples(examples):
     if not examples:
         return "Похожих проверенных лотов этой модели в базе пока нет."
-
     lines = ["Похожие проверенные лоты этой модели, разобранные ранее (от новых к старым):"]
     for i, rec in enumerate(examples, 1):
         defects = ", ".join(rec.get("visible_defects") or []) or "не обнаружены"
@@ -400,7 +433,6 @@ def build_prompt(item, stats, similar_examples):
         if stats else "Числовых данных по рынку пока недостаточно."
     )
     examples_text = format_similar_examples(similar_examples)
-
     return f"""
 Ты — эксперт по оценке б/у смартфонов для перепродажи. Изучи текст объявления и фото.
 
@@ -499,7 +531,8 @@ def selected(item, searches, mode):
 
 def main():
     seen = load_json(SEEN_FILE, {})
-    searches = check_telegram_commands(load_json(SEARCHES_FILE, []))
+    subscribers = load_subscribers()
+    searches, subscribers = check_telegram_commands(load_json(SEARCHES_FILE, []), subscribers)
     mode = get_mode()
 
     try:
@@ -512,9 +545,8 @@ def main():
         print("Объявления не найдены:", soup.get_text()[:2000])
         return
 
-    print(f"Режим: {MODES[mode]}; поисков: {len(searches)}; объявлений: {len(listings)}")
+    print(f"Режим: {MODES[mode]}; поисков: {len(searches)}; объявлений: {len(listings)}; подписчиков: {len(subscribers)}")
 
-    # Шаг 1: дёшево логируем ВСЕ объявления в базу цен (включая VIP, без сети, без Gemini)
     for item in listings:
         entry = seen.get(item["id"], {})
         if not entry.get("logged"):
@@ -523,7 +555,6 @@ def main():
             seen[item["id"]] = entry
     save_seen(seen)
 
-    # Шаг 2: кандидаты на полный анализ — без VIP, максимум MAX_NEW_ITEMS_PER_RUN за раз
     candidates = [
         item for item in listings
         if selected(item, searches, mode)
@@ -560,7 +591,7 @@ def main():
                     f"💡 {analysis.get('reasoning', '')}\n"
                     f"🔗 {item['url']}"
                 )
-                send_telegram(text)
+                broadcast_telegram(subscribers, text)
                 entry["notified"] = True
             else:
                 log_rejected(item, analysis)

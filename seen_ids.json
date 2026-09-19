@@ -1733,10 +1733,13 @@
     "photo_ok": true
   },
   "61022256": {
-    "logged": true
+    "logged": true,
+    "notified": true,
+    "photo_ok": true
   },
   "16098364": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true
   },
   "51282026": {
     "logged": true

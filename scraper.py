@@ -14,7 +14,8 @@ SEARCH_URL = os.environ.get(
 )
 MAX_NEW_ITEMS_PER_RUN = int(os.environ.get("MAX_NEW_ITEMS_PER_RUN", "5"))
 SIMILAR_EXAMPLES_LIMIT = 5
-GEMINI_DAILY_LIMIT_PER_KEY = int(os.environ.get("GEMINI_DAILY_LIMIT_PER_KEY", "450"))
+GEMINI_DAILY_LIMIT_PER_COMBO = int(os.environ.get("GEMINI_DAILY_LIMIT_PER_COMBO", "450"))
+SEARCH_DAILY_LIMIT = int(os.environ.get("SEARCH_DAILY_LIMIT", "90"))
 
 SEEN_FILE = "seen_ids.json"
 PRICE_HISTORY_FILE = "price_history.jsonl"
@@ -24,15 +25,30 @@ OFFSET_FILE = "telegram_offset.json"
 MODE_FILE = "search_mode.json"
 SUBSCRIBERS_FILE = "subscribers.json"
 GEMINI_DAILY_FILE = "gemini_daily_usage.json"
+SEARCH_DAILY_FILE = "search_daily_usage.json"
 
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
+
+GOOGLE_SEARCH_API_KEY = os.environ.get("GOOGLE_SEARCH_API_KEY", "")
+GOOGLE_SEARCH_CX = os.environ.get("GOOGLE_SEARCH_CX", "")
 
 GEMINI_KEYS = []
 if os.environ.get("GEMINI_API_KEY"):
     GEMINI_KEYS.append({"name": "key1", "key": os.environ["GEMINI_API_KEY"]})
 if os.environ.get("GEMINI_API_KEY_2"):
     GEMINI_KEYS.append({"name": "key2", "key": os.environ["GEMINI_API_KEY_2"]})
+
+GEMINI_MODELS = ["gemini-3.5-flash-lite", "gemini-3.1-flash-lite"]
+
+# Все сочетания ключ+модель — у каждого своя отдельная суточная квота.
+# Порядок важен: бот держится за первое сочетание, пока оно не исчерпано,
+# и только тогда переходит к следующему — без прыжков туда-сюда.
+GEMINI_COMBOS = [
+    {"id": f"{k['name']}::{m}", "key": k["key"], "model": m}
+    for k in GEMINI_KEYS
+    for m in GEMINI_MODELS
+]
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -117,7 +133,7 @@ def log_full_analysis(item, analysis, verdict):
             "estimated_repair_cost": analysis.get("estimated_repair_cost"),
             "estimated_total_cost": analysis.get("estimated_total_cost"),
             "estimated_resale_price": analysis.get("estimated_resale_price"),
-            "used_search": analysis.get("used_search", False),
+            "used_web_search": analysis.get("used_web_search", False),
             "url": item["url"], "collected_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
         }, ensure_ascii=False) + "\n")
 
@@ -176,28 +192,60 @@ def similar_full_analyses(model_key, condition, exclude_id, limit=SIMILAR_EXAMPL
     return matches[:limit]
 
 
-# ---------- Gemini: дневной учёт по каждому ключу отдельно ----------
+# ---------- Дневные квоты ----------
 
-def get_daily_usage():
-    data = load_json(GEMINI_DAILY_FILE, {})
+def get_daily_usage(path, keys):
+    data = load_json(path, {})
     today = time.strftime("%Y-%m-%d")
     if data.get("date") != today:
         data = {"date": today}
-    for k in GEMINI_KEYS:
-        data.setdefault(k["name"], 0)
+    for k in keys:
+        data.setdefault(k, 0)
     return data
 
 
-def save_daily_usage(data):
-    with open(GEMINI_DAILY_FILE, "w", encoding="utf-8") as f:
+def save_daily_usage(path, data):
+    with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f)
 
 
-def pick_available_key(usage):
-    for k in GEMINI_KEYS:
-        if usage.get(k["name"], 0) < GEMINI_DAILY_LIMIT_PER_KEY:
-            return k
+def pick_available_combo(usage):
+    for combo in GEMINI_COMBOS:
+        if usage.get(combo["id"], 0) < GEMINI_DAILY_LIMIT_PER_COMBO:
+            return combo
     return None
+
+
+# ---------- Google Custom Search — настоящий поиск, не Gemini ----------
+
+def google_custom_search(query, num=3):
+    if not GOOGLE_SEARCH_API_KEY or not GOOGLE_SEARCH_CX:
+        return None
+
+    usage = get_daily_usage(SEARCH_DAILY_FILE, ["count"])
+    if usage["count"] >= SEARCH_DAILY_LIMIT:
+        return None
+
+    try:
+        resp = requests.get(
+            "https://www.googleapis.com/customsearch/v1",
+            params={"key": GOOGLE_SEARCH_API_KEY, "cx": GOOGLE_SEARCH_CX, "q": query, "num": num},
+            timeout=15,
+        )
+        usage["count"] += 1
+        save_daily_usage(SEARCH_DAILY_FILE, usage)
+
+        if not resp.ok:
+            print("Ошибка Google Search API:", resp.status_code, resp.text[:300])
+            return None
+
+        items = resp.json().get("items", [])
+        if not items:
+            return None
+        return "\n".join(f"- {it.get('title', '')}: {it.get('snippet', '')}" for it in items[:num])
+    except Exception as e:
+        print("Сбой Google Search API:", e)
+        return None
 
 
 # ---------- Telegram: подписчики и отправка ----------
@@ -445,8 +493,8 @@ def fetch_detail(ad_url):
 
 def format_similar_examples(examples):
     if not examples:
-        return "Похожих проверенных лотов этой модели в базе пока нет."
-    lines = ["Похожие проверенные лоты этой модели, разобранные ранее (от новых к старым):"]
+        return "Похожих проверенных лотов этой модели в нашей базе пока нет."
+    lines = ["Похожие проверенные лоты этой модели из нашей базы (от новых к старым):"]
     for i, rec in enumerate(examples, 1):
         defects = ", ".join(rec.get("visible_defects") or []) or "не обнаружены"
         positives = ", ".join(rec.get("positive_features") or []) or "—"
@@ -460,13 +508,18 @@ def format_similar_examples(examples):
     return "\n".join(lines)
 
 
-def build_prompt(item, stats, similar_examples):
+def build_prompt(item, stats, similar_examples, web_results):
     stats_text = (
         f"Числовая сводка по нашей базе: минимальная цена {stats['min']} TJS, "
         f"медианная {stats['median']} TJS, всего похожих объявлений {stats['count']}."
         if stats else "Числовых данных по нашей базе пока недостаточно."
     )
     examples_text = format_similar_examples(similar_examples)
+    web_text = (
+        f"Результаты веб-поиска по этой модели (реальные страницы из интернета):\n{web_results}"
+        if web_results else "Веб-поиск не дал результатов или недоступен в этот раз — суди по своей базе и знаниям."
+    )
+
     return f"""
 Ты — эксперт по оценке б/у смартфонов для перепродажи в Таджикистане. Изучи текст объявления и фото.
 
@@ -479,21 +532,15 @@ def build_prompt(item, stats, similar_examples):
 
 {examples_text}
 
-У тебя есть доступ к поиску Google — используй его, чтобы:
-1. Проверить актуальную рыночную цену такой модели б/у в Таджикистане (поищи, например,
-   "[модель] б/у цена Таджикистан" или "[модель] Somon.tj") — среди результатов поиска
-   могут встретиться реальные проданные или похожие объявления с Somon.tj, это ценный ориентир.
-2. Если на фото видны дефекты — поищи среднюю стоимость их ремонта в Таджикистане
-   (например "замена экрана [модель] цена Душанбе" или общую стоимость подобного ремонта),
-   и дай оценку в TJS.
+{web_text}
 
 Сравни дефекты ЭТОГО лота с дефектами похожих лотов из нашей базы выше. Если дефектов меньше или
 они мельче при той же или более низкой цене — сигнал "недооценено". Если больше/серьёзнее — наоборот.
 
-Если есть видимые дефекты, обязательно посчитай: цена лота + стоимость ремонта = итоговая цена,
-и сравни итоговую цену с реальной рыночной ценой исправного телефона такой модели (из базы и/или
-поиска). Считай "недооценено" только если после ремонта телефон реально можно продать дороже
-итоговой цены с заметным запасом — не при разнице в 100-200 TJS, а там, где запас ощутимый.
+Если есть видимые дефекты, посчитай: цена лота + примерная стоимость ремонта = итоговая цена, и
+сравни итоговую цену с реальной рыночной ценой исправного телефона такой модели (используй базу
+и результаты веб-поиска выше, если они есть). Считай "недооценено" только если после ремонта
+телефон реально можно продать дороже итоговой цены с заметным запасом, а не на 100-200 TJS.
 
 Верни ТОЛЬКО JSON без markdown, строго такой формы:
 {{
@@ -504,10 +551,10 @@ def build_prompt(item, stats, similar_examples):
   "estimated_total_cost": null,
   "estimated_resale_price": null,
   "market_verdict": "недооценено|справедливая цена|переоценено|недостаточно данных",
-  "reasoning": "коротко: что нашёл в поиске (если искал), как считал ремонт и итоговую цену, сравнение с похожими лотами",
+  "reasoning": "коротко: что дал веб-поиск (если был), как считал ремонт и итоговую цену, сравнение с похожими лотами",
   "confidence": 0.0
 }}
-estimated_repair_cost — только если есть дефекты, иначе null. estimated_total_cost = цена лота + ремонт (если дефектов нет — просто цена лота). estimated_resale_price — по какой цене реально продать ПОСЛЕ ремонта (если он нужен) или как есть. Если данных совсем мало — verdict "недостаточно данных", не выдумывай цифры.
+estimated_repair_cost — только если есть дефекты, иначе null. estimated_total_cost = цена лота + ремонт (если дефектов нет — просто цена лота). estimated_resale_price — по какой цене реально продать после ремонта (если он нужен) или как есть. Если данных совсем мало — verdict "недостаточно данных", не выдумывай цифры.
 """.strip()
 
 
@@ -525,27 +572,14 @@ def parse_gemini_json(text):
     return {"market_verdict": "недостаточно данных", "reasoning": "не удалось разобрать ответ", "visible_defects": []}
 
 
-def call_gemini(key, prompt_parts, use_search):
-    url = (
-        "https://generativelanguage.googleapis.com/v1beta/models/"
-        f"gemini-3.5-flash-lite:generateContent?key={key}"
-    )
-    payload = {"contents": [{"parts": prompt_parts}]}
-    if use_search:
-        payload["tools"] = [{"google_search": {}}]
-    return requests.post(url, json=payload, timeout=60)
-
-
-def analyze_listing(item, photo_urls, stats, similar_examples, usage):
-    """Сама выбирает ключ с оставшейся квотой. Пробует с поиском Google; если именно поиск
-    упирается в свою квоту (429) — тихо повторяет тот же запрос без поиска, не теряя анализ."""
-    key_info = pick_available_key(usage)
-    if not key_info:
+def analyze_listing(item, photo_urls, stats, similar_examples, web_results, usage):
+    combo = pick_available_combo(usage)
+    if not combo:
         return {"market_verdict": "недостаточно данных",
-                "reasoning": "дневной лимит Gemini исчерпан на всех ключах, анализ отложен",
+                "reasoning": "дневной лимит Gemini исчерпан на всех сочетаниях ключ+модель, анализ отложен",
                 "visible_defects": []}
 
-    parts = [{"text": build_prompt(item, stats, similar_examples)}]
+    parts = [{"text": build_prompt(item, stats, similar_examples, web_results)}]
     for url in photo_urls:
         try:
             img = requests.get(url, headers=HEADERS, timeout=15)
@@ -555,30 +589,27 @@ def analyze_listing(item, photo_urls, stats, similar_examples, usage):
         except Exception as e:
             print("Не удалось скачать фото:", url, e)
 
-    used_search = True
+    url = (
+        "https://generativelanguage.googleapis.com/v1beta/models/"
+        f"{combo['model']}:generateContent?key={combo['key']}"
+    )
     try:
-        resp = call_gemini(key_info["key"], parts, use_search=True)
-
-        if resp.status_code == 429 and "search" in resp.text.lower():
-            print("Gemini: квота Google-поиска исчерпана, повтор без поиска")
-            used_search = False
-            resp = call_gemini(key_info["key"], parts, use_search=False)
-
-        usage[key_info["name"]] = usage.get(key_info["name"], 0) + 1
-        save_daily_usage(usage)
+        resp = requests.post(url, json={"contents": [{"parts": parts}]}, timeout=60)
+        usage[combo["id"]] = usage.get(combo["id"], 0) + 1
+        save_daily_usage(GEMINI_DAILY_FILE, usage)
 
         if resp.ok:
             result = parse_gemini_json(resp.json()["candidates"][0]["content"]["parts"][0]["text"])
-            result["used_search"] = used_search
+            result["used_web_search"] = bool(web_results)
             return result
 
         if resp.status_code == 429:
-            print(f"Gemini: {key_info['name']} исчерпал общую квоту, больше не используется сегодня")
-            usage[key_info["name"]] = GEMINI_DAILY_LIMIT_PER_KEY
-            save_daily_usage(usage)
-        print("Ошибка Gemini:", resp.status_code, resp.text[:800])
+            print(f"Gemini: {combo['id']} исчерпал квоту, больше не используется сегодня")
+            usage[combo["id"]] = GEMINI_DAILY_LIMIT_PER_COMBO
+            save_daily_usage(GEMINI_DAILY_FILE, usage)
+        print("Ошибка Gemini:", combo["id"], resp.status_code, resp.text[:800])
     except Exception as e:
-        print("Сбой Gemini:", e)
+        print("Сбой Gemini:", combo["id"], e)
 
     return {"market_verdict": "недостаточно данных", "reasoning": "анализ не удался", "visible_defects": []}
 
@@ -619,7 +650,7 @@ def main():
     subscribers = load_subscribers()
     searches, subscribers = check_telegram_commands(load_json(SEARCHES_FILE, []), subscribers)
     mode = get_mode()
-    usage = get_daily_usage()
+    usage = get_daily_usage(GEMINI_DAILY_FILE, [c["id"] for c in GEMINI_COMBOS])
 
     try:
         listings, soup = fetch_listings()
@@ -631,7 +662,7 @@ def main():
         print("Объявления не найдены:", soup.get_text()[:2000])
         return
 
-    usage_str = ", ".join(f"{k['name']}: {usage.get(k['name'], 0)}/{GEMINI_DAILY_LIMIT_PER_KEY}" for k in GEMINI_KEYS)
+    usage_str = ", ".join(f"{c['id']}: {usage.get(c['id'], 0)}/{GEMINI_DAILY_LIMIT_PER_COMBO}" for c in GEMINI_COMBOS)
     print(f"Режим: {MODES[mode]}; поисков: {len(searches)}; объявлений: {len(listings)}; "
           f"подписчиков: {len(subscribers)}; Gemini сегодня — {usage_str}")
 
@@ -664,7 +695,11 @@ def main():
             stats = market_stats_for(model_key, item.get("condition"), item["id"])
             similar_examples = similar_full_analyses(model_key, item.get("condition"), item["id"])
 
-            analysis = analyze_listing(item, photo_urls, stats, similar_examples, usage)
+            web_results = None
+            if model_key:
+                web_results = google_custom_search(f"{model_key} б/у цена Таджикистан Somon")
+
+            analysis = analyze_listing(item, photo_urls, stats, similar_examples, web_results, usage)
             verdict = analysis.get("market_verdict", "недостаточно данных")
 
             log_full_analysis(item, analysis, verdict)

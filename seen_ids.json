@@ -2168,7 +2168,8 @@
     "photo_ok": true
   },
   "47313128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true
   },
   "17163493": {
     "logged": true
@@ -2178,5 +2179,22 @@
   },
   "48316256": {
     "logged": true
+  },
+  "36001164": {
+    "logged": true,
+    "photo_ok": true
+  },
+  "61615256": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true
+  },
+  "58016256": {
+    "logged": true,
+    "photo_ok": true
+  },
+  "30324000": {
+    "logged": true,
+    "photo_ok": true
   }
 }

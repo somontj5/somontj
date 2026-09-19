@@ -26,7 +26,7 @@ SUBSCRIBERS_FILE = "subscribers.json"
 GEMINI_DAILY_FILE = "gemini_daily_usage.json"
 
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
-TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]  # затравка для subscribers.json при первом запуске
+TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 GEMINI_KEYS = []
 if os.environ.get("GEMINI_API_KEY"):
@@ -114,6 +114,10 @@ def log_full_analysis(item, analysis, verdict):
             "positive_features": analysis.get("positive_features", []),
             "overall_visual_condition": analysis.get("overall_visual_condition"),
             "market_verdict": verdict,
+            "estimated_repair_cost": analysis.get("estimated_repair_cost"),
+            "estimated_total_cost": analysis.get("estimated_total_cost"),
+            "estimated_resale_price": analysis.get("estimated_resale_price"),
+            "used_search": analysis.get("used_search", False),
             "url": item["url"], "collected_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
         }, ensure_ascii=False) + "\n")
 
@@ -123,7 +127,9 @@ def log_rejected(item, analysis):
         f.write(json.dumps({
             "id": item["id"], "title": item["title"], "price": item["price"],
             "url": item["url"], "verdict": analysis.get("market_verdict"),
-            "reasoning": analysis.get("reasoning"), "checked_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
+            "reasoning": analysis.get("reasoning"),
+            "estimated_repair_cost": analysis.get("estimated_repair_cost"),
+            "checked_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
         }, ensure_ascii=False) + "\n")
 
 
@@ -444,23 +450,25 @@ def format_similar_examples(examples):
     for i, rec in enumerate(examples, 1):
         defects = ", ".join(rec.get("visible_defects") or []) or "не обнаружены"
         positives = ", ".join(rec.get("positive_features") or []) or "—"
+        repair = rec.get("estimated_repair_cost")
+        repair_text = f", оценка ремонта тогда: {repair} TJS" if repair else ""
         lines.append(
             f"{i}. Цена {rec.get('price', '—')} TJS, состояние по фото: "
             f"{rec.get('overall_visual_condition', 'неизвестно')}, "
-            f"дефекты: {defects}, плюсы: {positives} — вердикт тогда: {rec.get('market_verdict', '—')}"
+            f"дефекты: {defects}, плюсы: {positives}{repair_text} — вердикт тогда: {rec.get('market_verdict', '—')}"
         )
     return "\n".join(lines)
 
 
 def build_prompt(item, stats, similar_examples):
     stats_text = (
-        f"Числовая сводка по базе: минимальная цена {stats['min']} TJS, "
+        f"Числовая сводка по нашей базе: минимальная цена {stats['min']} TJS, "
         f"медианная {stats['median']} TJS, всего похожих объявлений {stats['count']}."
-        if stats else "Числовых данных по рынку пока недостаточно."
+        if stats else "Числовых данных по нашей базе пока недостаточно."
     )
     examples_text = format_similar_examples(similar_examples)
     return f"""
-Ты — эксперт по оценке б/у смартфонов для перепродажи. Изучи текст объявления и фото.
+Ты — эксперт по оценке б/у смартфонов для перепродажи в Таджикистане. Изучи текст объявления и фото.
 
 Объявление: {item['title']}
 Цена: {item['price']} TJS
@@ -471,21 +479,35 @@ def build_prompt(item, stats, similar_examples):
 
 {examples_text}
 
-Важно: сравни дефекты ЭТОГО лота с дефектами похожих лотов выше по списку. Если у этого лота дефектов
-меньше или они мельче, а цена та же или ниже — это сильный сигнал "недооценено". Если дефектов больше
-или они серьёзнее при той же цене — наоборот. Не ориентируйся только на медиану цены, сравнивай конкретику.
+У тебя есть доступ к поиску Google — используй его, чтобы:
+1. Проверить актуальную рыночную цену такой модели б/у в Таджикистане (поищи, например,
+   "[модель] б/у цена Таджикистан" или "[модель] Somon.tj") — среди результатов поиска
+   могут встретиться реальные проданные или похожие объявления с Somon.tj, это ценный ориентир.
+2. Если на фото видны дефекты — поищи среднюю стоимость их ремонта в Таджикистане
+   (например "замена экрана [модель] цена Душанбе" или общую стоимость подобного ремонта),
+   и дай оценку в TJS.
+
+Сравни дефекты ЭТОГО лота с дефектами похожих лотов из нашей базы выше. Если дефектов меньше или
+они мельче при той же или более низкой цене — сигнал "недооценено". Если больше/серьёзнее — наоборот.
+
+Если есть видимые дефекты, обязательно посчитай: цена лота + стоимость ремонта = итоговая цена,
+и сравни итоговую цену с реальной рыночной ценой исправного телефона такой модели (из базы и/или
+поиска). Считай "недооценено" только если после ремонта телефон реально можно продать дороже
+итоговой цены с заметным запасом — не при разнице в 100-200 TJS, а там, где запас ощутимый.
 
 Верни ТОЛЬКО JSON без markdown, строго такой формы:
 {{
   "overall_visual_condition": "новое|как новое|хорошее|среднее|плохое|неизвестно",
   "visible_defects": [],
   "positive_features": [],
-  "market_verdict": "недооценено|справедливая цена|переоценено|недостаточно данных",
+  "estimated_repair_cost": null,
+  "estimated_total_cost": null,
   "estimated_resale_price": null,
-  "reasoning": "коротко почему такой вердикт, со ссылкой на конкретное сравнение с похожими лотами выше",
+  "market_verdict": "недооценено|справедливая цена|переоценено|недостаточно данных",
+  "reasoning": "коротко: что нашёл в поиске (если искал), как считал ремонт и итоговую цену, сравнение с похожими лотами",
   "confidence": 0.0
 }}
-Считай "недооценено" только если после вычета возможного ремонта телефон реально можно перепродать дороже с запасом. Если данных мало — verdict "недостаточно данных", не выдумывай.
+estimated_repair_cost — только если есть дефекты, иначе null. estimated_total_cost = цена лота + ремонт (если дефектов нет — просто цена лота). estimated_resale_price — по какой цене реально продать ПОСЛЕ ремонта (если он нужен) или как есть. Если данных совсем мало — verdict "недостаточно данных", не выдумывай цифры.
 """.strip()
 
 
@@ -503,8 +525,20 @@ def parse_gemini_json(text):
     return {"market_verdict": "недостаточно данных", "reasoning": "не удалось разобрать ответ", "visible_defects": []}
 
 
+def call_gemini(key, prompt_parts, use_search):
+    url = (
+        "https://generativelanguage.googleapis.com/v1beta/models/"
+        f"gemini-3.5-flash-lite:generateContent?key={key}"
+    )
+    payload = {"contents": [{"parts": prompt_parts}]}
+    if use_search:
+        payload["tools"] = [{"google_search": {}}]
+    return requests.post(url, json=payload, timeout=60)
+
+
 def analyze_listing(item, photo_urls, stats, similar_examples, usage):
-    """Сама выбирает ключ с оставшейся квотой. Если оба исчерпаны — не делает сетевой запрос вообще."""
+    """Сама выбирает ключ с оставшейся квотой. Пробует с поиском Google; если именно поиск
+    упирается в свою квоту (429) — тихо повторяет тот же запрос без поиска, не теряя анализ."""
     key_info = pick_available_key(usage)
     if not key_info:
         return {"market_verdict": "недостаточно данных",
@@ -521,20 +555,25 @@ def analyze_listing(item, photo_urls, stats, similar_examples, usage):
         except Exception as e:
             print("Не удалось скачать фото:", url, e)
 
-    url = (
-        "https://generativelanguage.googleapis.com/v1beta/models/"
-        f"gemini-3.5-flash-lite:generateContent?key={key_info['key']}"
-    )
+    used_search = True
     try:
-        resp = requests.post(url, json={"contents": [{"parts": parts}]}, timeout=60)
+        resp = call_gemini(key_info["key"], parts, use_search=True)
+
+        if resp.status_code == 429 and "search" in resp.text.lower():
+            print("Gemini: квота Google-поиска исчерпана, повтор без поиска")
+            used_search = False
+            resp = call_gemini(key_info["key"], parts, use_search=False)
+
         usage[key_info["name"]] = usage.get(key_info["name"], 0) + 1
         save_daily_usage(usage)
 
         if resp.ok:
-            return parse_gemini_json(resp.json()["candidates"][0]["content"]["parts"][0]["text"])
+            result = parse_gemini_json(resp.json()["candidates"][0]["content"]["parts"][0]["text"])
+            result["used_search"] = used_search
+            return result
 
         if resp.status_code == 429:
-            print(f"Gemini: {key_info['name']} исчерпал квоту, больше не используется сегодня")
+            print(f"Gemini: {key_info['name']} исчерпал общую квоту, больше не используется сегодня")
             usage[key_info["name"]] = GEMINI_DAILY_LIMIT_PER_KEY
             save_daily_usage(usage)
         print("Ошибка Gemini:", resp.status_code, resp.text[:800])
@@ -632,11 +671,26 @@ def main():
 
             if verdict == "недооценено":
                 defects = ", ".join(analysis.get("visible_defects", [])) or "не обнаружены"
+                repair = analysis.get("estimated_repair_cost")
+                total = analysis.get("estimated_total_cost")
+                resale = analysis.get("estimated_resale_price")
+
+                cost_lines = ""
+                if repair:
+                    cost_lines = (
+                        f"🔧 Примерный ремонт: {repair} TJS\n"
+                        f"🧮 Итоговая цена (лот + ремонт): {total or '—'} TJS\n"
+                        f"📈 Продать можно примерно за: {resale or '—'} TJS\n"
+                    )
+                elif resale:
+                    cost_lines = f"📈 Продать можно примерно за: {resale} TJS\n"
+
                 text = (
                     f"🔥 Потенциально выгодное объявление\n\n{item['title']}\n"
-                    f"💰 {item['price'] or '—'} TJS\n"
+                    f"💰 Цена лота: {item['price'] or '—'} TJS\n"
                     f"📊 Визуальное состояние: {analysis.get('overall_visual_condition', 'неизвестно')}\n"
                     f"🛠 Дефекты: {defects}\n"
+                    f"{cost_lines}"
                     f"💡 {analysis.get('reasoning', '')}\n"
                     f"🔗 {item['url']}"
                 )

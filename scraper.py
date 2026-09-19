@@ -39,6 +39,11 @@ TRANSLIT_MAP = {
     "xiaomi": ["сяоми", "ксиаоми"], "redmi": ["редми"],
     "huawei": ["хуавей"], "google": ["гугл"], "pixel": ["пиксель"],
 }
+KNOWN_BRANDS = ["iphone", "apple", "samsung", "xiaomi", "redmi", "honor",
+                "huawei", "tecno", "infinix", "nokia", "google", "pixel", "oppo", "vivo"]
+NOISE_WORDS = {"vietnam", "global", "version", "black", "white", "gold", "silver",
+               "blue", "green", "pink", "gray", "grey", "new", "оригинал"}
+
 CONDITION_RE = re.compile(r"\b(Новый|Б\s*/\s*у|Б\s*\.\s*у\.?|Восстановлен\w*)\b(?:\s*[·|,;—-]\s*(\d+)\s*gb)?", re.I)
 NOISE_RE = re.compile(r"Еще\s*\d+\s*фото|VIP|IMEI\s*проверен", re.I)
 PRICE_RE = re.compile(r"(\d[\d\s]{2,})\s*[cс]\.")
@@ -63,6 +68,26 @@ def save_seen(seen):
         json.dump(seen, f, ensure_ascii=False, indent=2)
 
 
+def extract_model_key(title):
+    """Бренд + основная модель, без цвета/региона/мусора — надёжный ключ для сравнения."""
+    words = re.findall(r"[a-zа-я0-9]+", title.lower())
+    brand = next((w for w in words if w in KNOWN_BRANDS), None)
+    if not brand:
+        return None
+    model_words = []
+    started = False
+    for w in words:
+        if w == brand:
+            started = True
+            continue
+        if not started:
+            continue
+        if w in NOISE_WORDS or (w.isdigit() and int(w) >= 32) or w.endswith("gb"):
+            break
+        model_words.append(w)
+    return f"{brand} {' '.join(model_words[:3])}".strip()
+
+
 def log_market_point(item):
     """Дешёвая запись для базы цен — для ВСЕХ объявлений, включая VIP."""
     with open(PRICE_HISTORY_FILE, "a", encoding="utf-8") as f:
@@ -70,6 +95,7 @@ def log_market_point(item):
             "type": "market_point", "id": item["id"], "title": item["title"],
             "price": item["price"], "condition": item.get("condition"),
             "memory_gb": item.get("memory"), "vip": item.get("vip", False),
+            "model_key": extract_model_key(item["title"]),
             "date": time.strftime("%Y-%m-%d"),
         }, ensure_ascii=False) + "\n")
 
@@ -80,6 +106,7 @@ def log_full_analysis(item, analysis, verdict):
             "type": "full_analysis", "id": item["id"], "title": item["title"],
             "price": item["price"], "condition": item.get("condition"),
             "memory_gb": item.get("memory"), "description": item.get("description", ""),
+            "model_key": extract_model_key(item["title"]),
             "photo_analysis": analysis, "market_verdict": verdict,
             "url": item["url"], "collected_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
         }, ensure_ascii=False) + "\n")
@@ -95,9 +122,9 @@ def log_rejected(item, analysis):
 
 
 def market_stats_for(title, condition, exclude_id):
-    """Медиана/минимум по похожим прошлым объявлениям ТОГО ЖЕ состояния (VIP тоже учитываются)."""
-    key_words = [w for w in re.findall(r"[a-zа-я0-9]+", title.lower()) if len(w) > 2][:3]
-    if not key_words or not os.path.exists(PRICE_HISTORY_FILE):
+    """Медиана/минимум по похожим прошлым объявлениям — сравнение по бренду+модели, не по словам."""
+    key = extract_model_key(title)
+    if not key or not os.path.exists(PRICE_HISTORY_FILE):
         return None
 
     prices = []
@@ -111,9 +138,9 @@ def market_stats_for(title, condition, exclude_id):
                 continue
             if condition and rec.get("condition") and rec.get("condition") != condition:
                 continue
-            t = rec.get("title", "").lower()
-            if all(w in t for w in key_words[:2]):
-                prices.append(rec["price"])
+            if rec.get("model_key") != key:
+                continue
+            prices.append(rec["price"])
 
     if len(prices) < 3:
         return None
@@ -326,7 +353,7 @@ def build_prompt(item, stats):
     stats_text = (
         f"По базе похожих объявлений: минимальная цена {stats['min']} TJS, "
         f"медианная {stats['median']} TJS, найдено {stats['count']} похожих."
-        if stats else "Данных по похожим объявлениям пока недостаточно — суди только по цене и состоянию из текста."
+        if stats else "Своих данных по похожим объявлениям пока недостаточно."
     )
     return f"""
 Ты — эксперт по оценке б/у смартфонов для перепродажи. Изучи текст объявления и фото.
@@ -338,6 +365,10 @@ def build_prompt(item, stats):
 
 {stats_text}
 
+Если своих данных по рынку недостаточно или хочешь свериться — используй поиск Google, чтобы проверить
+актуальную цену такой модели б/у в Таджикистане и примерную стоимость ремонта видимых повреждений
+(например, замена экрана), и учти это в вердикте.
+
 Верни ТОЛЬКО JSON без markdown, строго такой формы:
 {{
   "overall_visual_condition": "новое|как новое|хорошее|среднее|плохое|неизвестно",
@@ -345,7 +376,7 @@ def build_prompt(item, stats):
   "positive_features": [],
   "market_verdict": "недооценено|справедливая цена|переоценено|недостаточно данных",
   "estimated_resale_price": null,
-  "reasoning": "коротко почему такой вердикт, с учётом цены, состояния и рынка",
+  "reasoning": "коротко почему такой вердикт, с учётом цены, состояния, рынка и, если искал — данных из интернета",
   "confidence": 0.0
 }}
 Считай "недооценено" только если после вычета возможного ремонта телефон реально можно перепродать дороже с запасом, а не просто "дешевле среднего на глаз". Если данных мало — verdict "недостаточно данных", не выдумывай.
@@ -378,7 +409,10 @@ def analyze_listing(item, photo_urls, stats):
             print("Не удалось скачать фото:", url, e)
 
     try:
-        resp = requests.post(GEMINI_URL, json={"contents": [{"parts": parts}]}, timeout=60)
+        resp = requests.post(GEMINI_URL, json={
+            "contents": [{"parts": parts}],
+            "tools": [{"google_search": {}}],
+        }, timeout=60)
         if resp.ok:
             return parse_gemini_json(resp.json()["candidates"][0]["content"]["parts"][0]["text"])
         print("Ошибка Gemini:", resp.status_code, resp.text[:300])
@@ -444,7 +478,7 @@ def main():
             seen[item["id"]] = entry
     save_seen(seen)
 
-    # Шаг 2: кандидаты на полный анализ — БЕЗ VIP, максимум MAX_NEW_ITEMS_PER_RUN за раз
+    # Шаг 2: кандидаты на полный анализ — без VIP, максимум MAX_NEW_ITEMS_PER_RUN за раз
     candidates = [
         item for item in listings
         if selected(item, searches, mode)

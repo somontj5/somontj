@@ -411,11 +411,10 @@ def analyze_listing(item, photo_urls, stats):
     try:
         resp = requests.post(GEMINI_URL, json={
             "contents": [{"parts": parts}],
-            "tools": [{"google_search": {}}],
         }, timeout=60)
         if resp.ok:
             return parse_gemini_json(resp.json()["candidates"][0]["content"]["parts"][0]["text"])
-        print("Ошибка Gemini:", resp.status_code, resp.text[:300])
+        print("Ошибка Gemini:", resp.status_code, resp.text[:800])
     except Exception as e:
         print("Сбой Gemini:", e)
     return {"market_verdict": "недостаточно данных", "reasoning": "анализ не удался", "visible_defects": []}

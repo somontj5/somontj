@@ -2423,10 +2423,14 @@
     "photo_ok": true
   },
   "21115128": {
-    "logged": true
+    "logged": true,
+    "notified": true,
+    "photo_ok": true
   },
   "21614128": {
-    "logged": true
+    "logged": true,
+    "notified": true,
+    "photo_ok": true
   },
   "42171164": {
     "logged": true

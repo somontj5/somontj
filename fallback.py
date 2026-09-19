@@ -12,7 +12,7 @@ _original_post = requests.post
 _secondary_key = os.environ.get("GEMINI_API_KEY_2", "").strip()
 _secondary_url = (
     "https://generativelanguage.googleapis.com/v1beta/models/"
-    f"gemini-3.6-flash:generateContent?key={_secondary_key}"
+    f"gemini-3.5-flash-lite:generateContent?key={_secondary_key}"
     if _secondary_key
     else ""
 )

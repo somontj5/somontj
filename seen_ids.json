@@ -3685,16 +3685,40 @@
     "model_key": "apple iphone 13 pro"
   },
   "96813128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17169968_apple-iphone-13-pro-128-gb-graphite/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Graphite",
+    "price": 4800,
+    "condition": "Б/у",
+    "model_key": "apple iphone 13 pro"
   },
   "16997315": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17169973_redmi15/",
+    "title": "Xiaomi Redmi 15",
+    "price": 1299,
+    "condition": "Б/у",
+    "model_key": "xiaomi redmi 15"
   },
   "69887128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17169887_apple-iphone-xr-128-gb-yellow/",
+    "title": "Apple iPhone Xr, 128 gb, Yellow",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "apple iphone xr"
   },
   "69868515": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17169868_nokia-515/",
+    "title": "Nokia 515",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "nokia"
   },
   "86214128": {
     "logged": true
@@ -3792,6 +3816,13 @@
     "model_key": "apple iphone 14 pro"
   },
   "17170271": {
-    "logged": true
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170271_rastamozhka-dorad/",
+    "title": "Xiaomi Redmi A3",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "xiaomi redmi a3"
   }
 }

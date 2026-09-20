@@ -4196,7 +4196,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
     "price": 13990,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "71201864": {
     "logged": true,
@@ -4206,7 +4207,8 @@
     "title": "Apple iPhone 8 plus, 64 gb, Gold",
     "price": 899,
     "condition": "Б/у",
-    "model_key": "apple iphone 8 plus"
+    "model_key": "apple iphone 8 plus",
+    "sold_checked": true
   },
   "57375058": {
     "logged": true,
@@ -4215,7 +4217,8 @@
     "title": "Xiaomi Mi 8 Lite",
     "price": 850,
     "condition": "Б/у",
-    "model_key": "xiaomi mi 8 lite"
+    "model_key": "xiaomi mi 8 lite",
+    "sold_checked": true
   },
   "66615128": {
     "logged": true,
@@ -4224,7 +4227,8 @@
     "title": "Apple iPhone 15 Pro, 128 gb, Natural Titanium",
     "price": 4700,
     "condition": "Б/у",
-    "model_key": "apple iphone 15 pro"
+    "model_key": "apple iphone 15 pro",
+    "sold_checked": true
   },
   "88313128": {
     "logged": true,
@@ -4233,7 +4237,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Alpine Green",
     "price": 2900,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "68612256": {
     "logged": true,

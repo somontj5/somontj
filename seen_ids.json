@@ -4326,5 +4326,23 @@
     "price": 1649,
     "condition": "Б/у",
     "model_key": "samsung galaxy note 20"
+  },
+  "16990925": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17169909_samsung-galaxy-s25-ultra/",
+    "title": "Samsung Galaxy S25 Ultra",
+    "price": 8999,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s25 ultra"
+  },
+  "70600732": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170600_apple-iphone-7-32-gb/",
+    "title": "Apple iPhone 7, 32 gb",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "apple iphone 7"
   }
 }

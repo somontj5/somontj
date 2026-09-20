@@ -13,13 +13,14 @@ SEARCH_URL = os.environ.get(
     "https://m.somon.tj/telefonyi-i-svyaz/mobilnyie-telefonyi/sostoyanie---1/?ordering=newest&location=185,187,195,204,205,230,210,180"
 )
 MAX_NEW_ITEMS_PER_RUN = int(os.environ.get("MAX_NEW_ITEMS_PER_RUN", "5"))
-SIMILAR_EXAMPLES_LIMIT = 5
+SIMILAR_EXAMPLES_LIMIT = 8
 GEMINI_DAILY_LIMIT_PER_COMBO = int(os.environ.get("GEMINI_DAILY_LIMIT_PER_COMBO", "450"))
 TAVILY_MONTHLY_LIMIT_PER_KEY = int(os.environ.get("TAVILY_MONTHLY_LIMIT_PER_KEY", "950"))
 GOOGLE_SEARCH_DAILY_LIMIT_PER_KEY = int(os.environ.get("GOOGLE_SEARCH_DAILY_LIMIT_PER_KEY", "90"))
 FALLBACK_USD_TJS_RATE = float(os.environ.get("FALLBACK_USD_TJS_RATE", "10.5"))
 ALERT_GAP_MINUTES = int(os.environ.get("ALERT_GAP_MINUTES", "40"))
 ALERT_FAILURE_THRESHOLD = int(os.environ.get("ALERT_FAILURE_THRESHOLD", "3"))
+DEFAULT_MIN_PROFIT = int(os.environ.get("DEFAULT_MIN_PROFIT", "0"))
 
 SEEN_FILE = "seen_ids.json"
 PRICE_HISTORY_FILE = "price_history.jsonl"
@@ -32,9 +33,10 @@ GEMINI_DAILY_FILE = "gemini_daily_usage.json"
 SEARCH_USAGE_FILE = "search_provider_usage.json"
 EXCHANGE_RATE_FILE = "exchange_rate.json"
 HEALTH_FILE = "health_status.json"
+MIN_PROFIT_FILE = "min_profit.json"
 
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
-TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]  # владелец — получает технические тревоги
+TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 GEMINI_KEYS = []
 if os.environ.get("GEMINI_API_KEY"):
@@ -161,13 +163,14 @@ def log_full_analysis(item, analysis, verdict, data_sources):
         }, ensure_ascii=False) + "\n")
 
 
-def log_rejected(item, analysis):
+def log_rejected(item, analysis, note=None):
     with open(REJECTED_FILE, "a", encoding="utf-8") as f:
         f.write(json.dumps({
             "id": item["id"], "title": item["title"], "price": item["price"],
             "url": item["url"], "verdict": analysis.get("market_verdict"),
             "reasoning": analysis.get("reasoning"),
             "estimated_repair_cost": analysis.get("estimated_repair_cost"),
+            "note": note,
             "checked_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
         }, ensure_ascii=False) + "\n")
 
@@ -202,6 +205,7 @@ def get_manual_notes(model_key, limit=5):
 
 
 def market_stats_for(model_key, condition, exclude_id):
+    """Используется только для команды /price — Gemini эту сводку больше не получает."""
     if not model_key or not os.path.exists(PRICE_HISTORY_FILE):
         return None
     prices = []
@@ -244,6 +248,17 @@ def similar_full_analyses(model_key, condition, exclude_id, limit=SIMILAR_EXAMPL
     return matches[:limit]
 
 
+# ---------- Минимальная выгода ----------
+
+def get_min_profit():
+    return load_json(MIN_PROFIT_FILE, {}).get("value", DEFAULT_MIN_PROFIT)
+
+
+def set_min_profit(value):
+    with open(MIN_PROFIT_FILE, "w", encoding="utf-8") as f:
+        json.dump({"value": value}, f)
+
+
 # ---------- Курс USD/TJS ----------
 
 def get_usd_tjs_rate():
@@ -251,7 +266,6 @@ def get_usd_tjs_rate():
     today = time.strftime("%Y-%m-%d")
     if cached.get("date") == today and cached.get("rate"):
         return cached["rate"]
-
     try:
         resp = requests.get("https://open.er-api.com/v6/latest/USD", timeout=15)
         resp.raise_for_status()
@@ -263,7 +277,6 @@ def get_usd_tjs_rate():
             return rate
     except Exception as e:
         print("Не удалось получить курс USD/TJS:", e)
-
     print(f"Использую резервный курс: {FALLBACK_USD_TJS_RATE}")
     return cached.get("rate", FALLBACK_USD_TJS_RATE)
 
@@ -441,7 +454,6 @@ def broadcast_telegram(subscribers, text):
 
 
 def alert_owner(text):
-    """Технические тревоги — только владельцу, не всем подписчикам."""
     send_telegram(TELEGRAM_CHAT_ID, f"⚠️ {text}")
 
 
@@ -450,7 +462,6 @@ def alert_owner(text):
 def check_health():
     health = load_json(HEALTH_FILE, {})
     now = time.time()
-
     last_run_at = health.get("last_run_at")
     if last_run_at:
         gap_minutes = (now - last_run_at) / 60
@@ -459,7 +470,6 @@ def check_health():
                 f"Бот не запускался {round(gap_minutes)} минут (ожидалось не больше {ALERT_GAP_MINUTES}). "
                 f"Проверь планировщик cron-job.org и токен доступа к GitHub API."
             )
-
     health["last_run_at"] = now
     with open(HEALTH_FILE, "w", encoding="utf-8") as f:
         json.dump(health, f)
@@ -499,6 +509,7 @@ def build_rejected_report_html():
         "справедливая цена": "#4a90d9",
         "переоценено": "#d94a4a",
         "недостаточно данных": "#999999",
+        "недооценено": "#3fa34d",
     }
 
     cards = []
@@ -506,12 +517,14 @@ def build_rejected_report_html():
         color = verdict_colors.get(r.get("verdict"), "#777777")
         repair = r.get("estimated_repair_cost")
         repair_line = f"<div>🔧 Оценка ремонта: {repair} TJS</div>" if repair else ""
+        note_line = f"<div class='note'>ℹ️ {r.get('note')}</div>" if r.get("note") else ""
         cards.append(f"""
         <div class="card">
           <div class="title">{r.get('title', '—')}</div>
           <div class="badge" style="background:{color}">{r.get('verdict', '—')}</div>
           <div>💰 Цена: {r.get('price', '—')} TJS</div>
           {repair_line}
+          {note_line}
           <div class="reason">{r.get('reasoning', '')}</div>
           <div class="meta">🕒 {r.get('checked_at', '')} · <a href="{r.get('url', '#')}">открыть объявление</a></div>
         </div>
@@ -527,6 +540,7 @@ def build_rejected_report_html():
   .title {{ font-weight:600; font-size:15px; margin-bottom:6px; }}
   .badge {{ display:inline-block; color:#fff; font-size:12px; padding:3px 10px; border-radius:20px; margin-bottom:8px; }}
   .reason {{ color:#444; font-size:14px; margin-top:6px; }}
+  .note {{ color:#a06a00; font-size:13px; margin-top:4px; }}
   .meta {{ color:#888; font-size:12px; margin-top:8px; }}
   a {{ color:#4a90d9; }}
 </style></head>
@@ -619,6 +633,13 @@ def check_telegram_commands(searches, subscribers):
         elif command == "/list":
             lines = [f"• {s['name']}: {s.get('query', '—')}, до {s.get('max_price', '∞')}" for s in searches]
             send_telegram(chat_id, f"🔎 Режим: {MODES[get_mode()]}\n" + ("\n".join(lines) if lines else "Параметров нет."))
+        elif command == "/minprofit":
+            arg = argument.strip()
+            if arg.lstrip("-").isdigit():
+                set_min_profit(int(arg))
+                send_telegram(chat_id, f"✅ Минимальная выгода для уведомлений: {arg} TJS.")
+            else:
+                send_telegram(chat_id, f"Текущий порог: {get_min_profit()} TJS.\nФормат: /minprofit 300")
         elif command == "/subscribers":
             send_telegram(chat_id, f"👥 Подписчиков: {len(subscribers)}")
         elif command == "/stop":
@@ -642,21 +663,21 @@ def check_telegram_commands(searches, subscribers):
             if not query:
                 send_telegram(chat_id, "Напишите модель, например: /price iPhone 13")
             else:
-                fake_title = query
-                model_key = extract_model_key(fake_title) or query.lower().strip()
+                model_key = extract_model_key(query) or query.lower().strip()
                 stats = market_stats_for(model_key, None, exclude_id=None)
                 if stats:
                     send_telegram(chat_id,
                         f"💰 {query}\nПо базе ({stats['count']} похожих объявлений):\n"
-                        f"Минимальная цена: {stats['min']} TJS\nМедианная цена: {stats['median']} TJS")
+                        f"Минимальная цена: {stats['min']} TJS\nМедианная цена: {stats['median']} TJS\n"
+                        f"(Напоминаю: это грубая сводка без учёта конкретных дефектов — детали смотрите в /rejected)")
                 else:
-                    send_telegram(chat_id, f"По «{query}» в базе пока меньше 3 похожих объявлений — рано считать статистику.")
+                    send_telegram(chat_id, f"По «{query}» в базе пока меньше 3 похожих объявлений.")
         elif command == "/stats":
             gem_usage = get_daily_usage(GEMINI_DAILY_FILE, [c["id"] for c in GEMINI_COMBOS])
             search_usage = get_search_usage()
             db_count = sum(1 for _ in open(PRICE_HISTORY_FILE, encoding="utf-8")) if os.path.exists(PRICE_HISTORY_FILE) else 0
             rej_count = sum(1 for _ in open(REJECTED_FILE, encoding="utf-8")) if os.path.exists(REJECTED_FILE) else 0
-            lines = ["📊 Статистика", "", "Gemini сегодня:"]
+            lines = ["📊 Статистика", "", f"💵 Минимальная выгода: {get_min_profit()} TJS", "", "Gemini сегодня:"]
             lines += [f"  {c['id']}: {gem_usage.get(c['id'], 0)}/{GEMINI_DAILY_LIMIT_PER_COMBO}" for c in GEMINI_COMBOS]
             lines += ["", "Поиск в сети:"]
             lines += [f"  {p['id']}: {search_usage.get(p['id'], 0)}/{p['limit']} ({'мес' if p['period']=='month' else 'день'})" for p in SEARCH_PROVIDERS]
@@ -666,7 +687,8 @@ def check_telegram_commands(searches, subscribers):
             send_telegram(chat_id, "Команды:\n/all /used /params — режим поиска\n"
                                     "/add Название | слова | макс_цена | мин_память\n"
                                     "/del Название\n/list — список поисков\n"
-                                    "/price Модель — цена по нашей базе прямо сейчас\n"
+                                    "/minprofit число — минимальная выгода для уведомлений (TJS)\n"
+                                    "/price Модель — грубая сводка цен по базе\n"
                                     "/dbadd текст — добавить что угодно в базу вручную\n"
                                     "/rejected — файл со всеми отклонёнными лотами\n"
                                     "/stats — расход лимитов и размер базы\n"
@@ -794,7 +816,8 @@ def fetch_detail(ad_url):
 def format_similar_examples(examples):
     if not examples:
         return "Похожих проверенных лотов этой модели из нашей базы пока нет."
-    lines = ["Похожие проверенные лоты этой модели из нашей базы (от новых к старым):"]
+    lines = ["Похожие проверенные лоты этой модели из нашей базы (от новых к старым) — "
+             "судьи сам по каждому, чем этот лот отличается по дефектам и цене:"]
     for i, rec in enumerate(examples, 1):
         defects = ", ".join(rec.get("visible_defects") or []) or "не обнаружены"
         positives = ", ".join(rec.get("positive_features") or []) or "—"
@@ -817,13 +840,7 @@ def format_manual_notes(notes):
     return "\n".join(lines)
 
 
-def build_prompt(item, stats, similar_examples, web_results, manual_notes, usd_rate):
-    stats_text = (
-        f"Справочная числовая сводка по нашей базе (это только контекст, не готовый вывод — "
-        f"реши сам, что это значит): минимальная цена {stats['min']} TJS, "
-        f"медианная {stats['median']} TJS, всего похожих объявлений {stats['count']}."
-        if stats else "Числовых данных по нашей базе пока недостаточно."
-    )
+def build_prompt(item, similar_examples, web_results, manual_notes, usd_rate):
     examples_text = format_similar_examples(similar_examples)
     web_text = (
         f"Результаты веб-поиска по этой модели (реальные страницы из интернета):\n{web_results}"
@@ -853,20 +870,23 @@ def build_prompt(item, stats, similar_examples, web_results, manual_notes, usd_r
 Описание продавца: {item.get('description', '')[:800]}
 {customs_text}
 
-{stats_text}
-
 {examples_text}
 
 {manual_text}
 
 {web_text}
 
-Сравни дефекты ЭТОГО лота с дефектами похожих лотов из нашей базы. Сам реши и посчитай:
-стоимость возможного ремонта, итоговую цену (лот + ремонт + растаможка, если применима), и по какой
-цене реально продать телефон после этого — используя все доступные тебе данные и здравый смысл.
-Считай "недооценено" только если после всех расходов телефон реально можно продать дороже итоговой
-цены с заметным запасом, а не на 100-200 TJS. Честно оцени свою уверенность в диапазоне 0.0-1.0 —
-если данных мало или они противоречивы, уверенность должна быть низкой, не завышай её искусственно.
+Ниже — список похожих лотов из нашей базы, каждый со своей ценой и своими дефектами (не усреднённое
+число, а реальные конкретные примеры). Сравнивай ЭТОТ лот с каждым из них по существу: если у этого
+лота дефектов меньше или они мельче при той же или более низкой цене — сигнал "недооценено". Если
+больше/серьёзнее — наоборот. Не пытайся вывести из них одно среднее число — рассуждай по каждому
+примеру отдельно, как эксперт, а не как калькулятор.
+
+Сам реши и посчитай: стоимость возможного ремонта, итоговую цену (лот + ремонт + растаможка, если
+применима), и по какой цене реально продать телефон после этого — используя все доступные данные и
+здравый смысл. Считай "недооценено" только если после всех расходов телефон реально можно продать
+дороже итоговой цены с заметным запасом. Честно оцени свою уверенность в диапазоне 0.0-1.0 — если
+данных мало или они противоречивы, уверенность должна быть низкой, не завышай её искусственно.
 
 Верни ТОЛЬКО JSON без markdown, строго такой формы:
 {{
@@ -877,7 +897,7 @@ def build_prompt(item, stats, similar_examples, web_results, manual_notes, usd_r
   "estimated_total_cost": null,
   "estimated_resale_price": null,
   "market_verdict": "недооценено|справедливая цена|переоценено|недостаточно данных",
-  "reasoning": "коротко: на чём основан вывод — база, заметки, поиск, собственные знания",
+  "reasoning": "коротко: на чём основан вывод — с какими конкретно примерами из списка сравнивал",
   "confidence": 0.0
 }}
 Если данных совсем мало — verdict "недостаточно данных", не выдумывай цифры.
@@ -898,14 +918,14 @@ def parse_gemini_json(text):
     return {"market_verdict": "недостаточно данных", "reasoning": "не удалось разобрать ответ", "visible_defects": []}
 
 
-def analyze_listing(item, photo_urls, stats, similar_examples, web_results, manual_notes, usd_rate, usage):
+def analyze_listing(item, photo_urls, similar_examples, web_results, manual_notes, usd_rate, usage):
     combo = pick_available_combo(usage)
     if not combo:
         return {"market_verdict": "недостаточно данных",
                 "reasoning": "дневной лимит Gemini исчерпан на всех сочетаниях ключ+модель, анализ отложен",
                 "visible_defects": []}
 
-    parts = [{"text": build_prompt(item, stats, similar_examples, web_results, manual_notes, usd_rate)}]
+    parts = [{"text": build_prompt(item, similar_examples, web_results, manual_notes, usd_rate)}]
     for url in photo_urls:
         try:
             img = requests.get(url, headers=HEADERS, timeout=15)
@@ -969,12 +989,10 @@ def selected(item, searches, mode):
     return any(matches_search(item, search) for search in searches)
 
 
-# ---------- Сборка списка источников для отображения (по факту, не по словам Gemini) ----------
+# ---------- Сборка списка источников ----------
 
-def build_data_sources(stats, similar_examples, manual_notes, web_results, item):
+def build_data_sources(similar_examples, manual_notes, web_results, item):
     sources = []
-    if stats:
-        sources.append(f"своя база цен ({stats['count']} похожих)")
     if similar_examples:
         sources.append(f"прошлые полные разборы похожих лотов ({len(similar_examples)})")
     if manual_notes:
@@ -999,6 +1017,7 @@ def main():
     mode = get_mode()
     usage = get_daily_usage(GEMINI_DAILY_FILE, [c["id"] for c in GEMINI_COMBOS])
     usd_rate = get_usd_tjs_rate()
+    min_profit = get_min_profit()
 
     try:
         listings, soup = fetch_listings()
@@ -1016,7 +1035,7 @@ def main():
     search_usage = get_search_usage()
     search_usage_str = ", ".join(f"{p['id']}: {search_usage.get(p['id'], 0)}/{p['limit']}" for p in SEARCH_PROVIDERS)
     print(f"Режим: {MODES[mode]}; поисков: {len(searches)}; объявлений: {len(listings)}; "
-          f"подписчиков: {len(subscribers)}; курс USD/TJS: {usd_rate}; "
+          f"подписчиков: {len(subscribers)}; мин. выгода: {min_profit} TJS; курс USD/TJS: {usd_rate}; "
           f"Gemini сегодня — {usage_str}; поиск в сети — {search_usage_str}")
 
     for item in listings:
@@ -1048,7 +1067,6 @@ def main():
                 item["estimated_customs_cost"] = estimate_customs_cost(item["price"], usd_rate)
 
             model_key = extract_model_key(item["title"])
-            stats = market_stats_for(model_key, item.get("condition"), item["id"])
             similar_examples = similar_full_analyses(model_key, item.get("condition"), item["id"])
             manual_notes = get_manual_notes(model_key)
 
@@ -1059,24 +1077,26 @@ def main():
                 query = f"{model_key} {memory_part}{condition_part} цена Таджикистан Somon"
                 web_results = web_search_lookup(query)
 
-            data_sources = build_data_sources(stats, similar_examples, manual_notes, web_results, item)
+            data_sources = build_data_sources(similar_examples, manual_notes, web_results, item)
 
-            analysis = analyze_listing(item, photo_urls, stats, similar_examples, web_results, manual_notes, usd_rate, usage)
+            analysis = analyze_listing(item, photo_urls, similar_examples, web_results, manual_notes, usd_rate, usage)
             verdict = analysis.get("market_verdict", "недостаточно данных")
 
             log_full_analysis(item, analysis, verdict, data_sources)
 
-            if verdict == "недооценено":
+            resale = analysis.get("estimated_resale_price")
+            total = analysis.get("estimated_total_cost")
+            profit = None
+            if isinstance(resale, (int, float)) and isinstance(total, (int, float)):
+                profit = round(resale - total)
+
+            passes_profit = profit is not None and profit >= min_profit
+
+            if verdict == "недооценено" and passes_profit:
                 defects = ", ".join(analysis.get("visible_defects", [])) or "не обнаружены"
                 repair = analysis.get("estimated_repair_cost")
-                total = analysis.get("estimated_total_cost")
-                resale = analysis.get("estimated_resale_price")
                 customs = item.get("estimated_customs_cost")
                 confidence = analysis.get("confidence")
-
-                profit = None
-                if isinstance(resale, (int, float)) and isinstance(total, (int, float)):
-                    profit = round(resale - total)
 
                 cost_lines = ""
                 if repair:
@@ -1087,8 +1107,7 @@ def main():
                     cost_lines += f"🧮 Итоговая цена (лот + расходы): {total} TJS\n"
                 if resale:
                     cost_lines += f"📈 Продать можно примерно за: {resale} TJS\n"
-                if profit is not None:
-                    cost_lines += f"💵 Примерная выгода: {profit} TJS\n"
+                cost_lines += f"💵 Примерная выгода: {profit} TJS\n"
                 if isinstance(confidence, (int, float)):
                     cost_lines += f"🎯 Уверенность Gemini: {round(confidence * 100)}%\n"
 
@@ -1105,7 +1124,10 @@ def main():
                 broadcast_telegram(subscribers, text)
                 entry["notified"] = True
             else:
-                log_rejected(item, analysis)
+                note = None
+                if verdict == "недооценено" and not passes_profit:
+                    note = f"Gemini счёл недооценённым, но выгода ({profit if profit is not None else 'не посчитана'} TJS) ниже порога {min_profit} TJS"
+                log_rejected(item, analysis, note=note)
 
             entry["photo_ok"] = True
             seen[item["id"]] = entry

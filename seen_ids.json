@@ -3272,15 +3272,21 @@
     "photo_ok": true
   },
   "79914256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true
   },
   "74613064": {
-    "logged": true
+    "logged": true,
+    "notified": true,
+    "photo_ok": true
   },
   "72121264": {
-    "logged": true
+    "logged": true,
+    "notified": true,
+    "photo_ok": true
   },
   "31215128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true
   }
 }

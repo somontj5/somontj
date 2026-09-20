@@ -83,8 +83,8 @@ CONDITION_RE = re.compile(r"\b(Новый|Б\s*/\s*у|Б\s*\.\s*у\.?|Восст
 NOISE_RE = re.compile(r"Еще\s*\d+\s*фото|VIP|IMEI\s*проверен", re.I)
 PRICE_RE = re.compile(r"(\d[\d\s]{2,})\s*[cс]\.")
 DESC_RE = re.compile(r"Описание\s*(.*?)\s*(?:Показать телефон|Начать чат|Пожаловаться|$)", re.S)
-IMEI_NOT_REGISTERED_RE = re.compile(r"IMEI[^.]{0,40}не\s+внес", re.I)
-IMEI_REGISTERED_RE = re.compile(r"IMEI[^.]{0,40}(?<!не\s)внес", re.I)
+IMEI_NOT_REGISTERED_RE = re.compile(r"IMEI[^.]{0,60}(?:не\s+внес|не\s+в\s+бел\w*\s+списк)", re.I)
+IMEI_REGISTERED_RE = re.compile(r"IMEI[^.]{0,60}(?:в\s+бел\w*\s+списк|(?<!не\s)внес)", re.I)
 MODES = {"all": "все объявления категории", "used": "только Б/у", "params": "только заданные параметры"}
 
 

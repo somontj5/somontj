@@ -4392,5 +4392,14 @@
     "price": 1700,
     "condition": "Б/у",
     "model_key": "apple iphone 11"
+  },
+  "15932017": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17172159_samsung-galaxy-a3-2017-duos/",
+    "title": "Samsung galaxy a3 2017 duos",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy a3"
   }
 }

@@ -4410,5 +4410,15 @@
     "price": 5400,
     "condition": "Б/у",
     "model_key": "apple iphone 13 pro"
+  },
+  "17172192": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17172192_poko/",
+    "title": "Xiaomi Poco M7",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "xiaomi poco m7"
   }
 }

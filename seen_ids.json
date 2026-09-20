@@ -4401,5 +4401,14 @@
     "price": 750,
     "condition": "Б/у",
     "model_key": "samsung galaxy a3"
+  },
+  "16913256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17172169_apple-iphone-13-pro-max-256-gb-alpine-green/",
+    "title": "Apple iPhone 13 Pro Max, 256 gb, Alpine Green",
+    "price": 5400,
+    "condition": "Б/у",
+    "model_key": "apple iphone 13 pro"
   }
 }

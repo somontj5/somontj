@@ -4027,5 +4027,15 @@
     "price": 1999,
     "condition": "Б/у",
     "model_key": "apple iphone 11 pro"
+  },
+  "17115301": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17171153_samsung-a01/",
+    "title": "Samsung Galaxy A01",
+    "price": 350,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy a01"
   }
 }

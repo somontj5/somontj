@@ -3709,7 +3709,8 @@
     "title": "Apple iPhone Xr, 128 gb, Yellow",
     "price": 999,
     "condition": "Б/у",
-    "model_key": "apple iphone xr"
+    "model_key": "apple iphone xr",
+    "sold_checked": true
   },
   "69868515": {
     "logged": true,
@@ -3718,7 +3719,8 @@
     "title": "Nokia 515",
     "price": 600,
     "condition": "Б/у",
-    "model_key": "nokia"
+    "model_key": "nokia",
+    "sold_checked": true
   },
   "86214128": {
     "logged": true
@@ -3824,5 +3826,32 @@
     "price": 750,
     "condition": "Б/у",
     "model_key": "xiaomi redmi a3"
+  },
+  "17029264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170292_apple-iphone-x-64-gb-silver/",
+    "title": "Apple iPhone X, 64 gb, Silver",
+    "price": 899,
+    "condition": "Б/у",
+    "model_key": "apple iphone x"
+  },
+  "17170322": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170322_samsung/",
+    "title": "Samsung Galaxy A52",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy a52"
+  },
+  "70368732": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170368_apple-iphone-7-32-gb/",
+    "title": "Apple iPhone 7, 32 gb",
+    "price": 399,
+    "condition": "Б/у",
+    "model_key": "apple iphone 7"
   }
 }

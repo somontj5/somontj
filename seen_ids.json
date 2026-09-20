@@ -4363,5 +4363,14 @@
     "price": 2500,
     "condition": "Б/у",
     "model_key": "samsung galaxy a55 5g"
+  },
+  "82212256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17169788_samsung-galaxy-s22-ultra-12-256gb/",
+    "title": "Samsung Galaxy S22 Ultra 12/256Gb",
+    "price": 3540,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s22 ultra"
   }
 }

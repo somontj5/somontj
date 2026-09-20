@@ -3772,7 +3772,8 @@
     "title": "Apple iPhone 11 Pro, 256 gb, Gold",
     "price": 650,
     "condition": "Б/у",
-    "model_key": "apple iphone 11 pro"
+    "model_key": "apple iphone 11 pro",
+    "sold_checked": true
   },
   "06115256": {
     "logged": true,
@@ -3782,7 +3783,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, White Titanium",
     "price": 5100,
     "condition": "Б/у",
-    "model_key": "apple iphone 15 pro"
+    "model_key": "apple iphone 15 pro",
+    "sold_checked": true
   },
   "17034551": {
     "logged": true,
@@ -3792,7 +3794,8 @@
     "title": "Samsung Galaxy A51",
     "price": 399,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a51"
+    "model_key": "samsung galaxy a51",
+    "sold_checked": true
   },
   "17034614": {
     "logged": true,
@@ -3802,7 +3805,8 @@
     "title": "Samsung galaxy A14",
     "price": 889,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a14"
+    "model_key": "samsung galaxy a14",
+    "sold_checked": true
   },
   "17033664": {
     "logged": true,
@@ -3830,7 +3834,8 @@
     "title": "Apple iPhone 14 Pro, 128 gb, Deep Purple",
     "price": 4200,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "17170271": {
     "logged": true,

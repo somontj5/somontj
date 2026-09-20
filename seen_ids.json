@@ -3989,5 +3989,15 @@
     "condition": "Б/у",
     "model_key": "xiaomi mi 15 ultra",
     "sold_checked": true
+  },
+  "17085014": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170850_xiaomi-redmi-note-14/",
+    "title": "Xiaomi Redmi Note 14",
+    "price": 1888,
+    "condition": "Б/у",
+    "model_key": "xiaomi redmi note 14"
   }
 }

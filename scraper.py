@@ -18,6 +18,8 @@ GEMINI_DAILY_LIMIT_PER_COMBO = int(os.environ.get("GEMINI_DAILY_LIMIT_PER_COMBO"
 TAVILY_MONTHLY_LIMIT_PER_KEY = int(os.environ.get("TAVILY_MONTHLY_LIMIT_PER_KEY", "950"))
 GOOGLE_SEARCH_DAILY_LIMIT_PER_KEY = int(os.environ.get("GOOGLE_SEARCH_DAILY_LIMIT_PER_KEY", "90"))
 FALLBACK_USD_TJS_RATE = float(os.environ.get("FALLBACK_USD_TJS_RATE", "10.5"))
+ALERT_GAP_MINUTES = int(os.environ.get("ALERT_GAP_MINUTES", "40"))
+ALERT_FAILURE_THRESHOLD = int(os.environ.get("ALERT_FAILURE_THRESHOLD", "3"))
 
 SEEN_FILE = "seen_ids.json"
 PRICE_HISTORY_FILE = "price_history.jsonl"
@@ -29,9 +31,10 @@ SUBSCRIBERS_FILE = "subscribers.json"
 GEMINI_DAILY_FILE = "gemini_daily_usage.json"
 SEARCH_USAGE_FILE = "search_provider_usage.json"
 EXCHANGE_RATE_FILE = "exchange_rate.json"
+HEALTH_FILE = "health_status.json"
 
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
-TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
+TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]  # владелец — получает технические тревоги
 
 GEMINI_KEYS = []
 if os.environ.get("GEMINI_API_KEY"):
@@ -135,7 +138,7 @@ def log_market_point(item):
         }, ensure_ascii=False) + "\n")
 
 
-def log_full_analysis(item, analysis, verdict):
+def log_full_analysis(item, analysis, verdict, data_sources):
     with open(PRICE_HISTORY_FILE, "a", encoding="utf-8") as f:
         f.write(json.dumps({
             "type": "full_analysis", "id": item["id"], "title": item["title"],
@@ -146,11 +149,13 @@ def log_full_analysis(item, analysis, verdict):
             "positive_features": analysis.get("positive_features", []),
             "overall_visual_condition": analysis.get("overall_visual_condition"),
             "market_verdict": verdict,
+            "confidence": analysis.get("confidence"),
             "estimated_repair_cost": analysis.get("estimated_repair_cost"),
             "estimated_customs_cost": item.get("estimated_customs_cost"),
             "imei_registered": item.get("imei_registered"),
             "estimated_total_cost": analysis.get("estimated_total_cost"),
             "estimated_resale_price": analysis.get("estimated_resale_price"),
+            "data_sources": data_sources,
             "used_web_search": analysis.get("used_web_search", False),
             "url": item["url"], "collected_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
         }, ensure_ascii=False) + "\n")
@@ -239,7 +244,7 @@ def similar_full_analyses(model_key, condition, exclude_id, limit=SIMILAR_EXAMPL
     return matches[:limit]
 
 
-# ---------- Курс USD/TJS — проверяется раз в день, кэшируется ----------
+# ---------- Курс USD/TJS ----------
 
 def get_usd_tjs_rate():
     cached = load_json(EXCHANGE_RATE_FILE, {})
@@ -264,8 +269,6 @@ def get_usd_tjs_rate():
 
 
 def estimate_customs_cost(price_tjs, usd_rate):
-    """Растаможка по формуле пользователя: пошлина 20% + НДС 14% от таможенной стоимости,
-    сбор $10 (если цена < $100 — сбор не берётся), услуги оформления ~50 сомони."""
     if not price_tjs or not usd_rate:
         return None
     price_usd = price_tjs / usd_rate
@@ -385,12 +388,10 @@ def web_search_lookup(query):
     provider = pick_search_provider(usage)
     if not provider:
         return None
-
     if provider["type"] == "tavily":
         result = tavily_search(provider["key"], query)
     else:
         result = google_custom_search(provider["key"], provider["cx"], query)
-
     usage[provider["id"]] += 1
     save_search_usage(usage)
     return result
@@ -437,6 +438,48 @@ def broadcast_telegram(subscribers, text):
     for chat_id in subscribers:
         send_telegram(chat_id, text)
         time.sleep(0.3)
+
+
+def alert_owner(text):
+    """Технические тревоги — только владельцу, не всем подписчикам."""
+    send_telegram(TELEGRAM_CHAT_ID, f"⚠️ {text}")
+
+
+# ---------- Самопроверка здоровья бота ----------
+
+def check_health():
+    health = load_json(HEALTH_FILE, {})
+    now = time.time()
+
+    last_run_at = health.get("last_run_at")
+    if last_run_at:
+        gap_minutes = (now - last_run_at) / 60
+        if gap_minutes > ALERT_GAP_MINUTES:
+            alert_owner(
+                f"Бот не запускался {round(gap_minutes)} минут (ожидалось не больше {ALERT_GAP_MINUTES}). "
+                f"Проверь планировщик cron-job.org и токен доступа к GitHub API."
+            )
+
+    health["last_run_at"] = now
+    with open(HEALTH_FILE, "w", encoding="utf-8") as f:
+        json.dump(health, f)
+    return health
+
+
+def report_fetch_result(health, success):
+    if success:
+        if health.get("consecutive_failures", 0) > 0:
+            alert_owner("Somon.tj снова загружается нормально — проблема, о которой я писал раньше, ушла.")
+        health["consecutive_failures"] = 0
+    else:
+        health["consecutive_failures"] = health.get("consecutive_failures", 0) + 1
+        if health["consecutive_failures"] == ALERT_FAILURE_THRESHOLD:
+            alert_owner(
+                f"Не удаётся получить объявления с Somon.tj уже {ALERT_FAILURE_THRESHOLD} прогона подряд. "
+                f"Возможно, сайт изменил структуру страницы или заблокировал доступ — стоит проверить вручную."
+            )
+    with open(HEALTH_FILE, "w", encoding="utf-8") as f:
+        json.dump(health, f)
 
 
 # ---------- Красивый HTML-отчёт по отклонённым лотам ----------
@@ -594,6 +637,20 @@ def check_telegram_commands(searches, subscribers):
             html, count = build_rejected_report_html()
             send_telegram(chat_id, f"📋 Всего отклонённых лотов: {count}. Отправляю файл...")
             send_telegram_document(chat_id, "rejected_lots.html", html, caption=f"Отклонённые лоты: {count}")
+        elif command == "/price":
+            query = argument.strip()
+            if not query:
+                send_telegram(chat_id, "Напишите модель, например: /price iPhone 13")
+            else:
+                fake_title = query
+                model_key = extract_model_key(fake_title) or query.lower().strip()
+                stats = market_stats_for(model_key, None, exclude_id=None)
+                if stats:
+                    send_telegram(chat_id,
+                        f"💰 {query}\nПо базе ({stats['count']} похожих объявлений):\n"
+                        f"Минимальная цена: {stats['min']} TJS\nМедианная цена: {stats['median']} TJS")
+                else:
+                    send_telegram(chat_id, f"По «{query}» в базе пока меньше 3 похожих объявлений — рано считать статистику.")
         elif command == "/stats":
             gem_usage = get_daily_usage(GEMINI_DAILY_FILE, [c["id"] for c in GEMINI_COMBOS])
             search_usage = get_search_usage()
@@ -609,6 +666,7 @@ def check_telegram_commands(searches, subscribers):
             send_telegram(chat_id, "Команды:\n/all /used /params — режим поиска\n"
                                     "/add Название | слова | макс_цена | мин_память\n"
                                     "/del Название\n/list — список поисков\n"
+                                    "/price Модель — цена по нашей базе прямо сейчас\n"
                                     "/dbadd текст — добавить что угодно в базу вручную\n"
                                     "/rejected — файл со всеми отклонёнными лотами\n"
                                     "/stats — расход лимитов и размер базы\n"
@@ -761,14 +819,15 @@ def format_manual_notes(notes):
 
 def build_prompt(item, stats, similar_examples, web_results, manual_notes, usd_rate):
     stats_text = (
-        f"Числовая сводка по нашей базе: минимальная цена {stats['min']} TJS, "
+        f"Справочная числовая сводка по нашей базе (это только контекст, не готовый вывод — "
+        f"реши сам, что это значит): минимальная цена {stats['min']} TJS, "
         f"медианная {stats['median']} TJS, всего похожих объявлений {stats['count']}."
         if stats else "Числовых данных по нашей базе пока недостаточно."
     )
     examples_text = format_similar_examples(similar_examples)
     web_text = (
         f"Результаты веб-поиска по этой модели (реальные страницы из интернета):\n{web_results}"
-        if web_results else "Веб-поиск не дал результатов в этот раз — суди по своей базе и знаниям."
+        if web_results else "Веб-поиск не дал результатов в этот раз."
     )
     manual_text = format_manual_notes(manual_notes)
 
@@ -776,15 +835,17 @@ def build_prompt(item, stats, similar_examples, web_results, manual_notes, usd_r
     if item.get("imei_registered") is False:
         customs_text = (
             f"\nВАЖНО: IMEI этого телефона НЕ зарегистрирован в Таджикистане. Точный расчёт растаможки "
-            f"(пошлина 20% + НДС 14% от таможенной стоимости + сбор + услуги оформления, курс {usd_rate} TJS "
-            f"за $1) уже посчитан программой: примерно {item.get('estimated_customs_cost')} TJS. "
-            f"Обязательно прибавь эту сумму к итоговой стоимости (estimated_total_cost), помимо ремонта."
+            f"по установленной формуле (пошлина 20% + НДС 14% от таможенной стоимости + сбор + услуги "
+            f"оформления, курс {usd_rate} TJS за $1) уже посчитан программой: примерно "
+            f"{item.get('estimated_customs_cost')} TJS. Обязательно прибавь эту сумму к итоговой стоимости."
         )
     elif item.get("imei_registered") is True:
         customs_text = "\nIMEI уже зарегистрирован — дополнительных таможенных расходов не будет."
 
     return f"""
 Ты — эксперт по оценке б/у смартфонов для перепродажи в Таджикистане. Изучи текст объявления и фото.
+Используй не только присланные данные ниже, но и свои собственные знания о рынке смартфонов, если они
+уместны — присланные данные это подсказки для проверки, а не единственный источник истины.
 
 Объявление: {item['title']}
 Цена: {item['price']} TJS
@@ -800,13 +861,12 @@ def build_prompt(item, stats, similar_examples, web_results, manual_notes, usd_r
 
 {web_text}
 
-Сравни дефекты ЭТОГО лота с дефектами похожих лотов из нашей базы выше. Если дефектов меньше или
-они мельче при той же или более низкой цене — сигнал "недооценено". Если больше/серьёзнее — наоборот.
-
-Посчитай: цена лота + примерная стоимость ремонта (если есть дефекты) + растаможка (если указана выше)
-= итоговая цена. Сравни итоговую цену с реальной рыночной ценой исправного телефона такой модели
-(база, заметки, веб-поиск выше). Считай "недооценено" только если после всех расходов телефон реально
-можно продать дороже итоговой цены с заметным запасом, а не на 100-200 TJS.
+Сравни дефекты ЭТОГО лота с дефектами похожих лотов из нашей базы. Сам реши и посчитай:
+стоимость возможного ремонта, итоговую цену (лот + ремонт + растаможка, если применима), и по какой
+цене реально продать телефон после этого — используя все доступные тебе данные и здравый смысл.
+Считай "недооценено" только если после всех расходов телефон реально можно продать дороже итоговой
+цены с заметным запасом, а не на 100-200 TJS. Честно оцени свою уверенность в диапазоне 0.0-1.0 —
+если данных мало или они противоречивы, уверенность должна быть низкой, не завышай её искусственно.
 
 Верни ТОЛЬКО JSON без markdown, строго такой формы:
 {{
@@ -817,10 +877,10 @@ def build_prompt(item, stats, similar_examples, web_results, manual_notes, usd_r
   "estimated_total_cost": null,
   "estimated_resale_price": null,
   "market_verdict": "недооценено|справедливая цена|переоценено|недостаточно данных",
-  "reasoning": "коротко: что дал веб-поиск/заметки (если были), как считал ремонт, растаможку и итоговую цену",
+  "reasoning": "коротко: на чём основан вывод — база, заметки, поиск, собственные знания",
   "confidence": 0.0
 }}
-estimated_repair_cost — только если есть дефекты, иначе null. estimated_total_cost = цена лота + ремонт + растаможка (если применимо). estimated_resale_price — по какой цене реально продать после всех расходов. Если данных совсем мало — verdict "недостаточно данных", не выдумывай цифры.
+Если данных совсем мало — verdict "недостаточно данных", не выдумывай цифры.
 """.strip()
 
 
@@ -909,9 +969,30 @@ def selected(item, searches, mode):
     return any(matches_search(item, search) for search in searches)
 
 
+# ---------- Сборка списка источников для отображения (по факту, не по словам Gemini) ----------
+
+def build_data_sources(stats, similar_examples, manual_notes, web_results, item):
+    sources = []
+    if stats:
+        sources.append(f"своя база цен ({stats['count']} похожих)")
+    if similar_examples:
+        sources.append(f"прошлые полные разборы похожих лотов ({len(similar_examples)})")
+    if manual_notes:
+        sources.append(f"ваши заметки вручную ({len(manual_notes)})")
+    if web_results:
+        sources.append("веб-поиск")
+    if item.get("imei_registered") is False:
+        sources.append("расчёт растаможки по формуле")
+    if not sources:
+        sources.append("только фото и текст объявления, без доп. данных")
+    return sources
+
+
 # ---------- Главная логика ----------
 
 def main():
+    health = check_health()
+
     seen = load_json(SEEN_FILE, {})
     subscribers = load_subscribers()
     searches, subscribers = check_telegram_commands(load_json(SEARCHES_FILE, []), subscribers)
@@ -921,8 +1002,10 @@ def main():
 
     try:
         listings, soup = fetch_listings()
+        report_fetch_result(health, success=True)
     except Exception as e:
         print("Не удалось загрузить Somon.tj:", e)
+        report_fetch_result(health, success=False)
         return
 
     if not listings:
@@ -976,10 +1059,12 @@ def main():
                 query = f"{model_key} {memory_part}{condition_part} цена Таджикистан Somon"
                 web_results = web_search_lookup(query)
 
+            data_sources = build_data_sources(stats, similar_examples, manual_notes, web_results, item)
+
             analysis = analyze_listing(item, photo_urls, stats, similar_examples, web_results, manual_notes, usd_rate, usage)
             verdict = analysis.get("market_verdict", "недостаточно данных")
 
-            log_full_analysis(item, analysis, verdict)
+            log_full_analysis(item, analysis, verdict, data_sources)
 
             if verdict == "недооценено":
                 defects = ", ".join(analysis.get("visible_defects", [])) or "не обнаружены"
@@ -987,6 +1072,11 @@ def main():
                 total = analysis.get("estimated_total_cost")
                 resale = analysis.get("estimated_resale_price")
                 customs = item.get("estimated_customs_cost")
+                confidence = analysis.get("confidence")
+
+                profit = None
+                if isinstance(resale, (int, float)) and isinstance(total, (int, float)):
+                    profit = round(resale - total)
 
                 cost_lines = ""
                 if repair:
@@ -997,6 +1087,10 @@ def main():
                     cost_lines += f"🧮 Итоговая цена (лот + расходы): {total} TJS\n"
                 if resale:
                     cost_lines += f"📈 Продать можно примерно за: {resale} TJS\n"
+                if profit is not None:
+                    cost_lines += f"💵 Примерная выгода: {profit} TJS\n"
+                if isinstance(confidence, (int, float)):
+                    cost_lines += f"🎯 Уверенность Gemini: {round(confidence * 100)}%\n"
 
                 text = (
                     f"🔥 Потенциально выгодное объявление\n\n{item['title']}\n"
@@ -1004,6 +1098,7 @@ def main():
                     f"📊 Визуальное состояние: {analysis.get('overall_visual_condition', 'неизвестно')}\n"
                     f"🛠 Дефекты: {defects}\n"
                     f"{cost_lines}"
+                    f"📚 На основе: {', '.join(data_sources)}\n"
                     f"💡 {analysis.get('reasoning', '')}\n"
                     f"🔗 {item['url']}"
                 )

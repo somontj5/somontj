@@ -17,6 +17,7 @@ SIMILAR_EXAMPLES_LIMIT = 5
 GEMINI_DAILY_LIMIT_PER_COMBO = int(os.environ.get("GEMINI_DAILY_LIMIT_PER_COMBO", "450"))
 TAVILY_MONTHLY_LIMIT_PER_KEY = int(os.environ.get("TAVILY_MONTHLY_LIMIT_PER_KEY", "950"))
 GOOGLE_SEARCH_DAILY_LIMIT_PER_KEY = int(os.environ.get("GOOGLE_SEARCH_DAILY_LIMIT_PER_KEY", "90"))
+FALLBACK_USD_TJS_RATE = float(os.environ.get("FALLBACK_USD_TJS_RATE", "10.5"))
 
 SEEN_FILE = "seen_ids.json"
 PRICE_HISTORY_FILE = "price_history.jsonl"
@@ -27,6 +28,7 @@ MODE_FILE = "search_mode.json"
 SUBSCRIBERS_FILE = "subscribers.json"
 GEMINI_DAILY_FILE = "gemini_daily_usage.json"
 SEARCH_USAGE_FILE = "search_provider_usage.json"
+EXCHANGE_RATE_FILE = "exchange_rate.json"
 
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
@@ -46,8 +48,6 @@ GEMINI_COMBOS = [
 
 GOOGLE_SEARCH_CX = os.environ.get("GOOGLE_SEARCH_CX", "")
 
-# Пять независимых источников поиска: сначала все Tavily (без cx, помесячный лимит),
-# потом Google Custom Search (нужен общий cx, дневной лимит). Порядок = приоритет.
 SEARCH_PROVIDERS = []
 for i in range(1, 4):
     key = os.environ.get(f"TAVILY_API_KEY{'' if i == 1 else '_' + str(i)}", "")
@@ -83,6 +83,8 @@ CONDITION_RE = re.compile(r"\b(Новый|Б\s*/\s*у|Б\s*\.\s*у\.?|Восст
 NOISE_RE = re.compile(r"Еще\s*\d+\s*фото|VIP|IMEI\s*проверен", re.I)
 PRICE_RE = re.compile(r"(\d[\d\s]{2,})\s*[cс]\.")
 DESC_RE = re.compile(r"Описание\s*(.*?)\s*(?:Показать телефон|Начать чат|Пожаловаться|$)", re.S)
+IMEI_NOT_REGISTERED_RE = re.compile(r"IMEI[^.]{0,40}не\s+внес", re.I)
+IMEI_REGISTERED_RE = re.compile(r"IMEI[^.]{0,40}(?<!не\s)внес", re.I)
 MODES = {"all": "все объявления категории", "used": "только Б/у", "params": "только заданные параметры"}
 
 
@@ -145,6 +147,8 @@ def log_full_analysis(item, analysis, verdict):
             "overall_visual_condition": analysis.get("overall_visual_condition"),
             "market_verdict": verdict,
             "estimated_repair_cost": analysis.get("estimated_repair_cost"),
+            "estimated_customs_cost": item.get("estimated_customs_cost"),
+            "imei_registered": item.get("imei_registered"),
             "estimated_total_cost": analysis.get("estimated_total_cost"),
             "estimated_resale_price": analysis.get("estimated_resale_price"),
             "used_web_search": analysis.get("used_web_search", False),
@@ -161,6 +165,35 @@ def log_rejected(item, analysis):
             "estimated_repair_cost": analysis.get("estimated_repair_cost"),
             "checked_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
         }, ensure_ascii=False) + "\n")
+
+
+def log_manual_note(text):
+    with open(PRICE_HISTORY_FILE, "a", encoding="utf-8") as f:
+        f.write(json.dumps({
+            "type": "manual_note",
+            "text": text,
+            "added_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
+        }, ensure_ascii=False) + "\n")
+
+
+def get_manual_notes(model_key, limit=5):
+    if not model_key or not os.path.exists(PRICE_HISTORY_FILE):
+        return []
+    words = model_key.split()
+    notes = []
+    with open(PRICE_HISTORY_FILE, "r", encoding="utf-8") as f:
+        for line in f:
+            try:
+                rec = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            if rec.get("type") != "manual_note":
+                continue
+            text_low = rec.get("text", "").lower()
+            if all(w in text_low for w in words if len(w) > 2):
+                notes.append(rec)
+    notes.sort(key=lambda r: r.get("added_at", ""), reverse=True)
+    return notes[:limit]
 
 
 def market_stats_for(model_key, condition, exclude_id):
@@ -206,6 +239,52 @@ def similar_full_analyses(model_key, condition, exclude_id, limit=SIMILAR_EXAMPL
     return matches[:limit]
 
 
+# ---------- Курс USD/TJS — проверяется раз в день, кэшируется ----------
+
+def get_usd_tjs_rate():
+    cached = load_json(EXCHANGE_RATE_FILE, {})
+    today = time.strftime("%Y-%m-%d")
+    if cached.get("date") == today and cached.get("rate"):
+        return cached["rate"]
+
+    try:
+        resp = requests.get("https://open.er-api.com/v6/latest/USD", timeout=15)
+        resp.raise_for_status()
+        data = resp.json()
+        rate = data.get("rates", {}).get("TJS")
+        if rate:
+            with open(EXCHANGE_RATE_FILE, "w", encoding="utf-8") as f:
+                json.dump({"date": today, "rate": rate}, f)
+            return rate
+    except Exception as e:
+        print("Не удалось получить курс USD/TJS:", e)
+
+    print(f"Использую резервный курс: {FALLBACK_USD_TJS_RATE}")
+    return cached.get("rate", FALLBACK_USD_TJS_RATE)
+
+
+def estimate_customs_cost(price_tjs, usd_rate):
+    """Растаможка по формуле пользователя: пошлина 20% + НДС 14% от таможенной стоимости,
+    сбор $10 (если цена < $100 — сбор не берётся), услуги оформления ~50 сомони."""
+    if not price_tjs or not usd_rate:
+        return None
+    price_usd = price_tjs / usd_rate
+    duty_usd = price_usd * 0.20
+    vat_usd = price_usd * 0.14
+    fee_usd = 0 if price_usd < 100 else 10
+    broker_tjs = 50
+    total_tjs = (price_usd + duty_usd + vat_usd + fee_usd) * usd_rate + broker_tjs
+    return round(total_tjs)
+
+
+def detect_imei_status(full_text):
+    if IMEI_NOT_REGISTERED_RE.search(full_text):
+        return False
+    if IMEI_REGISTERED_RE.search(full_text):
+        return True
+    return None
+
+
 # ---------- Дневные/месячные квоты Gemini ----------
 
 def get_daily_usage(path, keys):
@@ -230,7 +309,7 @@ def pick_available_combo(usage):
     return None
 
 
-# ---------- Поиск: Tavily + Google, с раздельным учётом по каждому провайдеру ----------
+# ---------- Поиск: Tavily + Google ----------
 
 def get_search_usage():
     data = load_json(SEARCH_USAGE_FILE, {})
@@ -317,7 +396,7 @@ def web_search_lookup(query):
     return result
 
 
-# ---------- Telegram: подписчики и отправка ----------
+# ---------- Telegram: подписчики, отправка текста и файлов ----------
 
 def load_subscribers():
     subs = load_json(SUBSCRIBERS_FILE, None)
@@ -342,10 +421,78 @@ def send_telegram(chat_id, text):
         print("Не удалось отправить в Telegram:", chat_id, e)
 
 
+def send_telegram_document(chat_id, filename, content_str, caption=""):
+    try:
+        files = {"document": (filename, content_str.encode("utf-8"))}
+        data = {"chat_id": chat_id, "caption": caption[:1024]}
+        resp = requests.post(f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendDocument",
+                              data=data, files=files, timeout=30)
+        if not resp.ok:
+            print("Ошибка отправки файла в Telegram:", chat_id, resp.status_code, resp.text)
+    except Exception as e:
+        print("Не удалось отправить файл в Telegram:", chat_id, e)
+
+
 def broadcast_telegram(subscribers, text):
     for chat_id in subscribers:
         send_telegram(chat_id, text)
         time.sleep(0.3)
+
+
+# ---------- Красивый HTML-отчёт по отклонённым лотам ----------
+
+def build_rejected_report_html():
+    rows = []
+    if os.path.exists(REJECTED_FILE):
+        with open(REJECTED_FILE, "r", encoding="utf-8") as f:
+            for line in f:
+                try:
+                    rows.append(json.loads(line))
+                except json.JSONDecodeError:
+                    continue
+    rows.sort(key=lambda r: r.get("checked_at", ""), reverse=True)
+
+    verdict_colors = {
+        "справедливая цена": "#4a90d9",
+        "переоценено": "#d94a4a",
+        "недостаточно данных": "#999999",
+    }
+
+    cards = []
+    for r in rows:
+        color = verdict_colors.get(r.get("verdict"), "#777777")
+        repair = r.get("estimated_repair_cost")
+        repair_line = f"<div>🔧 Оценка ремонта: {repair} TJS</div>" if repair else ""
+        cards.append(f"""
+        <div class="card">
+          <div class="title">{r.get('title', '—')}</div>
+          <div class="badge" style="background:{color}">{r.get('verdict', '—')}</div>
+          <div>💰 Цена: {r.get('price', '—')} TJS</div>
+          {repair_line}
+          <div class="reason">{r.get('reasoning', '')}</div>
+          <div class="meta">🕒 {r.get('checked_at', '')} · <a href="{r.get('url', '#')}">открыть объявление</a></div>
+        </div>
+        """)
+
+    html = f"""<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8"><title>Отклонённые лоты</title>
+<style>
+  body {{ font-family: -apple-system, Arial, sans-serif; background:#f4f4f4; margin:0; padding:16px; }}
+  h1 {{ font-size: 20px; }}
+  .summary {{ color:#555; margin-bottom: 20px; }}
+  .card {{ background:#fff; border-radius:12px; padding:14px 16px; margin-bottom:12px; box-shadow:0 1px 3px rgba(0,0,0,0.1); }}
+  .title {{ font-weight:600; font-size:15px; margin-bottom:6px; }}
+  .badge {{ display:inline-block; color:#fff; font-size:12px; padding:3px 10px; border-radius:20px; margin-bottom:8px; }}
+  .reason {{ color:#444; font-size:14px; margin-top:6px; }}
+  .meta {{ color:#888; font-size:12px; margin-top:8px; }}
+  a {{ color:#4a90d9; }}
+</style></head>
+<body>
+  <h1>📋 Отклонённые лоты</h1>
+  <div class="summary">Всего в списке: <b>{len(rows)}</b></div>
+  {''.join(cards) if cards else '<p>Пока пусто.</p>'}
+</body></html>"""
+    return html, len(rows)
 
 
 # ---------- Режим и команды ----------
@@ -436,10 +583,35 @@ def check_telegram_commands(searches, subscribers):
                 subscribers = [s for s in subscribers if s != chat_id]
                 subs_changed = True
                 send_telegram(chat_id, "🔕 Вы отписаны от уведомлений.")
+        elif command == "/dbadd":
+            note = argument.strip()
+            if note:
+                log_manual_note(note)
+                send_telegram(chat_id, "✅ Запись добавлена в базу — Gemini будет учитывать её при похожих разборах.")
+            else:
+                send_telegram(chat_id, "Напишите текст после команды, например:\n/dbadd iPhone 13 128GB, замена экрана ~350 TJS, батарея ~150 TJS")
+        elif command == "/rejected":
+            html, count = build_rejected_report_html()
+            send_telegram(chat_id, f"📋 Всего отклонённых лотов: {count}. Отправляю файл...")
+            send_telegram_document(chat_id, "rejected_lots.html", html, caption=f"Отклонённые лоты: {count}")
+        elif command == "/stats":
+            gem_usage = get_daily_usage(GEMINI_DAILY_FILE, [c["id"] for c in GEMINI_COMBOS])
+            search_usage = get_search_usage()
+            db_count = sum(1 for _ in open(PRICE_HISTORY_FILE, encoding="utf-8")) if os.path.exists(PRICE_HISTORY_FILE) else 0
+            rej_count = sum(1 for _ in open(REJECTED_FILE, encoding="utf-8")) if os.path.exists(REJECTED_FILE) else 0
+            lines = ["📊 Статистика", "", "Gemini сегодня:"]
+            lines += [f"  {c['id']}: {gem_usage.get(c['id'], 0)}/{GEMINI_DAILY_LIMIT_PER_COMBO}" for c in GEMINI_COMBOS]
+            lines += ["", "Поиск в сети:"]
+            lines += [f"  {p['id']}: {search_usage.get(p['id'], 0)}/{p['limit']} ({'мес' if p['period']=='month' else 'день'})" for p in SEARCH_PROVIDERS]
+            lines += ["", f"📁 Записей в базе: {db_count}", f"🚫 Отклонённых лотов: {rej_count}", f"👥 Подписчиков: {len(subscribers)}"]
+            send_telegram(chat_id, "\n".join(lines))
         elif command == "/help":
             send_telegram(chat_id, "Команды:\n/all /used /params — режим поиска\n"
                                     "/add Название | слова | макс_цена | мин_память\n"
                                     "/del Название\n/list — список поисков\n"
+                                    "/dbadd текст — добавить что угодно в базу вручную\n"
+                                    "/rejected — файл со всеми отклонёнными лотами\n"
+                                    "/stats — расход лимитов и размер базы\n"
                                     "/subscribers — сколько подписчиков\n/stop — отписаться")
 
     if searches_changed:
@@ -544,6 +716,7 @@ def fetch_detail(ad_url):
     memory_raw = labeled_value(soup, ["Встроенная память", "Память"])
     memory_match = re.search(r"(\d+)\s*(?:gb|гб)", memory_raw or "", re.I)
     memory = int(memory_match.group(1)) if memory_match else None
+    imei_registered = detect_imei_status(full_text)
 
     desc_match = DESC_RE.search(full_text)
     description = desc_match.group(1).strip() if desc_match else full_text[:500]
@@ -555,14 +728,14 @@ def fetch_detail(ad_url):
             seen.add(src)
             photo_urls.append(src)
 
-    return condition, memory, description, photo_urls[:4]
+    return condition, memory, description, photo_urls[:4], imei_registered
 
 
 # ---------- Gemini: анализ ----------
 
 def format_similar_examples(examples):
     if not examples:
-        return "Похожих проверенных лотов этой модели в нашей базе пока нет."
+        return "Похожих проверенных лотов этой модели из нашей базы пока нет."
     lines = ["Похожие проверенные лоты этой модели из нашей базы (от новых к старым):"]
     for i, rec in enumerate(examples, 1):
         defects = ", ".join(rec.get("visible_defects") or []) or "не обнаружены"
@@ -577,7 +750,16 @@ def format_similar_examples(examples):
     return "\n".join(lines)
 
 
-def build_prompt(item, stats, similar_examples, web_results):
+def format_manual_notes(notes):
+    if not notes:
+        return ""
+    lines = ["Заметки, добавленные вручную владельцем бота (доверяй им как надёжному источнику):"]
+    for n in notes:
+        lines.append(f"- {n['text']}")
+    return "\n".join(lines)
+
+
+def build_prompt(item, stats, similar_examples, web_results, manual_notes, usd_rate):
     stats_text = (
         f"Числовая сводка по нашей базе: минимальная цена {stats['min']} TJS, "
         f"медианная {stats['median']} TJS, всего похожих объявлений {stats['count']}."
@@ -588,6 +770,18 @@ def build_prompt(item, stats, similar_examples, web_results):
         f"Результаты веб-поиска по этой модели (реальные страницы из интернета):\n{web_results}"
         if web_results else "Веб-поиск не дал результатов в этот раз — суди по своей базе и знаниям."
     )
+    manual_text = format_manual_notes(manual_notes)
+
+    customs_text = ""
+    if item.get("imei_registered") is False:
+        customs_text = (
+            f"\nВАЖНО: IMEI этого телефона НЕ зарегистрирован в Таджикистане. Точный расчёт растаможки "
+            f"(пошлина 20% + НДС 14% от таможенной стоимости + сбор + услуги оформления, курс {usd_rate} TJS "
+            f"за $1) уже посчитан программой: примерно {item.get('estimated_customs_cost')} TJS. "
+            f"Обязательно прибавь эту сумму к итоговой стоимости (estimated_total_cost), помимо ремонта."
+        )
+    elif item.get("imei_registered") is True:
+        customs_text = "\nIMEI уже зарегистрирован — дополнительных таможенных расходов не будет."
 
     return f"""
 Ты — эксперт по оценке б/у смартфонов для перепродажи в Таджикистане. Изучи текст объявления и фото.
@@ -596,20 +790,23 @@ def build_prompt(item, stats, similar_examples, web_results):
 Цена: {item['price']} TJS
 Состояние по словам продавца: {item.get('condition') or 'не указано'}
 Описание продавца: {item.get('description', '')[:800]}
+{customs_text}
 
 {stats_text}
 
 {examples_text}
+
+{manual_text}
 
 {web_text}
 
 Сравни дефекты ЭТОГО лота с дефектами похожих лотов из нашей базы выше. Если дефектов меньше или
 они мельче при той же или более низкой цене — сигнал "недооценено". Если больше/серьёзнее — наоборот.
 
-Если есть видимые дефекты, посчитай: цена лота + примерная стоимость ремонта = итоговая цена, и
-сравни итоговую цену с реальной рыночной ценой исправного телефона такой модели (используй базу
-и результаты веб-поиска выше, если они есть). Считай "недооценено" только если после ремонта
-телефон реально можно продать дороже итоговой цены с заметным запасом, а не на 100-200 TJS.
+Посчитай: цена лота + примерная стоимость ремонта (если есть дефекты) + растаможка (если указана выше)
+= итоговая цена. Сравни итоговую цену с реальной рыночной ценой исправного телефона такой модели
+(база, заметки, веб-поиск выше). Считай "недооценено" только если после всех расходов телефон реально
+можно продать дороже итоговой цены с заметным запасом, а не на 100-200 TJS.
 
 Верни ТОЛЬКО JSON без markdown, строго такой формы:
 {{
@@ -620,10 +817,10 @@ def build_prompt(item, stats, similar_examples, web_results):
   "estimated_total_cost": null,
   "estimated_resale_price": null,
   "market_verdict": "недооценено|справедливая цена|переоценено|недостаточно данных",
-  "reasoning": "коротко: что дал веб-поиск (если был), как считал ремонт и итоговую цену, сравнение с похожими лотами",
+  "reasoning": "коротко: что дал веб-поиск/заметки (если были), как считал ремонт, растаможку и итоговую цену",
   "confidence": 0.0
 }}
-estimated_repair_cost — только если есть дефекты, иначе null. estimated_total_cost = цена лота + ремонт (если дефектов нет — просто цена лота). estimated_resale_price — по какой цене реально продать после ремонта (если он нужен) или как есть. Если данных совсем мало — verdict "недостаточно данных", не выдумывай цифры.
+estimated_repair_cost — только если есть дефекты, иначе null. estimated_total_cost = цена лота + ремонт + растаможка (если применимо). estimated_resale_price — по какой цене реально продать после всех расходов. Если данных совсем мало — verdict "недостаточно данных", не выдумывай цифры.
 """.strip()
 
 
@@ -641,14 +838,14 @@ def parse_gemini_json(text):
     return {"market_verdict": "недостаточно данных", "reasoning": "не удалось разобрать ответ", "visible_defects": []}
 
 
-def analyze_listing(item, photo_urls, stats, similar_examples, web_results, usage):
+def analyze_listing(item, photo_urls, stats, similar_examples, web_results, manual_notes, usd_rate, usage):
     combo = pick_available_combo(usage)
     if not combo:
         return {"market_verdict": "недостаточно данных",
                 "reasoning": "дневной лимит Gemini исчерпан на всех сочетаниях ключ+модель, анализ отложен",
                 "visible_defects": []}
 
-    parts = [{"text": build_prompt(item, stats, similar_examples, web_results)}]
+    parts = [{"text": build_prompt(item, stats, similar_examples, web_results, manual_notes, usd_rate)}]
     for url in photo_urls:
         try:
             img = requests.get(url, headers=HEADERS, timeout=15)
@@ -720,6 +917,7 @@ def main():
     searches, subscribers = check_telegram_commands(load_json(SEARCHES_FILE, []), subscribers)
     mode = get_mode()
     usage = get_daily_usage(GEMINI_DAILY_FILE, [c["id"] for c in GEMINI_COMBOS])
+    usd_rate = get_usd_tjs_rate()
 
     try:
         listings, soup = fetch_listings()
@@ -735,7 +933,8 @@ def main():
     search_usage = get_search_usage()
     search_usage_str = ", ".join(f"{p['id']}: {search_usage.get(p['id'], 0)}/{p['limit']}" for p in SEARCH_PROVIDERS)
     print(f"Режим: {MODES[mode]}; поисков: {len(searches)}; объявлений: {len(listings)}; "
-          f"подписчиков: {len(subscribers)}; Gemini сегодня — {usage_str}; поиск в сети — {search_usage_str}")
+          f"подписчиков: {len(subscribers)}; курс USD/TJS: {usd_rate}; "
+          f"Gemini сегодня — {usage_str}; поиск в сети — {search_usage_str}")
 
     for item in listings:
         entry = seen.get(item["id"], {})
@@ -757,14 +956,18 @@ def main():
     for item in candidates:
         entry = seen.get(item["id"], {})
         try:
-            condition, memory, description, photo_urls = fetch_detail(item["url"])
+            condition, memory, description, photo_urls, imei_registered = fetch_detail(item["url"])
             item["condition"] = condition or item.get("condition")
             item["memory"] = memory or item.get("memory")
             item["description"] = description
+            item["imei_registered"] = imei_registered
+            if imei_registered is False:
+                item["estimated_customs_cost"] = estimate_customs_cost(item["price"], usd_rate)
 
             model_key = extract_model_key(item["title"])
             stats = market_stats_for(model_key, item.get("condition"), item["id"])
             similar_examples = similar_full_analyses(model_key, item.get("condition"), item["id"])
+            manual_notes = get_manual_notes(model_key)
 
             web_results = None
             if model_key:
@@ -773,7 +976,7 @@ def main():
                 query = f"{model_key} {memory_part}{condition_part} цена Таджикистан Somon"
                 web_results = web_search_lookup(query)
 
-            analysis = analyze_listing(item, photo_urls, stats, similar_examples, web_results, usage)
+            analysis = analyze_listing(item, photo_urls, stats, similar_examples, web_results, manual_notes, usd_rate, usage)
             verdict = analysis.get("market_verdict", "недостаточно данных")
 
             log_full_analysis(item, analysis, verdict)
@@ -783,16 +986,17 @@ def main():
                 repair = analysis.get("estimated_repair_cost")
                 total = analysis.get("estimated_total_cost")
                 resale = analysis.get("estimated_resale_price")
+                customs = item.get("estimated_customs_cost")
 
                 cost_lines = ""
                 if repair:
-                    cost_lines = (
-                        f"🔧 Примерный ремонт: {repair} TJS\n"
-                        f"🧮 Итоговая цена (лот + ремонт): {total or '—'} TJS\n"
-                        f"📈 Продать можно примерно за: {resale or '—'} TJS\n"
-                    )
-                elif resale:
-                    cost_lines = f"📈 Продать можно примерно за: {resale} TJS\n"
+                    cost_lines += f"🔧 Примерный ремонт: {repair} TJS\n"
+                if customs:
+                    cost_lines += f"🛃 Примерная растаможка (IMEI не оформлен): {customs} TJS\n"
+                if total:
+                    cost_lines += f"🧮 Итоговая цена (лот + расходы): {total} TJS\n"
+                if resale:
+                    cost_lines += f"📈 Продать можно примерно за: {resale} TJS\n"
 
                 text = (
                     f"🔥 Потенциально выгодное объявление\n\n{item['title']}\n"

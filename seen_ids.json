@@ -4166,5 +4166,14 @@
     "price": 550,
     "condition": "Б/у",
     "model_key": "xiaomi redmi 8"
+  },
+  "71711868": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17171186_zte-l8-zapchast/",
+    "title": "Samsung galaxy J1",
+    "price": 200,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy j1"
   }
 }

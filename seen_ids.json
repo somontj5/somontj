@@ -3958,7 +3958,8 @@
     "title": "Samsung Galaxy A55 5G",
     "price": 2299,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a55 5g"
+    "model_key": "samsung galaxy a55 5g",
+    "sold_checked": true
   },
   "54811256": {
     "logged": true,
@@ -3986,6 +3987,7 @@
     "title": "Xiaomi Mi 15 Ultra",
     "price": 9999,
     "condition": "Б/у",
-    "model_key": "xiaomi mi 15 ultra"
+    "model_key": "xiaomi mi 15 ultra",
+    "sold_checked": true
   }
 }

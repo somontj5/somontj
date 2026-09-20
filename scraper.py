@@ -15,7 +15,8 @@ SEARCH_URL = os.environ.get(
 MAX_NEW_ITEMS_PER_RUN = int(os.environ.get("MAX_NEW_ITEMS_PER_RUN", "5"))
 SIMILAR_EXAMPLES_LIMIT = 5
 GEMINI_DAILY_LIMIT_PER_COMBO = int(os.environ.get("GEMINI_DAILY_LIMIT_PER_COMBO", "450"))
-SEARCH_DAILY_LIMIT = int(os.environ.get("SEARCH_DAILY_LIMIT", "90"))
+TAVILY_MONTHLY_LIMIT_PER_KEY = int(os.environ.get("TAVILY_MONTHLY_LIMIT_PER_KEY", "950"))
+GOOGLE_SEARCH_DAILY_LIMIT_PER_KEY = int(os.environ.get("GOOGLE_SEARCH_DAILY_LIMIT_PER_KEY", "90"))
 
 SEEN_FILE = "seen_ids.json"
 PRICE_HISTORY_FILE = "price_history.jsonl"
@@ -25,13 +26,10 @@ OFFSET_FILE = "telegram_offset.json"
 MODE_FILE = "search_mode.json"
 SUBSCRIBERS_FILE = "subscribers.json"
 GEMINI_DAILY_FILE = "gemini_daily_usage.json"
-SEARCH_DAILY_FILE = "search_daily_usage.json"
+SEARCH_USAGE_FILE = "search_provider_usage.json"
 
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
-
-GOOGLE_SEARCH_API_KEY = os.environ.get("GOOGLE_SEARCH_API_KEY", "")
-GOOGLE_SEARCH_CX = os.environ.get("GOOGLE_SEARCH_CX", "")
 
 GEMINI_KEYS = []
 if os.environ.get("GEMINI_API_KEY"):
@@ -40,15 +38,31 @@ if os.environ.get("GEMINI_API_KEY_2"):
     GEMINI_KEYS.append({"name": "key2", "key": os.environ["GEMINI_API_KEY_2"]})
 
 GEMINI_MODELS = ["gemini-3.5-flash-lite", "gemini-3.1-flash-lite"]
-
-# Все сочетания ключ+модель — у каждого своя отдельная суточная квота.
-# Порядок важен: бот держится за первое сочетание, пока оно не исчерпано,
-# и только тогда переходит к следующему — без прыжков туда-сюда.
 GEMINI_COMBOS = [
     {"id": f"{k['name']}::{m}", "key": k["key"], "model": m}
     for k in GEMINI_KEYS
     for m in GEMINI_MODELS
 ]
+
+GOOGLE_SEARCH_CX = os.environ.get("GOOGLE_SEARCH_CX", "")
+
+# Пять независимых источников поиска: сначала все Tavily (без cx, помесячный лимит),
+# потом Google Custom Search (нужен общий cx, дневной лимит). Порядок = приоритет.
+SEARCH_PROVIDERS = []
+for i in range(1, 4):
+    key = os.environ.get(f"TAVILY_API_KEY{'' if i == 1 else '_' + str(i)}", "")
+    if key:
+        SEARCH_PROVIDERS.append({
+            "id": f"tavily{i}", "type": "tavily", "key": key,
+            "period": "month", "limit": TAVILY_MONTHLY_LIMIT_PER_KEY,
+        })
+for i in range(1, 3):
+    key = os.environ.get(f"GOOGLE_SEARCH_API_KEY{'' if i == 1 else '_' + str(i)}", "")
+    if key and GOOGLE_SEARCH_CX:
+        SEARCH_PROVIDERS.append({
+            "id": f"google{i}", "type": "google", "key": key, "cx": GOOGLE_SEARCH_CX,
+            "period": "day", "limit": GOOGLE_SEARCH_DAILY_LIMIT_PER_KEY,
+        })
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -192,7 +206,7 @@ def similar_full_analyses(model_key, condition, exclude_id, limit=SIMILAR_EXAMPL
     return matches[:limit]
 
 
-# ---------- Дневные квоты ----------
+# ---------- Дневные/месячные квоты Gemini ----------
 
 def get_daily_usage(path, keys):
     data = load_json(path, {})
@@ -216,29 +230,68 @@ def pick_available_combo(usage):
     return None
 
 
-# ---------- Google Custom Search — настоящий поиск, не Gemini ----------
+# ---------- Поиск: Tavily + Google, с раздельным учётом по каждому провайдеру ----------
 
-def google_custom_search(query, num=3):
-    if not GOOGLE_SEARCH_API_KEY or not GOOGLE_SEARCH_CX:
+def get_search_usage():
+    data = load_json(SEARCH_USAGE_FILE, {})
+    today = time.strftime("%Y-%m-%d")
+    month = time.strftime("%Y-%m")
+    if data.get("day") != today:
+        for p in SEARCH_PROVIDERS:
+            if p["period"] == "day":
+                data[p["id"]] = 0
+        data["day"] = today
+    if data.get("month") != month:
+        for p in SEARCH_PROVIDERS:
+            if p["period"] == "month":
+                data[p["id"]] = 0
+        data["month"] = month
+    for p in SEARCH_PROVIDERS:
+        data.setdefault(p["id"], 0)
+    return data
+
+
+def save_search_usage(data):
+    with open(SEARCH_USAGE_FILE, "w", encoding="utf-8") as f:
+        json.dump(data, f)
+
+
+def pick_search_provider(usage):
+    for p in SEARCH_PROVIDERS:
+        if usage.get(p["id"], 0) < p["limit"]:
+            return p
+    return None
+
+
+def tavily_search(key, query, num=3):
+    try:
+        resp = requests.post(
+            "https://api.tavily.com/search",
+            json={"api_key": key, "query": query, "max_results": num, "search_depth": "basic"},
+            timeout=15,
+        )
+        if not resp.ok:
+            print("Ошибка Tavily:", resp.status_code, resp.text[:300])
+            return None
+        results = resp.json().get("results", [])
+        if not results:
+            return None
+        return "\n".join(f"- {r.get('title', '')}: {r.get('content', '')[:300]}" for r in results[:num])
+    except Exception as e:
+        print("Сбой Tavily:", e)
         return None
 
-    usage = get_daily_usage(SEARCH_DAILY_FILE, ["count"])
-    if usage["count"] >= SEARCH_DAILY_LIMIT:
-        return None
 
+def google_custom_search(key, cx, query, num=3):
     try:
         resp = requests.get(
             "https://www.googleapis.com/customsearch/v1",
-            params={"key": GOOGLE_SEARCH_API_KEY, "cx": GOOGLE_SEARCH_CX, "q": query, "num": num},
+            params={"key": key, "cx": cx, "q": query, "num": num},
             timeout=15,
         )
-        usage["count"] += 1
-        save_daily_usage(SEARCH_DAILY_FILE, usage)
-
         if not resp.ok:
             print("Ошибка Google Search API:", resp.status_code, resp.text[:300])
             return None
-
         items = resp.json().get("items", [])
         if not items:
             return None
@@ -246,6 +299,22 @@ def google_custom_search(query, num=3):
     except Exception as e:
         print("Сбой Google Search API:", e)
         return None
+
+
+def web_search_lookup(query):
+    usage = get_search_usage()
+    provider = pick_search_provider(usage)
+    if not provider:
+        return None
+
+    if provider["type"] == "tavily":
+        result = tavily_search(provider["key"], query)
+    else:
+        result = google_custom_search(provider["key"], provider["cx"], query)
+
+    usage[provider["id"]] += 1
+    save_search_usage(usage)
+    return result
 
 
 # ---------- Telegram: подписчики и отправка ----------
@@ -517,7 +586,7 @@ def build_prompt(item, stats, similar_examples, web_results):
     examples_text = format_similar_examples(similar_examples)
     web_text = (
         f"Результаты веб-поиска по этой модели (реальные страницы из интернета):\n{web_results}"
-        if web_results else "Веб-поиск не дал результатов или недоступен в этот раз — суди по своей базе и знаниям."
+        if web_results else "Веб-поиск не дал результатов в этот раз — суди по своей базе и знаниям."
     )
 
     return f"""
@@ -663,8 +732,10 @@ def main():
         return
 
     usage_str = ", ".join(f"{c['id']}: {usage.get(c['id'], 0)}/{GEMINI_DAILY_LIMIT_PER_COMBO}" for c in GEMINI_COMBOS)
+    search_usage = get_search_usage()
+    search_usage_str = ", ".join(f"{p['id']}: {search_usage.get(p['id'], 0)}/{p['limit']}" for p in SEARCH_PROVIDERS)
     print(f"Режим: {MODES[mode]}; поисков: {len(searches)}; объявлений: {len(listings)}; "
-          f"подписчиков: {len(subscribers)}; Gemini сегодня — {usage_str}")
+          f"подписчиков: {len(subscribers)}; Gemini сегодня — {usage_str}; поиск в сети — {search_usage_str}")
 
     for item in listings:
         entry = seen.get(item["id"], {})
@@ -697,7 +768,7 @@ def main():
 
             web_results = None
             if model_key:
-                web_results = google_custom_search(f"{model_key} б/у цена Таджикистан Somon")
+                web_results = web_search_lookup(f"{model_key} б/у цена Таджикистан Somon")
 
             analysis = analyze_listing(item, photo_urls, stats, similar_examples, web_results, usage)
             verdict = analysis.get("market_verdict", "недостаточно данных")

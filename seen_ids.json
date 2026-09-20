@@ -3130,9 +3130,12 @@
     "photo_ok": true
   },
   "89015256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true
   },
   "71661469": {
-    "logged": true
+    "logged": true,
+    "notified": true,
+    "photo_ok": true
   }
 }

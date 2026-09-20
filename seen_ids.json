@@ -4037,5 +4037,52 @@
     "price": 350,
     "condition": "Б/у",
     "model_key": "samsung galaxy a01"
+  },
+  "15775703": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15775703_telefon-fly/",
+    "title": "Телефон Fly+",
+    "price": 70,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "14806084": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14806084_samsung-galaxy-gram-prime/",
+    "title": "Samsung Galaxy Grand Prime",
+    "price": 220,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy grand prime"
+  },
+  "58927610": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16589276_xiaomi-redmi-10a/",
+    "title": "Xiaomi Redmi 9А+",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "xiaomi redmi 9а"
+  },
+  "49126109": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14912610_xiaomi-redmi-9a/",
+    "title": "Xiaomi Redmi 9A",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "xiaomi redmi 9a"
+  },
+  "50832016": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16687508_samsung-galaxy-j3-2016/",
+    "title": "Samsung Galaxy J1 2016",
+    "price": 150,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy j1"
   }
 }

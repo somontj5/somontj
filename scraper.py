@@ -768,7 +768,10 @@ def main():
 
             web_results = None
             if model_key:
-                web_results = web_search_lookup(f"{model_key} б/у цена Таджикистан Somon")
+                memory_part = f"{item.get('memory')}gb " if item.get("memory") else ""
+                condition_part = item.get("condition") or "б/у"
+                query = f"{model_key} {memory_part}{condition_part} цена Таджикистан Somon"
+                web_results = web_search_lookup(query)
 
             analysis = analyze_listing(item, photo_urls, stats, similar_examples, web_results, usage)
             verdict = analysis.get("market_verdict", "недостаточно данных")

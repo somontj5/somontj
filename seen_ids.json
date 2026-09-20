@@ -2753,5 +2753,14 @@
     "logged": true,
     "notified": true,
     "photo_ok": true
+  },
+  "65384545": {
+    "logged": true,
+    "photo_ok": true
+  },
+  "16562822": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true
   }
 }

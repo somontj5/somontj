@@ -4084,5 +4084,14 @@
     "price": 150,
     "condition": "Б/у",
     "model_key": "samsung galaxy j1"
+  },
+  "17082564": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170825_apple-iphone-x-64-gb/",
+    "title": "Apple iPhone X, 64 gb",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "apple iphone x"
   }
 }

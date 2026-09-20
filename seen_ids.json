@@ -3906,7 +3906,8 @@
     "title": "Apple iPhone 14 Pro Max, 128 gb, Deep Purple",
     "price": 4000,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "17047430": {
     "logged": true,
@@ -3916,7 +3917,8 @@
     "title": "Samsung A30s",
     "price": 699,
     "condition": "Б/у",
-    "model_key": "samsung a30s"
+    "model_key": "samsung a30s",
+    "sold_checked": true
   },
   "70411128": {
     "logged": true,
@@ -3925,7 +3927,8 @@
     "title": "Apple iPhone Xr, 128 gb",
     "price": 1600,
     "condition": "Б/у",
-    "model_key": "apple iphone xr"
+    "model_key": "apple iphone xr",
+    "sold_checked": true
   },
   "41613128": {
     "logged": true,
@@ -3934,7 +3937,8 @@
     "title": "Apple iPhone 13, 128 gb, Blue",
     "price": 2700,
     "condition": "Б/у",
-    "model_key": "apple iphone 13"
+    "model_key": "apple iphone 13",
+    "sold_checked": true
   },
   "05151064": {
     "logged": true,
@@ -3944,7 +3948,8 @@
     "title": "Xiaomi Redmi 10 64gb",
     "price": 650,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 10"
+    "model_key": "xiaomi redmi 10",
+    "sold_checked": true
   },
   "70547555": {
     "logged": true,

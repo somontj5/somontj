@@ -4420,5 +4420,24 @@
     "price": 1700,
     "condition": "Б/у",
     "model_key": "xiaomi poco m7"
+  },
+  "50256120": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16481231_infinix-hot-50-pro-256gb-amoled-120hz/",
+    "title": "Infinix Hot 50 Pro+ 256Gb",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "infinix hot"
+  },
+  "13976256": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16481397_samsung-galaxy-z-fold6-256gb/",
+    "title": "Samsung Galaxy Z Fold6 256GB",
+    "price": 8300,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy z fold6"
   }
 }

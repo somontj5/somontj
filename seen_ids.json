@@ -3664,7 +3664,8 @@
     "title": "Apple iPhone 16 Pro, 128 gb, Desert Titanium",
     "price": 8000,
     "condition": "Б/у",
-    "model_key": "apple iphone 16 pro"
+    "model_key": "apple iphone 16 pro",
+    "sold_checked": true
   },
   "98812256": {
     "logged": true,
@@ -3673,7 +3674,8 @@
     "title": "Apple iPhone 12 pro, 256 gb, Silver",
     "price": 3199,
     "condition": "Б/у",
-    "model_key": "apple iphone 12 pro"
+    "model_key": "apple iphone 12 pro",
+    "sold_checked": true
   },
   "98313128": {
     "logged": true,
@@ -3682,7 +3684,8 @@
     "title": "Apple iPhone 13 Pro Max, 128 gb, Sierra Blue",
     "price": 3950,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "96813128": {
     "logged": true,
@@ -3691,7 +3694,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Graphite",
     "price": 4800,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "16997315": {
     "logged": true,
@@ -3700,7 +3704,8 @@
     "title": "Xiaomi Redmi 15",
     "price": 1299,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 15"
+    "model_key": "xiaomi redmi 15",
+    "sold_checked": true
   },
   "69887128": {
     "logged": true,
@@ -3853,5 +3858,56 @@
     "price": 399,
     "condition": "Б/у",
     "model_key": "apple iphone 7"
+  },
+  "12013128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17138120_apple-iphone-13-pro-max-128-gb-alpine-green/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Alpine Green",
+    "price": 4500,
+    "condition": "Б/у",
+    "model_key": "apple iphone 13 pro"
+  },
+  "51313256": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170513_apple-iphone-13-pro-max-256-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro Max, 256 gb, Sierra Blue",
+    "price": 4550,
+    "condition": "Б/у",
+    "model_key": "apple iphone 13 pro"
+  },
+  "44914128": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170449_apple-iphone-14-pro-max-128-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro Max, 128 gb, Deep Purple",
+    "price": 4000,
+    "condition": "Б/у",
+    "model_key": "apple iphone 14 pro"
+  },
+  "17047430": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170474_samsung-a30s/",
+    "title": "Samsung A30s",
+    "price": 699,
+    "condition": "Б/у",
+    "model_key": "samsung a30s"
+  },
+  "70411128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170411_apple-iphone-xr-128-gb/",
+    "title": "Apple iPhone Xr, 128 gb",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "apple iphone xr"
+  },
+  "41613128": {
+    "logged": true
   }
 }

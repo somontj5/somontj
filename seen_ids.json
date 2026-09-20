@@ -4247,7 +4247,8 @@
     "title": "OnePlus Ace 6 12/256gb",
     "price": 5569,
     "condition": "Б/у",
-    "model_key": "oneplus ace 6 12"
+    "model_key": "oneplus ace 6 12",
+    "sold_checked": true
   },
   "55141716": {
     "logged": true,
@@ -4256,7 +4257,8 @@
     "title": "Apple iPhone 17 Pro Max, 16 gb, Silver",
     "price": 14000,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "80917256": {
     "logged": true,
@@ -4265,7 +4267,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
     "price": 13000,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "55317256": {
     "logged": true
@@ -4301,7 +4304,8 @@
     "title": "Samsung Galaxy A10s",
     "price": 299,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a10s"
+    "model_key": "samsung galaxy a10s",
+    "sold_checked": true
   },
   "75414128": {
     "logged": true,
@@ -4310,6 +4314,17 @@
     "title": "Apple iPhone 14 Pro, 128 gb, Gold",
     "price": 4399,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
+  },
+  "17062220": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170622_not-20/",
+    "title": "Samsung Galaxy Note 20",
+    "price": 1649,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy note 20"
   }
 }

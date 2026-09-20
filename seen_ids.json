@@ -4018,5 +4018,14 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "apple iphone xs"
+  },
+  "10481164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17171048_apple-iphone-11-pro-64-gb-space-grey/",
+    "title": "Apple iPhone 11 Pro, 64 gb, Space Grey",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "apple iphone 11 pro"
   }
 }

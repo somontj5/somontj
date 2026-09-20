@@ -4120,7 +4120,8 @@
     "title": "Apple iPhone 12 pro, 128 gb, Pacific Blue",
     "price": 3099,
     "condition": "Б/у",
-    "model_key": "apple iphone 12 pro"
+    "model_key": "apple iphone 12 pro",
+    "sold_checked": true
   },
   "40914256": {
     "logged": true,
@@ -4382,5 +4383,14 @@
     "price": 5900,
     "condition": "Б/у",
     "model_key": "apple iphone 15 pro"
+  },
+  "04011128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17172040_apple-iphone-11-128-gb-product-red/",
+    "title": "Apple iPhone 11, 128 gb, Product Red",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "apple iphone 11"
   }
 }

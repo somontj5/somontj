@@ -4013,7 +4013,8 @@
     "title": "Samsung Galaxy Note 20 8/256Gb Bronze",
     "price": 1999,
     "condition": "Б/у",
-    "model_key": "samsung galaxy note 20"
+    "model_key": "samsung galaxy note 20",
+    "sold_checked": true
   },
   "17097364": {
     "logged": true,
@@ -4022,7 +4023,8 @@
     "title": "Apple iPhone Xs, 64 gb, Gold",
     "price": 1200,
     "condition": "Б/у",
-    "model_key": "apple iphone xs"
+    "model_key": "apple iphone xs",
+    "sold_checked": true
   },
   "10481164": {
     "logged": true,
@@ -4031,7 +4033,8 @@
     "title": "Apple iPhone 11 Pro, 64 gb, Space Grey",
     "price": 1999,
     "condition": "Б/у",
-    "model_key": "apple iphone 11 pro"
+    "model_key": "apple iphone 11 pro",
+    "sold_checked": true
   },
   "17115301": {
     "logged": true,
@@ -4041,7 +4044,8 @@
     "title": "Samsung Galaxy A01",
     "price": 350,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a01"
+    "model_key": "samsung galaxy a01",
+    "sold_checked": true
   },
   "15775703": {
     "logged": true,
@@ -4051,7 +4055,8 @@
     "title": "Телефон Fly+",
     "price": 70,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "14806084": {
     "logged": true,
@@ -4231,13 +4236,31 @@
     "model_key": "apple iphone 13 pro"
   },
   "68612256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16222068_oneplus-ace-6-12-256gb/",
+    "title": "OnePlus Ace 6 12/256gb",
+    "price": 5569,
+    "condition": "Б/у",
+    "model_key": "oneplus ace 6 12"
   },
   "55141716": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17085514_apple-iphone-17-pro-max-16-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 16 gb, Silver",
+    "price": 14000,
+    "condition": "Б/у",
+    "model_key": "apple iphone 17 pro"
   },
   "80917256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170809_apple-iphone-17-pro-max-256-gb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
+    "price": 13000,
+    "condition": "Б/у",
+    "model_key": "apple iphone 17 pro"
   },
   "55317256": {
     "logged": true
@@ -4265,5 +4288,23 @@
   },
   "13768256": {
     "logged": true
+  },
+  "17171742": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17171742_est/",
+    "title": "Samsung Galaxy A10s",
+    "price": 299,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy a10s"
+  },
+  "75414128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17171754_apple-iphone-14-pro-128-gb-gold/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Gold",
+    "price": 4399,
+    "condition": "Б/у",
+    "model_key": "apple iphone 14 pro"
   }
 }

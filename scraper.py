@@ -10,9 +10,10 @@ from bs4 import BeautifulSoup
 # ==== НАСТРОЙКИ ====
 SEARCH_URL = os.environ.get(
     "SOMON_URL",
-    "https://m.somon.tj/telefonyi-i-svyaz/mobilnyie-telefonyi/sostoyanie---1/?ordering=newest&location=185,187,195,204,205,230,210,180"
+    "https://m.somon.tj/telefonyi-i-svyaz/mobilnyie-telefonyi/sostoyanie---1/?ordering=newest"
 )
 MAX_NEW_ITEMS_PER_RUN = int(os.environ.get("MAX_NEW_ITEMS_PER_RUN", "5"))
+MAX_SOLD_CHECKS_PER_RUN = int(os.environ.get("MAX_SOLD_CHECKS_PER_RUN", "5"))
 SIMILAR_EXAMPLES_LIMIT = 8
 GEMINI_DAILY_LIMIT_PER_COMBO = int(os.environ.get("GEMINI_DAILY_LIMIT_PER_COMBO", "450"))
 TAVILY_MONTHLY_LIMIT_PER_KEY = int(os.environ.get("TAVILY_MONTHLY_LIMIT_PER_KEY", "950"))
@@ -78,9 +79,16 @@ TRANSLIT_MAP = {
     "iphone": ["айфон"], "samsung": ["самсунг"], "honor": ["хонор"],
     "xiaomi": ["сяоми", "ксиаоми"], "redmi": ["редми"],
     "huawei": ["хуавей"], "google": ["гугл"], "pixel": ["пиксель"],
+    "realme": ["реалми"], "oneplus": ["ванплюс"],
 }
 KNOWN_BRANDS = ["iphone", "apple", "samsung", "xiaomi", "redmi", "honor",
-                "huawei", "tecno", "infinix", "nokia", "google", "pixel", "oppo", "vivo"]
+                "huawei", "tecno", "infinix", "nokia", "google", "pixel", "oppo", "vivo",
+                "realme", "itel", "oneplus", "vertu", "galaxy",
+                "xioami", "xiаomi", "infinx", "realmi", "оppo"]
+BRAND_ALIASES = {
+    "xioami": "xiaomi", "xiаomi": "xiaomi", "infinx": "infinix",
+    "realmi": "realme", "оppo": "oppo", "galaxy": "samsung",
+}
 NOISE_WORDS = {"vietnam", "global", "version", "black", "white", "gold", "silver",
                "blue", "green", "pink", "gray", "grey", "new", "оригинал"}
 
@@ -90,6 +98,7 @@ PRICE_RE = re.compile(r"(\d[\d\s]{2,})\s*[cс]\.")
 DESC_RE = re.compile(r"Описание\s*(.*?)\s*(?:Показать телефон|Начать чат|Пожаловаться|$)", re.S)
 IMEI_NOT_REGISTERED_RE = re.compile(r"IMEI[^.]{0,60}(?:не\s+внес|не\s+в\s+бел\w*\s+списк)", re.I)
 IMEI_REGISTERED_RE = re.compile(r"IMEI[^.]{0,60}(?:в\s+бел\w*\s+списк|(?<!не\s)внес)", re.I)
+SOLD_RE = re.compile(r"(?<!не\s)\bПродано\b", re.I)
 MODES = {"all": "все объявления категории", "used": "только Б/у", "params": "только заданные параметры"}
 
 
@@ -115,6 +124,7 @@ def extract_model_key(title):
     brand = next((w for w in words if w in KNOWN_BRANDS), None)
     if not brand:
         return None
+    canonical_brand = BRAND_ALIASES.get(brand, brand)
     model_words = []
     started = False
     for w in words:
@@ -126,7 +136,7 @@ def extract_model_key(title):
         if w in NOISE_WORDS or (w.isdigit() and int(w) >= 32) or w.endswith("gb"):
             break
         model_words.append(w)
-    return f"{brand} {' '.join(model_words[:3])}".strip()
+    return f"{canonical_brand} {' '.join(model_words[:3])}".strip()
 
 
 def log_market_point(item):
@@ -157,6 +167,7 @@ def log_full_analysis(item, analysis, verdict, data_sources):
             "imei_registered": item.get("imei_registered"),
             "estimated_total_cost": analysis.get("estimated_total_cost"),
             "estimated_resale_price": analysis.get("estimated_resale_price"),
+            "questions_for_seller": analysis.get("questions_for_seller", []),
             "data_sources": data_sources,
             "used_web_search": analysis.get("used_web_search", False),
             "url": item["url"], "collected_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
@@ -178,9 +189,31 @@ def log_rejected(item, analysis, note=None):
 def log_manual_note(text):
     with open(PRICE_HISTORY_FILE, "a", encoding="utf-8") as f:
         f.write(json.dumps({
-            "type": "manual_note",
-            "text": text,
+            "type": "manual_note", "text": text,
             "added_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
+        }, ensure_ascii=False) + "\n")
+
+
+def log_confirmed_sale(record):
+    with open(PRICE_HISTORY_FILE, "a", encoding="utf-8") as f:
+        f.write(json.dumps({
+            "type": "confirmed_sale", "id": record["id"], "title": record["title"],
+            "price": record["price"], "condition": record.get("condition"),
+            "model_key": record.get("model_key"),
+            "confirmed_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
+        }, ensure_ascii=False) + "\n")
+
+
+def log_confirmed_good_call(record):
+    with open(PRICE_HISTORY_FILE, "a", encoding="utf-8") as f:
+        f.write(json.dumps({
+            "type": "confirmed_good_call", "id": record["id"], "title": record["title"],
+            "price": record["price"], "condition": record.get("condition"),
+            "model_key": record.get("model_key"),
+            "visible_defects": record.get("visible_defects", []),
+            "reasoning": record.get("reasoning", ""),
+            "url": record.get("url"),
+            "confirmed_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
         }, ensure_ascii=False) + "\n")
 
 
@@ -204,27 +237,51 @@ def get_manual_notes(model_key, limit=5):
     return notes[:limit]
 
 
-def market_stats_for(model_key, condition, exclude_id):
-    """Используется только для команды /price — Gemini эту сводку больше не получает."""
+def get_confirmed_good_calls(model_key, limit=3):
     if not model_key or not os.path.exists(PRICE_HISTORY_FILE):
-        return None
-    prices = []
+        return []
+    matches = []
     with open(PRICE_HISTORY_FILE, "r", encoding="utf-8") as f:
         for line in f:
             try:
                 rec = json.loads(line)
             except json.JSONDecodeError:
                 continue
-            if rec.get("id") == exclude_id or not rec.get("price"):
+            if rec.get("type") == "confirmed_good_call" and rec.get("model_key") == model_key:
+                matches.append(rec)
+    matches.sort(key=lambda r: r.get("confirmed_at", ""), reverse=True)
+    return matches[:limit]
+
+
+def get_confirmed_sales(model_key, limit=5):
+    if not model_key or not os.path.exists(PRICE_HISTORY_FILE):
+        return []
+    matches = []
+    with open(PRICE_HISTORY_FILE, "r", encoding="utf-8") as f:
+        for line in f:
+            try:
+                rec = json.loads(line)
+            except json.JSONDecodeError:
                 continue
-            if condition and rec.get("condition") and rec.get("condition") != condition:
-                continue
-            if rec.get("model_key") != model_key:
-                continue
-            prices.append(rec["price"])
-    if len(prices) < 3:
+            if rec.get("type") == "confirmed_sale" and rec.get("model_key") == model_key:
+                matches.append(rec)
+    matches.sort(key=lambda r: r.get("confirmed_at", ""), reverse=True)
+    return matches[:limit]
+
+
+def find_latest_analysis_by_url(url):
+    if not os.path.exists(PRICE_HISTORY_FILE):
         return None
-    return {"count": len(prices), "min": min(prices), "median": round(statistics.median(prices))}
+    found = None
+    with open(PRICE_HISTORY_FILE, "r", encoding="utf-8") as f:
+        for line in f:
+            try:
+                rec = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            if rec.get("type") == "full_analysis" and rec.get("url", "").rstrip("/") == url.rstrip("/"):
+                found = rec
+    return found
 
 
 def similar_full_analyses(model_key, condition, exclude_id, limit=SIMILAR_EXAMPLES_LIMIT):
@@ -246,6 +303,29 @@ def similar_full_analyses(model_key, condition, exclude_id, limit=SIMILAR_EXAMPL
             matches.append(rec)
     matches.sort(key=lambda r: r.get("collected_at", ""), reverse=True)
     return matches[:limit]
+
+
+def market_stats_for(model_key, condition, exclude_id):
+    """Только для команды /price — Gemini эту сводку не получает."""
+    if not model_key or not os.path.exists(PRICE_HISTORY_FILE):
+        return None
+    prices = []
+    with open(PRICE_HISTORY_FILE, "r", encoding="utf-8") as f:
+        for line in f:
+            try:
+                rec = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            if rec.get("id") == exclude_id or not rec.get("price"):
+                continue
+            if condition and rec.get("condition") and rec.get("condition") != condition:
+                continue
+            if rec.get("model_key") != model_key:
+                continue
+            prices.append(rec["price"])
+    if len(prices) < 3:
+        return None
+    return {"count": len(prices), "min": min(prices), "median": round(statistics.median(prices))}
 
 
 # ---------- Минимальная выгода ----------
@@ -492,6 +572,44 @@ def report_fetch_result(health, success):
         json.dump(health, f)
 
 
+# ---------- Отслеживание проданных объявлений ----------
+
+def check_sold_status(url):
+    """True — реально продано, False — страница жива, но не продано, None — не удалось проверить."""
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=20)
+        if not resp.ok:
+            return None
+        soup = BeautifulSoup(resp.text, "html.parser")
+        full_text = soup.get_text(" ", strip=True)
+        return bool(SOLD_RE.search(full_text))
+    except Exception as e:
+        print("Не удалось проверить статус объявления:", url, e)
+        return None
+
+
+def process_disappeared_ads(seen, current_ids):
+    to_check = [
+        (ad_id, entry) for ad_id, entry in seen.items()
+        if entry.get("photo_ok") and entry.get("url") and ad_id not in current_ids
+        and not entry.get("sold_checked")
+    ][:MAX_SOLD_CHECKS_PER_RUN]
+
+    for ad_id, entry in to_check:
+        is_sold = check_sold_status(entry["url"])
+        if is_sold is True:
+            record = {
+                "id": ad_id, "title": entry.get("title"), "price": entry.get("price"),
+                "condition": entry.get("condition"), "model_key": entry.get("model_key"),
+            }
+            log_confirmed_sale(record)
+            alert_owner(f"✅ Подтверждена продажа: «{entry.get('title')}» за {entry.get('price')} TJS — база пополнилась реальным фактом.")
+        if is_sold is not None:
+            entry["sold_checked"] = True
+        seen[ad_id] = entry
+    return seen
+
+
 # ---------- Красивый HTML-отчёт по отклонённым лотам ----------
 
 def build_rejected_report_html():
@@ -506,10 +624,8 @@ def build_rejected_report_html():
     rows.sort(key=lambda r: r.get("checked_at", ""), reverse=True)
 
     verdict_colors = {
-        "справедливая цена": "#4a90d9",
-        "переоценено": "#d94a4a",
-        "недостаточно данных": "#999999",
-        "недооценено": "#3fa34d",
+        "справедливая цена": "#4a90d9", "переоценено": "#d94a4a",
+        "недостаточно данных": "#999999", "недооценено": "#3fa34d",
     }
 
     cards = []
@@ -654,6 +770,17 @@ def check_telegram_commands(searches, subscribers):
                 send_telegram(chat_id, "✅ Запись добавлена в базу — Gemini будет учитывать её при похожих разборах.")
             else:
                 send_telegram(chat_id, "Напишите текст после команды, например:\n/dbadd iPhone 13 128GB, замена экрана ~350 TJS, батарея ~150 TJS")
+        elif command == "/bought":
+            url = argument.strip()
+            if not url:
+                send_telegram(chat_id, "Формат: /bought ссылка_на_объявление")
+            else:
+                record = find_latest_analysis_by_url(url)
+                if record:
+                    log_confirmed_good_call(record)
+                    send_telegram(chat_id, f"✅ Запомнил! «{record.get('title')}» — подтверждённая удачная рекомендация, буду учитывать это при похожих разборах в будущем.")
+                else:
+                    send_telegram(chat_id, "Не нашёл разбор по этой ссылке в базе — проверьте, что ссылка точная и это объявление, которое я присылал.")
         elif command == "/rejected":
             html, count = build_rejected_report_html()
             send_telegram(chat_id, f"📋 Всего отклонённых лотов: {count}. Отправляю файл...")
@@ -668,8 +795,7 @@ def check_telegram_commands(searches, subscribers):
                 if stats:
                     send_telegram(chat_id,
                         f"💰 {query}\nПо базе ({stats['count']} похожих объявлений):\n"
-                        f"Минимальная цена: {stats['min']} TJS\nМедианная цена: {stats['median']} TJS\n"
-                        f"(Напоминаю: это грубая сводка без учёта конкретных дефектов — детали смотрите в /rejected)")
+                        f"Минимальная цена: {stats['min']} TJS\nМедианная цена: {stats['median']} TJS")
                 else:
                     send_telegram(chat_id, f"По «{query}» в базе пока меньше 3 похожих объявлений.")
         elif command == "/stats":
@@ -690,6 +816,7 @@ def check_telegram_commands(searches, subscribers):
                                     "/minprofit число — минимальная выгода для уведомлений (TJS)\n"
                                     "/price Модель — грубая сводка цен по базе\n"
                                     "/dbadd текст — добавить что угодно в базу вручную\n"
+                                    "/bought ссылка — подтвердить удачную покупку по рекомендации бота\n"
                                     "/rejected — файл со всеми отклонёнными лотами\n"
                                     "/stats — расход лимитов и размер базы\n"
                                     "/subscribers — сколько подписчиков\n/stop — отписаться")
@@ -831,6 +958,25 @@ def format_similar_examples(examples):
     return "\n".join(lines)
 
 
+def format_confirmed_good_calls(records):
+    if not records:
+        return ""
+    lines = ["✅ ПОДТВЕРЖДЕНО ВЛАДЕЛЬЦЕМ БОТА — это реальные покупки по прошлым рекомендациям, максимально доверяй им:"]
+    for r in records:
+        defects = ", ".join(r.get("visible_defects") or []) or "не обнаружены"
+        lines.append(f"- Куплен «{r.get('title')}» за {r.get('price')} TJS, дефекты тогда: {defects}. Причина рекомендации: {r.get('reasoning', '')}")
+    return "\n".join(lines)
+
+
+def format_confirmed_sales(records):
+    if not records:
+        return ""
+    lines = ["✅ ПОДТВЕРЖДЁННЫЕ РЕАЛЬНЫЕ ПРОДАЖИ этой модели (объявление реально было продано за эту цену, это не догадка):"]
+    for r in records:
+        lines.append(f"- Продано за {r.get('price')} TJS, состояние: {r.get('condition') or 'не указано'}")
+    return "\n".join(lines)
+
+
 def format_manual_notes(notes):
     if not notes:
         return ""
@@ -840,8 +986,10 @@ def format_manual_notes(notes):
     return "\n".join(lines)
 
 
-def build_prompt(item, similar_examples, web_results, manual_notes, usd_rate):
+def build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate):
     examples_text = format_similar_examples(similar_examples)
+    good_calls_text = format_confirmed_good_calls(confirmed_good_calls)
+    sales_text = format_confirmed_sales(confirmed_sales)
     web_text = (
         f"Результаты веб-поиска по этой модели (реальные страницы из интернета):\n{web_results}"
         if web_results else "Веб-поиск не дал результатов в этот раз."
@@ -861,8 +1009,7 @@ def build_prompt(item, similar_examples, web_results, manual_notes, usd_rate):
 
     return f"""
 Ты — эксперт по оценке б/у смартфонов для перепродажи в Таджикистане. Изучи текст объявления и фото.
-Используй не только присланные данные ниже, но и свои собственные знания о рынке смартфонов, если они
-уместны — присланные данные это подсказки для проверки, а не единственный источник истины.
+Используй не только присланные данные ниже, но и свои собственные знания о рынке смартфонов.
 
 Объявление: {item['title']}
 Цена: {item['price']} TJS
@@ -870,23 +1017,28 @@ def build_prompt(item, similar_examples, web_results, manual_notes, usd_rate):
 Описание продавца: {item.get('description', '')[:800]}
 {customs_text}
 
+{good_calls_text}
+
+{sales_text}
+
 {examples_text}
 
 {manual_text}
 
 {web_text}
 
-Ниже — список похожих лотов из нашей базы, каждый со своей ценой и своими дефектами (не усреднённое
-число, а реальные конкретные примеры). Сравнивай ЭТОТ лот с каждым из них по существу: если у этого
-лота дефектов меньше или они мельче при той же или более низкой цене — сигнал "недооценено". Если
-больше/серьёзнее — наоборот. Не пытайся вывести из них одно среднее число — рассуждай по каждому
-примеру отдельно, как эксперт, а не как калькулятор.
+Сравни дефекты ЭТОГО лота с дефектами похожих лотов выше по существу, не через одно среднее число —
+рассуждай по каждому примеру отдельно, как эксперт. Подтверждённые покупки и продажи выше — самые
+надёжные данные, опирайся на них в первую очередь, если они есть.
 
 Сам реши и посчитай: стоимость возможного ремонта, итоговую цену (лот + ремонт + растаможка, если
-применима), и по какой цене реально продать телефон после этого — используя все доступные данные и
-здравый смысл. Считай "недооценено" только если после всех расходов телефон реально можно продать
-дороже итоговой цены с заметным запасом. Честно оцени свою уверенность в диапазоне 0.0-1.0 — если
-данных мало или они противоречивы, уверенность должна быть низкой, не завышай её искусственно.
+применима), и по какой цене реально продать телефон после этого. Считай "недооценено" только если
+после всех расходов телефон реально можно продать дороже итоговой цены с заметным запасом. Честно
+оцени свою уверенность в диапазоне 0.0-1.0 — не завышай её искусственно.
+
+Если по фото или описанию есть что-то неясное (например, не видно состояние аккумулятора, есть ли
+трещины под плёнкой, работает ли что-то конкретное) — сформулируй короткие конкретные вопросы,
+которые стоит задать продавцу перед покупкой.
 
 Верни ТОЛЬКО JSON без markdown, строго такой формы:
 {{
@@ -897,8 +1049,9 @@ def build_prompt(item, similar_examples, web_results, manual_notes, usd_rate):
   "estimated_total_cost": null,
   "estimated_resale_price": null,
   "market_verdict": "недооценено|справедливая цена|переоценено|недостаточно данных",
-  "reasoning": "коротко: на чём основан вывод — с какими конкретно примерами из списка сравнивал",
-  "confidence": 0.0
+  "reasoning": "коротко: на чём основан вывод — с какими конкретно примерами сравнивал",
+  "confidence": 0.0,
+  "questions_for_seller": []
 }}
 Если данных совсем мало — verdict "недостаточно данных", не выдумывай цифры.
 """.strip()
@@ -918,14 +1071,14 @@ def parse_gemini_json(text):
     return {"market_verdict": "недостаточно данных", "reasoning": "не удалось разобрать ответ", "visible_defects": []}
 
 
-def analyze_listing(item, photo_urls, similar_examples, web_results, manual_notes, usd_rate, usage):
+def analyze_listing(item, photo_urls, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate, usage):
     combo = pick_available_combo(usage)
     if not combo:
         return {"market_verdict": "недостаточно данных",
                 "reasoning": "дневной лимит Gemini исчерпан на всех сочетаниях ключ+модель, анализ отложен",
                 "visible_defects": []}
 
-    parts = [{"text": build_prompt(item, similar_examples, web_results, manual_notes, usd_rate)}]
+    parts = [{"text": build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate)}]
     for url in photo_urls:
         try:
             img = requests.get(url, headers=HEADERS, timeout=15)
@@ -991,8 +1144,12 @@ def selected(item, searches, mode):
 
 # ---------- Сборка списка источников ----------
 
-def build_data_sources(similar_examples, manual_notes, web_results, item):
+def build_data_sources(similar_examples, confirmed_good_calls, confirmed_sales, manual_notes, web_results, item):
     sources = []
+    if confirmed_good_calls:
+        sources.append(f"подтверждённые покупки ({len(confirmed_good_calls)})")
+    if confirmed_sales:
+        sources.append(f"подтверждённые продажи ({len(confirmed_sales)})")
     if similar_examples:
         sources.append(f"прошлые полные разборы похожих лотов ({len(similar_examples)})")
     if manual_notes:
@@ -1031,6 +1188,9 @@ def main():
         print("Объявления не найдены:", soup.get_text()[:2000])
         return
 
+    current_ids = {item["id"] for item in listings}
+    seen = process_disappeared_ads(seen, current_ids)
+
     usage_str = ", ".join(f"{c['id']}: {usage.get(c['id'], 0)}/{GEMINI_DAILY_LIMIT_PER_COMBO}" for c in GEMINI_COMBOS)
     search_usage = get_search_usage()
     search_usage_str = ", ".join(f"{p['id']}: {search_usage.get(p['id'], 0)}/{p['limit']}" for p in SEARCH_PROVIDERS)
@@ -1068,6 +1228,8 @@ def main():
 
             model_key = extract_model_key(item["title"])
             similar_examples = similar_full_analyses(model_key, item.get("condition"), item["id"])
+            confirmed_good_calls = get_confirmed_good_calls(model_key)
+            confirmed_sales = get_confirmed_sales(model_key)
             manual_notes = get_manual_notes(model_key)
 
             web_results = None
@@ -1077,9 +1239,9 @@ def main():
                 query = f"{model_key} {memory_part}{condition_part} цена Таджикистан Somon"
                 web_results = web_search_lookup(query)
 
-            data_sources = build_data_sources(similar_examples, manual_notes, web_results, item)
+            data_sources = build_data_sources(similar_examples, confirmed_good_calls, confirmed_sales, manual_notes, web_results, item)
 
-            analysis = analyze_listing(item, photo_urls, similar_examples, web_results, manual_notes, usd_rate, usage)
+            analysis = analyze_listing(item, photo_urls, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate, usage)
             verdict = analysis.get("market_verdict", "недостаточно данных")
 
             log_full_analysis(item, analysis, verdict, data_sources)
@@ -1097,6 +1259,7 @@ def main():
                 repair = analysis.get("estimated_repair_cost")
                 customs = item.get("estimated_customs_cost")
                 confidence = analysis.get("confidence")
+                questions = analysis.get("questions_for_seller", [])
 
                 cost_lines = ""
                 if repair:
@@ -1111,12 +1274,17 @@ def main():
                 if isinstance(confidence, (int, float)):
                     cost_lines += f"🎯 Уверенность Gemini: {round(confidence * 100)}%\n"
 
+                questions_lines = ""
+                if questions:
+                    questions_lines = "❓ Вопросы продавцу:\n" + "\n".join(f"  • {q}" for q in questions) + "\n"
+
                 text = (
                     f"🔥 Потенциально выгодное объявление\n\n{item['title']}\n"
                     f"💰 Цена лота: {item['price'] or '—'} TJS\n"
                     f"📊 Визуальное состояние: {analysis.get('overall_visual_condition', 'неизвестно')}\n"
                     f"🛠 Дефекты: {defects}\n"
                     f"{cost_lines}"
+                    f"{questions_lines}"
                     f"📚 На основе: {', '.join(data_sources)}\n"
                     f"💡 {analysis.get('reasoning', '')}\n"
                     f"🔗 {item['url']}"
@@ -1130,6 +1298,11 @@ def main():
                 log_rejected(item, analysis, note=note)
 
             entry["photo_ok"] = True
+            entry["url"] = item["url"]
+            entry["title"] = item["title"]
+            entry["price"] = item["price"]
+            entry["condition"] = item.get("condition")
+            entry["model_key"] = model_key
             seen[item["id"]] = entry
             time.sleep(2)
         except Exception as e:

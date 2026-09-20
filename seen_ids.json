@@ -3570,5 +3570,103 @@
   "94922512": {
     "logged": true,
     "photo_ok": true
+  },
+  "04318256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17169043_apple-iphone-18-pro-max-256-gb-glacier/",
+    "title": "Apple iPhone 18 Pro Max, 256 gb, Glacier",
+    "price": 19800,
+    "condition": "Б/у",
+    "model_key": "apple iphone 18 pro"
+  },
+  "20413128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170204_apple-iphone-13-pro-128-gb-silver/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Silver",
+    "price": 5200,
+    "condition": "Б/у",
+    "model_key": "apple iphone 13 pro"
+  },
+  "17018864": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170188_apple-iphone-x-64-gb-silver/",
+    "title": "Apple iPhone X, 64 gb, Silver",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "apple iphone x"
+  },
+  "17014013": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170140_telfon-srochni-furukhta-meshavad-navi-pachkakhai-nav-iak-13-ruz-shid-kharidansha-bo-arzon/",
+    "title": "Huawei Honor 600 Pro",
+    "price": 7300,
+    "condition": "Б/у",
+    "model_key": "huawei honor"
+  },
+  "17008475": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170084_poco-c75/",
+    "title": "Xiaomi Poco C75",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "xiaomi poco c75"
+  },
+  "17008716": {
+    "logged": true
+  },
+  "07613128": {
+    "logged": true
+  },
+  "06714128": {
+    "logged": true
+  },
+  "17001614": {
+    "logged": true
+  },
+  "00216128": {
+    "logged": true
+  },
+  "98812256": {
+    "logged": true
+  },
+  "98313128": {
+    "logged": true
+  },
+  "96813128": {
+    "logged": true
+  },
+  "16997315": {
+    "logged": true
+  },
+  "69887128": {
+    "logged": true
+  },
+  "69868515": {
+    "logged": true
+  },
+  "86214128": {
+    "logged": true
+  },
+  "95728755": {
+    "logged": true
+  },
+  "69758128": {
+    "logged": true
+  },
+  "64617256": {
+    "logged": true
+  },
+  "71515256": {
+    "logged": true
+  },
+  "34008256": {
+    "logged": true
   }
 }

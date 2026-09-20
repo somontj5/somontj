@@ -4344,5 +4344,24 @@
     "price": 500,
     "condition": "Б/у",
     "model_key": "apple iphone 7"
+  },
+  "33814413": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16338144_samsung-galaxy-a13/",
+    "title": "Samsung Galaxy A13",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy a13"
+  },
+  "92438555": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14992438_samsung-galaxy-a55-5g/",
+    "title": "Samsung Galaxy A55 5G",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy a55 5g"
   }
 }

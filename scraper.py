@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 # ==== НАСТРОЙКИ ====
 SEARCH_URL = os.environ.get(
     "SOMON_URL",
-    "https://m.somon.tj/telefonyi-i-svyaz/mobilnyie-telefonyi/sostoyanie---1/?ordering=newest&location=185,187,195,204,205,230,210,180"
+    "https://m.somon.tj/telefonyi-i-svyaz/mobilnyie-telefonyi/sostoyanie---1/?ordering=newest"
 )
 MAX_NEW_ITEMS_PER_RUN = int(os.environ.get("MAX_NEW_ITEMS_PER_RUN", "5"))
 MAX_SOLD_CHECKS_PER_RUN = int(os.environ.get("MAX_SOLD_CHECKS_PER_RUN", "5"))
@@ -84,10 +84,10 @@ TRANSLIT_MAP = {
 KNOWN_BRANDS = ["iphone", "apple", "samsung", "xiaomi", "redmi", "honor",
                 "huawei", "tecno", "infinix", "nokia", "google", "pixel", "oppo", "vivo",
                 "realme", "itel", "oneplus", "vertu", "galaxy",
-                "xioami", "xiаomi", "infinx", "realmi", "оppo"]
+                "xioami", "xiаomi", "infinx", "realmi", "оppo", "poco"]
 BRAND_ALIASES = {
     "xioami": "xiaomi", "xiаomi": "xiaomi", "infinx": "infinix",
-    "realmi": "realme", "оppo": "oppo", "galaxy": "samsung",
+    "realmi": "realme", "оppo": "oppo", "galaxy": "samsung", "poco": "poco",
 }
 NOISE_WORDS = {"vietnam", "global", "version", "black", "white", "gold", "silver",
                "blue", "green", "pink", "gray", "grey", "new", "оригинал"}
@@ -96,8 +96,12 @@ CONDITION_RE = re.compile(r"\b(Новый|Б\s*/\s*у|Б\s*\.\s*у\.?|Восст
 NOISE_RE = re.compile(r"Еще\s*\d+\s*фото|VIP|IMEI\s*проверен", re.I)
 PRICE_RE = re.compile(r"(\d[\d\s]{2,})\s*[cс]\.")
 DESC_RE = re.compile(r"Описание\s*(.*?)\s*(?:Показать телефон|Начать чат|Пожаловаться|$)", re.S)
-IMEI_NOT_REGISTERED_RE = re.compile(r"IMEI[^.]{0,60}(?:не\s+внес|не\s+в\s+бел\w*\s+списк)", re.I)
-IMEI_REGISTERED_RE = re.compile(r"IMEI[^.]{0,60}(?:в\s+бел\w*\s+списк|(?<!не\s)внес)", re.I)
+
+IMEI_WHITE_RE = re.compile(r"IMEI[^.]{0,60}в\s+бел\w*\s+списк", re.I)
+IMEI_BLACK_RE = re.compile(r"IMEI[^.]{0,60}в\s+ч[её]рн\w*\s+списк", re.I)
+IMEI_NOT_REGISTERED_RE = re.compile(r"IMEI[^.]{0,60}не\s+внес", re.I)
+IMEI_REGISTERED_RE = re.compile(r"IMEI[^.]{0,60}(?<!не\s)внес", re.I)
+
 SOLD_RE = re.compile(r"(?<!не\s)\bПродано\b", re.I)
 MODES = {"all": "все объявления категории", "used": "только Б/у", "params": "только заданные параметры"}
 
@@ -164,7 +168,7 @@ def log_full_analysis(item, analysis, verdict, data_sources):
             "confidence": analysis.get("confidence"),
             "estimated_repair_cost": analysis.get("estimated_repair_cost"),
             "estimated_customs_cost": item.get("estimated_customs_cost"),
-            "imei_registered": item.get("imei_registered"),
+            "imei_status": item.get("imei_status"),
             "estimated_total_cost": analysis.get("estimated_total_cost"),
             "estimated_resale_price": analysis.get("estimated_resale_price"),
             "questions_for_seller": analysis.get("questions_for_seller", []),
@@ -374,10 +378,15 @@ def estimate_customs_cost(price_tjs, usd_rate):
 
 
 def detect_imei_status(full_text):
+    """Три реальных статуса на Somon.tj + запасной общий случай."""
+    if IMEI_BLACK_RE.search(full_text):
+        return "black"
+    if IMEI_WHITE_RE.search(full_text):
+        return "white"
     if IMEI_NOT_REGISTERED_RE.search(full_text):
-        return False
+        return "not_registered"
     if IMEI_REGISTERED_RE.search(full_text):
-        return True
+        return "registered"
     return None
 
 
@@ -575,7 +584,6 @@ def report_fetch_result(health, success):
 # ---------- Отслеживание проданных объявлений ----------
 
 def check_sold_status(url):
-    """True — реально продано, False — страница жива, но не продано, None — не удалось проверить."""
     try:
         resp = requests.get(url, headers=HEADERS, timeout=20)
         if not resp.ok:
@@ -923,7 +931,7 @@ def fetch_detail(ad_url):
     memory_raw = labeled_value(soup, ["Встроенная память", "Память"])
     memory_match = re.search(r"(\d+)\s*(?:gb|гб)", memory_raw or "", re.I)
     memory = int(memory_match.group(1)) if memory_match else None
-    imei_registered = detect_imei_status(full_text)
+    imei_status = detect_imei_status(full_text)
 
     desc_match = DESC_RE.search(full_text)
     description = desc_match.group(1).strip() if desc_match else full_text[:500]
@@ -935,7 +943,7 @@ def fetch_detail(ad_url):
             seen.add(src)
             photo_urls.append(src)
 
-    return condition, memory, description, photo_urls[:4], imei_registered
+    return condition, memory, description, photo_urls[:4], imei_status
 
 
 # ---------- Gemini: анализ ----------
@@ -986,6 +994,31 @@ def format_manual_notes(notes):
     return "\n".join(lines)
 
 
+def format_imei_block(item, usd_rate):
+    """Формирует и текст для Gemini, и что уже ИЗВЕСТНО (чтобы не задавал лишних вопросов)."""
+    status = item.get("imei_status")
+    if status == "white" or status == "registered":
+        return "\nIMEI уже зарегистрирован (легально растаможен) — дополнительных таможенных расходов и рисков не будет. НЕ спрашивай продавца про растаможку/IMEI, это уже известно."
+    if status == "not_registered":
+        return (
+            f"\nВАЖНО: IMEI этого телефона НЕ зарегистрирован в Таджикистане (обычная, не критичная растаможка "
+            f"ещё не оплачена). Точный расчёт по формуле (пошлина 20% + НДС 14% от таможенной стоимости + сбор "
+            f"+ услуги оформления, курс {usd_rate} TJS за $1) уже посчитан программой: примерно "
+            f"{item.get('estimated_customs_cost')} TJS. Обязательно прибавь эту сумму к итоговой стоимости. "
+            f"НЕ спрашивай продавца про растаможку/IMEI, это уже известно и посчитано."
+        )
+    if status == "black":
+        return (
+            "\nВАЖНО И СЕРЬЁЗНО: IMEI этого телефона в ЧЁРНОМ СПИСКЕ — это не просто неоплаченная растаможка, "
+            "а отдельный, более рискованный статус (возможен штраф, сложности или невозможность легальной "
+            "растаможки в принципе). Это весомый минус, который может сделать сделку невыгодной или рискованной "
+            "даже при низкой цене — учти это в вердикте и снизь уверенность, если не уверен в масштабе риска. "
+            "НЕ спрашивай продавца про сам факт чёрного списка, это уже известно — если хочешь, можешь спросить "
+            "только про конкретные детали (например, можно ли вообще легализовать такой IMEI)."
+        )
+    return "\nСтатус IMEI на странице определить не удалось — если это важно, можешь спросить у продавца напрямую про растаможку."
+
+
 def build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate):
     examples_text = format_similar_examples(similar_examples)
     good_calls_text = format_confirmed_good_calls(confirmed_good_calls)
@@ -995,17 +1028,7 @@ def build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, 
         if web_results else "Веб-поиск не дал результатов в этот раз."
     )
     manual_text = format_manual_notes(manual_notes)
-
-    customs_text = ""
-    if item.get("imei_registered") is False:
-        customs_text = (
-            f"\nВАЖНО: IMEI этого телефона НЕ зарегистрирован в Таджикистане. Точный расчёт растаможки "
-            f"по установленной формуле (пошлина 20% + НДС 14% от таможенной стоимости + сбор + услуги "
-            f"оформления, курс {usd_rate} TJS за $1) уже посчитан программой: примерно "
-            f"{item.get('estimated_customs_cost')} TJS. Обязательно прибавь эту сумму к итоговой стоимости."
-        )
-    elif item.get("imei_registered") is True:
-        customs_text = "\nIMEI уже зарегистрирован — дополнительных таможенных расходов не будет."
+    imei_text = format_imei_block(item, usd_rate)
 
     return f"""
 Ты — эксперт по оценке б/у смартфонов для перепродажи в Таджикистане. Изучи текст объявления и фото.
@@ -1015,7 +1038,7 @@ def build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, 
 Цена: {item['price']} TJS
 Состояние по словам продавца: {item.get('condition') or 'не указано'}
 Описание продавца: {item.get('description', '')[:800]}
-{customs_text}
+{imei_text}
 
 {good_calls_text}
 
@@ -1031,14 +1054,15 @@ def build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, 
 рассуждай по каждому примеру отдельно, как эксперт. Подтверждённые покупки и продажи выше — самые
 надёжные данные, опирайся на них в первую очередь, если они есть.
 
-Сам реши и посчитай: стоимость возможного ремонта, итоговую цену (лот + ремонт + растаможка, если
-применима), и по какой цене реально продать телефон после этого. Считай "недооценено" только если
-после всех расходов телефон реально можно продать дороже итоговой цены с заметным запасом. Честно
-оцени свою уверенность в диапазоне 0.0-1.0 — не завышай её искусственно.
+Сам реши и посчитай: стоимость возможного ремонта, итоговую цену (лот + ремонт + все указанные выше
+расходы/риски по IMEI), и по какой цене реально продать телефон после этого. Считай "недооценено"
+только если после всех расходов телефон реально можно продать дороже итоговой цены с заметным
+запасом. Честно оцени свою уверенность в диапазоне 0.0-1.0 — не завышай её искусственно, и снижай
+её при серьёзных рисках (например, чёрный список IMEI).
 
-Если по фото или описанию есть что-то неясное (например, не видно состояние аккумулятора, есть ли
-трещины под плёнкой, работает ли что-то конкретное) — сформулируй короткие конкретные вопросы,
-которые стоит задать продавцу перед покупкой.
+ВАЖНО про вопросы продавцу: не спрашивай о том, что уже прямо указано в данных выше (состояние,
+память, статус IMEI — если он определён). Задавай вопросы только о том, что реально неизвестно
+и важно для решения (например, состояние аккумулятора, есть ли скрытые повреждения, комплектация).
 
 Верни ТОЛЬКО JSON без markdown, строго такой формы:
 {{
@@ -1156,8 +1180,8 @@ def build_data_sources(similar_examples, confirmed_good_calls, confirmed_sales, 
         sources.append(f"ваши заметки вручную ({len(manual_notes)})")
     if web_results:
         sources.append("веб-поиск")
-    if item.get("imei_registered") is False:
-        sources.append("расчёт растаможки по формуле")
+    if item.get("imei_status") in ("not_registered", "black"):
+        sources.append("статус IMEI со страницы")
     if not sources:
         sources.append("только фото и текст объявления, без доп. данных")
     return sources
@@ -1218,12 +1242,12 @@ def main():
     for item in candidates:
         entry = seen.get(item["id"], {})
         try:
-            condition, memory, description, photo_urls, imei_registered = fetch_detail(item["url"])
+            condition, memory, description, photo_urls, imei_status = fetch_detail(item["url"])
             item["condition"] = condition or item.get("condition")
             item["memory"] = memory or item.get("memory")
             item["description"] = description
-            item["imei_registered"] = imei_registered
-            if imei_registered is False:
+            item["imei_status"] = imei_status
+            if imei_status == "not_registered":
                 item["estimated_customs_cost"] = estimate_customs_cost(item["price"], usd_rate)
 
             model_key = extract_model_key(item["title"])
@@ -1264,6 +1288,8 @@ def main():
                 cost_lines = ""
                 if repair:
                     cost_lines += f"🔧 Примерный ремонт: {repair} TJS\n"
+                if item.get("imei_status") == "black":
+                    cost_lines += "🚫 IMEI в чёрном списке — серьёзный риск, см. пояснение ниже\n"
                 if customs:
                     cost_lines += f"🛃 Примерная растаможка (IMEI не оформлен): {customs} TJS\n"
                 if total:

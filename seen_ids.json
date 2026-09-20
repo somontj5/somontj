@@ -3626,7 +3626,8 @@
     "title": "Samsung Galaxy A16",
     "price": 1199,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a16"
+    "model_key": "samsung galaxy a16",
+    "sold_checked": true
   },
   "07613128": {
     "logged": true,
@@ -3957,5 +3958,14 @@
     "condition": "Б/у",
     "model_key": "apple iphone xr",
     "sold_checked": true
+  },
+  "17061315": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170613_mi-15-ultra/",
+    "title": "Xiaomi Mi 15 Ultra",
+    "price": 9999,
+    "condition": "Б/у",
+    "model_key": "xiaomi mi 15 ultra"
   }
 }

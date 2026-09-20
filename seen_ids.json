@@ -3955,6 +3955,7 @@
     "title": "Apple iPhone Xr, 64 gb, Black",
     "price": 1999,
     "condition": "Б/у",
-    "model_key": "apple iphone xr"
+    "model_key": "apple iphone xr",
+    "sold_checked": true
   }
 }

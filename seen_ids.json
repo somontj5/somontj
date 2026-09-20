@@ -3742,5 +3742,56 @@
     "price": 5100,
     "condition": "Б/у",
     "model_key": "apple iphone 15 pro"
+  },
+  "17034551": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170345_samsung-a51/",
+    "title": "Samsung Galaxy A51",
+    "price": 399,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy a51"
+  },
+  "17034614": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170346_samsung-galaxy-a14/",
+    "title": "Samsung galaxy A14",
+    "price": 889,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy a14"
+  },
+  "17033664": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170336_apple-iphone-xs-max-64-gb-gold/",
+    "title": "Apple iPhone Xs Max, 64 gb, Gold",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "apple iphone xs max"
+  },
+  "29514128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170295_apple-iphone-14-pro-128-gb-space-black/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Space Black",
+    "price": 4900,
+    "condition": "Б/у",
+    "model_key": "apple iphone 14 pro"
+  },
+  "29914128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170299_apple-iphone-14-pro-128-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Deep Purple",
+    "price": 4200,
+    "condition": "Б/у",
+    "model_key": "apple iphone 14 pro"
+  },
+  "17170271": {
+    "logged": true
   }
 }

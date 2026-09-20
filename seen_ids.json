@@ -3999,5 +3999,24 @@
     "price": 1888,
     "condition": "Б/у",
     "model_key": "xiaomi redmi note 14"
+  },
+  "78228256": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16365078_samsung-galaxy-s22plus-8-256gb-black/",
+    "title": "Samsung Galaxy Note 20 8/256Gb Bronze",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy note 20"
+  },
+  "17097364": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170973_apple-iphone-xs-64-gb-gold/",
+    "title": "Apple iPhone Xs, 64 gb, Gold",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "apple iphone xs"
   }
 }

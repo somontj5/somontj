@@ -3845,7 +3845,8 @@
     "title": "Xiaomi Redmi A3",
     "price": 750,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi a3"
+    "model_key": "xiaomi redmi a3",
+    "sold_checked": true
   },
   "17029264": {
     "logged": true,
@@ -3854,7 +3855,8 @@
     "title": "Apple iPhone X, 64 gb, Silver",
     "price": 899,
     "condition": "Б/у",
-    "model_key": "apple iphone x"
+    "model_key": "apple iphone x",
+    "sold_checked": true
   },
   "17170322": {
     "logged": true,
@@ -3863,7 +3865,8 @@
     "title": "Samsung Galaxy A52",
     "price": 900,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a52"
+    "model_key": "samsung galaxy a52",
+    "sold_checked": true
   },
   "70368732": {
     "logged": true,
@@ -3881,7 +3884,8 @@
     "title": "Apple iPhone 13 Pro Max, 128 gb, Alpine Green",
     "price": 4500,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "51313256": {
     "logged": true,
@@ -3891,7 +3895,8 @@
     "title": "Apple iPhone 13 Pro Max, 256 gb, Sierra Blue",
     "price": 4550,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "44914128": {
     "logged": true,

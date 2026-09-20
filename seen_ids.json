@@ -3588,7 +3588,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Silver",
     "price": 5200,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "17018864": {
     "logged": true,
@@ -3598,7 +3599,8 @@
     "title": "Apple iPhone X, 64 gb, Silver",
     "price": 999,
     "condition": "Б/у",
-    "model_key": "apple iphone x"
+    "model_key": "apple iphone x",
+    "sold_checked": true
   },
   "17014013": {
     "logged": true,
@@ -3607,7 +3609,8 @@
     "title": "Huawei Honor 600 Pro",
     "price": 7300,
     "condition": "Б/у",
-    "model_key": "huawei honor"
+    "model_key": "huawei honor",
+    "sold_checked": true
   },
   "17008475": {
     "logged": true,
@@ -3617,7 +3620,8 @@
     "title": "Xiaomi Poco C75",
     "price": 700,
     "condition": "Б/у",
-    "model_key": "xiaomi poco c75"
+    "model_key": "xiaomi poco c75",
+    "sold_checked": true
   },
   "17008716": {
     "logged": true,
@@ -3758,7 +3762,8 @@
     "title": "Samsung Galaxy S20 FE",
     "price": 1300,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s20 fe"
+    "model_key": "samsung galaxy s20 fe",
+    "sold_checked": true
   },
   "22011256": {
     "logged": true,

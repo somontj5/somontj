@@ -2999,12 +2999,16 @@
     "photo_ok": true
   },
   "72225612": {
-    "logged": true
+    "logged": true,
+    "notified": true,
+    "photo_ok": true
   },
   "38013256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true
   },
   "51413128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true
   }
 }

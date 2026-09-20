@@ -3619,19 +3619,52 @@
     "model_key": "xiaomi poco c75"
   },
   "17008716": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170087_samsung-a16/",
+    "title": "Samsung Galaxy A16",
+    "price": 1199,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy a16"
   },
   "07613128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170076_apple-iphone-13-128-gb-midnight/",
+    "title": "Apple iPhone 13, 128 gb, Midnight",
+    "price": 3599,
+    "condition": "Б/у",
+    "model_key": "apple iphone 13"
   },
   "06714128": {
-    "logged": true
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170067_apple-iphone-14-pro-128-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Deep Purple",
+    "price": 3000,
+    "condition": "Б/у",
+    "model_key": "apple iphone 14 pro"
   },
   "17001614": {
-    "logged": true
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170016_redmi-not-14/",
+    "title": "Xiaomi Redmi Note 14",
+    "price": 1759,
+    "condition": "Б/у",
+    "model_key": "xiaomi redmi note 14"
   },
   "00216128": {
-    "logged": true
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170002_apple-iphone-16-pro-128-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro, 128 gb, Desert Titanium",
+    "price": 8000,
+    "condition": "Б/у",
+    "model_key": "apple iphone 16 pro"
   },
   "98812256": {
     "logged": true

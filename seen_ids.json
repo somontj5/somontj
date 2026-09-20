@@ -3667,10 +3667,22 @@
     "model_key": "apple iphone 16 pro"
   },
   "98812256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17169988_apple-iphone-12-pro-256-gb-silver/",
+    "title": "Apple iPhone 12 pro, 256 gb, Silver",
+    "price": 3199,
+    "condition": "Б/у",
+    "model_key": "apple iphone 12 pro"
   },
   "98313128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17169983_apple-iphone-13-pro-max-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Sierra Blue",
+    "price": 3950,
+    "condition": "Б/у",
+    "model_key": "apple iphone 13 pro"
   },
   "96813128": {
     "logged": true
@@ -3701,5 +3713,34 @@
   },
   "34008256": {
     "logged": true
+  },
+  "17170216": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170216_telfon-dar-kholati-bekhtari/",
+    "title": "Samsung Galaxy S20 FE",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s20 fe"
+  },
+  "22011256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170220_apple-iphone-11-pro-256-gb-gold/",
+    "title": "Apple iPhone 11 Pro, 256 gb, Gold",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "apple iphone 11 pro"
+  },
+  "06115256": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17170061_apple-iphone-15-pro-max-256-gb-white-titanium/",
+    "title": "Apple iPhone 15 Pro Max, 256 gb, White Titanium",
+    "price": 5100,
+    "condition": "Б/у",
+    "model_key": "apple iphone 15 pro"
   }
 }

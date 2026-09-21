@@ -4199,7 +4199,8 @@
     "title": "Xiaomi Redmi 8",
     "price": 550,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 8"
+    "model_key": "xiaomi redmi 8",
+    "sold_checked": true
   },
   "71711868": {
     "logged": true,
@@ -4350,7 +4351,8 @@
     "title": "Samsung Galaxy Note 20",
     "price": 1649,
     "condition": "Б/у",
-    "model_key": "samsung galaxy note 20"
+    "model_key": "samsung galaxy note 20",
+    "sold_checked": true
   },
   "16990925": {
     "logged": true,
@@ -4927,5 +4929,24 @@
     "price": 4100,
     "condition": "Б/у",
     "model_key": "samsung galaxy s23 ultra"
+  },
+  "73552911": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15735529_xiaomi-redmi-note-11/",
+    "title": "Xiaomi Redmi Note 11",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "xiaomi redmi note 11"
+  },
+  "68593146": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16859314_honor-x6c/",
+    "title": "Honor X6c",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "honor x6c"
   }
 }

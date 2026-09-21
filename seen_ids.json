@@ -4809,6 +4809,7 @@
     "title": "Apple iPhone 14 Pro, 128 gb, Deep Purple",
     "price": 4199,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   }
 }

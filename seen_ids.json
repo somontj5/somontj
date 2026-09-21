@@ -647,7 +647,8 @@
     "url": "https://m.somon.tj/adv/17173188_telefon-tecno-spak-20-pro-8-256gb-2026/",
     "title": "Tecno Spak 20 pro 8/256Gb 2026",
     "price": 1250,
-    "model_key": "tecno spak 20 pro"
+    "model_key": "tecno spak 20 pro",
+    "sold_checked": true
   },
   "22568300": {
     "logged": true,
@@ -5214,7 +5215,8 @@
     "title": "Apple iPhone 17 Pro Max, 512 gb, Cosmic Orange дубликат",
     "price": 350,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "78822256": {
     "logged": true,
@@ -5224,5 +5226,25 @@
     "price": 3350,
     "condition": "Б/у",
     "model_key": "samsung galaxy s22 ultra"
+  },
+  "66742612": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16674261_tecno-spark-go-2/",
+    "title": "Tecno Spark Go 2",
+    "price": 1099,
+    "condition": "Б/у",
+    "model_key": "tecno spark go 2"
+  },
+  "17721210": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17177212_xiaomi-redmi-note-10/",
+    "title": "Xiaomi Redmi Note 10",
+    "price": 370,
+    "condition": "Б/у",
+    "model_key": "xiaomi redmi note 10"
   }
 }

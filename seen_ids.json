@@ -5393,7 +5393,8 @@
     "title": "Honor x7d",
     "price": 1800,
     "condition": "Б/у",
-    "model_key": "honor x7d"
+    "model_key": "honor x7d",
+    "sold_checked": true
   },
   "85215256": {
     "logged": true,
@@ -5458,5 +5459,14 @@
     "price": 1750,
     "condition": "Б/у",
     "model_key": "samsung galaxy а54"
+  },
+  "27356256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17178273_samsung-galaxy-a56-256gb/",
+    "title": "Samsung Galaxy A56 256GB",
+    "price": 3400,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy a56"
   }
 }

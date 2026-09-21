@@ -5014,7 +5014,8 @@
     "title": "Samsung Galaxy A20e",
     "price": 450,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a20e"
+    "model_key": "samsung galaxy a20e",
+    "sold_checked": true
   },
   "34414128": {
     "logged": true,
@@ -5548,5 +5549,15 @@
     "price": 1250,
     "condition": "Б/у",
     "model_key": "apple iphone x"
+  },
+  "27865616": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16927865_apple-iphone-6-plus-16-gb/",
+    "title": "Apple iPhone 6 plus, 16 gb",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "apple iphone 6 plus"
   }
 }

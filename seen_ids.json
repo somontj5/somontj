@@ -4760,5 +4760,15 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "xiaomi redmi note 10"
+  },
+  "41561285": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17173441_telefon-samsung-56-128gb-dual-sim-5g/",
+    "title": "Samsung Galaxy 56 128gb Dual sim 5G",
+    "price": 3200,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy"
   }
 }

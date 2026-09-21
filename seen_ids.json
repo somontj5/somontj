@@ -4811,5 +4811,23 @@
     "condition": "Б/у",
     "model_key": "apple iphone 14 pro",
     "sold_checked": true
+  },
+  "65714128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17174657_apple-iphone-14-pro-max-128-gb-silver/",
+    "title": "Apple iPhone 14 Pro Max, 128 gb, Silver",
+    "price": 3999,
+    "condition": "Б/у",
+    "model_key": "apple iphone 14 pro"
+  },
+  "53621023": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15536210_samsung-galaxy-s23-ultra/",
+    "title": "Samsung Galaxy S23 Ultra,512gb",
+    "price": 6700,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s23 ultra"
   }
 }

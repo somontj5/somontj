@@ -5068,6 +5068,16 @@
     "title": "Samsung Galaxy S23",
     "price": 4100,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s23"
+    "model_key": "samsung galaxy s23",
+    "sold_checked": true
+  },
+  "61722512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16798617_samsung-galaxy-s22-ultra-512g/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s22 ultra"
   }
 }

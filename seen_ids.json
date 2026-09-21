@@ -4829,5 +4829,14 @@
     "price": 6700,
     "condition": "Б/у",
     "model_key": "samsung galaxy s23 ultra"
+  },
+  "74634256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17174634_apple-iphone-xr-256-gb-white/",
+    "title": "Apple iPhone Xr, 256 gb, White",
+    "price": 2399,
+    "condition": "Б/у",
+    "model_key": "apple iphone xr"
   }
 }

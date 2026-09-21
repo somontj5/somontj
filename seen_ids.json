@@ -5578,6 +5578,7 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
     "price": 14500,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   }
 }

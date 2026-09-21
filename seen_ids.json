@@ -1429,7 +1429,8 @@
     "title": "Apple iPhone 13 Pro Max, 128 gb, Alpine Green",
     "price": 4500,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "71596191": {
     "logged": true
@@ -4468,7 +4469,8 @@
     "title": "Apple iPhone 13 Pro Max, 128 gb, Silver",
     "price": 5200,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "17911128": {
     "logged": true,
@@ -4477,7 +4479,8 @@
     "title": "Apple iPhone 11, 128 gb, White",
     "price": 1990,
     "condition": "Б/у",
-    "model_key": "apple iphone 11"
+    "model_key": "apple iphone 11",
+    "sold_checked": true
   },
   "08917256": {
     "logged": true,
@@ -4486,7 +4489,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange дубликат",
     "price": 1200,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "17209122": {
     "logged": true,
@@ -4495,7 +4499,8 @@
     "title": "Samsung Galaxy S22 Ultra",
     "price": 4199,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s22 ultra"
+    "model_key": "samsung galaxy s22 ultra",
+    "sold_checked": true
   },
   "20647128": {
     "logged": true

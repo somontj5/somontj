@@ -5062,7 +5062,8 @@
     "title": "Samsung Galaxy A35 128/8Gb Vetnam 5G Silver",
     "price": 2350,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a35"
+    "model_key": "samsung galaxy a35",
+    "sold_checked": true
   },
   "59147128": {
     "logged": true,
@@ -5538,5 +5539,14 @@
     "price": 1150,
     "condition": "Б/у",
     "model_key": "infinix hot"
+  },
+  "17863664": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17178636_apple-iphone-x-64-gb-silver/",
+    "title": "Apple iPhone X, 64 gb, Silver",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "apple iphone x"
   }
 }

@@ -4618,7 +4618,8 @@
     "title": "Huawei Honor X9c",
     "price": 2400,
     "condition": "Б/у",
-    "model_key": "huawei honor x9c"
+    "model_key": "huawei honor x9c",
+    "sold_checked": true
   },
   "15818712": {
     "logged": true,
@@ -4665,7 +4666,8 @@
     "title": "Samsung Galaxy А 26 5G",
     "price": 2100,
     "condition": "Б/у",
-    "model_key": "samsung galaxy а 26"
+    "model_key": "samsung galaxy а 26",
+    "sold_checked": true
   },
   "88230813": {
     "logged": true,
@@ -5123,5 +5125,24 @@
     "price": 1450,
     "condition": "Б/у",
     "model_key": "samsung galaxy s10"
+  },
+  "00500222": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16000500_samsung-galaxy-s22-2-sim-vietnam/",
+    "title": "Samsung Galaxy S22 2-Sim Vietnam",
+    "price": 2990,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s22 2"
+  },
+  "04121256": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17177041_samsung-galaxy-s21-256gb/",
+    "title": "Samsung Galaxy S21 256GB",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s21"
   }
 }

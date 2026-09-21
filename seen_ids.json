@@ -4590,5 +4590,51 @@
     "price": 2400,
     "condition": "Б/у",
     "model_key": "huawei honor x9c"
+  },
+  "15818712": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/13158187_redmi-12/",
+    "title": "Xiaomi Redmi 12",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "xiaomi redmi 12"
+  },
+  "17306024": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17173060_samsung-galaxy-s24-ultra-idealnoe-sostoianie-original/",
+    "title": "Samsung Galaxy S24 Ultra",
+    "price": 8000,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s24 ultra"
+  },
+  "05413128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17173054_apple-iphone-13-128-gb-green/",
+    "title": "Apple iPhone 13, 128 gb, Green",
+    "price": 2899,
+    "condition": "Б/у",
+    "model_key": "apple iphone 13"
+  },
+  "69677215": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14769677_samsung-s21-5g/",
+    "title": "Samsung Galaxy s21 5G",
+    "price": 2800,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s21 5g"
+  },
+  "69480365": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14769480_samsung-a-36-5g/",
+    "title": "Samsung Galaxy А 26 5G",
+    "price": 2100,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy а 26"
   }
 }

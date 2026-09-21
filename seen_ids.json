@@ -4977,7 +4977,8 @@
     "title": "Samsung Galaxy S23 Ultra 12/256Gb Duos",
     "price": 4100,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s23 ultra"
+    "model_key": "samsung galaxy s23 ultra",
+    "sold_checked": true
   },
   "73552911": {
     "logged": true,
@@ -5500,5 +5501,15 @@
     "price": 1550,
     "condition": "Б/у",
     "model_key": "apple iphone xr"
+  },
+  "34811264": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17173481_apple-iphone-12-64-gb-blue/",
+    "title": "Apple iPhone 12, 64 gb, Blue",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "apple iphone 12"
   }
 }

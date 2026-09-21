@@ -4542,6 +4542,7 @@
     "title": "Телефон honor",
     "price": 2100,
     "condition": "Б/у",
-    "model_key": "honor"
+    "model_key": "honor",
+    "sold_checked": true
   }
 }

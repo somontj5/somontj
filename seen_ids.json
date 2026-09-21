@@ -4562,5 +4562,33 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "realme c63"
+  },
+  "32923215": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15732923_samsung-galaxy-s21-plus-5g/",
+    "title": "Samsung Galaxy S23 Ultra",
+    "price": 6000,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s23 ultra"
+  },
+  "42127920": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14421279_samsung-note-20-ultra/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 5000,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s22 ultra"
+  },
+  "46603697": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14660369_honor-x7c/",
+    "title": "Huawei Honor X9c",
+    "price": 2400,
+    "condition": "Б/у",
+    "model_key": "huawei honor x9c"
   }
 }

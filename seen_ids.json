@@ -5368,5 +5368,14 @@
     "price": 13000,
     "condition": "Б/у",
     "model_key": "apple iphone 17 pro"
+  },
+  "17177674": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17177674_rastamoshka/",
+    "title": "Xiaomi Redmi 9A",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "xiaomi redmi 9a"
   }
 }

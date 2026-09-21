@@ -4599,7 +4599,8 @@
     "title": "Samsung Galaxy S23 Ultra",
     "price": 6000,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s23 ultra"
+    "model_key": "samsung galaxy s23 ultra",
+    "sold_checked": true
   },
   "42127920": {
     "logged": true,
@@ -4639,7 +4640,8 @@
     "title": "Samsung Galaxy S24 Ultra",
     "price": 8000,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s24 ultra"
+    "model_key": "samsung galaxy s24 ultra",
+    "sold_checked": true
   },
   "05413128": {
     "logged": true,
@@ -4678,7 +4680,8 @@
     "title": "Xiaomi Redmi 13",
     "price": 1100,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 13"
+    "model_key": "xiaomi redmi 13",
+    "sold_checked": true
   },
   "42858228": {
     "logged": true,
@@ -4687,7 +4690,8 @@
     "title": "Xiaomi Redmi note 11 PRO",
     "price": 1200,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 11"
+    "model_key": "xiaomi redmi note 11",
+    "sold_checked": true
   },
   "32561252": {
     "logged": true,
@@ -5174,5 +5178,41 @@
     "price": 3650,
     "condition": "Б/у",
     "model_key": "samsung galaxy s22 ultra"
+  },
+  "64010222": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16640102_samsung-galaxy-s22-ultra/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 3450,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s22 ultra"
+  },
+  "94780322": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16947803_samsung-galaxy-s22-ultra/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 4200,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s22 ultra"
+  },
+  "68233322": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14682333_samsung-galaxy-s22-ultra/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 4100,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s22 ultra"
+  },
+  "91517512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17176915_apple-iphone-17-pro-max-512-gb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro Max, 512 gb, Cosmic Orange дубликат",
+    "price": 350,
+    "condition": "Б/у",
+    "model_key": "apple iphone 17 pro"
   }
 }

@@ -4559,7 +4559,8 @@
     "title": "Honor X9d 8/256Gb",
     "price": 3000,
     "condition": "Б/у",
-    "model_key": "honor x9d 8"
+    "model_key": "honor x9d 8",
+    "sold_checked": true
   },
   "17172610": {
     "logged": true,
@@ -4578,7 +4579,8 @@
     "title": "Xiaomi Redmi 9A",
     "price": 480,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 9a"
+    "model_key": "xiaomi redmi 9a",
+    "sold_checked": true
   },
   "28586121": {
     "logged": true,
@@ -5101,5 +5103,14 @@
     "price": 799,
     "condition": "Б/у",
     "model_key": "samsung galaxy a71"
+  },
+  "70480117": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16704801_samsung-galaxy-a17/",
+    "title": "Samsung Galaxy A17",
+    "price": 2100,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy a17"
   }
 }

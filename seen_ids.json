@@ -4128,7 +4128,8 @@
     "title": "Смартфон Xiaomi Redmi",
     "price": 600,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi"
+    "model_key": "xiaomi redmi",
+    "sold_checked": true
   },
   "46012128": {
     "logged": true,
@@ -4147,7 +4148,8 @@
     "title": "Apple iPhone 14 Pro Max, 256 gb, Deep Purple",
     "price": 7000,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "31411128": {
     "logged": true,
@@ -4867,5 +4869,14 @@
     "price": 2200,
     "condition": "Б/у",
     "model_key": "samsung galaxy a35"
+  },
+  "50277128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17175027_honor-x7d-128gb/",
+    "title": "Honor X7D 128Gb",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "honor x7d"
   }
 }

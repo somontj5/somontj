@@ -4418,7 +4418,8 @@
     "title": "Samsung galaxy a3 2017 duos",
     "price": 750,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a3"
+    "model_key": "samsung galaxy a3",
+    "sold_checked": true
   },
   "16913256": {
     "logged": true,

@@ -5075,7 +5075,8 @@
     "title": "Apple iPhone 7, 128 gb",
     "price": 711,
     "condition": "Б/у",
-    "model_key": "apple iphone 7"
+    "model_key": "apple iphone 7",
+    "sold_checked": true
   },
   "99515256": {
     "logged": true,
@@ -5590,5 +5591,23 @@
     "price": 3200,
     "condition": "Б/у",
     "model_key": "apple iphone 13 pro"
+  },
+  "17179091": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17179091_telefon-pachka/",
+    "title": "Xiaomi Redmi Note 14",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "xiaomi redmi note 14"
+  },
+  "90901164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17179090_apple-iphone-11-pro-64-gb-midnight-green/",
+    "title": "Apple iPhone 11 Pro, 64 gb, Midnight Green",
+    "price": 2550,
+    "condition": "Б/у",
+    "model_key": "apple iphone 11 pro"
   }
 }

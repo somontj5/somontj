@@ -4877,7 +4877,8 @@
     "title": "Samsung Galaxy S23 Ultra,512gb",
     "price": 6700,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s23 ultra"
+    "model_key": "samsung galaxy s23 ultra",
+    "sold_checked": true
   },
   "74634256": {
     "logged": true,
@@ -4886,7 +4887,8 @@
     "title": "Apple iPhone Xr, 256 gb, White",
     "price": 2399,
     "condition": "Б/у",
-    "model_key": "apple iphone xr"
+    "model_key": "apple iphone xr",
+    "sold_checked": true
   },
   "91332128": {
     "logged": true,
@@ -5398,5 +5400,33 @@
     "price": 7499,
     "condition": "Б/у",
     "model_key": "apple iphone 15 pro"
+  },
+  "83516256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16867835_apple-iphone-16-pro-max-256-gb-black-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
+    "price": 9800,
+    "condition": "Б/у",
+    "model_key": "apple iphone 16 pro"
+  },
+  "83516128": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16989835_apple-iphone-16-pro-128-gb-black-titanium/",
+    "title": "Apple iPhone 16 Pro, 256 gb, Black Titanium",
+    "price": 8550,
+    "condition": "Б/у",
+    "model_key": "apple iphone 16 pro"
+  },
+  "55112128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17175551_redmi-12-128gb/",
+    "title": "Xiaomi Redmi 12 128GB",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "xiaomi redmi 12"
   }
 }

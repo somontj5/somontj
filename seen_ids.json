@@ -4186,7 +4186,8 @@
     "title": "Honor X7D 128/6Gb 2026",
     "price": 1750,
     "condition": "Б/у",
-    "model_key": "honor x7d"
+    "model_key": "honor x7d",
+    "sold_checked": true
   },
   "71707678": {
     "logged": true,
@@ -4878,5 +4879,23 @@
     "price": 1750,
     "condition": "Б/у",
     "model_key": "honor x7d"
+  },
+  "72012256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17175077_samsung-galaxy-not-20-ultra-12-256gb-duos-vietnam/",
+    "title": "Samsung Galaxy Not 20 Ultra 12/256Gb Duos Vietnam",
+    "price": 3000,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy not 20"
+  },
+  "05922256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17175059_samsung-galaxy-s22-ultra-256gb/",
+    "title": "Samsung Galaxy S22 Ultra 256Gb",
+    "price": 3540,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s22 ultra"
   }
 }

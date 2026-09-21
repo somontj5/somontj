@@ -4772,7 +4772,8 @@
     "title": "Samsung Galaxy A15",
     "price": 1600,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a15"
+    "model_key": "samsung galaxy a15",
+    "sold_checked": true
   },
   "76561285": {
     "logged": true,
@@ -4782,7 +4783,8 @@
     "title": "Samsung Galaxy А56 128 Vetnam 5G",
     "price": 2860,
     "condition": "Б/у",
-    "model_key": "samsung galaxy а56"
+    "model_key": "samsung galaxy а56",
+    "sold_checked": true
   },
   "34610324": {
     "logged": true,
@@ -4791,7 +4793,8 @@
     "title": "Xiaomi Redmi 10A 32Gb 4G",
     "price": 720,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 10a"
+    "model_key": "xiaomi redmi 10a",
+    "sold_checked": true
   },
   "33511064": {
     "logged": true,
@@ -4801,7 +4804,8 @@
     "title": "Xiaomi Redmi Note 10 64 GB",
     "price": 800,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 10"
+    "model_key": "xiaomi redmi note 10",
+    "sold_checked": true
   },
   "41561285": {
     "logged": true,
@@ -5307,5 +5311,32 @@
     "price": 6500,
     "condition": "Б/у",
     "model_key": "samsung galaxy s23 ultra"
+  },
+  "95713128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16947957_apple-iphone-13-pro-max-128-gb-silver/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Silver",
+    "price": 5800,
+    "condition": "Б/у",
+    "model_key": "apple iphone 13 pro"
+  },
+  "10013128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16866100_apple-iphone-13-128-gb-midnight/",
+    "title": "Apple iPhone 13, 128 gb, Midnight",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "apple iphone 13"
+  },
+  "17751326": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17177513_samsung-galaxy-s26/",
+    "title": "Samsung Galaxy S26",
+    "price": 5400,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s26"
   }
 }

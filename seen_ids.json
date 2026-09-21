@@ -4801,5 +4801,14 @@
     "price": 1250,
     "condition": "Б/у",
     "model_key": "samsung galaxy а51"
+  },
+  "29714128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17174297_apple-iphone-14-pro-128-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Deep Purple",
+    "price": 4199,
+    "condition": "Б/у",
+    "model_key": "apple iphone 14 pro"
   }
 }

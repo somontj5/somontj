@@ -5095,7 +5095,8 @@
     "title": "Xiaomi Redmi note 11 pro 128Gb",
     "price": 499,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 11"
+    "model_key": "xiaomi redmi note 11",
+    "sold_checked": true
   },
   "60531264": {
     "logged": true,
@@ -5609,5 +5610,14 @@
     "price": 2550,
     "condition": "Б/у",
     "model_key": "apple iphone 11 pro"
+  },
+  "16013128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17179160_apple-iphone-13-128-gb-blue/",
+    "title": "Apple iPhone 13, 128 gb, Blue",
+    "price": 4000,
+    "condition": "Б/у",
+    "model_key": "apple iphone 13"
   }
 }

@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 # ==== НАСТРОЙКИ ====
 SEARCH_URL = os.environ.get(
     "SOMON_URL",
-    "https://m.somon.tj/telefonyi-i-svyaz/mobilnyie-telefonyi/sostoyanie---1/?ordering=newest&location=185,187,195,204,205,230,210,180"
+    "https://m.somon.tj/telefonyi-i-svyaz/mobilnyie-telefonyi/sostoyanie---1/?ordering=newest"
 )
 MAX_NEW_ITEMS_PER_RUN = int(os.environ.get("MAX_NEW_ITEMS_PER_RUN", "5"))
 MAX_SOLD_CHECKS_PER_RUN = int(os.environ.get("MAX_SOLD_CHECKS_PER_RUN", "5"))
@@ -98,9 +98,11 @@ PRICE_RE = re.compile(r"(\d[\d\s]{2,})\s*[cс]\.")
 DESC_RE = re.compile(r"Описание\s*(.*?)\s*(?:Показать телефон|Начать чат|Пожаловаться|$)", re.S)
 
 IMEI_WHITE_RE = re.compile(r"IMEI[^.]{0,60}в\s+бел\w*\s+списк", re.I)
+IMEI_GRAY_RE = re.compile(r"IMEI[^.]{0,60}в\s+сер\w*\s+списк", re.I)
 IMEI_BLACK_RE = re.compile(r"IMEI[^.]{0,60}в\s+ч[её]рн\w*\s+списк", re.I)
 IMEI_NOT_REGISTERED_RE = re.compile(r"IMEI[^.]{0,60}не\s+внес", re.I)
 IMEI_REGISTERED_RE = re.compile(r"IMEI[^.]{0,60}(?<!не\s)внес", re.I)
+PUBLISHED_RE = re.compile(r"(Сегодня|Вчера|\d+\s*(?:минут\w*|час\w*|день|дн\w*|недел\w*)\s*назад)", re.I)
 
 SOLD_RE = re.compile(r"(?<!не\s)\bПродано\b", re.I)
 MODES = {"all": "все объявления категории", "used": "только Б/у", "params": "только заданные параметры"}
@@ -169,6 +171,8 @@ def log_full_analysis(item, analysis, verdict, data_sources):
             "estimated_repair_cost": analysis.get("estimated_repair_cost"),
             "estimated_customs_cost": item.get("estimated_customs_cost"),
             "imei_status": item.get("imei_status"),
+            "city": item.get("city"),
+            "published_at": item.get("published_at"),
             "estimated_total_cost": analysis.get("estimated_total_cost"),
             "estimated_resale_price": analysis.get("estimated_resale_price"),
             "questions_for_seller": analysis.get("questions_for_seller", []),
@@ -378,9 +382,11 @@ def estimate_customs_cost(price_tjs, usd_rate):
 
 
 def detect_imei_status(full_text):
-    """Три реальных статуса на Somon.tj + запасной общий случай."""
+    """Четыре реальных статуса на Somon.tj + запасной общий случай."""
     if IMEI_BLACK_RE.search(full_text):
         return "black"
+    if IMEI_GRAY_RE.search(full_text):
+        return "gray"
     if IMEI_WHITE_RE.search(full_text):
         return "white"
     if IMEI_NOT_REGISTERED_RE.search(full_text):
@@ -932,6 +938,9 @@ def fetch_detail(ad_url):
     memory_match = re.search(r"(\d+)\s*(?:gb|гб)", memory_raw or "", re.I)
     memory = int(memory_match.group(1)) if memory_match else None
     imei_status = detect_imei_status(full_text)
+    city = labeled_value(soup, ["Город"])
+    published_match = PUBLISHED_RE.search(full_text)
+    published_at = published_match.group(1) if published_match else None
 
     desc_match = DESC_RE.search(full_text)
     description = desc_match.group(1).strip() if desc_match else full_text[:500]
@@ -943,7 +952,7 @@ def fetch_detail(ad_url):
             seen.add(src)
             photo_urls.append(src)
 
-    return condition, memory, description, photo_urls[:4], imei_status
+    return condition, memory, description, photo_urls[:4], imei_status, city, published_at
 
 
 # ---------- Gemini: анализ ----------
@@ -995,10 +1004,17 @@ def format_manual_notes(notes):
 
 
 def format_imei_block(item, usd_rate):
-    """Формирует и текст для Gemini, и что уже ИЗВЕСТНО (чтобы не задавал лишних вопросов)."""
     status = item.get("imei_status")
     if status == "white" or status == "registered":
         return "\nIMEI уже зарегистрирован (легально растаможен) — дополнительных таможенных расходов и рисков не будет. НЕ спрашивай продавца про растаможку/IMEI, это уже известно."
+    if status == "gray":
+        return (
+            "\nIMEI этого телефона в СЕРОМ СПИСКЕ — статус неопределённый: не такой явно рискованный, как "
+            "чёрный, но и не гарантированно чистый, как белый. Точных последствий этого статуса программа "
+            "не знает — если это существенно влияет на оценку, попробуй уточнить через веб-поиск, и в любом "
+            "случае отрази эту неопределённость в confidence, не придумывай точную сумму риска. "
+            "НЕ спрашивай продавца про сам факт серого списка, это уже известно."
+        )
     if status == "not_registered":
         return (
             f"\nВАЖНО: IMEI этого телефона НЕ зарегистрирован в Таджикистане (обычная, не критичная растаможка "
@@ -1036,6 +1052,8 @@ def build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, 
 
 Объявление: {item['title']}
 Цена: {item['price']} TJS
+Город: {item.get('city') or 'не указан'}
+Опубликовано: {item.get('published_at') or 'неизвестно'}
 Состояние по словам продавца: {item.get('condition') or 'не указано'}
 Описание продавца: {item.get('description', '')[:800]}
 {imei_text}
@@ -1058,11 +1076,11 @@ def build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, 
 расходы/риски по IMEI), и по какой цене реально продать телефон после этого. Считай "недооценено"
 только если после всех расходов телефон реально можно продать дороже итоговой цены с заметным
 запасом. Честно оцени свою уверенность в диапазоне 0.0-1.0 — не завышай её искусственно, и снижай
-её при серьёзных рисках (например, чёрный список IMEI).
+её при серьёзных рисках (например, чёрный или серый список IMEI).
 
 ВАЖНО про вопросы продавцу: не спрашивай о том, что уже прямо указано в данных выше (состояние,
-память, статус IMEI — если он определён). Задавай вопросы только о том, что реально неизвестно
-и важно для решения (например, состояние аккумулятора, есть ли скрытые повреждения, комплектация).
+память, город, дата публикации, статус IMEI — если он определён). Задавай вопросы только о том, что
+реально неизвестно и важно для решения (например, состояние аккумулятора, комплектация).
 
 Верни ТОЛЬКО JSON без markdown, строго такой формы:
 {{
@@ -1180,7 +1198,7 @@ def build_data_sources(similar_examples, confirmed_good_calls, confirmed_sales, 
         sources.append(f"ваши заметки вручную ({len(manual_notes)})")
     if web_results:
         sources.append("веб-поиск")
-    if item.get("imei_status") in ("not_registered", "black"):
+    if item.get("imei_status") in ("not_registered", "black", "gray"):
         sources.append("статус IMEI со страницы")
     if not sources:
         sources.append("только фото и текст объявления, без доп. данных")
@@ -1242,11 +1260,13 @@ def main():
     for item in candidates:
         entry = seen.get(item["id"], {})
         try:
-            condition, memory, description, photo_urls, imei_status = fetch_detail(item["url"])
+            condition, memory, description, photo_urls, imei_status, city, published_at = fetch_detail(item["url"])
             item["condition"] = condition or item.get("condition")
             item["memory"] = memory or item.get("memory")
             item["description"] = description
             item["imei_status"] = imei_status
+            item["city"] = city
+            item["published_at"] = published_at
             if imei_status == "not_registered":
                 item["estimated_customs_cost"] = estimate_customs_cost(item["price"], usd_rate)
 
@@ -1290,6 +1310,8 @@ def main():
                     cost_lines += f"🔧 Примерный ремонт: {repair} TJS\n"
                 if item.get("imei_status") == "black":
                     cost_lines += "🚫 IMEI в чёрном списке — серьёзный риск, см. пояснение ниже\n"
+                elif item.get("imei_status") == "gray":
+                    cost_lines += "⚠️ IMEI в сером списке — статус неопределённый\n"
                 if customs:
                     cost_lines += f"🛃 Примерная растаможка (IMEI не оформлен): {customs} TJS\n"
                 if total:
@@ -1307,6 +1329,8 @@ def main():
                 text = (
                     f"🔥 Потенциально выгодное объявление\n\n{item['title']}\n"
                     f"💰 Цена лота: {item['price'] or '—'} TJS\n"
+                    f"📍 Город: {item.get('city') or '—'}\n"
+                    f"🕒 Опубликовано: {item.get('published_at') or '—'}\n"
                     f"📊 Визуальное состояние: {analysis.get('overall_visual_condition', 'неизвестно')}\n"
                     f"🛠 Дефекты: {defects}\n"
                     f"{cost_lines}"

@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 # ==== НАСТРОЙКИ ====
 SEARCH_URL = os.environ.get(
     "SOMON_URL",
-    "https://m.somon.tj/telefonyi-i-svyaz/mobilnyie-telefonyi/sostoyanie---1/?ordering=newest"
+    "https://m.somon.tj/telefonyi-i-svyaz/mobilnyie-telefonyi/sostoyanie---1/?ordering=newest&location=185,187,195,204,205,230,210,180"
 )
 MAX_NEW_ITEMS_PER_RUN = int(os.environ.get("MAX_NEW_ITEMS_PER_RUN", "5"))
 MAX_SOLD_CHECKS_PER_RUN = int(os.environ.get("MAX_SOLD_CHECKS_PER_RUN", "5"))

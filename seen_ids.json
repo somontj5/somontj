@@ -5054,7 +5054,8 @@
     "title": "Apple iPhone 11, 128 gb, Purple",
     "price": 1700,
     "condition": "Б/у",
-    "model_key": "apple iphone 11"
+    "model_key": "apple iphone 11",
+    "sold_checked": true
   },
   "23512885": {
     "logged": true,
@@ -5559,5 +5560,14 @@
     "price": 450,
     "condition": "Б/у",
     "model_key": "apple iphone 6 plus"
+  },
+  "95816512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17178895_poco-x-8-pro-max-16-gb-512-gb/",
+    "title": "Xiaomi Poco x8 Pro Max 16 ГБ/512 ГБ",
+    "price": 4200,
+    "condition": "Б/у",
+    "model_key": "xiaomi poco x8 pro"
   }
 }

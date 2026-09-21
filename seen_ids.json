@@ -627,8 +627,8 @@
   "82562026": {
     "logged": true,
     "notified": true,
-    "photo_ok": false,
-    "condition": "Новый",
+    "photo_ok": true,
+    "condition": "Б/у",
     "memory": 128,
     "official_fields": {
       "city": null,
@@ -643,7 +643,11 @@
       "overall_visual_condition": "неизвестно",
       "visible_defects": [],
       "raw_text": "Анализ не удался"
-    }
+    },
+    "url": "https://m.somon.tj/adv/17173188_telefon-tecno-spak-20-pro-8-256gb-2026/",
+    "title": "Tecno Spak 20 pro 8/256Gb 2026",
+    "price": 1250,
+    "model_key": "tecno spak 20 pro"
   },
   "22568300": {
     "logged": true,
@@ -4654,5 +4658,23 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "xiaomi redmi note 11"
+  },
+  "32561252": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17173236_telefon-samsung-s23-ultra-256-12gb-carea-5g-2sim-silver/",
+    "title": "Samsung Galaxy S23 Ultra 256/12Gb Carea 5G 2sim Silver",
+    "price": 3899,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s23 ultra"
+  },
+  "22256125": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17173213_telefon-samsung-s22-ultra-256-12gb-carea-5g/",
+    "title": "Samsung Galaxy S22 Ultra 256/12Gb Carea 5G",
+    "price": 3566,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s22 ultra"
   }
 }

@@ -4636,5 +4636,23 @@
     "price": 2100,
     "condition": "Б/у",
     "model_key": "samsung galaxy а 26"
+  },
+  "88230813": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14882308_xiaomi-redmi-13c/",
+    "title": "Xiaomi Redmi 13",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "xiaomi redmi 13"
+  },
+  "42858228": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14285822_redmi-note-8-t/",
+    "title": "Xiaomi Redmi note 11 PRO",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "xiaomi redmi note 11"
   }
 }

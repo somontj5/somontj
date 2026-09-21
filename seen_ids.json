@@ -4361,7 +4361,8 @@
     "title": "Samsung Galaxy S25 Ultra",
     "price": 8999,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s25 ultra"
+    "model_key": "samsung galaxy s25 ultra",
+    "sold_checked": true
   },
   "70600732": {
     "logged": true,
@@ -4370,7 +4371,8 @@
     "title": "Apple iPhone 7, 32 gb",
     "price": 500,
     "condition": "Б/у",
-    "model_key": "apple iphone 7"
+    "model_key": "apple iphone 7",
+    "sold_checked": true
   },
   "33814413": {
     "logged": true,
@@ -4398,7 +4400,8 @@
     "title": "Samsung Galaxy S22 Ultra 12/256Gb",
     "price": 3540,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s22 ultra"
+    "model_key": "samsung galaxy s22 ultra",
+    "sold_checked": true
   },
   "92815256": {
     "logged": true,
@@ -4948,5 +4951,34 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "honor x6c"
+  },
+  "07286420": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17072864_samsung-galaxy-a20e/",
+    "title": "Samsung Galaxy A20e",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy a20e"
+  },
+  "34414128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17175344_apple-iphone-14-pro-128-gb-space-black/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Space Black",
+    "price": 4900,
+    "condition": "Б/у",
+    "model_key": "apple iphone 14 pro"
+  },
+  "13321285": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17174213_telefon-samsung-a32-128-gb-vetnam-5g/",
+    "title": "Samsung Galaxy А32 128 Gb Vetnam 5G",
+    "price": 1350,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy а32"
   }
 }

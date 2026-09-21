@@ -1422,7 +1422,14 @@
     "logged": true
   },
   "79613128": {
-    "logged": true
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17159796_apple-iphone-13-pro-max-128-gb-alpine-green/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Alpine Green",
+    "price": 4500,
+    "condition": "Б/у",
+    "model_key": "apple iphone 13 pro"
   },
   "71596191": {
     "logged": true
@@ -4065,7 +4072,8 @@
     "title": "Samsung Galaxy Grand Prime",
     "price": 220,
     "condition": "Б/у",
-    "model_key": "samsung galaxy grand prime"
+    "model_key": "samsung galaxy grand prime",
+    "sold_checked": true
   },
   "58927610": {
     "logged": true,
@@ -4075,7 +4083,8 @@
     "title": "Xiaomi Redmi 9А+",
     "price": 500,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 9а"
+    "model_key": "xiaomi redmi 9а",
+    "sold_checked": true
   },
   "49126109": {
     "logged": true,
@@ -4084,7 +4093,8 @@
     "title": "Xiaomi Redmi 9A",
     "price": 450,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 9a"
+    "model_key": "xiaomi redmi 9a",
+    "sold_checked": true
   },
   "50832016": {
     "logged": true,
@@ -4093,7 +4103,8 @@
     "title": "Samsung Galaxy J1 2016",
     "price": 150,
     "condition": "Б/у",
-    "model_key": "samsung galaxy j1"
+    "model_key": "samsung galaxy j1",
+    "sold_checked": true
   },
   "17082564": {
     "logged": true,
@@ -4102,7 +4113,8 @@
     "title": "Apple iPhone X, 64 gb",
     "price": 1800,
     "condition": "Б/у",
-    "model_key": "apple iphone x"
+    "model_key": "apple iphone x",
+    "sold_checked": true
   },
   "17171382": {
     "logged": true,
@@ -4448,5 +4460,65 @@
     "price": 4600,
     "condition": "Б/у",
     "model_key": "samsung galaxy s22ultra 12"
+  },
+  "29113128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17172291_apple-iphone-13-pro-max-128-gb-silver/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Silver",
+    "price": 5200,
+    "condition": "Б/у",
+    "model_key": "apple iphone 13 pro"
+  },
+  "17911128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17172179_apple-iphone-11-128-gb-white/",
+    "title": "Apple iPhone 11, 128 gb, White",
+    "price": 1990,
+    "condition": "Б/у",
+    "model_key": "apple iphone 11"
+  },
+  "08917256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17172089_apple-iphone-17-pro-max-256-gb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange дубликат",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "apple iphone 17 pro"
+  },
+  "17209122": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17172091_samsung-s22-ultra/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 4199,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s22 ultra"
+  },
+  "20647128": {
+    "logged": true
+  },
+  "03415256": {
+    "logged": true
+  },
+  "04115256": {
+    "logged": true
+  },
+  "00813256": {
+    "logged": true
+  },
+  "97914128": {
+    "logged": true
+  },
+  "82714128": {
+    "logged": true
+  },
+  "77117256": {
+    "logged": true
+  },
+  "48898800": {
+    "logged": true
   }
 }

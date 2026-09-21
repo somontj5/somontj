@@ -5034,7 +5034,8 @@
     "title": "Samsung Galaxy А32 128 Gb Vetnam 5G",
     "price": 1350,
     "condition": "Б/у",
-    "model_key": "samsung galaxy а32"
+    "model_key": "samsung galaxy а32",
+    "sold_checked": true
   },
   "17175408": {
     "logged": true,
@@ -5527,5 +5528,15 @@
     "price": 1250,
     "condition": "Б/у",
     "model_key": "xiaomi redmi note 12"
+  },
+  "17292960": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17172929_infinix-hot-60-i/",
+    "title": "Infinix hot 60 i",
+    "price": 1150,
+    "condition": "Б/у",
+    "model_key": "infinix hot"
   }
 }

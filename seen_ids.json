@@ -4553,5 +4553,14 @@
     "price": 480,
     "condition": "Б/у",
     "model_key": "xiaomi redmi 9a"
+  },
+  "28586121": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14285861_realme-c-21/",
+    "title": "Realme C63",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "realme c63"
   }
 }

@@ -4826,7 +4826,8 @@
     "title": "Xiaomi Redmi Note 11 128gb Glabal Version 5G",
     "price": 1250,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 11"
+    "model_key": "xiaomi redmi note 11",
+    "sold_checked": true
   },
   "71740164": {
     "logged": true,
@@ -4835,7 +4836,8 @@
     "title": "Google pixel 4a",
     "price": 600,
     "condition": "Б/у",
-    "model_key": "google pixel 4a"
+    "model_key": "google pixel 4a",
+    "sold_checked": true
   },
   "42665164": {
     "logged": true,
@@ -4845,7 +4847,8 @@
     "title": "Samsung Galaxy А51 64Gb Vetnam",
     "price": 1250,
     "condition": "Б/у",
-    "model_key": "samsung galaxy а51"
+    "model_key": "samsung galaxy а51",
+    "sold_checked": true
   },
   "29714128": {
     "logged": true,
@@ -5377,5 +5380,23 @@
     "price": 650,
     "condition": "Б/у",
     "model_key": "xiaomi redmi 9a"
+  },
+  "71779007": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17177900_honor-x7d/",
+    "title": "Honor x7d",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "honor x7d"
+  },
+  "85215256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17177852_apple-iphone-15-pro-max-256-gb-natural-titanium/",
+    "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
+    "price": 7499,
+    "condition": "Б/у",
+    "model_key": "apple iphone 15 pro"
   }
 }

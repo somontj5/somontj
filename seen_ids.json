@@ -4464,7 +4464,8 @@
     "title": "Infinix Hot 50 Pro+ 256Gb",
     "price": 1700,
     "condition": "Б/у",
-    "model_key": "infinix hot"
+    "model_key": "infinix hot",
+    "sold_checked": true
   },
   "13976256": {
     "logged": true,
@@ -4474,7 +4475,8 @@
     "title": "Samsung Galaxy Z Fold6 256GB",
     "price": 8300,
     "condition": "Б/у",
-    "model_key": "samsung galaxy z fold6"
+    "model_key": "samsung galaxy z fold6",
+    "sold_checked": true
   },
   "12212256": {
     "logged": true,
@@ -4483,7 +4485,8 @@
     "title": "Samsung Galaxy S22ultra 12/256",
     "price": 4600,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s22ultra 12"
+    "model_key": "samsung galaxy s22ultra 12",
+    "sold_checked": true
   },
   "29113128": {
     "logged": true,
@@ -5079,5 +5082,24 @@
     "price": 4300,
     "condition": "Б/у",
     "model_key": "samsung galaxy s22 ultra"
+  },
+  "64981264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17176498_apple-iphone-12-64-gb-white/",
+    "title": "Apple iPhone 12, 64 gb, White",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "apple iphone 12"
+  },
+  "17176497": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17176497_rastamoshka-shudagi-arzon-meshad/",
+    "title": "Samsung Galaxy A71",
+    "price": 799,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy a71"
   }
 }

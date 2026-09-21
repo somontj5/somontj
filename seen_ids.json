@@ -4158,7 +4158,8 @@
     "title": "Apple iPhone 11, 128 gb, Black",
     "price": 2400,
     "condition": "Б/у",
-    "model_key": "apple iphone 11"
+    "model_key": "apple iphone 11",
+    "sold_checked": true
   },
   "24128625": {
     "logged": true,
@@ -4168,7 +4169,8 @@
     "title": "Samsung Galaxy А24 128/6Gb Vetnam 2sim 5G",
     "price": 1650,
     "condition": "Б/у",
-    "model_key": "samsung galaxy а24"
+    "model_key": "samsung galaxy а24",
+    "sold_checked": true
   },
   "38566128": {
     "logged": true,
@@ -4177,7 +4179,8 @@
     "title": "Honor X6c 6/128gb",
     "price": 1400,
     "condition": "Б/у",
-    "model_key": "honor x6c 6"
+    "model_key": "honor x6c 6",
+    "sold_checked": true
   },
   "12862026": {
     "logged": true,
@@ -4897,5 +4900,32 @@
     "price": 3540,
     "condition": "Б/у",
     "model_key": "samsung galaxy s22 ultra"
+  },
+  "74392256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17174392_apple-iphone-xs-max-256-gb-gold/",
+    "title": "Apple iPhone Xs Max, 256 gb, Gold",
+    "price": 2149,
+    "condition": "Б/у",
+    "model_key": "apple iphone xs max"
+  },
+  "55711286": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17175155_samsung-a71-128-6gb/",
+    "title": "Samsung Galaxy A16 128/6gb",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy a16"
+  },
+  "22312256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17175132_samsung-galaxy-s23-ultra-12-256gb-duos/",
+    "title": "Samsung Galaxy S23 Ultra 12/256Gb Duos",
+    "price": 4100,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s23 ultra"
   }
 }

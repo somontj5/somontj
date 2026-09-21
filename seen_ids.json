@@ -4382,7 +4382,8 @@
     "title": "Samsung Galaxy A13",
     "price": 900,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a13"
+    "model_key": "samsung galaxy a13",
+    "sold_checked": true
   },
   "92438555": {
     "logged": true,
@@ -4391,7 +4392,8 @@
     "title": "Samsung Galaxy A55 5G",
     "price": 2500,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a55 5g"
+    "model_key": "samsung galaxy a55 5g",
+    "sold_checked": true
   },
   "82212256": {
     "logged": true,
@@ -4411,7 +4413,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, White Titanium",
     "price": 5900,
     "condition": "Б/у",
-    "model_key": "apple iphone 15 pro"
+    "model_key": "apple iphone 15 pro",
+    "sold_checked": true
   },
   "04011128": {
     "logged": true,
@@ -4980,5 +4983,32 @@
     "price": 1350,
     "condition": "Б/у",
     "model_key": "samsung galaxy а32"
+  },
+  "17175408": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17175408_furushba-telfon-toza-arzonmeshavad/",
+    "title": "Xiaomi Redmi Note 15",
+    "price": 2600,
+    "condition": "Б/у",
+    "model_key": "xiaomi redmi note 15"
+  },
+  "39211128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17175392_apple-iphone-11-128-gb-purple/",
+    "title": "Apple iPhone 11, 128 gb, Purple",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "apple iphone 11"
+  },
+  "23512885": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17174182_telefon-samsung-a35-128-8gb-vetnam-5g-silver/",
+    "title": "Samsung Galaxy A35 128/8Gb Vetnam 5G Silver",
+    "price": 2350,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy a35"
   }
 }

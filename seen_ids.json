@@ -4443,7 +4443,8 @@
     "title": "Apple iPhone 13 Pro Max, 256 gb, Alpine Green",
     "price": 5400,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "17172192": {
     "logged": true,
@@ -5030,5 +5031,23 @@
     "price": 5800,
     "condition": "Б/у",
     "model_key": "apple iphone 15 pro"
+  },
+  "06811128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17176068_xiaomi-redmi-note-11-pro-128gb/",
+    "title": "Xiaomi Redmi note 11 pro 128Gb",
+    "price": 499,
+    "condition": "Б/у",
+    "model_key": "xiaomi redmi note 11"
+  },
+  "60531264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17176053_apple-iphone-12-64-gb-blue/",
+    "title": "Apple iPhone 12, 64 gb, Blue",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "apple iphone 12"
   }
 }

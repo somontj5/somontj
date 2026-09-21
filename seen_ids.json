@@ -4589,7 +4589,8 @@
     "title": "Realme C63",
     "price": 1200,
     "condition": "Б/у",
-    "model_key": "realme c63"
+    "model_key": "realme c63",
+    "sold_checked": true
   },
   "32923215": {
     "logged": true,
@@ -5112,5 +5113,15 @@
     "price": 2100,
     "condition": "Б/у",
     "model_key": "samsung galaxy a17"
+  },
+  "71206410": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16712064_samsung-galaxy-s10/",
+    "title": "Samsung Galaxy S10",
+    "price": 1450,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s10"
   }
 }

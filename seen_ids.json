@@ -4202,7 +4202,8 @@
     "title": "Samsung galaxy J1",
     "price": 200,
     "condition": "Б/у",
-    "model_key": "samsung galaxy j1"
+    "model_key": "samsung galaxy j1",
+    "sold_checked": true
   },
   "31217512": {
     "logged": true
@@ -4780,5 +4781,14 @@
     "price": 1250,
     "condition": "Б/у",
     "model_key": "xiaomi redmi note 11"
+  },
+  "71740164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17174016_google-pixel-4a/",
+    "title": "Google pixel 4a",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "google pixel 4a"
   }
 }

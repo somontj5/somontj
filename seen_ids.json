@@ -4907,7 +4907,8 @@
     "title": "Samsung Galaxy A51 64Gb Duos Vietnam",
     "price": 1300,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a51"
+    "model_key": "samsung galaxy a51",
+    "sold_checked": true
   },
   "93935128": {
     "logged": true,

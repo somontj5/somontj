@@ -4534,5 +4534,14 @@
     "price": 3000,
     "condition": "Б/у",
     "model_key": "honor x9d 8"
+  },
+  "17172610": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17172610_telefon-furukhta-meshavad-boz-muomila-meshavad-khokhishmanda-boshiton-naviston/",
+    "title": "Телефон honor",
+    "price": 2100,
+    "condition": "Б/у",
+    "model_key": "honor"
   }
 }

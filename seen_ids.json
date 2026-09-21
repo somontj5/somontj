@@ -4917,7 +4917,8 @@
     "title": "Samsung Galaxy A35 128Gb",
     "price": 2200,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a35"
+    "model_key": "samsung galaxy a35",
+    "sold_checked": true
   },
   "50277128": {
     "logged": true,
@@ -5448,5 +5449,14 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "apple iphone 11 pro"
+  },
+  "17822254": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17178222_telefon-a54/",
+    "title": "Samsung Galaxy А54",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy а54"
   }
 }

@@ -4687,7 +4687,8 @@
     "title": "Samsung Galaxy s20 5G 128gb",
     "price": 1100,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s20 5g"
+    "model_key": "samsung galaxy s20 5g",
+    "sold_checked": true
   },
   "33321164": {
     "logged": true,
@@ -4847,5 +4848,24 @@
     "price": 1350,
     "condition": "Б/у",
     "model_key": "samsung galaxy a32"
+  },
+  "49615164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17174961_samsung-galaxy-a51-64gb-duos-vietnam/",
+    "title": "Samsung Galaxy A51 64Gb Duos Vietnam",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy a51"
+  },
+  "93935128": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17174939_samsung-galaxy-a35-128gb/",
+    "title": "Samsung Galaxy A35 128Gb",
+    "price": 2200,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy a35"
   }
 }

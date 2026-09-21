@@ -5045,7 +5045,8 @@
     "title": "Xiaomi Redmi Note 15",
     "price": 2600,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 15"
+    "model_key": "xiaomi redmi note 15",
+    "sold_checked": true
   },
   "39211128": {
     "logged": true,
@@ -5569,5 +5570,14 @@
     "price": 4200,
     "condition": "Б/у",
     "model_key": "xiaomi poco x8 pro"
+  },
+  "85617256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17178856_apple-iphone-17-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
+    "price": 14500,
+    "condition": "Б/у",
+    "model_key": "apple iphone 17 pro"
   }
 }

@@ -5115,7 +5115,8 @@
     "title": "Apple iPhone 13 Pro Max, 128 gb, Gold",
     "price": 3400,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "17640523": {
     "logged": true,
@@ -5619,5 +5620,14 @@
     "price": 4000,
     "condition": "Б/у",
     "model_key": "apple iphone 13"
+  },
+  "17918822": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17179188_samsung-galaxy-s22-ultra/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 4350,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s22 ultra"
   }
 }

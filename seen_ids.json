@@ -4897,7 +4897,8 @@
     "title": "Samsung Galaxy A32 128Gb Duos Vietnam",
     "price": 1350,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a32"
+    "model_key": "samsung galaxy a32",
+    "sold_checked": true
   },
   "49615164": {
     "logged": true,
@@ -5428,5 +5429,14 @@
     "price": 850,
     "condition": "Б/у",
     "model_key": "xiaomi redmi 12"
+  },
+  "78034128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17178034_apple-iphone-xr-128-gb-black/",
+    "title": "Apple iPhone Xr, 128 gb, Black",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "apple iphone xr"
   }
 }

@@ -4834,7 +4834,8 @@
     "title": "Apple iPhone 14 Pro Max, 128 gb, Silver",
     "price": 3999,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "53621023": {
     "logged": true,

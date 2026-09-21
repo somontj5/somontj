@@ -4702,7 +4702,8 @@
     "title": "Samsung Galaxy S23 Ultra 256/12Gb Carea 5G 2sim Silver",
     "price": 3899,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s23 ultra"
+    "model_key": "samsung galaxy s23 ultra",
+    "sold_checked": true
   },
   "22256125": {
     "logged": true,
@@ -4711,7 +4712,8 @@
     "title": "Samsung Galaxy S22 Ultra 256/12Gb Carea 5G",
     "price": 3566,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s22 ultra"
+    "model_key": "samsung galaxy s22 ultra",
+    "sold_checked": true
   },
   "23205128": {
     "logged": true,
@@ -4730,7 +4732,8 @@
     "title": "Xiaomi Redmi Note 11 64Gb Glabal Version",
     "price": 1200,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 11"
+    "model_key": "xiaomi redmi note 11",
+    "sold_checked": true
   },
   "23128852": {
     "logged": true,
@@ -4739,7 +4742,8 @@
     "title": "Samsung Galaxy S23 128/8Gb Vetnam 5G 2sim",
     "price": 3950,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s23"
+    "model_key": "samsung galaxy s23",
+    "sold_checked": true
   },
   "67202562": {
     "logged": true,
@@ -4748,7 +4752,8 @@
     "title": "Samsung Galaxy Note 20 Ultra 256Gb 2sim Vetnam",
     "price": 2860,
     "condition": "Б/у",
-    "model_key": "samsung galaxy note 20"
+    "model_key": "samsung galaxy note 20",
+    "sold_checked": true
   },
   "05141282": {
     "logged": true,
@@ -5246,5 +5251,55 @@
     "price": 370,
     "condition": "Б/у",
     "model_key": "xiaomi redmi note 10"
+  },
+  "17714210": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17177142_samsung-s10e/",
+    "title": "Samsung Galaxy S10E",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s10e"
+  },
+  "71213224": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16712132_samsung-galaxy-s24-ultra/",
+    "title": "Samsung Galaxy S24 Ultra",
+    "price": 5350,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s24 ultra"
+  },
+  "16414256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17177164_apple-iphone-14-pro-256-gb/",
+    "title": "Apple iPhone 14 Pro, 256 gb",
+    "price": 4500,
+    "condition": "Б/у",
+    "model_key": "apple iphone 14 pro"
+  },
+  "80216724": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16802167_samsung-galaxy-s24-ultra/",
+    "title": "Samsung Galaxy S24 Ultra",
+    "price": 5100,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s24 ultra"
+  },
+  "46423512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17177464_samsung-galaxy-s23-ultra-512gb/",
+    "title": "Samsung Galaxy S23 Ultra 512gb",
+    "price": 4250,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s23 ultra"
+  },
+  "17715223": {
+    "logged": true
   }
 }

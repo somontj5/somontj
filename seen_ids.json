@@ -4544,5 +4544,14 @@
     "condition": "Б/у",
     "model_key": "honor",
     "sold_checked": true
+  },
+  "71275779": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17127577_redmi-9a/",
+    "title": "Xiaomi Redmi 9A",
+    "price": 480,
+    "condition": "Б/у",
+    "model_key": "xiaomi redmi 9a"
   }
 }

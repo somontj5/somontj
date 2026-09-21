@@ -4676,5 +4676,41 @@
     "price": 3566,
     "condition": "Б/у",
     "model_key": "samsung galaxy s22 ultra"
+  },
+  "23205128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17173323_samsung-s20-5g-128gb/",
+    "title": "Samsung Galaxy s20 5G 128gb",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s20 5g"
+  },
+  "33321164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17173332_telefon-redmi-note-11-64gb-glabal-version/",
+    "title": "Xiaomi Redmi Note 11 64Gb Glabal Version",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "xiaomi redmi note 11"
+  },
+  "23128852": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17173286_telefon-samsung-s23-128-8gb-vetnam-5g-2sim/",
+    "title": "Samsung Galaxy S23 128/8Gb Vetnam 5G 2sim",
+    "price": 3950,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s23"
+  },
+  "67202562": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17173267_telefon-samsung-note-20-ultra-256gb-2sim-vetnam/",
+    "title": "Samsung Galaxy Note 20 Ultra 256Gb 2sim Vetnam",
+    "price": 2860,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy note 20"
   }
 }

@@ -4439,5 +4439,14 @@
     "price": 8300,
     "condition": "Б/у",
     "model_key": "samsung galaxy z fold6"
+  },
+  "12212256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16863071_samsung-s22ultra-12-256/",
+    "title": "Samsung Galaxy S22ultra 12/256",
+    "price": 4600,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s22ultra 12"
   }
 }

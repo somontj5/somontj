@@ -4928,7 +4928,8 @@
     "title": "Honor X7D 128Gb",
     "price": 1750,
     "condition": "Б/у",
-    "model_key": "honor x7d"
+    "model_key": "honor x7d",
+    "sold_checked": true
   },
   "72012256": {
     "logged": true,
@@ -4937,7 +4938,8 @@
     "title": "Samsung Galaxy Not 20 Ultra 12/256Gb Duos Vietnam",
     "price": 3000,
     "condition": "Б/у",
-    "model_key": "samsung galaxy not 20"
+    "model_key": "samsung galaxy not 20",
+    "sold_checked": true
   },
   "05922256": {
     "logged": true,
@@ -4946,7 +4948,8 @@
     "title": "Samsung Galaxy S22 Ultra 256Gb",
     "price": 3540,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s22 ultra"
+    "model_key": "samsung galaxy s22 ultra",
+    "sold_checked": true
   },
   "74392256": {
     "logged": true,
@@ -5469,5 +5472,33 @@
     "price": 3400,
     "condition": "Б/у",
     "model_key": "samsung galaxy a56"
+  },
+  "35091164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17173509_apple-iphone-11-64-gb-black/",
+    "title": "Apple iPhone 11, 64 gb, Black",
+    "price": 1850,
+    "condition": "Б/у",
+    "model_key": "apple iphone 11"
+  },
+  "51350256": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17173513_infinix-note-50-256gb/",
+    "title": "Infinix NOTE 50 256GB",
+    "price": 1850,
+    "condition": "Б/у",
+    "model_key": "infinix note"
+  },
+  "73543128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17173543_apple-iphone-xr-128-gb-black/",
+    "title": "Apple iPhone Xr, 128 gb, Black",
+    "price": 1550,
+    "condition": "Б/у",
+    "model_key": "apple iphone xr"
   }
 }

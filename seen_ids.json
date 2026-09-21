@@ -4762,7 +4762,8 @@
     "title": "Samsung Galaxy А14 128Gb Vetnam 2sim",
     "price": 1250,
     "condition": "Б/у",
-    "model_key": "samsung galaxy а14"
+    "model_key": "samsung galaxy а14",
+    "sold_checked": true
   },
   "71525685": {
     "logged": true,
@@ -4815,7 +4816,8 @@
     "title": "Samsung Galaxy 56 128gb Dual sim 5G",
     "price": 3200,
     "condition": "Б/у",
-    "model_key": "samsung galaxy"
+    "model_key": "samsung galaxy",
+    "sold_checked": true
   },
   "77111285": {
     "logged": true,
@@ -5338,5 +5340,33 @@
     "price": 5400,
     "condition": "Б/у",
     "model_key": "samsung galaxy s26"
+  },
+  "01015256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16948010_apple-iphone-15-pro-256-gb-natural-titanium/",
+    "title": "Apple iPhone 15 Pro, 128 gb, Natural Titanium",
+    "price": 6999,
+    "condition": "Б/у",
+    "model_key": "apple iphone 15 pro"
+  },
+  "49415256": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16591494_apple-iphone-15-pro-256-gb-natural-titanium/",
+    "title": "Apple iPhone 15 Pro, 128 gb, Natural Titanium",
+    "price": 5550,
+    "condition": "Б/у",
+    "model_key": "apple iphone 15 pro"
+  },
+  "93717256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17176937_apple-iphone-17-pro-256-gb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro, 256 gb, Cosmic Orange",
+    "price": 13000,
+    "condition": "Б/у",
+    "model_key": "apple iphone 17 pro"
   }
 }

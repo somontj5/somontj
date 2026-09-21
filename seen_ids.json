@@ -4658,7 +4658,8 @@
     "title": "Samsung Galaxy s21 5G",
     "price": 2800,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s21 5g"
+    "model_key": "samsung galaxy s21 5g",
+    "sold_checked": true
   },
   "69480365": {
     "logged": true,
@@ -4929,7 +4930,8 @@
     "title": "Apple iPhone Xs Max, 256 gb, Gold",
     "price": 2149,
     "condition": "Б/у",
-    "model_key": "apple iphone xs max"
+    "model_key": "apple iphone xs max",
+    "sold_checked": true
   },
   "55711286": {
     "logged": true,
@@ -5154,5 +5156,23 @@
     "price": 1799,
     "condition": "Б/у",
     "model_key": "apple iphone 11"
+  },
+  "73881422": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16738814_samsung-galaxy-s22-ultra/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 3950,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s22 ultra"
+  },
+  "07822512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16866078_samsung-galaxy-s22-ultra-512gb/",
+    "title": "Samsung Galaxy S22 Ultra 512GB",
+    "price": 3650,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s22 ultra"
   }
 }

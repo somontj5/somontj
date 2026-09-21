@@ -4712,5 +4712,53 @@
     "price": 2860,
     "condition": "Б/у",
     "model_key": "samsung galaxy note 20"
+  },
+  "05141282": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17173405_telefon-samsung-a14-128gb-vetnam-2sim/",
+    "title": "Samsung Galaxy А14 128Gb Vetnam 2sim",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy а14"
+  },
+  "71525685": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17173297_telefon-samsung-a15-256-8gb-vetnam-5g/",
+    "title": "Samsung Galaxy A15",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy a15"
+  },
+  "76561285": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17173376_telefon-samsung-a56-128-vetnam-5g/",
+    "title": "Samsung Galaxy А56 128 Vetnam 5G",
+    "price": 2860,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy а56"
+  },
+  "34610324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17173346_telefon-redmi-10a-32gb-4g/",
+    "title": "Xiaomi Redmi 10A 32Gb 4G",
+    "price": 720,
+    "condition": "Б/у",
+    "model_key": "xiaomi redmi 10a"
+  },
+  "33511064": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17173351_redmi-note-10-64-gb/",
+    "title": "Xiaomi Redmi Note 10 64 GB",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "xiaomi redmi note 10"
   }
 }

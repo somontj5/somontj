@@ -4454,7 +4454,8 @@
     "title": "Xiaomi Poco M7",
     "price": 1700,
     "condition": "Б/у",
-    "model_key": "xiaomi poco m7"
+    "model_key": "xiaomi poco m7",
+    "sold_checked": true
   },
   "50256120": {
     "logged": true,
@@ -5049,5 +5050,14 @@
     "price": 2500,
     "condition": "Б/у",
     "model_key": "apple iphone 12"
+  },
+  "36213128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17176362_apple-iphone-13-pro-max-128-gb-gold/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Gold",
+    "price": 3400,
+    "condition": "Б/у",
+    "model_key": "apple iphone 13 pro"
   }
 }

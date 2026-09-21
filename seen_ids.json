@@ -4621,7 +4621,8 @@
     "title": "Apple iPhone 13, 128 gb, Green",
     "price": 2899,
     "condition": "Б/у",
-    "model_key": "apple iphone 13"
+    "model_key": "apple iphone 13",
+    "sold_checked": true
   },
   "69677215": {
     "logged": true,

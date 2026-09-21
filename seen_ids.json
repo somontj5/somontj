@@ -4771,5 +4771,14 @@
     "price": 3200,
     "condition": "Б/у",
     "model_key": "samsung galaxy"
+  },
+  "77111285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16952677_telefon-redmi-note-11-128gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 11 128gb Glabal Version 5G",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "xiaomi redmi note 11"
   }
 }

@@ -4631,7 +4631,8 @@
     "title": "Xiaomi Redmi 12",
     "price": 900,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 12"
+    "model_key": "xiaomi redmi 12",
+    "sold_checked": true
   },
   "17306024": {
     "logged": true,
@@ -5214,5 +5215,14 @@
     "price": 350,
     "condition": "Б/у",
     "model_key": "apple iphone 17 pro"
+  },
+  "78822256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16947788_samsung-galaxy-s22-ultra-256gb/",
+    "title": "Samsung Galaxy S22 Ultra 256GB",
+    "price": 3350,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s22 ultra"
   }
 }

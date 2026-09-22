@@ -5315,7 +5315,8 @@
     "title": "Samsung Galaxy A16",
     "price": 1600,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a16"
+    "model_key": "samsung galaxy a16",
+    "sold_checked": true
   },
   "96338925": {
     "logged": true,
@@ -5324,7 +5325,8 @@
     "title": "Samsung Galaxy S25 ultra",
     "price": 9550,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s25 ultra"
+    "model_key": "samsung galaxy s25 ultra",
+    "sold_checked": true
   },
   "46904215": {
     "logged": true,
@@ -5334,7 +5336,8 @@
     "title": "Samsung Galaxy S21 FE 5G 8/128gb",
     "price": 1600,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s21 fe"
+    "model_key": "samsung galaxy s21 fe",
+    "sold_checked": true
   },
   "26125122": {
     "logged": true,
@@ -5343,7 +5346,8 @@
     "title": "Samsung Galaxy S26 Ultra 12/512Gb 2sim",
     "price": 12599,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s26 ultra"
+    "model_key": "samsung galaxy s26 ultra",
+    "sold_checked": true
   },
   "71659707": {
     "logged": true,
@@ -5352,7 +5356,8 @@
     "title": "Samsung Galaxy A7",
     "price": 600,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a7"
+    "model_key": "samsung galaxy a7",
+    "sold_checked": true
   },
   "21212256": {
     "logged": true,

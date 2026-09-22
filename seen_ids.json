@@ -5004,7 +5004,8 @@
     "title": "Samsung Galaxy A16",
     "price": 1299,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a16"
+    "model_key": "samsung galaxy a16",
+    "sold_checked": true
   },
   "35823210": {
     "logged": true,
@@ -5014,7 +5015,8 @@
     "title": "Xiaomi Mi Note 10 lite",
     "price": 980,
     "condition": "Б/у",
-    "model_key": "xiaomi mi note 10"
+    "model_key": "xiaomi mi note 10",
+    "sold_checked": true
   },
   "05980910": {
     "logged": true,
@@ -5023,7 +5025,8 @@
     "title": "Samsung Galaxy A10S",
     "price": 550,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a10s"
+    "model_key": "samsung galaxy a10s",
+    "sold_checked": true
   },
   "70657719": {
     "logged": true,
@@ -5032,7 +5035,8 @@
     "title": "Xiaomi Redmi 9A",
     "price": 580,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 9a"
+    "model_key": "xiaomi redmi 9a",
+    "sold_checked": true
   },
   "70658113": {
     "logged": true,
@@ -5042,7 +5046,8 @@
     "title": "Xiaomi Redmi A3X",
     "price": 550,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi a3x"
+    "model_key": "xiaomi redmi a3x",
+    "sold_checked": true
   },
   "17165662": {
     "logged": true,

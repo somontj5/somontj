@@ -1900,3 +1900,6 @@
 {"type": "confirmed_sale", "id": "71624077", "title": "Samsung Galaxy A7", "price": 550, "condition": "Б/у", "model_key": "samsung galaxy a7", "confirmed_at": "2026-09-22T05:30:30"}
 {"type": "confirmed_sale", "id": "37202464", "title": "Tecno Go 2024 64GB", "price": 500, "condition": "Б/у", "model_key": "tecno go", "confirmed_at": "2026-09-22T05:30:32"}
 {"type": "confirmed_sale", "id": "01553128", "title": "Samsung Galaxy A53 128GB", "price": 1050, "condition": "Б/у", "model_key": "samsung galaxy a53", "confirmed_at": "2026-09-22T05:30:33"}
+{"type": "confirmed_sale", "id": "17162939", "title": "Apple iphone 14", "price": 1600, "condition": "Б/у", "model_key": "apple iphone 14", "confirmed_at": "2026-09-22T05:35:24"}
+{"type": "confirmed_sale", "id": "19413128", "title": "Apple iPhone 13 Pro Max, 128 gb, Sierra Blue", "price": 4750, "condition": "Б/у", "model_key": "apple iphone 13 pro", "confirmed_at": "2026-09-22T05:35:25"}
+{"type": "confirmed_sale", "id": "19717256", "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange", "price": 8500, "condition": "Б/у", "model_key": "apple iphone 17 pro", "confirmed_at": "2026-09-22T05:35:26"}

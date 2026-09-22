@@ -3079,7 +3079,8 @@
     "title": "Apple iPhone 16 Pro, 256 gb, Desert Titanium",
     "price": 6400,
     "condition": "Б/у",
-    "model_key": "apple iphone 16 pro"
+    "model_key": "apple iphone 16 pro",
+    "sold_checked": true
   },
   "93116256": {
     "logged": true,
@@ -3088,7 +3089,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
     "price": 9299,
     "condition": "Б/у",
-    "model_key": "apple iphone 16 pro"
+    "model_key": "apple iphone 16 pro",
+    "sold_checked": true
   },
   "17162939": {
     "logged": true,
@@ -3097,7 +3099,8 @@
     "title": "Apple iphone 14",
     "price": 1600,
     "condition": "Б/у",
-    "model_key": "apple iphone 14"
+    "model_key": "apple iphone 14",
+    "sold_checked": true
   },
   "19413128": {
     "logged": true,
@@ -3106,7 +3109,8 @@
     "title": "Apple iPhone 13 Pro Max, 128 gb, Sierra Blue",
     "price": 4750,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "19717256": {
     "logged": true,
@@ -3115,7 +3119,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
     "price": 8500,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "16316351": {
     "logged": true,

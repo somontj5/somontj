@@ -9191,7 +9191,8 @@
     "title": "Samsung Galaxy A56 8/256gb",
     "price": 3600,
     "condition": "Б/у",
-    "model_key": "samsung a56"
+    "model_key": "samsung a56",
+    "sold_checked": true
   },
   "82301764": {
     "logged": true,

@@ -9054,7 +9054,8 @@
     "title": "Apple iPhone 17 Pro Max, 512 gb, Silver Дубликат",
     "price": 1499,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "17183127": {
     "logged": true,
@@ -9589,5 +9590,14 @@
     "price": 4200,
     "condition": "Б/у",
     "model_key": "apple 13 pro"
+  },
+  "17186202": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17186202_obmen/",
+    "title": "Телефон Samsung",
+    "price": 855,
+    "condition": "Б/у",
+    "model_key": "samsung"
   }
 }

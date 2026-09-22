@@ -130,5 +130,9 @@
   "apple 14 pro": {
     "first_seen": "2026-09-22",
     "ratio": 2.4
+  },
+  "samsung": {
+    "first_seen": "2026-09-22",
+    "ratio": 4.68
   }
 }

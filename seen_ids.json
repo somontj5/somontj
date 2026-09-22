@@ -8640,7 +8640,8 @@
     "title": "Xiaomi Redmi 10A",
     "price": 1000,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 10a"
+    "model_key": "xiaomi redmi 10a",
+    "sold_checked": true
   },
   "21634413": {
     "logged": true,
@@ -8659,7 +8660,8 @@
     "title": "Apple iPhone 12 pro, 256 gb, Silver",
     "price": 1999,
     "condition": "Б/у",
-    "model_key": "apple iphone 12 pro"
+    "model_key": "apple iphone 12 pro",
+    "sold_checked": true
   },
   "07717250": {
     "logged": true,
@@ -9215,6 +9217,36 @@
     "title": "Apple iPhone 17 Pro Max, 1 tb, Cosmic Orange дубликат",
     "price": 1300,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max 1 tb"
+    "model_key": "apple 17 pro max 1 tb",
+    "sold_checked": true
+  },
+  "93202562": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17183893_telefon-samsung-note-20-ultra-256gb-2sim-vetnam/",
+    "title": "Samsung Galaxy Note 20 Ultra 256Gb 2sim Vetnam",
+    "price": 2800,
+    "condition": "Б/у",
+    "model_key": "samsung note 20 ultra"
+  },
+  "75222565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17183875_telefon-samsung-s22-ultra-256gb-carea-5g/",
+    "title": "Samsung Galaxy S22 Ultra 256gb Carea 5G",
+    "price": 3560,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
+  },
+  "53812825": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17183837_telefon-samsung-a53-8-128gb-vetnam-2sim-5g/",
+    "title": "Samsung Galaxy А53 8/128Gb Vetnam 2sim 5G",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "samsung а53 vetnam 2sim 5g"
   }
 }

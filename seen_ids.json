@@ -3695,7 +3695,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Deep Blue",
     "price": 12000,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "64082732": {
     "logged": true,
@@ -3704,7 +3705,8 @@
     "title": "Apple iPhone 7, 32 gb",
     "price": 600,
     "condition": "Б/у",
-    "model_key": "apple iphone 7"
+    "model_key": "apple iphone 7",
+    "sold_checked": true
   },
   "71640939": {
     "logged": true,
@@ -3713,7 +3715,8 @@
     "title": "Xiaomi Redmi 9A",
     "price": 400,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 9a"
+    "model_key": "xiaomi redmi 9a",
+    "sold_checked": true
   },
   "06013128": {
     "logged": true,
@@ -3722,7 +3725,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Gold",
     "price": 4400,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "54421904": {
     "logged": true,
@@ -3731,7 +3735,8 @@
     "title": "Samsung Galaxy Z Fold 4",
     "price": 4300,
     "condition": "Б/у",
-    "model_key": "samsung galaxy z fold"
+    "model_key": "samsung galaxy z fold",
+    "sold_checked": true
   },
   "25113128": {
     "logged": true,

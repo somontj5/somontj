@@ -5419,7 +5419,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
     "price": 7699,
     "condition": "Б/у",
-    "model_key": "apple iphone 15 pro"
+    "model_key": "apple iphone 15 pro",
+    "sold_checked": true
   },
   "71661469": {
     "logged": true,
@@ -5429,7 +5430,8 @@
     "title": "Samsung Galaxy Note 9",
     "price": 1480,
     "condition": "Б/у",
-    "model_key": "samsung galaxy note 9"
+    "model_key": "samsung galaxy note 9",
+    "sold_checked": true
   },
   "85416128": {
     "logged": true,
@@ -5438,7 +5440,8 @@
     "title": "Samsung Galaxy A16 128гб, black",
     "price": 1949,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a16 128гб"
+    "model_key": "samsung galaxy a16 128гб",
+    "sold_checked": true
   },
   "87013256": {
     "logged": true,
@@ -5447,7 +5450,8 @@
     "title": "Apple iPhone 13 Pro Max, 256 gb, Graphite",
     "price": 5499,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "98157614": {
     "logged": true,
@@ -5457,7 +5461,8 @@
     "title": "Samsung Galaxy М12 64gb",
     "price": 750,
     "condition": "Б/у",
-    "model_key": "samsung galaxy м12"
+    "model_key": "samsung galaxy м12",
+    "sold_checked": true
   },
   "26411128": {
     "logged": true,

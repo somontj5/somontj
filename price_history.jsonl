@@ -1986,3 +1986,5 @@
 {"type": "confirmed_sale", "id": "25911128", "title": "Apple iPhone 11, 128 gb, White", "price": 1699, "condition": "Б/у", "model_key": "apple iphone 11", "confirmed_at": "2026-09-22T08:25:25"}
 {"type": "confirmed_sale", "id": "90741164", "title": "Xiaomi Redmi Note 11 128Gb", "price": 1200, "condition": "Б/у", "model_key": "xiaomi redmi note 11", "confirmed_at": "2026-09-22T08:30:33"}
 {"type": "confirmed_sale", "id": "16689957", "title": "Samsung Galaxy A57", "price": 3900, "condition": "Б/у", "model_key": "samsung galaxy a57", "confirmed_at": "2026-09-22T08:40:33"}
+{"type": "confirmed_sale", "id": "87013256", "title": "Apple iPhone 13 Pro Max, 256 gb, Graphite", "price": 5499, "condition": "Б/у", "model_key": "apple iphone 13 pro", "confirmed_at": "2026-09-22T08:45:41"}
+{"type": "confirmed_sale", "id": "98157614", "title": "Samsung Galaxy М12 64gb", "price": 750, "condition": "Б/у", "model_key": "samsung galaxy м12", "confirmed_at": "2026-09-22T08:45:44"}

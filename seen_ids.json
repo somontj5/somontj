@@ -2461,7 +2461,8 @@
     "title": "Samsung Galaxy A57",
     "price": 3800,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a57"
+    "model_key": "samsung galaxy a57",
+    "sold_checked": true
   },
   "16141764": {
     "logged": true,
@@ -2471,7 +2472,8 @@
     "title": "Apple iPhone Xs, 64 gb, Silver",
     "price": 650,
     "condition": "Б/у",
-    "model_key": "apple iphone xs"
+    "model_key": "apple iphone xs",
+    "sold_checked": true
   },
   "90211256": {
     "logged": true,
@@ -2480,7 +2482,8 @@
     "title": "Apple iPhone 11, 256 gb, Green",
     "price": 1799,
     "condition": "Б/у",
-    "model_key": "apple iphone 11"
+    "model_key": "apple iphone 11",
+    "sold_checked": true
   },
   "16190305": {
     "logged": true,
@@ -2489,7 +2492,8 @@
     "title": "Samsung galaxy a05s",
     "price": 899,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a05s"
+    "model_key": "samsung galaxy a05s",
+    "sold_checked": true
   },
   "44766128": {
     "logged": true,
@@ -2498,7 +2502,8 @@
     "title": "Honor X6C 6/128gb",
     "price": 1798,
     "condition": "Б/у",
-    "model_key": "honor x6c 6"
+    "model_key": "honor x6c 6",
+    "sold_checked": true
   },
   "12715128": {
     "logged": true,

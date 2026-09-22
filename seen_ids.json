@@ -8127,7 +8127,8 @@
     "title": "Samsung Galaxy S22 Ultra",
     "price": 4200,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s22 ultra"
+    "model_key": "samsung galaxy s22 ultra",
+    "sold_checked": true
   },
   "68233322": {
     "logged": true,
@@ -8136,7 +8137,8 @@
     "title": "Samsung Galaxy S22 Ultra",
     "price": 4100,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s22 ultra"
+    "model_key": "samsung galaxy s22 ultra",
+    "sold_checked": true
   },
   "91517512": {
     "logged": true,
@@ -8155,7 +8157,8 @@
     "title": "Samsung Galaxy S22 Ultra 256GB",
     "price": 3350,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s22 ultra"
+    "model_key": "samsung galaxy s22 ultra",
+    "sold_checked": true
   },
   "66742612": {
     "logged": true,
@@ -8165,7 +8168,8 @@
     "title": "Tecno Spark Go 2",
     "price": 1099,
     "condition": "Б/у",
-    "model_key": "tecno spark go 2"
+    "model_key": "tecno spark go 2",
+    "sold_checked": true
   },
   "17721210": {
     "logged": true,
@@ -8175,7 +8179,8 @@
     "title": "Xiaomi Redmi Note 10",
     "price": 370,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 10"
+    "model_key": "xiaomi redmi note 10",
+    "sold_checked": true
   },
   "17714210": {
     "logged": true,
@@ -8898,5 +8903,15 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "samsung s20 5g"
+  },
+  "18277226": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17182772_samsung-galaxy-s26-ultra/",
+    "title": "Samsung Galaxy S26 Ultra",
+    "price": 6550,
+    "condition": "Б/у",
+    "model_key": "samsung s26 ultra"
   }
 }

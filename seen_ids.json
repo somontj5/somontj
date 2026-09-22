@@ -4322,7 +4322,8 @@
     "title": "iPhone 11 64 gb",
     "price": 1900,
     "condition": "Б/у",
-    "model_key": "iphone 11"
+    "model_key": "iphone 11",
+    "sold_checked": true
   },
   "55216256": {
     "logged": true,
@@ -4331,7 +4332,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Natural Titanium",
     "price": 10000,
     "condition": "Б/у",
-    "model_key": "apple iphone 16 pro"
+    "model_key": "apple iphone 16 pro",
+    "sold_checked": true
   },
   "49851164": {
     "logged": true,
@@ -4340,7 +4342,8 @@
     "title": "Apple iPhone 11, 64 gb, Black",
     "price": 1500,
     "condition": "Б/у",
-    "model_key": "apple iphone 11"
+    "model_key": "apple iphone 11",
+    "sold_checked": true
   },
   "74138256": {
     "logged": true,
@@ -4350,7 +4353,8 @@
     "title": "Xiaomi Redmi Note 13 8/256GB",
     "price": 1150,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 13"
+    "model_key": "xiaomi redmi note 13",
+    "sold_checked": true
   },
   "51216512": {
     "logged": true,
@@ -4359,7 +4363,8 @@
     "title": "Honor 600 Pro 5G 12+16/512Gb Black",
     "price": 7199,
     "condition": "Б/у",
-    "model_key": "honor"
+    "model_key": "honor",
+    "sold_checked": true
   },
   "65029405": {
     "logged": true,

@@ -1949,3 +1949,5 @@
 {"type": "confirmed_sale", "id": "85417256", "title": "Apple iPhone 17 Pro Max, 256 gb, Deep Blue", "price": 9900, "condition": "Б/у", "model_key": "apple iphone 17 pro", "confirmed_at": "2026-09-22T07:05:25"}
 {"type": "confirmed_sale", "id": "16486264", "title": "Apple iPhone X, 64 gb, Silver", "price": 949, "condition": "Б/у", "model_key": "apple iphone x", "confirmed_at": "2026-09-22T07:05:27"}
 {"type": "confirmed_sale", "id": "78313128", "title": "Apple iPhone 13, 128 gb, Starlight", "price": 2700, "condition": "Б/у", "model_key": "apple iphone 13", "confirmed_at": "2026-09-22T07:10:35"}
+{"type": "confirmed_sale", "id": "17164551", "title": "iPhone 11 64 gb", "price": 1900, "condition": "Б/у", "model_key": "iphone 11", "confirmed_at": "2026-09-22T07:15:25"}
+{"type": "confirmed_sale", "id": "74138256", "title": "Xiaomi Redmi Note 13 8/256GB", "price": 1150, "condition": "Б/у", "model_key": "xiaomi redmi note 13", "confirmed_at": "2026-09-22T07:15:28"}

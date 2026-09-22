@@ -8393,7 +8393,8 @@
     "title": "Samsung Galaxy А54",
     "price": 1750,
     "condition": "Б/у",
-    "model_key": "samsung galaxy а54"
+    "model_key": "samsung galaxy а54",
+    "sold_checked": true
   },
   "27356256": {
     "logged": true,
@@ -8402,7 +8403,8 @@
     "title": "Samsung Galaxy A56 256GB",
     "price": 3400,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a56"
+    "model_key": "samsung galaxy a56",
+    "sold_checked": true
   },
   "35091164": {
     "logged": true,
@@ -8601,7 +8603,8 @@
     "title": "Samsung Galaxy M32",
     "price": 1450,
     "condition": "Б/у",
-    "model_key": "samsung galaxy m32"
+    "model_key": "samsung galaxy m32",
+    "sold_checked": true
   },
   "59311128": {
     "logged": true,
@@ -8769,7 +8772,8 @@
     "title": "Samsung Galaxy A20",
     "price": 550,
     "condition": "Б/у",
-    "model_key": "samsung a20"
+    "model_key": "samsung a20",
+    "sold_checked": true
   },
   "52225612": {
     "logged": true,
@@ -8960,5 +8964,23 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "samsung note 20ultra"
+  },
+  "24911128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16198249_apple-iphone-11-128-gb-yellow/",
+    "title": "Apple iPhone 11, 128 gb, Yellow",
+    "price": 2900,
+    "condition": "Б/у",
+    "model_key": "apple 11"
+  },
+  "75897128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16875897_apple-iphone-xr-128-gb-yellow/",
+    "title": "Apple iPhone Xr, 128 gb, Yellow",
+    "price": 2799,
+    "condition": "Б/у",
+    "model_key": "apple xr"
   }
 }

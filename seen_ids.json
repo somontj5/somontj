@@ -2929,7 +2929,8 @@
     "url": "https://m.somon.tj/adv/17162829_infinx-hot-60pro/",
     "title": "Infinx Hot 60pro",
     "price": 2300,
-    "condition": "Б/у"
+    "condition": "Б/у",
+    "sold_checked": true
   },
   "65825651": {
     "logged": true,
@@ -2938,7 +2939,8 @@
     "title": "Samsung Galaxy A36",
     "price": 2500,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a36"
+    "model_key": "samsung galaxy a36",
+    "sold_checked": true
   },
   "71627955": {
     "logged": true,
@@ -2947,7 +2949,8 @@
     "title": "Xiaomi Redmi A5",
     "price": 1000,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi a5"
+    "model_key": "xiaomi redmi a5",
+    "sold_checked": true
   },
   "75817256": {
     "logged": true,
@@ -2956,7 +2959,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
     "price": 15500,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "76613128": {
     "logged": true,
@@ -2965,7 +2969,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
     "price": 2300,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "32382562": {
     "logged": true,
@@ -8200,5 +8205,14 @@
     "price": 2500,
     "condition": "Б/у",
     "model_key": "samsung galaxy s22 8"
+  },
+  "54802610": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16548026_redmi-10/",
+    "title": "Xiaomi Redmi 10",
+    "price": 880,
+    "condition": "Б/у",
+    "model_key": "xiaomi redmi 10"
   }
 }

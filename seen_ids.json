@@ -4738,7 +4738,8 @@
     "title": "Apple iPhone X, 64 gb, Silver",
     "price": 1200,
     "condition": "Б/у",
-    "model_key": "apple iphone x"
+    "model_key": "apple iphone x",
+    "sold_checked": true
   },
   "59141164": {
     "logged": true,
@@ -4752,7 +4753,8 @@
     "title": "Apple iPhone 12 Pro Max, 256 gb, Silver",
     "price": 3500,
     "condition": "Б/у",
-    "model_key": "apple iphone 12 pro"
+    "model_key": "apple iphone 12 pro",
+    "sold_checked": true
   },
   "99532128": {
     "logged": true,
@@ -4762,7 +4764,8 @@
     "title": "Samsung Galaxy A32 128gb",
     "price": 1199,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a32"
+    "model_key": "samsung galaxy a32",
+    "sold_checked": true
   },
   "29416256": {
     "logged": true,
@@ -4772,7 +4775,8 @@
     "title": "Apple iPhone 16 Pro, 256 gb, Black Titanium",
     "price": 8190,
     "condition": "Б/у",
-    "model_key": "apple iphone 16 pro"
+    "model_key": "apple iphone 16 pro",
+    "sold_checked": true
   },
   "71661076": {
     "logged": true,
@@ -4781,7 +4785,8 @@
     "title": "Honor x6c",
     "price": 1199,
     "condition": "Б/у",
-    "model_key": "honor x6c"
+    "model_key": "honor x6c",
+    "sold_checked": true
   },
   "92561212": {
     "logged": true,

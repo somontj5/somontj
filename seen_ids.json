@@ -419,7 +419,8 @@
     },
     "url": "https://m.somon.tj/adv/14845002_apple-iphone-17-pro-max-256-gb/",
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
-    "price": 12990
+    "price": 12990,
+    "sold_checked": true
   },
   "78578256": {
     "logged": true,
@@ -720,7 +721,8 @@
     },
     "url": "https://m.somon.tj/adv/16109673_apple-iphone-16-pro-max-256-gb-desert-titanium/",
     "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium дубликат",
-    "price": 1200
+    "price": 1200,
+    "sold_checked": true
   },
   "74217256": {
     "logged": true,
@@ -744,7 +746,8 @@
     },
     "url": "https://m.somon.tj/adv/16110742_apple-iphone-17-pro-max-256-gb-silver/",
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver дубликат",
-    "price": 1199
+    "price": 1199,
+    "sold_checked": true
   },
   "69138256": {
     "logged": true,
@@ -789,7 +792,8 @@
     },
     "url": "https://m.somon.tj/adv/16158948_samsung-galaxy-s10-5g-8-256-black/",
     "title": "Samsung Galaxy S10+ 5G 8/256 Black",
-    "price": 2599
+    "price": 2599,
+    "sold_checked": true
   },
   "28517256": {
     "logged": true,
@@ -918,7 +922,8 @@
     },
     "url": "https://m.somon.tj/adv/16395441_poco-c81-pro-global-version-4-64/",
     "title": "Xiaomi Poco C81 Pro Global version 4/128gb",
-    "price": 1444
+    "price": 1444,
+    "sold_checked": true
   },
   "50138256": {
     "logged": true,

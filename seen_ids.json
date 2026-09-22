@@ -2239,7 +2239,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
     "price": 7700,
     "condition": "Б/у",
-    "model_key": "apple iphone 15 pro"
+    "model_key": "apple iphone 15 pro",
+    "sold_checked": true
   },
   "61022256": {
     "logged": true,
@@ -2249,7 +2250,8 @@
     "title": "Apple iPhone Xs, 256 gb, Space Grey",
     "price": 900,
     "condition": "Б/у",
-    "model_key": "apple iphone xs"
+    "model_key": "apple iphone xs",
+    "sold_checked": true
   },
   "16098364": {
     "logged": true,
@@ -2258,7 +2260,8 @@
     "title": "Apple iPhone X, 64 gb, Space Grey",
     "price": 999,
     "condition": "Б/у",
-    "model_key": "apple iphone x"
+    "model_key": "apple iphone x",
+    "sold_checked": true
   },
   "51282026": {
     "logged": true
@@ -2282,7 +2285,8 @@
     "title": "Apple iPhone X, 256 gb, Space Grey",
     "price": 900,
     "condition": "Б/у",
-    "model_key": "apple iphone x"
+    "model_key": "apple iphone x",
+    "sold_checked": true
   },
   "17114256": {
     "logged": true,
@@ -2291,7 +2295,8 @@
     "title": "Apple iPhone 14 Pro, 256 gb, Deep Purple",
     "price": 5800,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "17100393": {
     "logged": true,

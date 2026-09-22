@@ -2512,7 +2512,8 @@
     "title": "Xiaomi Redmi A5 128gb",
     "price": 1380,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi a5"
+    "model_key": "xiaomi redmi a5",
+    "sold_checked": true
   },
   "17161848": {
     "logged": true,
@@ -2521,7 +2522,8 @@
     "title": "Samsung Galaxy A22",
     "price": 899,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a22"
+    "model_key": "samsung galaxy a22",
+    "sold_checked": true
   },
   "76414256": {
     "logged": true
@@ -2543,7 +2545,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
     "price": 8700,
     "condition": "Б/у",
-    "model_key": "apple iphone 16 pro"
+    "model_key": "apple iphone 16 pro",
+    "sold_checked": true
   },
   "61489128": {
     "logged": true,
@@ -2552,7 +2555,8 @@
     "title": "Apple iPhone Xr, 128 gb",
     "price": 950,
     "condition": "Б/у",
-    "model_key": "apple iphone xr"
+    "model_key": "apple iphone xr",
+    "sold_checked": true
   },
   "73551164": {
     "logged": true,
@@ -2561,7 +2565,8 @@
     "title": "Apple iPhone 11 Pro, 64 gb, Midnight Green",
     "price": 2600,
     "condition": "Б/у",
-    "model_key": "apple iphone 11 pro"
+    "model_key": "apple iphone 11 pro",
+    "sold_checked": true
   },
   "71614866": {
     "logged": true,
@@ -8141,5 +8146,14 @@
     "price": 4300,
     "condition": "Б/у",
     "model_key": "samsung galaxy s22 ultra"
+  },
+  "71784985": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17178498_asus-rog-phone-5/",
+    "title": "Asus Rog Phone 5",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": null
   }
 }

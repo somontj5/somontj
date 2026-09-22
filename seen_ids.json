@@ -1114,7 +1114,8 @@
     },
     "url": "https://m.somon.tj/adv/17087885_samsung-galaxy-s23-plus-12-512-gb-black/",
     "title": "Samsung Galaxy S23 Plus 12/512 Gb Black",
-    "price": 4599
+    "price": 4599,
+    "sold_checked": true
   },
   "39713128": {
     "logged": true,
@@ -1138,7 +1139,8 @@
     },
     "url": "https://m.somon.tj/adv/12336397_apple-iphone-13-128-gb-starlight/",
     "title": "Apple iPhone 13, 128 gb, Starlight",
-    "price": 4299
+    "price": 4299,
+    "sold_checked": true
   },
   "51616512": {
     "logged": true,
@@ -1267,7 +1269,8 @@
     "logged": true,
     "url": "https://m.somon.tj/adv/15865790_s26-ultra-16-1tb-black/",
     "title": "Samsung Galaxy S26 Ultra 16/1Tb Black Vietnam",
-    "price": 12990
+    "price": 12990,
+    "sold_checked": true
   },
   "32612512": {
     "condition": "Новый",
@@ -1291,7 +1294,8 @@
     "logged": true,
     "url": "https://m.somon.tj/adv/15793003_s26-ultra-12-512-black/",
     "title": "Samsung Galaxy S26 Ultra 12/512gb Vietnam",
-    "price": 10399
+    "price": 10399,
+    "sold_checked": true
   },
   "82612256": {
     "condition": "Новый",
@@ -1315,7 +1319,8 @@
     "logged": true,
     "url": "https://m.somon.tj/adv/15818148_s26-ultra-12-256/",
     "title": "Samsung Galaxy S26 Ultra 12/256Gb Vietnam",
-    "price": 8499
+    "price": 8499,
+    "sold_checked": true
   },
   "11285200": {
     "logged": true,

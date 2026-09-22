@@ -6081,7 +6081,8 @@
     "title": "Huawei Honor x9c 5G",
     "price": 1300,
     "condition": "Б/у",
-    "model_key": "huawei honor x9c 5g"
+    "model_key": "huawei honor x9c 5g",
+    "sold_checked": true
   },
   "45413128": {
     "logged": true,
@@ -6090,7 +6091,8 @@
     "title": "Apple iPhone 13, 128 gb, Blue",
     "price": 3999,
     "condition": "Б/у",
-    "model_key": "apple iphone 13"
+    "model_key": "apple iphone 13",
+    "sold_checked": true
   },
   "35512128": {
     "logged": true,
@@ -6100,7 +6102,8 @@
     "title": "Apple iPhone 12 pro, 128 gb, Pacific Blue",
     "price": 2200,
     "condition": "Б/у",
-    "model_key": "apple iphone 12 pro"
+    "model_key": "apple iphone 12 pro",
+    "sold_checked": true
   },
   "16635721": {
     "logged": true,
@@ -6109,7 +6112,8 @@
     "title": "Samsung Galaxy S21",
     "price": 1850,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s21"
+    "model_key": "samsung galaxy s21",
+    "sold_checked": true
   },
   "51712825": {
     "logged": true,
@@ -6118,7 +6122,8 @@
     "title": "Samsung Galaxy А17 128Gb Vetnam 2sim 5G",
     "price": 1855,
     "condition": "Б/у",
-    "model_key": "samsung galaxy а17"
+    "model_key": "samsung galaxy а17",
+    "sold_checked": true
   },
   "95612885": {
     "logged": true,

@@ -6433,7 +6433,8 @@
     "title": "Apple iPhone 4s, 16 gb",
     "price": 1500,
     "condition": "Б/у",
-    "model_key": "apple iphone 4s 16"
+    "model_key": "apple iphone 4s 16",
+    "sold_checked": true
   },
   "16968010": {
     "logged": true,
@@ -6443,7 +6444,8 @@
     "title": "Samsung Galaxy S10+",
     "price": 2199,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s10"
+    "model_key": "samsung galaxy s10",
+    "sold_checked": true
   },
   "61516256": {
     "logged": true,
@@ -6452,7 +6454,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
     "price": 9500,
     "condition": "Б/у",
-    "model_key": "apple iphone 16 pro"
+    "model_key": "apple iphone 16 pro",
+    "sold_checked": true
   },
   "94922512": {
     "logged": true,
@@ -6461,7 +6464,8 @@
     "title": "Samsung Galaxy S22 Ultra",
     "price": 4300,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s22 ultra"
+    "model_key": "samsung galaxy s22 ultra",
+    "sold_checked": true
   },
   "04318256": {
     "logged": true,
@@ -8010,7 +8014,8 @@
     "title": "Samsung Galaxy S22 Ultra",
     "price": 4300,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s22 ultra"
+    "model_key": "samsung galaxy s22 ultra",
+    "sold_checked": true
   },
   "64981264": {
     "logged": true,

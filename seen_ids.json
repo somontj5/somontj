@@ -8456,7 +8456,8 @@
     "title": "Xiaomi Redmi Note 12 128gb Glabal Version",
     "price": 1250,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 12"
+    "model_key": "xiaomi redmi note 12",
+    "sold_checked": true
   },
   "17292960": {
     "logged": true,
@@ -8466,7 +8467,8 @@
     "title": "Infinix hot 60 i",
     "price": 1150,
     "condition": "Б/у",
-    "model_key": "infinix hot"
+    "model_key": "infinix hot",
+    "sold_checked": true
   },
   "17863664": {
     "logged": true,
@@ -8475,7 +8477,8 @@
     "title": "Apple iPhone X, 64 gb, Silver",
     "price": 1250,
     "condition": "Б/у",
-    "model_key": "apple iphone x"
+    "model_key": "apple iphone x",
+    "sold_checked": true
   },
   "27865616": {
     "logged": true,
@@ -8485,7 +8488,8 @@
     "title": "Apple iPhone 6 plus, 16 gb",
     "price": 450,
     "condition": "Б/у",
-    "model_key": "apple iphone 6 plus"
+    "model_key": "apple iphone 6 plus",
+    "sold_checked": true
   },
   "95816512": {
     "logged": true,
@@ -8494,7 +8498,8 @@
     "title": "Xiaomi Poco x8 Pro Max 16 ГБ/512 ГБ",
     "price": 4200,
     "condition": "Б/у",
-    "model_key": "xiaomi poco x8 pro"
+    "model_key": "xiaomi poco x8 pro",
+    "sold_checked": true
   },
   "85617256": {
     "logged": true,
@@ -9024,5 +9029,59 @@
     "price": 1400,
     "condition": "Б/у",
     "model_key": "samsung a16"
+  },
+  "09518128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15509518_apple-iphone-xr-128-gb-product-red/",
+    "title": "Apple iPhone Xr, 128 gb, Product Red",
+    "price": 2799,
+    "condition": "Б/у",
+    "model_key": "apple xr"
+  },
+  "63402128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15363402_apple-iphone-xr-128-gb-product-red/",
+    "title": "Apple iPhone Xr, 128 gb, Product Red",
+    "price": 2899,
+    "condition": "Б/у",
+    "model_key": "apple xr"
+  },
+  "79811128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15366798_apple-iphone-11-128-gb-black/",
+    "title": "Apple iPhone 11, 128 gb, Black",
+    "price": 3299,
+    "condition": "Б/у",
+    "model_key": "apple 11"
+  },
+  "05317512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15486053_apple-iphone-17-pro-max-512-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 512 gb, Silver Дубликат",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
+  },
+  "74546128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15474546_apple-iphone-xr-128-gb-product-red/",
+    "title": "Apple iPhone Xr, 128 gb, Product Red",
+    "price": 2799,
+    "condition": "Б/у",
+    "model_key": "apple xr"
+  },
+  "59369256": {
+    "logged": true
+  },
+  "55311128": {
+    "logged": true
+  },
+  "14890128": {
+    "logged": true
   }
 }

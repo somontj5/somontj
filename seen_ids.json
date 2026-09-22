@@ -3745,7 +3745,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Graphite",
     "price": 2599,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "23113256": {
     "logged": true,
@@ -3754,7 +3755,8 @@
     "title": "Apple iPhone 13 Pro Max, 256 gb, Sierra Blue",
     "price": 5222,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "16258930": {
     "logged": true,
@@ -3763,7 +3765,8 @@
     "title": "Huawei p30 lite",
     "price": 500,
     "condition": "Б/у",
-    "model_key": "huawei p30 lite"
+    "model_key": "huawei p30 lite",
+    "sold_checked": true
   },
   "24112256": {
     "logged": true,
@@ -3772,7 +3775,8 @@
     "title": "Apple iPhone 12 pro, 256 gb, Gold",
     "price": 2000,
     "condition": "Б/у",
-    "model_key": "apple iphone 12 pro"
+    "model_key": "apple iphone 12 pro",
+    "sold_checked": true
   },
   "42071164": {
     "logged": true,
@@ -3781,7 +3785,8 @@
     "title": "Apple iPhone 11, 64 gb, Black",
     "price": 1399,
     "condition": "Б/у",
-    "model_key": "apple iphone 11"
+    "model_key": "apple iphone 11",
+    "sold_checked": true
   },
   "20811128": {
     "logged": true,
@@ -8326,5 +8331,14 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "samsung galaxy a13"
+  },
+  "82512256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17180825_apple-iphone-12-pro-256-gb-silver/",
+    "title": "Apple iPhone 12 pro, 256 gb, Silver",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "apple iphone 12 pro"
   }
 }

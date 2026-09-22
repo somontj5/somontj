@@ -24,6 +24,13 @@ PRICE_COMMAND_LIMIT = int(os.environ.get("PRICE_COMMAND_LIMIT", "15"))
 # Начиная с какого возраста (в днях) пример для Gemini считается "старым" и
 # помечается предупреждением в промпте — сама модель решает, насколько ему верить.
 STALE_EXAMPLE_DAYS = int(os.environ.get("STALE_EXAMPLE_DAYS", "45"))
+# Если у одного model_key разброс цен (max/min) больше этого — вероятно, это две
+# разные модели, слипшиеся в один ключ (как S22 и S22 Ultra) — а не естественный
+# разброс цен по состоянию. Ниже этой цены записи вообще не учитываем в разбросе —
+# шуточные объявления по 1 сомони иначе портят соотношение для любой модели.
+ANOMALY_RATIO_THRESHOLD = float(os.environ.get("ANOMALY_RATIO_THRESHOLD", "2.0"))
+ANOMALY_MIN_COUNT = int(os.environ.get("ANOMALY_MIN_COUNT", "3"))
+ANOMALY_MIN_PRICE = int(os.environ.get("ANOMALY_MIN_PRICE", "100"))
 GEMINI_DAILY_LIMIT_PER_COMBO = int(os.environ.get("GEMINI_DAILY_LIMIT_PER_COMBO", "450"))
 TAVILY_MONTHLY_LIMIT_PER_KEY = int(os.environ.get("TAVILY_MONTHLY_LIMIT_PER_KEY", "950"))
 GOOGLE_SEARCH_DAILY_LIMIT_PER_KEY = int(os.environ.get("GOOGLE_SEARCH_DAILY_LIMIT_PER_KEY", "90"))
@@ -44,6 +51,7 @@ SEARCH_USAGE_FILE = "search_provider_usage.json"
 EXCHANGE_RATE_FILE = "exchange_rate.json"
 HEALTH_FILE = "health_status.json"
 MIN_PROFIT_FILE = "min_profit.json"
+ANOMALY_STATE_FILE = "known_anomalies.json"
 
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
@@ -422,6 +430,47 @@ def similar_full_analyses(model_key, condition, exclude_id, limit=SIMILAR_EXAMPL
             matches.append(rec)
     matches.sort(key=lambda r: r.get("collected_at", ""), reverse=True)
     return matches[:limit]
+
+
+def find_price_anomalies(ratio_threshold=ANOMALY_RATIO_THRESHOLD, min_count=ANOMALY_MIN_COUNT):
+    """Ищет model_key, где разброс цен (max/min) подозрительно большой — обычно это
+    значит, что в один ключ слиплись две разные модели (как было с S22/S22 Ultra),
+    а не то, что дешёвый лот в плохом состоянии, а дорогой — в отличном: такой разброс
+    редко превышает 2x для ОДНОЙ модели. Записи дешевле ANOMALY_MIN_PRICE не считаем
+    вообще — шуточные объявления по 1 сомони иначе портят соотношение для любой модели."""
+    if not os.path.exists(PRICE_HISTORY_FILE):
+        return []
+    groups = {}
+    with open(PRICE_HISTORY_FILE, "r", encoding="utf-8") as f:
+        for line in f:
+            try:
+                rec = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            if rec.get("type") not in ("market_point", "full_analysis"):
+                continue
+            price, model_key = rec.get("price"), rec.get("model_key")
+            if not price or price < ANOMALY_MIN_PRICE or not model_key:
+                continue
+            groups.setdefault(model_key, []).append((price, rec.get("title", "")))
+
+    anomalies = []
+    for model_key, entries in groups.items():
+        if len(entries) < min_count:
+            continue
+        cheapest = min(entries, key=lambda e: e[0])
+        priciest = max(entries, key=lambda e: e[0])
+        if cheapest[0] <= 0:
+            continue
+        ratio = priciest[0] / cheapest[0]
+        if ratio >= ratio_threshold:
+            anomalies.append({
+                "model_key": model_key, "count": len(entries), "ratio": ratio,
+                "min_price": cheapest[0], "min_title": cheapest[1],
+                "max_price": priciest[0], "max_title": priciest[1],
+            })
+    anomalies.sort(key=lambda a: a["ratio"], reverse=True)
+    return anomalies
 
 
 def market_stats_for(model_key, condition, exclude_id):
@@ -1065,6 +1114,24 @@ def check_telegram_commands(searches, subscribers):
                     send_telegram_document(chat_id, "sold_phones.txt", text, caption=f"Подтверждённые продажи: {len(sales)}")
                 else:
                     send_telegram(chat_id, text)
+        elif command == "/anomalies":
+            anomalies = find_price_anomalies()
+            if not anomalies:
+                send_telegram(chat_id, "Подозрительных разбросов цен не найдено — model_key выглядят чистыми.")
+            else:
+                lines = [f"🔍 Найдено подозрительных групп: {len(anomalies)} (вероятно, разные модели слиплись в один ключ)"]
+                for a in anomalies[:15]:
+                    lines.append(
+                        f"\n⚠️ {a['model_key']} ({a['count']} лотов, ×{a['ratio']:.1f})\n"
+                        f"  мин: {a['min_price']} TJS — «{a['min_title']}»\n"
+                        f"  макс: {a['max_price']} TJS — «{a['max_title']}»"
+                    )
+                text = "\n".join(lines)
+                if len(text) > 3800:
+                    send_telegram(chat_id, "\n".join(lines[:2]) + "\n\nСписок длинный — отправляю файлом.")
+                    send_telegram_document(chat_id, "anomalies.txt", text, caption=f"Подозрительные model_key: {len(anomalies)}")
+                else:
+                    send_telegram(chat_id, text)
         elif command == "/stats":
             gem_usage = get_daily_usage(GEMINI_DAILY_FILE, [c["id"] for c in GEMINI_COMBOS])
             search_usage = get_search_usage()
@@ -1083,6 +1150,7 @@ def check_telegram_commands(searches, subscribers):
                                     "/minprofit число — минимальная выгода для уведомлений (TJS)\n"
                                     "/price Модель — грубая сводка цен по базе\n"
                                     "/sold — фактически проданные телефоны (цена, дата), по моделям\n"
+                                    "/anomalies — проверить базу на подозрительные разбросы цен (склеенные модели)\n"
                                     "/dbadd текст — добавить что угодно в базу вручную\n"
                                     "/bought ссылка — подтвердить удачную покупку по рекомендации бота\n"
                                     "/rejected — файл со всеми отклонёнными лотами\n"
@@ -1668,6 +1736,25 @@ def main():
             print("Ошибка при обработке объявления", item["id"], ":", e)
         finally:
             save_seen(seen)
+
+    # Автоматическая проверка на "склеенные" модели — алерт только на НОВУЮ
+    # аномалию (не найденную в прошлый раз), чтобы не повторять его каждые 30
+    # минут, пока руки не дойдут поправить. Ручная проверка в любой момент — /anomalies.
+    known_anomalies = load_json(ANOMALY_STATE_FILE, {})
+    new_anomalies = [a for a in find_price_anomalies() if a["model_key"] not in known_anomalies]
+    if new_anomalies:
+        lines = ["🔍 Похоже, некоторые model_key объединяют разные модели (разброс цен слишком большой):"]
+        for a in new_anomalies[:5]:
+            lines.append(
+                f"- {a['model_key']} (×{a['ratio']:.1f}, {a['count']} лотов): "
+                f"{a['min_price']} TJS «{a['min_title']}» … {a['max_price']} TJS «{a['max_title']}»"
+            )
+        lines.append("\nПолный список — /anomalies")
+        alert_owner("\n".join(lines))
+        for a in new_anomalies:
+            known_anomalies[a["model_key"]] = {"first_seen": time.strftime("%Y-%m-%d"), "ratio": round(a["ratio"], 2)}
+        with open(ANOMALY_STATE_FILE, "w", encoding="utf-8") as f:
+            json.dump(known_anomalies, f, ensure_ascii=False, indent=2)
 
 
 if __name__ == "__main__":

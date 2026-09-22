@@ -2877,7 +2877,8 @@
     "title": "Apple iPhone 8 plus, 64 gb, Gold",
     "price": 850,
     "condition": "Б/у",
-    "model_key": "apple iphone 8 plus"
+    "model_key": "apple iphone 8 plus",
+    "sold_checked": true
   },
   "71624718": {
     "logged": true
@@ -2890,7 +2891,8 @@
     "title": "Apple iPhone 14 Pro, 128 gb, Space Black",
     "price": 3499,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "65414256": {
     "logged": true,
@@ -2899,7 +2901,8 @@
     "title": "Apple iPhone 14 Pro, 256 gb, Space Black",
     "price": 3999,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "16263875": {
     "logged": true,
@@ -2907,7 +2910,8 @@
     "url": "https://m.somon.tj/adv/17162638_realme-c75/",
     "title": "Realme C75",
     "price": 2150,
-    "condition": "Б/у"
+    "condition": "Б/у",
+    "sold_checked": true
   },
   "16228113": {
     "logged": true,
@@ -2916,7 +2920,8 @@
     "title": "Xiaomi Redmi note 13",
     "price": 1600,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 13"
+    "model_key": "xiaomi redmi note 13",
+    "sold_checked": true
   },
   "16282960": {
     "logged": true,

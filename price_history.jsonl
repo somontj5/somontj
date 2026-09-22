@@ -1893,3 +1893,4 @@
 {"type": "confirmed_sale", "id": "65242568", "title": "Samsung Galaxy A52 4G 256/8гб", "price": 550, "condition": "Б/у", "model_key": "samsung galaxy a52 4g", "confirmed_at": "2026-09-22T05:10:29"}
 {"type": "confirmed_sale", "id": "48015256", "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium", "price": 7199, "condition": "Б/у", "model_key": "apple iphone 15 pro", "confirmed_at": "2026-09-22T05:10:32"}
 {"type": "confirmed_sale", "id": "49817256", "title": "Apple iPhone 17 Pro Max, 256 gb, Silver", "price": 11999, "condition": "Б/у", "model_key": "apple iphone 17 pro", "confirmed_at": "2026-09-22T05:10:34"}
+{"type": "confirmed_sale", "id": "62492864", "title": "Apple iPhone 8 plus, 64 gb, Gold", "price": 850, "condition": "Б/у", "model_key": "apple iphone 8 plus", "confirmed_at": "2026-09-22T05:15:23"}

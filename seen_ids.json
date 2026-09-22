@@ -9460,7 +9460,8 @@
     "title": "Apple iPhone 11, 64 gb, Purple",
     "price": 1399,
     "condition": "Б/у",
-    "model_key": "apple 11"
+    "model_key": "apple 11",
+    "sold_checked": true
   },
   "84988864": {
     "logged": true,

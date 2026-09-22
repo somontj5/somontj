@@ -4899,7 +4899,8 @@
     "title": "Xiaomi Redmi 9",
     "price": 550,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 9"
+    "model_key": "xiaomi redmi 9",
+    "sold_checked": true
   },
   "89213128": {
     "logged": true,
@@ -4908,7 +4909,8 @@
     "title": "Apple iPhone 13, 128 gb, Blue",
     "price": 2250,
     "condition": "Б/у",
-    "model_key": "apple iphone 13"
+    "model_key": "apple iphone 13",
+    "sold_checked": true
   },
   "02214256": {
     "logged": true,
@@ -4918,7 +4920,8 @@
     "title": "Apple iPhone 14 Pro, 256 gb, Deep Purple",
     "price": 5000,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "58365100": {
     "logged": true,
@@ -4927,7 +4930,8 @@
     "title": "Tecno Spark 40",
     "price": 1999,
     "condition": "Б/у",
-    "model_key": "tecno spark"
+    "model_key": "tecno spark",
+    "sold_checked": true
   },
   "17166198": {
     "logged": true,
@@ -4937,7 +4941,8 @@
     "title": "Xiaomi Redmi",
     "price": 310,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi"
+    "model_key": "xiaomi redmi",
+    "sold_checked": true
   },
   "62721164": {
     "logged": true,

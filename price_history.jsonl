@@ -1970,3 +1970,5 @@
 {"type": "confirmed_sale", "id": "92561212", "title": "Honor X9c 256/12+12", "price": 2000, "condition": "Б/у", "model_key": "honor x9c", "confirmed_at": "2026-09-22T07:52:41"}
 {"type": "confirmed_sale", "id": "16917256", "title": "Apple iPhone 17 Pro Max, 256 gb, Silver", "price": 13500, "condition": "Б/у", "model_key": "apple iphone 17 pro", "confirmed_at": "2026-09-22T07:52:45"}
 {"type": "confirmed_sale", "id": "12412256", "title": "Samsung Galaxy S24 Ultra 12/256gb Duos", "price": 6990, "condition": "Б/у", "model_key": "samsung galaxy s24 ultra", "confirmed_at": "2026-09-22T07:55:28"}
+{"type": "confirmed_sale", "id": "58365100", "title": "Tecno Spark 40", "price": 1999, "condition": "Б/у", "model_key": "tecno spark", "confirmed_at": "2026-09-22T08:00:35"}
+{"type": "confirmed_sale", "id": "17166198", "title": "Xiaomi Redmi", "price": 310, "condition": "Б/у", "model_key": "xiaomi redmi", "confirmed_at": "2026-09-22T08:00:36"}

@@ -5832,7 +5832,8 @@
     "title": "Infinix Hot 50 12/256 gb",
     "price": 1300,
     "condition": "Б/у",
-    "model_key": "infinix hot"
+    "model_key": "infinix hot",
+    "sold_checked": true
   },
   "60917256": {
     "logged": true,
@@ -5841,7 +5842,8 @@
     "title": "Apple iPhone 17 Pro, 256 gb, Silver",
     "price": 14500,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "68950256": {
     "logged": true,
@@ -5851,7 +5853,8 @@
     "title": "Tecno Camon 50 pro 256GB",
     "price": 2100,
     "condition": "Б/у",
-    "model_key": "tecno camon"
+    "model_key": "tecno camon",
+    "sold_checked": true
   },
   "67116256": {
     "logged": true,
@@ -5860,7 +5863,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
     "price": 9299,
     "condition": "Б/у",
-    "model_key": "apple iphone 16 pro"
+    "model_key": "apple iphone 16 pro",
+    "sold_checked": true
   },
   "71676578": {
     "logged": true,
@@ -5870,7 +5874,8 @@
     "title": "Xiaomi Redmi note 8 pro",
     "price": 499,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 8"
+    "model_key": "xiaomi redmi note 8",
+    "sold_checked": true
   },
   "67665205": {
     "logged": true,

@@ -8995,7 +8995,8 @@
     "title": "Samsung Galaxy S20 ultra",
     "price": 1199,
     "condition": "Б/у",
-    "model_key": "samsung s20 ultra"
+    "model_key": "samsung s20 ultra",
+    "sold_checked": true
   },
   "18289813": {
     "logged": true,
@@ -9070,7 +9071,8 @@
     "title": "Samsung Galaxy A16 256",
     "price": 1400,
     "condition": "Б/у",
-    "model_key": "samsung a16"
+    "model_key": "samsung a16",
+    "sold_checked": true
   },
   "09518128": {
     "logged": true,
@@ -9518,5 +9520,23 @@
     "price": 150,
     "condition": "Б/у",
     "model_key": "samsung j1 mini"
+  },
+  "97610324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17183976_telefon-redmi-10a-32gb-4g/",
+    "title": "Xiaomi Redmi 10A 32Gb 4G",
+    "price": 740,
+    "condition": "Б/у",
+    "model_key": "redmi 10a"
+  },
+  "50313128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17185503_apple-iphone-13-128-gb-blue/",
+    "title": "Apple iPhone 13, 128 gb, Blue",
+    "price": 3999,
+    "condition": "Б/у",
+    "model_key": "apple 13"
   }
 }

@@ -9131,7 +9131,8 @@
     "title": "Apple iPhone Xs, 256 gb, Silver",
     "price": 2500,
     "condition": "Б/у",
-    "model_key": "apple xs"
+    "model_key": "apple xs",
+    "sold_checked": true
   },
   "55311128": {
     "logged": true,
@@ -9632,5 +9633,14 @@
     "price": 5800,
     "condition": "Б/у",
     "model_key": "samsung z fold 5"
+  },
+  "86409256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17186409_kambudish-suratba-malum-pamiat-256gb-rastamozhka/",
+    "title": "Samsung galaxy S22 Ultra",
+    "price": 3000,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
   }
 }

@@ -8942,7 +8942,8 @@
     "title": "Apple iPhone 14 Pro, 256 gb, Deep Purple",
     "price": 4799,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "61412128": {
     "logged": true,
@@ -8952,7 +8953,8 @@
     "title": "Apple iPhone 12, 128 gb, Blue",
     "price": 3000,
     "condition": "Б/у",
-    "model_key": "apple 12"
+    "model_key": "apple 12",
+    "sold_checked": true
   },
   "18257122": {
     "logged": true,
@@ -9478,5 +9480,23 @@
     "price": 890,
     "condition": "Б/у",
     "model_key": "apple 6s"
+  },
+  "17185118": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17185118_khamachosh-sad-foiz/",
+    "title": "Мобильный телефон",
+    "price": 150,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "18513105": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17185131_a05s/",
+    "title": "Samsung Galaxy A05s",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "samsung a05s"
   }
 }

@@ -2674,7 +2674,8 @@
     "title": "Xiaomi Redmi 10A",
     "price": 666,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 10a"
+    "model_key": "xiaomi redmi 10a",
+    "sold_checked": true
   },
   "45443205": {
     "logged": true,
@@ -2683,7 +2684,8 @@
     "title": "Samsung Galaxy Note 20 ultra",
     "price": 1600,
     "condition": "Б/у",
-    "model_key": "samsung galaxy note 20"
+    "model_key": "samsung galaxy note 20",
+    "sold_checked": true
   },
   "10111256": {
     "logged": true,
@@ -2692,7 +2694,8 @@
     "title": "Apple iPhone 11, 256 gb, Black",
     "price": 1599,
     "condition": "Б/у",
-    "model_key": "apple iphone 11"
+    "model_key": "apple iphone 11",
+    "sold_checked": true
   },
   "62257764": {
     "logged": true,
@@ -2701,7 +2704,8 @@
     "title": "Infinix smart 7 64 gb",
     "price": 350,
     "condition": "Б/у",
-    "model_key": "infinix smart 7"
+    "model_key": "infinix smart 7",
+    "sold_checked": true
   },
   "16223116": {
     "logged": true,
@@ -2710,7 +2714,8 @@
     "title": "Samsung Galaxy A16",
     "price": 1300,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a16"
+    "model_key": "samsung galaxy a16",
+    "sold_checked": true
   },
   "16216517": {
     "logged": true,

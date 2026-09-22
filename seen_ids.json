@@ -2776,7 +2776,8 @@
     "title": "Nokia TA-1114",
     "price": 150,
     "condition": "Б/у",
-    "model_key": "nokia ta"
+    "model_key": "nokia ta",
+    "sold_checked": true
   },
   "10104105": {
     "logged": true,
@@ -2785,7 +2786,8 @@
     "title": "Nokia 105",
     "price": 140,
     "condition": "Б/у",
-    "model_key": "nokia"
+    "model_key": "nokia",
+    "sold_checked": true
   },
   "16202912": {
     "logged": true,
@@ -2794,7 +2796,8 @@
     "title": "Samsung Galaxy A12",
     "price": 499,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a12"
+    "model_key": "samsung galaxy a12",
+    "sold_checked": true
   },
   "16203440": {
     "logged": true,
@@ -2803,7 +2806,8 @@
     "title": "Nokia Spark T40",
     "price": 100,
     "condition": "Б/у",
-    "model_key": "nokia spark t40"
+    "model_key": "nokia spark t40",
+    "sold_checked": true
   },
   "00011256": {
     "logged": true,
@@ -2812,7 +2816,8 @@
     "title": "Apple iPhone 11, 256 gb, White",
     "price": 1799,
     "condition": "Б/у",
-    "model_key": "apple iphone 11"
+    "model_key": "apple iphone 11",
+    "sold_checked": true
   },
   "22771164": {
     "logged": true,

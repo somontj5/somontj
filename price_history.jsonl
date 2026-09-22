@@ -1937,3 +1937,4 @@
 {"type": "confirmed_sale", "id": "44813128", "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue", "price": 2599, "condition": "Б/у", "model_key": "apple iphone 13 pro", "confirmed_at": "2026-09-22T06:40:25"}
 {"type": "confirmed_sale", "id": "64412256", "title": "Apple iPhone X, 256 gb, Silver", "price": 650, "condition": "Б/у", "model_key": "apple iphone x", "confirmed_at": "2026-09-22T06:40:28"}
 {"type": "confirmed_sale", "id": "37910512", "title": "Samsung galaxy S10 512гб", "price": 1200, "condition": "Б/у", "model_key": "samsung galaxy s10 512гб", "confirmed_at": "2026-09-22T06:40:30"}
+{"type": "confirmed_sale", "id": "50316256", "title": "Apple iPhone 16 Pro Max, 256 gb, Natural Titanium", "price": 6500, "condition": "Б/у", "model_key": "apple iphone 16 pro", "confirmed_at": "2026-09-22T06:45:37"}

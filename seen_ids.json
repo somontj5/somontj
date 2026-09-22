@@ -3955,7 +3955,8 @@
     "title": "Apple iPhone 13, 128 gb, Pink",
     "price": 2888,
     "condition": "Б/у",
-    "model_key": "apple iphone 13"
+    "model_key": "apple iphone 13",
+    "sold_checked": true
   },
   "36311128": {
     "logged": true,
@@ -3964,7 +3965,8 @@
     "title": "Apple iPhone 11, 128 gb, Black",
     "price": 2000,
     "condition": "Б/у",
-    "model_key": "apple iphone 11"
+    "model_key": "apple iphone 11",
+    "sold_checked": true
   },
   "26616256": {
     "logged": true,
@@ -3973,7 +3975,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
     "price": 9999,
     "condition": "Б/у",
-    "model_key": "apple iphone 16 pro"
+    "model_key": "apple iphone 16 pro",
+    "sold_checked": true
   },
   "95499256": {
     "logged": true,
@@ -3982,7 +3985,8 @@
     "url": "https://m.somon.tj/adv/16949549_oneplus-9rt-256gb-nano-silver/",
     "title": "OnePlus 9RT 256GB Nano Silver",
     "price": 1650,
-    "condition": "Б/у"
+    "condition": "Б/у",
+    "sold_checked": true
   },
   "50316256": {
     "logged": true,
@@ -3991,7 +3995,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Natural Titanium",
     "price": 6500,
     "condition": "Б/у",
-    "model_key": "apple iphone 16 pro"
+    "model_key": "apple iphone 16 pro",
+    "sold_checked": true
   },
   "64498128": {
     "logged": true,

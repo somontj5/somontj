@@ -5215,7 +5215,8 @@
     "title": "Samsung Galaxy S23 Ultra 256gb Carea 5G 2sim Silver",
     "price": 3650,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s23 ultra"
+    "model_key": "samsung galaxy s23 ultra",
+    "sold_checked": true
   },
   "65442564": {
     "logged": true,
@@ -5224,7 +5225,8 @@
     "url": "https://m.somon.tj/adv/17166544_realmi-c-25-pamiat-64-karobka-imeil/",
     "title": "Realme c25",
     "price": 550,
-    "condition": "Б/у"
+    "condition": "Б/у",
+    "sold_checked": true
   },
   "15712512": {
     "logged": true,
@@ -5233,7 +5235,8 @@
     "title": "Samsung Galaxy A57 12/256 gb",
     "price": 4200,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a57 12"
+    "model_key": "samsung galaxy a57 12",
+    "sold_checked": true
   },
   "94113128": {
     "logged": true,
@@ -5242,7 +5245,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
     "price": 3200,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "17166714": {
     "logged": true,
@@ -5251,7 +5255,8 @@
     "title": "Apple iPhone дубликат",
     "price": 1500,
     "condition": "Б/у",
-    "model_key": "apple iphone дубликат"
+    "model_key": "apple iphone дубликат",
+    "sold_checked": true
   },
   "08014256": {
     "logged": true,

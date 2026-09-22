@@ -6382,7 +6382,8 @@
     "title": "Samsung Galaxy S25 Ultra",
     "price": 9000,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s25 ultra"
+    "model_key": "samsung galaxy s25 ultra",
+    "sold_checked": true
   },
   "32512256": {
     "logged": true,
@@ -6392,7 +6393,8 @@
     "title": "Samsung Galaxy S25 Ultra 12/256gb Duos",
     "price": 5850,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s25 ultra"
+    "model_key": "samsung galaxy s25 ultra",
+    "sold_checked": true
   },
   "85816128": {
     "logged": true,
@@ -6401,7 +6403,8 @@
     "title": "Apple iPhone 16 Pro, 128 gb, Black Titanium",
     "price": 9500,
     "condition": "Б/у",
-    "model_key": "apple iphone 16 pro"
+    "model_key": "apple iphone 16 pro",
+    "sold_checked": true
   },
   "12413128": {
     "logged": true,
@@ -6410,7 +6413,8 @@
     "title": "Apple iPhone 13, 128 gb, Midnight",
     "price": 2950,
     "condition": "Б/у",
-    "model_key": "apple iphone 13"
+    "model_key": "apple iphone 13",
+    "sold_checked": true
   },
   "42208256": {
     "logged": true,
@@ -6419,7 +6423,8 @@
     "title": "Tecno Spark 0 Pro 8/256Gb",
     "price": 1300,
     "condition": "Б/у",
-    "model_key": "tecno spark 0 pro"
+    "model_key": "tecno spark 0 pro",
+    "sold_checked": true
   },
   "97771416": {
     "logged": true,

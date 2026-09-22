@@ -8866,7 +8866,8 @@
     "title": "Samsung Galaxy A40",
     "price": 700,
     "condition": "Б/у",
-    "model_key": "samsung a40"
+    "model_key": "samsung a40",
+    "sold_checked": true
   },
   "71799979": {
     "logged": true,
@@ -9395,5 +9396,14 @@
     "price": 4250,
     "condition": "Б/у",
     "model_key": "samsung s23 ultra cоrea 5g"
+  },
+  "18468713": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17184687_one-plus-13/",
+    "title": "Oneplus 13",
+    "price": 6400,
+    "condition": "Б/у",
+    "model_key": "oneplus 13"
   }
 }

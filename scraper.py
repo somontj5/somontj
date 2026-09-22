@@ -685,25 +685,64 @@ def check_sold_status(url):
         return None
 
 
+def backfill_entry_from_history(ad_id, entry):
+    """Если в seen_ids.json объявлению не хватает полей (например url — его
+    начали сохранять не с самого начала), пробуем дополнить их последней
+    подходящей записью из price_history.jsonl. Уже заполненные поля entry
+    не трогаем — берём из истории только то, чего не хватает."""
+    needed = ("url", "title", "price", "condition", "model_key")
+    if all(entry.get(f) for f in needed):
+        return entry
+    if not os.path.exists(PRICE_HISTORY_FILE):
+        return entry
+
+    best, best_date = None, ""
+    with open(PRICE_HISTORY_FILE, "r", encoding="utf-8") as f:
+        for line in f:
+            try:
+                rec = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            if rec.get("id") != ad_id or rec.get("type") not in ("market_point", "full_analysis"):
+                continue
+            date_key = rec.get("collected_at") or rec.get("date", "")
+            if best is None or date_key >= best_date:
+                best, best_date = rec, date_key
+    if not best:
+        return entry
+
+    updated = dict(entry)
+    for f in needed:
+        if not updated.get(f) and best.get(f):
+            updated[f] = best[f]
+    return updated
+
+
 def process_disappeared_ads(seen, current_ids):
-    to_check = [
+    disappeared = [
         (ad_id, entry) for ad_id, entry in seen.items()
-        if entry.get("photo_ok") and entry.get("url") and ad_id not in current_ids
+        if entry.get("photo_ok") and ad_id not in current_ids
         and not entry.get("sold_checked")
+    ]
+    for ad_id, entry in disappeared:
+        seen[ad_id] = backfill_entry_from_history(ad_id, entry)
+
+    to_check = [
+        (ad_id, entry) for ad_id, entry in disappeared
+        if seen[ad_id].get("url")
     ][:MAX_SOLD_CHECKS_PER_RUN]
 
     for ad_id, entry in to_check:
-        is_sold = check_sold_status(entry["url"])
+        is_sold = check_sold_status(seen[ad_id]["url"])
         if is_sold is True:
             record = {
-                "id": ad_id, "title": entry.get("title"), "price": entry.get("price"),
-                "condition": entry.get("condition"), "model_key": entry.get("model_key"),
+                "id": ad_id, "title": seen[ad_id].get("title"), "price": seen[ad_id].get("price"),
+                "condition": seen[ad_id].get("condition"), "model_key": seen[ad_id].get("model_key"),
             }
             log_confirmed_sale(record)
-            alert_owner(f"✅ Подтверждена продажа: «{entry.get('title')}» за {entry.get('price')} TJS — база пополнилась реальным фактом.")
+            alert_owner(f"✅ Подтверждена продажа: «{seen[ad_id].get('title')}» за {seen[ad_id].get('price')} TJS — база пополнилась реальным фактом.")
         if is_sold is not None:
-            entry["sold_checked"] = True
-        seen[ad_id] = entry
+            seen[ad_id]["sold_checked"] = True
     return seen
 
 

@@ -8077,7 +8077,8 @@
     "title": "Samsung Galaxy S21 256GB",
     "price": 2000,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s21"
+    "model_key": "samsung galaxy s21",
+    "sold_checked": true
   },
   "19311128": {
     "logged": true,
@@ -8086,7 +8087,8 @@
     "title": "Apple iPhone 11, 128 gb, White",
     "price": 1799,
     "condition": "Б/у",
-    "model_key": "apple iphone 11"
+    "model_key": "apple iphone 11",
+    "sold_checked": true
   },
   "73881422": {
     "logged": true,
@@ -8095,7 +8097,8 @@
     "title": "Samsung Galaxy S22 Ultra",
     "price": 3950,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s22 ultra"
+    "model_key": "samsung galaxy s22 ultra",
+    "sold_checked": true
   },
   "07822512": {
     "logged": true,
@@ -8104,7 +8107,8 @@
     "title": "Samsung Galaxy S22 Ultra 512GB",
     "price": 3650,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s22 ultra"
+    "model_key": "samsung galaxy s22 ultra",
+    "sold_checked": true
   },
   "64010222": {
     "logged": true,
@@ -8113,7 +8117,8 @@
     "title": "Samsung Galaxy S22 Ultra",
     "price": 3450,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s22 ultra"
+    "model_key": "samsung galaxy s22 ultra",
+    "sold_checked": true
   },
   "94780322": {
     "logged": true,

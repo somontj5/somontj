@@ -8921,7 +8921,8 @@
     "title": "Samsung Galaxy S22",
     "price": 2600,
     "condition": "Б/у",
-    "model_key": "samsung s22"
+    "model_key": "samsung s22",
+    "sold_checked": true
   },
   "26617256": {
     "logged": true,
@@ -8931,7 +8932,8 @@
     "title": "Apple iPhone 17, 256 gb, Sage",
     "price": 8990,
     "condition": "Б/у",
-    "model_key": "apple 17"
+    "model_key": "apple 17",
+    "sold_checked": true
   },
   "62614256": {
     "logged": true,
@@ -9437,5 +9439,23 @@
     "price": 1333,
     "condition": "Б/у",
     "model_key": "apple 11"
+  },
+  "50261164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17185026_apple-iphone-11-64-gb-purple/",
+    "title": "Apple iPhone 11, 64 gb, Purple",
+    "price": 1399,
+    "condition": "Б/у",
+    "model_key": "apple 11"
+  },
+  "84988864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17184988_apple-iphone-8-plus-64-gb-gold/",
+    "title": "Apple iPhone 8 plus, 64 gb, Gold",
+    "price": 699,
+    "condition": "Б/у",
+    "model_key": "apple 8 plus"
   }
 }

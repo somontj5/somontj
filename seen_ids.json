@@ -4847,7 +4847,8 @@
     "title": "Samsung Galaxy S24 Ultra 12/256gb Duos",
     "price": 6990,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s24 ultra"
+    "model_key": "samsung galaxy s24 ultra",
+    "sold_checked": true
   },
   "84815703": {
     "logged": true,
@@ -4856,7 +4857,8 @@
     "title": "Samsung Galaxy A03 Core",
     "price": 490,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a03 core"
+    "model_key": "samsung galaxy a03 core",
+    "sold_checked": true
   },
   "93814950": {
     "logged": true,
@@ -4865,7 +4867,8 @@
     "title": "Samsung Galaxy A50",
     "price": 790,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a50"
+    "model_key": "samsung galaxy a50",
+    "sold_checked": true
   },
   "73489230": {
     "logged": true,
@@ -4875,7 +4878,8 @@
     "title": "Tecno Camon 30",
     "price": 1400,
     "condition": "Б/у",
-    "model_key": "tecno camon 30"
+    "model_key": "tecno camon 30",
+    "sold_checked": true
   },
   "57350689": {
     "logged": true,
@@ -4884,7 +4888,8 @@
     "title": "Xiaomi Redmi 9C",
     "price": 550,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 9c"
+    "model_key": "xiaomi redmi 9c",
+    "sold_checked": true
   },
   "57351479": {
     "logged": true,

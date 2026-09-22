@@ -2361,7 +2361,8 @@
     "title": "Apple iPhone 13 Pro, 256 gb, Gold",
     "price": 4000,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "16107950": {
     "logged": true,
@@ -2370,7 +2371,8 @@
     "title": "Honor 50",
     "price": 800,
     "condition": "Б/у",
-    "model_key": "honor"
+    "model_key": "honor",
+    "sold_checked": true
   },
   "61374256": {
     "logged": true,
@@ -2379,7 +2381,8 @@
     "title": "Apple iPhone Air, 256 gb, Sky Blue",
     "price": 6700,
     "condition": "Б/у",
-    "model_key": "apple iphone air"
+    "model_key": "apple iphone air",
+    "sold_checked": true
   },
   "38312128": {
     "logged": true,
@@ -2388,7 +2391,8 @@
     "title": "Apple iPhone 12, 128 gb, Purple",
     "price": 1500,
     "condition": "Б/у",
-    "model_key": "apple iphone 12"
+    "model_key": "apple iphone 12",
+    "sold_checked": true
   },
   "11241032": {
     "logged": true,
@@ -2397,7 +2401,8 @@
     "title": "Samsung Galaxy A10 32GB",
     "price": 250,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a10"
+    "model_key": "samsung galaxy a10",
+    "sold_checked": true
   },
   "86016128": {
     "logged": true,

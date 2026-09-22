@@ -1856,3 +1856,5 @@
 {"type": "confirmed_sale", "id": "16041220", "title": "Tecno Spark 20C", "price": 500, "condition": "Б/у", "model_key": "tecno spark 20c", "confirmed_at": "2026-09-22T03:52:29"}
 {"type": "confirmed_sale", "id": "48513128", "title": "Apple iPhone 13 Pro Max, 128 gb, Alpine Green", "price": 3300, "condition": "Б/у", "model_key": "apple iphone 13 pro", "confirmed_at": "2026-09-22T03:55:26"}
 {"type": "confirmed_sale", "id": "71606166", "title": "Xioami Redmi 6 a", "price": 250, "condition": "Б/у", "model_key": "redmi 6 a", "confirmed_at": "2026-09-22T04:00:41"}
+{"type": "confirmed_sale", "id": "71606631", "title": "Телефон XF1", "price": 650, "condition": "Б/у", "model_key": null, "confirmed_at": "2026-09-22T04:05:27"}
+{"type": "confirmed_sale", "id": "15990825", "title": "Samsung Galaxy S25 Ultra", "price": 6600, "condition": "Б/у", "model_key": "samsung galaxy s25 ultra", "confirmed_at": "2026-09-22T04:05:28"}

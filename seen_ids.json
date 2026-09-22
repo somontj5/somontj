@@ -4951,7 +4951,8 @@
     "title": "Apple iPhone 11, 64 gb, Green",
     "price": 1800,
     "condition": "Б/у",
-    "model_key": "apple iphone 11"
+    "model_key": "apple iphone 11",
+    "sold_checked": true
   },
   "63708256": {
     "logged": true,
@@ -4961,7 +4962,8 @@
     "title": "Apple iPhone 8 plus, 256 gb",
     "price": 750,
     "condition": "Б/у",
-    "model_key": "apple iphone 8 plus"
+    "model_key": "apple iphone 8 plus",
+    "sold_checked": true
   },
   "65817256": {
     "logged": true,
@@ -4971,7 +4973,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
     "price": 9150,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "63291164": {
     "logged": true,
@@ -4981,7 +4984,8 @@
     "title": "Apple iPhone 11 Pro Max, 64 gb, Midnight Green",
     "price": 1700,
     "condition": "Б/у",
-    "model_key": "apple iphone 11 pro"
+    "model_key": "apple iphone 11 pro",
+    "sold_checked": true
   },
   "33411128": {
     "logged": true,
@@ -4990,7 +4994,8 @@
     "title": "Apple iPhone 11, 128 gb, White",
     "price": 1699,
     "condition": "Б/у",
-    "model_key": "apple iphone 11"
+    "model_key": "apple iphone 11",
+    "sold_checked": true
   },
   "17166305": {
     "logged": true,

@@ -1972,3 +1972,5 @@
 {"type": "confirmed_sale", "id": "12412256", "title": "Samsung Galaxy S24 Ultra 12/256gb Duos", "price": 6990, "condition": "Б/у", "model_key": "samsung galaxy s24 ultra", "confirmed_at": "2026-09-22T07:55:28"}
 {"type": "confirmed_sale", "id": "58365100", "title": "Tecno Spark 40", "price": 1999, "condition": "Б/у", "model_key": "tecno spark", "confirmed_at": "2026-09-22T08:00:35"}
 {"type": "confirmed_sale", "id": "17166198", "title": "Xiaomi Redmi", "price": 310, "condition": "Б/у", "model_key": "xiaomi redmi", "confirmed_at": "2026-09-22T08:00:36"}
+{"type": "confirmed_sale", "id": "63708256", "title": "Apple iPhone 8 plus, 256 gb", "price": 750, "condition": "Б/у", "model_key": "apple iphone 8 plus", "confirmed_at": "2026-09-22T08:05:21"}
+{"type": "confirmed_sale", "id": "33411128", "title": "Apple iPhone 11, 128 gb, White", "price": 1699, "condition": "Б/у", "model_key": "apple iphone 11", "confirmed_at": "2026-09-22T08:05:23"}

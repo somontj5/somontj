@@ -2305,7 +2305,8 @@
     "title": "Телефон Samsung",
     "price": 3999,
     "condition": "Б/у",
-    "model_key": "samsung"
+    "model_key": "samsung",
+    "sold_checked": true
   },
   "08312128": {
     "logged": true,
@@ -2314,7 +2315,8 @@
     "title": "Apple iPhone 12 pro, 128 gb, Gold",
     "price": 3150,
     "condition": "Б/у",
-    "model_key": "apple iphone 12 pro"
+    "model_key": "apple iphone 12 pro",
+    "sold_checked": true
   },
   "02268256": {
     "logged": true
@@ -2329,7 +2331,8 @@
     "title": "Huawei Honor 600 pro 12+16/512gb",
     "price": 6799,
     "condition": "Б/у",
-    "model_key": "huawei honor"
+    "model_key": "huawei honor",
+    "sold_checked": true
   },
   "23713128": {
     "logged": true,
@@ -2338,7 +2341,8 @@
     "title": "Apple iPhone 13 mini, 128 gb",
     "price": 2400,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 mini"
+    "model_key": "apple iphone 13 mini",
+    "sold_checked": true
   },
   "17161463": {
     "logged": true,
@@ -2347,7 +2351,8 @@
     "title": "Xiaomi Redmi 6",
     "price": 200,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 6"
+    "model_key": "xiaomi redmi 6",
+    "sold_checked": true
   },
   "45313256": {
     "logged": true,
@@ -8112,5 +8117,14 @@
     "price": 280,
     "condition": "Б/у",
     "model_key": "xiaomi redmi note 4"
+  },
+  "17988822": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17179888_s22-ultra/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s22 ultra"
   }
 }

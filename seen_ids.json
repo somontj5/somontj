@@ -8241,7 +8241,8 @@
     "title": "Samsung Galaxy S23 Ultra Duos Vietnam",
     "price": 6500,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s23 ultra"
+    "model_key": "samsung galaxy s23 ultra",
+    "sold_checked": true
   },
   "95713128": {
     "logged": true,
@@ -8250,7 +8251,8 @@
     "title": "Apple iPhone 13 Pro Max, 128 gb, Silver",
     "price": 5800,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "10013128": {
     "logged": true,
@@ -8259,7 +8261,8 @@
     "title": "Apple iPhone 13, 128 gb, Midnight",
     "price": 2500,
     "condition": "Б/у",
-    "model_key": "apple iphone 13"
+    "model_key": "apple iphone 13",
+    "sold_checked": true
   },
   "17751326": {
     "logged": true,
@@ -8268,7 +8271,8 @@
     "title": "Samsung Galaxy S26",
     "price": 5400,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s26"
+    "model_key": "samsung galaxy s26",
+    "sold_checked": true
   },
   "01015256": {
     "logged": true,
@@ -8277,7 +8281,8 @@
     "title": "Apple iPhone 15 Pro, 128 gb, Natural Titanium",
     "price": 6999,
     "condition": "Б/у",
-    "model_key": "apple iphone 15 pro"
+    "model_key": "apple iphone 15 pro",
+    "sold_checked": true
   },
   "49415256": {
     "logged": true,

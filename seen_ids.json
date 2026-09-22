@@ -4217,7 +4217,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Deep Blue",
     "price": 9900,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "64859205": {
     "logged": true,
@@ -4226,7 +4227,8 @@
     "title": "Samsung Galaxy note 20 Ultra 5G",
     "price": 2300,
     "condition": "Б/у",
-    "model_key": "samsung galaxy note 20"
+    "model_key": "samsung galaxy note 20",
+    "sold_checked": true
   },
   "16486264": {
     "logged": true,
@@ -4235,7 +4237,8 @@
     "title": "Apple iPhone X, 64 gb, Silver",
     "price": 949,
     "condition": "Б/у",
-    "model_key": "apple iphone x"
+    "model_key": "apple iphone x",
+    "sold_checked": true
   },
   "66514464": {
     "logged": true,
@@ -4244,7 +4247,8 @@
     "title": "Samsung Galaxy A51",
     "price": 950,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a51"
+    "model_key": "samsung galaxy a51",
+    "sold_checked": true
   },
   "16457123": {
     "logged": true,
@@ -4254,7 +4258,8 @@
     "title": "Samsung Galaxy S23",
     "price": 3999,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s23"
+    "model_key": "samsung galaxy s23",
+    "sold_checked": true
   },
   "16493620": {
     "logged": true,

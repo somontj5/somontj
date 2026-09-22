@@ -1946,3 +1946,5 @@
 {"type": "confirmed_sale", "id": "64793205", "title": "Samsung Galaxy note 20 Ultra 5G", "price": 1350, "condition": "Б/у", "model_key": "samsung galaxy note 20", "confirmed_at": "2026-09-22T06:56:19"}
 {"type": "confirmed_sale", "id": "84411128", "title": "Apple iPhone 11, 128 gb, Black", "price": 2000, "condition": "Б/у", "model_key": "apple iphone 11", "confirmed_at": "2026-09-22T07:00:36"}
 {"type": "confirmed_sale", "id": "74315256", "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium", "price": 7350, "condition": "Б/у", "model_key": "apple iphone 15 pro", "confirmed_at": "2026-09-22T07:00:39"}
+{"type": "confirmed_sale", "id": "85417256", "title": "Apple iPhone 17 Pro Max, 256 gb, Deep Blue", "price": 9900, "condition": "Б/у", "model_key": "apple iphone 17 pro", "confirmed_at": "2026-09-22T07:05:25"}
+{"type": "confirmed_sale", "id": "16486264", "title": "Apple iPhone X, 64 gb, Silver", "price": 949, "condition": "Б/у", "model_key": "apple iphone x", "confirmed_at": "2026-09-22T07:05:27"}

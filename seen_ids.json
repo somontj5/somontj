@@ -4688,7 +4688,8 @@
     "title": "Honor 200 Lite 12+8/256Gb",
     "price": 1480,
     "condition": "Б/у",
-    "model_key": "honor"
+    "model_key": "honor",
+    "sold_checked": true
   },
   "94615256": {
     "logged": true,
@@ -4697,7 +4698,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
     "price": 8199,
     "condition": "Б/у",
-    "model_key": "apple iphone 15 pro"
+    "model_key": "apple iphone 15 pro",
+    "sold_checked": true
   },
   "65922256": {
     "logged": true,
@@ -4706,7 +4708,8 @@
     "title": "Apple iPhone Xr, 256 gb, Coral",
     "price": 1300,
     "condition": "Б/у",
-    "model_key": "apple iphone xr"
+    "model_key": "apple iphone xr",
+    "sold_checked": true
   },
   "16542117": {
     "logged": true,
@@ -4715,7 +4718,8 @@
     "url": "https://m.somon.tj/adv/17165421_oppoa17/",
     "title": "Оppo A17",
     "price": 950,
-    "condition": "Б/у"
+    "condition": "Б/у",
+    "sold_checked": true
   },
   "16595685": {
     "logged": true,
@@ -4724,7 +4728,8 @@
     "title": "Xiaomi Poco C85",
     "price": 1100,
     "condition": "Б/у",
-    "model_key": "xiaomi poco c85"
+    "model_key": "xiaomi poco c85",
+    "sold_checked": true
   },
   "16535164": {
     "logged": true,

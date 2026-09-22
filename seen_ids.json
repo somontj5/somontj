@@ -4584,7 +4584,8 @@
     "title": "Apple iPhone Xs, 256 gb, Gold",
     "price": 1400,
     "condition": "Б/у",
-    "model_key": "apple iphone xs"
+    "model_key": "apple iphone xs",
+    "sold_checked": true
   },
   "16579075": {
     "logged": true,
@@ -4593,7 +4594,8 @@
     "url": "https://m.somon.tj/adv/17165790_realme-smartfon-realme-gt-7-pro-racing-edition-5g-nfc/",
     "title": "Realme GT 7 Pro Racing Edition 5G NFC",
     "price": 4000,
-    "condition": "Б/у"
+    "condition": "Б/у",
+    "sold_checked": true
   },
   "81205128": {
     "logged": true,
@@ -4602,7 +4604,8 @@
     "title": "Samsung Galaxy A05S 128Gb",
     "price": 950,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a05s"
+    "model_key": "samsung galaxy a05s",
+    "sold_checked": true
   },
   "68554449": {
     "logged": true,
@@ -4612,7 +4615,8 @@
     "title": "Xiaomi Redmi Note 9",
     "price": 680,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 9"
+    "model_key": "xiaomi redmi note 9",
+    "sold_checked": true
   },
   "81758256": {
     "logged": true,
@@ -4622,7 +4626,8 @@
     "title": "Xiaomi Poco C75 8/256Gb",
     "price": 880,
     "condition": "Б/у",
-    "model_key": "xiaomi poco c75 8"
+    "model_key": "xiaomi poco c75 8",
+    "sold_checked": true
   },
   "69665868": {
     "logged": true,
@@ -8414,5 +8419,41 @@
     "price": 1999,
     "condition": "Б/у",
     "model_key": "apple iphone 12 pro"
+  },
+  "07717250": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16307717_samsung-e250/",
+    "title": "Samsung E250",
+    "price": 200,
+    "condition": "Б/у",
+    "model_key": "samsung e250"
+  },
+  "63076642": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16307664_nokia-x2/",
+    "title": "Nokia X2",
+    "price": 220,
+    "condition": "Б/у",
+    "model_key": "nokia x2"
+  },
+  "16307456": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16307456_samsung-galaxy-dos/",
+    "title": "Samsung Galaxy Dos",
+    "price": 130,
+    "condition": "Б/у",
+    "model_key": "samsung dos"
+  },
+  "33851110": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16393385_nokia-1110i/",
+    "title": "Nokia H5601",
+    "price": 120,
+    "condition": "Б/у",
+    "model_key": "nokia h5601"
   }
 }

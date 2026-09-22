@@ -3179,7 +3179,8 @@
     "title": "Apple iPhone 11, 128 gb, White",
     "price": 1699,
     "condition": "Б/у",
-    "model_key": "apple iphone 11"
+    "model_key": "apple iphone 11",
+    "sold_checked": true
   },
   "35516256": {
     "logged": true,
@@ -3188,7 +3189,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
     "price": 7400,
     "condition": "Б/у",
-    "model_key": "apple iphone 16 pro"
+    "model_key": "apple iphone 16 pro",
+    "sold_checked": true
   },
   "39514256": {
     "logged": true,
@@ -3197,7 +3199,8 @@
     "title": "Apple iPhone 14 Pro Max, 256 gb, Deep Purple",
     "price": 6000,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "92462019": {
     "logged": true,
@@ -3207,7 +3210,8 @@
     "title": "HUAWEI Y6s 2019",
     "price": 400,
     "condition": "Б/у",
-    "model_key": "huawei y6s"
+    "model_key": "huawei y6s",
+    "sold_checked": true
   },
   "63565256": {
     "logged": true,
@@ -3217,7 +3221,8 @@
     "title": "Apple iPhone X, 256 gb, Silver",
     "price": 750,
     "condition": "Б/у",
-    "model_key": "apple iphone x"
+    "model_key": "apple iphone x",
+    "sold_checked": true
   },
   "52615128": {
     "logged": true,

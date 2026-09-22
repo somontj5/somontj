@@ -5980,7 +5980,8 @@
     "title": "Xiaomi Mi17 ultra",
     "price": 11500,
     "condition": "Б/у",
-    "model_key": "xiaomi mi17 ultra"
+    "model_key": "xiaomi mi17 ultra",
+    "sold_checked": true
   },
   "78013128": {
     "logged": true,
@@ -5989,7 +5990,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Alpine Green",
     "price": 4555,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "71312128": {
     "logged": true,
@@ -5998,7 +6000,8 @@
     "title": "Apple iPhone 12 Pro Max, 128 gb, Silver",
     "price": 3199,
     "condition": "Б/у",
-    "model_key": "apple iphone 12 pro"
+    "model_key": "apple iphone 12 pro",
+    "sold_checked": true
   },
   "90813256": {
     "logged": true,
@@ -6007,7 +6010,8 @@
     "title": "Apple iPhone 13 Pro Max, 256 gb, Graphite",
     "price": 5399,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "34114256": {
     "logged": true,
@@ -6016,7 +6020,8 @@
     "title": "Apple iPhone 14 Pro Max, 256 gb, Deep Purple",
     "price": 7000,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "78811164": {
     "logged": true,

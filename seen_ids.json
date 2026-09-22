@@ -1929,7 +1929,8 @@
     "title": "Infinix Hot 60 Pro+ 16/256",
     "price": 1950,
     "condition": "Б/у",
-    "model_key": "infinix hot"
+    "model_key": "infinix hot",
+    "sold_checked": true
   },
   "47016616": {
     "logged": true,
@@ -1938,7 +1939,8 @@
     "title": "Apple iPhone 6S plus, 16 gb",
     "price": 500,
     "condition": "Б/у",
-    "model_key": "apple iphone 6s plus"
+    "model_key": "apple iphone 6s plus",
+    "sold_checked": true
   },
   "60251205": {
     "logged": true,
@@ -1947,7 +1949,8 @@
     "title": "Samsung galaxy S20 ultra 5G",
     "price": 1700,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s20 ultra"
+    "model_key": "samsung galaxy s20 ultra",
+    "sold_checked": true
   },
   "56171288": {
     "logged": true,
@@ -1956,7 +1959,8 @@
     "title": "Samsung Galaxy A17 ба 128gb",
     "price": 1550,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a17 ба"
+    "model_key": "samsung galaxy a17 ба",
+    "sold_checked": true
   },
   "71606166": {
     "logged": true,
@@ -1965,7 +1969,8 @@
     "title": "Xioami Redmi 6 a",
     "price": 250,
     "condition": "Б/у",
-    "model_key": "redmi 6 a"
+    "model_key": "redmi 6 a",
+    "sold_checked": true
   },
   "72512256": {
     "logged": true,

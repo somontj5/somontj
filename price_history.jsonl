@@ -1855,3 +1855,4 @@
 {"type": "confirmed_sale", "id": "57135364", "title": "Xiaomi Redmi A3х 64Gb", "price": 670, "condition": "Б/у", "model_key": "xiaomi redmi a3х", "confirmed_at": "2026-09-22T03:52:26"}
 {"type": "confirmed_sale", "id": "16041220", "title": "Tecno Spark 20C", "price": 500, "condition": "Б/у", "model_key": "tecno spark 20c", "confirmed_at": "2026-09-22T03:52:29"}
 {"type": "confirmed_sale", "id": "48513128", "title": "Apple iPhone 13 Pro Max, 128 gb, Alpine Green", "price": 3300, "condition": "Б/у", "model_key": "apple iphone 13 pro", "confirmed_at": "2026-09-22T03:55:26"}
+{"type": "confirmed_sale", "id": "71606166", "title": "Xioami Redmi 6 a", "price": 250, "condition": "Б/у", "model_key": "redmi 6 a", "confirmed_at": "2026-09-22T04:00:41"}

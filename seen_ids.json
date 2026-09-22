@@ -1772,7 +1772,8 @@
     "title": "Apple iPhone 13, 128 gb, Blue",
     "price": 2999,
     "condition": "Б/у",
-    "model_key": "apple iphone 13"
+    "model_key": "apple iphone 13",
+    "sold_checked": true
   },
   "69744364": {
     "logged": true,
@@ -1781,7 +1782,8 @@
     "title": "Xiaomi Mi Max 3 64Gb",
     "price": 650,
     "condition": "Б/у",
-    "model_key": "xiaomi mi max 3"
+    "model_key": "xiaomi mi max 3",
+    "sold_checked": true
   },
   "22913128": {
     "logged": true,
@@ -1790,7 +1792,8 @@
     "title": "Apple iPhone 13 Pro Max, 128 gb, Alpine Green",
     "price": 3300,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "71602349": {
     "logged": true
@@ -1805,7 +1808,8 @@
     "title": "Apple iPhone 17 Pro Max, 512 gb, Cosmic Orange",
     "price": 12200,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "74535128": {
     "logged": true,
@@ -1814,7 +1818,8 @@
     "title": "Samsung Galaxy A73 5G 128gb Vietnam",
     "price": 2200,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a73 5g"
+    "model_key": "samsung galaxy a73 5g",
+    "sold_checked": true
   },
   "27014256": {
     "logged": true,

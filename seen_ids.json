@@ -5885,7 +5885,8 @@
     "title": "Samsung Galaxy a20 5g",
     "price": 349,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a20 5g"
+    "model_key": "samsung galaxy a20 5g",
+    "sold_checked": true
   },
   "17712512": {
     "logged": true,
@@ -5894,7 +5895,8 @@
     "title": "Xiaomi Poco F7 12/512",
     "price": 3999,
     "condition": "Б/у",
-    "model_key": "xiaomi poco f7 12"
+    "model_key": "xiaomi poco f7 12",
+    "sold_check_attempts": 1
   },
   "64513256": {
     "logged": true,
@@ -5903,7 +5905,8 @@
     "title": "Apple iPhone 13 Pro Max, 256 gb, Sierra Blue",
     "price": 4900,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "16776764": {
     "logged": true,
@@ -5912,7 +5915,8 @@
     "title": "Apple iPhone Xs, 64 gb, Gold",
     "price": 1099,
     "condition": "Б/у",
-    "model_key": "apple iphone xs"
+    "model_key": "apple iphone xs",
+    "sold_checked": true
   },
   "35915128": {
     "logged": true,
@@ -5921,7 +5925,8 @@
     "title": "Apple iPhone 15 Pro, 128 gb, Natural Titanium",
     "price": 7800,
     "condition": "Б/у",
-    "model_key": "apple iphone 15 pro"
+    "model_key": "apple iphone 15 pro",
+    "sold_checked": true
   },
   "16663064": {
     "logged": true,
@@ -8699,5 +8704,14 @@
     "price": 1099,
     "condition": "Б/у",
     "model_key": "apple xs max"
+  },
+  "76101164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17057610_apple-iphone-11-pro-64-gb-space-grey/",
+    "title": "Apple iPhone 11 Pro, 64 gb, Space Grey",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro"
   }
 }

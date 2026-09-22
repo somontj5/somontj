@@ -9610,7 +9610,8 @@
     "title": "Apple iPhone 7, 32 gb",
     "price": 399,
     "condition": "Б/у",
-    "model_key": "apple 7"
+    "model_key": "apple 7",
+    "sold_checked": true
   },
   "18622220": {
     "logged": true,

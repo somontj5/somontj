@@ -5265,7 +5265,8 @@
     "title": "Apple iPhone 14 Pro Max, 256 gb, Deep Purple",
     "price": 4700,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "90741164": {
     "logged": true,
@@ -5274,7 +5275,8 @@
     "title": "Xiaomi Redmi Note 11 128Gb",
     "price": 1200,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 11"
+    "model_key": "xiaomi redmi note 11",
+    "sold_checked": true
   },
   "85114256": {
     "logged": true,
@@ -5283,7 +5285,8 @@
     "title": "Apple iPhone 14 Pro Max, 256 gb, Gold",
     "price": 8500,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "70214128": {
     "logged": true,
@@ -5292,7 +5295,8 @@
     "title": "Apple iPhone 14 Pro Max, 128 gb, Deep Purple",
     "price": 6500,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "22389115": {
     "logged": true,
@@ -5301,7 +5305,8 @@
     "title": "Xiaomi Redmi Note 15 pro",
     "price": 2800,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 15"
+    "model_key": "xiaomi redmi note 15",
+    "sold_checked": true
   },
   "41641016": {
     "logged": true,

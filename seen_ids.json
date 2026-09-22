@@ -1737,7 +1737,13 @@
   },
   "71551498": {
     "logged": true,
-    "photo_ok": true
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17155149_redmi-not-8/",
+    "title": "Xiaomi Redmi note 8",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "xiaomi redmi note 8",
+    "sold_checked": true
   },
   "32321164": {
     "logged": true
@@ -3392,7 +3398,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
     "price": 9200,
     "condition": "Б/у",
-    "model_key": "apple iphone 16 pro"
+    "model_key": "apple iphone 16 pro",
+    "sold_checked": true
   },
   "36591164": {
     "logged": true,
@@ -3401,7 +3408,8 @@
     "title": "Apple iPhone 11 Pro, 64 gb, Space Grey",
     "price": 1450,
     "condition": "Б/у",
-    "model_key": "apple iphone 11 pro"
+    "model_key": "apple iphone 11 pro",
+    "sold_checked": true
   },
   "59614256": {
     "logged": true,
@@ -3410,7 +3418,8 @@
     "title": "Apple iPhone 14 Pro, 256 gb, Space Black",
     "price": 5300,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "79511256": {
     "logged": true,
@@ -3419,7 +3428,8 @@
     "title": "Apple iPhone 11 Pro, 256 gb, Midnight Green",
     "price": 2650,
     "condition": "Б/у",
-    "model_key": "apple iphone 11 pro"
+    "model_key": "apple iphone 11 pro",
+    "sold_checked": true
   },
   "76612128": {
     "logged": true,
@@ -8263,5 +8273,15 @@
     "price": 1450,
     "condition": "Б/у",
     "model_key": "samsung galaxy m32"
+  },
+  "59311128": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17180593_apple-iphone-11-128-gb-white/",
+    "title": "Apple iPhone 11, 128 gb, White",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "apple iphone 11"
   }
 }

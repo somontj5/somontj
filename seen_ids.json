@@ -8761,7 +8761,8 @@
     "title": "Apple iPhone 12 pro, 128 gb, Pacific Blue",
     "price": 2777,
     "condition": "Б/у",
-    "model_key": "apple 12 pro"
+    "model_key": "apple 12 pro",
+    "sold_checked": true
   },
   "18193864": {
     "logged": true,
@@ -9313,5 +9314,14 @@
     "price": 1100,
     "condition": "Б/у",
     "model_key": "redmi note 11"
+  },
+  "80214512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17087802_apple-iphone-14-pro-max-512-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro Max, 512 gb, Deep Purple",
+    "price": 5300,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
   }
 }

@@ -8558,7 +8558,8 @@
     "title": "Samsung Galaxy S22 Ultra",
     "price": 4350,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s22 ultra"
+    "model_key": "samsung galaxy s22 ultra",
+    "sold_checked": true
   },
   "61544584": {
     "logged": true,
@@ -8568,7 +8569,8 @@
     "title": "Xiaomi Redmi Note 4",
     "price": 280,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 4"
+    "model_key": "xiaomi redmi note 4",
+    "sold_checked": true
   },
   "17988822": {
     "logged": true,
@@ -8577,7 +8579,8 @@
     "title": "Samsung Galaxy S22 Ultra",
     "price": 4300,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s22 ultra"
+    "model_key": "samsung galaxy s22 ultra",
+    "sold_checked": true
   },
   "71784985": {
     "logged": true,
@@ -8606,7 +8609,8 @@
     "title": "Xiaomi Redmi 10",
     "price": 880,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 10"
+    "model_key": "xiaomi redmi 10",
+    "sold_checked": true
   },
   "18047232": {
     "logged": true,
@@ -8626,7 +8630,8 @@
     "title": "Apple iPhone 11, 128 gb, White",
     "price": 1700,
     "condition": "Б/у",
-    "model_key": "apple iphone 11"
+    "model_key": "apple iphone 11",
+    "sold_checked": true
   },
   "78461610": {
     "logged": true,
@@ -9153,5 +9158,53 @@
     "price": 1150,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "83607128": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17183607_apple-iphone-xr-128-gb-white/",
+    "title": "Apple iPhone Xr, 128 gb, White",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "apple xr"
+  },
+  "60011128": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17183600_apple-iphone-11-128-gb-black/",
+    "title": "Apple iPhone 11, 128 gb, Black",
+    "price": 2200,
+    "condition": "Б/у",
+    "model_key": "apple 11"
+  },
+  "57911128": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17183579_apple-iphone-11-128-gb-black/",
+    "title": "Apple iPhone 11, 128 gb, Black",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple 11"
+  },
+  "83561732": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17183561_apple-iphone-7-plus-32-gb/",
+    "title": "Apple iPhone 7 plus, 32 gb",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "apple 7 plus"
+  },
+  "03238256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17181303_samsung-galaxy-s23-8-256-green/",
+    "title": "Samsung Galaxy S23 8/256GB Green",
+    "price": 4500,
+    "condition": "Б/у",
+    "model_key": "samsung s23"
   }
 }

@@ -4478,7 +4478,8 @@
     "title": "Apple iPhone 11, 64 gb",
     "price": 2100,
     "condition": "Б/у",
-    "model_key": "apple iphone 11"
+    "model_key": "apple iphone 11",
+    "sold_checked": true
   },
   "84719864": {
     "logged": true,
@@ -4487,7 +4488,8 @@
     "title": "Apple iPhone 8 plus, 64 gb, Space Grey",
     "price": 1700,
     "condition": "Б/у",
-    "model_key": "apple iphone 8 plus"
+    "model_key": "apple iphone 8 plus",
+    "sold_checked": true
   },
   "69646679": {
     "logged": true,
@@ -4497,7 +4499,8 @@
     "title": "Xiaomi Redmi 9A",
     "price": 270,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 9a"
+    "model_key": "xiaomi redmi 9a",
+    "sold_checked": true
   },
   "16545123": {
     "logged": true,
@@ -4507,7 +4510,8 @@
     "title": "Samsung galaxy s 23 ultra",
     "price": 4200,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s 23"
+    "model_key": "samsung galaxy s 23",
+    "sold_checked": true
   },
   "44517256": {
     "logged": true,
@@ -4516,7 +4520,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
     "price": 14500,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "82815512": {
     "logged": true,

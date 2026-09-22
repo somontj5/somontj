@@ -2724,7 +2724,8 @@
     "title": "Apple iPhone 17 Pro Max,, Deep Blue",
     "price": 11000,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "21317256": {
     "logged": true,
@@ -2734,7 +2735,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
     "price": 9999,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "16221925": {
     "logged": true,
@@ -2743,7 +2745,8 @@
     "title": "Samsung Galaxy S25 Ultra",
     "price": 6650,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s25 ultra"
+    "model_key": "samsung galaxy s25 ultra",
+    "sold_checked": true
   },
   "21114256": {
     "logged": true,
@@ -2752,7 +2755,8 @@
     "title": "Apple iPhone 14 Pro Max, 256 gb, Gold",
     "price": 4500,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "02372964": {
     "logged": true,
@@ -2762,7 +2766,8 @@
     "title": "Xiaomi Redmi 9C 32Gb",
     "price": 350,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 9c"
+    "model_key": "xiaomi redmi 9c",
+    "sold_checked": true
   },
   "73971114": {
     "logged": true,
@@ -8170,5 +8175,15 @@
     "price": 2500,
     "condition": "Б/у",
     "model_key": null
+  },
+  "07228256": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17180007_samsung-galaxy-s22-8-256gb/",
+    "title": "Samsung Galaxy S22 8/256GB",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy s22 8"
   }
 }

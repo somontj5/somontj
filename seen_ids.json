@@ -4110,7 +4110,8 @@
     "title": "Apple iPhone 14 Pro Max, 512 gb, Gold",
     "price": 3700,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "65516256": {
     "logged": true,
@@ -4120,7 +4121,8 @@
     "title": "Apple iPhone 16, 256 gb, Black",
     "price": 6500,
     "condition": "Б/у",
-    "model_key": "apple iphone 16"
+    "model_key": "apple iphone 16",
+    "sold_checked": true
   },
   "67016256": {
     "logged": true,
@@ -4130,7 +4132,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
     "price": 7300,
     "condition": "Б/у",
-    "model_key": "apple iphone 16 pro"
+    "model_key": "apple iphone 16 pro",
+    "sold_checked": true
   },
   "68871685": {
     "logged": true,
@@ -4140,7 +4143,8 @@
     "title": "Xiaomi Redmi А5",
     "price": 750,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi а5"
+    "model_key": "xiaomi redmi а5",
+    "sold_checked": true
   },
   "64793205": {
     "logged": true,
@@ -4150,7 +4154,8 @@
     "title": "Samsung Galaxy note 20 Ultra 5G",
     "price": 1350,
     "condition": "Б/у",
-    "model_key": "samsung galaxy note 20"
+    "model_key": "samsung galaxy note 20",
+    "sold_checked": true
   },
   "84411128": {
     "logged": true,

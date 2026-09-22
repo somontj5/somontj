@@ -3845,7 +3845,8 @@
     "title": "Apple iPhone 13 Pro Max, 128 gb, Sierra Blue",
     "price": 5199,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "96508128": {
     "logged": true,
@@ -3864,7 +3865,8 @@
     "title": "Apple iPhone 13 Pro Max, 256 gb, Silver",
     "price": 3450,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "16426330": {
     "logged": true,
@@ -3873,7 +3875,8 @@
     "title": "Tecno spark 30c",
     "price": 999,
     "condition": "Б/у",
-    "model_key": "tecno spark 30c"
+    "model_key": "tecno spark 30c",
+    "sold_checked": true
   },
   "47217256": {
     "logged": true,
@@ -3882,7 +3885,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Deep Blue",
     "price": 13499,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "17164444": {
     "logged": true,
@@ -3890,7 +3894,8 @@
     "url": "https://m.somon.tj/adv/17164444_telefon-toza/",
     "title": "Телефон Realme",
     "price": 850,
-    "condition": "Б/у"
+    "condition": "Б/у",
+    "sold_checked": true
   },
   "44813128": {
     "logged": true,

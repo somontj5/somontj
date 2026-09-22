@@ -5896,7 +5896,8 @@
     "price": 3999,
     "condition": "Б/у",
     "model_key": "xiaomi poco f7 12",
-    "sold_check_attempts": 1
+    "sold_check_attempts": 1,
+    "sold_checked": true
   },
   "64513256": {
     "logged": true,
@@ -5935,7 +5936,8 @@
     "title": "Apple iPhone Xs, 64 gb, Silver",
     "price": 1550,
     "condition": "Б/у",
-    "model_key": "apple iphone xs"
+    "model_key": "apple iphone xs",
+    "sold_checked": true
   },
   "12614256": {
     "logged": true,
@@ -5944,7 +5946,8 @@
     "title": "Apple iPhone 14 Pro, 256 gb, Space Black",
     "price": 5999,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "50613256": {
     "logged": true,
@@ -5953,7 +5956,8 @@
     "title": "Apple iPhone 13 Pro Max, 256 gb, Sierra Blue",
     "price": 3700,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "01440515": {
     "logged": true,
@@ -5962,7 +5966,8 @@
     "title": "Xiaomi Redmi Note 15 Pro",
     "price": 2500,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 15"
+    "model_key": "xiaomi redmi note 15",
+    "sold_checked": true
   },
   "83713128": {
     "logged": true,
@@ -8713,5 +8718,34 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "apple 11 pro"
+  },
+  "40314512": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17182403_apple-iphone-14-pro-512-gb/",
+    "title": "Apple iPhone 14 Pro, 512 gb",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
+  },
+  "17182297": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17182297_telefon-zur-khamachoniba-kor-mekunad-ekranash-nav-shudagi/",
+    "title": "Samsung Galaxy A40",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "samsung a40"
+  },
+  "71799979": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17179997_redmi-9a/",
+    "title": "Xiaomi Redmi 9А",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "redmi 9а"
   }
 }

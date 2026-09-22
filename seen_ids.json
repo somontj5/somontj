@@ -1328,7 +1328,8 @@
     "url": "https://m.somon.tj/adv/16463918_xiaomi-poco-c71-128gb-5200mach/",
     "title": "Xiaomi Poco C71 128Gb 5200мач",
     "price": 1299,
-    "condition": "Новый"
+    "condition": "Новый",
+    "sold_checked": true
   },
   "60118256": {
     "logged": true,
@@ -1336,7 +1337,8 @@
     "url": "https://m.somon.tj/adv/17158601_apple-iphone-18-pro-max-256-gb-glacier/",
     "title": "Apple iPhone 18 Pro Max, 256 gb, Glacier",
     "price": 15700,
-    "condition": "Новый"
+    "condition": "Новый",
+    "sold_checked": true
   },
   "72544128": {
     "logged": true
@@ -1387,7 +1389,8 @@
     "title": "Xiaomi Redmi Note 14 Pro+ 16/512gb",
     "price": 3299,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 14"
+    "model_key": "xiaomi redmi note 14",
+    "sold_checked": true
   },
   "85117256": {
     "logged": true,
@@ -1396,7 +1399,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange дубликат",
     "price": 1200,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "71116128": {
     "logged": true
@@ -1413,7 +1417,8 @@
     "url": "https://m.somon.tj/adv/16746926_infinix-note-60-pro-5g-12-12-256gb/",
     "title": "Infinix Note 60 Pro 5G 12+12/256GB",
     "price": 3999,
-    "condition": "Б/у"
+    "condition": "Б/у",
+    "sold_checked": true
   },
   "00512512": {
     "logged": true,

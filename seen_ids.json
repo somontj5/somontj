@@ -2575,7 +2575,8 @@
     "title": "Tecno Pova 6 Neo",
     "price": 850,
     "condition": "Б/у",
-    "model_key": "tecno pova 6 neo"
+    "model_key": "tecno pova 6 neo",
+    "sold_checked": true
   },
   "61928128": {
     "logged": true,
@@ -2584,7 +2585,8 @@
     "title": "Apple iPhone Xr, 128 gb, Product Red",
     "price": 6990,
     "condition": "Б/у",
-    "model_key": "apple iphone xr"
+    "model_key": "apple iphone xr",
+    "sold_checked": true
   },
   "16191320": {
     "logged": true,
@@ -2593,7 +2595,8 @@
     "title": "Samsung Galaxy Note 20 Ultra",
     "price": 1900,
     "condition": "Б/у",
-    "model_key": "samsung galaxy note 20"
+    "model_key": "samsung galaxy note 20",
+    "sold_checked": true
   },
   "62212512": {
     "logged": true,
@@ -2602,7 +2605,8 @@
     "title": "Samsung Galaxy S22 Ultra 12/512 Gb",
     "price": 4900,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s22 ultra"
+    "model_key": "samsung galaxy s22 ultra",
+    "sold_checked": true
   },
   "17161962": {
     "logged": true,
@@ -2611,7 +2615,8 @@
     "title": "Телефон Huawei Honor",
     "price": 2300,
     "condition": "Б/у",
-    "model_key": "huawei honor"
+    "model_key": "huawei honor",
+    "sold_checked": true
   },
   "15000264": {
     "logged": true,

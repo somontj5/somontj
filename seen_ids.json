@@ -6182,7 +6182,8 @@
     "title": "Xiaomi Redmi 9 c",
     "price": 500,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 9 c"
+    "model_key": "xiaomi redmi 9 c",
+    "sold_checked": true
   },
   "94214128": {
     "logged": true,
@@ -6192,7 +6193,8 @@
     "title": "Apple iPhone 14 Pro, 128 gb, Space Black",
     "price": 3850,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "71681153": {
     "logged": true,
@@ -6202,7 +6204,8 @@
     "title": "Xiaomi Poco M3",
     "price": 580,
     "condition": "Б/у",
-    "model_key": "xiaomi poco m3"
+    "model_key": "xiaomi poco m3",
+    "sold_checked": true
   },
   "06715256": {
     "logged": true,
@@ -6211,7 +6214,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Blue Titanium",
     "price": 7399,
     "condition": "Б/у",
-    "model_key": "apple iphone 15 pro"
+    "model_key": "apple iphone 15 pro",
+    "sold_checked": true
   },
   "91517256": {
     "logged": true,
@@ -6221,7 +6225,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Black Titanium",
     "price": 3300,
     "condition": "Б/у",
-    "model_key": "apple iphone 15 pro"
+    "model_key": "apple iphone 15 pro",
+    "sold_checked": true
   },
   "16819660": {
     "logged": true,
@@ -8795,5 +8800,25 @@
     "price": 600,
     "condition": "Б/у",
     "model_key": "apple 15 pro max"
+  },
+  "18253622": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17182536_samsunggalaxys22/",
+    "title": "Samsung Galaxy S22",
+    "price": 2600,
+    "condition": "Б/у",
+    "model_key": "samsung s22"
+  },
+  "26617256": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17182266_apple-iphone-17-256-gb-sage/",
+    "title": "Apple iPhone 17, 256 gb, Sage",
+    "price": 8990,
+    "condition": "Б/у",
+    "model_key": "apple 17"
   }
 }

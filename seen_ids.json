@@ -482,7 +482,8 @@
     "url": "https://m.somon.tj/adv/17173425_telefon-honor-x7d-128gb-2026/",
     "title": "Honor X7d, 128gb 2026",
     "price": 1788,
-    "model_key": "honor x7d"
+    "model_key": "honor x7d",
+    "sold_checked": true
   },
   "07448128": {
     "logged": true,
@@ -8413,7 +8414,8 @@
     "title": "Apple iPhone 11, 64 gb, Black",
     "price": 1850,
     "condition": "Б/у",
-    "model_key": "apple iphone 11"
+    "model_key": "apple iphone 11",
+    "sold_checked": true
   },
   "51350256": {
     "logged": true,
@@ -8433,7 +8435,8 @@
     "title": "Apple iPhone Xr, 128 gb, Black",
     "price": 1550,
     "condition": "Б/у",
-    "model_key": "apple iphone xr"
+    "model_key": "apple iphone xr",
+    "sold_checked": true
   },
   "34811264": {
     "logged": true,
@@ -8443,7 +8446,8 @@
     "title": "Apple iPhone 12, 64 gb, Blue",
     "price": 1750,
     "condition": "Б/у",
-    "model_key": "apple iphone 12"
+    "model_key": "apple iphone 12",
+    "sold_checked": true
   },
   "31712128": {
     "logged": true,
@@ -8982,5 +8986,42 @@
     "price": 2799,
     "condition": "Б/у",
     "model_key": "apple xr"
+  },
+  "98217512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15508982_apple-iphone-17-pro-max-512-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 512 gb, Silver Дубликат",
+    "price": 1499,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
+  },
+  "97917512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15506979_apple-iphone-17-pro-max-512-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 512 gb, Silver Дубликат",
+    "price": 1499,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
+  },
+  "17183127": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17183127_xiaomi-mi-telefon-v-rabochem-sostoianii/",
+    "title": "Xiaomi Redmi 6",
+    "price": 250,
+    "condition": "Б/у",
+    "model_key": "redmi 6"
+  },
+  "06916256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17183069_samsung-galaxy-a16-256-gb-v-otlichnom-sostoianii/",
+    "title": "Samsung Galaxy A16 256",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "samsung a16"
   }
 }

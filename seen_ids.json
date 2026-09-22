@@ -1879,7 +1879,8 @@
     "title": "Honor X7d",
     "price": 1600,
     "condition": "Б/у",
-    "model_key": "honor x7d"
+    "model_key": "honor x7d",
+    "sold_checked": true
   },
   "05117256": {
     "logged": true,
@@ -1888,7 +1889,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
     "price": 10001,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "17160334": {
     "logged": true,
@@ -1897,7 +1899,8 @@
     "title": "Samsung Galaxy Grand Prime",
     "price": 250,
     "condition": "Б/у",
-    "model_key": "samsung galaxy grand prime"
+    "model_key": "samsung galaxy grand prime",
+    "sold_checked": true
   },
   "48513128": {
     "logged": true,
@@ -1906,7 +1909,8 @@
     "title": "Apple iPhone 13 Pro Max, 128 gb, Alpine Green",
     "price": 3300,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "41316256": {
     "logged": true,
@@ -1915,7 +1919,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
     "price": 9200,
     "condition": "Б/у",
-    "model_key": "apple iphone 16 pro"
+    "model_key": "apple iphone 16 pro",
+    "sold_checked": true
   },
   "06016256": {
     "logged": true,

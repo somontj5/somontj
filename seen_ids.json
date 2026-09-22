@@ -8649,7 +8649,8 @@
     "title": "Samsung Galaxy A13",
     "price": 1200,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a13"
+    "model_key": "samsung galaxy a13",
+    "sold_checked": true
   },
   "82512256": {
     "logged": true,
@@ -9206,5 +9207,14 @@
     "price": 4500,
     "condition": "Б/у",
     "model_key": "samsung s23"
+  },
+  "83653171": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17183653_apple-iphone-17-pro-max-1-tb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro Max, 1 tb, Cosmic Orange дубликат",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max 1 tb"
   }
 }

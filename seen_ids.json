@@ -1426,7 +1426,8 @@
     "url": "https://m.somon.tj/adv/16520530_huawei-honor-400-pro-5g-12-512gb/",
     "title": "Huawei Honor 400 Pro 5G 12/512GB",
     "price": 5500,
-    "condition": "Б/у"
+    "condition": "Б/у",
+    "sold_checked": true
   },
   "17512512": {
     "logged": true,
@@ -1434,7 +1435,8 @@
     "url": "https://m.somon.tj/adv/16583481_xiaomi-poco-f7-pro-5g-12-512gb/",
     "title": "Xiaomi Poco F7 Pro 5G 12/512GB",
     "price": 4999,
-    "condition": "Б/у"
+    "condition": "Б/у",
+    "sold_checked": true
   },
   "21488256": {
     "logged": true,
@@ -1442,7 +1444,8 @@
     "url": "https://m.somon.tj/adv/16609462_xiaomi-redmi-note-14-pro-8-8-256gb/",
     "title": "Xiaomi Redmi Note 14 Pro 8+8/256GB",
     "price": 2450,
-    "condition": "Б/у"
+    "condition": "Б/у",
+    "sold_checked": true
   },
   "64614128": {
     "logged": true,
@@ -1451,7 +1454,8 @@
     "url": "https://m.somon.tj/adv/15100646_apple-iphone-14-pro-128-gb-gold/",
     "title": "Apple iPhone 14 Pro, 128 gb, Gold",
     "price": 6199,
-    "condition": "Б/у"
+    "condition": "Б/у",
+    "sold_checked": true
   },
   "17158921": {
     "logged": true,
@@ -1459,7 +1463,8 @@
     "url": "https://m.somon.tj/adv/17158921_telefon-polni-sastaianish-idialniiai-korobka-dokument-dora-iagon-alishiam-dorad/",
     "title": "Tecno Spark Go 1",
     "price": 1000,
-    "condition": "Б/у"
+    "condition": "Б/у",
+    "sold_checked": true
   },
   "15798534": {
     "logged": true,

@@ -21,6 +21,9 @@ SIMILAR_EXAMPLES_LIMIT = 8
 # (iphone13 / iphone 13 / айфон 13) всё равно считались совпадением.
 FUZZY_MATCH_THRESHOLD = float(os.environ.get("FUZZY_MATCH_THRESHOLD", "0.78"))
 PRICE_COMMAND_LIMIT = int(os.environ.get("PRICE_COMMAND_LIMIT", "15"))
+# Начиная с какого возраста (в днях) пример для Gemini считается "старым" и
+# помечается предупреждением в промпте — сама модель решает, насколько ему верить.
+STALE_EXAMPLE_DAYS = int(os.environ.get("STALE_EXAMPLE_DAYS", "45"))
 GEMINI_DAILY_LIMIT_PER_COMBO = int(os.environ.get("GEMINI_DAILY_LIMIT_PER_COMBO", "450"))
 TAVILY_MONTHLY_LIMIT_PER_KEY = int(os.environ.get("TAVILY_MONTHLY_LIMIT_PER_KEY", "950"))
 GOOGLE_SEARCH_DAILY_LIMIT_PER_KEY = int(os.environ.get("GOOGLE_SEARCH_DAILY_LIMIT_PER_KEY", "90"))
@@ -100,7 +103,16 @@ KNOWN_BRANDS = ["iphone", "apple", "samsung", "xiaomi", "redmi", "honor",
 BRAND_ALIASES = {
     "xioami": "xiaomi", "xiаomi": "xiaomi", "infinx": "infinix",
     "realmi": "realme", "оppo": "oppo", "galaxy": "samsung", "poco": "poco",
+    "iphone": "apple",
 }
+# Xiaomi/Redmi/POCO и Google/Pixel — это РАЗНЫЕ модельные линейки при общей
+# компании-владельце (Redmi Note 12 ≠ Xiaomi 13GH — это не одно и то же, в отличие
+# от Apple/iPhone или Samsung/Galaxy, которые просто синонимы одной линейки).
+# Если оба слова есть в заголовке, линейка (Redmi/POCO/Pixel) важнее, а имя
+# компании (Xiaomi/Google) в этом случае просто шум, который не должен есть слот
+# в model_key.
+SPECIFIC_LINE_WORDS = {"redmi", "poco", "pixel"}
+PARENT_ECHO_WORDS = {"xiaomi", "xioami", "xiаomi", "google"}
 NOISE_WORDS = {"vietnam", "global", "version", "black", "white", "gold", "silver",
                "blue", "green", "pink", "gray", "grey", "new", "оригинал"}
 
@@ -146,13 +158,19 @@ def fuzzy_ratio(a, b):
 
 
 def model_keys_match(key_a, key_b, threshold=FUZZY_MATCH_THRESHOLD):
-    """Сравнивает два model_key нечётко: точное совпадение — всегда True;
-    иначе — по похожести строк, так что опечатки/лишний пробел не рвут совпадение."""
+    """Сравнивает два model_key нечётко, но ПОСЛОВНО, а не как одну строку целиком:
+    сравнение целой строки почти всегда проходит для "s22" и "s22 ultra" — общий
+    префикс огромный, и похожесть остаётся высокой, даже когда одно отличающееся
+    слово меняет модель на совсем другую (и по цене). Пословное сравнение с разным
+    числом слов сразу не совпадает — это и есть сигнал "это другая модель"."""
     if not key_a or not key_b:
         return False
     if key_a == key_b:
         return True
-    return fuzzy_ratio(key_a, key_b) >= threshold
+    words_a, words_b = key_a.split(), key_b.split()
+    if len(words_a) != len(words_b):
+        return False
+    return all(fuzzy_ratio(wa, wb) >= threshold for wa, wb in zip(words_a, words_b))
 
 
 def word_in_text(word, text, text_words, threshold=FUZZY_MATCH_THRESHOLD):
@@ -163,12 +181,41 @@ def word_in_text(word, text, text_words, threshold=FUZZY_MATCH_THRESHOLD):
     return any(fuzzy_ratio(word, w) >= threshold for w in text_words)
 
 
+def days_since(date_str):
+    """Сколько дней назад собрана запись (по collected_at ISO или date YYYY-MM-DD).
+    Нужно, чтобы показывать Gemini не только сам пример, но и его "срок годности"."""
+    if not date_str:
+        return None
+    try:
+        dt = time.strptime(date_str[:10], "%Y-%m-%d")
+        return max(0, int((time.time() - time.mktime(dt)) / 86400))
+    except (ValueError, OverflowError):
+        return None
+
+
 def extract_model_key(title):
+    # "S22+"/"S23+" — плюс приклеен к цифре и вообще не попадает в [a-zа-я0-9]+,
+    # из-за чего S22+ (другая, более дорогая модель) тёрялся в один model_key с S22.
+    title = re.sub(r"(\w)\+", r"\1 plus", title)
+    # "16e"/"17e" (iPhone) — буква "e" приклеена к номеру поколения так же, как "+" у
+    # Samsung: "16" и "16e" — разные модели, но без разделения слово "16e" достаточно
+    # похоже на "16", чтобы пройти порог нечёткости и слипнуться в одну.
+    title = re.sub(r"(\d{2})e\b", r"\1 e", title, flags=re.I)
+    # "8/256GB", "12/512 GB" — это конфигурация ОЗУ/памяти, а не название модели.
+    # Вырезаем эту пару целиком ДО разбивки на слова: если ловить её по принципу
+    # "число перед словом на gb", она случайно цепляет и настоящий номер модели
+    # без слэша (например "iPhone 13 128GB" — там "13" вообще не ОЗУ).
+    title = re.sub(r"\d+\s*/\s*\d+\s*gb", " ", title, flags=re.I)
     words = re.findall(r"[a-zа-я0-9]+", title.lower())
-    brand = next((w for w in words if w in KNOWN_BRANDS), None)
+
+    # Приоритет — конкретной линейке (redmi/poco/pixel), если она есть в заголовке,
+    # иначе — первому известному бренду по порядку слов.
+    brand = (next((w for w in words if w in SPECIFIC_LINE_WORDS), None)
+             or next((w for w in words if w in KNOWN_BRANDS), None))
     if not brand:
         return None
     canonical_brand = BRAND_ALIASES.get(brand, brand)
+
     model_words = []
     started = False
     for w in words:
@@ -177,10 +224,18 @@ def extract_model_key(title):
             continue
         if not started:
             continue
-        if w in NOISE_WORDS or (w.isdigit() and int(w) >= 32) or w.endswith("gb"):
+        # Повтор бренда синонимом ("iPhone" при уже пойманном "Apple", "Xiaomi" при
+        # уже пойманном "Redmi" и т.п.) — не часть названия модели, просто пропускаем,
+        # не тратя на него слот; иначе "Apple iPhone 13 Pro Max" и "iPhone 13 Pro Max"
+        # выходят разной длины и перестают совпадать друг с другом.
+        if BRAND_ALIASES.get(w, w) == canonical_brand or (brand in SPECIFIC_LINE_WORDS and w in PARENT_ECHO_WORDS):
+            continue
+        if w in NOISE_WORDS or w.endswith("gb"):
             break
+        if w.isdigit() and int(w) >= 32:
+            break  # объём памяти без слэша (реже, но бывает "... 128 GB" с пробелом)
         model_words.append(w)
-    return f"{canonical_brand} {' '.join(model_words[:3])}".strip()
+    return f"{canonical_brand} {' '.join(model_words[:5])}".strip()
 
 
 def log_market_point(item):
@@ -314,6 +369,23 @@ def get_confirmed_sales(model_key, limit=5):
                 matches.append(rec)
     matches.sort(key=lambda r: r.get("confirmed_at", ""), reverse=True)
     return matches[:limit]
+
+
+def get_all_confirmed_sales(limit=300):
+    """Для команды /sold — все подтверждённые продажи без фильтра по модели."""
+    if not os.path.exists(PRICE_HISTORY_FILE):
+        return []
+    sales = []
+    with open(PRICE_HISTORY_FILE, "r", encoding="utf-8") as f:
+        for line in f:
+            try:
+                rec = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            if rec.get("type") == "confirmed_sale":
+                sales.append(rec)
+    sales.sort(key=lambda r: r.get("confirmed_at", ""), reverse=True)
+    return sales[:limit]
 
 
 def find_latest_analysis_by_url(url):
@@ -718,6 +790,9 @@ def backfill_entry_from_history(ad_id, entry):
     return updated
 
 
+MAX_SOLD_CHECK_ATTEMPTS = int(os.environ.get("MAX_SOLD_CHECK_ATTEMPTS", "3"))
+
+
 def process_disappeared_ads(seen, current_ids):
     disappeared = [
         (ad_id, entry) for ad_id, entry in seen.items()
@@ -740,9 +815,20 @@ def process_disappeared_ads(seen, current_ids):
                 "condition": seen[ad_id].get("condition"), "model_key": seen[ad_id].get("model_key"),
             }
             log_confirmed_sale(record)
-            alert_owner(f"✅ Подтверждена продажа: «{seen[ad_id].get('title')}» за {seen[ad_id].get('price')} TJS — база пополнилась реальным фактом.")
+            # Уведомление владельцу убрано намеренно — это тихое пополнение базы
+            # реальным фактом, а не событие, требующее внимания прямо сейчас.
+            # Посмотреть все подтверждённые продажи можно командой /sold.
         if is_sold is not None:
             seen[ad_id]["sold_checked"] = True
+        else:
+            # Страница не открылась (сеть/404/бан) — не факт, что это надолго,
+            # пробуем ещё пару раз в следующих прогонах, но не вечно: иначе один
+            # навсегда недоступный лот будет пожизненно занимать место в
+            # MAX_SOLD_CHECKS_PER_RUN и мешать проверке остальных.
+            attempts = seen[ad_id].get("sold_check_attempts", 0) + 1
+            seen[ad_id]["sold_check_attempts"] = attempts
+            if attempts >= MAX_SOLD_CHECK_ATTEMPTS:
+                seen[ad_id]["sold_checked"] = True  # сдаёмся: продажа не подтверждена, но и не факт
     return seen
 
 
@@ -948,6 +1034,37 @@ def check_telegram_commands(searches, subscribers):
                         send_telegram_document(chat_id, "price_search.txt", text, caption=f"Результаты по «{query}»")
                     else:
                         send_telegram(chat_id, text)
+        elif command == "/sold":
+            sales = get_all_confirmed_sales()
+            if not sales:
+                send_telegram(chat_id, "Подтверждённых продаж пока нет.")
+            else:
+                groups = {}
+                for r in sales:
+                    key = r.get("model_key") or (r.get("title") or "").lower() or "—"
+                    groups.setdefault(key, []).append(r)
+                # группы сортируем по дате самой свежей продажи внутри группы
+                ordered = sorted(groups.values(), key=lambda recs: max(r.get("confirmed_at", "") for r in recs), reverse=True)
+
+                lines = [f"✅ Подтверждённых продаж: {len(sales)}, моделей: {len(ordered)}"]
+                for recs in ordered:
+                    title = recs[0].get("title") or recs[0].get("model_key") or "—"
+                    prices = [r["price"] for r in recs if r.get("price")]
+                    avg = round(sum(prices) / len(prices)) if prices else None
+                    lines.append(f"\n📱 {title} ({len(recs)})" + (f" — средняя цена {avg} TJS" if avg else ""))
+                    for r in recs[:10]:
+                        date = (r.get("confirmed_at") or "")[:10] or "дата неизвестна"
+                        cond = f", {r['condition']}" if r.get("condition") else ""
+                        lines.append(f"  • {r.get('price', '—')} TJS{cond} — {date}")
+                    if len(recs) > 10:
+                        lines.append(f"  …и ещё {len(recs) - 10}")
+
+                text = "\n".join(lines)
+                if len(text) > 3800:
+                    send_telegram(chat_id, "\n".join(lines[:2]) + "\n\nСписок длинный — отправляю файлом.")
+                    send_telegram_document(chat_id, "sold_phones.txt", text, caption=f"Подтверждённые продажи: {len(sales)}")
+                else:
+                    send_telegram(chat_id, text)
         elif command == "/stats":
             gem_usage = get_daily_usage(GEMINI_DAILY_FILE, [c["id"] for c in GEMINI_COMBOS])
             search_usage = get_search_usage()
@@ -965,6 +1082,7 @@ def check_telegram_commands(searches, subscribers):
                                     "/del Название\n/list — список поисков\n"
                                     "/minprofit число — минимальная выгода для уведомлений (TJS)\n"
                                     "/price Модель — грубая сводка цен по базе\n"
+                                    "/sold — фактически проданные телефоны (цена, дата), по моделям\n"
                                     "/dbadd текст — добавить что угодно в базу вручную\n"
                                     "/bought ссылка — подтвердить удачную покупку по рекомендации бота\n"
                                     "/rejected — файл со всеми отклонёнными лотами\n"
@@ -992,6 +1110,27 @@ def normalize_condition(value):
     if value.startswith("восстанов"):
         return "Восстановлен"
     return value or None
+
+
+# Поле "Состояние" на странице — это то, что продавец САМ выбрал в форме, и оно не
+# всегда совпадает с реальностью (сайт фильтрует по категории "б/у", но люди суют
+# туда и нераспечатанные телефоны; бывает и наоборот). Поэтому решение "нужны ли
+# фото" принимаем не по одному полю, а по совпадению поля и явных фраз в описании.
+NEW_TEXT_CUES = ("запечатан", "нераспечатан", "не вскрыт", "не пользовал", "с биркой",
+                  "новый, коробка", "не был в использовании", "новый в коробке")
+USED_TEXT_CUES = ("царапин", "потёрт", "потерт", "скол", "трещин", "след использования",
+                   "мелкие дефект", "потёрто", "потерто")
+
+
+def condition_signal(item):
+    """Поле "Состояние" на сайте почти всегда будет "Б/у" — сама выдача объявлений
+    отфильтрована по этой категории через URL (sostoyanie---1), так что полю доверять
+    бессмысленно: оно не различает реально новые и реально б/у лоты. Единственный
+    рабочий сигнал "по факту новый" — явные фразы в описании продавца."""
+    desc = (item.get("description") or "").lower()
+    has_new_cue = any(c in desc for c in NEW_TEXT_CUES)
+    has_used_cue = any(c in desc for c in USED_TEXT_CUES)
+    return "new" if (has_new_cue and not has_used_cue) else "used"
 
 
 def clean_title(raw_text):
@@ -1096,17 +1235,25 @@ def fetch_detail(ad_url):
 def format_similar_examples(examples):
     if not examples:
         return "Похожих проверенных лотов этой модели из нашей базы пока нет."
-    lines = ["Похожие проверенные лоты этой модели из нашей базы (от новых к старым) — "
-             "судьи сам по каждому, чем этот лот отличается по дефектам и цене:"]
+    lines = ["Похожие проверенные лоты этой модели из нашей базы (от новых к старым, "
+             "у каждого указан возраст данных) — судьи сам по каждому, чем этот лот "
+             "отличается по дефектам и цене, и учитывай, что старые примеры могли устареть по цене:"]
     for i, rec in enumerate(examples, 1):
         defects = ", ".join(rec.get("visible_defects") or []) or "не обнаружены"
         positives = ", ".join(rec.get("positive_features") or []) or "—"
         repair = rec.get("estimated_repair_cost")
         repair_text = f", оценка ремонта тогда: {repair} TJS" if repair else ""
+        age = days_since(rec.get("collected_at"))
+        if age is None:
+            age_text = ", дата сбора неизвестна"
+        elif age > STALE_EXAMPLE_DAYS:
+            age_text = f", собрано {age} дн. назад ⚠️ СТАРЫЕ ДАННЫЕ — цена могла устареть"
+        else:
+            age_text = f", собрано {age} дн. назад"
         lines.append(
             f"{i}. Цена {rec.get('price', '—')} TJS, состояние по фото: "
             f"{rec.get('overall_visual_condition', 'неизвестно')}, "
-            f"дефекты: {defects}, плюсы: {positives}{repair_text} — вердикт тогда: {rec.get('market_verdict', '—')}"
+            f"дефекты: {defects}, плюсы: {positives}{repair_text}{age_text}"
         )
     return "\n".join(lines)
 
@@ -1126,7 +1273,10 @@ def format_confirmed_sales(records):
         return ""
     lines = ["✅ ПОДТВЕРЖДЁННЫЕ РЕАЛЬНЫЕ ПРОДАЖИ этой модели (объявление реально было продано за эту цену, это не догадка):"]
     for r in records:
-        lines.append(f"- Продано за {r.get('price')} TJS, состояние: {r.get('condition') or 'не указано'}")
+        age = days_since(r.get("confirmed_at"))
+        age_text = (f", {age} дн. назад ⚠️ старая продажа, цена могла устареть" if age and age > STALE_EXAMPLE_DAYS
+                    else (f", {age} дн. назад" if age is not None else ""))
+        lines.append(f"- Продано за {r.get('price')} TJS, состояние: {r.get('condition') or 'не указано'}{age_text}")
     return "\n".join(lines)
 
 
@@ -1171,7 +1321,7 @@ def format_imei_block(item, usd_rate):
     return "\nСтатус IMEI на странице определить не удалось — если это важно, можешь спросить у продавца напрямую про растаможку."
 
 
-def build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate):
+def build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate, has_photos=True, condition_note=None):
     examples_text = format_similar_examples(similar_examples)
     good_calls_text = format_confirmed_good_calls(confirmed_good_calls)
     sales_text = format_confirmed_sales(confirmed_sales)
@@ -1182,8 +1332,22 @@ def build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, 
     manual_text = format_manual_notes(manual_notes)
     imei_text = format_imei_block(item, usd_rate)
 
+    if has_photos:
+        intro = "Изучи текст объявления и фото."
+        no_photo_note = ""
+    else:
+        intro = "Фото для этого объявления НЕ анализируются."
+        no_photo_note = (
+            "\nВАЖНО: фото не предоставлены (устройство уверенно определено как новое/запечатанное — "
+            "смотреть визуальные дефекты не имеет смысла). Ставь overall_visual_condition \"новое\", "
+            "visible_defects оставляй пустым списком — не придумывай дефекты, которых не видел. "
+            "Оценивай сделку по тексту, цене, сравнению с рынком и историей продаж ниже.\n"
+        )
+    if condition_note:
+        no_photo_note += f"\n{condition_note}\n"
+
     return f"""
-Ты — эксперт по оценке б/у смартфонов для перепродажи в Таджикистане. Изучи текст объявления и фото.
+Ты — эксперт по оценке смартфонов для перепродажи в Таджикистане. {intro}
 Используй не только присланные данные ниже, но и свои собственные знания о рынке смартфонов.
 
 Объявление: {item['title']}
@@ -1192,7 +1356,7 @@ def build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, 
 Опубликовано: {item.get('published_at') or 'неизвестно'}
 Состояние по словам продавца: {item.get('condition') or 'не указано'}
 Описание продавца: {item.get('description', '')[:800]}
-{imei_text}
+{imei_text}{no_photo_note}
 
 {good_calls_text}
 
@@ -1249,14 +1413,14 @@ def parse_gemini_json(text):
     return {"market_verdict": "недостаточно данных", "reasoning": "не удалось разобрать ответ", "visible_defects": []}
 
 
-def analyze_listing(item, photo_urls, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate, usage):
+def analyze_listing(item, photo_urls, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate, usage, condition_note=None):
     combo = pick_available_combo(usage)
     if not combo:
         return {"market_verdict": "недостаточно данных",
                 "reasoning": "дневной лимит Gemini исчерпан на всех сочетаниях ключ+модель, анализ отложен",
                 "visible_defects": []}
 
-    parts = [{"text": build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate)}]
+    parts = [{"text": build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate, has_photos=bool(photo_urls), condition_note=condition_note)}]
     for url in photo_urls:
         try:
             img = requests.get(url, headers=HEADERS, timeout=15)
@@ -1391,7 +1555,6 @@ def main():
     candidates = [
         item for item in listings
         if selected(item, searches, mode)
-        and not item.get("vip")
         and not seen.get(item["id"], {}).get("photo_ok")
     ][:MAX_NEW_ITEMS_PER_RUN]
 
@@ -1425,7 +1588,13 @@ def main():
 
             data_sources = build_data_sources(similar_examples, confirmed_good_calls, confirmed_sales, manual_notes, web_results, item)
 
-            analysis = analyze_listing(item, photo_urls, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate, usage)
+            # Бинарно: либо уверенно новый (по фразам в описании) — тогда фото вообще
+            # не шлём, либо всё остальное — полный набор фото как обычно. Половинчатый
+            # вариант (часть фото) не даёт Gemini достаточно для реальной проверки, только
+            # тратит токены впустую — либо доверяем сигналу целиком, либо не доверяем.
+            photos_for_analysis = [] if condition_signal(item) == "new" else photo_urls
+
+            analysis = analyze_listing(item, photos_for_analysis, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate, usage)
             verdict = analysis.get("market_verdict", "недостаточно данных")
 
             log_full_analysis(item, analysis, verdict, data_sources)

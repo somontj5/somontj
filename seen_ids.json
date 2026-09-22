@@ -6031,7 +6031,8 @@
     "title": "Apple iPhone 11 Pro Max, 64 gb, Space Grey",
     "price": 1100,
     "condition": "Б/у",
-    "model_key": "apple iphone 11 pro"
+    "model_key": "apple iphone 11 pro",
+    "sold_checked": true
   },
   "16775856": {
     "logged": true,
@@ -6041,7 +6042,8 @@
     "title": "Samsung galaxy A56",
     "price": 1600,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a56"
+    "model_key": "samsung galaxy a56",
+    "sold_checked": true
   },
   "98514256": {
     "logged": true,
@@ -6050,7 +6052,8 @@
     "title": "Apple iPhone 14 Pro, 256 gb, Deep Purple",
     "price": 5000,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "79867128": {
     "logged": true,
@@ -6059,7 +6062,8 @@
     "title": "Apple iPhone 7 plus, 128 gb",
     "price": 850,
     "condition": "Б/у",
-    "model_key": "apple iphone 7 plus"
+    "model_key": "apple iphone 7 plus",
+    "sold_checked": true
   },
   "17167585": {
     "logged": true,
@@ -6067,7 +6071,8 @@
     "url": "https://m.somon.tj/adv/17167585_rastamozhka-nadora/",
     "title": "Телефон Pagraer",
     "price": 450,
-    "condition": "Б/у"
+    "condition": "Б/у",
+    "sold_checked": true
   },
   "16796095": {
     "logged": true,
@@ -8752,5 +8757,33 @@
     "price": 450,
     "condition": "Б/у",
     "model_key": "redmi 9а"
+  },
+  "17182433": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17182433_telefon-originalnyi/",
+    "title": "Samsung galaxy S20",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "samsung s20"
+  },
+  "62512256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17180196_samsung-galaxy-s25-ultra-titan-gray-12-256gb/",
+    "title": "Samsung Galaxy S25 Ultra Titan Gray, 12/256GB",
+    "price": 9500,
+    "condition": "Б/у",
+    "model_key": "samsung s25 ultra titan"
+  },
+  "32215256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17182322_apple-iphone-15-pro-max-256-gb-blue-titanium/",
+    "title": "Apple iPhone 15 Pro Max, 256 gb, Blue Titanium",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro max"
   }
 }

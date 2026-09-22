@@ -114,5 +114,9 @@
   "samsung galaxy note 20": {
     "first_seen": "2026-09-22",
     "ratio": 2.12
+  },
+  "apple 15 pro max": {
+    "first_seen": "2026-09-22",
+    "ratio": 13.33
   }
 }

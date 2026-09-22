@@ -8518,7 +8518,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
     "price": 3200,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "17179091": {
     "logged": true,
@@ -9102,5 +9103,15 @@
     "price": 2700,
     "condition": "Б/у",
     "model_key": "apple xr"
+  },
+  "47455213": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16474552_xiaomi-redmi-note-13/",
+    "title": "Xiaomi Redmi Note 13",
+    "price": 1550,
+    "condition": "Б/у",
+    "model_key": "redmi note 13"
   }
 }

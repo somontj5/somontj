@@ -2047,7 +2047,8 @@
     "title": "Samsung Galaxy S10+",
     "price": 1000,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s10"
+    "model_key": "samsung galaxy s10",
+    "sold_checked": true
   },
   "65424512": {
     "logged": true
@@ -2062,7 +2063,8 @@
     "title": "Samsung 56 128/8GH",
     "price": 2950,
     "condition": "Б/у",
-    "model_key": "samsung"
+    "model_key": "samsung",
+    "sold_checked": true
   },
   "77312885": {
     "logged": true,
@@ -2071,7 +2073,8 @@
     "title": "Samsung Galaxy A73 128/8Gb Vetnam 5G",
     "price": 1730,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a73"
+    "model_key": "samsung galaxy a73",
+    "sold_checked": true
   },
   "91512885": {
     "logged": true,
@@ -2080,7 +2083,8 @@
     "title": "Samsung Galaxy A15 128/8Gb Vetnam 5G",
     "price": 1650,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a15"
+    "model_key": "samsung galaxy a15",
+    "sold_checked": true
   },
   "80912128": {
     "logged": true,
@@ -2089,7 +2093,8 @@
     "title": "Apple iPhone 12 pro, 128 gb, Gold",
     "price": 1999,
     "condition": "Б/у",
-    "model_key": "apple iphone 12 pro"
+    "model_key": "apple iphone 12 pro",
+    "sold_checked": true
   },
   "45158256": {
     "logged": true,

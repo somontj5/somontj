@@ -9004,7 +9004,8 @@
     "title": "Xiaomi Redmi 13C",
     "price": 1100,
     "condition": "Б/у",
-    "model_key": "redmi 13c"
+    "model_key": "redmi 13c",
+    "sold_checked": true
   },
   "18289920": {
     "logged": true,
@@ -9013,7 +9014,8 @@
     "title": "Samsung Galaxy Note 20ultra",
     "price": 1800,
     "condition": "Б/у",
-    "model_key": "samsung note 20ultra"
+    "model_key": "samsung note 20ultra",
+    "sold_checked": true
   },
   "24911128": {
     "logged": true,
@@ -9498,5 +9500,23 @@
     "price": 999,
     "condition": "Б/у",
     "model_key": "samsung a05s"
+  },
+  "65935831": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16593583_samsung-galaxy-j1mini-prime/",
+    "title": "Samsung Galaxy J1 mini prime",
+    "price": 200,
+    "condition": "Б/у",
+    "model_key": "samsung j1 mini prime"
+  },
+  "60961701": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16096170_samsung-galaxy-g1-aec/",
+    "title": "Samsung Galaxy J1 Mini",
+    "price": 150,
+    "condition": "Б/у",
+    "model_key": "samsung j1 mini"
   }
 }

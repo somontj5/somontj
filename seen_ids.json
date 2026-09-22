@@ -4796,7 +4796,8 @@
     "title": "Honor X9c 256/12+12",
     "price": 2000,
     "condition": "Б/у",
-    "model_key": "honor x9c"
+    "model_key": "honor x9c",
+    "sold_checked": true
   },
   "65718128": {
     "logged": true,
@@ -4805,7 +4806,8 @@
     "title": "Apple iPhone Xr, 128 gb, Yellow",
     "price": 1500,
     "condition": "Б/у",
-    "model_key": "apple iphone xr"
+    "model_key": "apple iphone xr",
+    "sold_checked": true
   },
   "14024256": {
     "logged": true,
@@ -4814,7 +4816,8 @@
     "title": "Infinix Note 40 Pro 24/256Gb",
     "price": 1900,
     "condition": "Б/у",
-    "model_key": "infinix note"
+    "model_key": "infinix note",
+    "sold_checked": true
   },
   "71656029": {
     "logged": true,
@@ -4823,7 +4826,8 @@
     "title": "Honor X9D",
     "price": 3300,
     "condition": "Б/у",
-    "model_key": "honor x9d"
+    "model_key": "honor x9d",
+    "sold_checked": true
   },
   "16917256": {
     "logged": true,
@@ -4832,7 +4836,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
     "price": 13500,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "12412256": {
     "logged": true,

@@ -4426,7 +4426,8 @@
     "title": "Samsung Galaxy A17 6/128Gb blue Vietnam",
     "price": 2299,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a17 6"
+    "model_key": "samsung galaxy a17 6",
+    "sold_checked": true
   },
   "16509112": {
     "logged": true,
@@ -4436,7 +4437,8 @@
     "title": "Samsung Galaxy A12",
     "price": 499,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a12"
+    "model_key": "samsung galaxy a12",
+    "sold_checked": true
   },
   "15711256": {
     "logged": true,
@@ -4445,7 +4447,8 @@
     "title": "Apple iPhone 11 Pro, 256 gb, Gold",
     "price": 2399,
     "condition": "Б/у",
-    "model_key": "apple iphone 11 pro"
+    "model_key": "apple iphone 11 pro",
+    "sold_checked": true
   },
   "16514314": {
     "logged": true,
@@ -4455,7 +4458,8 @@
     "title": "Xiaomi Redmi note 14 pro+",
     "price": 2700,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 14"
+    "model_key": "xiaomi redmi note 14",
+    "sold_checked": true
   },
   "16522417": {
     "logged": true,
@@ -4464,7 +4468,8 @@
     "title": "Samsung Galaxy A17",
     "price": 1500,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a17"
+    "model_key": "samsung galaxy a17",
+    "sold_checked": true
   },
   "52481164": {
     "logged": true,

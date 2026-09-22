@@ -8720,7 +8720,8 @@
     "title": "Samsung Galaxy J4",
     "price": 500,
     "condition": "Б/у",
-    "model_key": "samsung j4"
+    "model_key": "samsung j4",
+    "sold_checked": true
   },
   "15800810": {
     "logged": true,

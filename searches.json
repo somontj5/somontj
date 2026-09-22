@@ -1,23 +1,10 @@
 [
   {
-    "name": "honor",
-    "query": "honor",
-    "min_memory": 128,
-    "max_price": 3000
-  },
-  {
     "name": "Хонор128",
     "query": [
       "honor"
     ],
     "max_price": 3849,
     "min_memory": 128
-  },
-  {
-    "name": "iphone",
-    "query": [
-      "15000"
-    ],
-    "max_price": 256
   }
 ]

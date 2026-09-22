@@ -968,7 +968,8 @@
     },
     "url": "https://m.somon.tj/adv/16108912_samsung-galaxy-s25-ultra-8-256-black/",
     "title": "Samsung Galaxy S25 Ultra 8/256 дубликат",
-    "price": 1200
+    "price": 1200,
+    "sold_checked": true
   },
   "92312256": {
     "logged": true,
@@ -992,7 +993,8 @@
     },
     "url": "https://m.somon.tj/adv/15197819_samsung-galaxy-s23-ultra-12-256-gb-black/",
     "title": "Samsung Galaxy S23 Ultra 12/256 Gb Black",
-    "price": 6999
+    "price": 6999,
+    "sold_checked": true
   },
   "92212256": {
     "logged": true,
@@ -1016,7 +1018,8 @@
     },
     "url": "https://m.somon.tj/adv/15191639_samsung-galaxy-s22-ultra-12-256-gb-black/",
     "title": "Samsung.Galaxy S22 Ultra 12/256 Gb Black",
-    "price": 5999
+    "price": 5999,
+    "sold_checked": true
   },
   "32017256": {
     "logged": true,
@@ -1061,7 +1064,8 @@
     },
     "url": "https://m.somon.tj/adv/13720624_apple-iphone-13-pro-max-128-gb-gold/",
     "title": "Apple iPhone 13 Pro Max, 128 gb, Gold",
-    "price": 6099
+    "price": 6099,
+    "sold_checked": true
   },
   "75713128": {
     "logged": true,
@@ -1085,7 +1089,8 @@
     },
     "url": "https://m.somon.tj/adv/12261757_apple-iphone-13-128-gb-midnight/",
     "title": "Apple iPhone 13, 128 gb, Midnight",
-    "price": 4299
+    "price": 4299,
+    "sold_checked": true
   },
   "52312512": {
     "logged": true,

@@ -1974,3 +1974,5 @@
 {"type": "confirmed_sale", "id": "17166198", "title": "Xiaomi Redmi", "price": 310, "condition": "Б/у", "model_key": "xiaomi redmi", "confirmed_at": "2026-09-22T08:00:36"}
 {"type": "confirmed_sale", "id": "63708256", "title": "Apple iPhone 8 plus, 256 gb", "price": 750, "condition": "Б/у", "model_key": "apple iphone 8 plus", "confirmed_at": "2026-09-22T08:05:21"}
 {"type": "confirmed_sale", "id": "33411128", "title": "Apple iPhone 11, 128 gb, White", "price": 1699, "condition": "Б/у", "model_key": "apple iphone 11", "confirmed_at": "2026-09-22T08:05:23"}
+{"type": "confirmed_sale", "id": "44617256", "title": "Apple iPhone 17 Pro Max, 256 gb, Silver", "price": 9999, "condition": "Б/у", "model_key": "apple iphone 17 pro", "confirmed_at": "2026-09-22T08:15:23"}
+{"type": "confirmed_sale", "id": "65640545", "title": "Samsung galaxy A54 5G", "price": 1700, "condition": "Б/у", "model_key": "samsung galaxy a54 5g", "confirmed_at": "2026-09-22T08:15:24"}

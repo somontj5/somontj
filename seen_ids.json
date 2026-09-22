@@ -5056,7 +5056,8 @@
     "title": "Huawei Honor X8d",
     "price": 1000,
     "condition": "Б/у",
-    "model_key": "huawei honor x8d"
+    "model_key": "huawei honor x8d",
+    "sold_checked": true
   },
   "66512128": {
     "logged": true,
@@ -5065,7 +5066,8 @@
     "title": "Apple iPhone 12 Pro Max, 128 gb, Pacific Blue",
     "price": 3199,
     "condition": "Б/у",
-    "model_key": "apple iphone 12 pro"
+    "model_key": "apple iphone 12 pro",
+    "sold_checked": true
   },
   "44512128": {
     "logged": true,
@@ -5075,7 +5077,8 @@
     "title": "Redmi Note 12 128Gb Global Version",
     "price": 1250,
     "condition": "Б/у",
-    "model_key": "redmi note 12"
+    "model_key": "redmi note 12",
+    "sold_checked": true
   },
   "44617256": {
     "logged": true,
@@ -5085,7 +5088,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
     "price": 9999,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "65640545": {
     "logged": true,
@@ -5095,7 +5099,8 @@
     "title": "Samsung galaxy A54 5G",
     "price": 1700,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a54 5g"
+    "model_key": "samsung galaxy a54 5g",
+    "sold_checked": true
   },
   "72225612": {
     "logged": true,

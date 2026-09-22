@@ -3795,7 +3795,8 @@
     "title": "Apple iPhone 11, 128 gb, Yellow",
     "price": 1550,
     "condition": "Б/у",
-    "model_key": "apple iphone 11"
+    "model_key": "apple iphone 11",
+    "sold_checked": true
   },
   "21115128": {
     "logged": true,
@@ -3805,7 +3806,8 @@
     "title": "Apple iPhone 15 Pro, 128 gb, Natural Titanium",
     "price": 5500,
     "condition": "Б/у",
-    "model_key": "apple iphone 15 pro"
+    "model_key": "apple iphone 15 pro",
+    "sold_checked": true
   },
   "21614128": {
     "logged": true,
@@ -3815,7 +3817,8 @@
     "title": "Apple iPhone 14 Pro Max, 128 gb, Gold",
     "price": 3500,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "42171164": {
     "logged": true
@@ -3851,7 +3854,8 @@
     "title": "Tecno Spark 50 8/128GB",
     "price": 1700,
     "condition": "Б/у",
-    "model_key": "tecno spark"
+    "model_key": "tecno spark",
+    "sold_checked": true
   },
   "32713256": {
     "logged": true,

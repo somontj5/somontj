@@ -8890,7 +8890,8 @@
     "title": "Samsung galaxy S20",
     "price": 850,
     "condition": "Б/у",
-    "model_key": "samsung s20"
+    "model_key": "samsung s20",
+    "sold_checked": true
   },
   "62512256": {
     "logged": true,
@@ -8899,7 +8900,8 @@
     "title": "Samsung Galaxy S25 Ultra Titan Gray, 12/256GB",
     "price": 9500,
     "condition": "Б/у",
-    "model_key": "samsung s25 ultra titan"
+    "model_key": "samsung s25 ultra titan",
+    "sold_checked": true
   },
   "32215256": {
     "logged": true,
@@ -9426,5 +9428,14 @@
     "price": 1220,
     "condition": "Б/у",
     "model_key": "samsung a16"
+  },
+  "48961164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17184896_apple-iphone-11-64-gb-purple/",
+    "title": "Apple iPhone 11, 64 gb, Purple",
+    "price": 1333,
+    "condition": "Б/у",
+    "model_key": "apple 11"
   }
 }

@@ -9537,6 +9537,7 @@
     "title": "Apple iPhone 13, 128 gb, Blue",
     "price": 3999,
     "condition": "Б/у",
-    "model_key": "apple 13"
+    "model_key": "apple 13",
+    "sold_checked": true
   }
 }

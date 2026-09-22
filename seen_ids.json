@@ -5367,7 +5367,8 @@
     "title": "Xiaomi Redmi 12S 12/256Gb",
     "price": 1380,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 12s 12"
+    "model_key": "xiaomi redmi 12s 12",
+    "sold_checked": true
   },
   "71661769": {
     "logged": true,
@@ -5377,7 +5378,8 @@
     "title": "Samsung Galaxy S9",
     "price": 1000,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s9"
+    "model_key": "samsung galaxy s9",
+    "sold_checked": true
   },
   "16615812": {
     "logged": true,
@@ -5387,7 +5389,8 @@
     "title": "Samsung Galaxy M12",
     "price": 450,
     "condition": "Б/у",
-    "model_key": "samsung galaxy m12"
+    "model_key": "samsung galaxy m12",
+    "sold_checked": true
   },
   "15116256": {
     "logged": true,
@@ -5396,7 +5399,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Natural Titanium",
     "price": 9999,
     "condition": "Б/у",
-    "model_key": "apple iphone 16 pro"
+    "model_key": "apple iphone 16 pro",
+    "sold_checked": true
   },
   "16689957": {
     "logged": true,
@@ -5405,7 +5409,8 @@
     "title": "Samsung Galaxy A57",
     "price": 3900,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a57"
+    "model_key": "samsung galaxy a57",
+    "sold_checked": true
   },
   "89015256": {
     "logged": true,

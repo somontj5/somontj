@@ -5625,7 +5625,8 @@
     "title": "Apple iPhone 11, 128 gb, Black",
     "price": 2700,
     "condition": "Б/у",
-    "model_key": "apple iphone 11"
+    "model_key": "apple iphone 11",
+    "sold_checked": true
   },
   "13558256": {
     "logged": true,
@@ -5634,7 +5635,8 @@
     "title": "Samsung galaxy A35 5G 8/256",
     "price": 2450,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a35 5g"
+    "model_key": "samsung galaxy a35 5g",
+    "sold_checked": true
   },
   "67396128": {
     "logged": true,
@@ -5643,7 +5645,8 @@
     "title": "Apple iPhone Xr, 128 gb, Blue",
     "price": 1150,
     "condition": "Б/у",
-    "model_key": "apple iphone xr"
+    "model_key": "apple iphone xr",
+    "sold_checked": true
   },
   "37015256": {
     "logged": true,
@@ -5653,7 +5656,8 @@
     "title": "Apple iPhone 15 Pro, 256 gb, Natural Titanium",
     "price": 4500,
     "condition": "Б/у",
-    "model_key": "apple iphone 15 pro"
+    "model_key": "apple iphone 15 pro",
+    "sold_checked": true
   },
   "16681920": {
     "logged": true,
@@ -5663,7 +5667,8 @@
     "title": "Samsung Galaxy s20+",
     "price": 1200,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s20"
+    "model_key": "samsung galaxy s20",
+    "sold_checked": true
   },
   "73471164": {
     "logged": true,
@@ -8605,5 +8610,45 @@
     "price": 2777,
     "condition": "Б/у",
     "model_key": "apple 12 pro"
+  },
+  "18193864": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17181938_apple-iphone-x-64-gb-silver/",
+    "title": "Apple iPhone X, 64 gb, Silver",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "apple x"
+  },
+  "12487128": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17181248_apple-iphone-7-128-gb/",
+    "title": "Apple iPhone 7, 128 gb",
+    "price": 599,
+    "condition": "Б/у",
+    "model_key": "apple 7"
+  },
+  "29814128": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17181298_apple-iphone-14-128-gb-starlight/",
+    "title": "Apple iPhone 14, 128 gb, Starlight",
+    "price": 2200,
+    "condition": "Б/у",
+    "model_key": "apple 14"
+  },
+  "17180935": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17180935_telefon-idealno-rabotaet/",
+    "title": "Samsung Galaxy A20",
+    "price": 550,
+    "condition": "Б/у",
+    "model_key": "samsung a20"
   }
 }

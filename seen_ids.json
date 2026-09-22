@@ -4005,7 +4005,8 @@
     "title": "Apple iPhone Xr, 128 gb, White",
     "price": 1599,
     "condition": "Б/у",
-    "model_key": "apple iphone xr"
+    "model_key": "apple iphone xr",
+    "sold_checked": true
   },
   "44911164": {
     "logged": true,
@@ -4015,7 +4016,8 @@
     "title": "Apple iPhone 11 Pro Max, 64 gb, Gold",
     "price": 1699,
     "condition": "Б/у",
-    "model_key": "apple iphone 11 pro"
+    "model_key": "apple iphone 11 pro",
+    "sold_checked": true
   },
   "50545065": {
     "logged": true,
@@ -4025,7 +4027,8 @@
     "title": "Samsung galaxy J5+",
     "price": 400,
     "condition": "Б/у",
-    "model_key": "samsung galaxy j5"
+    "model_key": "samsung galaxy j5",
+    "sold_checked": true
   },
   "71632017": {
     "logged": true,
@@ -4034,7 +4037,8 @@
     "title": "Samsung Galaxy J2 2018",
     "price": 400,
     "condition": "Б/у",
-    "model_key": "samsung galaxy j2"
+    "model_key": "samsung galaxy j2",
+    "sold_checked": true
   },
   "45638600": {
     "logged": true,
@@ -4043,7 +4047,8 @@
     "title": "Infinix SMART 8",
     "price": 600,
     "condition": "Б/у",
-    "model_key": "infinix smart 8"
+    "model_key": "infinix smart 8",
+    "sold_checked": true
   },
   "62813256": {
     "logged": true,

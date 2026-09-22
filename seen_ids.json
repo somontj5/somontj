@@ -2625,7 +2625,8 @@
     "title": "Apple iPhone X, 64 gb, Space Grey",
     "price": 1250,
     "condition": "Б/у",
-    "model_key": "apple iphone x"
+    "model_key": "apple iphone x",
+    "sold_checked": true
   },
   "84314128": {
     "logged": true,
@@ -2634,7 +2635,8 @@
     "title": "Apple iPhone 14 Pro Max, 128 gb, Deep Purple",
     "price": 5650,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "23125122": {
     "logged": true,
@@ -2643,7 +2645,8 @@
     "title": "Samsung Galaxy S23 Ultra 12/512 Gb 2SIM Vietnam",
     "price": 4100,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s23 ultra"
+    "model_key": "samsung galaxy s23 ultra",
+    "sold_checked": true
   },
   "17162156": {
     "logged": true,
@@ -2652,7 +2655,8 @@
     "title": "Samsung Galaxy A50",
     "price": 550,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a50"
+    "model_key": "samsung galaxy a50",
+    "sold_checked": true
   },
   "43712512": {
     "logged": true,
@@ -2660,7 +2664,8 @@
     "url": "https://m.somon.tj/adv/17162143_realme-gt7-12-512-pochti-novyi/",
     "title": "Realme GT7 12/512gb",
     "price": 5100,
-    "condition": "Б/у"
+    "condition": "Б/у",
+    "sold_checked": true
   },
   "16761186": {
     "logged": true,

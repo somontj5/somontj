@@ -8772,7 +8772,8 @@
     "title": "Apple iPhone X, 64 gb, Silver",
     "price": 999,
     "condition": "Б/у",
-    "model_key": "apple x"
+    "model_key": "apple x",
+    "sold_checked": true
   },
   "12487128": {
     "logged": true,
@@ -8814,7 +8815,8 @@
     "title": "Samsung Galaxy S22Ultra 256/12",
     "price": 3899,
     "condition": "Б/у",
-    "model_key": "samsung s22ultra"
+    "model_key": "samsung s22ultra",
+    "sold_checked": true
   },
   "18224711": {
     "logged": true,
@@ -8824,7 +8826,8 @@
     "title": "Xiaomi Redmi Note 11 Pro",
     "price": 599,
     "condition": "Б/у",
-    "model_key": "redmi note 11 pro"
+    "model_key": "redmi note 11 pro",
+    "sold_checked": true
   },
   "18223264": {
     "logged": true,
@@ -8834,7 +8837,8 @@
     "title": "Apple iPhone Xs Max, 64 gb, Space Grey",
     "price": 1099,
     "condition": "Б/у",
-    "model_key": "apple xs max"
+    "model_key": "apple xs max",
+    "sold_checked": true
   },
   "76101164": {
     "logged": true,
@@ -8872,7 +8876,8 @@
     "title": "Xiaomi Redmi 9А",
     "price": 450,
     "condition": "Б/у",
-    "model_key": "redmi 9а"
+    "model_key": "redmi 9а",
+    "sold_checked": true
   },
   "17182433": {
     "logged": true,
@@ -9344,5 +9349,51 @@
     "price": 1799,
     "condition": "Б/у",
     "model_key": "apple se"
+  },
+  "15612885": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16897581_telefon-samsung-a56-128-8gb-vetnam-5g/",
+    "title": "Samsung Galaxy А56 128/8Gb Vetnam 5G",
+    "price": 3550,
+    "condition": "Б/у",
+    "model_key": "samsung а56 vetnam 5g"
+  },
+  "31691164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16993169_telefon-redmi-note-11-64gb-glabal-version/",
+    "title": "Xiaomi Redmi Note 11 64gb Glоbal Version",
+    "price": 1280,
+    "condition": "Б/у",
+    "model_key": "redmi note 11"
+  },
+  "32731164": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16963273_telefon-redmi-11-note-64gb-glabal-version/",
+    "title": "Xiaomi Redmi 11 Note 64gb Glabal Version",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "redmi 11 note"
+  },
+  "04411128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16960044_telefon-redmi-note-11-128gb/",
+    "title": "Xiaomi Redmi Note 11 128gb",
+    "price": 1260,
+    "condition": "Б/у",
+    "model_key": "redmi note 11"
+  },
+  "23122565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16959796_telefon-samsung-s23-ultra-12-256gb-carea-5g/",
+    "title": "Samsung Galaxy S23 Ultra 12/256Gb Cоrea 5G",
+    "price": 4250,
+    "condition": "Б/у",
+    "model_key": "samsung s23 ultra cоrea 5g"
   }
 }

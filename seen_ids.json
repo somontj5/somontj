@@ -4269,7 +4269,8 @@
     "title": "Samsung Galaxy S20 FE",
     "price": 1500,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s20 fe"
+    "model_key": "samsung galaxy s20 fe",
+    "sold_checked": true
   },
   "78313128": {
     "logged": true,
@@ -4279,7 +4280,8 @@
     "title": "Apple iPhone 13, 128 gb, Starlight",
     "price": 2700,
     "condition": "Б/у",
-    "model_key": "apple iphone 13"
+    "model_key": "apple iphone 13",
+    "sold_checked": true
   },
   "81116128": {
     "logged": true,
@@ -4289,7 +4291,8 @@
     "title": "Apple iPhone 16 Pro, 128 gb, Black Titanium",
     "price": 8600,
     "condition": "Б/у",
-    "model_key": "apple iphone 16 pro"
+    "model_key": "apple iphone 16 pro",
+    "sold_checked": true
   },
   "64998115": {
     "logged": true,
@@ -4299,7 +4302,8 @@
     "title": "Xiaomi Mi11 lite 5G",
     "price": 1050,
     "condition": "Б/у",
-    "model_key": "xiaomi mi11 lite 5g"
+    "model_key": "xiaomi mi11 lite 5g",
+    "sold_checked": true
   },
   "16500951": {
     "logged": true,
@@ -4308,7 +4312,8 @@
     "title": "Samsung Galaxy A51",
     "price": 950,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a51"
+    "model_key": "samsung galaxy a51",
+    "sold_checked": true
   },
   "17164551": {
     "logged": true,

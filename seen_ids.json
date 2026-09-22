@@ -5110,7 +5110,8 @@
     "title": "Samsung Galaxy S22 Ultra 256/12Gb Carea",
     "price": 3570,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s22 ultra"
+    "model_key": "samsung galaxy s22 ultra",
+    "sold_checked": true
   },
   "38013256": {
     "logged": true,
@@ -5119,7 +5120,8 @@
     "title": "Apple iPhone 13 Pro Max, 256 gb, Sierra Blue",
     "price": 4000,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "51413128": {
     "logged": true,
@@ -5128,7 +5130,8 @@
     "title": "Apple iPhone 13 Pro Max, 128 gb, Graphite",
     "price": 5200,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "37515256": {
     "logged": true,
@@ -5137,7 +5140,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Black Titanium",
     "price": 5999,
     "condition": "Б/у",
-    "model_key": "apple iphone 15 pro"
+    "model_key": "apple iphone 15 pro",
+    "sold_checked": true
   },
   "28561285": {
     "logged": true,
@@ -5147,7 +5151,8 @@
     "title": "Samsung Galaxy А56 128 Vetnam 5G",
     "price": 2750,
     "condition": "Б/у",
-    "model_key": "samsung galaxy а56"
+    "model_key": "samsung galaxy а56",
+    "sold_checked": true
   },
   "65081032": {
     "logged": true,
@@ -8509,5 +8514,33 @@
     "price": 8000,
     "condition": "Б/у",
     "model_key": "apple 15 pro max"
+  },
+  "15792428": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15792428_telfon-furush/",
+    "title": "Samsung Galaxy J4",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "samsung j4"
+  },
+  "15800810": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15800810_furushi/",
+    "title": "Samsung Galaxy A5",
+    "price": 550,
+    "condition": "Б/у",
+    "model_key": "samsung a5"
+  },
+  "17951610": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17179516_khonor-10-lait/",
+    "title": "Huawei 10 Play",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "huawei 10 play"
   }
 }

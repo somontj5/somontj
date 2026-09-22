@@ -3342,7 +3342,8 @@
     "title": "Samsung galaxy A 57",
     "price": 5250,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a"
+    "model_key": "samsung galaxy a",
+    "sold_checked": true
   },
   "16354830": {
     "logged": true,
@@ -3351,7 +3352,8 @@
     "title": "Samsung Galaxy A30",
     "price": 670,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a30"
+    "model_key": "samsung galaxy a30",
+    "sold_checked": true
   },
   "54013128": {
     "logged": true,
@@ -3360,7 +3362,8 @@
     "title": "Apple iPhone 13, 128 gb, Green",
     "price": 3699,
     "condition": "Б/у",
-    "model_key": "apple iphone 13"
+    "model_key": "apple iphone 13",
+    "sold_checked": true
   },
   "59216256": {
     "logged": true,
@@ -3369,7 +3372,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
     "price": 9799,
     "condition": "Б/у",
-    "model_key": "apple iphone 16 pro"
+    "model_key": "apple iphone 16 pro",
+    "sold_checked": true
   },
   "16357012": {
     "logged": true,
@@ -3378,7 +3382,8 @@
     "title": "Xiaomi Redmi note 12 pro",
     "price": 785,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 12"
+    "model_key": "xiaomi redmi note 12",
+    "sold_checked": true
   },
   "65816256": {
     "logged": true,

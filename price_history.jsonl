@@ -1910,3 +1910,5 @@
 {"type": "confirmed_sale", "id": "36001164", "title": "Apple iPhone 11, 64 gb, Black", "price": 1000, "condition": "Б/у", "model_key": "apple iphone 11", "confirmed_at": "2026-09-22T05:50:27"}
 {"type": "confirmed_sale", "id": "61615256", "title": "Apple iPhone 15 Pro Max, 256 gb, Black Titanium", "price": 6333, "condition": "Б/у", "model_key": "apple iphone 15 pro", "confirmed_at": "2026-09-22T05:52:07"}
 {"type": "confirmed_sale", "id": "69711128", "title": "Xiaomi Redmi Note 11 128Gb", "price": 1050, "condition": "Б/у", "model_key": "xiaomi redmi note 11", "confirmed_at": "2026-09-22T05:52:10"}
+{"type": "confirmed_sale", "id": "59216256", "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium", "price": 9799, "condition": "Б/у", "model_key": "apple iphone 16 pro", "confirmed_at": "2026-09-22T05:55:20"}
+{"type": "confirmed_sale", "id": "16357012", "title": "Xiaomi Redmi note 12 pro", "price": 785, "condition": "Б/у", "model_key": "xiaomi redmi note 12", "confirmed_at": "2026-09-22T05:55:22"}

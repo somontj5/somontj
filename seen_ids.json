@@ -6235,7 +6235,8 @@
     "title": "Samsung Galaxy A60",
     "price": 780,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a60"
+    "model_key": "samsung galaxy a60",
+    "sold_checked": true
   },
   "18114256": {
     "logged": true,
@@ -6244,7 +6245,8 @@
     "title": "Apple iPhone 14 Pro Max, 256 gb, Silver",
     "price": 6000,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "81901164": {
     "logged": true,
@@ -6253,7 +6255,8 @@
     "title": "Apple iPhone 11, 64 gb, White",
     "price": 2000,
     "condition": "Б/у",
-    "model_key": "apple iphone 11"
+    "model_key": "apple iphone 11",
+    "sold_checked": true
   },
   "92312885": {
     "logged": true,
@@ -6262,7 +6265,8 @@
     "title": "Samsung Galaxy S23 128/8Gb Vetnam 5G",
     "price": 3999,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s23"
+    "model_key": "samsung galaxy s23",
+    "sold_checked": true
   },
   "73205256": {
     "logged": true,
@@ -6271,7 +6275,8 @@
     "title": "Samsung galaxy Note 20 Ultra 5G 256gb",
     "price": 2800,
     "condition": "Б/у",
-    "model_key": "samsung galaxy note 20"
+    "model_key": "samsung galaxy note 20",
+    "sold_checked": true
   },
   "15216256": {
     "logged": true,

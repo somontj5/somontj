@@ -1844,3 +1844,5 @@
 {"type": "confirmed_sale", "id": "15118112", "title": "Xiaomi 12", "price": 2500, "condition": "Б/у", "model_key": "xiaomi 12", "confirmed_at": "2026-09-22T03:40:31"}
 {"type": "confirmed_sale", "id": "71112128", "title": "Apple iPhone 12 mini, 128 gb, Blue", "price": 799, "condition": "Б/у", "model_key": "apple iphone 12 mini", "confirmed_at": "2026-09-22T03:40:32"}
 {"type": "confirmed_sale", "id": "71366126", "title": "Xiaomi Poco F6", "price": 2200, "condition": "Б/у", "model_key": "xiaomi poco f6", "confirmed_at": "2026-09-22T03:40:35"}
+{"type": "confirmed_sale", "id": "71281697", "title": "Xiaomi Poco X7 Pro", "price": 3000, "condition": "Б/у", "model_key": "xiaomi poco x7 pro", "confirmed_at": "2026-09-22T03:45:42"}
+{"type": "confirmed_sale", "id": "72612256", "title": "Samsung Galaxy S26 ULTRA 12/256GB", "price": 6449, "condition": "Б/у", "model_key": "samsung galaxy s26 ultra", "confirmed_at": "2026-09-22T03:45:43"}

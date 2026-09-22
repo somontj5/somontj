@@ -1617,7 +1617,8 @@
     "title": "Xiaomi Mi 13 ultra",
     "price": 3399,
     "condition": "Б/у",
-    "model_key": "xiaomi mi 13 ultra"
+    "model_key": "xiaomi mi 13 ultra",
+    "sold_checked": true
   },
   "06221256": {
     "logged": true,
@@ -1626,7 +1627,8 @@
     "title": "Samsung Galaxy S21 Plus 256 Gb Black",
     "price": 3499,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s21 plus"
+    "model_key": "samsung galaxy s21 plus",
+    "sold_checked": true
   },
   "71281697": {
     "logged": true,
@@ -1635,7 +1637,8 @@
     "title": "Xiaomi Poco X7 Pro",
     "price": 3000,
     "condition": "Б/у",
-    "model_key": "xiaomi poco x7 pro"
+    "model_key": "xiaomi poco x7 pro",
+    "sold_checked": true
   },
   "44088256": {
     "logged": true
@@ -1749,7 +1752,8 @@
     "title": "Samsung Galaxy S26 ULTRA 12/256GB",
     "price": 6449,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s26 ultra"
+    "model_key": "samsung galaxy s26 ultra",
+    "sold_checked": true
   },
   "65515256": {
     "logged": true,
@@ -1758,7 +1762,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
     "price": 7777,
     "condition": "Б/у",
-    "model_key": "apple iphone 15 pro"
+    "model_key": "apple iphone 15 pro",
+    "sold_checked": true
   },
   "07313128": {
     "logged": true,

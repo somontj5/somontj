@@ -8594,7 +8594,8 @@
     "title": "Samsung Galaxy S22 8/256GB",
     "price": 2500,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s22 8"
+    "model_key": "samsung galaxy s22 8",
+    "sold_checked": true
   },
   "54802610": {
     "logged": true,
@@ -9076,12 +9077,30 @@
     "model_key": "apple xr"
   },
   "59369256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15359369_apple-iphone-xs-256-gb-silver/",
+    "title": "Apple iPhone Xs, 256 gb, Silver",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "apple xs"
   },
   "55311128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15354553_apple-iphone-11-128-gb-product-red/",
+    "title": "Apple iPhone 11, 128 gb, Product Red",
+    "price": 3199,
+    "condition": "Б/у",
+    "model_key": "apple 11"
   },
   "14890128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15414890_apple-iphone-xr-128-gb-yellow/",
+    "title": "Apple iPhone Xr, 128 gb, Yellow",
+    "price": 2700,
+    "condition": "Б/у",
+    "model_key": "apple xr"
   }
 }

@@ -9643,5 +9643,15 @@
     "price": 3000,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra"
+  },
+  "65251264": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17186525_apple-iphone-12-64-gb-purple/",
+    "title": "Apple iPhone 12, 64 gb, Purple",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "apple 12"
   }
 }

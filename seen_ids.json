@@ -5471,7 +5471,8 @@
     "title": "Apple iPhone 11, 64 gb, White",
     "price": 1450,
     "condition": "Б/у",
-    "model_key": "apple iphone 11"
+    "model_key": "apple iphone 11",
+    "sold_checked": true
   },
   "09616256": {
     "logged": true,
@@ -5481,7 +5482,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
     "price": 7200,
     "condition": "Б/у",
-    "model_key": "apple iphone 16 pro"
+    "model_key": "apple iphone 16 pro",
+    "sold_checked": true
   },
   "36437864": {
     "logged": true,
@@ -5491,7 +5493,8 @@
     "title": "Xiaomi Mi 8 Lite 128Gb",
     "price": 600,
     "condition": "Б/у",
-    "model_key": "xiaomi mi 8 lite"
+    "model_key": "xiaomi mi 8 lite",
+    "sold_checked": true
   },
   "16703860": {
     "logged": true,
@@ -5500,7 +5503,8 @@
     "title": "Infinix note 60 pro",
     "price": 4900,
     "condition": "Б/у",
-    "model_key": "infinix note"
+    "model_key": "infinix note",
+    "sold_checked": true
   },
   "16696150": {
     "logged": true,
@@ -5510,7 +5514,8 @@
     "title": "Infinix note 50 pro",
     "price": 2500,
     "condition": "Б/у",
-    "model_key": "infinix note"
+    "model_key": "infinix note",
+    "sold_checked": true
   },
   "15793415": {
     "logged": true,
@@ -8572,5 +8577,23 @@
     "price": 1400,
     "condition": "Б/у",
     "model_key": "huawei 10 play"
+  },
+  "41461282": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17181984_samsung-galaxy-a14-6-128gb-vietnam-2sim/",
+    "title": "Samsung Galaxy a14 6/128gb Vietnam 2sim",
+    "price": 550,
+    "condition": "Б/у",
+    "model_key": "samsung a14"
+  },
+  "98912128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17181989_apple-iphone-12-pro-128-gb-pacific-blue/",
+    "title": "Apple iPhone 12 pro, 128 gb, Pacific Blue",
+    "price": 2777,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro"
   }
 }

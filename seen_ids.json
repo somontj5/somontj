@@ -9025,7 +9025,8 @@
     "title": "Apple iPhone 11, 128 gb, Yellow",
     "price": 2900,
     "condition": "Б/у",
-    "model_key": "apple 11"
+    "model_key": "apple 11",
+    "sold_checked": true
   },
   "75897128": {
     "logged": true,
@@ -9034,7 +9035,8 @@
     "title": "Apple iPhone Xr, 128 gb, Yellow",
     "price": 2799,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "98217512": {
     "logged": true,
@@ -9549,5 +9551,23 @@
     "price": 3650,
     "condition": "Б/у",
     "model_key": "samsung s23 ultra"
+  },
+  "83924512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17183924_telefon-samsung-a51-2sim-vetnam/",
+    "title": "Samsung Galaxy A51",
+    "price": 1150,
+    "condition": "Б/у",
+    "model_key": "samsung a51"
+  },
+  "84715256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17185847_apple-iphone-15-pro-max-256-gb-blue-titanium/",
+    "title": "Apple iPhone 15 Pro Max, 256 gb, Blue Titanium",
+    "price": 8500,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro max"
   }
 }

@@ -9113,7 +9113,8 @@
     "title": "Apple iPhone 17 Pro Max, 512 gb, Silver Дубликат",
     "price": 1500,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "74546128": {
     "logged": true,
@@ -9122,7 +9123,8 @@
     "title": "Apple iPhone Xr, 128 gb, Product Red",
     "price": 2799,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "59369256": {
     "logged": true,
@@ -9652,6 +9654,34 @@
     "title": "Apple iPhone 12, 64 gb, Purple",
     "price": 2500,
     "condition": "Б/у",
-    "model_key": "apple 12"
+    "model_key": "apple 12",
+    "sold_checked": true
+  },
+  "85261522": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16852615_samsung-galaxy-s22-ulta/",
+    "title": "Samsung Galaxy S22 ulta",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ulta"
+  },
+  "61811128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16681618_apple-iphone-11-128-gb-purple/",
+    "title": "Apple iPhone 11, 128 gb, Purple",
+    "price": 2300,
+    "condition": "Б/у",
+    "model_key": "apple 11"
+  },
+  "68508256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17186568_realme-not-50-8-256karobka-dokument-rastamozhka-shudagi/",
+    "title": "Realme notе 50 8/256",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "realme notе"
   }
 }

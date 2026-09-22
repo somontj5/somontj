@@ -6132,7 +6132,8 @@
     "title": "Samsung Galaxy А56 128/8Gb Vetnam 5G",
     "price": 3250,
     "condition": "Б/у",
-    "model_key": "samsung galaxy а56"
+    "model_key": "samsung galaxy а56",
+    "sold_checked": true
   },
   "64621164": {
     "logged": true,
@@ -6141,7 +6142,8 @@
     "title": "Xiaomi Redmi Note 11 64gb Glabal Version",
     "price": 1100,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 11"
+    "model_key": "xiaomi redmi note 11",
+    "sold_checked": true
   },
   "94412256": {
     "logged": true,
@@ -6150,7 +6152,8 @@
     "title": "Apple iPhone 12 Pro Max, 256 gb, Pacific Blue",
     "price": 3200,
     "condition": "Б/у",
-    "model_key": "apple iphone 12 pro"
+    "model_key": "apple iphone 12 pro",
+    "sold_checked": true
   },
   "92614256": {
     "logged": true,
@@ -6159,7 +6162,8 @@
     "title": "Apple iPhone 14 Pro, 256 gb, Deep Purple",
     "price": 4800,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "04413256": {
     "logged": true,
@@ -6168,7 +6172,8 @@
     "title": "Apple iPhone 13 Pro, 256 gb, Gold",
     "price": 5150,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "68019324": {
     "logged": true,

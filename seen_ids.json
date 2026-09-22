@@ -3129,7 +3129,8 @@
     "title": "Samsung Galaxy A51",
     "price": 800,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a51"
+    "model_key": "samsung galaxy a51",
+    "sold_checked": true
   },
   "47701064": {
     "logged": true,
@@ -3138,7 +3139,8 @@
     "title": "Xiaomi Redmi note 10s 64gb",
     "price": 1499,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 10s"
+    "model_key": "xiaomi redmi note 10s",
+    "sold_checked": true
   },
   "25923256": {
     "logged": true,
@@ -3147,7 +3149,8 @@
     "title": "Samsung Galaxy S23 Ultra 256Gb",
     "price": 3799,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s23 ultra"
+    "model_key": "samsung galaxy s23 ultra",
+    "sold_checked": true
   },
   "63452215": {
     "logged": true,
@@ -3156,7 +3159,8 @@
     "title": "Samsung Galaxy S21 FE 5G",
     "price": 2200,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s21 fe"
+    "model_key": "samsung galaxy s21 fe",
+    "sold_checked": true
   },
   "46773128": {
     "logged": true,
@@ -3165,7 +3169,8 @@
     "title": "Samsung galaxy А73 128гб",
     "price": 1860,
     "condition": "Б/у",
-    "model_key": "samsung galaxy а73 128гб"
+    "model_key": "samsung galaxy а73 128гб",
+    "sold_checked": true
   },
   "46911128": {
     "logged": true,
@@ -8229,5 +8234,14 @@
     "price": 880,
     "condition": "Б/у",
     "model_key": "xiaomi redmi 10"
+  },
+  "18047232": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17180472_samsung-galaxy-m32/",
+    "title": "Samsung Galaxy M32",
+    "price": 1450,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy m32"
   }
 }

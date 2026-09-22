@@ -3438,7 +3438,8 @@
     "title": "Apple iPhone 12 Pro Max, 128 gb, Pacific Blue",
     "price": 2750,
     "condition": "Б/у",
-    "model_key": "apple iphone 12 pro"
+    "model_key": "apple iphone 12 pro",
+    "sold_checked": true
   },
   "34615128": {
     "logged": true,
@@ -3447,7 +3448,8 @@
     "title": "Xiaomi Redmi 15C 128Gb",
     "price": 1250,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 15c"
+    "model_key": "xiaomi redmi 15c",
+    "sold_checked": true
   },
   "16335211": {
     "logged": true,
@@ -3456,7 +3458,8 @@
     "title": "Xiaomi Redmi Note 11",
     "price": 1100,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 11"
+    "model_key": "xiaomi redmi note 11",
+    "sold_checked": true
   },
   "16373488": {
     "logged": true,
@@ -3465,7 +3468,8 @@
     "title": "Xiaomi Poco X8 Pro Max",
     "price": 4200,
     "condition": "Б/у",
-    "model_key": "xiaomi poco x8 pro"
+    "model_key": "xiaomi poco x8 pro",
+    "sold_checked": true
   },
   "36717128": {
     "logged": true
@@ -3519,7 +3523,8 @@
     "title": "Xiaomi Redmi 13",
     "price": 1100,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 13"
+    "model_key": "xiaomi redmi 13",
+    "sold_checked": true
   },
   "16327710": {
     "logged": true,

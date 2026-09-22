@@ -4531,7 +4531,8 @@
     "title": "Apple iPhone 15 Pro Max, 512 gb, White Titanium",
     "price": 6700,
     "condition": "Б/у",
-    "model_key": "apple iphone 15 pro"
+    "model_key": "apple iphone 15 pro",
+    "sold_checked": true
   },
   "71656038": {
     "logged": true,
@@ -4541,7 +4542,8 @@
     "title": "Xiaomi Redmi Note 8T",
     "price": 800,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 8t"
+    "model_key": "xiaomi redmi note 8t",
+    "sold_checked": true
   },
   "65384545": {
     "logged": true,
@@ -4550,7 +4552,8 @@
     "title": "Samsung Galaxy 54 5G",
     "price": 3699,
     "condition": "Б/у",
-    "model_key": "samsung galaxy"
+    "model_key": "samsung galaxy",
+    "sold_checked": true
   },
   "16562822": {
     "logged": true,
@@ -4560,7 +4563,8 @@
     "title": "Samsung Galaxy s22+",
     "price": 4000,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s22"
+    "model_key": "samsung galaxy s22",
+    "sold_checked": true
   },
   "09551716": {
     "logged": true,
@@ -4570,7 +4574,8 @@
     "title": "Apple iPhone 17 Pro Max, 16 gb, Cosmic Orange",
     "price": 400,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "65813256": {
     "logged": true,

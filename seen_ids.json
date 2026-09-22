@@ -3029,7 +3029,8 @@
     "title": "Samsung Galaxy A7",
     "price": 550,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a7"
+    "model_key": "samsung galaxy a7",
+    "sold_checked": true
   },
   "37202464": {
     "logged": true,
@@ -3038,7 +3039,8 @@
     "title": "Tecno Go 2024 64GB",
     "price": 500,
     "condition": "Б/у",
-    "model_key": "tecno go"
+    "model_key": "tecno go",
+    "sold_checked": true
   },
   "01553128": {
     "logged": true,
@@ -3047,7 +3049,8 @@
     "title": "Samsung Galaxy A53 128GB",
     "price": 1050,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a53"
+    "model_key": "samsung galaxy a53",
+    "sold_checked": true
   },
   "00717256": {
     "logged": true,
@@ -3056,7 +3059,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Deep Blue",
     "price": 15199,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "97615256": {
     "logged": true,
@@ -3065,7 +3069,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
     "price": 8200,
     "condition": "Б/у",
-    "model_key": "apple iphone 15 pro"
+    "model_key": "apple iphone 15 pro",
+    "sold_checked": true
   },
   "94616256": {
     "logged": true,

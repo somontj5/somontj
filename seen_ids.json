@@ -9212,7 +9212,8 @@
     "title": "Apple iPhone 11, 128 gb, Black",
     "price": 2200,
     "condition": "Б/у",
-    "model_key": "apple 11"
+    "model_key": "apple 11",
+    "sold_checked": true
   },
   "57911128": {
     "logged": true,
@@ -9539,5 +9540,14 @@
     "condition": "Б/у",
     "model_key": "apple 13",
     "sold_checked": true
+  },
+  "61232562": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17183861_telefon-samsung-s23-ultra-256gb-carea-2sim/",
+    "title": "Samsung Galaxy S23 Ultra 256gb Carea 2sim",
+    "price": 3650,
+    "condition": "Б/у",
+    "model_key": "samsung s23 ultra"
   }
 }

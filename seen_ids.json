@@ -5782,7 +5782,8 @@
     "title": "Xiaomi Redmi 15C 128Gb",
     "price": 1400,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 15c"
+    "model_key": "xiaomi redmi 15c",
+    "sold_checked": true
   },
   "95767950": {
     "logged": true,
@@ -5790,7 +5791,8 @@
     "url": "https://m.somon.tj/adv/16957679_realmi-not-50/",
     "title": "Realme Note 50",
     "price": 950,
-    "condition": "Б/у"
+    "condition": "Б/у",
+    "sold_checked": true
   },
   "17167620": {
     "logged": true,
@@ -5800,7 +5802,8 @@
     "title": "Samsung galaxy s22ultra",
     "price": 4199,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s22ultra"
+    "model_key": "samsung galaxy s22ultra",
+    "sold_checked": true
   },
   "17167621": {
     "logged": true,
@@ -5808,7 +5811,8 @@
     "url": "https://m.somon.tj/adv/17167621_bu/",
     "title": "Realme",
     "price": 500,
-    "condition": "Б/у"
+    "condition": "Б/у",
+    "sold_checked": true
   },
   "17167602": {
     "logged": true,
@@ -5817,7 +5821,8 @@
     "title": "Xiaomi Redmi Note 8",
     "price": 550,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 8"
+    "model_key": "xiaomi redmi note 8",
+    "sold_checked": true
   },
   "95608256": {
     "logged": true,

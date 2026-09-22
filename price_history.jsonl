@@ -1997,3 +1997,5 @@
 {"type": "confirmed_sale", "id": "15793415", "title": "Xiaomi Redmi Note 15 Pro", "price": 2650, "condition": "Б/у", "model_key": "xiaomi redmi note 15", "confirmed_at": "2026-09-22T08:53:22"}
 {"type": "confirmed_sale", "id": "26517256", "title": "Apple iPhone 17 Pro Max, 256 gb, Deep Blue", "price": 8500, "condition": "Б/у", "model_key": "apple iphone 17 pro", "confirmed_at": "2026-09-22T08:53:24"}
 {"type": "confirmed_sale", "id": "50735128", "title": "Samsung Galaxy A73 5G 128gb", "price": 2100, "condition": "Б/у", "model_key": "samsung galaxy a73 5g", "confirmed_at": "2026-09-22T08:53:24"}
+{"type": "confirmed_sale", "id": "31517256", "title": "Apple iPhone 17 Pro Max, 256 gb, Silver", "price": 13000, "condition": "Б/у", "model_key": "apple iphone 17 pro", "confirmed_at": "2026-09-22T08:55:25"}
+{"type": "confirmed_sale", "id": "91071164", "title": "Xiaomi Redmi Note 11s 128Gb", "price": 1200, "condition": "Б/у", "model_key": "xiaomi redmi note 11s", "confirmed_at": "2026-09-22T08:55:27"}

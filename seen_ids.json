@@ -5575,7 +5575,8 @@
     "title": "Samsung Galaxy А32 duos Viethnam",
     "price": 1450,
     "condition": "Б/у",
-    "model_key": "samsung galaxy а32 duos"
+    "model_key": "samsung galaxy а32 duos",
+    "sold_checked": true
   },
   "71673378": {
     "logged": true,
@@ -5584,7 +5585,8 @@
     "url": "https://m.somon.tj/adv/17167337_realmi-8i/",
     "title": "Realmi 8i",
     "price": 550,
-    "condition": "Б/у"
+    "condition": "Б/у",
+    "sold_checked": true
   },
   "31517256": {
     "logged": true,
@@ -5593,7 +5595,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
     "price": 13000,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "16932017": {
     "logged": true,
@@ -5602,7 +5605,8 @@
     "title": "Samsung J3 2017",
     "price": 220,
     "condition": "Б/у",
-    "model_key": "samsung j3"
+    "model_key": "samsung j3",
+    "sold_checked": true
   },
   "91071164": {
     "logged": true,
@@ -5611,7 +5615,8 @@
     "title": "Xiaomi Redmi Note 11s 128Gb",
     "price": 1200,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 11s"
+    "model_key": "xiaomi redmi note 11s",
+    "sold_checked": true
   },
   "27411128": {
     "logged": true,

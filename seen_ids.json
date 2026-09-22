@@ -8940,7 +8940,8 @@
     "title": "Samsung Galaxy S26 Ultra",
     "price": 6550,
     "condition": "Б/у",
-    "model_key": "samsung s26 ultra"
+    "model_key": "samsung s26 ultra",
+    "sold_checked": true
   },
   "18290420": {
     "logged": true,

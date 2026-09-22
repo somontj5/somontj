@@ -3231,7 +3231,8 @@
     "title": "Xiaomi Redmi 15 128гб",
     "price": 1410,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 15 128гб"
+    "model_key": "xiaomi redmi 15 128гб",
+    "sold_checked": true
   },
   "52914256": {
     "logged": true,
@@ -3241,7 +3242,8 @@
     "title": "Apple iPhone 14 Pro Max, 256 gb, Silver",
     "price": 4799,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "51112128": {
     "logged": true,
@@ -3250,7 +3252,8 @@
     "title": "Xiaomi Redmi 12 128гб",
     "price": 1240,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 12 128гб"
+    "model_key": "xiaomi redmi 12 128гб",
+    "sold_checked": true
   },
   "47313128": {
     "logged": true,
@@ -3259,7 +3262,8 @@
     "title": "Apple iPhone 13, 128 gb, Pink",
     "price": 2699,
     "condition": "Б/у",
-    "model_key": "apple iphone 13"
+    "model_key": "apple iphone 13",
+    "sold_checked": true
   },
   "17163493": {
     "logged": true
@@ -3277,7 +3281,8 @@
     "title": "Apple iPhone 11, 64 gb, Black",
     "price": 1000,
     "condition": "Б/у",
-    "model_key": "apple iphone 11"
+    "model_key": "apple iphone 11",
+    "sold_checked": true
   },
   "61615256": {
     "logged": true,

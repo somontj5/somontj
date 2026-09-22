@@ -6331,7 +6331,8 @@
     "title": "Apple iPhone 13, 128 gb, Starlight",
     "price": 3499,
     "condition": "Б/у",
-    "model_key": "apple iphone 13"
+    "model_key": "apple iphone 13",
+    "sold_checked": true
   },
   "29519430": {
     "logged": true,
@@ -6340,7 +6341,8 @@
     "title": "Samsung Galaxy A30",
     "price": 700,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a30"
+    "model_key": "samsung galaxy a30",
+    "sold_checked": true
   },
   "90011202": {
     "logged": true,
@@ -6349,7 +6351,8 @@
     "title": "Nokia 1202",
     "price": 180,
     "condition": "Б/у",
-    "model_key": "nokia"
+    "model_key": "nokia",
+    "sold_checked": true
   },
   "35955310": {
     "logged": true,
@@ -6358,7 +6361,8 @@
     "title": "Nokia 5310",
     "price": 150,
     "condition": "Б/у",
-    "model_key": "nokia"
+    "model_key": "nokia",
+    "sold_checked": true
   },
   "36016256": {
     "logged": true,
@@ -6367,7 +6371,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
     "price": 9600,
     "condition": "Б/у",
-    "model_key": "apple iphone 16 pro"
+    "model_key": "apple iphone 16 pro",
+    "sold_checked": true
   },
   "07445925": {
     "logged": true,

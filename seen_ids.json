@@ -8847,7 +8847,8 @@
     "title": "Apple iPhone 11 Pro, 64 gb, Space Grey",
     "price": 2000,
     "condition": "Б/у",
-    "model_key": "apple 11 pro"
+    "model_key": "apple 11 pro",
+    "sold_checked": true
   },
   "40314512": {
     "logged": true,
@@ -8857,7 +8858,8 @@
     "title": "Apple iPhone 14 Pro, 512 gb",
     "price": 2500,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "17182297": {
     "logged": true,
@@ -9405,5 +9407,24 @@
     "price": 6400,
     "condition": "Б/у",
     "model_key": "oneplus 13"
+  },
+  "82112128": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17184821_apple-iphone-12-pro-max-128-gb-gold/",
+    "title": "Apple iPhone 12 Pro Max, 128 gb, Gold",
+    "price": 3800,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro max"
+  },
+  "18478016": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17184780_samsung-a16/",
+    "title": "Samsung Galaxy A16",
+    "price": 1220,
+    "condition": "Б/у",
+    "model_key": "samsung a16"
   }
 }

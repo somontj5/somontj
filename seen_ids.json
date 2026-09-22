@@ -9045,7 +9045,8 @@
     "title": "Apple iPhone 17 Pro Max, 512 gb, Silver Дубликат",
     "price": 1499,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "97917512": {
     "logged": true,
@@ -9139,7 +9140,8 @@
     "title": "Apple iPhone 11, 128 gb, Product Red",
     "price": 3199,
     "condition": "Б/у",
-    "model_key": "apple 11"
+    "model_key": "apple 11",
+    "sold_checked": true
   },
   "14890128": {
     "logged": true,
@@ -9148,7 +9150,8 @@
     "title": "Apple iPhone Xr, 128 gb, Yellow",
     "price": 2700,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "47455213": {
     "logged": true,
@@ -9599,5 +9602,34 @@
     "price": 855,
     "condition": "Б/у",
     "model_key": "samsung"
+  },
+  "86241732": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17186241_apple-iphone-7-32-gb/",
+    "title": "Apple iPhone 7, 32 gb",
+    "price": 399,
+    "condition": "Б/у",
+    "model_key": "apple 7"
+  },
+  "18622220": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17186222_s20/",
+    "title": "Samsung Galaxy S20",
+    "price": 849,
+    "condition": "Б/у",
+    "model_key": "samsung s20"
+  },
+  "71862235": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17186223_samsung-galaxy-z-fold-5/",
+    "title": "Samsung Galaxy Z-fold 5",
+    "price": 5800,
+    "condition": "Б/у",
+    "model_key": "samsung z fold 5"
   }
 }

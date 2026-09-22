@@ -2411,7 +2411,8 @@
     "title": "Samsung Galaxy A36 128Gb 5G",
     "price": 2100,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a36"
+    "model_key": "samsung galaxy a36",
+    "sold_checked": true
   },
   "59811128": {
     "logged": true,
@@ -2420,7 +2421,8 @@
     "title": "Xiaomi Redmi Note 11E 128GB",
     "price": 650,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 11e"
+    "model_key": "xiaomi redmi note 11e",
+    "sold_checked": true
   },
   "35581282": {
     "logged": true,
@@ -2429,7 +2431,8 @@
     "title": "Samsung Galaxy A35 5G 8/128Gb 2SIM Vietnam",
     "price": 1450,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a35 5g"
+    "model_key": "samsung galaxy a35 5g",
+    "sold_checked": true
   },
   "81568256": {
     "logged": true,
@@ -2438,7 +2441,8 @@
     "title": "Samsung Galaxy A56 5G",
     "price": 3499,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a56 5g"
+    "model_key": "samsung galaxy a56 5g",
+    "sold_checked": true
   },
   "68316256": {
     "logged": true,
@@ -2447,7 +2451,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
     "price": 9600,
     "condition": "Б/у",
-    "model_key": "apple iphone 16 pro"
+    "model_key": "apple iphone 16 pro",
+    "sold_checked": true
   },
   "44212256": {
     "logged": true,

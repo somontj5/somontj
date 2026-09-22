@@ -1874,3 +1874,6 @@
 {"type": "confirmed_sale", "id": "45313256", "title": "Apple iPhone 13 Pro, 256 gb, Gold", "price": 4000, "condition": "Б/у", "model_key": "apple iphone 13 pro", "confirmed_at": "2026-09-22T04:30:30"}
 {"type": "confirmed_sale", "id": "38312128", "title": "Apple iPhone 12, 128 gb, Purple", "price": 1500, "condition": "Б/у", "model_key": "apple iphone 12", "confirmed_at": "2026-09-22T04:30:34"}
 {"type": "confirmed_sale", "id": "11241032", "title": "Samsung Galaxy A10 32GB", "price": 250, "condition": "Б/у", "model_key": "samsung galaxy a10", "confirmed_at": "2026-09-22T04:30:36"}
+{"type": "confirmed_sale", "id": "86016128", "title": "Samsung Galaxy A36 128Gb 5G", "price": 2100, "condition": "Б/у", "model_key": "samsung galaxy a36", "confirmed_at": "2026-09-22T04:35:20"}
+{"type": "confirmed_sale", "id": "59811128", "title": "Xiaomi Redmi Note 11E 128GB", "price": 650, "condition": "Б/у", "model_key": "xiaomi redmi note 11e", "confirmed_at": "2026-09-22T04:35:21"}
+{"type": "confirmed_sale", "id": "35581282", "title": "Samsung Galaxy A35 5G 8/128Gb 2SIM Vietnam", "price": 1450, "condition": "Б/у", "model_key": "samsung galaxy a35 5g", "confirmed_at": "2026-09-22T04:35:23"}

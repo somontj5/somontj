@@ -1519,7 +1519,8 @@
     "url": "https://m.somon.tj/adv/17069185_redmi-k40-pro-geming/",
     "title": "Xiaomi Redmi k40 pro Geming",
     "price": 2999,
-    "condition": "Б/у"
+    "condition": "Б/у",
+    "sold_checked": true
   },
   "83717256": {
     "logged": true,
@@ -1527,7 +1528,8 @@
     "url": "https://m.somon.tj/adv/17138837_apple-iphone-17-pro-max-256-gb-deep-blue/",
     "title": "Apple iPhone 17 Pro Max, 256 gb, Deep Blue",
     "price": 13999,
-    "condition": "Б/у"
+    "condition": "Б/у",
+    "sold_checked": true
   },
   "91378512": {
     "logged": true,
@@ -1536,7 +1538,8 @@
     "url": "https://m.somon.tj/adv/17091378_apple-iphone-x-512-gb-silver/",
     "title": "Apple iPhone X, 512 gb, Silver",
     "price": 899,
-    "condition": "Б/у"
+    "condition": "Б/у",
+    "sold_checked": true
   },
   "17153137": {
     "logged": true,
@@ -1544,7 +1547,8 @@
     "url": "https://m.somon.tj/adv/17153137_navai-ai-korobka-khui-kadem-makhkul-nashid-navai-vobshe-istifoda-burdagi-nest/",
     "title": "Honor 600 Pro",
     "price": 7100,
-    "condition": "Б/у"
+    "condition": "Б/у",
+    "sold_checked": true
   },
   "14383730": {
     "logged": true,
@@ -1553,7 +1557,8 @@
     "title": "Infinix Notе 30i",
     "price": 1199,
     "condition": "Б/у",
-    "model_key": "infinix notе 30i"
+    "model_key": "infinix notе 30i",
+    "sold_checked": true
   },
   "15118112": {
     "logged": true,

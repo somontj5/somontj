@@ -5971,7 +5971,13 @@
   },
   "83713128": {
     "logged": true,
-    "photo_ok": true
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17167837_apple-iphone-13-pro-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
+    "price": 2999,
+    "condition": "Б/у",
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "16783117": {
     "logged": true,
@@ -6285,7 +6291,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
     "price": 10000,
     "condition": "Б/у",
-    "model_key": "apple iphone 16 pro"
+    "model_key": "apple iphone 16 pro",
+    "sold_checked": true
   },
   "23017256": {
     "logged": true,
@@ -6294,7 +6301,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
     "price": 14500,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "23351128": {
     "logged": true,
@@ -6303,7 +6311,8 @@
     "title": "Samsung Galaxy A51 128gb",
     "price": 880,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a51"
+    "model_key": "samsung galaxy a51",
+    "sold_checked": true
   },
   "17613256": {
     "logged": true,
@@ -6312,7 +6321,8 @@
     "title": "Xiaomi Redmi Note 13 Pro 256GB",
     "price": 1700,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 13"
+    "model_key": "xiaomi redmi note 13",
+    "sold_checked": true
   },
   "32513128": {
     "logged": true,
@@ -8825,5 +8835,43 @@
     "price": 8990,
     "condition": "Б/у",
     "model_key": "apple 17"
+  },
+  "62614256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17182626_apple-iphone-14-pro-256-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro, 256 gb, Deep Purple",
+    "price": 4799,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
+  },
+  "61412128": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17182614_apple-iphone-12-128-gb-blue/",
+    "title": "Apple iPhone 12, 128 gb, Blue",
+    "price": 3000,
+    "condition": "Б/у",
+    "model_key": "apple 12"
+  },
+  "18257122": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17182571_samsung-s22-ultra/",
+    "title": "Samsung Galaxy S22 ultra",
+    "price": 3000,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
+  },
+  "69205128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17182569_samsung-s20-5g-128gb/",
+    "title": "Samsung Galaxy S20 5G 128gb",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "samsung s20 5g"
   }
 }

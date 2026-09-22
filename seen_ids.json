@@ -8292,7 +8292,8 @@
     "title": "Apple iPhone 15 Pro, 128 gb, Natural Titanium",
     "price": 5550,
     "condition": "Б/у",
-    "model_key": "apple iphone 15 pro"
+    "model_key": "apple iphone 15 pro",
+    "sold_checked": true
   },
   "93717256": {
     "logged": true,
@@ -8301,7 +8302,8 @@
     "title": "Apple iPhone 17 Pro, 256 gb, Cosmic Orange",
     "price": 13000,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "17177674": {
     "logged": true,
@@ -8310,7 +8312,8 @@
     "title": "Xiaomi Redmi 9A",
     "price": 650,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 9a"
+    "model_key": "xiaomi redmi 9a",
+    "sold_checked": true
   },
   "71779007": {
     "logged": true,
@@ -8329,7 +8332,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
     "price": 7499,
     "condition": "Б/у",
-    "model_key": "apple iphone 15 pro"
+    "model_key": "apple iphone 15 pro",
+    "sold_checked": true
   },
   "83516256": {
     "logged": true,
@@ -8338,7 +8342,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
     "price": 9800,
     "condition": "Б/у",
-    "model_key": "apple iphone 16 pro"
+    "model_key": "apple iphone 16 pro",
+    "sold_checked": true
   },
   "83516128": {
     "logged": true,
@@ -8923,5 +8928,32 @@
     "price": 6550,
     "condition": "Б/у",
     "model_key": "samsung s26 ultra"
+  },
+  "18290420": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17182904_samsung-s20-ultra/",
+    "title": "Samsung Galaxy S20 ultra",
+    "price": 1199,
+    "condition": "Б/у",
+    "model_key": "samsung s20 ultra"
+  },
+  "18289813": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17182898_xiaomi-redmi-13c/",
+    "title": "Xiaomi Redmi 13C",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "redmi 13c"
+  },
+  "18289920": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17182899_samsung-not-20ultra/",
+    "title": "Samsung Galaxy Note 20ultra",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "samsung note 20ultra"
   }
 }

@@ -9431,7 +9431,8 @@
     "title": "Samsung Galaxy A16",
     "price": 1220,
     "condition": "Б/у",
-    "model_key": "samsung a16"
+    "model_key": "samsung a16",
+    "sold_checked": true
   },
   "48961164": {
     "logged": true,

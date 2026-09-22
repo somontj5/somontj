@@ -1939,3 +1939,6 @@
 {"type": "confirmed_sale", "id": "37910512", "title": "Samsung galaxy S10 512гб", "price": 1200, "condition": "Б/у", "model_key": "samsung galaxy s10 512гб", "confirmed_at": "2026-09-22T06:40:30"}
 {"type": "confirmed_sale", "id": "50316256", "title": "Apple iPhone 16 Pro Max, 256 gb, Natural Titanium", "price": 6500, "condition": "Б/у", "model_key": "apple iphone 16 pro", "confirmed_at": "2026-09-22T06:45:37"}
 {"type": "confirmed_sale", "id": "45638600", "title": "Infinix SMART 8", "price": 600, "condition": "Б/у", "model_key": "infinix smart 8", "confirmed_at": "2026-09-22T06:50:30"}
+{"type": "confirmed_sale", "id": "62813256", "title": "Apple iPhone 13 Pro Max, 256 gb", "price": 3400, "condition": "Б/у", "model_key": "apple iphone 13 pro", "confirmed_at": "2026-09-22T06:55:24"}
+{"type": "confirmed_sale", "id": "63213256", "title": "Apple iPhone 13 Pro Max, 256 gb, Graphite", "price": 3200, "condition": "Б/у", "model_key": "apple iphone 13 pro", "confirmed_at": "2026-09-22T06:55:24"}
+{"type": "confirmed_sale", "id": "17164604", "title": "Samsung Galaxy A17", "price": 1700, "condition": "Б/у", "model_key": "samsung galaxy a17", "confirmed_at": "2026-09-22T06:55:27"}

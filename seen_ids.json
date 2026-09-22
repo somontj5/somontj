@@ -4058,7 +4058,8 @@
     "title": "Apple iPhone 13 Pro Max, 256 gb",
     "price": 3400,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "63213256": {
     "logged": true,
@@ -4068,7 +4069,8 @@
     "title": "Apple iPhone 13 Pro Max, 256 gb, Graphite",
     "price": 3200,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "64624864": {
     "logged": true,
@@ -4078,7 +4080,8 @@
     "title": "Apple iPhone 8, 64 gb, Space Grey",
     "price": 1050,
     "condition": "Б/у",
-    "model_key": "apple iphone 8"
+    "model_key": "apple iphone 8",
+    "sold_checked": true
   },
   "17164604": {
     "logged": true,
@@ -4087,7 +4090,8 @@
     "title": "Samsung Galaxy A17",
     "price": 1700,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a17"
+    "model_key": "samsung galaxy a17",
+    "sold_checked": true
   },
   "41285000": {
     "logged": true,
@@ -4095,7 +4099,8 @@
     "url": "https://m.somon.tj/adv/17164707_galaxy-a17-4-128gb-5000mach-black/",
     "title": "Galaxy A17 4/128GB 5000мАч Black",
     "price": 2099,
-    "condition": "Б/у"
+    "condition": "Б/у",
+    "sold_checked": true
   },
   "72814512": {
     "logged": true,

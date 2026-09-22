@@ -4374,7 +4374,8 @@
     "title": "Tecno Camon 40 pro 5G",
     "price": 2200,
     "condition": "Б/у",
-    "model_key": "tecno camon"
+    "model_key": "tecno camon",
+    "sold_checked": true
   },
   "65067256": {
     "logged": true,
@@ -4384,7 +4385,8 @@
     "title": "Apple iPhone Xs, 256 gb, Space Grey",
     "price": 900,
     "condition": "Б/у",
-    "model_key": "apple iphone xs"
+    "model_key": "apple iphone xs",
+    "sold_checked": true
   },
   "65070135": {
     "logged": true,
@@ -4393,7 +4395,8 @@
     "title": "Xiaomi Redmi Note 13 pro plus 5G Global",
     "price": 2099,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 13"
+    "model_key": "xiaomi redmi note 13",
+    "sold_checked": true
   },
   "50741264": {
     "logged": true,
@@ -4402,7 +4405,8 @@
     "title": "Apple iPhone 12, 64 gb, Purple",
     "price": 2299,
     "condition": "Б/у",
-    "model_key": "apple iphone 12"
+    "model_key": "apple iphone 12",
+    "sold_checked": true
   },
   "16513864": {
     "logged": true,
@@ -4412,7 +4416,8 @@
     "title": "Apple iPhone Xr, 64 gb, Yellow",
     "price": 900,
     "condition": "Б/у",
-    "model_key": "apple iphone xr"
+    "model_key": "apple iphone xr",
+    "sold_checked": true
   },
   "52176128": {
     "logged": true,

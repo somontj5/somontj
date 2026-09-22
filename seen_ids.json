@@ -4164,7 +4164,8 @@
     "title": "Apple iPhone 11, 128 gb, Black",
     "price": 2000,
     "condition": "Б/у",
-    "model_key": "apple iphone 11"
+    "model_key": "apple iphone 11",
+    "sold_checked": true
   },
   "17164845": {
     "logged": true,
@@ -4173,7 +4174,8 @@
     "url": "https://m.somon.tj/adv/17164845_v-ideale/",
     "title": "Vertu",
     "price": 399,
-    "condition": "Б/у"
+    "condition": "Б/у",
+    "sold_checked": true
   },
   "16474241": {
     "logged": true,
@@ -4183,7 +4185,8 @@
     "title": "Samsung galaxsy a 41",
     "price": 850,
     "condition": "Б/у",
-    "model_key": "samsung galaxsy a"
+    "model_key": "samsung galaxsy a",
+    "sold_checked": true
   },
   "74315256": {
     "logged": true,
@@ -4192,7 +4195,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
     "price": 7350,
     "condition": "Б/у",
-    "model_key": "apple iphone 15 pro"
+    "model_key": "apple iphone 15 pro",
+    "sold_checked": true
   },
   "16488614": {
     "logged": true,
@@ -4202,7 +4206,8 @@
     "title": "Redmi 14С",
     "price": 500,
     "condition": "Б/у",
-    "model_key": "redmi 14с"
+    "model_key": "redmi 14с",
+    "sold_checked": true
   },
   "85417256": {
     "logged": true,

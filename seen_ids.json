@@ -5507,7 +5507,8 @@
     "title": "Infinix NOTE 50 256GB",
     "price": 1850,
     "condition": "Б/у",
-    "model_key": "infinix note"
+    "model_key": "infinix note",
+    "sold_checked": true
   },
   "73543128": {
     "logged": true,

@@ -2188,7 +2188,8 @@
     "title": "Apple iPhone 16 Pro Max, 512 gb, Black Titanium",
     "price": 10200,
     "condition": "Б/у",
-    "model_key": "apple iphone 16 pro"
+    "model_key": "apple iphone 16 pro",
+    "sold_checked": true
   },
   "08515256": {
     "logged": true,
@@ -2197,7 +2198,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
     "price": 7900,
     "condition": "Б/у",
-    "model_key": "apple iphone 15 pro"
+    "model_key": "apple iphone 15 pro",
+    "sold_checked": true
   },
   "09975256": {
     "logged": true,
@@ -2206,7 +2208,8 @@
     "title": "Apple iPhone Air, 256 gb, Light Gold",
     "price": 9600,
     "condition": "Б/у",
-    "model_key": "apple iphone air"
+    "model_key": "apple iphone air",
+    "sold_checked": true
   },
   "72017256": {
     "logged": true,
@@ -2215,7 +2218,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
     "price": 12900,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "60115256": {
     "logged": true,
@@ -2225,7 +2229,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Black Titanium",
     "price": 7600,
     "condition": "Б/у",
-    "model_key": "apple iphone 15 pro"
+    "model_key": "apple iphone 15 pro",
+    "sold_checked": true
   },
   "00815256": {
     "logged": true,
@@ -8092,5 +8097,15 @@
     "price": 4350,
     "condition": "Б/у",
     "model_key": "samsung galaxy s22 ultra"
+  },
+  "61544584": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16154458_note-4/",
+    "title": "Xiaomi Redmi Note 4",
+    "price": 280,
+    "condition": "Б/у",
+    "model_key": "xiaomi redmi note 4"
   }
 }

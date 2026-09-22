@@ -8353,7 +8353,8 @@
     "title": "Apple iPhone 16 Pro, 256 gb, Black Titanium",
     "price": 8550,
     "condition": "Б/у",
-    "model_key": "apple iphone 16 pro"
+    "model_key": "apple iphone 16 pro",
+    "sold_checked": true
   },
   "55112128": {
     "logged": true,
@@ -8362,7 +8363,8 @@
     "title": "Xiaomi Redmi 12 128GB",
     "price": 850,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 12"
+    "model_key": "xiaomi redmi 12",
+    "sold_checked": true
   },
   "78034128": {
     "logged": true,
@@ -8371,7 +8373,8 @@
     "title": "Apple iPhone Xr, 128 gb, Black",
     "price": 1250,
     "condition": "Б/у",
-    "model_key": "apple iphone xr"
+    "model_key": "apple iphone xr",
+    "sold_checked": true
   },
   "81061164": {
     "logged": true,
@@ -8380,7 +8383,8 @@
     "title": "Apple iPhone 11 Pro Max, 64 gb, Midnight Green",
     "price": 2000,
     "condition": "Б/у",
-    "model_key": "apple iphone 11 pro"
+    "model_key": "apple iphone 11 pro",
+    "sold_checked": true
   },
   "17822254": {
     "logged": true,
@@ -8521,7 +8525,8 @@
     "title": "Apple iPhone 11 Pro, 64 gb, Midnight Green",
     "price": 2550,
     "condition": "Б/у",
-    "model_key": "apple iphone 11 pro"
+    "model_key": "apple iphone 11 pro",
+    "sold_checked": true
   },
   "16013128": {
     "logged": true,

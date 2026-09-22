@@ -8528,7 +8528,8 @@
     "title": "Xiaomi Redmi Note 14",
     "price": 1800,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 14"
+    "model_key": "xiaomi redmi note 14",
+    "sold_checked": true
   },
   "90901164": {
     "logged": true,
@@ -9133,5 +9134,24 @@
     "price": 4170,
     "condition": "Б/у",
     "model_key": "apple 15"
+  },
+  "07568256": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17183507_samsung-a56-8-256/",
+    "title": "Samsung Galaxy A56 8/256gb",
+    "price": 3600,
+    "condition": "Б/у",
+    "model_key": "samsung a56"
+  },
+  "82301764": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16738230_apple-iphone-17-pro-max-64-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 64 gb, Silver копия",
+    "price": 1150,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
   }
 }

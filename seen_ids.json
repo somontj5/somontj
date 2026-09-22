@@ -5162,7 +5162,8 @@
     "title": "Redmi 10A 32Gb",
     "price": 730,
     "condition": "Б/у",
-    "model_key": "redmi 10a"
+    "model_key": "redmi 10a",
+    "sold_checked": true
   },
   "16646964": {
     "logged": true,
@@ -5171,7 +5172,8 @@
     "title": "Apple iPhone Xr, 64 gb, Black",
     "price": 1350,
     "condition": "Б/у",
-    "model_key": "apple iphone xr"
+    "model_key": "apple iphone xr",
+    "sold_checked": true
   },
   "81525685": {
     "logged": true,
@@ -5181,7 +5183,8 @@
     "title": "Samsung Galaxy А15 256/8Gb Dual sim 5G",
     "price": 1600,
     "condition": "Б/у",
-    "model_key": "samsung galaxy а15"
+    "model_key": "samsung galaxy а15",
+    "sold_checked": true
   },
   "25911128": {
     "logged": true,
@@ -5190,7 +5193,8 @@
     "title": "Apple iPhone 11, 128 gb, White",
     "price": 1699,
     "condition": "Б/у",
-    "model_key": "apple iphone 11"
+    "model_key": "apple iphone 11",
+    "sold_checked": true
   },
   "87312885": {
     "logged": true,
@@ -5200,7 +5204,8 @@
     "title": "Samsung Galaxy А73 128/8Gb Vietnam 5G",
     "price": 1800,
     "condition": "Б/у",
-    "model_key": "samsung galaxy а73"
+    "model_key": "samsung galaxy а73",
+    "sold_checked": true
   },
   "92325652": {
     "logged": true,

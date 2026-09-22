@@ -3533,7 +3533,8 @@
     "title": "Xiaomi Redmi 10А",
     "price": 750,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 10а"
+    "model_key": "xiaomi redmi 10а",
+    "sold_checked": true
   },
   "16385323": {
     "logged": true,
@@ -3542,7 +3543,8 @@
     "title": "Samsung Galaxy s23 fe",
     "price": 3000,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s23 fe"
+    "model_key": "samsung galaxy s23 fe",
+    "sold_checked": true
   },
   "71638908": {
     "logged": true,
@@ -3551,7 +3553,8 @@
     "title": "Samsung Galaxy S8",
     "price": 500,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s8"
+    "model_key": "samsung galaxy s8",
+    "sold_checked": true
   },
   "89213256": {
     "logged": true,
@@ -3560,7 +3563,8 @@
     "title": "Apple iPhone 13 Pro Max, 256 gb, Graphite",
     "price": 5300,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "87713128": {
     "logged": true
@@ -3578,7 +3582,8 @@
     "title": "Apple iPhone 14 Pro Max, 256 gb, Silver",
     "price": 6299,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "09716256": {
     "logged": true,
@@ -8288,5 +8293,23 @@
     "price": 1700,
     "condition": "Б/у",
     "model_key": "apple iphone 11"
+  },
+  "78461610": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/12784616_redmi-10a/",
+    "title": "Xiaomi Redmi 10A",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "xiaomi redmi 10a"
+  },
+  "21634413": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15216344_samsung-a13/",
+    "title": "Samsung Galaxy A13",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "samsung galaxy a13"
   }
 }

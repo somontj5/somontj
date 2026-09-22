@@ -8688,7 +8688,8 @@
     "title": "Samsung Galaxy Dos",
     "price": 130,
     "condition": "Б/у",
-    "model_key": "samsung dos"
+    "model_key": "samsung dos",
+    "sold_checked": true
   },
   "33851110": {
     "logged": true,
@@ -8697,7 +8698,8 @@
     "title": "Nokia H5601",
     "price": 120,
     "condition": "Б/у",
-    "model_key": "nokia h5601"
+    "model_key": "nokia h5601",
+    "sold_checked": true
   },
   "52115512": {
     "logged": true,
@@ -8706,7 +8708,8 @@
     "title": "Apple iPhone 15 Pro Max, 512 gb, Blue Titanium",
     "price": 8000,
     "condition": "Б/у",
-    "model_key": "apple 15 pro max"
+    "model_key": "apple 15 pro max",
+    "sold_checked": true
   },
   "15792428": {
     "logged": true,
@@ -9248,5 +9251,34 @@
     "price": 1750,
     "condition": "Б/у",
     "model_key": "samsung а53 vetnam 2sim 5g"
+  },
+  "01525625": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17183960_telefon-samsung-a15-256gb-vetnam-2sim-5g/",
+    "title": "Samsung Galaxy A15 256Gb Vetnam 2sim 5G",
+    "price": 1550,
+    "condition": "Б/у",
+    "model_key": "samsung a15"
+  },
+  "38321285": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17183938_telefon-samsung-a32-128gb-vetnam-5g/",
+    "title": "Samsung Galaxy А32 128гб Vetnam 5G",
+    "price": 1350,
+    "condition": "Б/у",
+    "model_key": "samsung а32 128гб vetnam 5g"
+  },
+  "02325625": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17183910_telefon-samsung-s23-256gb-vetnam-2sim-5g/",
+    "title": "Samsung Galaxy S23, 256gb Vetnam 2sim 5G",
+    "price": 3950,
+    "condition": "Б/у",
+    "model_key": "samsung s23"
   }
 }

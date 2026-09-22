@@ -8024,7 +8024,8 @@
     "title": "Apple iPhone 12, 64 gb, White",
     "price": 2000,
     "condition": "Б/у",
-    "model_key": "apple iphone 12"
+    "model_key": "apple iphone 12",
+    "sold_checked": true
   },
   "17176497": {
     "logged": true,
@@ -8034,7 +8035,8 @@
     "title": "Samsung Galaxy A71",
     "price": 799,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a71"
+    "model_key": "samsung galaxy a71",
+    "sold_checked": true
   },
   "70480117": {
     "logged": true,
@@ -8043,7 +8045,8 @@
     "title": "Samsung Galaxy A17",
     "price": 2100,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a17"
+    "model_key": "samsung galaxy a17",
+    "sold_checked": true
   },
   "71206410": {
     "logged": true,
@@ -8053,7 +8056,8 @@
     "title": "Samsung Galaxy S10",
     "price": 1450,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s10"
+    "model_key": "samsung galaxy s10",
+    "sold_checked": true
   },
   "00500222": {
     "logged": true,
@@ -8062,7 +8066,8 @@
     "title": "Samsung Galaxy S22 2-Sim Vietnam",
     "price": 2990,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s22 2"
+    "model_key": "samsung galaxy s22 2",
+    "sold_checked": true
   },
   "04121256": {
     "logged": true,

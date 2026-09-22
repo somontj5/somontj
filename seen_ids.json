@@ -3904,7 +3904,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
     "price": 2599,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "41811256": {
     "logged": true,
@@ -3913,7 +3914,8 @@
     "title": "Apple iPhone 11 Pro Max, 256 gb, Midnight Green",
     "price": 2899,
     "condition": "Б/у",
-    "model_key": "apple iphone 11 pro"
+    "model_key": "apple iphone 11 pro",
+    "sold_checked": true
   },
   "64412256": {
     "logged": true,
@@ -3922,7 +3924,8 @@
     "title": "Apple iPhone X, 256 gb, Silver",
     "price": 650,
     "condition": "Б/у",
-    "model_key": "apple iphone x"
+    "model_key": "apple iphone x",
+    "sold_checked": true
   },
   "43351164": {
     "logged": true,
@@ -3931,7 +3934,8 @@
     "title": "Apple iPhone 11 Pro, 64 gb, Midnight Green",
     "price": 2300,
     "condition": "Б/у",
-    "model_key": "apple iphone 11 pro"
+    "model_key": "apple iphone 11 pro",
+    "sold_checked": true
   },
   "37910512": {
     "logged": true,
@@ -3941,7 +3945,8 @@
     "title": "Samsung galaxy S10 512гб",
     "price": 1200,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s10 512гб"
+    "model_key": "samsung galaxy s10 512гб",
+    "sold_checked": true
   },
   "39313128": {
     "logged": true,

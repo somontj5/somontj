@@ -2979,7 +2979,8 @@
     "title": "Samsung Galaxy S23 FE 8/256 ГБ 2 SIM",
     "price": 3700,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s23 fe"
+    "model_key": "samsung galaxy s23 fe",
+    "sold_checked": true
   },
   "27281164": {
     "logged": true,
@@ -2988,7 +2989,8 @@
     "title": "Apple iPhone 11, 64 gb, White",
     "price": 2010,
     "condition": "Б/у",
-    "model_key": "apple iphone 11"
+    "model_key": "apple iphone 11",
+    "sold_checked": true
   },
   "16291550": {
     "logged": true,
@@ -2997,7 +2999,8 @@
     "title": "Tecno Camon 50 Pro",
     "price": 2850,
     "condition": "Б/у",
-    "model_key": "tecno camon"
+    "model_key": "tecno camon",
+    "sold_checked": true
   },
   "53626607": {
     "logged": true,
@@ -3006,7 +3009,8 @@
     "title": "Samsung Galaxy A07",
     "price": 1250,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a07"
+    "model_key": "samsung galaxy a07",
+    "sold_checked": true
   },
   "17162900": {
     "logged": true,
@@ -3015,7 +3019,8 @@
     "title": "Tecno Camon Slim",
     "price": 3000,
     "condition": "Б/у",
-    "model_key": "tecno camon slim"
+    "model_key": "tecno camon slim",
+    "sold_checked": true
   },
   "71624077": {
     "logged": true,

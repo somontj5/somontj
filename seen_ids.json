@@ -5678,7 +5678,8 @@
     "title": "Apple iPhone 11 Pro, 64 gb, Midnight Green",
     "price": 800,
     "condition": "Б/у",
-    "model_key": "apple iphone 11 pro"
+    "model_key": "apple iphone 11 pro",
+    "sold_checked": true
   },
   "13999600": {
     "logged": true,
@@ -5688,7 +5689,8 @@
     "title": "Honor 600, 256gb",
     "price": 4300,
     "condition": "Б/у",
-    "model_key": "honor"
+    "model_key": "honor",
+    "sold_checked": true
   },
   "17167185": {
     "logged": true,
@@ -5698,7 +5700,8 @@
     "title": "Xiaomi Redmi Note 13",
     "price": 1400,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 13"
+    "model_key": "xiaomi redmi note 13",
+    "sold_checked": true
   },
   "48911128": {
     "logged": true,
@@ -5707,7 +5710,8 @@
     "title": "Apple iPhone 11, 128 gb, White",
     "price": 1700,
     "condition": "Б/у",
-    "model_key": "apple iphone 11"
+    "model_key": "apple iphone 11",
+    "sold_checked": true
   },
   "17167495": {
     "logged": true,
@@ -5717,7 +5721,8 @@
     "title": "Samsung Galaxy S25 Ultra",
     "price": 200,
     "condition": "Б/у",
-    "model_key": "samsung galaxy s25 ultra"
+    "model_key": "samsung galaxy s25 ultra",
+    "sold_checked": true
   },
   "67416545": {
     "logged": true,

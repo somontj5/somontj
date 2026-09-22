@@ -1851,3 +1851,6 @@
 {"type": "confirmed_sale", "id": "22913128", "title": "Apple iPhone 13 Pro Max, 128 gb, Alpine Green", "price": 3300, "condition": "Б/у", "model_key": "apple iphone 13 pro", "confirmed_at": "2026-09-22T03:51:05"}
 {"type": "confirmed_sale", "id": "29617512", "title": "Apple iPhone 17 Pro Max, 512 gb, Cosmic Orange", "price": 12200, "condition": "Б/у", "model_key": "apple iphone 17 pro", "confirmed_at": "2026-09-22T03:51:06"}
 {"type": "confirmed_sale", "id": "74535128", "title": "Samsung Galaxy A73 5G 128gb Vietnam", "price": 2200, "condition": "Б/у", "model_key": "samsung galaxy a73 5g", "confirmed_at": "2026-09-22T03:51:07"}
+{"type": "confirmed_sale", "id": "41440932", "title": "Xiaomi Redmi 9C 32gb", "price": 450, "condition": "Б/у", "model_key": "xiaomi redmi 9c", "confirmed_at": "2026-09-22T03:52:25"}
+{"type": "confirmed_sale", "id": "57135364", "title": "Xiaomi Redmi A3х 64Gb", "price": 670, "condition": "Б/у", "model_key": "xiaomi redmi a3х", "confirmed_at": "2026-09-22T03:52:26"}
+{"type": "confirmed_sale", "id": "16041220", "title": "Tecno Spark 20C", "price": 500, "condition": "Б/у", "model_key": "tecno spark 20c", "confirmed_at": "2026-09-22T03:52:29"}

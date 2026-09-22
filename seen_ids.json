@@ -1828,7 +1828,8 @@
     "title": "Apple iPhone 14 Pro, 256 gb, Deep Purple",
     "price": 6300,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "41440932": {
     "logged": true,
@@ -1837,7 +1838,8 @@
     "title": "Xiaomi Redmi 9C 32gb",
     "price": 450,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi 9c"
+    "model_key": "xiaomi redmi 9c",
+    "sold_checked": true
   },
   "57135364": {
     "logged": true,
@@ -1846,7 +1848,8 @@
     "title": "Xiaomi Redmi A3х 64Gb",
     "price": 670,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi a3х"
+    "model_key": "xiaomi redmi a3х",
+    "sold_checked": true
   },
   "31910307": {
     "logged": true,
@@ -1855,7 +1858,8 @@
     "title": "Samsung galaxy A10",
     "price": 300,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a10"
+    "model_key": "samsung galaxy a10",
+    "sold_checked": true
   },
   "16041220": {
     "logged": true,
@@ -1865,7 +1869,8 @@
     "title": "Tecno Spark 20C",
     "price": 500,
     "condition": "Б/у",
-    "model_key": "tecno spark 20c"
+    "model_key": "tecno spark 20c",
+    "sold_checked": true
   },
   "71593357": {
     "logged": true,

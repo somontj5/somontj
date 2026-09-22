@@ -2826,7 +2826,8 @@
     "title": "Apple iPhone 11 Pro, 64 gb, Midnight Green",
     "price": 2500,
     "condition": "Б/у",
-    "model_key": "apple iphone 11 pro"
+    "model_key": "apple iphone 11 pro",
+    "sold_checked": true
   },
   "65242568": {
     "logged": true,
@@ -2835,7 +2836,8 @@
     "title": "Samsung Galaxy A52 4G 256/8гб",
     "price": 550,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a52 4g"
+    "model_key": "samsung galaxy a52 4g",
+    "sold_checked": true
   },
   "51011256": {
     "logged": true,
@@ -2844,7 +2846,8 @@
     "title": "Apple iPhone 11 Pro Max, 256 gb, Silver",
     "price": 1500,
     "condition": "Б/у",
-    "model_key": "apple iphone 11 pro"
+    "model_key": "apple iphone 11 pro",
+    "sold_checked": true
   },
   "48015256": {
     "logged": true,
@@ -2854,7 +2857,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
     "price": 7199,
     "condition": "Б/у",
-    "model_key": "apple iphone 15 pro"
+    "model_key": "apple iphone 15 pro",
+    "sold_checked": true
   },
   "49817256": {
     "logged": true,
@@ -2863,7 +2867,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
     "price": 11999,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "62492864": {
     "logged": true,

@@ -8670,7 +8670,8 @@
     "title": "Samsung E250",
     "price": 200,
     "condition": "Б/у",
-    "model_key": "samsung e250"
+    "model_key": "samsung e250",
+    "sold_checked": true
   },
   "63076642": {
     "logged": true,
@@ -8729,7 +8730,8 @@
     "title": "Samsung Galaxy A5",
     "price": 550,
     "condition": "Б/у",
-    "model_key": "samsung a5"
+    "model_key": "samsung a5",
+    "sold_checked": true
   },
   "17951610": {
     "logged": true,
@@ -8738,7 +8740,8 @@
     "title": "Huawei 10 Play",
     "price": 1400,
     "condition": "Б/у",
-    "model_key": "huawei 10 play"
+    "model_key": "huawei 10 play",
+    "sold_checked": true
   },
   "41461282": {
     "logged": true,
@@ -8747,7 +8750,8 @@
     "title": "Samsung Galaxy a14 6/128gb Vietnam 2sim",
     "price": 550,
     "condition": "Б/у",
-    "model_key": "samsung a14"
+    "model_key": "samsung a14",
+    "sold_checked": true
   },
   "98912128": {
     "logged": true,
@@ -9281,5 +9285,32 @@
     "price": 3950,
     "condition": "Б/у",
     "model_key": "samsung s23"
+  },
+  "61412825": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17184046_telefon-samsung-a14-128gb-vetnam-2sim-5g/",
+    "title": "Samsung Galaxy А14, 128Gb Vetnam 2sim 5G",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "samsung а14"
+  },
+  "06912128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17184069_telefon-redmi-note-12-128gb-glabal-version/",
+    "title": "Xiaomi Redmi Note 12 128gb Glabal Version",
+    "price": 1260,
+    "condition": "Б/у",
+    "model_key": "redmi note 12"
+  },
+  "02711645": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17184027_telefon-redmi-note-11-64gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 11 64gb Glabal Version 5G",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "redmi note 11"
   }
 }

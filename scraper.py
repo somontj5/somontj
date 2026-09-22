@@ -5,6 +5,7 @@ import time
 import base64
 import statistics
 import requests
+from difflib import SequenceMatcher
 from bs4 import BeautifulSoup
 
 # ==== НАСТРОЙКИ ====
@@ -15,6 +16,11 @@ SEARCH_URL = os.environ.get(
 MAX_NEW_ITEMS_PER_RUN = int(os.environ.get("MAX_NEW_ITEMS_PER_RUN", "5"))
 MAX_SOLD_CHECKS_PER_RUN = int(os.environ.get("MAX_SOLD_CHECKS_PER_RUN", "5"))
 SIMILAR_EXAMPLES_LIMIT = 8
+# Порог похожести строк (0..1) для нечёткого сравнения model_key и слов в заголовках.
+# Используется вместо точного сравнения по символам, чтобы опечатки/варианты написания
+# (iphone13 / iphone 13 / айфон 13) всё равно считались совпадением.
+FUZZY_MATCH_THRESHOLD = float(os.environ.get("FUZZY_MATCH_THRESHOLD", "0.78"))
+PRICE_COMMAND_LIMIT = int(os.environ.get("PRICE_COMMAND_LIMIT", "15"))
 GEMINI_DAILY_LIMIT_PER_COMBO = int(os.environ.get("GEMINI_DAILY_LIMIT_PER_COMBO", "450"))
 TAVILY_MONTHLY_LIMIT_PER_KEY = int(os.environ.get("TAVILY_MONTHLY_LIMIT_PER_KEY", "950"))
 GOOGLE_SEARCH_DAILY_LIMIT_PER_KEY = int(os.environ.get("GOOGLE_SEARCH_DAILY_LIMIT_PER_KEY", "90"))
@@ -81,6 +87,12 @@ TRANSLIT_MAP = {
     "huawei": ["хуавей"], "google": ["гугл"], "pixel": ["пиксель"],
     "realme": ["реалми"], "oneplus": ["ванплюс"],
 }
+# Обратная карта (рус -> лат), чтобы запрос вроде "самсунг" находил объявления
+# с заголовком на латинице "Samsung" — TRANSLIT_MAP выше даёт только lat->ru.
+REVERSE_TRANSLIT_MAP = {}
+for _en, _ru_list in TRANSLIT_MAP.items():
+    for _ru in _ru_list:
+        REVERSE_TRANSLIT_MAP.setdefault(_ru, []).append(_en)
 KNOWN_BRANDS = ["iphone", "apple", "samsung", "xiaomi", "redmi", "honor",
                 "huawei", "tecno", "infinix", "nokia", "google", "pixel", "oppo", "vivo",
                 "realme", "itel", "oneplus", "vertu", "galaxy",
@@ -125,6 +137,32 @@ def save_seen(seen):
         json.dump(seen, f, ensure_ascii=False, indent=2)
 
 
+def fuzzy_ratio(a, b):
+    """Похожесть двух строк от 0 до 1 (простая посимвольная метрика из stdlib,
+    без внешних API — этого достаточно, чтобы прощать опечатки/перестановки)."""
+    if not a or not b:
+        return 0.0
+    return SequenceMatcher(None, a, b).ratio()
+
+
+def model_keys_match(key_a, key_b, threshold=FUZZY_MATCH_THRESHOLD):
+    """Сравнивает два model_key нечётко: точное совпадение — всегда True;
+    иначе — по похожести строк, так что опечатки/лишний пробел не рвут совпадение."""
+    if not key_a or not key_b:
+        return False
+    if key_a == key_b:
+        return True
+    return fuzzy_ratio(key_a, key_b) >= threshold
+
+
+def word_in_text(word, text, text_words, threshold=FUZZY_MATCH_THRESHOLD):
+    """True, если word встречается в text как подстрока, либо есть достаточно похожее
+    слово среди text_words (нечёткое совпадение — терпит опечатки в поисковом запросе)."""
+    if word in text:
+        return True
+    return any(fuzzy_ratio(word, w) >= threshold for w in text_words)
+
+
 def extract_model_key(title):
     words = re.findall(r"[a-zа-я0-9]+", title.lower())
     brand = next((w for w in words if w in KNOWN_BRANDS), None)
@@ -152,6 +190,7 @@ def log_market_point(item):
             "price": item["price"], "condition": item.get("condition"),
             "memory_gb": item.get("memory"), "vip": item.get("vip", False),
             "model_key": extract_model_key(item["title"]),
+            "url": item.get("url"),
             "date": time.strftime("%Y-%m-%d"),
         }, ensure_ascii=False) + "\n")
 
@@ -255,7 +294,7 @@ def get_confirmed_good_calls(model_key, limit=3):
                 rec = json.loads(line)
             except json.JSONDecodeError:
                 continue
-            if rec.get("type") == "confirmed_good_call" and rec.get("model_key") == model_key:
+            if rec.get("type") == "confirmed_good_call" and model_keys_match(rec.get("model_key"), model_key):
                 matches.append(rec)
     matches.sort(key=lambda r: r.get("confirmed_at", ""), reverse=True)
     return matches[:limit]
@@ -271,7 +310,7 @@ def get_confirmed_sales(model_key, limit=5):
                 rec = json.loads(line)
             except json.JSONDecodeError:
                 continue
-            if rec.get("type") == "confirmed_sale" and rec.get("model_key") == model_key:
+            if rec.get("type") == "confirmed_sale" and model_keys_match(rec.get("model_key"), model_key):
                 matches.append(rec)
     matches.sort(key=lambda r: r.get("confirmed_at", ""), reverse=True)
     return matches[:limit]
@@ -304,7 +343,7 @@ def similar_full_analyses(model_key, condition, exclude_id, limit=SIMILAR_EXAMPL
                 continue
             if rec.get("type") != "full_analysis" or rec.get("id") == exclude_id:
                 continue
-            if rec.get("model_key") != model_key:
+            if not model_keys_match(rec.get("model_key"), model_key):
                 continue
             if condition and rec.get("condition") and rec.get("condition") != condition:
                 continue
@@ -328,12 +367,56 @@ def market_stats_for(model_key, condition, exclude_id):
                 continue
             if condition and rec.get("condition") and rec.get("condition") != condition:
                 continue
-            if rec.get("model_key") != model_key:
+            if not model_keys_match(rec.get("model_key"), model_key):
                 continue
             prices.append(rec["price"])
     if len(prices) < 3:
         return None
     return {"count": len(prices), "min": min(prices), "median": round(statistics.median(prices))}
+
+
+def find_market_listings(query, limit=PRICE_COMMAND_LIMIT):
+    """Для команды /price — возвращает сами подходящие объявления (не только сводку),
+    по одному, самому свежему, на каждый id. Сравнение нечёткое — терпит опечатки
+    и не требует, чтобы extract_model_key() обязательно распознал бренд в запросе."""
+    if not os.path.exists(PRICE_HISTORY_FILE):
+        return []
+    model_key = extract_model_key(query) or query.lower().strip()
+    query_words = [w for w in re.findall(r"[a-zа-я0-9]+", query.lower()) if len(w) > 2]
+
+    latest_by_id = {}
+    with open(PRICE_HISTORY_FILE, "r", encoding="utf-8") as f:
+        for line in f:
+            try:
+                rec = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            if rec.get("type") not in ("market_point", "full_analysis") or not rec.get("price"):
+                continue
+
+            title = rec.get("title", "")
+            title_low = title.lower()
+            title_words = re.findall(r"[a-zа-я0-9]+", title_low)
+
+            match = model_keys_match(rec.get("model_key"), model_key)
+            if not match and query_words:
+                match = all(
+                    any(word_in_text(v, title_low, title_words) for v in keyword_variants(w))
+                    for w in query_words
+                )
+            if not match:
+                continue
+
+            rid = rec.get("id")
+            sort_key = rec.get("collected_at") or rec.get("date", "")
+            if rid not in latest_by_id or sort_key >= latest_by_id[rid]["_sort_key"]:
+                latest_by_id[rid] = {
+                    "title": title, "price": rec.get("price"),
+                    "url": rec.get("url"), "_sort_key": sort_key,
+                }
+
+    items = sorted(latest_by_id.values(), key=lambda r: r["_sort_key"], reverse=True)
+    return items[:limit]
 
 
 # ---------- Минимальная выгода ----------
@@ -806,12 +889,26 @@ def check_telegram_commands(searches, subscribers):
             else:
                 model_key = extract_model_key(query) or query.lower().strip()
                 stats = market_stats_for(model_key, None, exclude_id=None)
-                if stats:
-                    send_telegram(chat_id,
-                        f"💰 {query}\nПо базе ({stats['count']} похожих объявлений):\n"
-                        f"Минимальная цена: {stats['min']} TJS\nМедианная цена: {stats['median']} TJS")
+                listings = find_market_listings(query)
+                if not listings:
+                    send_telegram(chat_id, f"По «{query}» в базе пока ничего не нашлось.")
                 else:
-                    send_telegram(chat_id, f"По «{query}» в базе пока меньше 3 похожих объявлений.")
+                    lines = [f"💰 {query} — найдено объявлений: {len(listings)}"]
+                    if stats:
+                        lines.append(f"Минимальная цена: {stats['min']} TJS | Медианная: {stats['median']} TJS")
+                    lines.append("")
+                    for it in listings:
+                        price_str = f"{it['price']} TJS" if it.get("price") else "цена не указана"
+                        line = f"• {it['title']} — {price_str}"
+                        if it.get("url"):
+                            line += f"\n  {it['url']}"
+                        lines.append(line)
+                    text = "\n".join(lines)
+                    if len(text) > 3800:
+                        send_telegram(chat_id, "\n".join(lines[:3]) + f"\n\nСписок длинный — отправляю файлом.")
+                        send_telegram_document(chat_id, "price_search.txt", text, caption=f"Результаты по «{query}»")
+                    else:
+                        send_telegram(chat_id, text)
         elif command == "/stats":
             gem_usage = get_daily_usage(GEMINI_DAILY_FILE, [c["id"] for c in GEMINI_COMBOS])
             search_usage = get_search_usage()
@@ -1159,7 +1256,7 @@ def analyze_listing(item, photo_urls, similar_examples, confirmed_good_calls, co
 
 def keyword_variants(keyword):
     keyword = keyword.lower()
-    return [keyword] + TRANSLIT_MAP.get(keyword, [])
+    return [keyword] + TRANSLIT_MAP.get(keyword, []) + REVERSE_TRANSLIT_MAP.get(keyword, [])
 
 
 def matches_search(item, search):
@@ -1167,7 +1264,11 @@ def matches_search(item, search):
     query = search.get("query")
     if query:
         keywords = query if isinstance(query, list) else [query]
-        if not any(any(v in title for v in keyword_variants(k)) for k in keywords):
+        title_words = re.findall(r"[a-zа-я0-9]+", title)
+        if not any(
+            any(word_in_text(v, title, title_words) for v in keyword_variants(k))
+            for k in keywords
+        ):
             return False
     if search.get("max_price") and item["price"] and item["price"] > search["max_price"]:
         return False

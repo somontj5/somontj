@@ -1860,3 +1860,4 @@
 {"type": "confirmed_sale", "id": "15990825", "title": "Samsung Galaxy S25 Ultra", "price": 6600, "condition": "Б/у", "model_key": "samsung galaxy s25 ultra", "confirmed_at": "2026-09-22T04:05:28"}
 {"type": "confirmed_sale", "id": "16067710", "title": "Samsung Galaxy S10+", "price": 1000, "condition": "Б/у", "model_key": "samsung galaxy s10", "confirmed_at": "2026-09-22T04:10:34"}
 {"type": "confirmed_sale", "id": "80912128", "title": "Apple iPhone 12 pro, 128 gb, Gold", "price": 1999, "condition": "Б/у", "model_key": "apple iphone 12 pro", "confirmed_at": "2026-09-22T04:10:39"}
+{"type": "confirmed_sale", "id": "45158256", "title": "Huawei nova 15 max 8/256GB", "price": 2500, "condition": "Б/у", "model_key": "huawei nova 15 max", "confirmed_at": "2026-09-22T04:15:26"}

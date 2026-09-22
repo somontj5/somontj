@@ -2103,7 +2103,8 @@
     "title": "Huawei nova 15 max 8/256GB",
     "price": 2500,
     "condition": "Б/у",
-    "model_key": "huawei nova 15 max"
+    "model_key": "huawei nova 15 max",
+    "sold_checked": true
   },
   "72312885": {
     "logged": true
@@ -2146,7 +2147,8 @@
     "title": "Apple iPhone 7, 32 gb",
     "price": 650,
     "condition": "Б/у",
-    "model_key": "apple iphone 7"
+    "model_key": "apple iphone 7",
+    "sold_checked": true
   },
   "23814256": {
     "logged": true,
@@ -2155,7 +2157,8 @@
     "title": "Apple iPhone 14 Pro, 256 gb, Deep Purple",
     "price": 5490,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "33516128": {
     "logged": true,
@@ -2165,7 +2168,8 @@
     "title": "Apple iPhone 16 Pro, 128 gb, Black Titanium",
     "price": 8600,
     "condition": "Б/у",
-    "model_key": "apple iphone 16 pro"
+    "model_key": "apple iphone 16 pro",
+    "sold_checked": true
   },
   "32117256": {
     "logged": true,
@@ -2174,7 +2178,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Deep Blue",
     "price": 12600,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "73016512": {
     "logged": true,

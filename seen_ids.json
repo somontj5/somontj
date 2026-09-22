@@ -8782,7 +8782,8 @@
     "title": "Apple iPhone 7, 128 gb",
     "price": 599,
     "condition": "Б/у",
-    "model_key": "apple 7"
+    "model_key": "apple 7",
+    "sold_checked": true
   },
   "29814128": {
     "logged": true,
@@ -8792,7 +8793,8 @@
     "title": "Apple iPhone 14, 128 gb, Starlight",
     "price": 2200,
     "condition": "Б/у",
-    "model_key": "apple 14"
+    "model_key": "apple 14",
+    "sold_checked": true
   },
   "17180935": {
     "logged": true,
@@ -9323,5 +9325,24 @@
     "price": 5300,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "43361364": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17184336_apple-iphone-13-64-gb-blue/",
+    "title": "Apple iPhone 13, 64 gb, Blue",
+    "price": 3990,
+    "condition": "Б/у",
+    "model_key": "apple 13"
+  },
+  "18437264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17184372_apple-iphone-se-64-gb/",
+    "title": "Apple iPhone SE, 64 gb",
+    "price": 1799,
+    "condition": "Б/у",
+    "model_key": "apple se"
   }
 }

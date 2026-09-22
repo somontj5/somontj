@@ -5731,7 +5731,8 @@
     "title": "Samsung Galaxy A54 5G",
     "price": 1870,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a54 5g"
+    "model_key": "samsung galaxy a54 5g",
+    "sold_checked": true
   },
   "17167475": {
     "logged": true,
@@ -5740,7 +5741,8 @@
     "title": "Samsung A 06",
     "price": 1250,
     "condition": "Б/у",
-    "model_key": "samsung a 06"
+    "model_key": "samsung a 06",
+    "sold_checked": true
   },
   "79914256": {
     "logged": true,
@@ -5749,7 +5751,8 @@
     "title": "Apple iPhone 14 Pro Max, 256 gb",
     "price": 5699,
     "condition": "Б/у",
-    "model_key": "apple iphone 14 pro"
+    "model_key": "apple iphone 14 pro",
+    "sold_checked": true
   },
   "74613064": {
     "logged": true,
@@ -5758,7 +5761,8 @@
     "url": "https://m.somon.tj/adv/17167461_infinite-hot-30i-64g/",
     "title": "Infinite Hot 30i 64g",
     "price": 850,
-    "condition": "Б/у"
+    "condition": "Б/у",
+    "sold_checked": true
   },
   "72121264": {
     "logged": true,
@@ -5768,7 +5772,8 @@
     "title": "Apple iPhone 12, 64 gb, Product Red",
     "price": 1300,
     "condition": "Б/у",
-    "model_key": "apple iphone 12"
+    "model_key": "apple iphone 12",
+    "sold_checked": true
   },
   "31215128": {
     "logged": true,
@@ -8655,5 +8660,34 @@
     "price": 550,
     "condition": "Б/у",
     "model_key": "samsung a20"
+  },
+  "52225612": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17181855_samsung-s22ultra-256-12/",
+    "title": "Samsung Galaxy S22Ultra 256/12",
+    "price": 3899,
+    "condition": "Б/у",
+    "model_key": "samsung s22ultra"
+  },
+  "18224711": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17182247_xiaomi-redmi-note-11-pro/",
+    "title": "Xiaomi Redmi Note 11 Pro",
+    "price": 599,
+    "condition": "Б/у",
+    "model_key": "redmi note 11 pro"
+  },
+  "18223264": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17182232_apple-iphone-xs-max-64-gb-space-grey/",
+    "title": "Apple iPhone Xs Max, 64 gb, Space Grey",
+    "price": 1099,
+    "condition": "Б/у",
+    "model_key": "apple xs max"
   }
 }

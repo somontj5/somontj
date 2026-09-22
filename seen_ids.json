@@ -8962,7 +8962,8 @@
     "title": "Samsung Galaxy S22 ultra",
     "price": 3000,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "69205128": {
     "logged": true,
@@ -8971,7 +8972,8 @@
     "title": "Samsung Galaxy S20 5G 128gb",
     "price": 1000,
     "condition": "Б/у",
-    "model_key": "samsung s20 5g"
+    "model_key": "samsung s20 5g",
+    "sold_checked": true
   },
   "18277226": {
     "logged": true,
@@ -9457,5 +9459,23 @@
     "price": 699,
     "condition": "Б/у",
     "model_key": "apple 8 plus"
+  },
+  "10114256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17185101_apple-iphone-14-pro-256-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro, 256 gb, Deep Purple",
+    "price": 5990,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
+  },
+  "85067664": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17185067_apple-iphone-6s-64-gb/",
+    "title": "Apple iPhone 6s, 64 gb",
+    "price": 890,
+    "condition": "Б/у",
+    "model_key": "apple 6s"
   }
 }

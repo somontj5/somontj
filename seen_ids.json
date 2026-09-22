@@ -1567,7 +1567,8 @@
     "title": "Xiaomi 12",
     "price": 2500,
     "condition": "Б/у",
-    "model_key": "xiaomi 12"
+    "model_key": "xiaomi 12",
+    "sold_checked": true
   },
   "71112128": {
     "logged": true,
@@ -1576,7 +1577,8 @@
     "title": "Apple iPhone 12 mini, 128 gb, Blue",
     "price": 799,
     "condition": "Б/у",
-    "model_key": "apple iphone 12 mini"
+    "model_key": "apple iphone 12 mini",
+    "sold_checked": true
   },
   "51115128": {
     "logged": true,
@@ -1585,7 +1587,8 @@
     "title": "Apple iPhone 15 Plus, 128 gb, Black",
     "price": 5300,
     "condition": "Б/у",
-    "model_key": "apple iphone 15 plus"
+    "model_key": "apple iphone 15 plus",
+    "sold_checked": true
   },
   "71366126": {
     "logged": true,
@@ -1594,7 +1597,8 @@
     "title": "Xiaomi Poco F6",
     "price": 2200,
     "condition": "Б/у",
-    "model_key": "xiaomi poco f6"
+    "model_key": "xiaomi poco f6",
+    "sold_checked": true
   },
   "12290564": {
     "logged": true,
@@ -1603,7 +1607,8 @@
     "title": "Apple iPhone Xs, 64 gb, Silver",
     "price": 1399,
     "condition": "Б/у",
-    "model_key": "apple iphone xs"
+    "model_key": "apple iphone xs",
+    "sold_checked": true
   },
   "96364613": {
     "logged": true,

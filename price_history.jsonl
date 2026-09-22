@@ -1841,3 +1841,6 @@
 {"type": "confirmed_sale", "id": "91378512", "title": "Apple iPhone X, 512 gb, Silver", "price": 899, "condition": "Б/у", "model_key": null, "confirmed_at": "2026-09-22T03:35:23"}
 {"type": "confirmed_sale", "id": "17153137", "title": "Honor 600 Pro", "price": 7100, "condition": "Б/у", "model_key": null, "confirmed_at": "2026-09-22T03:35:25"}
 {"type": "confirmed_sale", "id": "14383730", "title": "Infinix Notе 30i", "price": 1199, "condition": "Б/у", "model_key": "infinix notе 30i", "confirmed_at": "2026-09-22T03:35:26"}
+{"type": "confirmed_sale", "id": "15118112", "title": "Xiaomi 12", "price": 2500, "condition": "Б/у", "model_key": "xiaomi 12", "confirmed_at": "2026-09-22T03:40:31"}
+{"type": "confirmed_sale", "id": "71112128", "title": "Apple iPhone 12 mini, 128 gb, Blue", "price": 799, "condition": "Б/у", "model_key": "apple iphone 12 mini", "confirmed_at": "2026-09-22T03:40:32"}
+{"type": "confirmed_sale", "id": "71366126", "title": "Xiaomi Poco F6", "price": 2200, "condition": "Б/у", "model_key": "xiaomi poco f6", "confirmed_at": "2026-09-22T03:40:35"}

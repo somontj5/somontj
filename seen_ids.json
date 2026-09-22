@@ -5524,7 +5524,8 @@
     "title": "Xiaomi Redmi Note 15 Pro",
     "price": 2650,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 15"
+    "model_key": "xiaomi redmi note 15",
+    "sold_checked": true
   },
   "17167132": {
     "logged": true,
@@ -5533,7 +5534,8 @@
     "title": "Телефон Xiaomi Redmi",
     "price": 5000,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi"
+    "model_key": "xiaomi redmi",
+    "sold_checked": true
   },
   "26517256": {
     "logged": true,
@@ -5543,7 +5545,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Deep Blue",
     "price": 8500,
     "condition": "Б/у",
-    "model_key": "apple iphone 17 pro"
+    "model_key": "apple iphone 17 pro",
+    "sold_checked": true
   },
   "50735128": {
     "logged": true,
@@ -5552,7 +5555,8 @@
     "title": "Samsung Galaxy A73 5G 128gb",
     "price": 2100,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a73 5g"
+    "model_key": "samsung galaxy a73 5g",
+    "sold_checked": true
   },
   "68411164": {
     "logged": true,
@@ -5561,7 +5565,8 @@
     "title": "Apple iPhone 11 Pro, 64 gb, Midnight Green",
     "price": 2000,
     "condition": "Б/у",
-    "model_key": "apple iphone 11 pro"
+    "model_key": "apple iphone 11 pro",
+    "sold_checked": true
   },
   "99256932": {
     "logged": true,

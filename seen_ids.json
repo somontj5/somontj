@@ -3592,7 +3592,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
     "price": 9850,
     "condition": "Б/у",
-    "model_key": "apple iphone 16 pro"
+    "model_key": "apple iphone 16 pro",
+    "sold_checked": true
   },
   "11313256": {
     "logged": true,
@@ -3601,7 +3602,8 @@
     "title": "Apple iPhone 13 Pro Max, 256 gb, Graphite",
     "price": 5500,
     "condition": "Б/у",
-    "model_key": "apple iphone 13 pro"
+    "model_key": "apple iphone 13 pro",
+    "sold_checked": true
   },
   "71632378": {
     "logged": true,
@@ -3610,7 +3612,8 @@
     "title": "Xiaomi Redmi Note 8",
     "price": 800,
     "condition": "Б/у",
-    "model_key": "xiaomi redmi note 8"
+    "model_key": "xiaomi redmi note 8",
+    "sold_checked": true
   },
   "16312017": {
     "logged": true,
@@ -3619,7 +3622,8 @@
     "title": "Samsung Galaxy A17",
     "price": 1800,
     "condition": "Б/у",
-    "model_key": "samsung galaxy a17"
+    "model_key": "samsung galaxy a17",
+    "sold_checked": true
   },
   "18612128": {
     "logged": true,
@@ -3628,7 +3632,8 @@
     "title": "Apple iPhone 12 pro, 128 gb, Pacific Blue",
     "price": 3100,
     "condition": "Б/у",
-    "model_key": "apple iphone 12 pro"
+    "model_key": "apple iphone 12 pro",
+    "sold_checked": true
   },
   "16318811": {
     "logged": true,

@@ -9986,7 +9986,8 @@
     "title": "Infinix GT 30 PRO",
     "price": 3000,
     "condition": "Б/у",
-    "model_key": "infinix gt 30 pro"
+    "model_key": "infinix gt 30 pro",
+    "sold_checked": true
   },
   "90070205": {
     "logged": true,
@@ -10474,5 +10475,14 @@
     "price": 2650,
     "condition": "Б/у",
     "model_key": "samsung s22"
+  },
+  "92630128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17192630_apple-iphone-xr-128-gb-black/",
+    "title": "Apple iPhone Xr, 128 gb, Black",
+    "price": 1346,
+    "condition": "Б/у",
+    "model_key": "apple xr"
   }
 }

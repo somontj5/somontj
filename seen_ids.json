@@ -9610,7 +9610,8 @@
     "title": "Samsung Galaxy A51",
     "price": 1150,
     "condition": "Б/у",
-    "model_key": "samsung a51"
+    "model_key": "samsung a51",
+    "sold_checked": true
   },
   "84715256": {
     "logged": true,
@@ -9619,7 +9620,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Blue Titanium",
     "price": 8500,
     "condition": "Б/у",
-    "model_key": "apple 15 pro max"
+    "model_key": "apple 15 pro max",
+    "sold_checked": true
   },
   "90013256": {
     "logged": true,
@@ -9628,7 +9630,8 @@
     "title": "Apple iPhone 13 Pro, 256 gb, Sierra Blue",
     "price": 4200,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "02713256": {
     "logged": true,
@@ -9637,7 +9640,8 @@
     "title": "Apple iPhone 13 Pro, 256 gb, Sierra Blue",
     "price": 4200,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "17186202": {
     "logged": true,
@@ -9646,7 +9650,8 @@
     "title": "Телефон Samsung",
     "price": 855,
     "condition": "Б/у",
-    "model_key": "samsung"
+    "model_key": "samsung",
+    "sold_checked": true
   },
   "86241732": {
     "logged": true,
@@ -10169,5 +10174,51 @@
     "price": 1750,
     "condition": "Б/у",
     "model_key": "samsung a53 duos"
+  },
+  "86114128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17190861_telefon-samsung-a14-128gb/",
+    "title": "Samsung Galaxy A14 128 gb",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "samsung a14"
+  },
+  "71908339": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17190833_redmi-9/",
+    "title": "Xiaomi Redmi 9, 64gb",
+    "price": 400,
+    "condition": "Б/у",
+    "model_key": "redmi 9"
+  },
+  "19080411": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17190804_telefon-redmi-not-11/",
+    "title": "Xiaomi Redmi Note 11",
+    "price": 1180,
+    "condition": "Б/у",
+    "model_key": "redmi note 11"
+  },
+  "71908159": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17190815_honor-x9d/",
+    "title": "Honor X9d",
+    "price": 3300,
+    "condition": "Б/у",
+    "model_key": "honor x9d"
+  },
+  "81612128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17190816_telefon-redmi-not-12-128gb/",
+    "title": "Xiaomi Redmi Note 12 128GB",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "redmi note 12"
   }
 }

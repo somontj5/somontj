@@ -9713,7 +9713,8 @@
     "title": "Samsung Galaxy S22 ulta",
     "price": 4300,
     "condition": "Б/у",
-    "model_key": "samsung s22 ulta"
+    "model_key": "samsung s22 ulta",
+    "sold_checked": true
   },
   "61811128": {
     "logged": true,
@@ -10288,5 +10289,15 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "xiaomi mi 13 lite"
+  },
+  "35656128": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17191356_samsung-galaxy-a56-128gb/",
+    "title": "Samsung Galaxy A56 128Gb",
+    "price": 3399,
+    "condition": "Б/у",
+    "model_key": "samsung a56"
   }
 }

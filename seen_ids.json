@@ -9167,7 +9167,8 @@
     "title": "Xiaomi Redmi Note 13",
     "price": 1550,
     "condition": "Б/у",
-    "model_key": "redmi note 13"
+    "model_key": "redmi note 13",
+    "sold_checked": true
   },
   "18343964": {
     "logged": true,
@@ -9705,5 +9706,14 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "apple x"
+  },
+  "20812256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17087208_apple-iphone-12-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 12 Pro Max, 256 gb, Silver",
+    "price": 4299,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro max"
   }
 }

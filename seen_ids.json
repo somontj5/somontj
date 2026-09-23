@@ -9186,7 +9186,8 @@
     "title": "Apple iPhone 15, 128 gb, Black",
     "price": 4170,
     "condition": "Б/у",
-    "model_key": "apple 15"
+    "model_key": "apple 15",
+    "sold_checked": true
   },
   "07568256": {
     "logged": true,
@@ -9695,5 +9696,14 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "samsung a07"
+  },
+  "04658664": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17046586_apple-iphone-x-64-gb-space-grey/",
+    "title": "Apple iPhone X, 64 gb, Space Grey",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "apple x"
   }
 }

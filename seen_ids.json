@@ -9747,5 +9747,15 @@
     "price": 5999,
     "condition": "Б/у",
     "model_key": "samsung s23 ultra 12"
+  },
+  "18763407": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17187634_samsung-a07/",
+    "title": "Samsung Galaxy А07",
+    "price": 1299,
+    "condition": "Б/у",
+    "model_key": "samsung а07"
   }
 }

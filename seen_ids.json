@@ -9436,7 +9436,8 @@
     "title": "Xiaomi Redmi Note 11 128gb",
     "price": 1260,
     "condition": "Б/у",
-    "model_key": "redmi note 11"
+    "model_key": "redmi note 11",
+    "sold_checked": true
   },
   "23122565": {
     "logged": true,
@@ -9963,5 +9964,14 @@
     "price": 3550,
     "condition": "Б/у",
     "model_key": "huawei honor x9d"
+  },
+  "18973154": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17189731_samsung-galaxy-a54/",
+    "title": "Samsung Galaxy A54 256 gb",
+    "price": 2150,
+    "condition": "Б/у",
+    "model_key": "samsung a54"
   }
 }

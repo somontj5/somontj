@@ -9221,7 +9221,8 @@
     "title": "Apple iPhone Xr, 128 gb, White",
     "price": 999,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "60011128": {
     "logged": true,
@@ -9242,7 +9243,8 @@
     "title": "Apple iPhone 11, 128 gb, Black",
     "price": 1500,
     "condition": "Б/у",
-    "model_key": "apple 11"
+    "model_key": "apple 11",
+    "sold_checked": true
   },
   "83561732": {
     "logged": true,
@@ -9797,5 +9799,14 @@
     "price": 4000,
     "condition": "Б/у",
     "model_key": "vivo iqoo 15r"
+  },
+  "75913128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17188759_apple-iphone-13-pro-max-128-gb-alpine-green/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Alpine Green",
+    "price": 5499,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
   }
 }

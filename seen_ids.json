@@ -9316,7 +9316,8 @@
     "title": "Samsung Galaxy A15 256Gb Vetnam 2sim 5G",
     "price": 1550,
     "condition": "Б/у",
-    "model_key": "samsung a15"
+    "model_key": "samsung a15",
+    "sold_checked": true
   },
   "38321285": {
     "logged": true,
@@ -9882,5 +9883,14 @@
     "price": 600,
     "condition": "Б/у",
     "model_key": "redmi note 11 pro"
+  },
+  "79256050": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16792560_infinix-note-50-pro/",
+    "title": "Infinix Note 50 pro",
+    "price": 2850,
+    "condition": "Б/у",
+    "model_key": "infinix note"
   }
 }

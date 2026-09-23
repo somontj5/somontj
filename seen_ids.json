@@ -9857,7 +9857,8 @@
     "title": "Apple iPhone 13 Pro Max, 128 gb, Alpine Green",
     "price": 5499,
     "condition": "Б/у",
-    "model_key": "apple 13 pro max"
+    "model_key": "apple 13 pro max",
+    "sold_checked": true
   },
   "28185323": {
     "logged": true,
@@ -10403,5 +10404,14 @@
     "price": 4300,
     "condition": "Б/у",
     "model_key": "apple 12 pro"
+  },
+  "33022256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17192330_samsung-galaxy-s22-ultra-256gb/",
+    "title": "Samsung Galaxy S22 Ultra 256Gb",
+    "price": 3570,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
   }
 }

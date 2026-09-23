@@ -10017,7 +10017,8 @@
     "title": "Apple iPhone Xr, 256 gb, Coral",
     "price": 1100,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "89274256": {
     "logged": true,

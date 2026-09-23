@@ -9795,7 +9795,8 @@
     "title": "Samsung Galaxy S23 Ultra 12/256",
     "price": 5999,
     "condition": "Б/у",
-    "model_key": "samsung s23 ultra 12"
+    "model_key": "samsung s23 ultra 12",
+    "sold_checked": true
   },
   "18763407": {
     "logged": true,
@@ -9805,7 +9806,8 @@
     "title": "Samsung Galaxy А07",
     "price": 1299,
     "condition": "Б/у",
-    "model_key": "samsung а07"
+    "model_key": "samsung а07",
+    "sold_checked": true
   },
   "18772317": {
     "logged": true,
@@ -10341,5 +10343,23 @@
     "price": 1499,
     "condition": "Б/у",
     "model_key": "apple 11 pro"
+  },
+  "19199010": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17191990_samsung-galaxy-s10/",
+    "title": "Samsung Galaxy S10, 128gb",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "samsung s10"
+  },
+  "91973205": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17191973_samsung-galaxy-s20-5g/",
+    "title": "Samsung Galaxy S20 5G, 128gb",
+    "price": 2399,
+    "condition": "Б/у",
+    "model_key": "samsung s20 5g"
   }
 }

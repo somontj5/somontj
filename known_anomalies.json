@@ -138,5 +138,9 @@
   "apple 17 pro max": {
     "first_seen": "2026-09-23",
     "ratio": 11.3
+  },
+  "apple xs": {
+    "first_seen": "2026-09-23",
+    "ratio": 2.5
   }
 }

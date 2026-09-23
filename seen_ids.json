@@ -9408,7 +9408,8 @@
     "title": "Samsung Galaxy А56 128/8Gb Vetnam 5G",
     "price": 3550,
     "condition": "Б/у",
-    "model_key": "samsung а56 vetnam 5g"
+    "model_key": "samsung а56 vetnam 5g",
+    "sold_checked": true
   },
   "31691164": {
     "logged": true,
@@ -9994,5 +9995,15 @@
     "price": 1100,
     "condition": "Б/у",
     "model_key": "apple xr"
+  },
+  "89274256": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17189274_apple-iphone-xs-256-gb-gold/",
+    "title": "Apple iPhone Xs, 256 gb, Gold",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "apple xs"
   }
 }

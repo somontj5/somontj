@@ -10271,9 +10271,22 @@
     "model_key": "samsung a12"
   },
   "07641164": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17190764_apple-iphone-11-64-gb-white/",
+    "title": "Apple iPhone 11, 64 gb, White",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple 11"
   },
   "19073413": {
-    "logged": true
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17190734_xiaomi-13-lite/",
+    "title": "Xiaomi Mi 13 lite",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "xiaomi mi 13 lite"
   }
 }

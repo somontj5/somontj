@@ -9284,7 +9284,8 @@
     "title": "Samsung Galaxy Note 20 Ultra 256Gb 2sim Vetnam",
     "price": 2800,
     "condition": "Б/у",
-    "model_key": "samsung note 20 ultra"
+    "model_key": "samsung note 20 ultra",
+    "sold_checked": true
   },
   "75222565": {
     "logged": true,
@@ -9325,7 +9326,8 @@
     "title": "Samsung Galaxy А32 128гб Vetnam 5G",
     "price": 1350,
     "condition": "Б/у",
-    "model_key": "samsung а32 128гб vetnam 5g"
+    "model_key": "samsung а32 128гб vetnam 5g",
+    "sold_checked": true
   },
   "02325625": {
     "logged": true,
@@ -9334,7 +9336,8 @@
     "title": "Samsung Galaxy S23, 256gb Vetnam 2sim 5G",
     "price": 3950,
     "condition": "Б/у",
-    "model_key": "samsung s23"
+    "model_key": "samsung s23",
+    "sold_checked": true
   },
   "61412825": {
     "logged": true,
@@ -9849,5 +9852,35 @@
     "price": 2500,
     "condition": "Б/у",
     "model_key": "infinix gt 30 pro"
+  },
+  "86997512": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17186997_apple-iphone-x-512-gb-space-grey/",
+    "title": "Apple iPhone X, 512 gb, Space Grey",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "apple x"
+  },
+  "89459215": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17189459_samsung-galaxy-s21-5g/",
+    "title": "Samsung Galaxy S21 5G",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "samsung s21 5g"
+  },
+  "18879611": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17188796_redmi-not-11-pro/",
+    "title": "Xiaomi Redmi Note 11 Pro",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "redmi note 11 pro"
   }
 }

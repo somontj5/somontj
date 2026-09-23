@@ -9388,7 +9388,8 @@
     "title": "Apple iPhone 13, 64 gb, Blue",
     "price": 3990,
     "condition": "Б/у",
-    "model_key": "apple 13"
+    "model_key": "apple 13",
+    "sold_checked": true
   },
   "18437264": {
     "logged": true,
@@ -9444,7 +9445,8 @@
     "title": "Samsung Galaxy S23 Ultra 12/256Gb Cоrea 5G",
     "price": 4250,
     "condition": "Б/у",
-    "model_key": "samsung s23 ultra cоrea 5g"
+    "model_key": "samsung s23 ultra cоrea 5g",
+    "sold_checked": true
   },
   "18468713": {
     "logged": true,
@@ -9952,5 +9954,14 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "samsung note 20 5g"
+  },
+  "71897929": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17189792_huawei-honor-x9d/",
+    "title": "Huawei Honor X9d",
+    "price": 3550,
+    "condition": "Б/у",
+    "model_key": "huawei honor x9d"
   }
 }

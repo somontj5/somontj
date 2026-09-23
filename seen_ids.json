@@ -9293,7 +9293,8 @@
     "title": "Samsung Galaxy S22 Ultra 256gb Carea 5G",
     "price": 3560,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "53812825": {
     "logged": true,
@@ -9303,7 +9304,8 @@
     "title": "Samsung Galaxy А53 8/128Gb Vetnam 2sim 5G",
     "price": 1750,
     "condition": "Б/у",
-    "model_key": "samsung а53 vetnam 2sim 5g"
+    "model_key": "samsung а53 vetnam 2sim 5g",
+    "sold_checked": true
   },
   "01525625": {
     "logged": true,
@@ -9368,7 +9370,8 @@
     "title": "Apple iPhone 14 Pro Max, 512 gb, Deep Purple",
     "price": 5300,
     "condition": "Б/у",
-    "model_key": "apple 14 pro max"
+    "model_key": "apple 14 pro max",
+    "sold_checked": true
   },
   "43361364": {
     "logged": true,
@@ -9808,5 +9811,32 @@
     "price": 5499,
     "condition": "Б/у",
     "model_key": "apple 13 pro max"
+  },
+  "28185323": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15281853_samsung-galaxy-s23-ultra/",
+    "title": "Samsung Galaxy S23 ultra",
+    "price": 6450,
+    "condition": "Б/у",
+    "model_key": "samsung s23 ultra"
+  },
+  "69890657": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16989065_tecno-pova-7-neo/",
+    "title": "Tecno Pova 7 Neo",
+    "price": 2550,
+    "condition": "Б/у",
+    "model_key": "tecno pova 7 neo"
+  },
+  "02212225": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15022122_samsung-galaxy-a25/",
+    "title": "Samsung Galaxy A25",
+    "price": 1650,
+    "condition": "Б/у",
+    "model_key": "samsung a25"
   }
 }

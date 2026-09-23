@@ -9417,7 +9417,8 @@
     "title": "Xiaomi Redmi Note 11 64gb Glоbal Version",
     "price": 1280,
     "condition": "Б/у",
-    "model_key": "redmi note 11"
+    "model_key": "redmi note 11",
+    "sold_checked": true
   },
   "32731164": {
     "logged": true,
@@ -9427,7 +9428,8 @@
     "title": "Xiaomi Redmi 11 Note 64gb Glabal Version",
     "price": 1200,
     "condition": "Б/у",
-    "model_key": "redmi 11 note"
+    "model_key": "redmi 11 note",
+    "sold_checked": true
   },
   "04411128": {
     "logged": true,
@@ -9973,5 +9975,24 @@
     "price": 2150,
     "condition": "Б/у",
     "model_key": "samsung a54"
+  },
+  "71896956": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17189695_huawei-honor-x6b/",
+    "title": "Huawei honor X6b",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "huawei honor x6b"
+  },
+  "90286256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17190286_apple-iphone-xr-256-gb-coral/",
+    "title": "Apple iPhone Xr, 256 gb, Coral",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "apple xr"
   }
 }

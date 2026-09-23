@@ -9569,7 +9569,8 @@
     "title": "Samsung Galaxy J1 Mini",
     "price": 150,
     "condition": "Б/у",
-    "model_key": "samsung j1 mini"
+    "model_key": "samsung j1 mini",
+    "sold_checked": true
   },
   "97610324": {
     "logged": true,
@@ -10109,9 +10110,22 @@
     "model_key": "samsung s23 duos"
   },
   "20122562": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17190649_samsung-galaxy-not-20-ultra-12-256gb-2sim/",
+    "title": "Samsung Galaxy Notе 20 Ultra 12/256Gb 2sim",
+    "price": 2999,
+    "condition": "Б/у",
+    "model_key": "samsung notе 20 ultra 2sim"
   },
   "19064005": {
-    "logged": true
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17190640_samsung-galaxy-a05s/",
+    "title": "Samsung Galaxy A05s, 128gb",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "samsung a05s"
   }
 }

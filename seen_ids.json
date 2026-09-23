@@ -9940,7 +9940,8 @@
     "title": "Infinix Note 50 pro",
     "price": 2850,
     "condition": "Б/у",
-    "model_key": "infinix note"
+    "model_key": "infinix note",
+    "sold_checked": true
   },
   "71817256": {
     "logged": true,
@@ -10484,5 +10485,14 @@
     "price": 1346,
     "condition": "Б/у",
     "model_key": "apple xr"
+  },
+  "91708256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17191708_apple-iphone-xs-256-gb-silver/",
+    "title": "Apple iPhone Xs, 256 gb, Silver",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "apple xs"
   }
 }

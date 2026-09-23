@@ -9397,7 +9397,8 @@
     "title": "Apple iPhone SE, 64 gb",
     "price": 1799,
     "condition": "Б/у",
-    "model_key": "apple se"
+    "model_key": "apple se",
+    "sold_checked": true
   },
   "15612885": {
     "logged": true,

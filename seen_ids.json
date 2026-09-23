@@ -9744,7 +9744,8 @@
     "title": "Samsung galaxy s23 ultra",
     "price": 5990,
     "condition": "Б/у",
-    "model_key": "samsung s23 ultra"
+    "model_key": "samsung s23 ultra",
+    "sold_checked": true
   },
   "02312256": {
     "logged": true,
@@ -9838,5 +9839,15 @@
     "price": 1650,
     "condition": "Б/у",
     "model_key": "samsung a25"
+  },
+  "18942530": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17189425_infinix-gt-30-pro/",
+    "title": "Infinix GT 30 pro",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "infinix gt 30 pro"
   }
 }

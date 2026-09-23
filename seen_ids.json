@@ -9919,7 +9919,8 @@
     "title": "Samsung Galaxy S21 5G",
     "price": 1600,
     "condition": "Б/у",
-    "model_key": "samsung s21 5g"
+    "model_key": "samsung s21 5g",
+    "sold_checked": true
   },
   "18879611": {
     "logged": true,
@@ -10463,5 +10464,15 @@
     "price": 1260,
     "condition": "Б/у",
     "model_key": "redmi note 12 128гб"
+  },
+  "19259722": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17192597_samsung-s22/",
+    "title": "Samsung Galaxy S22",
+    "price": 2650,
+    "condition": "Б/у",
+    "model_key": "samsung s22"
   }
 }

@@ -9459,7 +9459,8 @@
     "title": "Oneplus 13",
     "price": 6400,
     "condition": "Б/у",
-    "model_key": "oneplus 13"
+    "model_key": "oneplus 13",
+    "sold_checked": true
   },
   "82112128": {
     "logged": true,
@@ -10005,5 +10006,14 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "apple xs"
+  },
+  "05611164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17190561_apple-iphone-11-64-gb-white/",
+    "title": "Apple iPhone 11, 64 gb, White",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple 11"
   }
 }

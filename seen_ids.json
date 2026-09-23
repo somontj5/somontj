@@ -9470,7 +9470,8 @@
     "title": "Apple iPhone 12 Pro Max, 128 gb, Gold",
     "price": 3800,
     "condition": "Б/у",
-    "model_key": "apple 12 pro max"
+    "model_key": "apple 12 pro max",
+    "sold_checked": true
   },
   "18478016": {
     "logged": true,
@@ -9519,7 +9520,8 @@
     "title": "Apple iPhone 14 Pro, 256 gb, Deep Purple",
     "price": 5990,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "85067664": {
     "logged": true,
@@ -9528,7 +9530,8 @@
     "title": "Apple iPhone 6s, 64 gb",
     "price": 890,
     "condition": "Б/у",
-    "model_key": "apple 6s"
+    "model_key": "apple 6s",
+    "sold_checked": true
   },
   "17185118": {
     "logged": true,
@@ -9537,7 +9540,8 @@
     "title": "Мобильный телефон",
     "price": 150,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "18513105": {
     "logged": true,
@@ -9546,7 +9550,8 @@
     "title": "Samsung Galaxy A05s",
     "price": 999,
     "condition": "Б/у",
-    "model_key": "samsung a05s"
+    "model_key": "samsung a05s",
+    "sold_checked": true
   },
   "65935831": {
     "logged": true,
@@ -10054,5 +10059,59 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "redmi note 12"
+  },
+  "90521225": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17190521_samsung-a22-5g/",
+    "title": "Samsung Galaxy A22 5G",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "samsung a22 5g"
+  },
+  "19059513": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17190595_telefon-samsung-a13/",
+    "title": "Samsung Galaxy A13, 32gb",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "samsung a13"
+  },
+  "70124128": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17190701_telefon-samsung-a24-128gb/",
+    "title": "Samsung Galaxy А24, 128gb",
+    "price": 1650,
+    "condition": "Б/у",
+    "model_key": "samsung а24"
+  },
+  "90685256": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17190685_telefon-zur-nagz-pamiatash-256gb-chiotkii-kor-mekunad-iagonkhel-chakkash-nest/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 2999,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
+  },
+  "77238128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17190677_samsung-galaxy-s23-8-128gb-duos-vietnam/",
+    "title": "Samsung Galaxy S23 8/128Gb Duos Vietnam",
+    "price": 4350,
+    "condition": "Б/у",
+    "model_key": "samsung s23 duos"
+  },
+  "20122562": {
+    "logged": true
+  },
+  "19064005": {
+    "logged": true
   }
 }

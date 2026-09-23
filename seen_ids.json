@@ -9816,7 +9816,8 @@
     "title": "Samsung Galaxy А17",
     "price": 2299,
     "condition": "Б/у",
-    "model_key": "samsung а17"
+    "model_key": "samsung а17",
+    "sold_checked": true
   },
   "18818252": {
     "logged": true,
@@ -9826,7 +9827,8 @@
     "title": "Samsung Galaxy A52",
     "price": 1000,
     "condition": "Б/у",
-    "model_key": "samsung a52"
+    "model_key": "samsung a52",
+    "sold_checked": true
   },
   "15316256": {
     "logged": true,
@@ -9835,7 +9837,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
     "price": 10300,
     "condition": "Б/у",
-    "model_key": "apple 16 pro max"
+    "model_key": "apple 16 pro max",
+    "sold_checked": true
   },
   "15868915": {
     "logged": true,
@@ -10361,5 +10364,33 @@
     "price": 2399,
     "condition": "Б/у",
     "model_key": "samsung s20 5g"
+  },
+  "94514256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/13389945_apple-iphone-14-pro-256-gb-silver/",
+    "title": "Apple iPhone 14 Pro, 256 gb, Silver",
+    "price": 5550,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
+  },
+  "86115256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/12986861_apple-iphone-15-pro-max-256-gb-blue-titanium/",
+    "title": "Apple iPhone 15 Pro Max, 256 gb, Blue Titanium",
+    "price": 8000,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro max"
+  },
+  "68015256": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/12893680_apple-iphone-15-pro-256-gb-natural-titanium/",
+    "title": "Apple iPhone 15 Pro, 128 gb, Natural Titanium",
+    "price": 5500,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro"
   }
 }

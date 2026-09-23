@@ -10167,7 +10167,8 @@
     "title": "Samsung Galaxy A32 128Gb Duos Vietnam",
     "price": 1300,
     "condition": "Б/у",
-    "model_key": "samsung a32"
+    "model_key": "samsung a32",
+    "sold_checked": true
   },
   "19077610": {
     "logged": true,

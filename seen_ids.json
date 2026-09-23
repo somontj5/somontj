@@ -9667,7 +9667,8 @@
     "title": "Samsung galaxy S22 Ultra",
     "price": 3000,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "65251264": {
     "logged": true,
@@ -9942,5 +9943,14 @@
     "price": 3000,
     "condition": "Б/у",
     "model_key": "infinix gt 30 pro"
+  },
+  "90070205": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17190070_samsung-galaxy-note-20-5g/",
+    "title": "Samsung Galaxy Note 20 5G",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "samsung note 20 5g"
   }
 }

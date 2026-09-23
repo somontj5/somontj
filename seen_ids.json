@@ -9898,7 +9898,8 @@
     "title": "Infinix GT 30 pro",
     "price": 2500,
     "condition": "Б/у",
-    "model_key": "infinix gt 30 pro"
+    "model_key": "infinix gt 30 pro",
+    "sold_checked": true
   },
   "86997512": {
     "logged": true,
@@ -9928,7 +9929,8 @@
     "title": "Xiaomi Redmi Note 11 Pro",
     "price": 600,
     "condition": "Б/у",
-    "model_key": "redmi note 11 pro"
+    "model_key": "redmi note 11 pro",
+    "sold_checked": true
   },
   "79256050": {
     "logged": true,
@@ -10443,5 +10445,23 @@
     "price": 740,
     "condition": "Б/у",
     "model_key": "redmi 10а"
+  },
+  "83145256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17192483_redmi-not-14-pro-5g-256gb/",
+    "title": "Xiaomi Redmi Notе 14 Pro+5G",
+    "price": 3100,
+    "condition": "Б/у",
+    "model_key": "redmi notе 14 pro plus5g"
+  },
+  "41012128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17192410_telefon-redmi-not-12-128gb/",
+    "title": "Xiaomi Redmi Note 12 128гб",
+    "price": 1260,
+    "condition": "Б/у",
+    "model_key": "redmi note 12 128гб"
   }
 }

@@ -9950,7 +9950,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
     "price": 12999,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "65917256": {
     "logged": true,
@@ -10055,7 +10056,8 @@
     "title": "Apple iPhone 11, 64 gb, White",
     "price": 1500,
     "condition": "Б/у",
-    "model_key": "apple 11"
+    "model_key": "apple 11",
+    "sold_checked": true
   },
   "68378952": {
     "logged": true,
@@ -10504,5 +10506,23 @@
     "price": 4199,
     "condition": "Б/у",
     "model_key": "samsung s23 fe"
+  },
+  "89121256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17192891_samsung-s21-256gb/",
+    "title": "Samsung Galaxy S21, 256gb",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "samsung s21"
+  },
+  "17192805": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17192805_furushi/",
+    "title": "Samsung Galaxy A16",
+    "price": 1050,
+    "condition": "Б/у",
+    "model_key": "samsung a16"
   }
 }

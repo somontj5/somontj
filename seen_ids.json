@@ -9209,7 +9209,8 @@
     "title": "Apple iPhone 17 Pro Max, 64 gb, Silver копия",
     "price": 1150,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "83607128": {
     "logged": true,
@@ -9736,5 +9737,15 @@
     "price": 5990,
     "condition": "Б/у",
     "model_key": "samsung s23 ultra"
+  },
+  "02312256": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17187570_samsung-galaxy-s23-ultra-12-256/",
+    "title": "Samsung Galaxy S23 Ultra 12/256",
+    "price": 5999,
+    "condition": "Б/у",
+    "model_key": "samsung s23 ultra 12"
   }
 }

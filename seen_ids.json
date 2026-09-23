@@ -9753,7 +9753,8 @@
     "title": "Apple iPhone X, 64 gb, Space Grey",
     "price": 1000,
     "condition": "Б/у",
-    "model_key": "apple x"
+    "model_key": "apple x",
+    "sold_checked": true
   },
   "20812256": {
     "logged": true,
@@ -10319,5 +10320,15 @@
     "price": 2700,
     "condition": "Б/у",
     "model_key": "apple 12 pro"
+  },
+  "10381264": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17191038_apple-iphone-12-64-gb-black/",
+    "title": "Apple iPhone 12, 64 gb, Black",
+    "price": 1900,
+    "condition": "Б/у",
+    "model_key": "apple 12"
   }
 }

@@ -9876,7 +9876,8 @@
     "title": "Tecno Pova 7 Neo",
     "price": 2550,
     "condition": "Б/у",
-    "model_key": "tecno pova 7 neo"
+    "model_key": "tecno pova 7 neo",
+    "sold_checked": true
   },
   "02212225": {
     "logged": true,
@@ -9885,7 +9886,8 @@
     "title": "Samsung Galaxy A25",
     "price": 1650,
     "condition": "Б/у",
-    "model_key": "samsung a25"
+    "model_key": "samsung a25",
+    "sold_checked": true
   },
   "18942530": {
     "logged": true,
@@ -10413,5 +10415,23 @@
     "price": 3570,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra"
+  },
+  "19237613": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17192376_telefon-samsung-a13/",
+    "title": "Samsung Galaxy А13",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "samsung а13"
+  },
+  "23461164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17192346_telefon-redmi-not-11-64gb/",
+    "title": "Xiaomi Redmi Note 11",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "redmi note 11"
   }
 }

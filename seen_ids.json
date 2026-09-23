@@ -9727,5 +9727,14 @@
     "condition": "Б/у",
     "model_key": "samsung s22 ultra",
     "sold_checked": true
+  },
+  "18720123": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17187201_samsung-s23-ultra/",
+    "title": "Samsung galaxy s23 ultra",
+    "price": 5990,
+    "condition": "Б/у",
+    "model_key": "samsung s23 ultra"
   }
 }

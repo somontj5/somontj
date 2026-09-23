@@ -9489,7 +9489,8 @@
     "title": "Apple iPhone 11, 64 gb, Purple",
     "price": 1333,
     "condition": "Б/у",
-    "model_key": "apple 11"
+    "model_key": "apple 11",
+    "sold_checked": true
   },
   "50261164": {
     "logged": true,
@@ -9508,7 +9509,8 @@
     "title": "Apple iPhone 8 plus, 64 gb, Gold",
     "price": 699,
     "condition": "Б/у",
-    "model_key": "apple 8 plus"
+    "model_key": "apple 8 plus",
+    "sold_checked": true
   },
   "10114256": {
     "logged": true,
@@ -10015,5 +10017,42 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "apple 11"
+  },
+  "68378952": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16683789_samsung-galaxy-a52/",
+    "title": "Samsung Galaxy A52",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "samsung a52"
+  },
+  "67014565": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16367014_samsung-galaxy-a56-5g/",
+    "title": "Samsung Galaxy A56 5G",
+    "price": 3300,
+    "condition": "Б/у",
+    "model_key": "samsung a56 5g"
+  },
+  "42212256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17190624_samsung-galaxy-s22-ultra-12-256gb/",
+    "title": "Samsung Galaxy S22 Ultra 12/256Gb",
+    "price": 3590,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
+  },
+  "19057112": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17190571_xiaomi-redmi-note-12/",
+    "title": "Xiaomi Redmi Note 12, 128gb",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "redmi note 12"
   }
 }

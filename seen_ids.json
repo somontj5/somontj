@@ -9867,7 +9867,8 @@
     "title": "Samsung Galaxy S23 ultra",
     "price": 6450,
     "condition": "Б/у",
-    "model_key": "samsung s23 ultra"
+    "model_key": "samsung s23 ultra",
+    "sold_checked": true
   },
   "69890657": {
     "logged": true,
@@ -10433,5 +10434,14 @@
     "price": 1100,
     "condition": "Б/у",
     "model_key": "redmi note 11"
+  },
+  "23581032": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17192358_telefon-redmi-10a-32gb/",
+    "title": "Xiaomi Redmi 10А 32gb",
+    "price": 740,
+    "condition": "Б/у",
+    "model_key": "redmi 10а"
   }
 }

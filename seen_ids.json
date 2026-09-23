@@ -9970,7 +9970,8 @@
     "title": "Samsung Galaxy A16",
     "price": 1750,
     "condition": "Б/у",
-    "model_key": "samsung a16"
+    "model_key": "samsung a16",
+    "sold_checked": true
   },
   "18982723": {
     "logged": true,
@@ -10524,5 +10525,14 @@
     "price": 1050,
     "condition": "Б/у",
     "model_key": "samsung a16"
+  },
+  "24613128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17193246_apple-iphone-13-pro-128-gb-graphite/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Graphite",
+    "price": 4800,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

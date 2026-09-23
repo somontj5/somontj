@@ -8589,7 +8589,8 @@
     "title": "Asus Rog Phone 5",
     "price": 2500,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "07228256": {
     "logged": true,

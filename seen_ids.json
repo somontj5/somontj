@@ -9763,7 +9763,8 @@
     "title": "Apple iPhone 12 Pro Max, 256 gb, Silver",
     "price": 4299,
     "condition": "Б/у",
-    "model_key": "apple 12 pro max"
+    "model_key": "apple 12 pro max",
+    "sold_checked": true
   },
   "52212256": {
     "logged": true,
@@ -10330,5 +10331,15 @@
     "price": 1900,
     "condition": "Б/у",
     "model_key": "apple 12"
+  },
+  "18961164": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17191896_apple-iphone-11-pro-64-gb-silver/",
+    "title": "Apple iPhone 11 Pro, 64 gb, Silver",
+    "price": 1499,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro"
   }
 }

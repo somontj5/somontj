@@ -9671,7 +9671,8 @@
     "title": "Samsung Galaxy S20",
     "price": 849,
     "condition": "Б/у",
-    "model_key": "samsung s20"
+    "model_key": "samsung s20",
+    "sold_checked": true
   },
   "71862235": {
     "logged": true,
@@ -9681,7 +9682,8 @@
     "title": "Samsung Galaxy Z-fold 5",
     "price": 5800,
     "condition": "Б/у",
-    "model_key": "samsung z fold 5"
+    "model_key": "samsung z fold 5",
+    "sold_checked": true
   },
   "86409256": {
     "logged": true,
@@ -9720,7 +9722,8 @@
     "title": "Apple iPhone 11, 128 gb, Purple",
     "price": 2300,
     "condition": "Б/у",
-    "model_key": "apple 11"
+    "model_key": "apple 11",
+    "sold_checked": true
   },
   "68508256": {
     "logged": true,
@@ -9729,7 +9732,8 @@
     "title": "Realme notе 50 8/256",
     "price": 999,
     "condition": "Б/у",
-    "model_key": "realme notе"
+    "model_key": "realme notе",
+    "sold_checked": true
   },
   "94769007": {
     "logged": true,
@@ -10220,5 +10224,56 @@
     "price": 1250,
     "condition": "Б/у",
     "model_key": "redmi note 12"
+  },
+  "91915128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17190919_telefon-redmi-15s-128gb/",
+    "title": "Xiaomi Redmi 15С 128гб",
+    "price": 1399,
+    "condition": "Б/у",
+    "model_key": "redmi 15с 128гб"
+  },
+  "19087856": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17190878_telefon-samsung-a56/",
+    "title": "Samsung Galaxy A56",
+    "price": 3100,
+    "condition": "Б/у",
+    "model_key": "samsung a56"
+  },
+  "17190897": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17190897_nav/",
+    "title": "Телефон Lingbo",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "71286500": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17190900_honor-x7d-128gb-6500mah/",
+    "title": "Honor X7D 128Gb 6500mah",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "honor x7d"
+  },
+  "18698112": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17186981_samsung-a12/",
+    "title": "Samsung Galaxy A12",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "samsung a12"
+  },
+  "07641164": {
+    "logged": true
+  },
+  "19073413": {
+    "logged": true
   }
 }

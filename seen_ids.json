@@ -9757,5 +9757,14 @@
     "price": 1299,
     "condition": "Б/у",
     "model_key": "samsung а07"
+  },
+  "18772317": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17187723_samsung-a17/",
+    "title": "Samsung Galaxy А17",
+    "price": 2299,
+    "condition": "Б/у",
+    "model_key": "samsung а17"
   }
 }

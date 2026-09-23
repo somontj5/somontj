@@ -9347,7 +9347,8 @@
     "title": "Samsung Galaxy А14, 128Gb Vetnam 2sim 5G",
     "price": 1250,
     "condition": "Б/у",
-    "model_key": "samsung а14"
+    "model_key": "samsung а14",
+    "sold_checked": true
   },
   "06912128": {
     "logged": true,
@@ -9921,5 +9922,24 @@
     "price": 1750,
     "condition": "Б/у",
     "model_key": "samsung a16"
+  },
+  "18982723": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17189827_galaxy-s23-ultra/",
+    "title": "Samsung Galaxy S23 Ultra",
+    "price": 5800,
+    "condition": "Б/у",
+    "model_key": "samsung s23 ultra"
+  },
+  "18960830": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17189608_infinix-gt-30-pro/",
+    "title": "Infinix GT 30 PRO",
+    "price": 3000,
+    "condition": "Б/у",
+    "model_key": "infinix gt 30 pro"
   }
 }

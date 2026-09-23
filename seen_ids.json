@@ -10001,7 +10001,8 @@
     "title": "Samsung Galaxy Note 20 5G",
     "price": 1500,
     "condition": "Б/у",
-    "model_key": "samsung note 20 5g"
+    "model_key": "samsung note 20 5g",
+    "sold_checked": true
   },
   "71897929": {
     "logged": true,
@@ -10535,5 +10536,14 @@
     "price": 4800,
     "condition": "Б/у",
     "model_key": "apple 13 pro"
+  },
+  "18879523": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17188795_samsung-galaxy-s23/",
+    "title": "Samsung galaxy s23",
+    "price": 2600,
+    "condition": "Б/у",
+    "model_key": "samsung s23"
   }
 }

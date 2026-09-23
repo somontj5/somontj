@@ -10310,5 +10310,14 @@
     "price": 1280,
     "condition": "Б/у",
     "model_key": "redmi note 12"
+  },
+  "68712128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17191687_apple-iphone-12-pro-128-gb-pacific-blue/",
+    "title": "Apple iPhone 12 pro, 128 gb, Pacific Blue",
+    "price": 2700,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro"
   }
 }

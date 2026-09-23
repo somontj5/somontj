@@ -10011,7 +10011,8 @@
     "title": "Huawei Honor X9d",
     "price": 3550,
     "condition": "Б/у",
-    "model_key": "huawei honor x9d"
+    "model_key": "huawei honor x9d",
+    "sold_checked": true
   },
   "18973154": {
     "logged": true,
@@ -10545,5 +10546,15 @@
     "price": 2600,
     "condition": "Б/у",
     "model_key": "samsung s23"
+  },
+  "21718128": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17193621_huawei-nova-y71-8-128gb/",
+    "title": "Huawei Nova Y71 8/128gb",
+    "price": 599,
+    "condition": "Б/у",
+    "model_key": "huawei nova y71"
   }
 }

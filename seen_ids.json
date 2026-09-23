@@ -9560,7 +9560,8 @@
     "title": "Samsung Galaxy J1 mini prime",
     "price": 200,
     "condition": "Б/у",
-    "model_key": "samsung j1 mini prime"
+    "model_key": "samsung j1 mini prime",
+    "sold_checked": true
   },
   "60961701": {
     "logged": true,
@@ -9579,7 +9580,8 @@
     "title": "Xiaomi Redmi 10A 32Gb 4G",
     "price": 740,
     "condition": "Б/у",
-    "model_key": "redmi 10a"
+    "model_key": "redmi 10a",
+    "sold_checked": true
   },
   "50313128": {
     "logged": true,
@@ -9598,7 +9600,8 @@
     "title": "Samsung Galaxy S23 Ultra 256gb Carea 2sim",
     "price": 3650,
     "condition": "Б/у",
-    "model_key": "samsung s23 ultra"
+    "model_key": "samsung s23 ultra",
+    "sold_checked": true
   },
   "83924512": {
     "logged": true,
@@ -10127,5 +10130,44 @@
     "price": 950,
     "condition": "Б/у",
     "model_key": "samsung a05s"
+  },
+  "07875164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17190787_telefon-samsung-a51-64gb/",
+    "title": "Samsung Galaxy A51 64 gb",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "samsung a51"
+  },
+  "75832128": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17190758_samsung-galaxy-a32-128gb-duos-vietnam/",
+    "title": "Samsung Galaxy A32 128Gb Duos Vietnam",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "samsung a32"
+  },
+  "19077610": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17190776_telefon-redmi-10a/",
+    "title": "Xiaomi Redmi 10А",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "redmi 10а"
+  },
+  "32538128": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17190732_samsung-galaxy-a53-8-128gb-duos-vietnam/",
+    "title": "Samsung Galaxy A53 8/128Gb Duos Vietnam",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "samsung a53 duos"
   }
 }

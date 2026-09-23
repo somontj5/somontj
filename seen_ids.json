@@ -9365,7 +9365,8 @@
     "title": "Xiaomi Redmi Note 11 64gb Glabal Version 5G",
     "price": 1100,
     "condition": "Б/у",
-    "model_key": "redmi note 11"
+    "model_key": "redmi note 11",
+    "sold_checked": true
   },
   "80214512": {
     "logged": true,
@@ -9892,5 +9893,23 @@
     "price": 2850,
     "condition": "Б/у",
     "model_key": "infinix note"
+  },
+  "71817256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17189718_apple-iphone-17-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
+    "price": 12999,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
+  },
+  "65917256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17189659_apple-iphone-17-pro-max-256-gb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
+    "price": 9200,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
   }
 }

@@ -9847,7 +9847,8 @@
     "title": "Vivo Iqoo 15R",
     "price": 4000,
     "condition": "Б/у",
-    "model_key": "vivo iqoo 15r"
+    "model_key": "vivo iqoo 15r",
+    "sold_checked": true
   },
   "75913128": {
     "logged": true,
@@ -10393,5 +10394,14 @@
     "price": 5500,
     "condition": "Б/у",
     "model_key": "apple 15 pro"
+  },
+  "24612256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17192246_apple-iphone-12-pro-256-gb-pacific-blue/",
+    "title": "Apple iPhone 12 pro, 256 gb, Pacific Blue",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro"
   }
 }

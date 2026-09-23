@@ -10021,7 +10021,8 @@
     "title": "Samsung Galaxy A54 256 gb",
     "price": 2150,
     "condition": "Б/у",
-    "model_key": "samsung a54"
+    "model_key": "samsung a54",
+    "sold_checked": true
   },
   "71896956": {
     "logged": true,
@@ -10031,7 +10032,8 @@
     "title": "Huawei honor X6b",
     "price": 1200,
     "condition": "Б/у",
-    "model_key": "huawei honor x6b"
+    "model_key": "huawei honor x6b",
+    "sold_checked": true
   },
   "90286256": {
     "logged": true,
@@ -10556,5 +10558,24 @@
     "price": 599,
     "condition": "Б/у",
     "model_key": "huawei nova y71"
+  },
+  "19381522": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17193815_samsung-galaxy-s22-ultra/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
+  },
+  "36996128": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17193699_tel-zur-iagon-aib-nadorad-pamiat-6-128/",
+    "title": "Телефон Vivo",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "vivo"
   }
 }

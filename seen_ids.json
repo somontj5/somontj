@@ -9743,7 +9743,8 @@
     "title": "Samsung Galaxy A07",
     "price": 1800,
     "condition": "Б/у",
-    "model_key": "samsung a07"
+    "model_key": "samsung a07",
+    "sold_checked": true
   },
   "04658664": {
     "logged": true,
@@ -10299,5 +10300,14 @@
     "price": 3399,
     "condition": "Б/у",
     "model_key": "samsung a56"
+  },
+  "42312128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17191423_xiaomi-redmi-not-12-128gb/",
+    "title": "Xiaomi Redmi Note 12 128Gb",
+    "price": 1280,
+    "condition": "Б/у",
+    "model_key": "redmi note 12"
   }
 }

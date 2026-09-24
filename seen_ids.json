@@ -10513,7 +10513,8 @@
     "title": "Xiaomi Redmi Notе 14 Pro+5G",
     "price": 3100,
     "condition": "Б/у",
-    "model_key": "redmi notе 14 pro plus5g"
+    "model_key": "redmi notе 14 pro plus5g",
+    "sold_checked": true
   },
   "41012128": {
     "logged": true,
@@ -10533,7 +10534,8 @@
     "title": "Samsung Galaxy S22",
     "price": 2650,
     "condition": "Б/у",
-    "model_key": "samsung s22"
+    "model_key": "samsung s22",
+    "sold_checked": true
   },
   "92630128": {
     "logged": true,
@@ -11039,7 +11041,8 @@
     "title": "Apple iPhone 14 Pro Max, 128 gb",
     "price": 5900,
     "condition": "Б/у",
-    "model_key": "apple 14 pro max"
+    "model_key": "apple 14 pro max",
+    "sold_checked": true
   },
   "19764122": {
     "logged": true,
@@ -11049,5 +11052,23 @@
     "price": 4499,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra"
+  },
+  "60238256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15818860_samsung-s23-8-256-belyi/",
+    "title": "Samsung Galaxy S23 8/256gb",
+    "price": 3800,
+    "condition": "Б/у",
+    "model_key": "samsung s23"
+  },
+  "22400256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17187622_khonor-400-lait-256-gb/",
+    "title": "Honor 400 LIte 8/256gb",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "honor 400 lite"
   }
 }

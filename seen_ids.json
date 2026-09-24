@@ -10160,7 +10160,8 @@
     "title": "Samsung Galaxy Notе 20 Ultra 12/256Gb 2sim",
     "price": 2999,
     "condition": "Б/у",
-    "model_key": "samsung notе 20 ultra 2sim"
+    "model_key": "samsung notе 20 ultra 2sim",
+    "sold_checked": true
   },
   "19064005": {
     "logged": true,
@@ -10170,7 +10171,8 @@
     "title": "Samsung Galaxy A05s, 128gb",
     "price": 950,
     "condition": "Б/у",
-    "model_key": "samsung a05s"
+    "model_key": "samsung a05s",
+    "sold_checked": true
   },
   "07875164": {
     "logged": true,
@@ -10617,5 +10619,23 @@
     "price": 4000,
     "condition": "Б/у",
     "model_key": "apple 5s"
+  },
+  "94552016": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15054945_samsung-galaxy-j5-2016/",
+    "title": "Samsung Galaxy J5+ 2016",
+    "price": 400,
+    "condition": "Б/у",
+    "model_key": "samsung j5 plus 2016"
+  },
+  "96257310": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16496257_samsung-b310e/",
+    "title": "Samsung B310E",
+    "price": 170,
+    "condition": "Б/у",
+    "model_key": "samsung b310 e"
   }
 }

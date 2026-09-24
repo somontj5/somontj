@@ -10073,7 +10073,8 @@
     "title": "Samsung Galaxy A52",
     "price": 1400,
     "condition": "Б/у",
-    "model_key": "samsung a52"
+    "model_key": "samsung a52",
+    "sold_checked": true
   },
   "67014565": {
     "logged": true,
@@ -10083,7 +10084,8 @@
     "title": "Samsung Galaxy A56 5G",
     "price": 3300,
     "condition": "Б/у",
-    "model_key": "samsung a56 5g"
+    "model_key": "samsung a56 5g",
+    "sold_checked": true
   },
   "42212256": {
     "logged": true,
@@ -10113,7 +10115,8 @@
     "title": "Samsung Galaxy A22 5G",
     "price": 900,
     "condition": "Б/у",
-    "model_key": "samsung a22 5g"
+    "model_key": "samsung a22 5g",
+    "sold_checked": true
   },
   "19059513": {
     "logged": true,
@@ -10677,5 +10680,32 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "samsung a23"
+  },
+  "53151164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17195315_apple-iphone-11-64-gb-green/",
+    "title": "Apple iPhone 11, 64 gb, Green",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "apple 11"
+  },
+  "71952839": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17195283_redmi-9t/",
+    "title": "Xiaomi Redmi 9T",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "redmi 9t"
+  },
+  "19528464": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17195284_apple-iphone-x-64-gb-space-grey/",
+    "title": "Apple iPhone X, 64 gb, Space Grey",
+    "price": 1549,
+    "condition": "Б/у",
+    "model_key": "apple x"
   }
 }

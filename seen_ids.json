@@ -10315,7 +10315,8 @@
     "title": "Honor X7D 128Gb 6500mah",
     "price": 1700,
     "condition": "Б/у",
-    "model_key": "honor x7d"
+    "model_key": "honor x7d",
+    "sold_checked": true
   },
   "18698112": {
     "logged": true,
@@ -10324,7 +10325,8 @@
     "title": "Samsung Galaxy A12",
     "price": 1300,
     "condition": "Б/у",
-    "model_key": "samsung a12"
+    "model_key": "samsung a12",
+    "sold_checked": true
   },
   "07641164": {
     "logged": true,
@@ -10823,5 +10825,23 @@
     "price": 3200,
     "condition": "Б/у",
     "model_key": "apple 13"
+  },
+  "10914128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16109109_apple-iphone-14-128-gb-blue/",
+    "title": "Apple iPhone 14, 128 gb, Blue",
+    "price": 4700,
+    "condition": "Б/у",
+    "model_key": "apple 14"
+  },
+  "95854256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17195854_apple-iphone-xs-256-gb-gold/",
+    "title": "Apple iPhone Xs, 256 gb, Gold",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "apple xs"
   }
 }

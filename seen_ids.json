@@ -10463,7 +10463,8 @@
     "title": "Apple iPhone 12 pro, 256 gb, Pacific Blue",
     "price": 4300,
     "condition": "Б/у",
-    "model_key": "apple 12 pro"
+    "model_key": "apple 12 pro",
+    "sold_checked": true
   },
   "33022256": {
     "logged": true,
@@ -10472,7 +10473,8 @@
     "title": "Samsung Galaxy S22 Ultra 256Gb",
     "price": 3570,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "19237613": {
     "logged": true,
@@ -10490,7 +10492,8 @@
     "title": "Xiaomi Redmi Note 11",
     "price": 1100,
     "condition": "Б/у",
-    "model_key": "redmi note 11"
+    "model_key": "redmi note 11",
+    "sold_checked": true
   },
   "23581032": {
     "logged": true,
@@ -11016,5 +11019,32 @@
     "price": 1300,
     "condition": "Б/у",
     "model_key": "realme c61"
+  },
+  "69531710": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16695317_samsung-galaxy-a10-india/",
+    "title": "Samsung Galaxy A10 India",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "samsung a10 india"
+  },
+  "61214128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17197612_apple-iphone-14-pro-max-128-gb/",
+    "title": "Apple iPhone 14 Pro Max, 128 gb",
+    "price": 5900,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
+  },
+  "19764122": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17197641_samsung-s22ultra-blue/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 4499,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
   }
 }

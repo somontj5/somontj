@@ -10288,7 +10288,8 @@
     "title": "Xiaomi Redmi 15С 128гб",
     "price": 1399,
     "condition": "Б/у",
-    "model_key": "redmi 15с 128гб"
+    "model_key": "redmi 15с 128гб",
+    "sold_checked": true
   },
   "19087856": {
     "logged": true,
@@ -10297,7 +10298,8 @@
     "title": "Samsung Galaxy A56",
     "price": 3100,
     "condition": "Б/у",
-    "model_key": "samsung a56"
+    "model_key": "samsung a56",
+    "sold_checked": true
   },
   "17190897": {
     "logged": true,
@@ -10358,7 +10360,8 @@
     "title": "Samsung Galaxy A56 128Gb",
     "price": 3399,
     "condition": "Б/у",
-    "model_key": "samsung a56"
+    "model_key": "samsung a56",
+    "sold_checked": true
   },
   "42312128": {
     "logged": true,
@@ -10874,5 +10877,32 @@
     "price": 2890,
     "condition": "Б/у",
     "model_key": "tecno pova 7 ultra"
+  },
+  "95545726": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16955457_samsung-galaxy-a26/",
+    "title": "Samsung Galaxy A26",
+    "price": 2450,
+    "condition": "Б/у",
+    "model_key": "samsung a26"
+  },
+  "96731320": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16967313_infinix-smart-20/",
+    "title": "Infinix Smart 20",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "infinix smart 20"
+  },
+  "17196584": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17196584_telfon-az-rossiia-girftagi-man-khama-chizash-khast-khuchatosh-khast-imei-guzashtagi-pul/",
+    "title": "Samsung galaxy A56",
+    "price": 4200,
+    "condition": "Б/у",
+    "model_key": "samsung a56"
   }
 }

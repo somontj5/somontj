@@ -10132,7 +10132,8 @@
     "title": "Samsung Galaxy А24, 128gb",
     "price": 1650,
     "condition": "Б/у",
-    "model_key": "samsung а24"
+    "model_key": "samsung а24",
+    "sold_checked": true
   },
   "90685256": {
     "logged": true,
@@ -10657,5 +10658,14 @@
     "price": 500,
     "condition": "Б/у",
     "model_key": "samsung a30"
+  },
+  "00014464": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17195000_samsung-a14-4-64gb/",
+    "title": "Samsung Galaxy A14 4/64гб",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "samsung a14"
   }
 }

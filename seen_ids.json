@@ -10412,7 +10412,8 @@
     "title": "Samsung Galaxy S10, 128gb",
     "price": 1300,
     "condition": "Б/у",
-    "model_key": "samsung s10"
+    "model_key": "samsung s10",
+    "sold_checked": true
   },
   "91973205": {
     "logged": true,
@@ -10936,5 +10937,14 @@
     "price": 7800,
     "condition": "Б/у",
     "model_key": "apple 15 pro max"
+  },
+  "19454356": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17194543_samsung-a-56/",
+    "title": "Samsung Galaxy А56",
+    "price": 3100,
+    "condition": "Б/у",
+    "model_key": "samsung а56"
   }
 }

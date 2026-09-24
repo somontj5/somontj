@@ -10451,7 +10451,8 @@
     "title": "Apple iPhone 15 Pro, 128 gb, Natural Titanium",
     "price": 5500,
     "condition": "Б/у",
-    "model_key": "apple 15 pro"
+    "model_key": "apple 15 pro",
+    "sold_checked": true
   },
   "24612256": {
     "logged": true,
@@ -10946,5 +10947,14 @@
     "price": 3100,
     "condition": "Б/у",
     "model_key": "samsung а56"
+  },
+  "72551164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17197255_apple-iphone-11-64-gb-black/",
+    "title": "Apple iPhone 11, 64 gb, Black",
+    "price": 1899,
+    "condition": "Б/у",
+    "model_key": "apple 11"
   }
 }

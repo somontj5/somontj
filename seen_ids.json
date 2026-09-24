@@ -10577,7 +10577,8 @@
     "title": "Samsung galaxy s23",
     "price": 2600,
     "condition": "Б/у",
-    "model_key": "samsung s23"
+    "model_key": "samsung s23",
+    "sold_checked": true
   },
   "21718128": {
     "logged": true,

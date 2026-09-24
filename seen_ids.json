@@ -10755,7 +10755,8 @@
     "title": "Xiaomi Redmi 9T",
     "price": 600,
     "condition": "Б/у",
-    "model_key": "redmi 9t"
+    "model_key": "redmi 9t",
+    "sold_checked": true
   },
   "19528464": {
     "logged": true,
@@ -11276,6 +11277,15 @@
     "url": "https://m.somon.tj/adv/17200444_apple-iphone-13-pro-128-gb-sierra-blue/",
     "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
     "price": 4000,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
+  },
+  "23313256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16453233_apple-iphone-13-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 13 Pro, 256 gb, Silver",
+    "price": 3600,
     "condition": "Б/у",
     "model_key": "apple 13 pro"
   }

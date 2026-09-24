@@ -10695,7 +10695,8 @@
     "title": "Samsung B310E",
     "price": 170,
     "condition": "Б/у",
-    "model_key": "samsung b310 e"
+    "model_key": "samsung b310 e",
+    "sold_checked": true
   },
   "31614128": {
     "logged": true,
@@ -11208,5 +11209,14 @@
     "price": 7999,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "99151264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17199915_apple-iphone-12-64-gb-blue/",
+    "title": "Apple iPhone 12, 64 gb, Blue",
+    "price": 1499,
+    "condition": "Б/у",
+    "model_key": "apple 12"
   }
 }

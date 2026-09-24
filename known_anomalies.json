@@ -94,5 +94,9 @@
   "apple 12|128": {
     "first_seen": "2026-09-24",
     "ratio": 2.0
+  },
+  "redmi|256": {
+    "first_seen": "2026-09-24",
+    "ratio": 4.17
   }
 }

@@ -10776,7 +10776,8 @@
     "title": "Honor 8X",
     "price": 600,
     "condition": "Б/у",
-    "model_key": "honor 8x"
+    "model_key": "honor 8x",
+    "sold_checked": true
   },
   "45458256": {
     "logged": true,
@@ -11301,5 +11302,23 @@
     "condition": "Б/у",
     "model_key": "samsung",
     "sold_checked": true
+  },
+  "68812128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17200688_apple-iphone-12-pro-128-gb-pacific-blue/",
+    "title": "Apple iPhone 12 pro, 128 gb, Pacific Blue",
+    "price": 3200,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro"
+  },
+  "51785005": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17200689_karobka-dorad-telfon-100-foizai-tel-751785005/",
+    "title": "Телефон Redmi",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "redmi"
   }
 }

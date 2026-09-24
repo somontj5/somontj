@@ -10053,7 +10053,8 @@
     "title": "Apple iPhone Xs, 256 gb, Gold",
     "price": 1000,
     "condition": "Б/у",
-    "model_key": "apple xs"
+    "model_key": "apple xs",
+    "sold_checked": true
   },
   "05611164": {
     "logged": true,
@@ -10577,5 +10578,24 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "vivo"
+  },
+  "94337222": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17194337_galaxy-samsung-s22-2-sim-dubai/",
+    "title": "Galaxy Samsung S22 , 2 sim dubai",
+    "price": 2999,
+    "condition": "Б/у",
+    "model_key": "samsung s22 2 sim dubai"
+  },
+  "43001264": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17194300_apple-iphone-12-mini-64-gb-white/",
+    "title": "Apple iPhone 12 mini, 64 gb, White",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "apple 12 mini"
   }
 }

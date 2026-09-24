@@ -10583,7 +10583,8 @@
     "title": "Samsung Galaxy A16",
     "price": 1050,
     "condition": "Б/у",
-    "model_key": "samsung a16"
+    "model_key": "samsung a16",
+    "sold_checked": true
   },
   "24613128": {
     "logged": true,
@@ -10592,7 +10593,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Graphite",
     "price": 4800,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "18879523": {
     "logged": true,
@@ -11110,5 +11112,23 @@
     "price": 1220,
     "condition": "Б/у",
     "model_key": "redmi note 12"
+  },
+  "68061485": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16806148_huawei-honor-y5/",
+    "title": "Huawei Y5 Lite",
+    "price": 250,
+    "condition": "Б/у",
+    "model_key": "huawei y5 lite"
+  },
+  "19860864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17198608_apple-iphone-x-64-gb-space-grey/",
+    "title": "Apple iPhone X, 64 gb, Space Grey",
+    "price": 899,
+    "condition": "Б/у",
+    "model_key": "apple x"
   }
 }

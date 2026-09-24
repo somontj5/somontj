@@ -122,7 +122,16 @@ BRAND_ALIASES = {
 SPECIFIC_LINE_WORDS = {"redmi", "poco", "pixel"}
 PARENT_ECHO_WORDS = {"xiaomi", "xioami", "xiаomi", "google"}
 NOISE_WORDS = {"vietnam", "global", "version", "black", "white", "gold", "silver",
-               "blue", "green", "pink", "gray", "grey", "new", "оригинал"}
+               "blue", "green", "pink", "gray", "grey", "new", "оригинал", "5g", "4g"}
+# Настоящие объёмы памяти/накопителя — это фиксированный набор степеней двойки,
+# а не "любое число от 32" — иначе модельные номера вроде Honor 50/70/90/200/400/600
+# (у этого бренда именно такая нумерация линейки) ошибочно принимались за объём
+# памяти и вырезались, схлопывая "Honor 50" и "Honor 600 Pro" в голое "honor".
+STORAGE_SIZES = {16, 32, 64, 128, 256, 512, 1024, 2048}
+# Слова-маркеры "это гигабайты", которыми проверяем СЛЕДУЮЩЕЕ слово после числа
+# из STORAGE_SIZES — раньше проверялось только "gb", и русское "128 Гб" (с
+# пробелом) не считалось объёмом памяти и ошибочно уходило в номер модели.
+GB_WORDS = {"gb", "гб"}
 
 CONDITION_RE = re.compile(r"\b(Новый|Б\s*/\s*у|Б\s*\.\s*у\.?|Восстановлен\w*)\b(?:\s*[·|,;—-]\s*(\d+)\s*gb)?", re.I)
 NOISE_RE = re.compile(r"Еще\s*\d+\s*фото|VIP|IMEI\s*проверен", re.I)
@@ -138,6 +147,13 @@ PUBLISHED_RE = re.compile(r"(Сегодня|Вчера|\d+\s*(?:минут\w*|ч
 
 SOLD_RE = re.compile(r"(?<!не\s)\bПродано\b", re.I)
 MODES = {"all": "все объявления категории", "used": "только Б/у", "params": "только заданные параметры"}
+
+# Реплики/клоны/подделки используют настоящее название модели в заголовке, но это
+# совсем другое устройство по факту и по ценности — если их не отсеивать, они
+# портят и model_key-статистику (копия iPhone за 1150 TJS рядом с оригиналами по
+# 12999 TJS выглядит как жуткая аномалия цены), и хуже того — рискуют получить от
+# Gemini вердикт "недооценено", как будто это выгодная сделка на настоящий флагман.
+CLONE_RE = re.compile(r"копи[яи]\w*|реплик\w*|дублика\w*|новодел\w*|подделк\w*|\bfake\b|\bclone\b", re.I)
 
 
 # ---------- Хранилище ----------
@@ -202,18 +218,26 @@ def days_since(date_str):
 
 
 def extract_model_key(title):
+    # Копия/реплика/дубликат — не настоящий экземпляр этой модели (или вообще не
+    # телефон, а спам/повторная публикация). Не даём ему model_key вовсе, чтобы он
+    # не участвовал ни в поиске похожих лотов, ни в /price, ни в /anomalies —
+    # все функции ниже по коду уже трактуют пустой model_key как "пропустить".
+    if CLONE_RE.search(title):
+        return None
     # "S22+"/"S23+" — плюс приклеен к цифре и вообще не попадает в [a-zа-я0-9]+,
     # из-за чего S22+ (другая, более дорогая модель) тёрялся в один model_key с S22.
-    title = re.sub(r"(\w)\+", r"\1 plus", title)
+    # Только на границе слова/пробела — иначе ломает встречающуюся у некоторых
+    # брендов запись двойного ОЗУ вида "12+16/512Gb" (это не суффикс модели).
+    title = re.sub(r"(\w)\+(?=\s|$)", r"\1 plus", title)
     # "16e"/"17e" (iPhone) — буква "e" приклеена к номеру поколения так же, как "+" у
     # Samsung: "16" и "16e" — разные модели, но без разделения слово "16e" достаточно
     # похоже на "16", чтобы пройти порог нечёткости и слипнуться в одну.
     title = re.sub(r"(\d{2})e\b", r"\1 e", title, flags=re.I)
-    # "8/256GB", "12/512 GB" — это конфигурация ОЗУ/памяти, а не название модели.
-    # Вырезаем эту пару целиком ДО разбивки на слова: если ловить её по принципу
-    # "число перед словом на gb", она случайно цепляет и настоящий номер модели
-    # без слэша (например "iPhone 13 128GB" — там "13" вообще не ОЗУ).
-    title = re.sub(r"\d+\s*/\s*\d+\s*gb", " ", title, flags=re.I)
+    # "8/256GB", "12/512 GB", "8/256 Гб" — это конфигурация ОЗУ/памяти, а не название
+    # модели. Вырезаем эту пару целиком ДО разбивки на слова: если ловить её по
+    # принципу "число перед словом на gb/гб", она случайно цепляет и настоящий номер
+    # модели без слэша (например "iPhone 13 128GB" — там "13" вообще не ОЗУ).
+    title = re.sub(r"\d+\s*/\s*\d+\s*(?:gb|гб)", " ", title, flags=re.I)
     words = re.findall(r"[a-zа-я0-9]+", title.lower())
 
     # Приоритет — конкретной линейке (redmi/poco/pixel), если она есть в заголовке,
@@ -226,7 +250,7 @@ def extract_model_key(title):
 
     model_words = []
     started = False
-    for w in words:
+    for idx, w in enumerate(words):
         if w == brand:
             started = True
             continue
@@ -238,10 +262,19 @@ def extract_model_key(title):
         # выходят разной длины и перестают совпадать друг с другом.
         if BRAND_ALIASES.get(w, w) == canonical_brand or (brand in SPECIFIC_LINE_WORDS and w in PARENT_ECHO_WORDS):
             continue
-        if w in NOISE_WORDS or w.endswith("gb"):
+        # Слитное "128gb"/"128гб" — отдельное слово целиком, режем сразу (пара
+        # "8/256gb" со слэшем уже вырезана регэкспом выше до разбивки на слова).
+        if w in NOISE_WORDS or w.endswith("gb") or w.endswith("гб"):
             break
-        if w.isdigit() and int(w) >= 32:
-            break  # объём памяти без слэша (реже, но бывает "... 128 GB" с пробелом)
+        if w.isdigit() and int(w) in STORAGE_SIZES:
+            # Число само по себе неоднозначно — 16/32/64/128/256/512 могут быть и
+            # объёмом памяти, и номером поколения (iPhone 16!). Объёмом считаем,
+            # только если следующее слово буквально "gb" ИЛИ "гб" (раздельное написание
+            # с пробелом перед единицей — слитное "128gb"/"128гб" уже отловлено выше
+            # условием на .endswith(...)). Иначе это номер модели, а не память.
+            next_w = words[idx + 1] if idx + 1 < len(words) else ""
+            if next_w in GB_WORDS:
+                break
         model_words.append(w)
     return f"{canonical_brand} {' '.join(model_words[:5])}".strip()
 
@@ -432,12 +465,55 @@ def similar_full_analyses(model_key, condition, exclude_id, limit=SIMILAR_EXAMPL
     return matches[:limit]
 
 
+def remigrate_model_keys():
+    """extract_model_key() менялся несколько раз (порог объёма памяти, кэп слов,
+    синонимы бренда, фильтр копий/реплик) — но model_key в уже записанных строках
+    price_history.jsonl остаётся таким, каким был посчитан В МОМЕНТ записи, и
+    сам себя не обновляет. Из-за этого старые и новые записи одной и той же модели
+    расходятся по разным ключам (или наоборот — ошибочно слипаются), что и создаёт
+    большую часть подозрительных разбросов в /anomalies. Эта функция один раз
+    перечитывает всю базу и пересчитывает model_key по ТЕКУЩЕЙ версии функции —
+    остальные поля не трогает. Вызывается только вручную командой /remigrate."""
+    if not os.path.exists(PRICE_HISTORY_FILE):
+        return 0, 0
+    lines_out = []
+    changed = total = 0
+    with open(PRICE_HISTORY_FILE, "r", encoding="utf-8") as f:
+        for line in f:
+            try:
+                rec = json.loads(line)
+            except json.JSONDecodeError:
+                lines_out.append(line)
+                continue
+            if rec.get("type") in ("market_point", "full_analysis", "confirmed_sale", "confirmed_good_call") and rec.get("title"):
+                total += 1
+                new_key = extract_model_key(rec["title"])
+                if new_key != rec.get("model_key"):
+                    rec["model_key"] = new_key
+                    changed += 1
+            lines_out.append(json.dumps(rec, ensure_ascii=False) + "\n")
+    with open(PRICE_HISTORY_FILE, "w", encoding="utf-8") as f:
+        f.writelines(lines_out)
+    # После пересчёта прежний список "уже виденных" аномалий может быть неактуален
+    # (часть исчезнет, часть — новые сочетания) — сбрасываем, чтобы /anomalies и
+    # автооповещение честно перепроверили базу с нуля, а не молчали по инерции.
+    if os.path.exists(ANOMALY_STATE_FILE):
+        os.remove(ANOMALY_STATE_FILE)
+    return changed, total
+
+
 def find_price_anomalies(ratio_threshold=ANOMALY_RATIO_THRESHOLD, min_count=ANOMALY_MIN_COUNT):
-    """Ищет model_key, где разброс цен (max/min) подозрительно большой — обычно это
-    значит, что в один ключ слиплись две разные модели (как было с S22/S22 Ultra),
-    а не то, что дешёвый лот в плохом состоянии, а дорогой — в отличном: такой разброс
-    редко превышает 2x для ОДНОЙ модели. Записи дешевле ANOMALY_MIN_PRICE не считаем
-    вообще — шуточные объявления по 1 сомони иначе портят соотношение для любой модели."""
+    """Ищет model_key, где разброс цен подозрительно большой — обычно это значит, что
+    в один ключ слиплись две разные модели (как было с S22/S22 Ultra), а не то, что
+    дешёвый лот в плохом состоянии, а дорогой — в отличном: такой разброс редко
+    превышает 2x для ОДНОЙ модели. Записи дешевле ANOMALY_MIN_PRICE не считаем вообще —
+    шуточные объявления по 1 сомони иначе портят соотношение для любой модели.
+
+    При достаточном количестве точек (>=10) сравниваем не голые min/max, а обрежённые
+    с каждого края 10% цен: одно шуточное/бракованное объявление (типа Galaxy S25
+    Ultra за 200 сомони среди полутора десятков лотов по 8000+) иначе само по себе
+    создаёт "аномалию" там, где model_key на самом деле верный и склейки моделей нет —
+    это не ошибка сравнения названий, а мусорные данные в одной точке."""
     if not os.path.exists(PRICE_HISTORY_FILE):
         return []
     groups = {}
@@ -458,8 +534,11 @@ def find_price_anomalies(ratio_threshold=ANOMALY_RATIO_THRESHOLD, min_count=ANOM
     for model_key, entries in groups.items():
         if len(entries) < min_count:
             continue
-        cheapest = min(entries, key=lambda e: e[0])
-        priciest = max(entries, key=lambda e: e[0])
+        entries_sorted = sorted(entries, key=lambda e: e[0])
+        n = len(entries_sorted)
+        trim = n // 10 if n >= 10 else 0  # отсекаем по 10% с каждого края при n>=10
+        usable = entries_sorted[trim: n - trim] if trim else entries_sorted
+        cheapest, priciest = usable[0], usable[-1]
         if cheapest[0] <= 0:
             continue
         ratio = priciest[0] / cheapest[0]
@@ -468,6 +547,7 @@ def find_price_anomalies(ratio_threshold=ANOMALY_RATIO_THRESHOLD, min_count=ANOM
                 "model_key": model_key, "count": len(entries), "ratio": ratio,
                 "min_price": cheapest[0], "min_title": cheapest[1],
                 "max_price": priciest[0], "max_title": priciest[1],
+                "trimmed": trim > 0,
             })
     anomalies.sort(key=lambda a: a["ratio"], reverse=True)
     return anomalies
@@ -1121,8 +1201,9 @@ def check_telegram_commands(searches, subscribers):
             else:
                 lines = [f"🔍 Найдено подозрительных групп: {len(anomalies)} (вероятно, разные модели слиплись в один ключ)"]
                 for a in anomalies[:15]:
+                    note = " (без учёта ~10% крайних значений)" if a.get("trimmed") else ""
                     lines.append(
-                        f"\n⚠️ {a['model_key']} ({a['count']} лотов, ×{a['ratio']:.1f})\n"
+                        f"\n⚠️ {a['model_key']} ({a['count']} лотов, ×{a['ratio']:.1f}){note}\n"
                         f"  мин: {a['min_price']} TJS — «{a['min_title']}»\n"
                         f"  макс: {a['max_price']} TJS — «{a['max_title']}»"
                     )
@@ -1132,6 +1213,16 @@ def check_telegram_commands(searches, subscribers):
                     send_telegram_document(chat_id, "anomalies.txt", text, caption=f"Подозрительные model_key: {len(anomalies)}")
                 else:
                     send_telegram(chat_id, text)
+        elif command == "/remigrate":
+            if chat_id != TELEGRAM_CHAT_ID:
+                send_telegram(chat_id, "⛔ Команда доступна только владельцу бота.")
+            else:
+                changed, total = remigrate_model_keys()
+                send_telegram(
+                    chat_id,
+                    f"✅ Пересчитаны model_key по текущей формуле: обновлено {changed} из {total} записей.\n"
+                    f"Список известных аномалий сброшен — проверь /anomalies заново.",
+                )
         elif command == "/stats":
             gem_usage = get_daily_usage(GEMINI_DAILY_FILE, [c["id"] for c in GEMINI_COMBOS])
             search_usage = get_search_usage()
@@ -1151,6 +1242,7 @@ def check_telegram_commands(searches, subscribers):
                                     "/price Модель — грубая сводка цен по базе\n"
                                     "/sold — фактически проданные телефоны (цена, дата), по моделям\n"
                                     "/anomalies — проверить базу на подозрительные разбросы цен (склеенные модели)\n"
+                                    "/remigrate — пересчитать model_key всей базы по текущей формуле (только владелец)\n"
                                     "/dbadd текст — добавить что угодно в базу вручную\n"
                                     "/bought ссылка — подтвердить удачную покупку по рекомендации бота\n"
                                     "/rejected — файл со всеми отклонёнными лотами\n"
@@ -1631,6 +1723,20 @@ def main():
     for item in candidates:
         entry = seen.get(item["id"], {})
         try:
+            if CLONE_RE.search(item["title"]):
+                log_rejected(
+                    item, {"market_verdict": "недостаточно данных"},
+                    note="В заголовке маркер копии/реплики/дубликата — не анализируется как оригинал",
+                )
+                entry["photo_ok"] = True
+                entry["url"] = item["url"]
+                entry["title"] = item["title"]
+                entry["price"] = item["price"]
+                entry["condition"] = item.get("condition")
+                entry["model_key"] = None
+                seen[item["id"]] = entry
+                continue
+
             condition, memory, description, photo_urls, imei_status, city, published_at = fetch_detail(item["url"])
             item["condition"] = condition or item.get("condition")
             item["memory"] = memory or item.get("memory")
@@ -1743,10 +1849,12 @@ def main():
     known_anomalies = load_json(ANOMALY_STATE_FILE, {})
     new_anomalies = [a for a in find_price_anomalies() if a["model_key"] not in known_anomalies]
     if new_anomalies:
-        lines = ["🔍 Похоже, некоторые model_key объединяют разные модели (разброс цен слишком большой):"]
+        lines = ["🔍 Подозрительный разброс цен по некоторым model_key — либо разные модели "
+                  "слиплись в один ключ, либо просто мусорное/шуточное объявление:"]
         for a in new_anomalies[:5]:
+            note = " без учёта выбросов" if a.get("trimmed") else ""
             lines.append(
-                f"- {a['model_key']} (×{a['ratio']:.1f}, {a['count']} лотов): "
+                f"- {a['model_key']} (×{a['ratio']:.1f}, {a['count']} лотов{note}): "
                 f"{a['min_price']} TJS «{a['min_title']}» … {a['max_price']} TJS «{a['max_title']}»"
             )
         lines.append("\nПолный список — /anomalies")

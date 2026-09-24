@@ -10746,7 +10746,8 @@
     "title": "Apple iPhone 11, 64 gb, Green",
     "price": 1800,
     "condition": "Б/у",
-    "model_key": "apple 11"
+    "model_key": "apple 11",
+    "sold_checked": true
   },
   "71952839": {
     "logged": true,
@@ -11288,5 +11289,15 @@
     "price": 3600,
     "condition": "Б/у",
     "model_key": "apple 13 pro"
+  },
+  "04952512": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17200495_2-mo-pesh-kharida-bdam-sastaiani-nav-iagon-aiiu-nadorad-okhiri-narkh-pamiat-512/",
+    "title": "Телефон Samsung",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "samsung"
   }
 }

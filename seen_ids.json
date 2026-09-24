@@ -11005,6 +11005,16 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
     "price": 5000,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
+  },
+  "23207261": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16232072_realme-c61/",
+    "title": "Realme C61",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "realme c61"
   }
 }

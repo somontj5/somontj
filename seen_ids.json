@@ -10736,7 +10736,8 @@
     "title": "Samsung galaxy A23",
     "price": 1200,
     "condition": "Б/у",
-    "model_key": "samsung a23"
+    "model_key": "samsung a23",
+    "sold_checked": true
   },
   "53151164": {
     "logged": true,
@@ -11258,5 +11259,14 @@
     "price": 499,
     "condition": "Б/у",
     "model_key": "tecno spark 8c"
+  },
+  "29730644": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17200297_teleyoe-samsung-galaxy-a30-64-4/",
+    "title": "Samsung Galaxy A30 64/4",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "samsung a30 64 4"
   }
 }

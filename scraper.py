@@ -28,7 +28,7 @@ STALE_EXAMPLE_DAYS = int(os.environ.get("STALE_EXAMPLE_DAYS", "45"))
 # разные модели, слипшиеся в один ключ (как S22 и S22 Ultra) — а не естественный
 # разброс цен по состоянию. Ниже этой цены записи вообще не учитываем в разбросе —
 # шуточные объявления по 1 сомони иначе портят соотношение для любой модели.
-ANOMALY_RATIO_THRESHOLD = float(os.environ.get("ANOMALY_RATIO_THRESHOLD", "2.0"))
+ANOMALY_RATIO_THRESHOLD = float(os.environ.get("ANOMALY_RATIO_THRESHOLD", "3.0"))
 ANOMALY_MIN_COUNT = int(os.environ.get("ANOMALY_MIN_COUNT", "3"))
 ANOMALY_MIN_PRICE = int(os.environ.get("ANOMALY_MIN_PRICE", "100"))
 GEMINI_DAILY_LIMIT_PER_COMBO = int(os.environ.get("GEMINI_DAILY_LIMIT_PER_COMBO", "450"))

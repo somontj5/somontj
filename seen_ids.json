@@ -11080,6 +11080,7 @@
     "title": "Honor X9d 12/256",
     "price": 3000,
     "condition": "Б/у",
-    "model_key": "honor x9d 12 256"
+    "model_key": "honor x9d 12 256",
+    "sold_checked": true
   }
 }

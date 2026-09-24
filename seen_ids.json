@@ -10634,7 +10634,8 @@
     "title": "Телефон Vivo",
     "price": 800,
     "condition": "Б/у",
-    "model_key": "vivo"
+    "model_key": "vivo",
+    "sold_checked": true
   },
   "94337222": {
     "logged": true,
@@ -11140,5 +11141,14 @@
     "price": 700,
     "condition": "Б/у",
     "model_key": "apple 7 plus"
+  },
+  "37316128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17199373_apple-iphone-16-pro-128-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro, 128 gb, Desert Titanium",
+    "price": 8599,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro"
   }
 }

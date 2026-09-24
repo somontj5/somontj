@@ -10544,7 +10544,8 @@
     "title": "Apple iPhone Xr, 128 gb, Black",
     "price": 1346,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "91708256": {
     "logged": true,

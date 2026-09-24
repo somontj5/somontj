@@ -11299,6 +11299,7 @@
     "title": "Телефон Samsung",
     "price": 1400,
     "condition": "Б/у",
-    "model_key": "samsung"
+    "model_key": "samsung",
+    "sold_checked": true
   }
 }

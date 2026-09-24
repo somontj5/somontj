@@ -10554,7 +10554,8 @@
     "title": "Apple iPhone Xs, 256 gb, Silver",
     "price": 999,
     "condition": "Б/у",
-    "model_key": "apple xs"
+    "model_key": "apple xs",
+    "sold_checked": true
   },
   "57238256": {
     "logged": true,
@@ -11071,5 +11072,14 @@
     "price": 2500,
     "condition": "Б/у",
     "model_key": "honor 400 lite"
+  },
+  "26912256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17198226_honor-x9d-12-256/",
+    "title": "Honor X9d 12/256",
+    "price": 3000,
+    "condition": "Б/у",
+    "model_key": "honor x9d 12 256"
   }
 }

@@ -10627,7 +10627,8 @@
     "title": "Galaxy Samsung S22 , 2 sim dubai",
     "price": 2999,
     "condition": "Б/у",
-    "model_key": "samsung s22 2 sim dubai"
+    "model_key": "samsung s22 2 sim dubai",
+    "sold_checked": true
   },
   "43001264": {
     "logged": true,
@@ -10700,7 +10701,8 @@
     "title": "Samsung Galaxy A14 4/64гб",
     "price": 850,
     "condition": "Б/у",
-    "model_key": "samsung a14"
+    "model_key": "samsung a14",
+    "sold_checked": true
   },
   "19520923": {
     "logged": true,
@@ -10956,5 +10958,23 @@
     "price": 1899,
     "condition": "Б/у",
     "model_key": "apple 11"
+  },
+  "19733850": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17197338_honor-50lte/",
+    "title": "Honor 50 LTE",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "honor 50 lte"
+  },
+  "19734312": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17197343_samsung-galaxy-a12/",
+    "title": "Samsung Galaxy A12",
+    "price": 720,
+    "condition": "Б/у",
+    "model_key": "samsung a12"
   }
 }

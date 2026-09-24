@@ -10380,7 +10380,8 @@
     "title": "Apple iPhone 12 pro, 128 gb, Pacific Blue",
     "price": 2700,
     "condition": "Б/у",
-    "model_key": "apple 12 pro"
+    "model_key": "apple 12 pro",
+    "sold_checked": true
   },
   "10381264": {
     "logged": true,
@@ -10903,6 +10904,15 @@
     "url": "https://m.somon.tj/adv/17196584_telfon-az-rossiia-girftagi-man-khama-chizash-khast-khuchatosh-khast-imei-guzashtagi-pul/",
     "title": "Samsung galaxy A56",
     "price": 4200,
+    "condition": "Б/у",
+    "model_key": "samsung a56"
+  },
+  "19676156": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17196761_a56/",
+    "title": "Samsung Galaxy A56",
+    "price": 3100,
     "condition": "Б/у",
     "model_key": "samsung a56"
   }

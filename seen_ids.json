@@ -10764,7 +10764,8 @@
     "title": "Apple iPhone X, 64 gb, Space Grey",
     "price": 1549,
     "condition": "Б/у",
-    "model_key": "apple x"
+    "model_key": "apple x",
+    "sold_checked": true
   },
   "71953188": {
     "logged": true,
@@ -11268,5 +11269,14 @@
     "price": 650,
     "condition": "Б/у",
     "model_key": "samsung a30 64 4"
+  },
+  "44413128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17200444_apple-iphone-13-pro-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
+    "price": 4000,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

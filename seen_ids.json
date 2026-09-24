@@ -10122,7 +10122,8 @@
     "title": "Samsung Galaxy A13, 32gb",
     "price": 950,
     "condition": "Б/у",
-    "model_key": "samsung a13"
+    "model_key": "samsung a13",
+    "sold_checked": true
   },
   "70124128": {
     "logged": true,
@@ -10667,5 +10668,14 @@
     "price": 850,
     "condition": "Б/у",
     "model_key": "samsung a14"
+  },
+  "19520923": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17195209_samsung-galaxy-a23/",
+    "title": "Samsung galaxy A23",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "samsung a23"
   }
 }

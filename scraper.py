@@ -180,6 +180,19 @@ RESERVATION_RE = re.compile(
 )
 
 
+# Модели, которые владелец считает заведомо невыгодными: не тратим на них Gemini и не шлём
+# уведомления "выгодно". В базу они по-прежнему пишутся (model_key сохраняется) — это
+# просто пропуск полного анализа. Пока сюда входит iPhone mini (mini/мини рядом со словом
+# iPhone/Айфон/Apple, чтобы не задеть Samsung/Xiaomi и прочие "mini").
+NEVER_PROFITABLE_RE = re.compile(r"(?:iphone|айфон|apple)[^,;|/]{0,20}?\b(?:mini|мини)\b", re.I)
+
+
+def skip_analysis_reason(title):
+    if NEVER_PROFITABLE_RE.search(title or ""):
+        return "iPhone mini — заведомо невыгодная модель, не анализируется и не уведомляет"
+    return None
+
+
 def junk_title_reason(title):
     """Причина, по которой лот нельзя сравнивать как обычный экземпляр модели, или None."""
     if CLONE_RE.search(title or ""):
@@ -1977,14 +1990,15 @@ def main():
         entry = seen.get(item["id"], {})
         try:
             junk_reason = junk_title_reason(item["title"])
-            if junk_reason:
-                log_rejected(item, {"market_verdict": "недостаточно данных"}, note=junk_reason)
+            skip_reason = None if junk_reason else skip_analysis_reason(item["title"])
+            if junk_reason or skip_reason:
+                log_rejected(item, {"market_verdict": "недостаточно данных"}, note=junk_reason or skip_reason)
                 entry["photo_ok"] = True
                 entry["url"] = item["url"]
                 entry["title"] = item["title"]
                 entry["price"] = item["price"]
                 entry["condition"] = item.get("condition")
-                entry["model_key"] = None
+                entry["model_key"] = None if junk_reason else extract_model_key(item["title"])
                 seen[item["id"]] = entry
                 continue
 

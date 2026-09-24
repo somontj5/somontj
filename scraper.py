@@ -338,8 +338,11 @@ def record_memory(rec):
     mem = rec.get("memory_gb")
     if isinstance(mem, (int, float)) and mem:
         return int(mem)
-    m = re.search(r"(\d+)\s*(?:gb|гб)", rec.get("title") or "", re.I)
-    return int(m.group(1)) if m else None
+    m = re.search(r"(\d+)\s*(gb|гб|tb|тб)\b", rec.get("title") or "", re.I)
+    if not m:
+        return None
+    value = int(m.group(1))
+    return value * 1024 if m.group(2).lower() in ("tb", "тб") else value
 
 
 def log_market_point(item):
@@ -573,7 +576,8 @@ def find_price_anomalies(ratio_threshold=ANOMALY_RATIO_THRESHOLD, min_count=ANOM
     """Ищет model_key, где разброс цен подозрительно большой — обычно это значит, что
     в один ключ слиплись две разные модели (как было с S22/S22 Ultra), а не то, что
     дешёвый лот в плохом состоянии, а дорогой — в отличном: такой разброс редко
-    превышает 2x для ОДНОЙ модели. Записи дешевле ANOMALY_MIN_PRICE не считаем вообще —
+    превышает 2x для ОДНОЙ модели С ОДНИМ объёмом памяти (лоты с разной памятью в одну группу
+    не попадают — разница цен 64GB против 128GB не аномалия). Записи дешевле ANOMALY_MIN_PRICE не считаем вообще —
     шуточные объявления по 1 сомони иначе портят соотношение для любой модели.
 
     При достаточном количестве точек (>=10) сравниваем не голые min/max, а обрежённые
@@ -595,10 +599,13 @@ def find_price_anomalies(ratio_threshold=ANOMALY_RATIO_THRESHOLD, min_count=ANOM
             price, model_key = rec.get("price"), rec.get("model_key")
             if not price or price < ANOMALY_MIN_PRICE or not model_key:
                 continue
-            groups.setdefault(model_key, []).append((price, rec.get("title", "")))
+            # Группа = модель + объём памяти: iPhone X 64GB и iPhone X 128GB — разные товары с
+            # законно разной ценой, их сравнивать между собой нельзя. Лоты, у которых память
+            # определить не удалось, образуют свою группу (memory=None).
+            groups.setdefault((model_key, record_memory(rec)), []).append((price, rec.get("title", "")))
 
     anomalies = []
-    for model_key, entries in groups.items():
+    for (model_key, memory), entries in groups.items():
         if len(entries) < min_count:
             continue
         entries_sorted = sorted(entries, key=lambda e: e[0])
@@ -611,7 +618,10 @@ def find_price_anomalies(ratio_threshold=ANOMALY_RATIO_THRESHOLD, min_count=ANOM
         ratio = priciest[0] / cheapest[0]
         if ratio >= ratio_threshold:
             anomalies.append({
-                "model_key": model_key, "count": len(entries), "ratio": ratio,
+                "model_key": model_key, "memory": memory,
+                "label": f"{model_key} {memory}GB" if memory else f"{model_key} (память не указана)",
+                "group_key": f"{model_key}|{memory or '?'}",
+                "count": len(entries), "ratio": ratio,
                 "min_price": cheapest[0], "min_title": cheapest[1],
                 "max_price": priciest[0], "max_title": priciest[1],
                 "trimmed": trim > 0,
@@ -1320,7 +1330,7 @@ def check_telegram_commands(searches, subscribers):
                 for a in anomalies[:15]:
                     note = " (без учёта ~10% крайних значений)" if a.get("trimmed") else ""
                     lines.append(
-                        f"\n⚠️ {a['model_key']} ({a['count']} лотов, ×{a['ratio']:.1f}){note}\n"
+                        f"\n⚠️ {a['label']} ({a['count']} лотов, ×{a['ratio']:.1f}){note}\n"
                         f"  мин: {a['min_price']} TJS — «{a['min_title']}»\n"
                         f"  макс: {a['max_price']} TJS — «{a['max_title']}»"
                     )
@@ -2125,20 +2135,20 @@ def main():
     # аномалию (не найденную в прошлый раз), чтобы не повторять его каждые 30
     # минут, пока руки не дойдут поправить. Ручная проверка в любой момент — /anomalies.
     known_anomalies = load_json(ANOMALY_STATE_FILE, {})
-    new_anomalies = [a for a in find_price_anomalies() if a["model_key"] not in known_anomalies]
+    new_anomalies = [a for a in find_price_anomalies() if a["group_key"] not in known_anomalies]
     if new_anomalies:
         lines = ["🔍 Подозрительный разброс цен по некоторым model_key — либо разные модели "
                   "слиплись в один ключ, либо просто мусорное/шуточное объявление:"]
         for a in new_anomalies[:5]:
             note = " без учёта выбросов" if a.get("trimmed") else ""
             lines.append(
-                f"- {a['model_key']} (×{a['ratio']:.1f}, {a['count']} лотов{note}): "
+                f"- {a['label']} (×{a['ratio']:.1f}, {a['count']} лотов{note}): "
                 f"{a['min_price']} TJS «{a['min_title']}» … {a['max_price']} TJS «{a['max_title']}»"
             )
         lines.append("\nПолный список — /anomalies")
         alert_owner("\n".join(lines))
         for a in new_anomalies:
-            known_anomalies[a["model_key"]] = {"first_seen": time.strftime("%Y-%m-%d"), "ratio": round(a["ratio"], 2)}
+            known_anomalies[a["group_key"]] = {"first_seen": time.strftime("%Y-%m-%d"), "ratio": round(a["ratio"], 2)}
         with open(ANOMALY_STATE_FILE, "w", encoding="utf-8") as f:
             json.dump(known_anomalies, f, ensure_ascii=False, indent=2)
 

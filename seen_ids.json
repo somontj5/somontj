@@ -10329,7 +10329,8 @@
     "title": "Xiaomi Mi 13 lite",
     "price": 1800,
     "condition": "Б/у",
-    "model_key": "xiaomi mi 13 lite"
+    "model_key": "xiaomi mi 13 lite",
+    "sold_checked": true
   },
   "35656128": {
     "logged": true,
@@ -10707,5 +10708,14 @@
     "price": 1549,
     "condition": "Б/у",
     "model_key": "apple x"
+  },
+  "71953188": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17195318_khonor-8kh/",
+    "title": "Honor 8X",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "honor 8x"
   }
 }

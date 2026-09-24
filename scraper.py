@@ -38,6 +38,8 @@ FALLBACK_USD_TJS_RATE = float(os.environ.get("FALLBACK_USD_TJS_RATE", "10.5"))
 ALERT_GAP_MINUTES = int(os.environ.get("ALERT_GAP_MINUTES", "40"))
 ALERT_FAILURE_THRESHOLD = int(os.environ.get("ALERT_FAILURE_THRESHOLD", "3"))
 DEFAULT_MIN_PROFIT = int(os.environ.get("DEFAULT_MIN_PROFIT", "0"))
+# Порог уверенности Gemini (0.0-1.0) для уведомления. 0 = выключено (как раньше).
+DEFAULT_MIN_CONFIDENCE = float(os.environ.get("DEFAULT_MIN_CONFIDENCE", "0"))
 
 SEEN_FILE = "seen_ids.json"
 PRICE_HISTORY_FILE = "price_history.jsonl"
@@ -51,6 +53,7 @@ SEARCH_USAGE_FILE = "search_provider_usage.json"
 EXCHANGE_RATE_FILE = "exchange_rate.json"
 HEALTH_FILE = "health_status.json"
 MIN_PROFIT_FILE = "min_profit.json"
+MIN_CONFIDENCE_FILE = "min_confidence.json"
 ANOMALY_STATE_FILE = "known_anomalies.json"
 
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
@@ -163,6 +166,26 @@ MODES = {"all": "все объявления категории", "used": "то�
 # Gemini вердикт "недооценено", как будто это выгодная сделка на настоящий флагман.
 CLONE_RE = re.compile(r"копи[яи]\w*|реплик\w*|дублика\w*|новодел\w*|подделк\w*|\bfake\b|\bclone\b", re.I)
 
+# Бронь / предзаказ / залог / предоплата: в такой цене стоит депозит или аванс, а не полная
+# стоимость устройства (например, предзаказ нового флагмана за задаток) — в статистике
+# это выглядит так же, как копия по бросовой цене, и так же вредно для сравнения.
+# Слова подобраны узко, чтобы не ловить "бронестекло"/"бронированное стекло" (аксессуар)
+# и "без залога"; проверяется только заголовок.
+RESERVATION_RE = re.compile(
+    r"\bпред\s*-?\s*заказ\w*|\bпредоплат\w*|\bбронь\b|\bзабронир\w*|\bброни\w*\s+(?:за|под)\b"
+    r"|(?<!без\s)\bзалог\w*|\bдепозит\w*|\bзадатк\w*|\bрезерв\w*",
+    re.I,
+)
+
+
+def junk_title_reason(title):
+    """Причина, по которой лот нельзя сравнивать как обычный экземпляр модели, или None."""
+    if CLONE_RE.search(title or ""):
+        return "В заголовке маркер копии/реплики/дубликата — не анализируется как оригинал"
+    if RESERVATION_RE.search(title or ""):
+        return "В заголовке маркер брони/предзаказа/залога — цена, скорее всего, не полная стоимость устройства"
+    return None
+
 
 # ---------- Хранилище ----------
 
@@ -230,7 +253,7 @@ def extract_model_key(title):
     # телефон, а спам/повторная публикация). Не даём ему model_key вовсе, чтобы он
     # не участвовал ни в поиске похожих лотов, ни в /price, ни в /anomalies —
     # все функции ниже по коду уже трактуют пустой model_key как "пропустить".
-    if CLONE_RE.search(title):
+    if junk_title_reason(title):
         return None
     # "S22+"/"S23+" — плюс приклеен к цифре и вообще не попадает в [a-zа-я0-9]+,
     # из-за чего S22+ (другая, более дорогая модель) тёрялся в один model_key с S22.
@@ -285,6 +308,23 @@ def extract_model_key(title):
                 break
         model_words.append(w)
     return f"{canonical_brand} {' '.join(model_words[:5])}".strip()
+
+
+def is_plausible_price(price):
+    """Цена годится для сравнения. Тот же порог, что у /anomalies (ANOMALY_MIN_PRICE):
+    шуточные объявления по 1 сомони не должны попадать ни в примеры для Gemini, ни в
+    подтверждённые продажи, ни в /price."""
+    return isinstance(price, (int, float)) and price >= ANOMALY_MIN_PRICE
+
+
+def record_memory(rec):
+    """Объём памяти (GB) записи базы: поле memory_gb, а если его нет (confirmed_sale его
+    не хранит) — разбираем из заголовка."""
+    mem = rec.get("memory_gb")
+    if isinstance(mem, (int, float)) and mem:
+        return int(mem)
+    m = re.search(r"(\d+)\s*(?:gb|гб)", rec.get("title") or "", re.I)
+    return int(m.group(1)) if m else None
 
 
 def log_market_point(item):
@@ -415,6 +455,8 @@ def get_confirmed_sales(model_key, limit=5):
             except json.JSONDecodeError:
                 continue
             if rec.get("type") == "confirmed_sale" and model_keys_match(rec.get("model_key"), model_key):
+                if not is_plausible_price(rec.get("price")):
+                    continue
                 matches.append(rec)
     matches.sort(key=lambda r: r.get("confirmed_at", ""), reverse=True)
     return matches[:limit]
@@ -463,6 +505,8 @@ def similar_full_analyses(model_key, condition, exclude_id, limit=SIMILAR_EXAMPL
             except json.JSONDecodeError:
                 continue
             if rec.get("type") != "full_analysis" or rec.get("id") == exclude_id:
+                continue
+            if not is_plausible_price(rec.get("price")):
                 continue
             if not model_keys_match(rec.get("model_key"), model_key):
                 continue
@@ -562,7 +606,8 @@ def find_price_anomalies(ratio_threshold=ANOMALY_RATIO_THRESHOLD, min_count=ANOM
 
 
 def market_stats_for(model_key, condition, exclude_id):
-    """Только для команды /price — Gemini эту сводку не получает."""
+    """Только для команды /price — Gemini эту сводку не получает. Мусорные цены
+    (< ANOMALY_MIN_PRICE) в сводку не попадают."""
     if not model_key or not os.path.exists(PRICE_HISTORY_FILE):
         return None
     prices = []
@@ -572,7 +617,7 @@ def market_stats_for(model_key, condition, exclude_id):
                 rec = json.loads(line)
             except json.JSONDecodeError:
                 continue
-            if rec.get("id") == exclude_id or not rec.get("price"):
+            if rec.get("id") == exclude_id or not is_plausible_price(rec.get("price")):
                 continue
             if condition and rec.get("condition") and rec.get("condition") != condition:
                 continue
@@ -636,6 +681,15 @@ def get_min_profit():
 
 def set_min_profit(value):
     with open(MIN_PROFIT_FILE, "w", encoding="utf-8") as f:
+        json.dump({"value": value}, f)
+
+
+def get_min_confidence():
+    return load_json(MIN_CONFIDENCE_FILE, {}).get("value", DEFAULT_MIN_CONFIDENCE)
+
+
+def set_min_confidence(value):
+    with open(MIN_CONFIDENCE_FILE, "w", encoding="utf-8") as f:
         json.dump({"value": value}, f)
 
 
@@ -1115,6 +1169,24 @@ def check_telegram_commands(searches, subscribers):
                 send_telegram(chat_id, f"✅ Минимальная выгода для уведомлений: {arg} TJS.")
             else:
                 send_telegram(chat_id, f"Текущий порог: {get_min_profit()} TJS.\nФормат: /minprofit 300")
+        elif command == "/minconfidence":
+            raw = argument.strip().replace(",", ".").rstrip("%").strip()
+            try:
+                value = float(raw) if raw else None
+            except ValueError:
+                value = None
+            if value is not None:
+                if value > 1:  # "60" или "60%" → 0.6
+                    value /= 100
+                if 0 <= value <= 1:
+                    set_min_confidence(round(value, 2))
+                    send_telegram(chat_id, f"✅ Минимальная уверенность Gemini для уведомлений: {round(value * 100)}%"
+                                           + (" (фильтр выключен)." if value == 0 else "."))
+                else:
+                    send_telegram(chat_id, "⚠️ Значение должно быть от 0 до 100 (%), например: /minconfidence 60")
+            else:
+                send_telegram(chat_id, f"Текущий порог уверенности: {round(get_min_confidence() * 100)}%.\n"
+                                       "Формат: /minconfidence 60  (0 — выключить)")
         elif command == "/subscribers":
             send_telegram(chat_id, f"👥 Подписчиков: {len(subscribers)}")
         elif command == "/stop":
@@ -1258,7 +1330,8 @@ def check_telegram_commands(searches, subscribers):
             search_usage = get_search_usage()
             db_count = sum(1 for _ in open(PRICE_HISTORY_FILE, encoding="utf-8")) if os.path.exists(PRICE_HISTORY_FILE) else 0
             rej_count = sum(1 for _ in open(REJECTED_FILE, encoding="utf-8")) if os.path.exists(REJECTED_FILE) else 0
-            lines = ["📊 Статистика", "", f"💵 Минимальная выгода: {get_min_profit()} TJS", "", "Gemini сегодня:"]
+            lines = ["📊 Статистика", "", f"💵 Минимальная выгода: {get_min_profit()} TJS",
+                     f"🎯 Минимальная уверенность: {round(get_min_confidence() * 100)}%", "", "Gemini сегодня:"]
             lines += [f"  {c['id']}: {gem_usage.get(c['id'], 0)}/{GEMINI_DAILY_LIMIT_PER_COMBO}" for c in GEMINI_COMBOS]
             lines += ["", "Поиск в сети:"]
             lines += [f"  {p['id']}: {search_usage.get(p['id'], 0)}/{p['limit']} ({'мес' if p['period']=='month' else 'день'})" for p in SEARCH_PROVIDERS]
@@ -1269,6 +1342,7 @@ def check_telegram_commands(searches, subscribers):
                                     "/add Название | слова | макс_цена | мин_память\n"
                                     "/del Название\n/list — список поисков\n"
                                     "/minprofit число — минимальная выгода для уведомлений (TJS)\n"
+                                    "/minconfidence число — минимальная уверенность Gemini для уведомлений (%, 0 — выкл.)\n"
                                     "/price Модель — грубая сводка цен по базе\n"
                                     "/sold — фактически проданные телефоны (цена, дата), по моделям\n"
                                     "/anomalies — проверить базу на подозрительные разбросы цен (склеенные модели)\n"
@@ -1427,7 +1501,19 @@ def fetch_detail(ad_url):
 
 # ---------- Gemini: анализ ----------
 
-def format_similar_examples(examples):
+def memory_text(rec, item_memory):
+    """Объём памяти записи для промпта + явное предупреждение, если он отличается от
+    памяти оцениваемого лота (64GB vs 256GB — не «аномалия», а разные товары)."""
+    mem = record_memory(rec)
+    if not mem:
+        return ""
+    text = f", память {mem}GB"
+    if item_memory and mem != item_memory:
+        text += f" ⚠️ ДРУГОЙ ОБЪЁМ (у оцениваемого лота {item_memory}GB) — цену напрямую не сравнивай"
+    return text
+
+
+def format_similar_examples(examples, item_memory=None):
     if not examples:
         return "Похожих проверенных лотов этой модели из нашей базы пока нет."
     lines = ["Похожие проверенные лоты этой модели из нашей базы (от новых к старым, "
@@ -1445,8 +1531,9 @@ def format_similar_examples(examples):
             age_text = f", собрано {age} дн. назад ⚠️ СТАРЫЕ ДАННЫЕ — цена могла устареть"
         else:
             age_text = f", собрано {age} дн. назад"
+        title_text = f"«{rec['title']}»" if rec.get("title") else "без названия"
         lines.append(
-            f"{i}. Цена {rec.get('price', '—')} TJS, состояние по фото: "
+            f"{i}. {title_text}{memory_text(rec, item_memory)}. Цена {rec.get('price', '—')} TJS, состояние по фото: "
             f"{rec.get('overall_visual_condition', 'неизвестно')}, "
             f"дефекты: {defects}, плюсы: {positives}{repair_text}{age_text}"
         )
@@ -1463,7 +1550,7 @@ def format_confirmed_good_calls(records):
     return "\n".join(lines)
 
 
-def format_confirmed_sales(records):
+def format_confirmed_sales(records, item_memory=None):
     if not records:
         return ""
     lines = ["✅ ПОДТВЕРЖДЁННЫЕ РЕАЛЬНЫЕ ПРОДАЖИ этой модели (объявление реально было продано за эту цену, это не догадка):"]
@@ -1471,7 +1558,9 @@ def format_confirmed_sales(records):
         age = days_since(r.get("confirmed_at"))
         age_text = (f", {age} дн. назад ⚠️ старая продажа, цена могла устареть" if age and age > STALE_EXAMPLE_DAYS
                     else (f", {age} дн. назад" if age is not None else ""))
-        lines.append(f"- Продано за {r.get('price')} TJS, состояние: {r.get('condition') or 'не указано'}{age_text}")
+        title_text = f"«{r['title']}»" if r.get("title") else "без названия"
+        lines.append(f"- {title_text}{memory_text(r, item_memory)}: продано за {r.get('price')} TJS, "
+                     f"состояние: {r.get('condition') or 'не указано'}{age_text}")
     return "\n".join(lines)
 
 
@@ -1517,11 +1606,20 @@ def format_imei_block(item, usd_rate):
 
 
 def build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate, has_photos=True, condition_note=None, no_photo_reason=None):
-    examples_text = format_similar_examples(similar_examples)
+    try:
+        item_memory = int(item.get("memory")) if item.get("memory") else None
+    except (TypeError, ValueError):
+        item_memory = None
+    examples_text = format_similar_examples(similar_examples, item_memory)
     good_calls_text = format_confirmed_good_calls(confirmed_good_calls)
-    sales_text = format_confirmed_sales(confirmed_sales)
+    sales_text = format_confirmed_sales(confirmed_sales, item_memory)
     web_text = (
-        f"Результаты веб-поиска по этой модели (реальные страницы из интернета):\n{web_results}"
+        "Результаты веб-поиска по этой модели (реальные страницы из интернета). ВАЖНО: даты у них "
+        "обычно не видно — данные могут быть устаревшими, а страницы — про другой рынок (не "
+        "Таджикистан) и с ценами в другой валюте (USD, RUB, EUR, KZT, UZS и т.п.). Не переноси эти "
+        "цифры на TJS напрямую и не считай их ценой на Somon.tj: используй только как грубый "
+        "ориентир по модели и характеристикам, а при расхождении доверяй данным нашей базы и "
+        f"подтверждённым продажам выше:\n{web_results}"
         if web_results else "Веб-поиск не дал результатов в этот раз."
     )
     manual_text = format_manual_notes(manual_notes)
@@ -1823,6 +1921,7 @@ def main():
     usage = get_daily_usage(GEMINI_DAILY_FILE, [c["id"] for c in GEMINI_COMBOS])
     usd_rate = get_usd_tjs_rate()
     min_profit = get_min_profit()
+    min_confidence = get_min_confidence()
 
     try:
         listings, soup = fetch_listings()
@@ -1843,7 +1942,7 @@ def main():
     search_usage = get_search_usage()
     search_usage_str = ", ".join(f"{p['id']}: {search_usage.get(p['id'], 0)}/{p['limit']}" for p in SEARCH_PROVIDERS)
     print(f"Режим: {MODES[mode]}; поисков: {len(searches)}; объявлений: {len(listings)}; "
-          f"подписчиков: {len(subscribers)}; мин. выгода: {min_profit} TJS; курс USD/TJS: {usd_rate}; "
+          f"подписчиков: {len(subscribers)}; мин. выгода: {min_profit} TJS; мин. уверенность: {round(min_confidence * 100)}%; курс USD/TJS: {usd_rate}; "
           f"Gemini сегодня — {usage_str}; поиск в сети — {search_usage_str}")
 
     for item in listings:
@@ -1865,11 +1964,9 @@ def main():
     for item in candidates:
         entry = seen.get(item["id"], {})
         try:
-            if CLONE_RE.search(item["title"]):
-                log_rejected(
-                    item, {"market_verdict": "недостаточно данных"},
-                    note="В заголовке маркер копии/реплики/дубликата — не анализируется как оригинал",
-                )
+            junk_reason = junk_title_reason(item["title"])
+            if junk_reason:
+                log_rejected(item, {"market_verdict": "недостаточно данных"}, note=junk_reason)
                 entry["photo_ok"] = True
                 entry["url"] = item["url"]
                 entry["title"] = item["title"]
@@ -1901,7 +1998,6 @@ def main():
                 condition_part = item.get("condition") or "б/у"
                 query = f"{model_key} {memory_part}{condition_part} цена Таджикистан Somon"
                 web_results = web_search_lookup(query)
-
             data_sources = build_data_sources(similar_examples, confirmed_good_calls, confirmed_sales, manual_notes, web_results, item)
 
             # Бинарно: либо уверенно новый (по фразам в описании) — тогда фото вообще
@@ -1923,7 +2019,14 @@ def main():
 
             passes_profit = profit is not None and profit >= min_profit
 
-            if verdict == "недооценено" and passes_profit:
+            # Порог уверенности: 0 = фильтр выключен. Если порог задан, а Gemini вообще не вернул
+            # число — считаем, что порог не пройден (лучше пропустить, чем шуметь наугад).
+            gem_confidence = analysis.get("confidence")
+            passes_confidence = min_confidence <= 0 or (
+                isinstance(gem_confidence, (int, float)) and gem_confidence >= min_confidence
+            )
+
+            if verdict == "недооценено" and passes_profit and passes_confidence:
                 defects = ", ".join(analysis.get("visible_defects", [])) or "не обнаружены"
                 repair = analysis.get("estimated_repair_cost")
                 customs = item.get("estimated_customs_cost")
@@ -1968,8 +2071,14 @@ def main():
                 entry["notified"] = True
             else:
                 note = None
-                if verdict == "недооценено" and not passes_profit:
-                    note = f"Gemini счёл недооценённым, но выгода ({profit if profit is not None else 'не посчитана'} TJS) ниже порога {min_profit} TJS"
+                if verdict == "недооценено":
+                    reasons = []
+                    if not passes_profit:
+                        reasons.append(f"выгода ({profit if profit is not None else 'не посчитана'} TJS) ниже порога {min_profit} TJS")
+                    if not passes_confidence:
+                        conf_str = f"{round(gem_confidence * 100)}%" if isinstance(gem_confidence, (int, float)) else "не указана"
+                        reasons.append(f"уверенность ({conf_str}) ниже порога {round(min_confidence * 100)}%")
+                    note = "Gemini счёл недооценённым, но " + " и ".join(reasons)
                 log_rejected(item, analysis, note=note)
 
             entry["photo_ok"] = True

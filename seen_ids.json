@@ -10666,7 +10666,8 @@
     "title": "Xiaomi Redmi K50 Pro",
     "price": 1000,
     "condition": "Б/у",
-    "model_key": "redmi k50 pro"
+    "model_key": "redmi k50 pro",
+    "sold_checked": true
   },
   "44115256": {
     "logged": true,
@@ -11133,7 +11134,8 @@
     "title": "Apple iPhone X, 64 gb, Space Grey",
     "price": 899,
     "condition": "Б/у",
-    "model_key": "apple x"
+    "model_key": "apple x",
+    "sold_checked": true
   },
   "99201732": {
     "logged": true,
@@ -11188,5 +11190,23 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "samsung a24"
+  },
+  "85510432": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17198855_telefon-redmi-10a-4-32gb/",
+    "title": "Xiaomi Redmi 10А",
+    "price": 710,
+    "condition": "Б/у",
+    "model_key": "redmi 10а"
+  },
+  "88416256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17198884_apple-iphone-16-pro-max-256-gb-black-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
+    "price": 7999,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   }
 }

@@ -10564,7 +10564,8 @@
     "title": "Samsung Galaxy S23 FE 8/256gb",
     "price": 4199,
     "condition": "Б/у",
-    "model_key": "samsung s23 fe"
+    "model_key": "samsung s23 fe",
+    "sold_checked": true
   },
   "89121256": {
     "logged": true,
@@ -11100,5 +11101,14 @@
     "price": 1650,
     "condition": "Б/у",
     "model_key": "samsung s10 plus"
+  },
+  "74126128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17198874_telefon-redmi-not-12-6-128gb/",
+    "title": "Xiaomi Redmi Note 12 6/128gb",
+    "price": 1220,
+    "condition": "Б/у",
+    "model_key": "redmi note 12"
   }
 }

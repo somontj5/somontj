@@ -98,5 +98,101 @@
   "apple x": {
     "first_seen": "2026-09-24",
     "ratio": 2.07
+  },
+  "samsung s25 ultra|256": {
+    "first_seen": "2026-09-24",
+    "ratio": 47.75
+  },
+  "apple 17 pro max|16": {
+    "first_seen": "2026-09-24",
+    "ratio": 35.0
+  },
+  "samsung s26 ultra|256": {
+    "first_seen": "2026-09-24",
+    "ratio": 10.42
+  },
+  "apple 17 pro max|512": {
+    "first_seen": "2026-09-24",
+    "ratio": 10.01
+  },
+  "apple 11 pro|256": {
+    "first_seen": "2026-09-24",
+    "ratio": 4.62
+  },
+  "apple 12 pro max|256": {
+    "first_seen": "2026-09-24",
+    "ratio": 3.58
+  },
+  "samsung a51|64": {
+    "first_seen": "2026-09-24",
+    "ratio": 3.26
+  },
+  "apple 12 mini|128": {
+    "first_seen": "2026-09-24",
+    "ratio": 3.0
+  },
+  "apple xr|128": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.9
+  },
+  "samsung s20|128": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.83
+  },
+  "apple xs|256": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.78
+  },
+  "apple 8 plus|64": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.43
+  },
+  "redmi 9a|32": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.41
+  },
+  "redmi note 11 pro|128": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.4
+  },
+  "apple xs|64": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.38
+  },
+  "samsung a56|256": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.25
+  },
+  "apple xr|64": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.22
+  },
+  "samsung a14|128": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.18
+  },
+  "apple xr|256": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.18
+  },
+  "redmi note 10|64": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.16
+  },
+  "apple 12 pro|256": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.15
+  },
+  "samsung note 20 ultra|256": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.12
+  },
+  "apple 7|128": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.0
+  },
+  "apple 12|128": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.0
   }
 }

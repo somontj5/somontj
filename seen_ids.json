@@ -10188,7 +10188,8 @@
     "title": "Samsung Galaxy A51 64 gb",
     "price": 1200,
     "condition": "Б/у",
-    "model_key": "samsung a51"
+    "model_key": "samsung a51",
+    "sold_checked": true
   },
   "75832128": {
     "logged": true,
@@ -10240,7 +10241,8 @@
     "title": "Xiaomi Redmi 9, 64gb",
     "price": 400,
     "condition": "Б/у",
-    "model_key": "redmi 9"
+    "model_key": "redmi 9",
+    "sold_checked": true
   },
   "19080411": {
     "logged": true,
@@ -10249,7 +10251,8 @@
     "title": "Xiaomi Redmi Note 11",
     "price": 1180,
     "condition": "Б/у",
-    "model_key": "redmi note 11"
+    "model_key": "redmi note 11",
+    "sold_checked": true
   },
   "71908159": {
     "logged": true,
@@ -10258,7 +10261,8 @@
     "title": "Honor X9d",
     "price": 3300,
     "condition": "Б/у",
-    "model_key": "honor x9d"
+    "model_key": "honor x9d",
+    "sold_checked": true
   },
   "81612128": {
     "logged": true,
@@ -10267,7 +10271,8 @@
     "title": "Xiaomi Redmi Note 12 128GB",
     "price": 1250,
     "condition": "Б/у",
-    "model_key": "redmi note 12"
+    "model_key": "redmi note 12",
+    "sold_checked": true
   },
   "91915128": {
     "logged": true,
@@ -10747,5 +10752,50 @@
     "price": 100,
     "condition": "Б/у",
     "model_key": "samsung e1150"
+  },
+  "49817512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16995498_apple-iphone-17-pro-max-512-gb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro Max, 512 gb",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
+  },
+  "66117512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16896661_apple-iphone-17-pro-max-512-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 512 gb, Silver  дубликат",
+    "price": 1599,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "16217512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16886162_apple-iphone-17-pro-max-512-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 512 gb, Silver",
+    "price": 1499,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
+  },
+  "22117512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16106221_apple-iphone-17-pro-max-512-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 512 gb, Silver дубликат",
+    "price": 1580,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "00513128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17195005_apple-iphone-13-pro-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
+    "price": 3400,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

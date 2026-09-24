@@ -10834,7 +10834,8 @@
     "title": "Apple iPhone 17 Pro Max, 512 gb, Silver",
     "price": 1499,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "22117512": {
     "logged": true,
@@ -10843,7 +10844,8 @@
     "title": "Apple iPhone 17 Pro Max, 512 gb, Silver дубликат",
     "price": 1580,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "00513128": {
     "logged": true,
@@ -11350,5 +11352,23 @@
     "price": 3000,
     "condition": "Б/у",
     "model_key": "samsung s22"
+  },
+  "00996365": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17200996_samsung-galaxy-a36-5g/",
+    "title": "Samsung Galaxy A36 5G",
+    "price": 2600,
+    "condition": "Б/у",
+    "model_key": "samsung a36"
+  },
+  "20100917": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17201009_apple-iphone-17-pro-max/",
+    "title": "Apple iPhone 17 Pro Max дубликат",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": null
   }
 }

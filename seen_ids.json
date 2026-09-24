@@ -10656,7 +10656,8 @@
     "title": "Apple iPhone 5s, 256 gb",
     "price": 4000,
     "condition": "Б/у",
-    "model_key": "apple 5s"
+    "model_key": "apple 5s",
+    "sold_checked": true
   },
   "94552016": {
     "logged": true,
@@ -10976,5 +10977,14 @@
     "price": 720,
     "condition": "Б/у",
     "model_key": "samsung a12"
+  },
+  "71973739": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17197373_redmi-9/",
+    "title": "Xiaomi Redmi 9",
+    "price": 710,
+    "condition": "Б/у",
+    "model_key": "redmi 9"
   }
 }

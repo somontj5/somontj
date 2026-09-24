@@ -34,6 +34,8 @@ ANOMALY_MIN_PRICE = int(os.environ.get("ANOMALY_MIN_PRICE", "100"))
 GEMINI_DAILY_LIMIT_PER_COMBO = int(os.environ.get("GEMINI_DAILY_LIMIT_PER_COMBO", "450"))
 TAVILY_MONTHLY_LIMIT_PER_KEY = int(os.environ.get("TAVILY_MONTHLY_LIMIT_PER_KEY", "950"))
 GOOGLE_SEARCH_DAILY_LIMIT_PER_KEY = int(os.environ.get("GOOGLE_SEARCH_DAILY_LIMIT_PER_KEY", "90"))
+# Статусы IMEI, при которых растаможка ещё не оплачена и её надо добавить к цене.
+CUSTOMS_DUE_STATUSES = ("not_registered", "gray")
 FALLBACK_USD_TJS_RATE = float(os.environ.get("FALLBACK_USD_TJS_RATE", "10.5"))
 ALERT_GAP_MINUTES = int(os.environ.get("ALERT_GAP_MINUTES", "40"))
 ALERT_FAILURE_THRESHOLD = int(os.environ.get("ALERT_FAILURE_THRESHOLD", "3"))
@@ -1576,31 +1578,41 @@ def format_manual_notes(notes):
 def format_imei_block(item, usd_rate):
     status = item.get("imei_status")
     if status == "white" or status == "registered":
-        return "\nIMEI уже зарегистрирован (легально растаможен) — дополнительных таможенных расходов и рисков не будет. НЕ спрашивай продавца про растаможку/IMEI, это уже известно."
-    if status == "gray":
+        return ("\nIMEI в БЕЛОМ списке (растаможка оплачена, устройство легально) — дополнительных таможенных "
+                "расходов и рисков не будет. НЕ спрашивай продавца про растаможку/IMEI, это уже известно.")
+    if status in CUSTOMS_DUE_STATUSES:
+        if status == "gray":
+            status_text = (
+                "IMEI в СЕРОМ СПИСКЕ: устройство ввезено/активировано, но растаможка ещё НЕ оплачена. 30 дней с "
+                "первой активации SIM связь и интернет работают как обычно; за это время владелец должен "
+                "оформить и оплатить растаможку через Единый портал IMEI, иначе IMEI уйдёт в ЧЁРНЫЙ список "
+                "(телефон перестанет работать во всех сетях Таджикистана). Сколько дней осталось — неизвестно."
+            )
+            ask_text = (
+                "Про сам факт серого списка не спрашивай, но можно спросить, когда была первая активация SIM "
+                "(сколько дней осталось до блокировки). Если срок почти вышел — это серьёзный риск, отрази его в "
+                "confidence."
+            )
+        else:
+            status_text = "IMEI НЕ зарегистрирован в Таджикистане (обычная, не критичная растаможка ещё не оплачена)."
+            ask_text = "НЕ спрашивай продавца про растаможку/IMEI, это уже известно и посчитано."
         return (
-            "\nIMEI этого телефона в СЕРОМ СПИСКЕ — статус неопределённый: не такой явно рискованный, как "
-            "чёрный, но и не гарантированно чистый, как белый. Точных последствий этого статуса программа "
-            "не знает — если это существенно влияет на оценку, попробуй уточнить через веб-поиск, и в любом "
-            "случае отрази эту неопределённость в confidence, не придумывай точную сумму риска. "
-            "НЕ спрашивай продавца про сам факт серого списка, это уже известно."
-        )
-    if status == "not_registered":
-        return (
-            f"\nВАЖНО: IMEI этого телефона НЕ зарегистрирован в Таджикистане (обычная, не критичная растаможка "
-            f"ещё не оплачена). Точный расчёт по формуле (пошлина 20% + НДС 14% от таможенной стоимости + сбор "
-            f"+ услуги оформления, курс {usd_rate} TJS за $1) уже посчитан программой: примерно "
-            f"{item.get('estimated_customs_cost')} TJS. Обязательно прибавь эту сумму к итоговой стоимости. "
-            f"НЕ спрашивай продавца про растаможку/IMEI, это уже известно и посчитано."
+            f"\nВАЖНО: {status_text} Точный расчёт по формуле (пошлина 20% + НДС 14% от таможенной стоимости + "
+            f"сбор + услуги оформления, курс {usd_rate} TJS за $1) уже посчитан программой: примерно "
+            f"{item.get('estimated_customs_cost')} TJS. Обязательно прибавь эту сумму к итоговой стоимости. {ask_text}"
         )
     if status == "black":
         return (
-            "\nВАЖНО И СЕРЬЁЗНО: IMEI этого телефона в ЧЁРНОМ СПИСКЕ — это не просто неоплаченная растаможка, "
-            "а отдельный, более рискованный статус (возможен штраф, сложности или невозможность легальной "
-            "растаможки в принципе). Это весомый минус, который может сделать сделку невыгодной или рискованной "
-            "даже при низкой цене — учти это в вердикте и снизь уверенность, если не уверен в масштабе риска. "
-            "НЕ спрашивай продавца про сам факт чёрного списка, это уже известно — если хочешь, можешь спросить "
-            "только про конкретные детали (например, можно ли вообще легализовать такой IMEI)."
+            "\nВАЖНО И СЕРЬЁЗНО: IMEI этого телефона в ЧЁРНОМ СПИСКЕ — устройству полностью запрещён доступ к "
+            "мобильным сетям ВСЕХ операторов Таджикистана (звонки, SMS, интернет не работают). В чёрный список "
+            "попадают по двум причинам: (1) серый список продержался больше 30 дней, а растаможка не оплачена — "
+            "это потенциально исправимо оплатой растаможки; (2) телефон "
+            "заявлен как утерянный/украденный — тогда исправить, скорее всего, нельзя, а покупка сопряжена с "
+            "юридическим риском. Причина в объявлении неизвестна. Не придумывай точных штрафов и сроков "
+            "разблокировки. Цену перепродажи считай так, будто телефон без связи, если легализация не очевидна; "
+            "вердикт \"недооценено\" ставь только при явной возможности исправить статус, и снижай confidence. "
+            "Про сам факт чёрного списка продавца не спрашивай — спроси, почему он там оказался (просрочена "
+            "растаможка или заявлен как утерянный/украденный) и можно ли его разблокировать."
         )
     return "\nСтатус IMEI на странице определить не удалось — если это важно, можешь спросить у продавца напрямую про растаможку."
 
@@ -1840,7 +1852,7 @@ def run_manual_check(title, price, condition, description, usd_rate, usage):
         "description": description, "imei_status": imei_status,
         "city": None, "published_at": "ручной ввод",
     }
-    if imei_status == "not_registered":
+    if imei_status in CUSTOMS_DUE_STATUSES:
         item["estimated_customs_cost"] = estimate_customs_cost(price, usd_rate)
 
     model_key = extract_model_key(title)
@@ -1878,9 +1890,9 @@ def run_manual_check(title, price, condition, description, usd_rate, usage):
     if item.get("imei_status") == "black":
         cost_lines += "🚫 IMEI в чёрном списке — серьёзный риск\n"
     elif item.get("imei_status") == "gray":
-        cost_lines += "⚠️ IMEI в сером списке — статус неопределённый\n"
+        cost_lines += "⚠️ IMEI в сером списке — растаможка не оплачена; через 30 дней с первой активации SIM станет чёрным\n"
     if item.get("estimated_customs_cost"):
-        cost_lines += f"🛃 Примерная растаможка (IMEI не оформлен): {item['estimated_customs_cost']} TJS\n"
+        cost_lines += f"🛃 Примерная растаможка (ещё не оплачена): {item['estimated_customs_cost']} TJS\n"
     if total:
         cost_lines += f"🧮 Итоговая цена (лот + расходы): {total} TJS\n"
     if resale:
@@ -1983,7 +1995,7 @@ def main():
             item["imei_status"] = imei_status
             item["city"] = city
             item["published_at"] = published_at
-            if imei_status == "not_registered":
+            if imei_status in CUSTOMS_DUE_STATUSES:
                 item["estimated_customs_cost"] = estimate_customs_cost(item["price"], usd_rate)
 
             model_key = extract_model_key(item["title"])
@@ -1998,6 +2010,7 @@ def main():
                 condition_part = item.get("condition") or "б/у"
                 query = f"{model_key} {memory_part}{condition_part} цена Таджикистан Somon"
                 web_results = web_search_lookup(query)
+
             data_sources = build_data_sources(similar_examples, confirmed_good_calls, confirmed_sales, manual_notes, web_results, item)
 
             # Бинарно: либо уверенно новый (по фразам в описании) — тогда фото вообще
@@ -2039,9 +2052,9 @@ def main():
                 if item.get("imei_status") == "black":
                     cost_lines += "🚫 IMEI в чёрном списке — серьёзный риск, см. пояснение ниже\n"
                 elif item.get("imei_status") == "gray":
-                    cost_lines += "⚠️ IMEI в сером списке — статус неопределённый\n"
+                    cost_lines += "⚠️ IMEI в сером списке — растаможка не оплачена; через 30 дней с первой активации SIM станет чёрным\n"
                 if customs:
-                    cost_lines += f"🛃 Примерная растаможка (IMEI не оформлен): {customs} TJS\n"
+                    cost_lines += f"🛃 Примерная растаможка (ещё не оплачена): {customs} TJS\n"
                 if total:
                     cost_lines += f"🧮 Итоговая цена (лот + расходы): {total} TJS\n"
                 if resale:

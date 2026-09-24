@@ -10391,7 +10391,8 @@
     "title": "Apple iPhone 12, 64 gb, Black",
     "price": 1900,
     "condition": "Б/у",
-    "model_key": "apple 12"
+    "model_key": "apple 12",
+    "sold_checked": true
   },
   "18961164": {
     "logged": true,
@@ -10401,7 +10402,8 @@
     "title": "Apple iPhone 11 Pro, 64 gb, Silver",
     "price": 1499,
     "condition": "Б/у",
-    "model_key": "apple 11 pro"
+    "model_key": "apple 11 pro",
+    "sold_checked": true
   },
   "19199010": {
     "logged": true,
@@ -10419,7 +10421,8 @@
     "title": "Samsung Galaxy S20 5G, 128gb",
     "price": 2399,
     "condition": "Б/у",
-    "model_key": "samsung s20 5g"
+    "model_key": "samsung s20 5g",
+    "sold_checked": true
   },
   "94514256": {
     "logged": true,
@@ -10915,5 +10918,23 @@
     "price": 3100,
     "condition": "Б/у",
     "model_key": "samsung a56"
+  },
+  "70401164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17197040_apple-iphone-11-pro-64-gb-gold/",
+    "title": "Apple iPhone 11 Pro, 64 gb, Gold",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro"
+  },
+  "97315256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17196973_apple-iphone-15-pro-max-256-gb-black-titanium/",
+    "title": "Apple iPhone 15 Pro Max, 256 gb, Black Titanium",
+    "price": 7800,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro max"
   }
 }

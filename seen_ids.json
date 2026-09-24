@@ -10209,7 +10209,8 @@
     "title": "Xiaomi Redmi 10А",
     "price": 750,
     "condition": "Б/у",
-    "model_key": "redmi 10а"
+    "model_key": "redmi 10а",
+    "sold_checked": true
   },
   "32538128": {
     "logged": true,
@@ -10219,7 +10220,8 @@
     "title": "Samsung Galaxy A53 8/128Gb Duos Vietnam",
     "price": 1750,
     "condition": "Б/у",
-    "model_key": "samsung a53 duos"
+    "model_key": "samsung a53 duos",
+    "sold_checked": true
   },
   "86114128": {
     "logged": true,
@@ -10319,7 +10321,8 @@
     "title": "Apple iPhone 11, 64 gb, White",
     "price": 1500,
     "condition": "Б/у",
-    "model_key": "apple 11"
+    "model_key": "apple 11",
+    "sold_checked": true
   },
   "19073413": {
     "logged": true,
@@ -10717,5 +10720,32 @@
     "price": 600,
     "condition": "Б/у",
     "model_key": "honor 8x"
+  },
+  "45458256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17195504_samsung-a54-5g-8-256/",
+    "title": "Samsung Galaxy A54 5G 8/256",
+    "price": 2700,
+    "condition": "Б/у",
+    "model_key": "samsung a54"
+  },
+  "17195139": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17195139_orzubek/",
+    "title": "Vivo",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "vivo"
+  },
+  "17195087": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17195087_rabochii-telefon/",
+    "title": "Samsung E1150",
+    "price": 100,
+    "condition": "Б/у",
+    "model_key": "samsung e1150"
   }
 }

@@ -10844,5 +10844,14 @@
     "price": 1300,
     "condition": "Б/у",
     "model_key": "apple xs"
+  },
+  "01412256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17196290_xiaomi-14-ultra-12-256/",
+    "title": "Xiaomi 14 ultra 12/256",
+    "price": 5500,
+    "condition": "Б/у",
+    "model_key": "xiaomi 14 ultra 12 256"
   }
 }

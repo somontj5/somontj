@@ -10614,7 +10614,8 @@
     "title": "Huawei Nova Y71 8/128gb",
     "price": 599,
     "condition": "Б/у",
-    "model_key": "huawei nova y71"
+    "model_key": "huawei nova y71",
+    "sold_checked": true
   },
   "19381522": {
     "logged": true,
@@ -11130,5 +11131,14 @@
     "price": 899,
     "condition": "Б/у",
     "model_key": "apple x"
+  },
+  "99201732": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17199201_apple-iphone-7-plus-32-gb/",
+    "title": "Apple iPhone 7 plus, 32 gb",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "apple 7 plus"
   }
 }

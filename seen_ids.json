@@ -10716,7 +10716,8 @@
     "title": "Samsung Galaxy A30",
     "price": 500,
     "condition": "Б/у",
-    "model_key": "samsung a30"
+    "model_key": "samsung a30",
+    "sold_checked": true
   },
   "00014464": {
     "logged": true,
@@ -10844,7 +10845,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
     "price": 3400,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "71015256": {
     "logged": true,
@@ -11238,5 +11240,23 @@
     "price": 2500,
     "condition": "Б/у",
     "model_key": "samsung s10 plus"
+  },
+  "15014128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17196150_apple-iphone-14-pro-128-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Deep Purple",
+    "price": 5300,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
+  },
+  "72001958": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17200195_tecno-spark-8c/",
+    "title": "Tecno Spark 8C",
+    "price": 499,
+    "condition": "Б/у",
+    "model_key": "tecno spark 8c"
   }
 }

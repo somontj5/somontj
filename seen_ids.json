@@ -10686,7 +10686,8 @@
     "title": "Samsung Galaxy J5+ 2016",
     "price": 400,
     "condition": "Б/у",
-    "model_key": "samsung j5 plus 2016"
+    "model_key": "samsung j5 plus 2016",
+    "sold_checked": true
   },
   "96257310": {
     "logged": true,
@@ -11218,5 +11219,14 @@
     "price": 1499,
     "condition": "Б/у",
     "model_key": "apple 12"
+  },
+  "71999668": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17199966_oneplus-8/",
+    "title": "OnePlus 8",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "oneplus 8"
   }
 }

@@ -144,6 +144,14 @@ IMEI_BLACK_RE = re.compile(r"IMEI[^.]{0,60}в\s+ч[её]рн\w*\s+списк", r
 IMEI_NOT_REGISTERED_RE = re.compile(r"IMEI[^.]{0,60}не\s+внес", re.I)
 IMEI_REGISTERED_RE = re.compile(r"IMEI[^.]{0,60}(?<!не\s)внес", re.I)
 PUBLISHED_RE = re.compile(r"(Сегодня|Вчера|\d+\s*(?:минут\w*|час\w*|день|дн\w*|недел\w*)\s*назад)", re.I)
+# Запасной способ найти город, если labeled_value() не смог — та часть страницы
+# бывает свёрстана иначе, чем таблица "Цвет/Состояние/Память" (не двухколоночно,
+# а одной строкой "Город: Худжанд"), и подбор контейнера в labeled_value() иногда
+# промахивается. full_text уже склеен в одну строку пробелами без переносов, так
+# что название города ищем как один "кириллический токен" сразу после слова
+# "Город" — этого достаточно для типичных однословных названий городов Таджикистана
+# и не рискует случайно захватить следующее поле (там уже пробел, а не буква/дефис).
+CITY_RE = re.compile(r"Город\s*:?\s*([А-ЯЁ][А-ЯЁа-яё\-]{1,30})")
 
 SOLD_RE = re.compile(r"(?<!не\s)\bПродано\b", re.I)
 MODES = {"all": "все объявления категории", "used": "только Б/у", "params": "только заданные параметры"}
@@ -1374,6 +1382,9 @@ def fetch_detail(ad_url):
     memory = int(memory_match.group(1)) if memory_match else None
     imei_status = detect_imei_status(full_text)
     city = labeled_value(soup, ["Город"])
+    if not city:
+        city_match = CITY_RE.search(full_text)
+        city = city_match.group(1) if city_match else None
     published_match = PUBLISHED_RE.search(full_text)
     published_at = published_match.group(1) if published_match else None
 

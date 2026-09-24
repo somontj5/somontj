@@ -10432,7 +10432,8 @@
     "title": "Apple iPhone 14 Pro, 256 gb, Silver",
     "price": 5550,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "86115256": {
     "logged": true,
@@ -10441,7 +10442,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Blue Titanium",
     "price": 8000,
     "condition": "Б/у",
-    "model_key": "apple 15 pro max"
+    "model_key": "apple 15 pro max",
+    "sold_checked": true
   },
   "68015256": {
     "logged": true,
@@ -10986,5 +10988,23 @@
     "price": 710,
     "condition": "Б/у",
     "model_key": "redmi 9"
+  },
+  "97498105": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17197498_samsung-s10-5g/",
+    "title": "Samsung Galaxy S10 5G",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "samsung s10"
+  },
+  "49113128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17197491_apple-iphone-13-pro-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
+    "price": 5000,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

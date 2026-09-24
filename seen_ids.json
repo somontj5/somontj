@@ -10142,7 +10142,8 @@
     "title": "Samsung Galaxy S22 Ultra",
     "price": 2999,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "77238128": {
     "logged": true,
@@ -10647,5 +10648,14 @@
     "price": 5900,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "94573100": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17194573_100-foiiz/",
+    "title": "Samsung Galaxy A30",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "samsung a30"
   }
 }

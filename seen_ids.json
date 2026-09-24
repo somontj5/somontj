@@ -10522,7 +10522,8 @@
     "title": "Xiaomi Redmi Note 12 128гб",
     "price": 1260,
     "condition": "Б/у",
-    "model_key": "redmi note 12 128гб"
+    "model_key": "redmi note 12 128гб",
+    "sold_checked": true
   },
   "19259722": {
     "logged": true,

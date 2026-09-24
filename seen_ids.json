@@ -10151,7 +10151,8 @@
     "title": "Samsung Galaxy S23 8/128Gb Duos Vietnam",
     "price": 4350,
     "condition": "Б/у",
-    "model_key": "samsung s23 duos"
+    "model_key": "samsung s23 duos",
+    "sold_checked": true
   },
   "20122562": {
     "logged": true,
@@ -10637,5 +10638,14 @@
     "price": 170,
     "condition": "Б/у",
     "model_key": "samsung b310 e"
+  },
+  "31614128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/12552316_apple-iphone-14-pro-128-gb-silver/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Deep Purple",
+    "price": 5900,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

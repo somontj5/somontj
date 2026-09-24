@@ -10944,7 +10944,8 @@
     "title": "Samsung galaxy A56",
     "price": 4200,
     "condition": "Б/у",
-    "model_key": "samsung a56"
+    "model_key": "samsung a56",
+    "sold_checked": true
   },
   "19676156": {
     "logged": true,

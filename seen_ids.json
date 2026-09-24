@@ -10483,7 +10483,8 @@
     "title": "Samsung Galaxy А13",
     "price": 1100,
     "condition": "Б/у",
-    "model_key": "samsung а13"
+    "model_key": "samsung а13",
+    "sold_checked": true
   },
   "23461164": {
     "logged": true,
@@ -10502,7 +10503,8 @@
     "title": "Xiaomi Redmi 10А 32gb",
     "price": 740,
     "condition": "Б/у",
-    "model_key": "redmi 10а"
+    "model_key": "redmi 10а",
+    "sold_checked": true
   },
   "83145256": {
     "logged": true,

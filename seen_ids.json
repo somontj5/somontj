@@ -10092,7 +10092,8 @@
     "title": "Samsung Galaxy S22 Ultra 12/256Gb",
     "price": 3590,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "19057112": {
     "logged": true,
@@ -10101,7 +10102,8 @@
     "title": "Xiaomi Redmi Note 12, 128gb",
     "price": 1000,
     "condition": "Б/у",
-    "model_key": "redmi note 12"
+    "model_key": "redmi note 12",
+    "sold_checked": true
   },
   "90521225": {
     "logged": true,
@@ -10597,5 +10599,23 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "apple 12 mini"
+  },
+  "68947750": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14689477_redmi-k50-pro/",
+    "title": "Xiaomi Redmi K50 Pro",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "redmi k50 pro"
+  },
+  "44115256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17194411_apple-iphone-5s-256-gb/",
+    "title": "Apple iPhone 5s, 256 gb",
+    "price": 4000,
+    "condition": "Б/у",
+    "model_key": "apple 5s"
   }
 }

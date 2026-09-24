@@ -10306,7 +10306,8 @@
     "title": "Телефон Lingbo",
     "price": 800,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "71286500": {
     "logged": true,
@@ -10854,5 +10855,24 @@
     "price": 5500,
     "condition": "Б/у",
     "model_key": "xiaomi 14 ultra 12 256"
+  },
+  "19657225": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17196572_samsung-galaxy-s25-plus/",
+    "title": "Samsung galaxy S25 plus",
+    "price": 6650,
+    "condition": "Б/у",
+    "model_key": "samsung s25 plus"
+  },
+  "71965537": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17196553_tecno-pova-7-ultra/",
+    "title": "Tecno Pova 7 ultra",
+    "price": 2890,
+    "condition": "Б/у",
+    "model_key": "tecno pova 7 ultra"
   }
 }

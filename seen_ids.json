@@ -11023,7 +11023,8 @@
     "title": "Samsung Galaxy S10 5G",
     "price": 1999,
     "condition": "Б/у",
-    "model_key": "samsung s10"
+    "model_key": "samsung s10",
+    "sold_checked": true
   },
   "49113128": {
     "logged": true,

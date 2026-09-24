@@ -10656,7 +10656,8 @@
     "title": "Apple iPhone 12 mini, 64 gb, White",
     "price": 1800,
     "condition": "Б/у",
-    "model_key": "apple 12 mini"
+    "model_key": "apple 12 mini",
+    "sold_checked": true
   },
   "68947750": {
     "logged": true,
@@ -11160,5 +11161,32 @@
     "price": 3000,
     "condition": "Б/у",
     "model_key": "poco x7 pro"
+  },
+  "19892056": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17198920_telefon-samsung-a56/",
+    "title": "Samsung Galaxy A56",
+    "price": 2999,
+    "condition": "Б/у",
+    "model_key": "samsung a56"
+  },
+  "56511512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17199565_apple-iphone-11-pro-max-512-gb-gold/",
+    "title": "Apple iPhone 11 Pro Max, 512 gb, Gold",
+    "price": 2200,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro max"
+  },
+  "19947324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17199473_a24/",
+    "title": "Samsung Galaxy A24",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "samsung a24"
   }
 }

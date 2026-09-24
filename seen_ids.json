@@ -10757,7 +10757,8 @@
     "title": "Samsung E1150",
     "price": 100,
     "condition": "Б/у",
-    "model_key": "samsung e1150"
+    "model_key": "samsung e1150",
+    "sold_checked": true
   },
   "49817512": {
     "logged": true,

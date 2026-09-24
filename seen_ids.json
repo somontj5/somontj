@@ -10624,7 +10624,8 @@
     "title": "Samsung Galaxy S22 Ultra",
     "price": 4300,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "36996128": {
     "logged": true,
@@ -11150,5 +11151,14 @@
     "price": 8599,
     "condition": "Б/у",
     "model_key": "apple 16 pro"
+  },
+  "69747797": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16974779_xiaomi-poco-x7-pro/",
+    "title": "Xiaomi Poco X7 pro",
+    "price": 3000,
+    "condition": "Б/у",
+    "model_key": "poco x7 pro"
   }
 }

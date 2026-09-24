@@ -1,154 +1,98 @@
 {
-  "apple iphone 17 pro": {
-    "first_seen": "2026-09-22",
-    "ratio": 49.43
-  },
-  "samsung galaxy s25 ultra": {
-    "first_seen": "2026-09-22",
+  "samsung s25 ultra": {
+    "first_seen": "2026-09-24",
     "ratio": 47.75
   },
-  "xiaomi redmi": {
-    "first_seen": "2026-09-22",
+  "redmi": {
+    "first_seen": "2026-09-24",
     "ratio": 16.13
   },
-  "samsung galaxy s26 ultra": {
-    "first_seen": "2026-09-22",
-    "ratio": 10.51
-  },
-  "honor": {
-    "first_seen": "2026-09-22",
-    "ratio": 9.0
-  },
-  "apple iphone xr": {
-    "first_seen": "2026-09-22",
-    "ratio": 7.77
-  },
-  "apple iphone 11 pro": {
-    "first_seen": "2026-09-22",
-    "ratio": 4.62
-  },
-  "nokia": {
-    "first_seen": "2026-09-22",
-    "ratio": 4.29
-  },
-  "apple iphone 12 pro": {
-    "first_seen": "2026-09-22",
-    "ratio": 3.5
-  },
-  "samsung galaxy a51": {
-    "first_seen": "2026-09-22",
-    "ratio": 3.26
-  },
-  "huawei honor": {
-    "first_seen": "2026-09-22",
-    "ratio": 3.17
-  },
-  "apple iphone 7": {
-    "first_seen": "2026-09-22",
-    "ratio": 3.01
-  },
-  "apple iphone 12 mini": {
-    "first_seen": "2026-09-22",
-    "ratio": 3.0
-  },
-  "apple iphone 11": {
-    "first_seen": "2026-09-22",
-    "ratio": 3.0
-  },
-  "apple iphone 14 pro": {
-    "first_seen": "2026-09-22",
-    "ratio": 2.83
-  },
-  "apple iphone x": {
-    "first_seen": "2026-09-22",
-    "ratio": 2.77
-  },
-  "infinix note": {
-    "first_seen": "2026-09-22",
-    "ratio": 2.65
-  },
-  "apple iphone 13 pro": {
-    "first_seen": "2026-09-22",
-    "ratio": 2.52
-  },
-  "xiaomi redmi note 11": {
-    "first_seen": "2026-09-22",
-    "ratio": 2.51
-  },
-  "samsung galaxy a3": {
-    "first_seen": "2026-09-22",
-    "ratio": 2.5
-  },
-  "apple iphone 15 pro": {
-    "first_seen": "2026-09-22",
-    "ratio": 2.48
-  },
-  "xiaomi redmi 9a": {
-    "first_seen": "2026-09-22",
-    "ratio": 2.41
-  },
-  "apple iphone xs": {
-    "first_seen": "2026-09-22",
-    "ratio": 2.38
-  },
-  "apple iphone 8 plus": {
-    "first_seen": "2026-09-22",
-    "ratio": 2.27
-  },
-  "apple iphone xs max": {
-    "first_seen": "2026-09-22",
-    "ratio": 2.2
-  },
-  "samsung galaxy s10": {
-    "first_seen": "2026-09-22",
-    "ratio": 2.2
-  },
-  "xiaomi redmi note 10": {
-    "first_seen": "2026-09-22",
-    "ratio": 2.16
-  },
-  "samsung galaxy a56": {
-    "first_seen": "2026-09-22",
-    "ratio": 2.12
-  },
-  "samsung galaxy note 20": {
-    "first_seen": "2026-09-22",
-    "ratio": 2.12
-  },
-  "apple 15 pro max": {
-    "first_seen": "2026-09-22",
-    "ratio": 13.33
-  },
-  "apple xr": {
-    "first_seen": "2026-09-22",
-    "ratio": 2.9
-  },
-  "apple 11": {
-    "first_seen": "2026-09-22",
-    "ratio": 2.2
-  },
-  "apple 14 pro": {
-    "first_seen": "2026-09-22",
-    "ratio": 2.4
+  "samsung s26 ultra": {
+    "first_seen": "2026-09-24",
+    "ratio": 10.42
   },
   "samsung": {
-    "first_seen": "2026-09-22",
+    "first_seen": "2026-09-24",
     "ratio": 4.68
   },
-  "apple 17 pro max": {
-    "first_seen": "2026-09-23",
-    "ratio": 11.3
+  "apple 11 pro": {
+    "first_seen": "2026-09-24",
+    "ratio": 3.31
   },
-  "apple xs": {
-    "first_seen": "2026-09-23",
-    "ratio": 2.5
+  "samsung a51": {
+    "first_seen": "2026-09-24",
+    "ratio": 3.26
+  },
+  "apple 12 mini": {
+    "first_seen": "2026-09-24",
+    "ratio": 3.0
+  },
+  "samsung s20": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.83
+  },
+  "apple xr": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.8
+  },
+  "apple 11 pro max": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.64
+  },
+  "samsung a12": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.61
+  },
+  "samsung s10 plus": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.6
+  },
+  "samsung a52": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.55
+  },
+  "samsung s21": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.55
+  },
+  "apple 8 plus": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.43
+  },
+  "redmi 9a": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.41
+  },
+  "redmi note 11 pro": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.4
+  },
+  "apple 12": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.31
+  },
+  "apple 7": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.26
+  },
+  "samsung a56": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.25
+  },
+  "redmi note 10": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.22
+  },
+  "apple xs max": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.2
   },
   "samsung a14": {
-    "first_seen": "2026-09-23",
+    "first_seen": "2026-09-24",
     "ratio": 2.18
   },
-  "samsung s20 5g": {
-    "first_seen": "2026-09-23",
-    "ratio": 2.4
+  "samsung note 20 ultra": {
+    "first_seen": "2026-09-24",
+    "ratio": 2.12
   }
 }

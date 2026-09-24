@@ -11379,6 +11379,7 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
     "price": 3500,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   }
 }

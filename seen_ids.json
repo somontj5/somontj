@@ -10795,7 +10795,8 @@
     "title": "Vivo",
     "price": 800,
     "condition": "Б/у",
-    "model_key": "vivo"
+    "model_key": "vivo",
+    "sold_checked": true
   },
   "17195087": {
     "logged": true,
@@ -11320,5 +11321,23 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "redmi"
+  },
+  "75113256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17200751_apple-iphone-13-pro-max-256-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro Max, 256 gb, Sierra Blue",
+    "price": 5000,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
+  },
+  "72617256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17200726_apple-iphone-17-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
+    "price": 13000,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
   }
 }

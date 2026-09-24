@@ -1129,6 +1129,28 @@ def check_telegram_commands(searches, subscribers):
                 send_telegram(chat_id, "✅ Запись добавлена в базу — Gemini будет учитывать её при похожих разборах.")
             else:
                 send_telegram(chat_id, "Напишите текст после команды, например:\n/dbadd iPhone 13 128GB, замена экрана ~350 TJS, батарея ~150 TJS")
+        elif command == "/manual":
+            parts = [p.strip() for p in argument.split("|")]
+            price_ok = len(parts) > 1 and parts[1].replace(" ", "").isdigit()
+            if len(parts) < 2 or not parts[0] or not price_ok:
+                send_telegram(
+                    chat_id,
+                    "Формат: /manual Название | Цена | Состояние | Описание\n"
+                    "Состояние и описание необязательны, но чем подробнее описание "
+                    "(дефекты, IMEI, память), тем точнее будет оценка.\n\n"
+                    "Например:\n/manual iPhone 13 128GB | 2500 | б/у | Экран без сколов, "
+                    "батарея 82%, IMEI зарегистрирован, коробки нет",
+                )
+            else:
+                title = parts[0]
+                price = int(parts[1].replace(" ", ""))
+                condition = normalize_condition(parts[2]) if len(parts) > 2 and parts[2] else None
+                description = parts[3] if len(parts) > 3 else ""
+                send_telegram(chat_id, "🧪 Проверяю гипотетическое объявление без фото — это может занять до минуты...")
+                manual_usage = get_daily_usage(GEMINI_DAILY_FILE, [c["id"] for c in GEMINI_COMBOS])
+                manual_usd_rate = get_usd_tjs_rate()
+                result_text = run_manual_check(title, price, condition, description, manual_usd_rate, manual_usage)
+                send_telegram(chat_id, result_text)
         elif command == "/bought":
             url = argument.strip()
             if not url:
@@ -1252,6 +1274,8 @@ def check_telegram_commands(searches, subscribers):
                                     "/anomalies — проверить базу на подозрительные разбросы цен (склеенные модели)\n"
                                     "/remigrate — пересчитать model_key всей базы по текущей формуле (только владелец)\n"
                                     "/dbadd текст — добавить что угодно в базу вручную\n"
+                                    "/manual Название | Цена | Состояние | Описание — гипотетическая "
+                                    "проверка объявления без фото (не сохраняется в базу)\n"
                                     "/bought ссылка — подтвердить удачную покупку по рекомендации бота\n"
                                     "/rejected — файл со всеми отклонёнными лотами\n"
                                     "/stats — расход лимитов и размер базы\n"
@@ -1492,7 +1516,7 @@ def format_imei_block(item, usd_rate):
     return "\nСтатус IMEI на странице определить не удалось — если это важно, можешь спросить у продавца напрямую про растаможку."
 
 
-def build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate, has_photos=True, condition_note=None):
+def build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate, has_photos=True, condition_note=None, no_photo_reason=None):
     examples_text = format_similar_examples(similar_examples)
     good_calls_text = format_confirmed_good_calls(confirmed_good_calls)
     sales_text = format_confirmed_sales(confirmed_sales)
@@ -1506,13 +1530,27 @@ def build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, 
     if has_photos:
         intro = "Изучи текст объявления и фото."
         no_photo_note = ""
-    else:
+    elif no_photo_reason is None:
+        # Автоматический путь (реальное объявление, condition_signal() уже уверенно
+        # определил "новое/запечатанное" по тексту продавца) — поведение как было:
+        # жёстко считаем состояние новым и не позволяем придумывать дефекты.
         intro = "Фото для этого объявления НЕ анализируются."
         no_photo_note = (
             "\nВАЖНО: фото не предоставлены (устройство уверенно определено как новое/запечатанное — "
             "смотреть визуальные дефекты не имеет смысла). Ставь overall_visual_condition \"новое\", "
             "visible_defects оставляй пустым списком — не придумывай дефекты, которых не видел. "
             "Оценивай сделку по тексту, цене, сравнению с рынком и историей продаж ниже.\n"
+        )
+    else:
+        # Пришла своя причина отсутствия фото (например, это гипотетическая ручная
+        # проверка, а не реальное новое устройство) — здесь состояние товара заранее
+        # НЕ известно, поэтому в отличие от ветки выше не форсируем "новое".
+        intro = "Фото для этого объявления НЕ анализируются."
+        no_photo_note = (
+            f"\nВАЖНО: {no_photo_reason}. Определяй overall_visual_condition и visible_defects ТОЛЬКО по тому, "
+            "что прямо написано в тексте/описании — не придумывай ничего, чего там нет, и не считай устройство "
+            "новым, если это не сказано явно (по умолчанию, если состояние неясно, ставь overall_visual_condition "
+            "\"неизвестно\"). Оценивай сделку по тексту, цене, сравнению с рынком и историей продаж ниже.\n"
         )
     if condition_note:
         no_photo_note += f"\n{condition_note}\n"
@@ -1584,14 +1622,14 @@ def parse_gemini_json(text):
     return {"market_verdict": "недостаточно данных", "reasoning": "не удалось разобрать ответ", "visible_defects": []}
 
 
-def analyze_listing(item, photo_urls, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate, usage, condition_note=None):
+def analyze_listing(item, photo_urls, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate, usage, condition_note=None, no_photo_reason=None):
     combo = pick_available_combo(usage)
     if not combo:
         return {"market_verdict": "недостаточно данных",
                 "reasoning": "дневной лимит Gemini исчерпан на всех сочетаниях ключ+модель, анализ отложен",
                 "visible_defects": []}
 
-    parts = [{"text": build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate, has_photos=bool(photo_urls), condition_note=condition_note)}]
+    parts = [{"text": build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate, has_photos=bool(photo_urls), condition_note=condition_note, no_photo_reason=no_photo_reason)}]
     for url in photo_urls:
         try:
             img = requests.get(url, headers=HEADERS, timeout=15)
@@ -1678,6 +1716,99 @@ def build_data_sources(similar_examples, confirmed_good_calls, confirmed_sales, 
     if not sources:
         sources.append("только фото и текст объявления, без доп. данных")
     return sources
+
+
+# ---------- Ручная гипотетическая проверка (без реального объявления) ----------
+
+MANUAL_NO_PHOTO_REASON = (
+    "это гипотетическая проверка, введённая вручную в чат (не настоящее объявление с Somon.tj) — "
+    "фото физически нет и не будет"
+)
+
+
+def run_manual_check(title, price, condition, description, usd_rate, usage):
+    """Собирает синтетический item из введённого вручную текста и прогоняет его через
+    тот же анализ, что и настоящие объявления, — БЕЗ фото и БЕЗ записи в price_history.jsonl
+    (иначе выдуманные для проверки данные засорили бы статистику и будущие сравнения
+    для реальных объявлений). Похожие лоты/подтверждённые продажи/заметки из базы
+    подтягиваются как обычно — это чтение, а не запись, вреда базе нет."""
+    combined_text = f"{title} {description}"
+    memory_match = re.search(r"(\d+)\s*(?:gb|гб)", combined_text, re.I)
+    memory = int(memory_match.group(1)) if memory_match else None
+    imei_status = detect_imei_status(combined_text)
+
+    item = {
+        "title": title, "price": price, "condition": condition, "memory": memory,
+        "description": description, "imei_status": imei_status,
+        "city": None, "published_at": "ручной ввод",
+    }
+    if imei_status == "not_registered":
+        item["estimated_customs_cost"] = estimate_customs_cost(price, usd_rate)
+
+    model_key = extract_model_key(title)
+    similar_examples = similar_full_analyses(model_key, condition, exclude_id=None)
+    confirmed_good_calls = get_confirmed_good_calls(model_key)
+    confirmed_sales = get_confirmed_sales(model_key)
+    manual_notes = get_manual_notes(model_key)
+
+    web_results = None
+    if model_key:
+        memory_part = f"{memory}gb " if memory else ""
+        condition_part = condition or "б/у"
+        web_results = web_search_lookup(f"{model_key} {memory_part}{condition_part} цена Таджикистан Somon")
+
+    data_sources = build_data_sources(similar_examples, confirmed_good_calls, confirmed_sales, manual_notes, web_results, item)
+    analysis = analyze_listing(item, [], similar_examples, confirmed_good_calls, confirmed_sales, web_results,
+                                manual_notes, usd_rate, usage, no_photo_reason=MANUAL_NO_PHOTO_REASON)
+
+    verdict = analysis.get("market_verdict", "недостаточно данных")
+    defects = ", ".join(analysis.get("visible_defects", [])) or "не указаны/не обнаружены"
+    positives = ", ".join(analysis.get("positive_features", [])) or "—"
+    repair = analysis.get("estimated_repair_cost")
+    total = analysis.get("estimated_total_cost")
+    resale = analysis.get("estimated_resale_price")
+    confidence = analysis.get("confidence")
+    questions = analysis.get("questions_for_seller", [])
+
+    profit = None
+    if isinstance(resale, (int, float)) and isinstance(total, (int, float)):
+        profit = round(resale - total)
+
+    cost_lines = ""
+    if repair:
+        cost_lines += f"🔧 Примерный ремонт: {repair} TJS\n"
+    if item.get("imei_status") == "black":
+        cost_lines += "🚫 IMEI в чёрном списке — серьёзный риск\n"
+    elif item.get("imei_status") == "gray":
+        cost_lines += "⚠️ IMEI в сером списке — статус неопределённый\n"
+    if item.get("estimated_customs_cost"):
+        cost_lines += f"🛃 Примерная растаможка (IMEI не оформлен): {item['estimated_customs_cost']} TJS\n"
+    if total:
+        cost_lines += f"🧮 Итоговая цена (лот + расходы): {total} TJS\n"
+    if resale:
+        cost_lines += f"📈 Продать можно примерно за: {resale} TJS\n"
+    if profit is not None:
+        cost_lines += f"💵 Примерная выгода: {profit} TJS\n"
+    if isinstance(confidence, (int, float)):
+        cost_lines += f"🎯 Уверенность Gemini: {round(confidence * 100)}%\n"
+
+    questions_lines = ""
+    if questions:
+        questions_lines = "❓ Вопросы продавцу:\n" + "\n".join(f"  • {q}" for q in questions) + "\n"
+
+    return (
+        f"🧪 Гипотетическая проверка (без фото, введено вручную)\n\n{title}\n"
+        f"💰 Цена: {price} TJS\n"
+        f"🩺 Состояние по вводу: {condition or 'не указано'}\n"
+        f"📊 Состояние по описанию (мнение Gemini): {analysis.get('overall_visual_condition', 'неизвестно')}\n"
+        f"🛠 Дефекты: {defects}\n"
+        f"✅ Плюсы: {positives}\n"
+        f"{cost_lines}"
+        f"{questions_lines}"
+        f"📚 На основе: {', '.join(data_sources)}\n"
+        f"🧭 Вердикт: {verdict}\n"
+        f"💡 {analysis.get('reasoning', '')}"
+    )
 
 
 # ---------- Главная логика ----------

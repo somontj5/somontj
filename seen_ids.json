@@ -10786,7 +10786,8 @@
     "title": "Samsung Galaxy A54 5G 8/256",
     "price": 2700,
     "condition": "Б/у",
-    "model_key": "samsung a54"
+    "model_key": "samsung a54",
+    "sold_checked": true
   },
   "17195139": {
     "logged": true,
@@ -11340,5 +11341,14 @@
     "price": 13000,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "01002225": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17201002_samsung-galaxy-s22-5g/",
+    "title": "Samsung Galaxy S22 5G",
+    "price": 3000,
+    "condition": "Б/у",
+    "model_key": "samsung s22"
   }
 }

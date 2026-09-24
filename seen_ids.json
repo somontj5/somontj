@@ -10237,7 +10237,8 @@
     "title": "Samsung Galaxy A14 128 gb",
     "price": 1200,
     "condition": "Б/у",
-    "model_key": "samsung a14"
+    "model_key": "samsung a14",
+    "sold_checked": true
   },
   "71908339": {
     "logged": true,
@@ -10813,5 +10814,14 @@
     "price": 6550,
     "condition": "Б/у",
     "model_key": "apple 15 pro"
+  },
+  "82813128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17195828_apple-iphone-13-128-gb-midnight/",
+    "title": "Apple iPhone 13, 128 gb, Midnight",
+    "price": 3200,
+    "condition": "Б/у",
+    "model_key": "apple 13"
   }
 }

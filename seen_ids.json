@@ -12139,5 +12139,15 @@
     "price": 1199,
     "condition": "Б/у",
     "model_key": "apple x"
+  },
+  "19417256": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17205194_apple-iphone-17-256-gb-lavender/",
+    "title": "Apple iPhone 17, 256 gb, Lavender",
+    "price": 10500,
+    "condition": "Б/у",
+    "model_key": "apple 17"
   }
 }

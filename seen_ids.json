@@ -12410,7 +12410,8 @@
     "title": "Apple iPhone 11, 64 gb, Black",
     "price": 1850,
     "condition": "Б/у",
-    "model_key": "apple 11"
+    "model_key": "apple 11",
+    "sold_checked": true
   },
   "60714256": {
     "logged": true,

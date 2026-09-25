@@ -10876,7 +10876,8 @@
     "title": "Apple iPhone 13, 128 gb, Midnight",
     "price": 3200,
     "condition": "Б/у",
-    "model_key": "apple 13"
+    "model_key": "apple 13",
+    "sold_checked": true
   },
   "10914128": {
     "logged": true,
@@ -10885,7 +10886,8 @@
     "title": "Apple iPhone 14, 128 gb, Blue",
     "price": 4700,
     "condition": "Б/у",
-    "model_key": "apple 14"
+    "model_key": "apple 14",
+    "sold_checked": true
   },
   "95854256": {
     "logged": true,
@@ -10894,7 +10896,8 @@
     "title": "Apple iPhone Xs, 256 gb, Gold",
     "price": 1300,
     "condition": "Б/у",
-    "model_key": "apple xs"
+    "model_key": "apple xs",
+    "sold_checked": true
   },
   "01412256": {
     "logged": true,
@@ -10903,7 +10906,8 @@
     "title": "Xiaomi 14 ultra 12/256",
     "price": 5500,
     "condition": "Б/у",
-    "model_key": "xiaomi 14 ultra 12 256"
+    "model_key": "xiaomi 14 ultra 12 256",
+    "sold_checked": true
   },
   "19657225": {
     "logged": true,
@@ -10913,7 +10917,8 @@
     "title": "Samsung galaxy S25 plus",
     "price": 6650,
     "condition": "Б/у",
-    "model_key": "samsung s25 plus"
+    "model_key": "samsung s25 plus",
+    "sold_checked": true
   },
   "71965537": {
     "logged": true,
@@ -11420,5 +11425,123 @@
     "price": 2050,
     "condition": "Б/у",
     "model_key": "redmi note 14pro"
+  },
+  "65612379": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16561237_huawei-honor-x9d/",
+    "title": "Huawei honor X9d",
+    "price": 3350,
+    "condition": "Б/у",
+    "model_key": "huawei honor x9d"
+  },
+  "28161032": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17202816_telefon-redmi-10a-32gb/",
+    "title": "Xiaomi Redmi 10A 32Gb",
+    "price": 760,
+    "condition": "Б/у",
+    "model_key": "redmi 10a"
+  },
+  "80512128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17202805_telefon-redmi-note-12-128gb-glabal-version/",
+    "title": "Xiaomi Redmi Note 12 128gb Glabal Version",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "redmi note 12"
+  },
+  "41412865": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17202784_telefon-redmi-note-14-128-6gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 14",
+    "price": 1650,
+    "condition": "Б/у",
+    "model_key": "redmi note 14"
+  },
+  "99561285": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17202799_telefon-samsung-a56-128-vetnam-5g-silver/",
+    "title": "Samsung Galaxy A56 5G",
+    "price": 2950,
+    "condition": "Б/у",
+    "model_key": "samsung a56"
+  },
+  "91412512": {
+    "logged": true
+  },
+  "67213128": {
+    "logged": true
+  },
+  "72027089": {
+    "logged": true
+  },
+  "64920464": {
+    "logged": true
+  },
+  "16914998": {
+    "logged": true
+  },
+  "91228256": {
+    "logged": true
+  },
+  "19368256": {
+    "logged": true
+  },
+  "91501264": {
+    "logged": true
+  },
+  "57917256": {
+    "logged": true
+  },
+  "50168256": {
+    "logged": true
+  },
+  "88211256": {
+    "logged": true
+  },
+  "43218256": {
+    "logged": true
+  },
+  "84218256": {
+    "logged": true
+  },
+  "92212246": {
+    "logged": true
+  },
+  "75238256": {
+    "logged": true
+  },
+  "06118128": {
+    "logged": true
+  },
+  "73576128": {
+    "logged": true
+  },
+  "91512128": {
+    "logged": true
+  },
+  "21806110": {
+    "logged": true
+  },
+  "06228256": {
+    "logged": true
+  },
+  "93311128": {
+    "logged": true
+  },
+  "33317512": {
+    "logged": true
+  },
+  "20200516": {
+    "logged": true
+  },
+  "19531164": {
+    "logged": true
   }
 }

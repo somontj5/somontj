@@ -11805,7 +11805,8 @@
     "title": "OnePlus Ace 5",
     "price": 2500,
     "condition": "Б/у",
-    "model_key": "oneplus ace 5"
+    "model_key": "oneplus ace 5",
+    "sold_checked": true
   },
   "28681332": {
     "logged": true,

@@ -7447,7 +7447,8 @@
     "title": "Samsung Galaxy S20FE 8/128Gb Green",
     "price": 1499,
     "condition": "Б/у",
-    "model_key": "samsung s20fe"
+    "model_key": "samsung s20fe",
+    "sold_checked": true
   },
   "77117256": {
     "logged": true
@@ -12178,5 +12179,14 @@
     "price": 2600,
     "condition": "Б/у",
     "model_key": "samsung a56"
+  },
+  "98118128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16622598_redmi-note-11-blue-8-128g/",
+    "title": "Xiaomi Redmi Note 11 blue 8/128g",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "redmi note 11"
   }
 }

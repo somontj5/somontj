@@ -12070,5 +12070,14 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "apple 13"
+  },
+  "66414256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17204664_apple-iphone-14-256-gb-blue/",
+    "title": "Apple iPhone 14, 256 gb, Blue",
+    "price": 2400,
+    "condition": "Б/у",
+    "model_key": "apple 14"
   }
 }

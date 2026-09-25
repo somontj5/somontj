@@ -11199,7 +11199,8 @@
     "title": "Apple iPhone 7 plus, 32 gb",
     "price": 700,
     "condition": "Б/у",
-    "model_key": "apple 7 plus"
+    "model_key": "apple 7 plus",
+    "sold_checked": true
   },
   "37316128": {
     "logged": true,
@@ -11208,7 +11209,8 @@
     "title": "Apple iPhone 16 Pro, 128 gb, Desert Titanium",
     "price": 8599,
     "condition": "Б/у",
-    "model_key": "apple 16 pro"
+    "model_key": "apple 16 pro",
+    "sold_checked": true
   },
   "69747797": {
     "logged": true,
@@ -11217,7 +11219,8 @@
     "title": "Xiaomi Poco X7 pro",
     "price": 3000,
     "condition": "Б/у",
-    "model_key": "poco x7 pro"
+    "model_key": "poco x7 pro",
+    "sold_checked": true
   },
   "19892056": {
     "logged": true,
@@ -11226,7 +11229,8 @@
     "title": "Samsung Galaxy A56",
     "price": 2999,
     "condition": "Б/у",
-    "model_key": "samsung a56"
+    "model_key": "samsung a56",
+    "sold_checked": true
   },
   "56511512": {
     "logged": true,
@@ -11235,7 +11239,8 @@
     "title": "Apple iPhone 11 Pro Max, 512 gb, Gold",
     "price": 2200,
     "condition": "Б/у",
-    "model_key": "apple 11 pro max"
+    "model_key": "apple 11 pro max",
+    "sold_checked": true
   },
   "19947324": {
     "logged": true,
@@ -11642,13 +11647,31 @@
     "model_key": "apple 12"
   },
   "06118128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15158006_xiaomi-redmi-note-11apro-8-128gb/",
+    "title": "Apple iPhone 12 mini, 64 gb, White",
+    "price": 2099,
+    "condition": "Б/у",
+    "model_key": "apple 12 mini"
   },
   "73576128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16365173_samsung-galaxy-a57-6-128gb-gray/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
+    "price": 4599,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   },
   "91512128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15304915_apple-iphone-12-pro-max-128-gb-graphite/",
+    "title": "Apple iPhone 14 Pro, 256 gb, Space Black",
+    "price": 5499,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   },
   "21806110": {
     "logged": true
@@ -11695,5 +11718,23 @@
     "price": 2850,
     "condition": "Б/у",
     "model_key": "samsung note 20 ultra"
+  },
+  "97251645": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17202972_telefon-samsung-a51-64gb-vetnam-5g-silver/",
+    "title": "Samsung Galaxy А51 64Gb Vetnam 5G Silver",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "samsung а51"
+  },
+  "72029261": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17202926_iagon-aib-nadorad-remont-nashudagi-iagonchosh-sostoianish-napanav-1-mokh-korkardagi/",
+    "title": "OnePlus Ace 5",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "oneplus ace 5"
   }
 }

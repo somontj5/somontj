@@ -2298,10 +2298,43 @@ def github_state_push():
 
 class _KeepAliveHandler(BaseHTTPRequestHandler):
     def do_GET(self):
+        if self.path.startswith("/check"):
+            self._handle_check()
+            return
         self.send_response(200)
         self.send_header("Content-Type", "text/plain")
         self.end_headers()
         self.wfile.write(b"ok")
+
+    def _handle_check(self):
+        """Диагностика: делает живой запрос к Somon.tj прямо из этого контейнера Render
+        и показывает в браузере, что тот реально видит — код ответа, часть тела ответа
+        и содержимое базовых заголовков. Позволяет отличить "это бан по IP Render"
+        от "это что-то в коде/заголовках"."""
+        lines = [f"Запрос к: {SEARCH_URL}", ""]
+        try:
+            resp = polite_get(SEARCH_URL)
+            lines.append(f"HTTP статус: {resp.status_code}")
+            lines.append(f"Финальный URL (после редиректов): {resp.url}")
+            lines.append(f"Content-Type: {resp.headers.get('Content-Type')}")
+            lines.append(f"Длина ответа: {len(resp.text)} символов")
+            lines.append("")
+            lines.append("Заголовки User-Agent, отправленные нами:")
+            lines.append(f"  {SESSION.headers.get('User-Agent')}")
+            lines.append("")
+            lines.append("Куки сессии на данный момент:")
+            lines.append(f"  {dict(SESSION.cookies)}")
+            lines.append("")
+            lines.append("Первые 1500 символов ответа сайта:")
+            lines.append("-" * 40)
+            lines.append(resp.text[:1500])
+        except Exception as e:
+            lines.append(f"Ошибка запроса: {e}")
+        body = "\n".join(lines).encode("utf-8")
+        self.send_response(200)
+        self.send_header("Content-Type", "text/plain; charset=utf-8")
+        self.end_headers()
+        self.wfile.write(body)
 
     def log_message(self, *args):
         pass  # не засорять логи каждым пингом

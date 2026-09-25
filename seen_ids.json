@@ -11420,7 +11420,8 @@
     "title": "Samsung Galaxy A36 5G",
     "price": 2600,
     "condition": "Б/у",
-    "model_key": "samsung a36"
+    "model_key": "samsung a36",
+    "sold_checked": true
   },
   "20100917": {
     "logged": true,
@@ -11458,7 +11459,8 @@
     "title": "Samsung Galaxy A32",
     "price": 1100,
     "condition": "Б/у",
-    "model_key": "samsung a32"
+    "model_key": "samsung a32",
+    "sold_checked": true
   },
   "20191514": {
     "logged": true,
@@ -11883,5 +11885,32 @@
     "price": 3400,
     "condition": "Б/у",
     "model_key": "apple 13 pro"
+  },
+  "72019338": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17201933_infinix-smart-8/",
+    "title": "Infinix smart 8",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "infinix smart 8"
+  },
+  "20195812": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17201958_redmi-12/",
+    "title": "Xiaomi Redmi 12",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "redmi 12"
+  },
+  "20197832": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17201978_samsung-a32/",
+    "title": "Samsung Galaxy A32",
+    "price": 1050,
+    "condition": "Б/у",
+    "model_key": "samsung a32"
   }
 }

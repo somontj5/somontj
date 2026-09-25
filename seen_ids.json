@@ -11858,7 +11858,8 @@
     "title": "Samsung Galaxy A41",
     "price": 800,
     "condition": "Б/у",
-    "model_key": "samsung a41"
+    "model_key": "samsung a41",
+    "sold_checked": true
   },
   "42241285": {
     "logged": true,
@@ -12377,5 +12378,23 @@
     "price": 2200,
     "condition": "Б/у",
     "model_key": null
+  },
+  "88812128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17205888_apple-iphone-12-128-gb-white/",
+    "title": "Apple iPhone 12, 128 gb, White",
+    "price": 1650,
+    "condition": "Б/у",
+    "model_key": "apple 12"
+  },
+  "06534516": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17206534_apple-iphone-5s-16-gb/",
+    "title": "Apple iPhone 5s, 16 gb",
+    "price": 550,
+    "condition": "Б/у",
+    "model_key": "apple 5s"
   }
 }

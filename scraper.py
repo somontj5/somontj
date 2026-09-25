@@ -2,52 +2,16 @@ import os
 import json
 import re
 import time
-import random
 import base64
-import hashlib
-import threading
 import statistics
 import requests
 from difflib import SequenceMatcher
-from http.server import BaseHTTPRequestHandler, HTTPServer
 from bs4 import BeautifulSoup
 
 # ==== НАСТРОЙКИ ====
-
-# --- Постоянный процесс (Render и т.п.) вместо разового запуска по крону ---
-# POLL_INTERVAL_SECONDS=0 (по умолчанию) сохраняет старое поведение: один прогон main() и выход
-# (используется, если бот всё ещё запускается через GitHub Actions/cron). Если задать
-# POLL_INTERVAL_SECONDS (например 10), скрипт вместо этого уходит в бесконечный цикл —
-# так его надо запускать на постоянно работающем сервере (Render Free Web Service и т.п.).
-POLL_INTERVAL_SECONDS = int(os.environ.get("POLL_INTERVAL_SECONDS", "60"))
-# Если сайт подряд отдаёт 403/429 — вместо того чтобы долбить его каждые POLL_INTERVAL_SECONDS
-# (что только усугубляет блокировку), эффективный интервал между попытками временно
-# увеличивается вдвое на каждый провал подряд, до потолка MAX_BACKOFF_SECONDS.
-MAX_BACKOFF_SECONDS = int(os.environ.get("MAX_BACKOFF_SECONDS", "1800"))
-# Как часто (в секундах) состояние базы сохраняется обратно в GitHub-репозиторий — это замена
-# "git commit/push" из старого workflow, но без самого git: файлы читаются/пишутся через
-# GitHub Contents API (нужен requests, который и так уже используется).
-GIT_SYNC_INTERVAL_SECONDS = int(os.environ.get("GIT_SYNC_INTERVAL_SECONDS", "60"))
-GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
-GITHUB_REPO = os.environ.get("GITHUB_REPO", "")  # формат "владелец/репозиторий"
-GITHUB_BRANCH = os.environ.get("GITHUB_BRANCH", "main")
-GITHUB_API = "https://api.github.com"
-# Файлы состояния — тот же список, что раньше сохранял workflow "Save results back to repo".
-STATE_FILES = [
-    "seen_ids.json", "price_history.jsonl", "searches.json", "telegram_offset.json",
-    "rejected_lots.jsonl", "search_mode.json", "subscribers.json", "gemini_daily_usage.json",
-    "search_provider_usage.json", "exchange_rate.json", "health_status.json",
-    "min_profit.json", "min_confidence.json", "known_anomalies.json",
-]
-# Render (и похожие бесплатные хостинги) держат Free Web Service "живым", только пока на него
-# идут HTTP-запросы, и "усыпляют" его после ~15 минут без обращений. PORT задаёт сам Render —
-# на этом порту поднимается крошечный веб-сервер, отвечающий "ok", специально для внешнего
-# "будильника" (например, cron-job.org, дёргающего этот адрес раз в 5-10 минут).
-KEEPALIVE_PORT = int(os.environ.get("PORT", "0") or "0")
-
 SEARCH_URL = os.environ.get(
     "SOMON_URL",
-    "https://m.somon.tj/telefonyi-i-svyaz/mobilnyie-telefonyi/"
+    "https://m.somon.tj/telefonyi-i-svyaz/mobilnyie-telefonyi/sostoyanie---1/?ordering=newest&location=185,187,195,204,205,230,210,180"
 )
 MAX_NEW_ITEMS_PER_RUN = int(os.environ.get("MAX_NEW_ITEMS_PER_RUN", "5"))
 MAX_SOLD_CHECKS_PER_RUN = int(os.environ.get("MAX_SOLD_CHECKS_PER_RUN", "5"))
@@ -69,6 +33,7 @@ ANOMALY_MIN_COUNT = int(os.environ.get("ANOMALY_MIN_COUNT", "3"))
 ANOMALY_MIN_PRICE = int(os.environ.get("ANOMALY_MIN_PRICE", "100"))
 GEMINI_DAILY_LIMIT_PER_COMBO = int(os.environ.get("GEMINI_DAILY_LIMIT_PER_COMBO", "450"))
 TAVILY_MONTHLY_LIMIT_PER_KEY = int(os.environ.get("TAVILY_MONTHLY_LIMIT_PER_KEY", "950"))
+GOOGLE_SEARCH_DAILY_LIMIT_PER_KEY = int(os.environ.get("GOOGLE_SEARCH_DAILY_LIMIT_PER_KEY", "90"))
 # Статусы IMEI, при которых растаможка ещё не оплачена и её надо добавить к цене.
 CUSTOMS_DUE_STATUSES = ("not_registered", "gray")
 FALLBACK_USD_TJS_RATE = float(os.environ.get("FALLBACK_USD_TJS_RATE", "10.5"))
@@ -109,6 +74,7 @@ GEMINI_COMBOS = [
     for m in GEMINI_MODELS
 ]
 
+GOOGLE_SEARCH_CX = os.environ.get("GOOGLE_SEARCH_CX", "")
 
 SEARCH_PROVIDERS = []
 for i in range(1, 4):
@@ -118,90 +84,18 @@ for i in range(1, 4):
             "id": f"tavily{i}", "type": "tavily", "key": key,
             "period": "month", "limit": TAVILY_MONTHLY_LIMIT_PER_KEY,
         })
+for i in range(1, 3):
+    key = os.environ.get(f"GOOGLE_SEARCH_API_KEY{'' if i == 1 else '_' + str(i)}", "")
+    if key and GOOGLE_SEARCH_CX:
+        SEARCH_PROVIDERS.append({
+            "id": f"google{i}", "type": "google", "key": key, "cx": GOOGLE_SEARCH_CX,
+            "period": "day", "limit": GOOGLE_SEARCH_DAILY_LIMIT_PER_KEY,
+        })
 
-# Раньше запрос уходил только с User-Agent — ни Accept, ни Accept-Language, ни Referer,
-# что выглядит совсем не как настоящий браузер и само по себе может быть поводом для 403.
-# Ниже — несколько целостных "профилей" браузера (UA подобран вместе с остальными
-# заголовками так, как их реально шлют настоящие Chrome/Firefox/Safari), один профиль
-# выбирается один раз при старте процесса и используется всю сессию — реальный браузер
-# тоже не меняет свои заголовки от запроса к запросу.
-BROWSER_PROFILES = [
-    {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                      "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-        "sec-ch-ua": '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"',
-        "sec-ch-ua-platform": '"Windows"',
-    },
-    {
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 "
-                      "(KHTML, like Gecko) Version/17.4 Safari/605.1.15",
-        "sec-ch-ua": '"Safari";v="17"',
-        "sec-ch-ua-platform": '"macOS"',
-    },
-    {
-        "User-Agent": "Mozilla/5.0 (Linux; Android 14; SM-A155F) AppleWebKit/537.36 "
-                      "(KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36",
-        "sec-ch-ua": '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"',
-        "sec-ch-ua-platform": '"Android"',
-    },
-]
-_PROFILE = random.choice(BROWSER_PROFILES)
 HEADERS = {
-    "User-Agent": _PROFILE["User-Agent"],
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-    "Accept-Language": "ru-RU,ru;q=0.9,tg;q=0.8,en-US;q=0.7,en;q=0.6",
-    "Accept-Encoding": "gzip, deflate, br",
-    "Connection": "keep-alive",
-    "Upgrade-Insecure-Requests": "1",
-    "Sec-Fetch-Dest": "document",
-    "Sec-Fetch-Mode": "navigate",
-    "Sec-Fetch-Site": "same-origin",
-    "Sec-Fetch-User": "?1",
-    "sec-ch-ua": _PROFILE["sec-ch-ua"],
-    "sec-ch-ua-mobile": "?1" if "Mobile" in _PROFILE["User-Agent"] else "?0",
-    "sec-ch-ua-platform": _PROFILE["sec-ch-ua-platform"],
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                  "(KHTML, like Gecko) Chrome/120.0 Safari/537.36"
 }
-
-# Общая сессия вместо голых requests.get() на каждый вызов — держит куки между запросами
-# (сайт после первого визита обычно выставляет сессионную куку, и её отсутствие на
-# каждом "новом" запросе — ещё один явный признак бота) и переиспользует TCP-соединение,
-# как это делает настоящий браузер.
-SESSION = requests.Session()
-SESSION.headers.update(HEADERS)
-_session_warmed_up = False
-
-
-def _warm_up_session():
-    """Один раз за процесс заходит на главную страницу сайта, чтобы получить те же
-    куки, что получил бы настоящий посетитель, прежде чем сразу открывать целевой
-    раздел объявлений — так меньше похоже на скрипт, который знает только один URL."""
-    global _session_warmed_up
-    if _session_warmed_up:
-        return
-    try:
-        home = re.match(r"https?://[^/]+/?", SEARCH_URL)
-        if home:
-            SESSION.get(home.group(0), timeout=15)
-            time.sleep(random.uniform(0.5, 1.5))
-    except Exception as e:
-        print("Не удалось прогреть сессию:", e)
-    _session_warmed_up = True
-
-
-def polite_get(url, **kwargs):
-    """requests.get через общую сессию + небольшая случайная пауза перед запросом —
-    точные интервалы ровно каждые N секунд без вариации сами по себе легко отличают
-    бота от человека."""
-    _warm_up_session()
-    time.sleep(random.uniform(0.4, 1.8))
-    kwargs.setdefault("timeout", 20)
-    resp = SESSION.get(url, **kwargs)
-    if resp.status_code in (403, 429):
-        # Одна вежливая повторная попытка с другой паузой — сайт мог отдать 403 на
-        # разовый всплеск, а не забанить IP насовсем.
-        time.sleep(random.uniform(3, 7))
-        resp = SESSION.get(url, **kwargs)
-    return resp
 
 TRANSLIT_MAP = {
     "iphone": ["айфон"], "samsung": ["самсунг"], "honor": ["хонор"],
@@ -897,7 +791,7 @@ def pick_available_combo(usage):
     return None
 
 
-# ---------- Поиск: Tavily ----------
+# ---------- Поиск: Tavily + Google ----------
 
 def get_search_usage():
     data = load_json(SEARCH_USAGE_FILE, {})
@@ -949,12 +843,34 @@ def tavily_search(key, query, num=3):
         return None
 
 
+def google_custom_search(key, cx, query, num=3):
+    try:
+        resp = requests.get(
+            "https://www.googleapis.com/customsearch/v1",
+            params={"key": key, "cx": cx, "q": query, "num": num},
+            timeout=15,
+        )
+        if not resp.ok:
+            print("Ошибка Google Search API:", resp.status_code, resp.text[:300])
+            return None
+        items = resp.json().get("items", [])
+        if not items:
+            return None
+        return "\n".join(f"- {it.get('title', '')}: {it.get('snippet', '')}" for it in items[:num])
+    except Exception as e:
+        print("Сбой Google Search API:", e)
+        return None
+
+
 def web_search_lookup(query):
     usage = get_search_usage()
     provider = pick_search_provider(usage)
     if not provider:
         return None
-    result = tavily_search(provider["key"], query)
+    if provider["type"] == "tavily":
+        result = tavily_search(provider["key"], query)
+    else:
+        result = google_custom_search(provider["key"], provider["cx"], query)
     usage[provider["id"]] += 1
     save_search_usage(usage)
     return result
@@ -1046,7 +962,7 @@ def report_fetch_result(health, success):
 
 def check_sold_status(url):
     try:
-        resp = polite_get(url)
+        resp = requests.get(url, headers=HEADERS, timeout=20)
         if not resp.ok:
             return None
         soup = BeautifulSoup(resp.text, "html.parser")
@@ -1553,7 +1469,7 @@ def labeled_value(soup, labels):
 
 
 def fetch_listings():
-    resp = polite_get(SEARCH_URL)
+    resp = requests.get(SEARCH_URL, headers=HEADERS, timeout=20)
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "html.parser")
 
@@ -1578,7 +1494,7 @@ def fetch_listings():
 
 
 def fetch_detail(ad_url):
-    resp = polite_get(ad_url)
+    resp = requests.get(ad_url, headers=HEADERS, timeout=20)
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "html.parser")
     full_text = soup.get_text(" ", strip=True)
@@ -1849,7 +1765,7 @@ def analyze_listing(item, photo_urls, similar_examples, confirmed_good_calls, co
     parts = [{"text": build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate, has_photos=bool(photo_urls), condition_note=condition_note, no_photo_reason=no_photo_reason)}]
     for url in photo_urls:
         try:
-            img = polite_get(url, timeout=15)
+            img = requests.get(url, headers=HEADERS, timeout=15)
             img.raise_for_status()
             mime = "image/png" if ".png" in url.lower() else "image/jpeg"
             parts.append({"inline_data": {"mime_type": mime, "data": base64.b64encode(img.content).decode()}})
@@ -2237,150 +2153,5 @@ def main():
             json.dump(known_anomalies, f, ensure_ascii=False, indent=2)
 
 
-def _github_headers():
-    return {"Authorization": f"token {GITHUB_TOKEN}", "Accept": "application/vnd.github+json"}
-
-
-def github_state_pull():
-    """При старте на новом/перезапущенном хостинге восстанавливает файлы состояния из GitHub —
-    замена тому, что раньше делал 'actions/checkout' в workflow."""
-    if not GITHUB_TOKEN or not GITHUB_REPO:
-        print("GITHUB_TOKEN/GITHUB_REPO не заданы — состояние не будет сохраняться между "
-              "перезапусками процесса, только на локальном диске.")
-        return
-    for fname in STATE_FILES:
-        try:
-            r = requests.get(f"{GITHUB_API}/repos/{GITHUB_REPO}/contents/{fname}",
-                              headers=_github_headers(), params={"ref": GITHUB_BRANCH}, timeout=15)
-            if r.status_code == 200:
-                with open(fname, "wb") as f:
-                    f.write(base64.b64decode(r.json()["content"]))
-        except Exception as e:
-            print(f"Не удалось восстановить {fname} из GitHub:", e)
-
-
-_last_pushed_hash = {}
-
-
-def github_state_push():
-    """Сохраняет изменившиеся файлы состояния обратно в GitHub. Файлы, которые не менялись с
-    прошлой синхронизации, пропускаются, чтобы не тратить лимит GitHub API впустую."""
-    if not GITHUB_TOKEN or not GITHUB_REPO:
-        return
-    for fname in STATE_FILES:
-        if not os.path.exists(fname):
-            continue
-        with open(fname, "rb") as f:
-            data = f.read()
-        digest = hashlib.sha256(data).hexdigest()
-        if _last_pushed_hash.get(fname) == digest:
-            continue
-        try:
-            get_resp = requests.get(f"{GITHUB_API}/repos/{GITHUB_REPO}/contents/{fname}",
-                                     headers=_github_headers(), params={"ref": GITHUB_BRANCH}, timeout=15)
-            sha = get_resp.json().get("sha") if get_resp.status_code == 200 else None
-            payload = {
-                "message": "state update",
-                "content": base64.b64encode(data).decode(),
-                "branch": GITHUB_BRANCH,
-            }
-            if sha:
-                payload["sha"] = sha
-            put_resp = requests.put(f"{GITHUB_API}/repos/{GITHUB_REPO}/contents/{fname}",
-                                     headers=_github_headers(), json=payload, timeout=15)
-            if put_resp.status_code in (200, 201):
-                _last_pushed_hash[fname] = digest
-            else:
-                print(f"Не удалось сохранить {fname} в GitHub:", put_resp.status_code, put_resp.text[:200])
-        except Exception as e:
-            print(f"Ошибка синхронизации {fname} с GitHub:", e)
-
-
-class _KeepAliveHandler(BaseHTTPRequestHandler):
-    def do_GET(self):
-        if self.path.startswith("/check"):
-            self._handle_check()
-            return
-        self.send_response(200)
-        self.send_header("Content-Type", "text/plain")
-        self.end_headers()
-        self.wfile.write(b"ok")
-
-    def _handle_check(self):
-        """Диагностика: делает живой запрос к Somon.tj прямо из этого контейнера Render
-        и показывает в браузере, что тот реально видит — код ответа, часть тела ответа
-        и содержимое базовых заголовков. Позволяет отличить "это бан по IP Render"
-        от "это что-то в коде/заголовках"."""
-        lines = [f"Запрос к: {SEARCH_URL}", ""]
-        try:
-            resp = polite_get(SEARCH_URL)
-            lines.append(f"HTTP статус: {resp.status_code}")
-            lines.append(f"Финальный URL (после редиректов): {resp.url}")
-            lines.append(f"Content-Type: {resp.headers.get('Content-Type')}")
-            lines.append(f"Длина ответа: {len(resp.text)} символов")
-            lines.append("")
-            lines.append("Заголовки User-Agent, отправленные нами:")
-            lines.append(f"  {SESSION.headers.get('User-Agent')}")
-            lines.append("")
-            lines.append("Куки сессии на данный момент:")
-            lines.append(f"  {dict(SESSION.cookies)}")
-            lines.append("")
-            lines.append("Первые 1500 символов ответа сайта:")
-            lines.append("-" * 40)
-            lines.append(resp.text[:1500])
-        except Exception as e:
-            lines.append(f"Ошибка запроса: {e}")
-        body = "\n".join(lines).encode("utf-8")
-        self.send_response(200)
-        self.send_header("Content-Type", "text/plain; charset=utf-8")
-        self.end_headers()
-        self.wfile.write(body)
-
-    def log_message(self, *args):
-        pass  # не засорять логи каждым пингом
-
-
-def start_keepalive_server(port):
-    server = HTTPServer(("0.0.0.0", port), _KeepAliveHandler)
-    threading.Thread(target=server.serve_forever, daemon=True).start()
-    print(f"Keep-alive сервер поднят на порту {port}")
-
-
-def run_forever():
-    github_state_pull()
-    last_push = 0.0
-    while True:
-        try:
-            main()
-        except Exception as e:
-            print("Необработанная ошибка в основном цикле:", e)
-        now = time.time()
-        if now - last_push >= GIT_SYNC_INTERVAL_SECONDS:
-            github_state_push()
-            last_push = now
-
-        # Адаптивная пауза: если Somon.tj подряд отвечает ошибкой (403/429/сеть),
-        # каждый следующий провал удваивает эффективный интервал (до потолка
-        # MAX_BACKOFF_SECONDS) — вместо того чтобы долбить сайт ровно раз в
-        # POLL_INTERVAL_SECONDS и усугублять блокировку. Как только сайт снова
-        # отвечает нормально, consecutive_failures обнуляется в report_fetch_result,
-        # и пауза сама возвращается к обычным POLL_INTERVAL_SECONDS.
-        failures = load_json(HEALTH_FILE, {}).get("consecutive_failures", 0)
-        sleep_for = min(POLL_INTERVAL_SECONDS * (2 ** min(failures, 10)), MAX_BACKOFF_SECONDS)
-        sleep_for = max(sleep_for, POLL_INTERVAL_SECONDS)
-        if failures:
-            print(f"Провалов подряд: {failures} — следующая попытка через {sleep_for} сек.")
-        # Небольшой джиттер на паузу тоже, а не только на сами запросы — иначе цикл
-        # всё равно бьёт по сайту с идеально ровным периодом.
-        time.sleep(sleep_for + random.uniform(0, sleep_for * 0.1))
-
-
 if __name__ == "__main__":
-    print(f"Старт. POLL_INTERVAL_SECONDS={POLL_INTERVAL_SECONDS}, "
-          f"MAX_BACKOFF_SECONDS={MAX_BACKOFF_SECONDS}, SEARCH_URL={SEARCH_URL}")
-    if KEEPALIVE_PORT:
-        start_keepalive_server(KEEPALIVE_PORT)
-    if POLL_INTERVAL_SECONDS > 0:
-        run_forever()
-    else:
-        main()
+    main()

@@ -11383,5 +11383,23 @@
     "condition": "Б/у",
     "model_key": "apple 13 pro",
     "sold_checked": true
+  },
+  "67300858": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16730085_xiaomi-redmi-note-8-pro/",
+    "title": "Xiaomi Redmi Note 8 Pro",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "redmi note 8 pro"
+  },
+  "24517132": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16245171_samsung-galaxy-a32/",
+    "title": "Samsung Galaxy A32",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "samsung a32"
   }
 }

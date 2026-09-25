@@ -11890,7 +11890,8 @@
     "title": "Apple iPhone 14 Pro Max, 128 gb, Space Black",
     "price": 6500,
     "condition": "Б/у",
-    "model_key": "apple 14 pro max"
+    "model_key": "apple 14 pro max",
+    "sold_checked": true
   },
   "20328722": {
     "logged": true,
@@ -12426,5 +12427,14 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "samsung s22 plus"
+  },
+  "73317256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17206733_apple-iphone-17-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
+    "price": 10500,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
   }
 }

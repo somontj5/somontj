@@ -11556,7 +11556,8 @@
     "title": "Samsung Galaxy S9 Black",
     "price": 800,
     "condition": "Б/у",
-    "model_key": "samsung s9"
+    "model_key": "samsung s9",
+    "sold_checked": true
   },
   "64920464": {
     "logged": true,
@@ -11565,7 +11566,8 @@
     "title": "Infinite hot 20i 4/64гб",
     "price": 650,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "16914998": {
     "logged": true,
@@ -11574,7 +11576,8 @@
     "title": "Кнопочно сенсорный QinPhone Black",
     "price": 999,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "91228256": {
     "logged": true,
@@ -12188,5 +12191,41 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "redmi note 11"
+  },
+  "20512256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17206199_samsung-galaxy-not-20-ultra-5g-12-256gb/",
+    "title": "Samsung Galaxy Not 20 Ultra 5G 12/256Gb",
+    "price": 2890,
+    "condition": "Б/у",
+    "model_key": "samsung not 20 ultra"
+  },
+  "72061746": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17206174_samsung-galaxy-a6-plus/",
+    "title": "Samsung Galaxy A6-Plus",
+    "price": 690,
+    "condition": "Б/у",
+    "model_key": "samsung a6 plus"
+  },
+  "22512256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17206176_samsung-galaxy-s22-ultra-5g-12-256gb/",
+    "title": "Samsung Galaxy S22 Ultra 5G 12/256Gb",
+    "price": 3630,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
+  },
+  "20614013": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17206140_telefon-samsung-a13/",
+    "title": "Телефон Самсунг А13",
+    "price": 1050,
+    "condition": "Б/у",
+    "model_key": null
   }
 }

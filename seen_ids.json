@@ -11738,7 +11738,8 @@
     "title": "Samsung Galaxy A16",
     "price": 1500,
     "condition": "Б/у",
-    "model_key": "samsung a16"
+    "model_key": "samsung a16",
+    "sold_checked": true
   },
   "19531164": {
     "logged": true,
@@ -11748,7 +11749,8 @@
     "title": "Apple iPhone 11 Pro, 64 gb, Space Grey",
     "price": 1200,
     "condition": "Б/у",
-    "model_key": "apple 11 pro"
+    "model_key": "apple 11 pro",
+    "sold_checked": true
   },
   "30561285": {
     "logged": true,
@@ -11953,5 +11955,23 @@
     "price": 1899,
     "condition": "Б/у",
     "model_key": "apple 12"
+  },
+  "27939128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17202793_telefon-redmi-note-9-128gb-glabal-version/",
+    "title": "Xiaomi Redmi Note 9 128Gb Glabal Version",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "redmi note 9"
+  },
+  "22122565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17202844_telefon-samsung-s22-ultra-12-256gb-carea-5g/",
+    "title": "Samsung Galaxy S22 Ultra 12/256Gb 5G",
+    "price": 3540,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
   }
 }

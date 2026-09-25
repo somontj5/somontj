@@ -11637,7 +11637,8 @@
     "title": "Samsung Galaxy S24Ultra 12/256Gb Gold",
     "price": 5499,
     "condition": "Б/у",
-    "model_key": "samsung s24ultra"
+    "model_key": "samsung s24ultra",
+    "sold_checked": true
   },
   "84218256": {
     "logged": true,
@@ -11646,7 +11647,8 @@
     "title": "Samsung Galaxy S25Ultra 12/256Gb Black",
     "price": 6199,
     "condition": "Б/у",
-    "model_key": "samsung s25ultra"
+    "model_key": "samsung s25ultra",
+    "sold_checked": true
   },
   "92212246": {
     "logged": true,
@@ -12079,5 +12081,23 @@
     "price": 2400,
     "condition": "Б/у",
     "model_key": "apple 14"
+  },
+  "66951283": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16695128_xiaomi-redmi-a3/",
+    "title": "Xiaomi Redmi 4Х",
+    "price": 380,
+    "condition": "Б/у",
+    "model_key": "redmi 4х"
+  },
+  "04784145": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17204784_xiaomi-redmi-note-14-pro-5g/",
+    "title": "Xiaomi redmi note 14 pro+ 5G, 256gb",
+    "price": 2850,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro plus"
   }
 }

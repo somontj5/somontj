@@ -11279,7 +11279,8 @@
     "title": "Apple iPhone 12, 64 gb, Blue",
     "price": 1499,
     "condition": "Б/у",
-    "model_key": "apple 12"
+    "model_key": "apple 12",
+    "sold_checked": true
   },
   "71999668": {
     "logged": true,
@@ -11298,7 +11299,8 @@
     "title": "Samsung Galaxy s10+",
     "price": 2500,
     "condition": "Б/у",
-    "model_key": "samsung s10 plus"
+    "model_key": "samsung s10 plus",
+    "sold_checked": true
   },
   "15014128": {
     "logged": true,
@@ -11307,7 +11309,8 @@
     "title": "Apple iPhone 14 Pro, 128 gb, Deep Purple",
     "price": 5300,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "72001958": {
     "logged": true,
@@ -11326,7 +11329,8 @@
     "title": "Samsung Galaxy A30 64/4",
     "price": 650,
     "condition": "Б/у",
-    "model_key": "samsung a30 64 4"
+    "model_key": "samsung a30 64 4",
+    "sold_checked": true
   },
   "44413128": {
     "logged": true,
@@ -11335,7 +11339,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
     "price": 4000,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "23313256": {
     "logged": true,
@@ -11778,5 +11783,51 @@
     "price": 2500,
     "condition": "Б/у",
     "model_key": "oneplus ace 5"
+  },
+  "28681332": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17202868_telefon-samsung-a13-32gb-vetnam/",
+    "title": "Samsung Galaxy А13 32Gb Vetnam",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "samsung а13"
+  },
+  "20286922": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17202869_samsung-galaxy-s22-plus/",
+    "title": "Samsung Galaxy s22 plus",
+    "price": 3500,
+    "condition": "Б/у",
+    "model_key": "samsung s22 plus"
+  },
+  "73612641": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16736126_galaxy-samsung-a41/",
+    "title": "Samsung Galaxy A41",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "samsung a41"
+  },
+  "42241285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17202942_telefon-samsung-a24-128gb-vetnam-5g/",
+    "title": "Samsung Galaxy А24 128Gb Vetnam 5G",
+    "price": 1650,
+    "condition": "Б/у",
+    "model_key": "samsung а24"
+  },
+  "03082256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17203082_apple-iphone-xr-256-gb-white/",
+    "title": "Apple iPhone Xr, 256 gb, White",
+    "price": 2399,
+    "condition": "Б/у",
+    "model_key": "apple xr"
   }
 }

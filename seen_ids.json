@@ -11591,7 +11591,8 @@
     "title": "Samsung Galaxy S24 8/256Gb silver",
     "price": 3499,
     "condition": "Б/у",
-    "model_key": "samsung s24"
+    "model_key": "samsung s24",
+    "sold_checked": true
   },
   "91501264": {
     "logged": true,
@@ -12149,5 +12150,14 @@
     "price": 10500,
     "condition": "Б/у",
     "model_key": "apple 17"
+  },
+  "57111128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16855571_apple-iphone-11-128-gb-black/",
+    "title": "Apple iPhone 11, 128 gb, Black",
+    "price": 2800,
+    "condition": "Б/у",
+    "model_key": "apple 11"
   }
 }

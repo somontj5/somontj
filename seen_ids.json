@@ -11242,7 +11242,8 @@
     "title": "OnePlus 8",
     "price": 999,
     "condition": "Б/у",
-    "model_key": "oneplus 8"
+    "model_key": "oneplus 8",
+    "sold_checked": true
   },
   "19999010": {
     "logged": true,
@@ -11269,7 +11270,8 @@
     "title": "Tecno Spark 8C",
     "price": 499,
     "condition": "Б/у",
-    "model_key": "tecno spark 8c"
+    "model_key": "tecno spark 8c",
+    "sold_checked": true
   },
   "29730644": {
     "logged": true,

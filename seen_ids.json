@@ -2271,7 +2271,13 @@
     "sold_checked": true
   },
   "51282026": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17202913_telefon-redmi-15c-128gb-2026/",
+    "title": "Xiaomi Redmi 15C 128gb 2026",
+    "price": 1460,
+    "condition": "Б/у",
+    "model_key": "redmi 15c"
   },
   "09671285": {
     "logged": true
@@ -7435,7 +7441,13 @@
     "logged": true
   },
   "82714128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15304827_apple-iphone-14-pro-128-gb-space-black/",
+    "title": "Samsung Galaxy S20FE 8/128Gb Green",
+    "price": 1499,
+    "condition": "Б/у",
+    "model_key": "samsung s20fe"
   },
   "77117256": {
     "logged": true
@@ -10987,7 +10999,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Black Titanium",
     "price": 7800,
     "condition": "Б/у",
-    "model_key": "apple 15 pro max"
+    "model_key": "apple 15 pro max",
+    "sold_checked": true
   },
   "19454356": {
     "logged": true,
@@ -10996,7 +11009,8 @@
     "title": "Samsung Galaxy А56",
     "price": 3100,
     "condition": "Б/у",
-    "model_key": "samsung а56"
+    "model_key": "samsung а56",
+    "sold_checked": true
   },
   "72551164": {
     "logged": true,
@@ -11005,7 +11019,8 @@
     "title": "Apple iPhone 11, 64 gb, Black",
     "price": 1899,
     "condition": "Б/у",
-    "model_key": "apple 11"
+    "model_key": "apple 11",
+    "sold_checked": true
   },
   "19733850": {
     "logged": true,
@@ -11014,7 +11029,8 @@
     "title": "Honor 50 LTE",
     "price": 700,
     "condition": "Б/у",
-    "model_key": "honor 50 lte"
+    "model_key": "honor 50 lte",
+    "sold_checked": true
   },
   "19734312": {
     "logged": true,
@@ -11023,7 +11039,8 @@
     "title": "Samsung Galaxy A12",
     "price": 720,
     "condition": "Б/у",
-    "model_key": "samsung a12"
+    "model_key": "samsung a12",
+    "sold_checked": true
   },
   "71973739": {
     "logged": true,
@@ -11579,5 +11596,33 @@
   },
   "19531164": {
     "logged": true
+  },
+  "30561285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17202930_telefon-samsung-56-128gb-vetnam-5g/",
+    "title": "Samsung Galaxy А 56 128гб Vetnam 5G",
+    "price": 3240,
+    "condition": "Б/у",
+    "model_key": "samsung а 56"
+  },
+  "89111645": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17202891_telefon-redmi-note-11-64gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 11 64gb Glabal Version 5G",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "redmi note 11"
+  },
+  "28562052": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17202856_telefon-samsung-note-20-ultra-5g-2sim-vetnam/",
+    "title": "Samsung Galaxy Note 20 Ultra",
+    "price": 2850,
+    "condition": "Б/у",
+    "model_key": "samsung note 20 ultra"
   }
 }

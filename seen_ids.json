@@ -11450,7 +11450,8 @@
     "title": "Xiaomi Redmi Note 8 Pro",
     "price": 850,
     "condition": "Б/у",
-    "model_key": "redmi note 8 pro"
+    "model_key": "redmi note 8 pro",
+    "sold_checked": true
   },
   "24517132": {
     "logged": true,
@@ -11478,7 +11479,8 @@
     "title": "Xiaomi Redmi note 14pro",
     "price": 2050,
     "condition": "Б/у",
-    "model_key": "redmi note 14pro"
+    "model_key": "redmi note 14pro",
+    "sold_checked": true
   },
   "65612379": {
     "logged": true,
@@ -11923,5 +11925,23 @@
     "price": 3500,
     "condition": "Б/у",
     "model_key": "apple 12 pro"
+  },
+  "20218811": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17202188_redmi-note-11/",
+    "title": "Xiaomi Redmi Note 11",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "redmi note 11"
+  },
+  "20214075": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17202140_realme-c75/",
+    "title": "Realme C75",
+    "price": 1150,
+    "condition": "Б/у",
+    "model_key": "realme c75"
   }
 }

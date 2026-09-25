@@ -11370,7 +11370,8 @@
     "title": "Apple iPhone 12 pro, 128 gb, Pacific Blue",
     "price": 3200,
     "condition": "Б/у",
-    "model_key": "apple 12 pro"
+    "model_key": "apple 12 pro",
+    "sold_checked": true
   },
   "51785005": {
     "logged": true,
@@ -11831,5 +11832,14 @@
     "price": 2399,
     "condition": "Б/у",
     "model_key": "apple xr"
+  },
+  "64014128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17201640_apple-iphone-14-pro-max-128-gb-space-black/",
+    "title": "Apple iPhone 14 Pro Max, 128 gb, Space Black",
+    "price": 6500,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
   }
 }

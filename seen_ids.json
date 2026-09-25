@@ -11470,7 +11470,8 @@
     "title": "Xiaomi Redmi note 14",
     "price": 1550,
     "condition": "Б/у",
-    "model_key": "redmi note 14"
+    "model_key": "redmi note 14",
+    "sold_checked": true
   },
   "20186414": {
     "logged": true,
@@ -11943,5 +11944,14 @@
     "price": 1150,
     "condition": "Б/у",
     "model_key": "realme c75"
+  },
+  "42812128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17202428_apple-iphone-12-128-gb-black/",
+    "title": "Apple iPhone 12, 128 gb, Black",
+    "price": 1899,
+    "condition": "Б/у",
+    "model_key": "apple 12"
   }
 }

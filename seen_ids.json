@@ -11729,7 +11729,8 @@
     "title": "Apple iPhone 17 Pro Max, 512 gb, Cosmic Orange",
     "price": 1500,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "20200516": {
     "logged": true,
@@ -11890,7 +11891,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
     "price": 3400,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "72019338": {
     "logged": true,
@@ -11973,5 +11975,24 @@
     "price": 3540,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra"
+  },
+  "20379764": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17203797_apple-iphone-xs-64-gb-gold/",
+    "title": "Apple iPhone Xs, 64 gb, Gold",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "apple xs"
+  },
+  "69526869": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16952686_redmi-note-9/",
+    "title": "Xiaomi Redmi note 9",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "redmi note 9"
   }
 }

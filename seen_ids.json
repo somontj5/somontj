@@ -11390,7 +11390,8 @@
     "title": "Apple iPhone 13 Pro Max, 256 gb, Sierra Blue",
     "price": 5000,
     "condition": "Б/у",
-    "model_key": "apple 13 pro max"
+    "model_key": "apple 13 pro max",
+    "sold_checked": true
   },
   "72617256": {
     "logged": true,
@@ -11409,7 +11410,8 @@
     "title": "Samsung Galaxy S22 5G",
     "price": 3000,
     "condition": "Б/у",
-    "model_key": "samsung s22"
+    "model_key": "samsung s22",
+    "sold_checked": true
   },
   "00996365": {
     "logged": true,
@@ -11852,5 +11854,33 @@
     "condition": "Б/у",
     "model_key": "samsung s22ultra",
     "sold_checked": true
+  },
+  "43413128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17203434_apple-iphone-13-pro-128-gb-graphite/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Graphite",
+    "price": 4444,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
+  },
+  "41113128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17203411_apple-iphone-13-pro-128-gb-graphite/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Graphite",
+    "price": 4444,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
+  },
+  "40013128": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17203400_apple-iphone-13-pro-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
+    "price": 3400,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

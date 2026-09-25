@@ -11601,7 +11601,8 @@
     "title": "Samsung Galaxy S22 Ultra 12/512Gb Black",
     "price": 4699,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "57917256": {
     "logged": true,
@@ -11610,7 +11611,8 @@
     "title": "Samsung Galaxy S23Ultra 12/1024Gb black",
     "price": 4999,
     "condition": "Б/у",
-    "model_key": "samsung s23ultra"
+    "model_key": "samsung s23ultra",
+    "sold_checked": true
   },
   "50168256": {
     "logged": true,
@@ -12119,5 +12121,23 @@
     "price": 1980,
     "condition": "Б/у",
     "model_key": "apple 11"
+  },
+  "09017512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17205090_apple-iphone-17-pro-max-512-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 512 gb, Silver",
+    "price": 14600,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
+  },
+  "04609256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17204609_apple-iphone-x-256-gb-silver/",
+    "title": "Apple iPhone X, 256 gb, Silver",
+    "price": 1199,
+    "condition": "Б/у",
+    "model_key": "apple x"
   }
 }

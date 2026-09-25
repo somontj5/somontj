@@ -11950,7 +11950,8 @@
     "title": "Xiaomi Redmi 12",
     "price": 1000,
     "condition": "Б/у",
-    "model_key": "redmi 12"
+    "model_key": "redmi 12",
+    "sold_checked": true
   },
   "20197832": {
     "logged": true,
@@ -11959,7 +11960,8 @@
     "title": "Samsung Galaxy A32",
     "price": 1050,
     "condition": "Б/у",
-    "model_key": "samsung a32"
+    "model_key": "samsung a32",
+    "sold_checked": true
   },
   "09612256": {
     "logged": true,
@@ -12478,5 +12480,23 @@
     "price": 4300,
     "condition": "Б/у",
     "model_key": "samsung s 22 ultra"
+  },
+  "64112256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17207641_apple-iphone-12-pro-256-gb-pacific-blue/",
+    "title": "Apple iPhone 12 pro, 256 gb, Pacific Blue",
+    "price": 3499,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro"
+  },
+  "76251164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17207625_apple-iphone-11-64-gb-black/",
+    "title": "Apple iPhone 11, 64 gb, Black",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "apple 11"
   }
 }

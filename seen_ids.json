@@ -11379,7 +11379,8 @@
     "title": "Телефон Redmi",
     "price": 1200,
     "condition": "Б/у",
-    "model_key": "redmi"
+    "model_key": "redmi",
+    "sold_checked": true
   },
   "75113256": {
     "logged": true,

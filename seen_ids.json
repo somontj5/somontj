@@ -11491,7 +11491,8 @@
     "title": "Huawei honor X9d",
     "price": 3350,
     "condition": "Б/у",
-    "model_key": "huawei honor x9d"
+    "model_key": "huawei honor x9d",
+    "sold_checked": true
   },
   "28161032": {
     "logged": true,
@@ -11500,7 +11501,8 @@
     "title": "Xiaomi Redmi 10A 32Gb",
     "price": 760,
     "condition": "Б/у",
-    "model_key": "redmi 10a"
+    "model_key": "redmi 10a",
+    "sold_checked": true
   },
   "80512128": {
     "logged": true,
@@ -11509,7 +11511,8 @@
     "title": "Xiaomi Redmi Note 12 128gb Glabal Version",
     "price": 1250,
     "condition": "Б/у",
-    "model_key": "redmi note 12"
+    "model_key": "redmi note 12",
+    "sold_checked": true
   },
   "41412865": {
     "logged": true,
@@ -11803,7 +11806,8 @@
     "title": "Samsung Galaxy Note 20 Ultra",
     "price": 2850,
     "condition": "Б/у",
-    "model_key": "samsung note 20 ultra"
+    "model_key": "samsung note 20 ultra",
+    "sold_checked": true
   },
   "97251645": {
     "logged": true,
@@ -12267,5 +12271,41 @@
     "price": 1880,
     "condition": "Б/у",
     "model_key": "samsung a54"
+  },
+  "32056128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17206320_telefon-samsung-a56-128gb/",
+    "title": "Samsung Galaxy A56",
+    "price": 3299,
+    "condition": "Б/у",
+    "model_key": "samsung a56"
+  },
+  "62889128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17206288_telefon-redmi-not-9-128gb/",
+    "title": "Xiaomi Redmi Note 9",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "redmi note 9"
+  },
+  "26651464": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17206266_telefon-samsung-a51-4-64gb/",
+    "title": "Samsung Galaxy А51 4/64гб",
+    "price": 1150,
+    "condition": "Б/у",
+    "model_key": "samsung а51"
+  },
+  "20627310": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17206273_samsung-a10/",
+    "title": "Samsung Galaxy А10",
+    "price": 550,
+    "condition": "Б/у",
+    "model_key": "samsung а10"
   }
 }

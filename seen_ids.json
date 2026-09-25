@@ -11839,7 +11839,8 @@
     "title": "Samsung Galaxy А13 32Gb Vetnam",
     "price": 1100,
     "condition": "Б/у",
-    "model_key": "samsung а13"
+    "model_key": "samsung а13",
+    "sold_checked": true
   },
   "20286922": {
     "logged": true,
@@ -12416,5 +12417,14 @@
     "price": 5499,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "97427822": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16974278_samsung-s22-telfon-dar-kholati-khub-malumoti-pura-zang-zanen/",
+    "title": "Samsung Galaxy S22+",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "samsung s22 plus"
   }
 }

@@ -11049,7 +11049,8 @@
     "title": "Xiaomi Redmi 9",
     "price": 710,
     "condition": "Б/у",
-    "model_key": "redmi 9"
+    "model_key": "redmi 9",
+    "sold_checked": true
   },
   "97498105": {
     "logged": true,
@@ -11078,7 +11079,8 @@
     "title": "Realme C61",
     "price": 1300,
     "condition": "Б/у",
-    "model_key": "realme c61"
+    "model_key": "realme c61",
+    "sold_checked": true
   },
   "69531710": {
     "logged": true,
@@ -11087,7 +11089,8 @@
     "title": "Samsung Galaxy A10 India",
     "price": 600,
     "condition": "Б/у",
-    "model_key": "samsung a10 india"
+    "model_key": "samsung a10 india",
+    "sold_checked": true
   },
   "61214128": {
     "logged": true,
@@ -11106,7 +11109,8 @@
     "title": "Samsung Galaxy S22 Ultra",
     "price": 4499,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "60238256": {
     "logged": true,
@@ -11115,7 +11119,8 @@
     "title": "Samsung Galaxy S23 8/256gb",
     "price": 3800,
     "condition": "Б/у",
-    "model_key": "samsung s23"
+    "model_key": "samsung s23",
+    "sold_checked": true
   },
   "22400256": {
     "logged": true,
@@ -11541,19 +11546,50 @@
     "model_key": null
   },
   "91228256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16365091_samsung-galaxy-s22plus-8-256gb-white/",
+    "title": "Samsung Galaxy S24 8/256Gb Purple",
+    "price": 3499,
+    "condition": "Б/у",
+    "model_key": "samsung s24 purple"
   },
   "19368256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15183019_samsung-galaxy-a36-8-256gb-white/",
+    "title": "Samsung Galaxy S24 8/256Gb silver",
+    "price": 3499,
+    "condition": "Б/у",
+    "model_key": "samsung s24"
   },
   "91501264": {
-    "logged": true
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16915012_sensornyi-duoqin-64gb-black/",
+    "title": "Samsung Galaxy S22 Ultra 12/512Gb Black",
+    "price": 4699,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
   },
   "57917256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15089579_apple-iphone-17-pro-max-256-gb/",
+    "title": "Samsung Galaxy S23Ultra 12/1024Gb black",
+    "price": 4999,
+    "condition": "Б/у",
+    "model_key": "samsung s23ultra"
   },
   "50168256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15182950_samsung-galaxy-a16-8-256gb-black/",
+    "title": "Samsung Galaxy S24 Ultra 12/256Gb Titanium",
+    "price": 5699,
+    "condition": "Б/у",
+    "model_key": "samsung s24 ultra titanium"
   },
   "88211256": {
     "logged": true

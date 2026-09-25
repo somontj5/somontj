@@ -11691,7 +11691,8 @@
     "title": "Apple iPhone 14 Pro, 256 gb, Space Black",
     "price": 5499,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "21806110": {
     "logged": true,
@@ -11701,7 +11702,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, White Titanium",
     "price": 7699,
     "condition": "Б/у",
-    "model_key": "apple 15 pro max"
+    "model_key": "apple 15 pro max",
+    "sold_checked": true
   },
   "06228256": {
     "logged": true,
@@ -11710,7 +11712,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
     "price": 9799,
     "condition": "Б/у",
-    "model_key": "apple 16 pro max"
+    "model_key": "apple 16 pro max",
+    "sold_checked": true
   },
   "93311128": {
     "logged": true,
@@ -11995,5 +11998,32 @@
     "price": 650,
     "condition": "Б/у",
     "model_key": "redmi note 9"
+  },
+  "38127128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16838127_apple-iphone-xr-128-gb-black/",
+    "title": "Apple iPhone Xr, 128 gb, Black",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "apple xr"
+  },
+  "04178131": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17204178_apple-iphone-13-pro-1-tb-silver/",
+    "title": "Apple iPhone 13 Pro, 1 tb, Silver",
+    "price": 3500,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro 1 tb"
+  },
+  "20398320": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17203983_not-20-ultra/",
+    "title": "Samsung Galaxy Note 20 Ultra",
+    "price": 2300,
+    "condition": "Б/у",
+    "model_key": "samsung note 20 ultra"
   }
 }

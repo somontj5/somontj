@@ -11429,7 +11429,8 @@
     "title": "Apple iPhone 17 Pro Max дубликат",
     "price": 900,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "02213128": {
     "logged": true,

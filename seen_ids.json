@@ -12353,7 +12353,8 @@
     "title": "Samsung Galaxy note 20 ultra 5G",
     "price": 2400,
     "condition": "Б/у",
-    "model_key": "samsung note 20 ultra"
+    "model_key": "samsung note 20 ultra",
+    "sold_checked": true
   },
   "20597910": {
     "logged": true,

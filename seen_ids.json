@@ -11867,7 +11867,8 @@
     "title": "Samsung Galaxy А24 128Gb Vetnam 5G",
     "price": 1650,
     "condition": "Б/у",
-    "model_key": "samsung а24"
+    "model_key": "samsung а24",
+    "sold_checked": true
   },
   "03082256": {
     "logged": true,
@@ -12367,5 +12368,14 @@
     "price": 1700,
     "condition": "Б/у",
     "model_key": "samsung а24"
+  },
+  "72064027": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17206402_motorola-g7/",
+    "title": "Motorola g7",
+    "price": 2200,
+    "condition": "Б/у",
+    "model_key": null
   }
 }

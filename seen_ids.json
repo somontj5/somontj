@@ -11849,7 +11849,8 @@
     "title": "Samsung Galaxy s22 plus",
     "price": 3500,
     "condition": "Б/у",
-    "model_key": "samsung s22 plus"
+    "model_key": "samsung s22 plus",
+    "sold_checked": true
   },
   "73612641": {
     "logged": true,
@@ -12396,5 +12397,14 @@
     "price": 550,
     "condition": "Б/у",
     "model_key": "apple 5s"
+  },
+  "65431164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17206543_apple-iphone-11-64-gb-black/",
+    "title": "Apple iPhone 11, 64 gb, Black",
+    "price": 1850,
+    "condition": "Б/у",
+    "model_key": "apple 11"
   }
 }

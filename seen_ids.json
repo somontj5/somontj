@@ -12387,7 +12387,8 @@
     "title": "Apple iPhone 12, 128 gb, White",
     "price": 1650,
     "condition": "Б/у",
-    "model_key": "apple 12"
+    "model_key": "apple 12",
+    "sold_checked": true
   },
   "06534516": {
     "logged": true,
@@ -12406,5 +12407,14 @@
     "price": 1850,
     "condition": "Б/у",
     "model_key": "apple 11"
+  },
+  "60714256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17206607_apple-iphone-14-pro-256-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro, 256 gb, Deep Purple",
+    "price": 5499,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

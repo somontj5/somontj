@@ -11874,7 +11874,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Graphite",
     "price": 4444,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "40013128": {
     "logged": true,
@@ -11912,5 +11913,15 @@
     "price": 1050,
     "condition": "Б/у",
     "model_key": "samsung a32"
+  },
+  "09612256": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17202096_apple-iphone-12-pro-256-gb-pacific-blue/",
+    "title": "Apple iPhone 12 pro, 256 gb, Pacific Blue",
+    "price": 3500,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro"
   }
 }

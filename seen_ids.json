@@ -2277,7 +2277,8 @@
     "title": "Xiaomi Redmi 15C 128gb 2026",
     "price": 1460,
     "condition": "Б/у",
-    "model_key": "redmi 15c"
+    "model_key": "redmi 15c",
+    "sold_checked": true
   },
   "09671285": {
     "logged": true
@@ -11787,7 +11788,8 @@
     "title": "Samsung Galaxy А 56 128гб Vetnam 5G",
     "price": 3240,
     "condition": "Б/у",
-    "model_key": "samsung а 56"
+    "model_key": "samsung а 56",
+    "sold_checked": true
   },
   "89111645": {
     "logged": true,
@@ -11796,7 +11798,8 @@
     "title": "Xiaomi Redmi Note 11 64gb Glabal Version 5G",
     "price": 1200,
     "condition": "Б/у",
-    "model_key": "redmi note 11"
+    "model_key": "redmi note 11",
+    "sold_checked": true
   },
   "28562052": {
     "logged": true,
@@ -11816,7 +11819,8 @@
     "title": "Samsung Galaxy А51 64Gb Vetnam 5G Silver",
     "price": 1200,
     "condition": "Б/у",
-    "model_key": "samsung а51"
+    "model_key": "samsung а51",
+    "sold_checked": true
   },
   "72029261": {
     "logged": true,
@@ -11872,7 +11876,8 @@
     "title": "Apple iPhone Xr, 256 gb, White",
     "price": 2399,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "64014128": {
     "logged": true,
@@ -12317,5 +12322,50 @@
     "price": 5800,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "92568128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17206392_telefon-samsung-a56-8-128gb/",
+    "title": "Samsung Galaxy А56 8/128гб",
+    "price": 2900,
+    "condition": "Б/у",
+    "model_key": "samsung а56"
+  },
+  "37414128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17206374_telefon-redmi-not-14-128gb/",
+    "title": "Xiaomi Redmi Note 14 128гб",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "redmi note 14"
+  },
+  "05225205": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17205225_samsung-note-20-ultra-5g/",
+    "title": "Samsung Galaxy note 20 ultra 5G",
+    "price": 2400,
+    "condition": "Б/у",
+    "model_key": "samsung note 20 ultra"
+  },
+  "20597910": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17205979_samsung-s10/",
+    "title": "Samsung Galaxy S10",
+    "price": 1450,
+    "condition": "Б/у",
+    "model_key": "samsung s10"
+  },
+  "35224128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17206352_telefon-samsung-a24-128gb/",
+    "title": "Samsung Galaxy А24 128гб",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "samsung а24"
   }
 }

@@ -12457,5 +12457,15 @@
     "price": 3850,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra"
+  },
+  "34916256": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17207349_apple-iphone-16-pro-max-256-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
+    "price": 9500,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   }
 }

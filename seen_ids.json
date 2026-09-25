@@ -10816,7 +10816,8 @@
     "title": "Apple iPhone 17 Pro Max, 512 gb",
     "price": 1500,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "66117512": {
     "logged": true,
@@ -11401,5 +11402,23 @@
     "price": 1100,
     "condition": "Б/у",
     "model_key": "samsung a32"
+  },
+  "20191514": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17201915_redme-note-14/",
+    "title": "Xiaomi Redmi note 14",
+    "price": 1550,
+    "condition": "Б/у",
+    "model_key": "redmi note 14"
+  },
+  "20186414": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17201864_redme-note-14pro/",
+    "title": "Xiaomi Redmi note 14pro",
+    "price": 2050,
+    "condition": "Б/у",
+    "model_key": "redmi note 14pro"
   }
 }

@@ -3,12 +3,43 @@ import json
 import re
 import time
 import base64
+import hashlib
+import threading
 import statistics
 import requests
 from difflib import SequenceMatcher
+from http.server import BaseHTTPRequestHandler, HTTPServer
 from bs4 import BeautifulSoup
 
 # ==== НАСТРОЙКИ ====
+
+# --- Постоянный процесс (Render и т.п.) вместо разового запуска по крону ---
+# POLL_INTERVAL_SECONDS=0 (по умолчанию) сохраняет старое поведение: один прогон main() и выход
+# (используется, если бот всё ещё запускается через GitHub Actions/cron). Если задать
+# POLL_INTERVAL_SECONDS (например 10), скрипт вместо этого уходит в бесконечный цикл —
+# так его надо запускать на постоянно работающем сервере (Render Free Web Service и т.п.).
+POLL_INTERVAL_SECONDS = int(os.environ.get("POLL_INTERVAL_SECONDS", "0"))
+# Как часто (в секундах) состояние базы сохраняется обратно в GitHub-репозиторий — это замена
+# "git commit/push" из старого workflow, но без самого git: файлы читаются/пишутся через
+# GitHub Contents API (нужен requests, который и так уже используется).
+GIT_SYNC_INTERVAL_SECONDS = int(os.environ.get("GIT_SYNC_INTERVAL_SECONDS", "60"))
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
+GITHUB_REPO = os.environ.get("GITHUB_REPO", "")  # формат "владелец/репозиторий"
+GITHUB_BRANCH = os.environ.get("GITHUB_BRANCH", "main")
+GITHUB_API = "https://api.github.com"
+# Файлы состояния — тот же список, что раньше сохранял workflow "Save results back to repo".
+STATE_FILES = [
+    "seen_ids.json", "price_history.jsonl", "searches.json", "telegram_offset.json",
+    "rejected_lots.jsonl", "search_mode.json", "subscribers.json", "gemini_daily_usage.json",
+    "search_provider_usage.json", "exchange_rate.json", "health_status.json",
+    "min_profit.json", "min_confidence.json", "known_anomalies.json",
+]
+# Render (и похожие бесплатные хостинги) держат Free Web Service "живым", только пока на него
+# идут HTTP-запросы, и "усыпляют" его после ~15 минут без обращений. PORT задаёт сам Render —
+# на этом порту поднимается крошечный веб-сервер, отвечающий "ok", специально для внешнего
+# "будильника" (например, cron-job.org, дёргающего этот адрес раз в 5-10 минут).
+KEEPALIVE_PORT = int(os.environ.get("PORT", "0") or "0")
+
 SEARCH_URL = os.environ.get(
     "SOMON_URL",
     "https://m.somon.tj/telefonyi-i-svyaz/mobilnyie-telefonyi/sostoyanie---1/?ordering=newest&location=185,187,195,204,205,230,210,180"
@@ -33,7 +64,6 @@ ANOMALY_MIN_COUNT = int(os.environ.get("ANOMALY_MIN_COUNT", "3"))
 ANOMALY_MIN_PRICE = int(os.environ.get("ANOMALY_MIN_PRICE", "100"))
 GEMINI_DAILY_LIMIT_PER_COMBO = int(os.environ.get("GEMINI_DAILY_LIMIT_PER_COMBO", "450"))
 TAVILY_MONTHLY_LIMIT_PER_KEY = int(os.environ.get("TAVILY_MONTHLY_LIMIT_PER_KEY", "950"))
-GOOGLE_SEARCH_DAILY_LIMIT_PER_KEY = int(os.environ.get("GOOGLE_SEARCH_DAILY_LIMIT_PER_KEY", "90"))
 # Статусы IMEI, при которых растаможка ещё не оплачена и её надо добавить к цене.
 CUSTOMS_DUE_STATUSES = ("not_registered", "gray")
 FALLBACK_USD_TJS_RATE = float(os.environ.get("FALLBACK_USD_TJS_RATE", "10.5"))
@@ -74,7 +104,6 @@ GEMINI_COMBOS = [
     for m in GEMINI_MODELS
 ]
 
-GOOGLE_SEARCH_CX = os.environ.get("GOOGLE_SEARCH_CX", "")
 
 SEARCH_PROVIDERS = []
 for i in range(1, 4):
@@ -83,13 +112,6 @@ for i in range(1, 4):
         SEARCH_PROVIDERS.append({
             "id": f"tavily{i}", "type": "tavily", "key": key,
             "period": "month", "limit": TAVILY_MONTHLY_LIMIT_PER_KEY,
-        })
-for i in range(1, 3):
-    key = os.environ.get(f"GOOGLE_SEARCH_API_KEY{'' if i == 1 else '_' + str(i)}", "")
-    if key and GOOGLE_SEARCH_CX:
-        SEARCH_PROVIDERS.append({
-            "id": f"google{i}", "type": "google", "key": key, "cx": GOOGLE_SEARCH_CX,
-            "period": "day", "limit": GOOGLE_SEARCH_DAILY_LIMIT_PER_KEY,
         })
 
 HEADERS = {
@@ -791,7 +813,7 @@ def pick_available_combo(usage):
     return None
 
 
-# ---------- Поиск: Tavily + Google ----------
+# ---------- Поиск: Tavily ----------
 
 def get_search_usage():
     data = load_json(SEARCH_USAGE_FILE, {})
@@ -843,34 +865,12 @@ def tavily_search(key, query, num=3):
         return None
 
 
-def google_custom_search(key, cx, query, num=3):
-    try:
-        resp = requests.get(
-            "https://www.googleapis.com/customsearch/v1",
-            params={"key": key, "cx": cx, "q": query, "num": num},
-            timeout=15,
-        )
-        if not resp.ok:
-            print("Ошибка Google Search API:", resp.status_code, resp.text[:300])
-            return None
-        items = resp.json().get("items", [])
-        if not items:
-            return None
-        return "\n".join(f"- {it.get('title', '')}: {it.get('snippet', '')}" for it in items[:num])
-    except Exception as e:
-        print("Сбой Google Search API:", e)
-        return None
-
-
 def web_search_lookup(query):
     usage = get_search_usage()
     provider = pick_search_provider(usage)
     if not provider:
         return None
-    if provider["type"] == "tavily":
-        result = tavily_search(provider["key"], query)
-    else:
-        result = google_custom_search(provider["key"], provider["cx"], query)
+    result = tavily_search(provider["key"], query)
     usage[provider["id"]] += 1
     save_search_usage(usage)
     return result
@@ -2153,5 +2153,101 @@ def main():
             json.dump(known_anomalies, f, ensure_ascii=False, indent=2)
 
 
+def _github_headers():
+    return {"Authorization": f"token {GITHUB_TOKEN}", "Accept": "application/vnd.github+json"}
+
+
+def github_state_pull():
+    """При старте на новом/перезапущенном хостинге восстанавливает файлы состояния из GitHub —
+    замена тому, что раньше делал 'actions/checkout' в workflow."""
+    if not GITHUB_TOKEN or not GITHUB_REPO:
+        print("GITHUB_TOKEN/GITHUB_REPO не заданы — состояние не будет сохраняться между "
+              "перезапусками процесса, только на локальном диске.")
+        return
+    for fname in STATE_FILES:
+        try:
+            r = requests.get(f"{GITHUB_API}/repos/{GITHUB_REPO}/contents/{fname}",
+                              headers=_github_headers(), params={"ref": GITHUB_BRANCH}, timeout=15)
+            if r.status_code == 200:
+                with open(fname, "wb") as f:
+                    f.write(base64.b64decode(r.json()["content"]))
+        except Exception as e:
+            print(f"Не удалось восстановить {fname} из GitHub:", e)
+
+
+_last_pushed_hash = {}
+
+
+def github_state_push():
+    """Сохраняет изменившиеся файлы состояния обратно в GitHub. Файлы, которые не менялись с
+    прошлой синхронизации, пропускаются, чтобы не тратить лимит GitHub API впустую."""
+    if not GITHUB_TOKEN or not GITHUB_REPO:
+        return
+    for fname in STATE_FILES:
+        if not os.path.exists(fname):
+            continue
+        with open(fname, "rb") as f:
+            data = f.read()
+        digest = hashlib.sha256(data).hexdigest()
+        if _last_pushed_hash.get(fname) == digest:
+            continue
+        try:
+            get_resp = requests.get(f"{GITHUB_API}/repos/{GITHUB_REPO}/contents/{fname}",
+                                     headers=_github_headers(), params={"ref": GITHUB_BRANCH}, timeout=15)
+            sha = get_resp.json().get("sha") if get_resp.status_code == 200 else None
+            payload = {
+                "message": "state update",
+                "content": base64.b64encode(data).decode(),
+                "branch": GITHUB_BRANCH,
+            }
+            if sha:
+                payload["sha"] = sha
+            put_resp = requests.put(f"{GITHUB_API}/repos/{GITHUB_REPO}/contents/{fname}",
+                                     headers=_github_headers(), json=payload, timeout=15)
+            if put_resp.status_code in (200, 201):
+                _last_pushed_hash[fname] = digest
+            else:
+                print(f"Не удалось сохранить {fname} в GitHub:", put_resp.status_code, put_resp.text[:200])
+        except Exception as e:
+            print(f"Ошибка синхронизации {fname} с GitHub:", e)
+
+
+class _KeepAliveHandler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header("Content-Type", "text/plain")
+        self.end_headers()
+        self.wfile.write(b"ok")
+
+    def log_message(self, *args):
+        pass  # не засорять логи каждым пингом
+
+
+def start_keepalive_server(port):
+    server = HTTPServer(("0.0.0.0", port), _KeepAliveHandler)
+    threading.Thread(target=server.serve_forever, daemon=True).start()
+    print(f"Keep-alive сервер поднят на порту {port}")
+
+
+def run_forever():
+    github_state_pull()
+    last_push = 0.0
+    while True:
+        try:
+            main()
+        except Exception as e:
+            print("Необработанная ошибка в основном цикле:", e)
+        now = time.time()
+        if now - last_push >= GIT_SYNC_INTERVAL_SECONDS:
+            github_state_push()
+            last_push = now
+        time.sleep(POLL_INTERVAL_SECONDS)
+
+
 if __name__ == "__main__":
-    main()
+    if KEEPALIVE_PORT:
+        start_keepalive_server(KEEPALIVE_PORT)
+    if POLL_INTERVAL_SECONDS > 0:
+        run_forever()
+    else:
+        main()

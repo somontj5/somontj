@@ -11998,7 +11998,8 @@
     "title": "Xiaomi Redmi note 9",
     "price": 650,
     "condition": "Б/у",
-    "model_key": "redmi note 9"
+    "model_key": "redmi note 9",
+    "sold_checked": true
   },
   "38127128": {
     "logged": true,

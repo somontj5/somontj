@@ -2,6 +2,7 @@ import os
 import json
 import re
 import time
+import random
 import base64
 import hashlib
 import threading
@@ -18,7 +19,11 @@ from bs4 import BeautifulSoup
 # (используется, если бот всё ещё запускается через GitHub Actions/cron). Если задать
 # POLL_INTERVAL_SECONDS (например 10), скрипт вместо этого уходит в бесконечный цикл —
 # так его надо запускать на постоянно работающем сервере (Render Free Web Service и т.п.).
-POLL_INTERVAL_SECONDS = int(os.environ.get("POLL_INTERVAL_SECONDS", "0"))
+POLL_INTERVAL_SECONDS = int(os.environ.get("POLL_INTERVAL_SECONDS", "60"))
+# Если сайт подряд отдаёт 403/429 — вместо того чтобы долбить его каждые POLL_INTERVAL_SECONDS
+# (что только усугубляет блокировку), эффективный интервал между попытками временно
+# увеличивается вдвое на каждый провал подряд, до потолка MAX_BACKOFF_SECONDS.
+MAX_BACKOFF_SECONDS = int(os.environ.get("MAX_BACKOFF_SECONDS", "1800"))
 # Как часто (в секундах) состояние базы сохраняется обратно в GitHub-репозиторий — это замена
 # "git commit/push" из старого workflow, но без самого git: файлы читаются/пишутся через
 # GitHub Contents API (нужен requests, который и так уже используется).
@@ -114,10 +119,89 @@ for i in range(1, 4):
             "period": "month", "limit": TAVILY_MONTHLY_LIMIT_PER_KEY,
         })
 
+# Раньше запрос уходил только с User-Agent — ни Accept, ни Accept-Language, ни Referer,
+# что выглядит совсем не как настоящий браузер и само по себе может быть поводом для 403.
+# Ниже — несколько целостных "профилей" браузера (UA подобран вместе с остальными
+# заголовками так, как их реально шлют настоящие Chrome/Firefox/Safari), один профиль
+# выбирается один раз при старте процесса и используется всю сессию — реальный браузер
+# тоже не меняет свои заголовки от запроса к запросу.
+BROWSER_PROFILES = [
+    {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                      "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+        "sec-ch-ua": '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"',
+        "sec-ch-ua-platform": '"Windows"',
+    },
+    {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 "
+                      "(KHTML, like Gecko) Version/17.4 Safari/605.1.15",
+        "sec-ch-ua": '"Safari";v="17"',
+        "sec-ch-ua-platform": '"macOS"',
+    },
+    {
+        "User-Agent": "Mozilla/5.0 (Linux; Android 14; SM-A155F) AppleWebKit/537.36 "
+                      "(KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36",
+        "sec-ch-ua": '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"',
+        "sec-ch-ua-platform": '"Android"',
+    },
+]
+_PROFILE = random.choice(BROWSER_PROFILES)
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                  "(KHTML, like Gecko) Chrome/120.0 Safari/537.36"
+    "User-Agent": _PROFILE["User-Agent"],
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "ru-RU,ru;q=0.9,tg;q=0.8,en-US;q=0.7,en;q=0.6",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "sec-ch-ua": _PROFILE["sec-ch-ua"],
+    "sec-ch-ua-mobile": "?1" if "Mobile" in _PROFILE["User-Agent"] else "?0",
+    "sec-ch-ua-platform": _PROFILE["sec-ch-ua-platform"],
 }
+
+# Общая сессия вместо голых requests.get() на каждый вызов — держит куки между запросами
+# (сайт после первого визита обычно выставляет сессионную куку, и её отсутствие на
+# каждом "новом" запросе — ещё один явный признак бота) и переиспользует TCP-соединение,
+# как это делает настоящий браузер.
+SESSION = requests.Session()
+SESSION.headers.update(HEADERS)
+_session_warmed_up = False
+
+
+def _warm_up_session():
+    """Один раз за процесс заходит на главную страницу сайта, чтобы получить те же
+    куки, что получил бы настоящий посетитель, прежде чем сразу открывать целевой
+    раздел объявлений — так меньше похоже на скрипт, который знает только один URL."""
+    global _session_warmed_up
+    if _session_warmed_up:
+        return
+    try:
+        home = re.match(r"https?://[^/]+/?", SEARCH_URL)
+        if home:
+            SESSION.get(home.group(0), timeout=15)
+            time.sleep(random.uniform(0.5, 1.5))
+    except Exception as e:
+        print("Не удалось прогреть сессию:", e)
+    _session_warmed_up = True
+
+
+def polite_get(url, **kwargs):
+    """requests.get через общую сессию + небольшая случайная пауза перед запросом —
+    точные интервалы ровно каждые N секунд без вариации сами по себе легко отличают
+    бота от человека."""
+    _warm_up_session()
+    time.sleep(random.uniform(0.4, 1.8))
+    kwargs.setdefault("timeout", 20)
+    resp = SESSION.get(url, **kwargs)
+    if resp.status_code in (403, 429):
+        # Одна вежливая повторная попытка с другой паузой — сайт мог отдать 403 на
+        # разовый всплеск, а не забанить IP насовсем.
+        time.sleep(random.uniform(3, 7))
+        resp = SESSION.get(url, **kwargs)
+    return resp
 
 TRANSLIT_MAP = {
     "iphone": ["айфон"], "samsung": ["самсунг"], "honor": ["хонор"],
@@ -962,7 +1046,7 @@ def report_fetch_result(health, success):
 
 def check_sold_status(url):
     try:
-        resp = requests.get(url, headers=HEADERS, timeout=20)
+        resp = polite_get(url)
         if not resp.ok:
             return None
         soup = BeautifulSoup(resp.text, "html.parser")
@@ -1469,7 +1553,7 @@ def labeled_value(soup, labels):
 
 
 def fetch_listings():
-    resp = requests.get(SEARCH_URL, headers=HEADERS, timeout=20)
+    resp = polite_get(SEARCH_URL)
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "html.parser")
 
@@ -1494,7 +1578,7 @@ def fetch_listings():
 
 
 def fetch_detail(ad_url):
-    resp = requests.get(ad_url, headers=HEADERS, timeout=20)
+    resp = polite_get(ad_url)
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "html.parser")
     full_text = soup.get_text(" ", strip=True)
@@ -1765,7 +1849,7 @@ def analyze_listing(item, photo_urls, similar_examples, confirmed_good_calls, co
     parts = [{"text": build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate, has_photos=bool(photo_urls), condition_note=condition_note, no_photo_reason=no_photo_reason)}]
     for url in photo_urls:
         try:
-            img = requests.get(url, headers=HEADERS, timeout=15)
+            img = polite_get(url, timeout=15)
             img.raise_for_status()
             mime = "image/png" if ".png" in url.lower() else "image/jpeg"
             parts.append({"inline_data": {"mime_type": mime, "data": base64.b64encode(img.content).decode()}})
@@ -2241,10 +2325,26 @@ def run_forever():
         if now - last_push >= GIT_SYNC_INTERVAL_SECONDS:
             github_state_push()
             last_push = now
-        time.sleep(POLL_INTERVAL_SECONDS)
+
+        # Адаптивная пауза: если Somon.tj подряд отвечает ошибкой (403/429/сеть),
+        # каждый следующий провал удваивает эффективный интервал (до потолка
+        # MAX_BACKOFF_SECONDS) — вместо того чтобы долбить сайт ровно раз в
+        # POLL_INTERVAL_SECONDS и усугублять блокировку. Как только сайт снова
+        # отвечает нормально, consecutive_failures обнуляется в report_fetch_result,
+        # и пауза сама возвращается к обычным POLL_INTERVAL_SECONDS.
+        failures = load_json(HEALTH_FILE, {}).get("consecutive_failures", 0)
+        sleep_for = min(POLL_INTERVAL_SECONDS * (2 ** min(failures, 10)), MAX_BACKOFF_SECONDS)
+        sleep_for = max(sleep_for, POLL_INTERVAL_SECONDS)
+        if failures:
+            print(f"Провалов подряд: {failures} — следующая попытка через {sleep_for} сек.")
+        # Небольшой джиттер на паузу тоже, а не только на сами запросы — иначе цикл
+        # всё равно бьёт по сайту с идеально ровным периодом.
+        time.sleep(sleep_for + random.uniform(0, sleep_for * 0.1))
 
 
 if __name__ == "__main__":
+    print(f"Старт. POLL_INTERVAL_SECONDS={POLL_INTERVAL_SECONDS}, "
+          f"MAX_BACKOFF_SECONDS={MAX_BACKOFF_SECONDS}, SEARCH_URL={SEARCH_URL}")
     if KEEPALIVE_PORT:
         start_keepalive_server(KEEPALIVE_PORT)
     if POLL_INTERVAL_SECONDS > 0:

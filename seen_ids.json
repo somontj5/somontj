@@ -10927,7 +10927,8 @@
     "title": "Tecno Pova 7 ultra",
     "price": 2890,
     "condition": "Б/у",
-    "model_key": "tecno pova 7 ultra"
+    "model_key": "tecno pova 7 ultra",
+    "sold_checked": true
   },
   "95545726": {
     "logged": true,
@@ -10936,7 +10937,8 @@
     "title": "Samsung Galaxy A26",
     "price": 2450,
     "condition": "Б/у",
-    "model_key": "samsung a26"
+    "model_key": "samsung a26",
+    "sold_checked": true
   },
   "96731320": {
     "logged": true,
@@ -10945,7 +10947,8 @@
     "title": "Infinix Smart 20",
     "price": 1200,
     "condition": "Б/у",
-    "model_key": "infinix smart 20"
+    "model_key": "infinix smart 20",
+    "sold_checked": true
   },
   "17196584": {
     "logged": true,
@@ -10964,7 +10967,8 @@
     "title": "Samsung Galaxy A56",
     "price": 3100,
     "condition": "Б/у",
-    "model_key": "samsung a56"
+    "model_key": "samsung a56",
+    "sold_checked": true
   },
   "70401164": {
     "logged": true,
@@ -10973,7 +10977,8 @@
     "title": "Apple iPhone 11 Pro, 64 gb, Gold",
     "price": 1750,
     "condition": "Б/у",
-    "model_key": "apple 11 pro"
+    "model_key": "apple 11 pro",
+    "sold_checked": true
   },
   "97315256": {
     "logged": true,
@@ -11473,19 +11478,50 @@
     "model_key": "samsung a56"
   },
   "91412512": {
-    "logged": true
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17202759_xiaomi-14-12-512gb-globalnaia-versiia/",
+    "title": "Xiaomi 14 12/512gb глобальная версия",
+    "price": 4900,
+    "condition": "Б/у",
+    "model_key": "xiaomi 14 глобальная версия"
   },
   "67213128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17100672_apple-iphone-13-pro-max-128-gb-gold/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Gold",
+    "price": 5399,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
   },
   "72027089": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17202708_samsung-galaxy-s9-black/",
+    "title": "Samsung Galaxy S9 Black",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "samsung s9"
   },
   "64920464": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17202649_infinite-hot-20i-4-64gb/",
+    "title": "Infinite hot 20i 4/64гб",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": null
   },
   "16914998": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16914998_knopochno-sensornyi-qinphone-black/",
+    "title": "Кнопочно сенсорный QinPhone Black",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": null
   },
   "91228256": {
     "logged": true

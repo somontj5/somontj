@@ -11518,7 +11518,8 @@
     "title": "Xiaomi Redmi Note 14",
     "price": 1650,
     "condition": "Б/у",
-    "model_key": "redmi note 14"
+    "model_key": "redmi note 14",
+    "sold_checked": true
   },
   "99561285": {
     "logged": true,
@@ -11528,7 +11529,8 @@
     "title": "Samsung Galaxy A56 5G",
     "price": 2950,
     "condition": "Б/у",
-    "model_key": "samsung a56"
+    "model_key": "samsung a56",
+    "sold_checked": true
   },
   "91412512": {
     "logged": true,
@@ -11538,7 +11540,8 @@
     "title": "Xiaomi 14 12/512gb глобальная версия",
     "price": 4900,
     "condition": "Б/у",
-    "model_key": "xiaomi 14 глобальная версия"
+    "model_key": "xiaomi 14 глобальная версия",
+    "sold_checked": true
   },
   "67213128": {
     "logged": true,
@@ -11547,7 +11550,8 @@
     "title": "Apple iPhone 13 Pro Max, 128 gb, Gold",
     "price": 5399,
     "condition": "Б/у",
-    "model_key": "apple 13 pro max"
+    "model_key": "apple 13 pro max",
+    "sold_checked": true
   },
   "72027089": {
     "logged": true,
@@ -12227,5 +12231,41 @@
     "price": 1050,
     "condition": "Б/у",
     "model_key": null
+  },
+  "25115128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17206251_telefon-redmi-15s-128gb/",
+    "title": "Xiaomi Redmi 15С 128гб",
+    "price": 1420,
+    "condition": "Б/у",
+    "model_key": "redmi 15с"
+  },
+  "06255205": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17206255_samsung-galaxy-s20-ultra-5g/",
+    "title": "Samsung Galaxy S20 Ultra 5G",
+    "price": 2400,
+    "condition": "Б/у",
+    "model_key": "samsung s20 ultra"
+  },
+  "62151164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17206215_telefon-redmi-not-11-64gb/",
+    "title": "Xiaomi Redmi Note 11",
+    "price": 1140,
+    "condition": "Б/у",
+    "model_key": "redmi note 11"
+  },
+  "20608854": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17206088_samsung-a54/",
+    "title": "Samsung Galaxy A54",
+    "price": 1880,
+    "condition": "Б/у",
+    "model_key": "samsung a54"
   }
 }

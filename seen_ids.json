@@ -11969,7 +11969,8 @@
     "title": "Apple iPhone 12 pro, 256 gb, Pacific Blue",
     "price": 3500,
     "condition": "Б/у",
-    "model_key": "apple 12 pro"
+    "model_key": "apple 12 pro",
+    "sold_checked": true
   },
   "20218811": {
     "logged": true,

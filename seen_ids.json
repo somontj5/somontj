@@ -11850,6 +11850,7 @@
     "title": "Samsung Galaxy S22ultra",
     "price": 3900,
     "condition": "Б/у",
-    "model_key": "samsung s22ultra"
+    "model_key": "samsung s22ultra",
+    "sold_checked": true
   }
 }

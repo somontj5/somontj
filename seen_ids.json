@@ -11249,7 +11249,8 @@
     "title": "Samsung Galaxy A24",
     "price": 1000,
     "condition": "Б/у",
-    "model_key": "samsung a24"
+    "model_key": "samsung a24",
+    "sold_checked": true
   },
   "85510432": {
     "logged": true,
@@ -11258,7 +11259,8 @@
     "title": "Xiaomi Redmi 10А",
     "price": 710,
     "condition": "Б/у",
-    "model_key": "redmi 10а"
+    "model_key": "redmi 10а",
+    "sold_checked": true
   },
   "88416256": {
     "logged": true,
@@ -11267,7 +11269,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
     "price": 7999,
     "condition": "Б/у",
-    "model_key": "apple 16 pro max"
+    "model_key": "apple 16 pro max",
+    "sold_checked": true
   },
   "99151264": {
     "logged": true,
@@ -11674,19 +11677,51 @@
     "model_key": "apple 14 pro"
   },
   "21806110": {
-    "logged": true
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15621806_nokia-110-original/",
+    "title": "Apple iPhone 15 Pro Max, 256 gb, White Titanium",
+    "price": 7699,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro max"
   },
   "06228256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15101706_samsung-galaxy-s22-8-256gb-black/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
+    "price": 9799,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   },
   "93311128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15304933_apple-iphone-11-pro-max-128-gb-gold/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
+    "price": 12399,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
   },
   "33317512": {
-    "logged": true
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17202333_apple-iphone-17-pro-max-512-gb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro Max, 512 gb, Cosmic Orange",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
   },
   "20200516": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17202005_samsung-a16/",
+    "title": "Samsung Galaxy A16",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "samsung a16"
   },
   "19531164": {
     "logged": true

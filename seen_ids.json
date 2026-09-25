@@ -11582,7 +11582,8 @@
     "title": "Samsung Galaxy S24 8/256Gb Purple",
     "price": 3499,
     "condition": "Б/у",
-    "model_key": "samsung s24 purple"
+    "model_key": "samsung s24 purple",
+    "sold_checked": true
   },
   "19368256": {
     "logged": true,
@@ -12159,5 +12160,14 @@
     "price": 2800,
     "condition": "Б/у",
     "model_key": "apple 11"
+  },
+  "20541822": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17205418_samsung-galaxy-s22-ultra/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 4350,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
   }
 }

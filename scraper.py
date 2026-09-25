@@ -325,6 +325,24 @@ def extract_model_key(title):
     return f"{canonical_brand} {' '.join(model_words[:5])}".strip()
 
 
+def model_key_for_item(item):
+    """model_key для лота, у которого уже был запрошен fetch_detail(): предпочитает
+    проверенное поле «Модель» (зелёный блок IMEI на странице объявления) вместо
+    заголовка. Заголовки на Somon пишут сами продавцы, и там регулярно опечатки
+    (см. "Huawei Nova" при реальной "HUAWEI INOVA") или вообще не то устройство
+    (объявление "Телефон Vivo" с проверенной моделью "CELIO 707C" — это не Vivo).
+    Поле «Модель» — обязательное структурированное поле, которое сайт сверяет по
+    IMEI, поэтому оно надёжнее свободного текста заголовка. Если проверенного поля
+    нет на странице (или из него не удалось распознать бренд) — откатываемся на
+    старое поведение и разбираем заголовок, как раньше."""
+    verified = item.get("verified_model")
+    if verified:
+        key = extract_model_key(verified)
+        if key:
+            return key
+    return extract_model_key(item.get("title") or "")
+
+
 def is_plausible_price(price):
     """Цена годится для сравнения. Тот же порог, что у /anomalies (ANOMALY_MIN_PRICE):
     шуточные объявления по 1 сомони не должны попадать ни в примеры для Gemini, ни в
@@ -363,7 +381,8 @@ def log_full_analysis(item, analysis, verdict, data_sources):
             "type": "full_analysis", "id": item["id"], "title": item["title"],
             "price": item["price"], "condition": item.get("condition"),
             "memory_gb": item.get("memory"), "description": item.get("description", ""),
-            "model_key": extract_model_key(item["title"]),
+            "model_key": model_key_for_item(item),
+            "verified_model": item.get("verified_model"),
             "visible_defects": analysis.get("visible_defects", []),
             "positive_features": analysis.get("positive_features", []),
             "overall_visual_condition": analysis.get("overall_visual_condition"),
@@ -557,7 +576,7 @@ def remigrate_model_keys():
                 continue
             if rec.get("type") in ("market_point", "full_analysis", "confirmed_sale", "confirmed_good_call") and rec.get("title"):
                 total += 1
-                new_key = extract_model_key(rec["title"])
+                new_key = model_key_for_item(rec)
                 if new_key != rec.get("model_key"):
                     rec["model_key"] = new_key
                     changed += 1
@@ -1503,6 +1522,10 @@ def fetch_detail(ad_url):
     memory_raw = labeled_value(soup, ["Встроенная память", "Память"])
     memory_match = re.search(r"(\d+)\s*(?:gb|гб)", memory_raw or "", re.I)
     memory = int(memory_match.group(1)) if memory_match else None
+    # Проверенное поле «Модель» из зелёного блока IMEI — надёжнее заголовка,
+    # см. model_key_for_item(). Не всегда присутствует на странице (не для всех
+    # объявлений сайт показывает эту сверку), тогда просто None.
+    verified_model = labeled_value(soup, ["Модель"])
     imei_status = detect_imei_status(full_text)
     city = labeled_value(soup, ["Город"])
     if not city:
@@ -1521,7 +1544,7 @@ def fetch_detail(ad_url):
             seen.add(src)
             photo_urls.append(src)
 
-    return condition, memory, description, photo_urls[:4], imei_status, city, published_at
+    return condition, memory, description, photo_urls[:4], imei_status, city, published_at, verified_model
 
 
 # ---------- Gemini: анализ ----------
@@ -2012,17 +2035,18 @@ def main():
                 seen[item["id"]] = entry
                 continue
 
-            condition, memory, description, photo_urls, imei_status, city, published_at = fetch_detail(item["url"])
+            condition, memory, description, photo_urls, imei_status, city, published_at, verified_model = fetch_detail(item["url"])
             item["condition"] = condition or item.get("condition")
             item["memory"] = memory or item.get("memory")
             item["description"] = description
             item["imei_status"] = imei_status
             item["city"] = city
             item["published_at"] = published_at
+            item["verified_model"] = verified_model
             if imei_status in CUSTOMS_DUE_STATUSES:
                 item["estimated_customs_cost"] = estimate_customs_cost(item["price"], usd_rate)
 
-            model_key = extract_model_key(item["title"])
+            model_key = model_key_for_item(item)
             similar_examples = similar_full_analyses(model_key, item.get("condition"), item["id"])
             confirmed_good_calls = get_confirmed_good_calls(model_key)
             confirmed_sales = get_confirmed_sales(model_key)

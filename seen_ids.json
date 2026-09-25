@@ -11399,7 +11399,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
     "price": 13000,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "01002225": {
     "logged": true,
@@ -11841,5 +11842,14 @@
     "price": 6500,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "20328722": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17203287_samsung-s22ultra/",
+    "title": "Samsung Galaxy S22ultra",
+    "price": 3900,
+    "condition": "Б/у",
+    "model_key": "samsung s22ultra"
   }
 }

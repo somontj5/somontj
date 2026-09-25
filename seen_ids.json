@@ -11619,7 +11619,8 @@
     "title": "Samsung Galaxy S24 Ultra 12/256Gb Titanium",
     "price": 5699,
     "condition": "Б/у",
-    "model_key": "samsung s24 ultra titanium"
+    "model_key": "samsung s24 ultra titanium",
+    "sold_checked": true
   },
   "88211256": {
     "logged": true,
@@ -11628,7 +11629,8 @@
     "title": "Samsung Galaxy S24Ultra 12/256Gb Black Vietnam",
     "price": 7299,
     "condition": "Б/у",
-    "model_key": "samsung s24ultra"
+    "model_key": "samsung s24ultra",
+    "sold_checked": true
   },
   "43218256": {
     "logged": true,
@@ -12099,5 +12101,23 @@
     "price": 2850,
     "condition": "Б/у",
     "model_key": "redmi note 14 pro plus"
+  },
+  "20443022": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17204430_samsung-s22/",
+    "title": "Samsung Galaxy S22",
+    "price": 2999,
+    "condition": "Б/у",
+    "model_key": "samsung s22"
+  },
+  "44371164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17204437_apple-iphone-11-64-gb-black/",
+    "title": "Apple iPhone 11, 64 gb, Black",
+    "price": 1980,
+    "condition": "Б/у",
+    "model_key": "apple 11"
   }
 }

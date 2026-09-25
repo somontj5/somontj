@@ -11129,7 +11129,8 @@
     "title": "Honor 400 LIte 8/256gb",
     "price": 2500,
     "condition": "Б/у",
-    "model_key": "honor 400 lite"
+    "model_key": "honor 400 lite",
+    "sold_checked": true
   },
   "26912256": {
     "logged": true,
@@ -11148,7 +11149,8 @@
     "title": "Infinix SMART 7 HD",
     "price": 750,
     "condition": "Б/у",
-    "model_key": "infinix smart 7 hd"
+    "model_key": "infinix smart 7 hd",
+    "sold_checked": true
   },
   "98475105": {
     "logged": true,
@@ -11157,7 +11159,8 @@
     "title": "Samsung Galaxy S10+ 5G, 256gb",
     "price": 1650,
     "condition": "Б/у",
-    "model_key": "samsung s10 plus"
+    "model_key": "samsung s10 plus",
+    "sold_checked": true
   },
   "74126128": {
     "logged": true,
@@ -11166,7 +11169,8 @@
     "title": "Xiaomi Redmi Note 12 6/128gb",
     "price": 1220,
     "condition": "Б/у",
-    "model_key": "redmi note 12"
+    "model_key": "redmi note 12",
+    "sold_checked": true
   },
   "68061485": {
     "logged": true,
@@ -11175,7 +11179,8 @@
     "title": "Huawei Y5 Lite",
     "price": 250,
     "condition": "Б/у",
-    "model_key": "huawei y5 lite"
+    "model_key": "huawei y5 lite",
+    "sold_checked": true
   },
   "19860864": {
     "logged": true,
@@ -11592,19 +11597,49 @@
     "model_key": "samsung s24 ultra titanium"
   },
   "88211256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15089882_apple-iphone-11-pro-256-gb-silver/",
+    "title": "Samsung Galaxy S24Ultra 12/256Gb Black Vietnam",
+    "price": 7299,
+    "condition": "Б/у",
+    "model_key": "samsung s24ultra"
   },
   "43218256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15391443_samsung-galaxy-s21-8-256gb-black/",
+    "title": "Samsung Galaxy S24Ultra 12/256Gb Gold",
+    "price": 5499,
+    "condition": "Б/у",
+    "model_key": "samsung s24ultra"
   },
   "84218256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16062484_samsung-galaxy-s21-8-256gb-purple/",
+    "title": "Samsung Galaxy S25Ultra 12/256Gb Black",
+    "price": 6199,
+    "condition": "Б/у",
+    "model_key": "samsung s25ultra"
   },
   "92212246": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15100649_samsung-galaxy-s22ultra-12-246gb-green/",
+    "title": "Apple iPhone 11 Pro Max, 64 gb, Silver",
+    "price": 2899,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro max"
   },
   "75238256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15101675_samsung-galaxy-s23-8-256gb-black/",
+    "title": "Apple iPhone 12, 64 gb, White",
+    "price": 2799,
+    "condition": "Б/у",
+    "model_key": "apple 12"
   },
   "06118128": {
     "logged": true

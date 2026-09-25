@@ -11724,7 +11724,14 @@
     "model_key": "samsung a16"
   },
   "19531164": {
-    "logged": true
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17201953_apple-iphone-11-pro-64-gb-space-grey/",
+    "title": "Apple iPhone 11 Pro, 64 gb, Space Grey",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro"
   },
   "30561285": {
     "logged": true,

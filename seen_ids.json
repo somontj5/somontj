@@ -11910,7 +11910,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Graphite",
     "price": 4444,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "41113128": {
     "logged": true,
@@ -12446,5 +12447,14 @@
     "price": 11000,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "20714622": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17207146_samsung-galaxy-s22-ultra/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 3850,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
   }
 }

@@ -12873,7 +12873,8 @@
     "price": 850,
     "condition": "Б/у",
     "model_key": "samsung a51",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "20980312": {
     "logged": true,

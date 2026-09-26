@@ -12885,5 +12885,15 @@
     "condition": "Б/у",
     "model_key": "redmi note 12",
     "verified_model": null
+  },
+  "67313128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17210673_apple-iphone-13-pro-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
+    "price": 3500,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro",
+    "verified_model": null
   }
 }

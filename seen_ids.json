@@ -12447,7 +12447,8 @@
     "title": "Apple iPhone 5s, 16 gb",
     "price": 550,
     "condition": "Б/у",
-    "model_key": "apple 5s"
+    "model_key": "apple 5s",
+    "sold_checked": true
   },
   "65431164": {
     "logged": true,
@@ -12466,7 +12467,8 @@
     "title": "Apple iPhone 14 Pro, 256 gb, Deep Purple",
     "price": 5499,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "97427822": {
     "logged": true,
@@ -12475,7 +12477,8 @@
     "title": "Samsung Galaxy S22+",
     "price": 1200,
     "condition": "Б/у",
-    "model_key": "samsung s22 plus"
+    "model_key": "samsung s22 plus",
+    "sold_checked": true
   },
   "73317256": {
     "logged": true,
@@ -12983,5 +12986,45 @@
     "price": 5600,
     "condition": "Б/у",
     "model_key": "samsung s24 ultra"
+  },
+  "82213128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17211822_apple-iphone-13-pro-max-128-gb-graphite/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Graphite",
+    "price": 5200,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max",
+    "verified_model": null
+  },
+  "75512128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17211755_apple-iphone-12-pro-128-gb-graphite/",
+    "title": "Apple iPhone 12 pro, 128 gb, Graphite",
+    "price": 3200,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro",
+    "verified_model": null
+  },
+  "76012128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17211760_apple-iphone-12-pro-max-128-gb-pacific-blue/",
+    "title": "Apple iPhone 12 Pro Max, 128 gb, Pacific Blue",
+    "price": 3199,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro max",
+    "verified_model": null
+  },
+  "21178931": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17211789_samsung-a31s/",
+    "title": "Samsung Galaxy A31s",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "samsung a31s",
+    "verified_model": null
   }
 }

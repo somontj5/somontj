@@ -12638,7 +12638,8 @@
     "title": "Honor 400 lite",
     "price": 2000,
     "condition": "Б/у",
-    "model_key": "honor 400 lite"
+    "model_key": "honor 400 lite",
+    "sold_checked": true
   },
   "48835135": {
     "logged": true,
@@ -13241,6 +13242,16 @@
     "price": 4350,
     "condition": "Б/у",
     "model_key": "apple 12 pro max",
+    "verified_model": null
+  },
+  "21345612": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17213456_m-12/",
+    "title": "Samsung Galaxy М12",
+    "price": 899,
+    "condition": "Б/у",
+    "model_key": "samsung м12",
     "verified_model": null
   }
 }

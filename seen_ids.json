@@ -12617,7 +12617,8 @@
     "price": 1199,
     "condition": "Б/у",
     "model_key": "imei::",
-    "verified_model": ":"
+    "verified_model": ":",
+    "sold_checked": true
   },
   "75816256": {
     "logged": true,
@@ -12627,7 +12628,8 @@
     "price": 9300,
     "condition": "Б/у",
     "model_key": "apple 16 pro max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "58458759": {
     "logged": true,
@@ -13210,5 +13212,24 @@
     "condition": "Б/у",
     "model_key": "samsung a5",
     "verified_model": null
+  },
+  "22815256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17213228_apple-iphone-15-pro-max-256-gb-black-titanium/",
+    "title": "Apple iPhone 15 Pro Max, 256 gb, Black Titanium",
+    "price": 7350,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro max",
+    "verified_model": null
+  },
+  "37314128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17209373_apple-iphone-14-pro-max-128-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro Max, 128 gb, Deep Purple",
+    "price": 6300,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
   }
 }

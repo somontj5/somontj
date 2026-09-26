@@ -12255,7 +12255,8 @@
     "title": "Samsung Galaxy A6-Plus",
     "price": 690,
     "condition": "Б/у",
-    "model_key": "samsung a6 plus"
+    "model_key": "samsung a6 plus",
+    "sold_checked": true
   },
   "22512256": {
     "logged": true,
@@ -12787,5 +12788,15 @@
     "price": 1599,
     "condition": "Б/у",
     "model_key": null
+  },
+  "82315256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17209823_apple-iphone-15-pro-max-256-gb-natural-titanium/",
+    "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
+    "price": 6500,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro max",
+    "verified_model": null
   }
 }

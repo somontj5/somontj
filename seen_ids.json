@@ -13105,7 +13105,8 @@
     "price": 4990,
     "condition": "Б/у",
     "model_key": "apple 13 pro max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "20912921": {
     "logged": true,
@@ -13264,5 +13265,14 @@
     "price": 2450,
     "condition": "Б/у",
     "model_key": "honor 400 lite"
+  },
+  "15572510": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15572510_savlstttytchtchtchttchttvcht/",
+    "title": "Samsung Galaxy S10+",
+    "price": 3500,
+    "condition": "Б/у",
+    "model_key": "samsung s10 plus"
   }
 }

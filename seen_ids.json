@@ -13135,5 +13135,14 @@
     "condition": "Б/у",
     "model_key": "samsung s22",
     "verified_model": null
+  },
+  "12682128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17212682_apple-iphone-xr-128-gb-white/",
+    "title": "Apple iPhone Xr, 128 gb, White",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "apple xr"
   }
 }

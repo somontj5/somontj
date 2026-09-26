@@ -48,6 +48,8 @@ MIN_PROFIT_FILE = "min_profit.json"
 MIN_CONFIDENCE_FILE = "min_confidence.json"
 MAX_PRICE_FILE = "max_price.json"
 ANOMALY_STATE_FILE = "known_anomalies.json"
+REMIGRATE_LIVE_STATE_FILE = "remigrate_live_state.json"
+REMIGRATE_LIVE_BATCH_SIZE = int(os.environ.get("REMIGRATE_LIVE_BATCH_SIZE", "20"))
 
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
@@ -504,6 +506,134 @@ def remigrate_model_keys():
     if os.path.exists(ANOMALY_STATE_FILE):
         os.remove(ANOMALY_STATE_FILE)
     return changed, total
+
+
+def fetch_verified_model_from_url(url):
+    """Лёгкий запрос страницы объявления только за строкой "Модель" из блока
+    проверки IMEI (без фото, без остального разбора) — используется для
+    /remigrate_live, чтобы досчитать verified_model у старых market_point,
+    у которых страница объявления никогда не открывалась при сборе. Возвращает
+    строку (может быть None, если блока проверки IMEI на странице нет — значит,
+    IMEI не найден в базе) или спец-значение "__gone__", если объявление больше
+    не открывается (снято/удалено) — такие URL повторно не проверяем."""
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=20)
+        if resp.status_code in (404, 410):
+            return "__gone__"
+        if not resp.ok:
+            return None
+        soup = BeautifulSoup(resp.text, "html.parser")
+        return labeled_value(soup, ["Модель"])
+    except Exception as e:
+        print("Не удалось дозагрузить объявление для /remigrate_live:", url, e)
+        return None
+
+
+def _remigrate_live_relevant_types():
+    return ("market_point", "full_analysis", "confirmed_sale", "confirmed_good_call")
+
+
+def start_remigrate_live():
+    """Готовит список уникальных URL, у которых ещё нет verified_model, для
+    досбора его напрямую со страницы объявления (см. fetch_verified_model_from_url).
+    Если процесс уже идёт — ничего не трогает, чтобы не терять прогресс."""
+    existing = load_json(REMIGRATE_LIVE_STATE_FILE, None)
+    if existing and not existing.get("done"):
+        return existing, False
+
+    urls_needed = []
+    seen_urls = set()
+    if os.path.exists(PRICE_HISTORY_FILE):
+        with open(PRICE_HISTORY_FILE, "r", encoding="utf-8") as f:
+            for line in f:
+                try:
+                    rec = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+                if rec.get("type") not in _remigrate_live_relevant_types():
+                    continue
+                url = rec.get("url")
+                if not url or url in seen_urls or rec.get("verified_model"):
+                    continue
+                seen_urls.add(url)
+                urls_needed.append(url)
+
+    state = {
+        "started_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
+        "urls": urls_needed,
+        "cursor": 0,
+        "results": {},
+        "done": False,
+    }
+    with open(REMIGRATE_LIVE_STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(state, f, ensure_ascii=False)
+    return state, True
+
+
+def finish_remigrate_live(state):
+    """Финальный проход: переписывает model_key каждой записи в базе, используя
+    дособранный verified_model там, где он нашёлся, иначе — старый разбор
+    заголовка (как в remigrate_model_keys)."""
+    url_to_model = {
+        url: result for url, result in state.get("results", {}).items()
+        if result and result != "__gone__"
+    }
+    changed = total = 0
+    if os.path.exists(PRICE_HISTORY_FILE):
+        lines_out = []
+        with open(PRICE_HISTORY_FILE, "r", encoding="utf-8") as f:
+            for line in f:
+                try:
+                    rec = json.loads(line)
+                except json.JSONDecodeError:
+                    lines_out.append(line)
+                    continue
+                if rec.get("type") in _remigrate_live_relevant_types() and rec.get("title"):
+                    total += 1
+                    verified_model = rec.get("verified_model") or url_to_model.get(rec.get("url"))
+                    if verified_model and not rec.get("verified_model"):
+                        rec["verified_model"] = verified_model
+                    new_key = derive_verified_model_key(verified_model) or extract_model_key(rec["title"])
+                    if new_key != rec.get("model_key"):
+                        rec["model_key"] = new_key
+                        changed += 1
+                lines_out.append(json.dumps(rec, ensure_ascii=False) + "\n")
+        with open(PRICE_HISTORY_FILE, "w", encoding="utf-8") as f:
+            f.writelines(lines_out)
+    if os.path.exists(ANOMALY_STATE_FILE):
+        os.remove(ANOMALY_STATE_FILE)
+    return changed, total
+
+
+def process_remigrate_live_batch(subscribers):
+    """Вызывается на каждом прогоне бота. Если фоновый досбор verified_model
+    (/remigrate_live) активен — обрабатывает следующую пачку URL и, если это
+    была последняя пачка, выполняет финальную переписку model_key и оповещает
+    владельца. Ничего не делает, если процесс не запущен."""
+    state = load_json(REMIGRATE_LIVE_STATE_FILE, None)
+    if not state or state.get("done"):
+        return
+
+    urls = state.get("urls", [])
+    cursor = state.get("cursor", 0)
+    batch = urls[cursor: cursor + REMIGRATE_LIVE_BATCH_SIZE]
+    for url in batch:
+        state["results"][url] = fetch_verified_model_from_url(url)
+        time.sleep(1)
+    state["cursor"] = cursor + len(batch)
+
+    if state["cursor"] >= len(urls):
+        changed, total = finish_remigrate_live(state)
+        found = sum(1 for v in state["results"].values() if v and v != "__gone__")
+        alert_owner(
+            f"/remigrate_live завершён: проверено объявлений {len(urls)}, найдена модель по IMEI у {found}, "
+            f"обновлено model_key {changed} из {total} записей в базе. Список аномалий сброшен — "
+            f"проверь /anomalies заново."
+        )
+        state["done"] = True
+
+    with open(REMIGRATE_LIVE_STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(state, f, ensure_ascii=False)
 
 
 def find_price_anomalies(ratio_threshold=ANOMALY_RATIO_THRESHOLD, min_count=ANOMALY_MIN_COUNT):
@@ -1299,6 +1429,32 @@ def check_telegram_commands(searches, subscribers):
                     f"✅ Пересчитаны model_key по текущей формуле: обновлено {changed} из {total} записей.\n"
                     f"Список известных аномалий сброшен — проверь /anomalies заново.",
                 )
+        elif command == "/remigrate_live":
+            if chat_id != TELEGRAM_CHAT_ID:
+                send_telegram(chat_id, "⛔ Команда доступна только владельцу бота.")
+            else:
+                state = load_json(REMIGRATE_LIVE_STATE_FILE, None)
+                if state and not state.get("done"):
+                    urls, cursor = state.get("urls", []), state.get("cursor", 0)
+                    send_telegram(
+                        chat_id,
+                        f"⏳ Досбор моделей по IMEI уже идёт: проверено {cursor} из {len(urls)} объявлений "
+                        f"(по {REMIGRATE_LIVE_BATCH_SIZE} за прогон бота). Подожди — пришлю сообщение, когда закончится.",
+                    )
+                else:
+                    new_state, started = start_remigrate_live()
+                    total_urls = len(new_state.get("urls", []))
+                    if total_urls == 0:
+                        send_telegram(chat_id, "У всех записей в базе уже есть verified_model — обновлять нечего. "
+                                                "Если нужно всё равно пересчитать model_key, используй /remigrate.")
+                    else:
+                        send_telegram(
+                            chat_id,
+                            f"🔄 Запущен досбор модели по IMEI напрямую со страниц объявлений: {total_urls} "
+                            f"уникальных URL без сохранённой verified_model. Буду проверять по "
+                            f"{REMIGRATE_LIVE_BATCH_SIZE} за каждый прогон бота — это может занять несколько "
+                            f"прогонов. Когда закончу, пересчитаю model_key всей базы и пришлю итог сюда."
+                        )
         elif command == "/stats":
             gem_usage = get_daily_usage(GEMINI_DAILY_FILE, [c["id"] for c in GEMINI_COMBOS])
             search_usage = get_search_usage()
@@ -1324,6 +1480,8 @@ def check_telegram_commands(searches, subscribers):
                                     "/sold — фактически проданные телефоны (цена, дата), по моделям\n"
                                     "/anomalies — проверить базу на подозрительные разбросы цен (склеенные модели)\n"
                                     "/remigrate — пересчитать model_key всей базы по текущей формуле (только владелец)\n"
+                                    "/remigrate_live — дособрать модель по IMEI со страниц старых объявлений и "
+                                    "пересчитать model_key всей базы на её основе (только владелец)\n"
                                     "/dbadd текст — добавить что угодно в базу вручную\n"
                                     "/manual Название | Цена | Состояние | Описание — гипотетическая "
                                     "проверка объявления без фото (не сохраняется в базу)\n"
@@ -1909,6 +2067,7 @@ def main():
 
     current_ids = {item["id"] for item in listings}
     seen = process_disappeared_ads(seen, current_ids)
+    process_remigrate_live_batch(subscribers)
 
     usage_str = ", ".join(f"{c['id']}: {usage.get(c['id'], 0)}/{GEMINI_DAILY_LIMIT_PER_COMBO}" for c in GEMINI_COMBOS)
     search_usage = get_search_usage()

@@ -11941,7 +11941,8 @@
     "title": "Infinix smart 8",
     "price": 850,
     "condition": "Б/у",
-    "model_key": "infinix smart 8"
+    "model_key": "infinix smart 8",
+    "sold_checked": true
   },
   "20195812": {
     "logged": true,
@@ -11990,7 +11991,8 @@
     "title": "Realme C75",
     "price": 1150,
     "condition": "Б/у",
-    "model_key": "realme c75"
+    "model_key": "realme c75",
+    "sold_checked": true
   },
   "42812128": {
     "logged": true,
@@ -12498,5 +12500,26 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "apple 11"
+  },
+  "21412865": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17208372_telefon-redmi-note-14-128-6gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 14 128/6Gb Global Version 5G",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "imei::",
+    "verified_model": ":"
+  },
+  "63561285": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17208363_telefon-samsung-a56-128-vetnam-5g-silver/",
+    "title": "Samsung Galaxy А56 128 Vetnam 5G Silver",
+    "price": 2850,
+    "condition": "Б/у",
+    "model_key": "imei::",
+    "verified_model": ":"
   }
 }

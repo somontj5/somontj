@@ -13136,7 +13136,8 @@
     "price": 699,
     "condition": "Б/у",
     "model_key": "samsung a23",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "74773000": {
     "logged": true,
@@ -13253,5 +13254,14 @@
     "condition": "Б/у",
     "model_key": "samsung м12",
     "verified_model": null
+  },
+  "09139400": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17209139_honor-400-lite/",
+    "title": "Honor 400 LITE",
+    "price": 2450,
+    "condition": "Б/у",
+    "model_key": "honor 400 lite"
   }
 }

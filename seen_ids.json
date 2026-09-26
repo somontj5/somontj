@@ -12305,7 +12305,8 @@
     "title": "Xiaomi Redmi Note 11",
     "price": 1140,
     "condition": "Б/у",
-    "model_key": "redmi note 11"
+    "model_key": "redmi note 11",
+    "sold_checked": true
   },
   "20608854": {
     "logged": true,
@@ -12820,5 +12821,14 @@
     "condition": "Б/у",
     "model_key": "apple 14 pro",
     "verified_model": null
+  },
+  "02114128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17210021_apple-iphone-14-pro-128-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Deep Purple",
+    "price": 4600,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

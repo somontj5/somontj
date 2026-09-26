@@ -12032,7 +12032,8 @@
     "title": "Apple iPhone Xs, 64 gb, Gold",
     "price": 2000,
     "condition": "Б/у",
-    "model_key": "apple xs"
+    "model_key": "apple xs",
+    "sold_checked": true
   },
   "69526869": {
     "logged": true,
@@ -12567,5 +12568,15 @@
     "condition": "Б/у",
     "model_key": "imei::",
     "verified_model": ":"
+  },
+  "75816256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16967758_apple-iphone-16-pro-max-256-gb-natural-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Natural Titanium",
+    "price": 9300,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max",
+    "verified_model": null
   }
 }

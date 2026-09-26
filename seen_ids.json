@@ -12794,7 +12794,8 @@
     "title": "Samsung Galaxy A56",
     "price": 3450,
     "condition": "Б/у",
-    "model_key": "samsung a56"
+    "model_key": "samsung a56",
+    "sold_checked": true
   },
   "99411264": {
     "logged": true,
@@ -12803,7 +12804,8 @@
     "title": "Apple iPhone 12, 64 gb, White",
     "price": 2650,
     "condition": "Б/у",
-    "model_key": "apple 12"
+    "model_key": "apple 12",
+    "sold_checked": true
   },
   "10817512": {
     "logged": true,

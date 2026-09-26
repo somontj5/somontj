@@ -12885,7 +12885,8 @@
     "price": 350,
     "condition": "Б/у",
     "model_key": "redmi note 12",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "67313128": {
     "logged": true,

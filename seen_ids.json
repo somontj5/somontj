@@ -12709,7 +12709,8 @@
     "price": 9500,
     "condition": "Б/у",
     "model_key": "samsung s25 ultra",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "09592100": {
     "logged": true,
@@ -13326,6 +13327,16 @@
     "price": 9000,
     "condition": "Б/у",
     "model_key": "samsung s25 ultra",
+    "verified_model": null
+  },
+  "23671022": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16236710_samsung-galaxy-s22-ultra/",
+    "title": "Samsung Galaxy S22 ultra",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra",
     "verified_model": null
   }
 }

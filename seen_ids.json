@@ -12546,5 +12546,15 @@
     "condition": "Б/у",
     "model_key": "imei::",
     "verified_model": ":"
+  },
+  "20914128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17208209_apple-iphone-14-pro-128-gb-silver/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Silver",
+    "price": 5200,
+    "condition": "Б/у",
+    "model_key": "imei::",
+    "verified_model": ":"
   }
 }

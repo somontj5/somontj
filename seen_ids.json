@@ -12507,7 +12507,8 @@
     "title": "Samsung Galaxy S22 Ultra",
     "price": 3850,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "34916256": {
     "logged": true,
@@ -13070,5 +13071,14 @@
     "condition": "Б/у",
     "model_key": "tecno pova neo 2",
     "verified_model": null
+  },
+  "41913128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17210419_apple-iphone-13-pro-max-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Sierra Blue",
+    "price": 5700,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
   }
 }

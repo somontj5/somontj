@@ -118,6 +118,7 @@ GB_WORDS = {"gb", "гб"}
 
 CONDITION_RE = re.compile(r"\b(Новый|Б\s*/\s*у|Б\s*\.\s*у\.?|Восстановлен\w*)\b(?:\s*[·|,;—-]\s*(\d+)\s*gb)?", re.I)
 NOISE_RE = re.compile(r"Еще\s*\d+\s*фото|VIP|IMEI\s*проверен", re.I)
+IMEI_VERIFIED_BADGE_RE = re.compile(r"IMEI\s*проверен", re.I)
 PRICE_RE = re.compile(r"(\d[\d\s]{2,})\s*[cс]\.")
 DESC_RE = re.compile(r"Описание\s*(.*?)\s*(?:Показать телефон|Начать чат|Пожаловаться|$)", re.S)
 
@@ -144,7 +145,19 @@ NEVER_PROFITABLE_RE = re.compile(r"(?:iphone|айфон|apple)[^,;|/]{0,20}?\b(?
 
 # Код модели в конце строки "Модель" на Somon.tj — вида "(SM-S936B)", "(A2399)",
 # "(MGA-LX9N)" — официальный номер модели устройства из базы IMEI.
-VERIFIED_MODEL_CODE_RE = re.compile(r"\(([A-Za-z0-9\-]+)\)\s*$")
+VERIFIED_MODEL_CODE_RE = re.compile(r"\(([A-Za-z0-9+\-]+)\)\s*$")
+
+
+def is_meaningful_model_text(text):
+    """labeled_value(soup, ["Модель"]) иногда находит слово "Модель" не в зелёном
+    блоке проверки IMEI, а где-то ещё на странице, и подставляет вместо значения
+    случайный обрывок текста вроде одного ":" — тогда verified_model технически
+    непустой, но бессмысленный. Раньше такой мусор превращался в валидный на вид
+    ключ "imei:" и склеивал в одну группу совершенно разные модели телефонов.
+    Отбрасываем строки без хотя бы 2 буквенно-цифровых символов."""
+    if not text:
+        return False
+    return len(re.sub(r"[^0-9A-Za-zА-Яа-яЁё]", "", text)) >= 2
 
 
 def derive_verified_model_key(verified_model):
@@ -154,7 +167,7 @@ def derive_verified_model_key(verified_model):
     который пишет продавец. Если скобок нет (как в "CELIO 707C"), используем всю
     строку целиком. Префикс "imei:" метит такие ключи как точные идентификаторы —
     model_keys_match() требует для них полного совпадения, без нечёткости."""
-    if not verified_model:
+    if not is_meaningful_model_text(verified_model):
         return None
     match = VERIFIED_MODEL_CODE_RE.search(verified_model)
     if match:
@@ -523,7 +536,8 @@ def fetch_verified_model_from_url(url):
         if not resp.ok:
             return None
         soup = BeautifulSoup(resp.text, "html.parser")
-        return labeled_value(soup, ["Модель"])
+        raw_value = labeled_value(soup, ["Модель"])
+        return raw_value if is_meaningful_model_text(raw_value) else None
     except Exception as e:
         print("Не удалось дозагрузить объявление для /remigrate_live:", url, e)
         return None
@@ -1528,6 +1542,10 @@ def condition_signal(item):
 
 def clean_title(raw_text):
     is_vip = bool(re.search(r"\bVIP\b", raw_text, re.I))
+    # Бейдж "IMEI проверен" виден прямо на карточке в списке объявлений (поверх
+    # превью фото), до захода в само объявление — определяем его тут, ДО того
+    # как NOISE_RE вырежет этот же текст как шум из заголовка.
+    imei_verified_badge = bool(IMEI_VERIFIED_BADGE_RE.search(raw_text))
     text = NOISE_RE.sub("", raw_text)
     price_match = PRICE_RE.search(text)
     price = int(price_match.group(1).replace(" ", "")) if price_match else None
@@ -1540,7 +1558,7 @@ def clean_title(raw_text):
         memory = int(cond_match.group(2)) if cond_match.group(2) else None
     else:
         title, condition, memory = text.strip(), None, None
-    return title, price, condition, memory, is_vip
+    return title, price, condition, memory, is_vip, imei_verified_badge
 
 
 def absolute_url(url):
@@ -1584,13 +1602,14 @@ def fetch_listings():
         raw_text = a.get_text(" ", strip=True)
         if len(raw_text) < 5:
             continue
-        title, price, condition, memory, is_vip = clean_title(raw_text)
+        title, price, condition, memory, is_vip, imei_verified_badge = clean_title(raw_text)
         if not title:
             continue
         listings.append({
             "id": re.sub(r"\D", "", href)[-8:] or href,
             "title": title, "price": price, "condition": condition,
             "memory": memory, "url": href, "vip": is_vip,
+            "imei_verified_badge": imei_verified_badge,
         })
     return listings, soup
 
@@ -1616,7 +1635,10 @@ def fetch_detail(ad_url):
     # "Модель" в блоке проверки IMEI — официальное название устройства из
     # государственной базы IMEI, а не то, что напечатал продавец в заголовке.
     # Появляется обычно только когда IMEI найден в базе (белый/серый список).
-    verified_model = labeled_value(soup, ["Модель"])
+    # is_meaningful_model_text отсекает случаи, когда labeled_value() случайно
+    # зацепил слово "Модель" не в этом блоке и подставил мусор вроде ":".
+    raw_verified_model = labeled_value(soup, ["Модель"])
+    verified_model = raw_verified_model if is_meaningful_model_text(raw_verified_model) else None
 
     desc_match = DESC_RE.search(full_text)
     description = desc_match.group(1).strip() if desc_match else full_text[:500]
@@ -2096,7 +2118,25 @@ def main():
     for item in candidates:
         entry = seen.get(item["id"], {})
         try:
-            # Потолок цены проверяем ПЕРВЫМ, до похода на страницу объявления и
+            # Бейдж "IMEI проверен" виден уже на карточке в списке объявлений — если
+            # его там нет, продавец вообще не проверял IMEI на сайте. Отсеиваем такие
+            # лоты ПЕРВЫМ делом, даже раньше потолка цены — незачем тратить запрос к
+            # странице объявления и бюджет Gemini/поиска на лот без этой проверки.
+            if not item.get("imei_verified_badge"):
+                log_rejected(
+                    item, {"market_verdict": "недостаточно данных"},
+                    note="На карточке нет плашки «IMEI проверен» — не анализировался",
+                )
+                entry["photo_ok"] = True
+                entry["url"] = item["url"]
+                entry["title"] = item["title"]
+                entry["price"] = item["price"]
+                entry["condition"] = item.get("condition")
+                entry["model_key"] = extract_model_key(item["title"])
+                seen[item["id"]] = entry
+                continue
+
+            # Потолок цены проверяем СЛЕДОМ, до похода на страницу объявления и
             # вызова Gemini — если лот дороже, чем владелец готов рассматривать,
             # незачем тратить на него запрос к странице, фото и бюджет Gemini/поиска.
             # В базу (market_point выше) он уже попал — для /price это не мешает.

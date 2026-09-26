@@ -12105,7 +12105,8 @@
     "title": "Apple iPhone 15 Pro, 128 gb, Blue Titanium",
     "price": 6799,
     "condition": "Б/у",
-    "model_key": "apple 15 pro"
+    "model_key": "apple 15 pro",
+    "sold_checked": true
   },
   "20313128": {
     "logged": true,
@@ -12124,7 +12125,8 @@
     "title": "Apple iPhone 14, 256 gb, Blue",
     "price": 2400,
     "condition": "Б/у",
-    "model_key": "apple 14"
+    "model_key": "apple 14",
+    "sold_checked": true
   },
   "66951283": {
     "logged": true,
@@ -12638,6 +12640,26 @@
     "price": 1300,
     "condition": "Б/у",
     "model_key": "samsung s10",
+    "verified_model": null
+  },
+  "17208271": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17208271_nokia/",
+    "title": "Nokia 105",
+    "price": 100,
+    "condition": "Б/у",
+    "model_key": "nokia 105",
+    "verified_model": null
+  },
+  "20822825": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17208228_samsung-s25-ultra/",
+    "title": "Samsung Galaxy S25 Ultra",
+    "price": 9500,
+    "condition": "Б/у",
+    "model_key": "samsung s25 ultra",
     "verified_model": null
   }
 }

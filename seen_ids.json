@@ -12908,5 +12908,15 @@
     "condition": "Б/у",
     "model_key": "apple 14 pro",
     "verified_model": null
+  },
+  "11114864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17211114_apple-iphone-8-plus-64-gb-gold/",
+    "title": "Apple iPhone 8 plus, 64 gb, Gold",
+    "price": 699,
+    "condition": "Б/у",
+    "model_key": "apple 8 plus",
+    "verified_model": null
   }
 }

@@ -13113,5 +13113,16 @@
     "condition": "Б/у",
     "model_key": "apple 17 pro max",
     "verified_model": null
+  },
+  "21255123": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17212551_samsung-galaxy-a23/",
+    "title": "Samsung Galaxy A23",
+    "price": 699,
+    "condition": "Б/у",
+    "model_key": "samsung a23",
+    "verified_model": null
   }
 }

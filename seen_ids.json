@@ -12559,7 +12559,8 @@
     "price": 1750,
     "condition": "Б/у",
     "model_key": "imei::",
-    "verified_model": ":"
+    "verified_model": ":",
+    "sold_checked": true
   },
   "63561285": {
     "logged": true,
@@ -13123,6 +13124,16 @@
     "price": 699,
     "condition": "Б/у",
     "model_key": "samsung a23",
+    "verified_model": null
+  },
+  "74773000": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15247477_3000/",
+    "title": "Samsung Galaxy S22",
+    "price": 2520,
+    "condition": "Б/у",
+    "model_key": "samsung s22",
     "verified_model": null
   }
 }

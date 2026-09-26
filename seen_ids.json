@@ -13274,5 +13274,14 @@
     "price": 3500,
     "condition": "Б/у",
     "model_key": "samsung s10 plus"
+  },
+  "11012885": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17213861_telefon-samsung-s10-128-8gb-carea-5g/",
+    "title": "Samsung Galaxy S10 128/8Gb Carea 5G",
+    "price": 1050,
+    "condition": "Б/у",
+    "model_key": "samsung s10 carea"
   }
 }

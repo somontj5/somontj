@@ -12930,5 +12930,24 @@
     "condition": "Б/у",
     "model_key": "apple 15 pro",
     "verified_model": null
+  },
+  "64853456": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16648534_samsung-galaxy-a56/",
+    "title": "Samsung Galaxy A56",
+    "price": 3650,
+    "condition": "Б/у",
+    "model_key": "samsung a56"
+  },
+  "72114773": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17211477_redmi-a3x/",
+    "title": "Xiaomi Redmi A3x",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "redmi a3x",
+    "verified_model": null
   }
 }

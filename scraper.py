@@ -16,32 +16,22 @@ SEARCH_URL = os.environ.get(
 MAX_NEW_ITEMS_PER_RUN = int(os.environ.get("MAX_NEW_ITEMS_PER_RUN", "5"))
 MAX_SOLD_CHECKS_PER_RUN = int(os.environ.get("MAX_SOLD_CHECKS_PER_RUN", "5"))
 SIMILAR_EXAMPLES_LIMIT = 8
-# Порог похожести строк (0..1) для нечёткого сравнения model_key и слов в заголовках.
-# Используется вместо точного сравнения по символам, чтобы опечатки/варианты написания
-# (iphone13 / iphone 13 / айфон 13) всё равно считались совпадением.
 FUZZY_MATCH_THRESHOLD = float(os.environ.get("FUZZY_MATCH_THRESHOLD", "0.78"))
 PRICE_COMMAND_LIMIT = int(os.environ.get("PRICE_COMMAND_LIMIT", "15"))
-# Начиная с какого возраста (в днях) пример для Gemini считается "старым" и
-# помечается предупреждением в промпте — сама модель решает, насколько ему верить.
 STALE_EXAMPLE_DAYS = int(os.environ.get("STALE_EXAMPLE_DAYS", "45"))
-# Если у одного model_key разброс цен (max/min) больше этого — вероятно, это две
-# разные модели, слипшиеся в один ключ (как S22 и S22 Ultra) — а не естественный
-# разброс цен по состоянию. Ниже этой цены записи вообще не учитываем в разбросе —
-# шуточные объявления по 1 сомони иначе портят соотношение для любой модели.
 ANOMALY_RATIO_THRESHOLD = float(os.environ.get("ANOMALY_RATIO_THRESHOLD", "3.0"))
 ANOMALY_MIN_COUNT = int(os.environ.get("ANOMALY_MIN_COUNT", "3"))
 ANOMALY_MIN_PRICE = int(os.environ.get("ANOMALY_MIN_PRICE", "100"))
 GEMINI_DAILY_LIMIT_PER_COMBO = int(os.environ.get("GEMINI_DAILY_LIMIT_PER_COMBO", "450"))
 TAVILY_MONTHLY_LIMIT_PER_KEY = int(os.environ.get("TAVILY_MONTHLY_LIMIT_PER_KEY", "950"))
 GOOGLE_SEARCH_DAILY_LIMIT_PER_KEY = int(os.environ.get("GOOGLE_SEARCH_DAILY_LIMIT_PER_KEY", "90"))
-# Статусы IMEI, при которых растаможка ещё не оплачена и её надо добавить к цене.
 CUSTOMS_DUE_STATUSES = ("not_registered", "gray")
 FALLBACK_USD_TJS_RATE = float(os.environ.get("FALLBACK_USD_TJS_RATE", "10.5"))
 ALERT_GAP_MINUTES = int(os.environ.get("ALERT_GAP_MINUTES", "40"))
 ALERT_FAILURE_THRESHOLD = int(os.environ.get("ALERT_FAILURE_THRESHOLD", "3"))
 DEFAULT_MIN_PROFIT = int(os.environ.get("DEFAULT_MIN_PROFIT", "0"))
-# Порог уверенности Gemini (0.0-1.0) для уведомления. 0 = выключено (как раньше).
 DEFAULT_MIN_CONFIDENCE = float(os.environ.get("DEFAULT_MIN_CONFIDENCE", "0"))
+DEFAULT_MAX_PRICE = int(os.environ.get("DEFAULT_MAX_PRICE", "0"))
 
 SEEN_FILE = "seen_ids.json"
 PRICE_HISTORY_FILE = "price_history.jsonl"
@@ -56,6 +46,7 @@ EXCHANGE_RATE_FILE = "exchange_rate.json"
 HEALTH_FILE = "health_status.json"
 MIN_PROFIT_FILE = "min_profit.json"
 MIN_CONFIDENCE_FILE = "min_confidence.json"
+MAX_PRICE_FILE = "max_price.json"
 ANOMALY_STATE_FILE = "known_anomalies.json"
 
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
@@ -103,8 +94,6 @@ TRANSLIT_MAP = {
     "huawei": ["хуавей"], "google": ["гугл"], "pixel": ["пиксель"],
     "realme": ["реалми"], "oneplus": ["ванплюс"],
 }
-# Обратная карта (рус -> лат), чтобы запрос вроде "самсунг" находил объявления
-# с заголовком на латинице "Samsung" — TRANSLIT_MAP выше даёт только lat->ru.
 REVERSE_TRANSLIT_MAP = {}
 for _en, _ru_list in TRANSLIT_MAP.items():
     for _ru in _ru_list:
@@ -118,24 +107,11 @@ BRAND_ALIASES = {
     "realmi": "realme", "оppo": "oppo", "galaxy": "samsung", "poco": "poco",
     "iphone": "apple",
 }
-# Xiaomi/Redmi/POCO и Google/Pixel — это РАЗНЫЕ модельные линейки при общей
-# компании-владельце (Redmi Note 12 ≠ Xiaomi 13GH — это не одно и то же, в отличие
-# от Apple/iPhone или Samsung/Galaxy, которые просто синонимы одной линейки).
-# Если оба слова есть в заголовке, линейка (Redmi/POCO/Pixel) важнее, а имя
-# компании (Xiaomi/Google) в этом случае просто шум, который не должен есть слот
-# в model_key.
 SPECIFIC_LINE_WORDS = {"redmi", "poco", "pixel"}
 PARENT_ECHO_WORDS = {"xiaomi", "xioami", "xiаomi", "google"}
 NOISE_WORDS = {"vietnam", "global", "version", "black", "white", "gold", "silver",
                "blue", "green", "pink", "gray", "grey", "new", "оригинал", "5g", "4g"}
-# Настоящие объёмы памяти/накопителя — это фиксированный набор степеней двойки,
-# а не "любое число от 32" — иначе модельные номера вроде Honor 50/70/90/200/400/600
-# (у этого бренда именно такая нумерация линейки) ошибочно принимались за объём
-# памяти и вырезались, схлопывая "Honor 50" и "Honor 600 Pro" в голое "honor".
 STORAGE_SIZES = {16, 32, 64, 128, 256, 512, 1024, 2048}
-# Слова-маркеры "это гигабайты", которыми проверяем СЛЕДУЮЩЕЕ слово после числа
-# из STORAGE_SIZES — раньше проверялось только "gb", и русское "128 Гб" (с
-# пробелом) не считалось объёмом памяти и ошибочно уходило в номер модели.
 GB_WORDS = {"gb", "гб"}
 
 CONDITION_RE = re.compile(r"\b(Новый|Б\s*/\s*у|Б\s*\.\s*у\.?|Восстановлен\w*)\b(?:\s*[·|,;—-]\s*(\d+)\s*gb)?", re.I)
@@ -149,42 +125,40 @@ IMEI_BLACK_RE = re.compile(r"IMEI[^.]{0,60}в\s+ч[её]рн\w*\s+списк", r
 IMEI_NOT_REGISTERED_RE = re.compile(r"IMEI[^.]{0,60}не\s+внес", re.I)
 IMEI_REGISTERED_RE = re.compile(r"IMEI[^.]{0,60}(?<!не\s)внес", re.I)
 PUBLISHED_RE = re.compile(r"(Сегодня|Вчера|\d+\s*(?:минут\w*|час\w*|день|дн\w*|недел\w*)\s*назад)", re.I)
-# Запасной способ найти город, если labeled_value() не смог — та часть страницы
-# бывает свёрстана иначе, чем таблица "Цвет/Состояние/Память" (не двухколоночно,
-# а одной строкой "Город: Худжанд"), и подбор контейнера в labeled_value() иногда
-# промахивается. full_text уже склеен в одну строку пробелами без переносов, так
-# что название города ищем как один "кириллический токен" сразу после слова
-# "Город" — этого достаточно для типичных однословных названий городов Таджикистана
-# и не рискует случайно захватить следующее поле (там уже пробел, а не буква/дефис).
 CITY_RE = re.compile(r"Город\s*:?\s*([А-ЯЁ][А-ЯЁа-яё\-]{1,30})")
 
 SOLD_RE = re.compile(r"(?<!не\s)\bПродано\b", re.I)
 MODES = {"all": "все объявления категории", "used": "только Б/у", "params": "только заданные параметры"}
 
-# Реплики/клоны/подделки используют настоящее название модели в заголовке, но это
-# совсем другое устройство по факту и по ценности — если их не отсеивать, они
-# портят и model_key-статистику (копия iPhone за 1150 TJS рядом с оригиналами по
-# 12999 TJS выглядит как жуткая аномалия цены), и хуже того — рискуют получить от
-# Gemini вердикт "недооценено", как будто это выгодная сделка на настоящий флагман.
 CLONE_RE = re.compile(r"копи[яи]\w*|реплик\w*|дублика\w*|новодел\w*|подделк\w*|\bfake\b|\bclone\b", re.I)
 
-# Бронь / предзаказ / залог / предоплата: в такой цене стоит депозит или аванс, а не полная
-# стоимость устройства (например, предзаказ нового флагмана за задаток) — в статистике
-# это выглядит так же, как копия по бросовой цене, и так же вредно для сравнения.
-# Слова подобраны узко, чтобы не ловить "бронестекло"/"бронированное стекло" (аксессуар)
-# и "без залога"; проверяется только заголовок.
 RESERVATION_RE = re.compile(
     r"\bпред\s*-?\s*заказ\w*|\bпредоплат\w*|\bбронь\b|\bзабронир\w*|\bброни\w*\s+(?:за|под)\b"
     r"|(?<!без\s)\bзалог\w*|\bдепозит\w*|\bзадатк\w*|\bрезерв\w*",
     re.I,
 )
 
-
-# Модели, которые владелец считает заведомо невыгодными: не тратим на них Gemini и не шлём
-# уведомления "выгодно". В базу они по-прежнему пишутся (model_key сохраняется) — это
-# просто пропуск полного анализа. Пока сюда входит iPhone mini (mini/мини рядом со словом
-# iPhone/Айфон/Apple, чтобы не задеть Samsung/Xiaomi и прочие "mini").
 NEVER_PROFITABLE_RE = re.compile(r"(?:iphone|айфон|apple)[^,;|/]{0,20}?\b(?:mini|мини)\b", re.I)
+
+# Код модели в конце строки "Модель" на Somon.tj — вида "(SM-S936B)", "(A2399)",
+# "(MGA-LX9N)" — официальный номер модели устройства из базы IMEI.
+VERIFIED_MODEL_CODE_RE = re.compile(r"\(([A-Za-z0-9\-]+)\)\s*$")
+
+
+def derive_verified_model_key(verified_model):
+    """Превращает строку "Модель" из блока проверки IMEI в надёжный model_key.
+    Приоритет — коду в скобках (SM-S936B/A2399/MGA-LX9N): это официальный номер
+    конкретного варианта устройства, куда точнее любого разбора текста заголовка,
+    который пишет продавец. Если скобок нет (как в "CELIO 707C"), используем всю
+    строку целиком. Префикс "imei:" метит такие ключи как точные идентификаторы —
+    model_keys_match() требует для них полного совпадения, без нечёткости."""
+    if not verified_model:
+        return None
+    match = VERIFIED_MODEL_CODE_RE.search(verified_model)
+    if match:
+        return f"imei:{match.group(1).lower()}"
+    normalized = re.sub(r"\s+", " ", verified_model).strip().lower()
+    return f"imei:{normalized}" if normalized else None
 
 
 def skip_analysis_reason(title):
@@ -220,23 +194,23 @@ def save_seen(seen):
 
 
 def fuzzy_ratio(a, b):
-    """Похожесть двух строк от 0 до 1 (простая посимвольная метрика из stdlib,
-    без внешних API — этого достаточно, чтобы прощать опечатки/перестановки)."""
     if not a or not b:
         return 0.0
     return SequenceMatcher(None, a, b).ratio()
 
 
 def model_keys_match(key_a, key_b, threshold=FUZZY_MATCH_THRESHOLD):
-    """Сравнивает два model_key нечётко, но ПОСЛОВНО, а не как одну строку целиком:
-    сравнение целой строки почти всегда проходит для "s22" и "s22 ultra" — общий
-    префикс огромный, и похожесть остаётся высокой, даже когда одно отличающееся
-    слово меняет модель на совсем другую (и по цене). Пословное сравнение с разным
-    числом слов сразу не совпадает — это и есть сигнал "это другая модель"."""
+    """Сравнивает два model_key нечётко, но ПОСЛОВНО, а не как одну строку целиком."""
     if not key_a or not key_b:
         return False
     if key_a == key_b:
         return True
+    # Ключи с префиксом "imei:" получены из официального кода модели (проверка
+    # IMEI на сайте) — точный идентификатор устройства, где ОДИН отличающийся
+    # символ означает совсем другую модель (SM-S911B/SM-S916B — S23/S23+).
+    # Для них допускаем только точное совпадение (уже не подошло выше — разные).
+    if key_a.startswith("imei:") or key_b.startswith("imei:"):
+        return False
     words_a, words_b = key_a.split(), key_b.split()
     if len(words_a) != len(words_b):
         return False
@@ -244,16 +218,12 @@ def model_keys_match(key_a, key_b, threshold=FUZZY_MATCH_THRESHOLD):
 
 
 def word_in_text(word, text, text_words, threshold=FUZZY_MATCH_THRESHOLD):
-    """True, если word встречается в text как подстрока, либо есть достаточно похожее
-    слово среди text_words (нечёткое совпадение — терпит опечатки в поисковом запросе)."""
     if word in text:
         return True
     return any(fuzzy_ratio(word, w) >= threshold for w in text_words)
 
 
 def days_since(date_str):
-    """Сколько дней назад собрана запись (по collected_at ISO или date YYYY-MM-DD).
-    Нужно, чтобы показывать Gemini не только сам пример, но и его "срок годности"."""
     if not date_str:
         return None
     try:
@@ -264,30 +234,13 @@ def days_since(date_str):
 
 
 def extract_model_key(title):
-    # Копия/реплика/дубликат — не настоящий экземпляр этой модели (или вообще не
-    # телефон, а спам/повторная публикация). Не даём ему model_key вовсе, чтобы он
-    # не участвовал ни в поиске похожих лотов, ни в /price, ни в /anomalies —
-    # все функции ниже по коду уже трактуют пустой model_key как "пропустить".
     if junk_title_reason(title):
         return None
-    # "S22+"/"S23+" — плюс приклеен к цифре и вообще не попадает в [a-zа-я0-9]+,
-    # из-за чего S22+ (другая, более дорогая модель) тёрялся в один model_key с S22.
-    # Только на границе слова/пробела — иначе ломает встречающуюся у некоторых
-    # брендов запись двойного ОЗУ вида "12+16/512Gb" (это не суффикс модели).
     title = re.sub(r"(\w)\+(?=\s|$)", r"\1 plus", title)
-    # "16e"/"17e" (iPhone) — буква "e" приклеена к номеру поколения так же, как "+" у
-    # Samsung: "16" и "16e" — разные модели, но без разделения слово "16e" достаточно
-    # похоже на "16", чтобы пройти порог нечёткости и слипнуться в одну.
     title = re.sub(r"(\d{2})e\b", r"\1 e", title, flags=re.I)
-    # "8/256GB", "12/512 GB", "8/256 Гб" — это конфигурация ОЗУ/памяти, а не название
-    # модели. Вырезаем эту пару целиком ДО разбивки на слова: если ловить её по
-    # принципу "число перед словом на gb/гб", она случайно цепляет и настоящий номер
-    # модели без слэша (например "iPhone 13 128GB" — там "13" вообще не ОЗУ).
     title = re.sub(r"\d+\s*/\s*\d+\s*(?:gb|гб)", " ", title, flags=re.I)
     words = re.findall(r"[a-zа-я0-9]+", title.lower())
 
-    # Приоритет — конкретной линейке (redmi/poco/pixel), если она есть в заголовке,
-    # иначе — первому известному бренду по порядку слов.
     brand = (next((w for w in words if w in SPECIFIC_LINE_WORDS), None)
              or next((w for w in words if w in KNOWN_BRANDS), None))
     if not brand:
@@ -302,22 +255,11 @@ def extract_model_key(title):
             continue
         if not started:
             continue
-        # Повтор бренда синонимом ("iPhone" при уже пойманном "Apple", "Xiaomi" при
-        # уже пойманном "Redmi" и т.п.) — не часть названия модели, просто пропускаем,
-        # не тратя на него слот; иначе "Apple iPhone 13 Pro Max" и "iPhone 13 Pro Max"
-        # выходят разной длины и перестают совпадать друг с другом.
         if BRAND_ALIASES.get(w, w) == canonical_brand or (brand in SPECIFIC_LINE_WORDS and w in PARENT_ECHO_WORDS):
             continue
-        # Слитное "128gb"/"128гб" — отдельное слово целиком, режем сразу (пара
-        # "8/256gb" со слэшем уже вырезана регэкспом выше до разбивки на слова).
         if w in NOISE_WORDS or w.endswith("gb") or w.endswith("гб"):
             break
         if w.isdigit() and int(w) in STORAGE_SIZES:
-            # Число само по себе неоднозначно — 16/32/64/128/256/512 могут быть и
-            # объёмом памяти, и номером поколения (iPhone 16!). Объёмом считаем,
-            # только если следующее слово буквально "gb" ИЛИ "гб" (раздельное написание
-            # с пробелом перед единицей — слитное "128gb"/"128гб" уже отловлено выше
-            # условием на .endswith(...)). Иначе это номер модели, а не память.
             next_w = words[idx + 1] if idx + 1 < len(words) else ""
             if next_w in GB_WORDS:
                 break
@@ -325,34 +267,11 @@ def extract_model_key(title):
     return f"{canonical_brand} {' '.join(model_words[:5])}".strip()
 
 
-def model_key_for_item(item):
-    """model_key для лота, у которого уже был запрошен fetch_detail(): предпочитает
-    проверенное поле «Модель» (зелёный блок IMEI на странице объявления) вместо
-    заголовка. Заголовки на Somon пишут сами продавцы, и там регулярно опечатки
-    (см. "Huawei Nova" при реальной "HUAWEI INOVA") или вообще не то устройство
-    (объявление "Телефон Vivo" с проверенной моделью "CELIO 707C" — это не Vivo).
-    Поле «Модель» — обязательное структурированное поле, которое сайт сверяет по
-    IMEI, поэтому оно надёжнее свободного текста заголовка. Если проверенного поля
-    нет на странице (или из него не удалось распознать бренд) — откатываемся на
-    старое поведение и разбираем заголовок, как раньше."""
-    verified = item.get("verified_model")
-    if verified:
-        key = extract_model_key(verified)
-        if key:
-            return key
-    return extract_model_key(item.get("title") or "")
-
-
 def is_plausible_price(price):
-    """Цена годится для сравнения. Тот же порог, что у /anomalies (ANOMALY_MIN_PRICE):
-    шуточные объявления по 1 сомони не должны попадать ни в примеры для Gemini, ни в
-    подтверждённые продажи, ни в /price."""
     return isinstance(price, (int, float)) and price >= ANOMALY_MIN_PRICE
 
 
 def record_memory(rec):
-    """Объём памяти (GB) записи базы: поле memory_gb, а если его нет (confirmed_sale его
-    не хранит) — разбираем из заголовка."""
     mem = rec.get("memory_gb")
     if isinstance(mem, (int, float)) and mem:
         return int(mem)
@@ -363,25 +282,25 @@ def record_memory(rec):
     return value * 1024 if m.group(2).lower() in ("tb", "тб") else value
 
 
-def log_market_point(item):
+def log_market_point(item, model_key=None):
     with open(PRICE_HISTORY_FILE, "a", encoding="utf-8") as f:
         f.write(json.dumps({
             "type": "market_point", "id": item["id"], "title": item["title"],
             "price": item["price"], "condition": item.get("condition"),
             "memory_gb": item.get("memory"), "vip": item.get("vip", False),
-            "model_key": extract_model_key(item["title"]),
+            "model_key": model_key if model_key is not None else extract_model_key(item["title"]),
             "url": item.get("url"),
             "date": time.strftime("%Y-%m-%d"),
         }, ensure_ascii=False) + "\n")
 
 
-def log_full_analysis(item, analysis, verdict, data_sources):
+def log_full_analysis(item, analysis, verdict, data_sources, model_key):
     with open(PRICE_HISTORY_FILE, "a", encoding="utf-8") as f:
         f.write(json.dumps({
             "type": "full_analysis", "id": item["id"], "title": item["title"],
             "price": item["price"], "condition": item.get("condition"),
             "memory_gb": item.get("memory"), "description": item.get("description", ""),
-            "model_key": model_key_for_item(item),
+            "model_key": model_key,
             "verified_model": item.get("verified_model"),
             "visible_defects": analysis.get("visible_defects", []),
             "positive_features": analysis.get("positive_features", []),
@@ -428,6 +347,7 @@ def log_confirmed_sale(record):
             "type": "confirmed_sale", "id": record["id"], "title": record["title"],
             "price": record["price"], "condition": record.get("condition"),
             "model_key": record.get("model_key"),
+            "verified_model": record.get("verified_model"),
             "confirmed_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
         }, ensure_ascii=False) + "\n")
 
@@ -438,6 +358,7 @@ def log_confirmed_good_call(record):
             "type": "confirmed_good_call", "id": record["id"], "title": record["title"],
             "price": record["price"], "condition": record.get("condition"),
             "model_key": record.get("model_key"),
+            "verified_model": record.get("verified_model"),
             "visible_defects": record.get("visible_defects", []),
             "reasoning": record.get("reasoning", ""),
             "url": record.get("url"),
@@ -500,7 +421,6 @@ def get_confirmed_sales(model_key, limit=5):
 
 
 def get_all_confirmed_sales(limit=300):
-    """Для команды /sold — все подтверждённые продажи без фильтра по модели."""
     if not os.path.exists(PRICE_HISTORY_FILE):
         return []
     sales = []
@@ -555,14 +475,12 @@ def similar_full_analyses(model_key, condition, exclude_id, limit=SIMILAR_EXAMPL
 
 
 def remigrate_model_keys():
-    """extract_model_key() менялся несколько раз (порог объёма памяти, кэп слов,
-    синонимы бренда, фильтр копий/реплик) — но model_key в уже записанных строках
-    price_history.jsonl остаётся таким, каким был посчитан В МОМЕНТ записи, и
-    сам себя не обновляет. Из-за этого старые и новые записи одной и той же модели
-    расходятся по разным ключам (или наоборот — ошибочно слипаются), что и создаёт
-    большую часть подозрительных разбросов в /anomalies. Эта функция один раз
-    перечитывает всю базу и пересчитывает model_key по ТЕКУЩЕЙ версии функции —
-    остальные поля не трогает. Вызывается только вручную командой /remigrate."""
+    """extract_model_key()/derive_verified_model_key() менялись несколько раз — но
+    model_key в уже записанных строках price_history.jsonl остаётся таким, каким
+    был посчитан В МОМЕНТ записи, и сам себя не обновляет. Эта функция один раз
+    перечитывает всю базу и пересчитывает model_key по ТЕКУЩЕЙ версии формулы —
+    приоритет verified_model (официальная модель по базе IMEI), если он сохранён
+    в записи, иначе разбор текста заголовка. Вызывается только вручную, /remigrate."""
     if not os.path.exists(PRICE_HISTORY_FILE):
         return 0, 0
     lines_out = []
@@ -576,34 +494,19 @@ def remigrate_model_keys():
                 continue
             if rec.get("type") in ("market_point", "full_analysis", "confirmed_sale", "confirmed_good_call") and rec.get("title"):
                 total += 1
-                new_key = model_key_for_item(rec)
+                new_key = derive_verified_model_key(rec.get("verified_model")) or extract_model_key(rec["title"])
                 if new_key != rec.get("model_key"):
                     rec["model_key"] = new_key
                     changed += 1
             lines_out.append(json.dumps(rec, ensure_ascii=False) + "\n")
     with open(PRICE_HISTORY_FILE, "w", encoding="utf-8") as f:
         f.writelines(lines_out)
-    # После пересчёта прежний список "уже виденных" аномалий может быть неактуален
-    # (часть исчезнет, часть — новые сочетания) — сбрасываем, чтобы /anomalies и
-    # автооповещение честно перепроверили базу с нуля, а не молчали по инерции.
     if os.path.exists(ANOMALY_STATE_FILE):
         os.remove(ANOMALY_STATE_FILE)
     return changed, total
 
 
 def find_price_anomalies(ratio_threshold=ANOMALY_RATIO_THRESHOLD, min_count=ANOMALY_MIN_COUNT):
-    """Ищет model_key, где разброс цен подозрительно большой — обычно это значит, что
-    в один ключ слиплись две разные модели (как было с S22/S22 Ultra), а не то, что
-    дешёвый лот в плохом состоянии, а дорогой — в отличном: такой разброс редко
-    превышает 2x для ОДНОЙ модели С ОДНИМ объёмом памяти (лоты с разной памятью в одну группу
-    не попадают — разница цен 64GB против 128GB не аномалия). Записи дешевле ANOMALY_MIN_PRICE не считаем вообще —
-    шуточные объявления по 1 сомони иначе портят соотношение для любой модели.
-
-    При достаточном количестве точек (>=10) сравниваем не голые min/max, а обрежённые
-    с каждого края 10% цен: одно шуточное/бракованное объявление (типа Galaxy S25
-    Ultra за 200 сомони среди полутора десятков лотов по 8000+) иначе само по себе
-    создаёт "аномалию" там, где model_key на самом деле верный и склейки моделей нет —
-    это не ошибка сравнения названий, а мусорные данные в одной точке."""
     if not os.path.exists(PRICE_HISTORY_FILE):
         return []
     groups = {}
@@ -618,9 +521,6 @@ def find_price_anomalies(ratio_threshold=ANOMALY_RATIO_THRESHOLD, min_count=ANOM
             price, model_key = rec.get("price"), rec.get("model_key")
             if not price or price < ANOMALY_MIN_PRICE or not model_key:
                 continue
-            # Группа = модель + объём памяти: iPhone X 64GB и iPhone X 128GB — разные товары с
-            # законно разной ценой, их сравнивать между собой нельзя. Лоты, у которых память
-            # определить не удалось, образуют свою группу (memory=None).
             groups.setdefault((model_key, record_memory(rec)), []).append((price, rec.get("title", "")))
 
     anomalies = []
@@ -629,7 +529,7 @@ def find_price_anomalies(ratio_threshold=ANOMALY_RATIO_THRESHOLD, min_count=ANOM
             continue
         entries_sorted = sorted(entries, key=lambda e: e[0])
         n = len(entries_sorted)
-        trim = n // 10 if n >= 10 else 0  # отсекаем по 10% с каждого края при n>=10
+        trim = n // 10 if n >= 10 else 0
         usable = entries_sorted[trim: n - trim] if trim else entries_sorted
         cheapest, priciest = usable[0], usable[-1]
         if cheapest[0] <= 0:
@@ -649,11 +549,17 @@ def find_price_anomalies(ratio_threshold=ANOMALY_RATIO_THRESHOLD, min_count=ANOM
     return anomalies
 
 
-def market_stats_for(model_key, condition, exclude_id):
-    """Только для команды /price — Gemini эту сводку не получает. Мусорные цены
-    (< ANOMALY_MIN_PRICE) в сводку не попадают."""
-    if not model_key or not os.path.exists(PRICE_HISTORY_FILE):
+def market_stats_for(query, condition, exclude_id):
+    """Только для команды /price — Gemini эту сводку не получает. Принимает сырой
+    текст запроса (а не готовый model_key): часть записей теперь имеет ключ вида
+    "imei:sm-s936b" (по официальной модели с базы IMEI), который не совпадёт с
+    придуманным пользователем текстовым запросом через обычное сравнение — нужен
+    тот же текстовый фолбэк по заголовку, что и в find_market_listings(), иначе
+    такие записи молча выпадут из статистики min/median."""
+    if not query or not os.path.exists(PRICE_HISTORY_FILE):
         return None
+    model_key = extract_model_key(query) or query.lower().strip()
+    query_words = [w for w in re.findall(r"[a-zа-я0-9]+", query.lower()) if len(w) > 2]
     prices = []
     with open(PRICE_HISTORY_FILE, "r", encoding="utf-8") as f:
         for line in f:
@@ -665,7 +571,17 @@ def market_stats_for(model_key, condition, exclude_id):
                 continue
             if condition and rec.get("condition") and rec.get("condition") != condition:
                 continue
-            if not model_keys_match(rec.get("model_key"), model_key):
+
+            title = rec.get("title", "")
+            title_low = title.lower()
+            title_words = re.findall(r"[a-zа-я0-9]+", title_low)
+            match = model_keys_match(rec.get("model_key"), model_key)
+            if not match and query_words:
+                match = all(
+                    any(word_in_text(v, title_low, title_words) for v in keyword_variants(w))
+                    for w in query_words
+                )
+            if not match:
                 continue
             prices.append(rec["price"])
     if len(prices) < 3:
@@ -674,9 +590,6 @@ def market_stats_for(model_key, condition, exclude_id):
 
 
 def find_market_listings(query, limit=PRICE_COMMAND_LIMIT):
-    """Для команды /price — возвращает сами подходящие объявления (не только сводку),
-    по одному, самому свежему, на каждый id. Сравнение нечёткое — терпит опечатки
-    и не требует, чтобы extract_model_key() обязательно распознал бренд в запросе."""
     if not os.path.exists(PRICE_HISTORY_FILE):
         return []
     model_key = extract_model_key(query) or query.lower().strip()
@@ -717,7 +630,7 @@ def find_market_listings(query, limit=PRICE_COMMAND_LIMIT):
     return items[:limit]
 
 
-# ---------- Минимальная выгода ----------
+# ---------- Минимальная выгода / уверенность / максимальная цена ----------
 
 def get_min_profit():
     return load_json(MIN_PROFIT_FILE, {}).get("value", DEFAULT_MIN_PROFIT)
@@ -734,6 +647,17 @@ def get_min_confidence():
 
 def set_min_confidence(value):
     with open(MIN_CONFIDENCE_FILE, "w", encoding="utf-8") as f:
+        json.dump({"value": value}, f)
+
+
+def get_max_price():
+    """Максимальная цена лота (TJS), который бот вообще обрабатывает (тратит на него
+    Gemini/фото/веб-поиск). 0 = выключено (обрабатываем любую цену, как раньше)."""
+    return load_json(MAX_PRICE_FILE, {}).get("value", DEFAULT_MAX_PRICE)
+
+
+def set_max_price(value):
+    with open(MAX_PRICE_FILE, "w", encoding="utf-8") as f:
         json.dump({"value": value}, f)
 
 
@@ -772,7 +696,6 @@ def estimate_customs_cost(price_tjs, usd_rate):
 
 
 def detect_imei_status(full_text):
-    """Четыре реальных статуса на Somon.tj + запасной общий случай."""
     if IMEI_BLACK_RE.search(full_text):
         return "black"
     if IMEI_GRAY_RE.search(full_text):
@@ -993,10 +916,6 @@ def check_sold_status(url):
 
 
 def backfill_entry_from_history(ad_id, entry):
-    """Если в seen_ids.json объявлению не хватает полей (например url — его
-    начали сохранять не с самого начала), пробуем дополнить их последней
-    подходящей записью из price_history.jsonl. Уже заполненные поля entry
-    не трогаем — берём из истории только то, чего не хватает."""
     needed = ("url", "title", "price", "condition", "model_key")
     if all(entry.get(f) for f in needed):
         return entry
@@ -1022,6 +941,8 @@ def backfill_entry_from_history(ad_id, entry):
     for f in needed:
         if not updated.get(f) and best.get(f):
             updated[f] = best[f]
+    if not updated.get("verified_model") and best.get("verified_model"):
+        updated["verified_model"] = best["verified_model"]
     return updated
 
 
@@ -1048,22 +969,16 @@ def process_disappeared_ads(seen, current_ids):
             record = {
                 "id": ad_id, "title": seen[ad_id].get("title"), "price": seen[ad_id].get("price"),
                 "condition": seen[ad_id].get("condition"), "model_key": seen[ad_id].get("model_key"),
+                "verified_model": seen[ad_id].get("verified_model"),
             }
             log_confirmed_sale(record)
-            # Уведомление владельцу убрано намеренно — это тихое пополнение базы
-            # реальным фактом, а не событие, требующее внимания прямо сейчас.
-            # Посмотреть все подтверждённые продажи можно командой /sold.
         if is_sold is not None:
             seen[ad_id]["sold_checked"] = True
         else:
-            # Страница не открылась (сеть/404/бан) — не факт, что это надолго,
-            # пробуем ещё пару раз в следующих прогонах, но не вечно: иначе один
-            # навсегда недоступный лот будет пожизненно занимать место в
-            # MAX_SOLD_CHECKS_PER_RUN и мешать проверке остальных.
             attempts = seen[ad_id].get("sold_check_attempts", 0) + 1
             seen[ad_id]["sold_check_attempts"] = attempts
             if attempts >= MAX_SOLD_CHECK_ATTEMPTS:
-                seen[ad_id]["sold_checked"] = True  # сдаёмся: продажа не подтверждена, но и не факт
+                seen[ad_id]["sold_checked"] = True
     return seen
 
 
@@ -1220,7 +1135,7 @@ def check_telegram_commands(searches, subscribers):
             except ValueError:
                 value = None
             if value is not None:
-                if value > 1:  # "60" или "60%" → 0.6
+                if value > 1:
                     value /= 100
                 if 0 <= value <= 1:
                     set_min_confidence(round(value, 2))
@@ -1231,6 +1146,23 @@ def check_telegram_commands(searches, subscribers):
             else:
                 send_telegram(chat_id, f"Текущий порог уверенности: {round(get_min_confidence() * 100)}%.\n"
                                        "Формат: /minconfidence 60  (0 — выключить)")
+        elif command == "/maxprice":
+            arg = argument.strip().replace(" ", "")
+            if arg == "" :
+                current = get_max_price()
+                send_telegram(chat_id, (f"Текущий потолок цены: {current} TJS." if current else
+                                        "Текущий потолок цены: не задан (обрабатываются любые цены).")
+                              + "\nФормат: /maxprice 15000  (0 — выключить потолок)")
+            elif arg.lstrip("-").isdigit() and int(arg) >= 0:
+                value = int(arg)
+                set_max_price(value)
+                if value == 0:
+                    send_telegram(chat_id, "✅ Потолок цены снят — обрабатываются объявления с любой ценой.")
+                else:
+                    send_telegram(chat_id, f"✅ Потолок цены: {value} TJS. Объявления дороже не будут анализироваться "
+                                           "и не потратят бюджет Gemini/веб-поиска (но останутся в базе для /price).")
+            else:
+                send_telegram(chat_id, "⚠️ Нужно целое число TJS, например: /maxprice 15000  (0 — выключить)")
         elif command == "/subscribers":
             send_telegram(chat_id, f"👥 Подписчиков: {len(subscribers)}")
         elif command == "/stop":
@@ -1287,8 +1219,7 @@ def check_telegram_commands(searches, subscribers):
             if not query:
                 send_telegram(chat_id, "Напишите модель, например: /price iPhone 13")
             else:
-                model_key = extract_model_key(query) or query.lower().strip()
-                stats = market_stats_for(model_key, None, exclude_id=None)
+                stats = market_stats_for(query, None, exclude_id=None)
                 listings = find_market_listings(query)
                 if not listings:
                     send_telegram(chat_id, f"По «{query}» в базе пока ничего не нашлось.")
@@ -1318,7 +1249,6 @@ def check_telegram_commands(searches, subscribers):
                 for r in sales:
                     key = r.get("model_key") or (r.get("title") or "").lower() or "—"
                     groups.setdefault(key, []).append(r)
-                # группы сортируем по дате самой свежей продажи внутри группы
                 ordered = sorted(groups.values(), key=lambda recs: max(r.get("confirmed_at", "") for r in recs), reverse=True)
 
                 lines = [f"✅ Подтверждённых продаж: {len(sales)}, моделей: {len(ordered)}"]
@@ -1374,8 +1304,10 @@ def check_telegram_commands(searches, subscribers):
             search_usage = get_search_usage()
             db_count = sum(1 for _ in open(PRICE_HISTORY_FILE, encoding="utf-8")) if os.path.exists(PRICE_HISTORY_FILE) else 0
             rej_count = sum(1 for _ in open(REJECTED_FILE, encoding="utf-8")) if os.path.exists(REJECTED_FILE) else 0
+            max_price_val = get_max_price()
             lines = ["📊 Статистика", "", f"💵 Минимальная выгода: {get_min_profit()} TJS",
-                     f"🎯 Минимальная уверенность: {round(get_min_confidence() * 100)}%", "", "Gemini сегодня:"]
+                     f"🎯 Минимальная уверенность: {round(get_min_confidence() * 100)}%",
+                     f"🚧 Потолок цены: {max_price_val if max_price_val else 'не задан'} TJS", "", "Gemini сегодня:"]
             lines += [f"  {c['id']}: {gem_usage.get(c['id'], 0)}/{GEMINI_DAILY_LIMIT_PER_COMBO}" for c in GEMINI_COMBOS]
             lines += ["", "Поиск в сети:"]
             lines += [f"  {p['id']}: {search_usage.get(p['id'], 0)}/{p['limit']} ({'мес' if p['period']=='month' else 'день'})" for p in SEARCH_PROVIDERS]
@@ -1387,6 +1319,7 @@ def check_telegram_commands(searches, subscribers):
                                     "/del Название\n/list — список поисков\n"
                                     "/minprofit число — минимальная выгода для уведомлений (TJS)\n"
                                     "/minconfidence число — минимальная уверенность Gemini для уведомлений (%, 0 — выкл.)\n"
+                                    "/maxprice число — потолок цены объявления, которое вообще обрабатывается (TJS, 0 — выкл.)\n"
                                     "/price Модель — грубая сводка цен по базе\n"
                                     "/sold — фактически проданные телефоны (цена, дата), по моделям\n"
                                     "/anomalies — проверить базу на подозрительные разбросы цен (склеенные модели)\n"
@@ -1422,10 +1355,6 @@ def normalize_condition(value):
     return value or None
 
 
-# Поле "Состояние" на странице — это то, что продавец САМ выбрал в форме, и оно не
-# всегда совпадает с реальностью (сайт фильтрует по категории "б/у", но люди суют
-# туда и нераспечатанные телефоны; бывает и наоборот). Поэтому решение "нужны ли
-# фото" принимаем не по одному полю, а по совпадению поля и явных фраз в описании.
 NEW_TEXT_CUES = ("запечатан", "нераспечатан", "не вскрыт", "не пользовал", "с биркой",
                   "новый, коробка", "не был в использовании", "новый в коробке")
 USED_TEXT_CUES = ("царапин", "потёрт", "потерт", "скол", "трещин", "след использования",
@@ -1433,10 +1362,6 @@ USED_TEXT_CUES = ("царапин", "потёрт", "потерт", "скол", 
 
 
 def condition_signal(item):
-    """Поле "Состояние" на сайте почти всегда будет "Б/у" — сама выдача объявлений
-    отфильтрована по этой категории через URL (sostoyanie---1), так что полю доверять
-    бессмысленно: оно не различает реально новые и реально б/у лоты. Единственный
-    рабочий сигнал "по факту новый" — явные фразы в описании продавца."""
     desc = (item.get("description") or "").lower()
     has_new_cue = any(c in desc for c in NEW_TEXT_CUES)
     has_used_cue = any(c in desc for c in USED_TEXT_CUES)
@@ -1522,10 +1447,6 @@ def fetch_detail(ad_url):
     memory_raw = labeled_value(soup, ["Встроенная память", "Память"])
     memory_match = re.search(r"(\d+)\s*(?:gb|гб)", memory_raw or "", re.I)
     memory = int(memory_match.group(1)) if memory_match else None
-    # Проверенное поле «Модель» из зелёного блока IMEI — надёжнее заголовка,
-    # см. model_key_for_item(). Не всегда присутствует на странице (не для всех
-    # объявлений сайт показывает эту сверку), тогда просто None.
-    verified_model = labeled_value(soup, ["Модель"])
     imei_status = detect_imei_status(full_text)
     city = labeled_value(soup, ["Город"])
     if not city:
@@ -1533,6 +1454,11 @@ def fetch_detail(ad_url):
         city = city_match.group(1) if city_match else None
     published_match = PUBLISHED_RE.search(full_text)
     published_at = published_match.group(1) if published_match else None
+
+    # "Модель" в блоке проверки IMEI — официальное название устройства из
+    # государственной базы IMEI, а не то, что напечатал продавец в заголовке.
+    # Появляется обычно только когда IMEI найден в базе (белый/серый список).
+    verified_model = labeled_value(soup, ["Модель"])
 
     desc_match = DESC_RE.search(full_text)
     description = desc_match.group(1).strip() if desc_match else full_text[:500]
@@ -1550,8 +1476,6 @@ def fetch_detail(ad_url):
 # ---------- Gemini: анализ ----------
 
 def memory_text(rec, item_memory):
-    """Объём памяти записи для промпта + явное предупреждение, если он отличается от
-    памяти оцениваемого лота (64GB vs 256GB — не «аномалия», а разные товары)."""
     mem = record_memory(rec)
     if not mem:
         return ""
@@ -1687,9 +1611,6 @@ def build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, 
         intro = "Изучи текст объявления и фото."
         no_photo_note = ""
     elif no_photo_reason is None:
-        # Автоматический путь (реальное объявление, condition_signal() уже уверенно
-        # определил "новое/запечатанное" по тексту продавца) — поведение как было:
-        # жёстко считаем состояние новым и не позволяем придумывать дефекты.
         intro = "Фото для этого объявления НЕ анализируются."
         no_photo_note = (
             "\nВАЖНО: фото не предоставлены (устройство уверенно определено как новое/запечатанное — "
@@ -1698,9 +1619,6 @@ def build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, 
             "Оценивай сделку по тексту, цене, сравнению с рынком и историей продаж ниже.\n"
         )
     else:
-        # Пришла своя причина отсутствия фото (например, это гипотетическая ручная
-        # проверка, а не реальное новое устройство) — здесь состояние товара заранее
-        # НЕ известно, поэтому в отличие от ветки выше не форсируем "новое".
         intro = "Фото для этого объявления НЕ анализируются."
         no_photo_note = (
             f"\nВАЖНО: {no_photo_reason}. Определяй overall_visual_condition и visible_defects ТОЛЬКО по тому, "
@@ -1883,11 +1801,6 @@ MANUAL_NO_PHOTO_REASON = (
 
 
 def run_manual_check(title, price, condition, description, usd_rate, usage):
-    """Собирает синтетический item из введённого вручную текста и прогоняет его через
-    тот же анализ, что и настоящие объявления, — БЕЗ фото и БЕЗ записи в price_history.jsonl
-    (иначе выдуманные для проверки данные засорили бы статистику и будущие сравнения
-    для реальных объявлений). Похожие лоты/подтверждённые продажи/заметки из базы
-    подтягиваются как обычно — это чтение, а не запись, вреда базе нет."""
     combined_text = f"{title} {description}"
     memory_match = re.search(r"(\d+)\s*(?:gb|гб)", combined_text, re.I)
     memory = int(memory_match.group(1)) if memory_match else None
@@ -1911,7 +1824,7 @@ def run_manual_check(title, price, condition, description, usd_rate, usage):
     if model_key:
         memory_part = f"{memory}gb " if memory else ""
         condition_part = condition or "б/у"
-        web_results = web_search_lookup(f"{model_key} {memory_part}{condition_part} цена Таджикистан Somon")
+        web_results = web_search_lookup(f"{title} {memory_part}{condition_part} цена Таджикистан Somon")
 
     data_sources = build_data_sources(similar_examples, confirmed_good_calls, confirmed_sales, manual_notes, web_results, item)
     analysis = analyze_listing(item, [], similar_examples, confirmed_good_calls, confirmed_sales, web_results,
@@ -1980,6 +1893,7 @@ def main():
     usd_rate = get_usd_tjs_rate()
     min_profit = get_min_profit()
     min_confidence = get_min_confidence()
+    max_price = get_max_price()
 
     try:
         listings, soup = fetch_listings()
@@ -2000,7 +1914,8 @@ def main():
     search_usage = get_search_usage()
     search_usage_str = ", ".join(f"{p['id']}: {search_usage.get(p['id'], 0)}/{p['limit']}" for p in SEARCH_PROVIDERS)
     print(f"Режим: {MODES[mode]}; поисков: {len(searches)}; объявлений: {len(listings)}; "
-          f"подписчиков: {len(subscribers)}; мин. выгода: {min_profit} TJS; мин. уверенность: {round(min_confidence * 100)}%; курс USD/TJS: {usd_rate}; "
+          f"подписчиков: {len(subscribers)}; мин. выгода: {min_profit} TJS; мин. уверенность: {round(min_confidence * 100)}%; "
+          f"потолок цены: {max_price if max_price else 'не задан'} TJS; курс USD/TJS: {usd_rate}; "
           f"Gemini сегодня — {usage_str}; поиск в сети — {search_usage_str}")
 
     for item in listings:
@@ -2022,6 +1937,24 @@ def main():
     for item in candidates:
         entry = seen.get(item["id"], {})
         try:
+            # Потолок цены проверяем ПЕРВЫМ, до похода на страницу объявления и
+            # вызова Gemini — если лот дороже, чем владелец готов рассматривать,
+            # незачем тратить на него запрос к странице, фото и бюджет Gemini/поиска.
+            # В базу (market_point выше) он уже попал — для /price это не мешает.
+            if max_price and item.get("price") and item["price"] > max_price:
+                log_rejected(
+                    item, {"market_verdict": "недостаточно данных"},
+                    note=f"Цена ({item['price']} TJS) выше потолка /maxprice ({max_price} TJS) — не анализировался",
+                )
+                entry["photo_ok"] = True
+                entry["url"] = item["url"]
+                entry["title"] = item["title"]
+                entry["price"] = item["price"]
+                entry["condition"] = item.get("condition")
+                entry["model_key"] = extract_model_key(item["title"])
+                seen[item["id"]] = entry
+                continue
+
             junk_reason = junk_title_reason(item["title"])
             skip_reason = None if junk_reason else skip_analysis_reason(item["title"])
             if junk_reason or skip_reason:
@@ -2046,7 +1979,10 @@ def main():
             if imei_status in CUSTOMS_DUE_STATUSES:
                 item["estimated_customs_cost"] = estimate_customs_cost(item["price"], usd_rate)
 
-            model_key = model_key_for_item(item)
+            # Верифицированная модель из базы IMEI надёжнее заголовка продавца —
+            # используем её, когда она есть, и падаем на разбор заголовка только
+            # если проверка IMEI не дала результата (не найден в базе и т.п.).
+            model_key = derive_verified_model_key(verified_model) or extract_model_key(item["title"])
             similar_examples = similar_full_analyses(model_key, item.get("condition"), item["id"])
             confirmed_good_calls = get_confirmed_good_calls(model_key)
             confirmed_sales = get_confirmed_sales(model_key)
@@ -2056,21 +1992,20 @@ def main():
             if model_key:
                 memory_part = f"{item.get('memory')}gb " if item.get("memory") else ""
                 condition_part = item.get("condition") or "б/у"
-                query = f"{model_key} {memory_part}{condition_part} цена Таджикистан Somon"
+                # Заголовок объявления, а не model_key — он теперь может выглядеть
+                # как "imei:sm-s936b" (внутренний формат для точного сравнения),
+                # что бесполезно в качестве поискового запроса для веб-поиска.
+                query = f"{item['title']} {memory_part}{condition_part} цена Таджикистан Somon"
                 web_results = web_search_lookup(query)
 
             data_sources = build_data_sources(similar_examples, confirmed_good_calls, confirmed_sales, manual_notes, web_results, item)
 
-            # Бинарно: либо уверенно новый (по фразам в описании) — тогда фото вообще
-            # не шлём, либо всё остальное — полный набор фото как обычно. Половинчатый
-            # вариант (часть фото) не даёт Gemini достаточно для реальной проверки, только
-            # тратит токены впустую — либо доверяем сигналу целиком, либо не доверяем.
             photos_for_analysis = [] if condition_signal(item) == "new" else photo_urls
 
             analysis = analyze_listing(item, photos_for_analysis, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate, usage)
             verdict = analysis.get("market_verdict", "недостаточно данных")
 
-            log_full_analysis(item, analysis, verdict, data_sources)
+            log_full_analysis(item, analysis, verdict, data_sources, model_key)
 
             resale = analysis.get("estimated_resale_price")
             total = analysis.get("estimated_total_cost")
@@ -2080,8 +2015,6 @@ def main():
 
             passes_profit = profit is not None and profit >= min_profit
 
-            # Порог уверенности: 0 = фильтр выключен. Если порог задан, а Gemini вообще не вернул
-            # число — считаем, что порог не пройден (лучше пропустить, чем шуметь наугад).
             gem_confidence = analysis.get("confidence")
             passes_confidence = min_confidence <= 0 or (
                 isinstance(gem_confidence, (int, float)) and gem_confidence >= min_confidence
@@ -2148,6 +2081,7 @@ def main():
             entry["price"] = item["price"]
             entry["condition"] = item.get("condition")
             entry["model_key"] = model_key
+            entry["verified_model"] = verified_model
             seen[item["id"]] = entry
             time.sleep(2)
         except Exception as e:
@@ -2155,9 +2089,6 @@ def main():
         finally:
             save_seen(seen)
 
-    # Автоматическая проверка на "склеенные" модели — алерт только на НОВУЮ
-    # аномалию (не найденную в прошлый раз), чтобы не повторять его каждые 30
-    # минут, пока руки не дойдут поправить. Ручная проверка в любой момент — /anomalies.
     known_anomalies = load_json(ANOMALY_STATE_FILE, {})
     new_anomalies = [a for a in find_price_anomalies() if a["group_key"] not in known_anomalies]
     if new_anomalies:

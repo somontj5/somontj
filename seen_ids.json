@@ -12246,7 +12246,8 @@
     "title": "Samsung Galaxy Not 20 Ultra 5G 12/256Gb",
     "price": 2890,
     "condition": "Б/у",
-    "model_key": "samsung not 20 ultra"
+    "model_key": "samsung not 20 ultra",
+    "sold_checked": true
   },
   "72061746": {
     "logged": true,
@@ -12313,7 +12314,8 @@
     "title": "Samsung Galaxy A54",
     "price": 1880,
     "condition": "Б/у",
-    "model_key": "samsung a54"
+    "model_key": "samsung a54",
+    "sold_checked": true
   },
   "32056128": {
     "logged": true,
@@ -12797,6 +12799,26 @@
     "price": 6500,
     "condition": "Б/у",
     "model_key": "apple 15 pro max",
+    "verified_model": null
+  },
+  "98176128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17209981_honor-x7c-duoc-6-128/",
+    "title": "Huawei Honor x7c duoc 6/128",
+    "price": 1550,
+    "condition": "Б/у",
+    "model_key": "huawei honor x7c duoc 6 128",
+    "verified_model": null
+  },
+  "77514128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17209775_apple-iphone-14-pro-128-gb-space-black/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Space Black",
+    "price": 6000,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro",
     "verified_model": null
   }
 }

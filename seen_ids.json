@@ -12647,7 +12647,8 @@
     "title": "Xiaomi Redmi note 14 Pro",
     "price": 2300,
     "condition": "Б/у",
-    "model_key": "redmi note 14 pro"
+    "model_key": "redmi note 14 pro",
+    "sold_checked": true
   },
   "64849315": {
     "logged": true,
@@ -13231,5 +13232,15 @@
     "price": 6300,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "32812128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17213328_apple-iphone-12-pro-max-128-gb-pacific-blue/",
+    "title": "Apple iPhone 12 Pro Max, 128 gb, Pacific Blue",
+    "price": 4350,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro max",
+    "verified_model": null
   }
 }

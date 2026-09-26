@@ -12850,7 +12850,8 @@
     "title": "Samsung Galaxy A12",
     "price": 700,
     "condition": "Б/у",
-    "model_key": "samsung a12"
+    "model_key": "samsung a12",
+    "sold_checked": true
   },
   "72097729": {
     "logged": true,

@@ -12937,7 +12937,8 @@
     "price": 6499,
     "condition": "Б/у",
     "model_key": "apple 15 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "64853456": {
     "logged": true,
@@ -13025,6 +13026,16 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "samsung a31s",
+    "verified_model": null
+  },
+  "21193564": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17211935_apple-iphone-x-64-gb-silver/",
+    "title": "Apple iPhone X, 64 gb, Silver",
+    "price": 1350,
+    "condition": "Б/у",
+    "model_key": "apple x",
     "verified_model": null
   }
 }

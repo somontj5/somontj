@@ -12226,7 +12226,8 @@
     "title": "Samsung Galaxy A56",
     "price": 2600,
     "condition": "Б/у",
-    "model_key": "samsung a56"
+    "model_key": "samsung a56",
+    "sold_checked": true
   },
   "98118128": {
     "logged": true,
@@ -12747,5 +12748,14 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "redmi note 11"
+  },
+  "96024356": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16960243_samsung-galaxy-a56/",
+    "title": "Samsung Galaxy A56",
+    "price": 3450,
+    "condition": "Б/у",
+    "model_key": "samsung a56"
   }
 }

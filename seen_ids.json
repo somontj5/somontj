@@ -12667,7 +12667,8 @@
     "title": "Xiaomi Redmi 15C",
     "price": 1590,
     "condition": "Б/у",
-    "model_key": "redmi 15c"
+    "model_key": "redmi 15c",
+    "sold_checked": true
   },
   "26159513": {
     "logged": true,
@@ -13316,5 +13317,15 @@
     "price": 14700,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "01886825": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17018868_samsung-galaxy-s25-ultra/",
+    "title": "Samsung Galaxy s25 Ultra",
+    "price": 9000,
+    "condition": "Б/у",
+    "model_key": "samsung s25 ultra",
+    "verified_model": null
   }
 }

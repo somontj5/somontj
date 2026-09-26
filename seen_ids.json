@@ -11982,7 +11982,8 @@
     "title": "Xiaomi Redmi Note 11",
     "price": 650,
     "condition": "Б/у",
-    "model_key": "redmi note 11"
+    "model_key": "redmi note 11",
+    "sold_checked": true
   },
   "20214075": {
     "logged": true,
@@ -12001,7 +12002,8 @@
     "title": "Apple iPhone 12, 128 gb, Black",
     "price": 1899,
     "condition": "Б/у",
-    "model_key": "apple 12"
+    "model_key": "apple 12",
+    "sold_checked": true
   },
   "27939128": {
     "logged": true,
@@ -12518,6 +12520,28 @@
     "url": "https://m.somon.tj/adv/17208363_telefon-samsung-a56-128-vetnam-5g-silver/",
     "title": "Samsung Galaxy А56 128 Vetnam 5G Silver",
     "price": 2850,
+    "condition": "Б/у",
+    "model_key": "imei::",
+    "verified_model": ":",
+    "sold_checked": true
+  },
+  "84219128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17208421_telefon-redmi-note-9-128gb-glabal-version/",
+    "title": "Xiaomi Redmi Note 9 128Gb Glabal Version",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "imei::",
+    "verified_model": ":"
+  },
+  "83922152": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17208392_s21-5g-2-sim/",
+    "title": "Samsung Galaxy S21 5G 2 sim",
+    "price": 2100,
     "condition": "Б/у",
     "model_key": "imei::",
     "verified_model": ":"

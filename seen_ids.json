@@ -12830,5 +12830,14 @@
     "price": 4600,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "23332017": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14888233_samsung-galaxy-a3-2017/",
+    "title": "Samsung Galaxy A12",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "samsung a12"
   }
 }

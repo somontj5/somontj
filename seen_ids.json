@@ -12376,7 +12376,8 @@
     "title": "Samsung Galaxy А56 8/128гб",
     "price": 2900,
     "condition": "Б/у",
-    "model_key": "samsung а56"
+    "model_key": "samsung а56",
+    "sold_checked": true
   },
   "37414128": {
     "logged": true,
@@ -12385,7 +12386,8 @@
     "title": "Xiaomi Redmi Note 14 128гб",
     "price": 1700,
     "condition": "Б/у",
-    "model_key": "redmi note 14"
+    "model_key": "redmi note 14",
+    "sold_checked": true
   },
   "05225205": {
     "logged": true,
@@ -12424,7 +12426,9 @@
     "title": "Motorola g7",
     "price": 2200,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "verified_model": ":",
+    "sold_checked": true
   },
   "88812128": {
     "logged": true,
@@ -12949,5 +12953,34 @@
     "condition": "Б/у",
     "model_key": "redmi a3x",
     "verified_model": null
+  },
+  "21162833": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17211628_zte-a33/",
+    "title": "ZTE A33+",
+    "price": 400,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
+  },
+  "57913256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16552579_apple-iphone-13-pro-256-gb-silver/",
+    "title": "Apple iPhone 13 Pro, 256 gb, Silver",
+    "price": 3888,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro",
+    "verified_model": null
+  },
+  "58124512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17211581_samsung-galaxsy-s24-ultra-512-g/",
+    "title": "Samsung Galaxy S24 Ultra 512gb",
+    "price": 5600,
+    "condition": "Б/у",
+    "model_key": "samsung s24 ultra"
   }
 }

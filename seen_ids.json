@@ -12344,7 +12344,8 @@
     "title": "Samsung Galaxy А51 4/64гб",
     "price": 1150,
     "condition": "Б/у",
-    "model_key": "samsung а51"
+    "model_key": "samsung а51",
+    "sold_checked": true
   },
   "20627310": {
     "logged": true,
@@ -12861,6 +12862,16 @@
     "price": 3999,
     "condition": "Б/у",
     "model_key": "apple 13 pro",
+    "verified_model": null
+  },
+  "21018851": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17210188_samsunga51/",
+    "title": "Samsung Galaxy A51",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "samsung a51",
     "verified_model": null
   }
 }

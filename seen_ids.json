@@ -12061,7 +12061,8 @@
     "title": "Apple iPhone 13 Pro, 1 tb, Silver",
     "price": 3500,
     "condition": "Б/у",
-    "model_key": "apple 13 pro 1 tb"
+    "model_key": "apple 13 pro 1 tb",
+    "sold_checked": true
   },
   "20398320": {
     "logged": true,
@@ -12070,7 +12071,8 @@
     "title": "Samsung Galaxy Note 20 Ultra",
     "price": 2300,
     "condition": "Б/у",
-    "model_key": "samsung note 20 ultra"
+    "model_key": "samsung note 20 ultra",
+    "sold_checked": true
   },
   "20399925": {
     "logged": true,
@@ -12578,5 +12580,23 @@
     "condition": "Б/у",
     "model_key": "apple 16 pro max",
     "verified_model": null
+  },
+  "58458759": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15845875_honor-x9c/",
+    "title": "Honor 400 lite",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "honor 400 lite"
+  },
+  "48835135": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14248835_redmi-not-13-pro-5g/",
+    "title": "Xiaomi Redmi note 14 Pro",
+    "price": 2300,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro"
   }
 }

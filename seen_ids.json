@@ -12353,7 +12353,8 @@
     "title": "Samsung Galaxy А10",
     "price": 550,
     "condition": "Б/у",
-    "model_key": "samsung а10"
+    "model_key": "samsung а10",
+    "sold_checked": true
   },
   "13414128": {
     "logged": true,

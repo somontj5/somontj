@@ -12593,7 +12593,8 @@
     "price": 2100,
     "condition": "Б/у",
     "model_key": "imei::",
-    "verified_model": ":"
+    "verified_model": ":",
+    "sold_checked": true
   },
   "20914128": {
     "logged": true,
@@ -13144,5 +13145,15 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "apple xr"
+  },
+  "17212751": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17212751_honor/",
+    "title": "Телефон Honor",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "honor",
+    "verified_model": null
   }
 }

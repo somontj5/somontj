@@ -12658,7 +12658,8 @@
     "title": "Xiaomi Redmi Note 15",
     "price": 2450,
     "condition": "Б/у",
-    "model_key": "redmi note 15"
+    "model_key": "redmi note 15",
+    "sold_checked": true
   },
   "49555815": {
     "logged": true,
@@ -13348,6 +13349,16 @@
     "price": 2299,
     "condition": "Б/у",
     "model_key": "samsung s10 plus",
+    "verified_model": null
+  },
+  "28723128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17214287_samsung-galaxy-a23-128/",
+    "title": "Samsung galaxy A23 128",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "samsung a23 128",
     "verified_model": null
   }
 }

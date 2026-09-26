@@ -13179,5 +13179,24 @@
     "condition": "Б/у",
     "model_key": "apple 6s",
     "verified_model": null
+  },
+  "71574346": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17157434_honor-magic-v6/",
+    "title": "Honor Magic V6",
+    "price": 15900,
+    "condition": "Б/у",
+    "model_key": "honor magic v6",
+    "verified_model": null
+  },
+  "42914256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17210429_apple-iphone-14-pro-max-256-gb-space-black/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb, Space Black",
+    "price": 3900,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
   }
 }

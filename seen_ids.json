@@ -12144,7 +12144,8 @@
     "title": "Xiaomi redmi note 14 pro+ 5G, 256gb",
     "price": 2850,
     "condition": "Б/у",
-    "model_key": "redmi note 14 pro plus"
+    "model_key": "redmi note 14 pro plus",
+    "sold_checked": true
   },
   "20443022": {
     "logged": true,
@@ -12162,7 +12163,8 @@
     "title": "Apple iPhone 11, 64 gb, Black",
     "price": 1980,
     "condition": "Б/у",
-    "model_key": "apple 11"
+    "model_key": "apple 11",
+    "sold_checked": true
   },
   "09017512": {
     "logged": true,
@@ -12661,5 +12663,24 @@
     "condition": "Б/у",
     "model_key": "samsung s25 ultra",
     "verified_model": null
+  },
+  "09592100": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17209592_telefon-100-foiz-kor-mekunad/",
+    "title": "Samsung Galaxy A50",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "samsung a50",
+    "verified_model": null
+  },
+  "52312256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17209545_samsung-galaxy-s23-ultra-12-256gb-duos-vietnam/",
+    "title": "Samsung Galaxy S23 Ultra 12/256Gb Duos Vietnam",
+    "price": 3850,
+    "condition": "Б/у",
+    "model_key": "samsung s23 ultra duos"
   }
 }

@@ -12538,7 +12538,8 @@
     "title": "Apple iPhone 12 pro, 256 gb, Pacific Blue",
     "price": 3499,
     "condition": "Б/у",
-    "model_key": "apple 12 pro"
+    "model_key": "apple 12 pro",
+    "sold_checked": true
   },
   "76251164": {
     "logged": true,
@@ -13091,6 +13092,26 @@
     "price": 4990,
     "condition": "Б/у",
     "model_key": "apple 13 pro max",
+    "verified_model": null
+  },
+  "20912921": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17209129_samsunggalaxy-s21/",
+    "title": "Samsung Galaxy s21",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "samsung s21",
+    "verified_model": null
+  },
+  "28317256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17212283_apple-iphone-17-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
+    "price": 12000,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max",
     "verified_model": null
   }
 }

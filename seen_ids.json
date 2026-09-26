@@ -12768,7 +12768,8 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "redmi note 14",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "44911645": {
     "logged": true,
@@ -12926,7 +12927,8 @@
     "price": 2999,
     "condition": "Б/у",
     "model_key": "apple 14 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "11114864": {
     "logged": true,
@@ -13116,7 +13118,8 @@
     "price": 12000,
     "condition": "Б/у",
     "model_key": "apple 17 pro max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "21255123": {
     "logged": true,

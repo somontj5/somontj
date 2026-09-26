@@ -12012,7 +12012,8 @@
     "title": "Xiaomi Redmi Note 9 128Gb Glabal Version",
     "price": 850,
     "condition": "Б/у",
-    "model_key": "redmi note 9"
+    "model_key": "redmi note 9",
+    "sold_checked": true
   },
   "22122565": {
     "logged": true,

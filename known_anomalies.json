@@ -102,5 +102,9 @@
   "imei::|128": {
     "first_seen": "2026-09-26",
     "ratio": 3.35
+  },
+  "redmi note 12|128": {
+    "first_seen": "2026-09-26",
+    "ratio": 3.57
   }
 }

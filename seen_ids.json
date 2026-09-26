@@ -12335,7 +12335,8 @@
     "title": "Xiaomi Redmi Note 9",
     "price": 850,
     "condition": "Б/у",
-    "model_key": "redmi note 9"
+    "model_key": "redmi note 9",
+    "sold_checked": true
   },
   "26651464": {
     "logged": true,
@@ -12872,6 +12873,16 @@
     "price": 850,
     "condition": "Б/у",
     "model_key": "samsung a51",
+    "verified_model": null
+  },
+  "20980312": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17209803_redmi-note-12/",
+    "title": "Xiaomi Redmi Note 12",
+    "price": 350,
+    "condition": "Б/у",
+    "model_key": "redmi note 12",
     "verified_model": null
   }
 }

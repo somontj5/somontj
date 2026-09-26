@@ -12052,7 +12052,8 @@
     "title": "Apple iPhone Xr, 128 gb, Black",
     "price": 1999,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "04178131": {
     "logged": true,
@@ -12082,7 +12083,8 @@
     "title": "Samsung Galaxy S25 Ultra",
     "price": 9000,
     "condition": "Б/у",
-    "model_key": "samsung s25 ultra"
+    "model_key": "samsung s25 ultra",
+    "sold_checked": true
   },
   "27417256": {
     "logged": true,
@@ -12092,7 +12094,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
     "price": 8500,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "22015128": {
     "logged": true,
@@ -12111,7 +12114,8 @@
     "title": "Apple iPhone 13, 128 gb, Blue",
     "price": 1500,
     "condition": "Б/у",
-    "model_key": "apple 13"
+    "model_key": "apple 13",
+    "sold_checked": true
   },
   "66414256": {
     "logged": true,
@@ -12598,5 +12602,42 @@
     "price": 2300,
     "condition": "Б/у",
     "model_key": "redmi note 14 pro"
+  },
+  "64849315": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16648493_xiaomi-redmi-note-15/",
+    "title": "Xiaomi Redmi Note 15",
+    "price": 2450,
+    "condition": "Б/у",
+    "model_key": "redmi note 15"
+  },
+  "49555815": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14495558_xiaomi-redmi-15c/",
+    "title": "Xiaomi Redmi 15C",
+    "price": 1590,
+    "condition": "Б/у",
+    "model_key": "redmi 15c"
+  },
+  "26159513": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16261595_xiaomi-redmi-note-13/",
+    "title": "Xiaomi Redmi Note 13",
+    "price": 1450,
+    "condition": "Б/у",
+    "model_key": "redmi note 13"
+  },
+  "20821010": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17208210_samsung-s10/",
+    "title": "Samsung galaxy S10",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "samsung s10",
+    "verified_model": null
   }
 }

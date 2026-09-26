@@ -12135,7 +12135,8 @@
     "title": "Xiaomi Redmi 4Х",
     "price": 380,
     "condition": "Б/у",
-    "model_key": "redmi 4х"
+    "model_key": "redmi 4х",
+    "sold_checked": true
   },
   "04784145": {
     "logged": true,
@@ -12154,7 +12155,8 @@
     "title": "Samsung Galaxy S22",
     "price": 2999,
     "condition": "Б/у",
-    "model_key": "samsung s22"
+    "model_key": "samsung s22",
+    "sold_checked": true
   },
   "44371164": {
     "logged": true,
@@ -12173,7 +12175,8 @@
     "title": "Apple iPhone 17 Pro Max, 512 gb, Silver",
     "price": 14600,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "04609256": {
     "logged": true,
@@ -12182,7 +12185,8 @@
     "title": "Apple iPhone X, 256 gb, Silver",
     "price": 1199,
     "condition": "Б/у",
-    "model_key": "apple x"
+    "model_key": "apple x",
+    "sold_checked": true
   },
   "19417256": {
     "logged": true,
@@ -12682,5 +12686,34 @@
     "price": 3850,
     "condition": "Б/у",
     "model_key": "samsung s23 ultra duos"
+  },
+  "44013325": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17208440_telefon-samsung-a13-32gb-vetnam-5g-silver/",
+    "title": "Samsung Galaxy А13 32Gb Vetnam 5G Silver",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "samsung а13"
+  },
+  "20843022": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17208430_samsung-s22ultra/",
+    "title": "Samsung Galaxy S22ultra",
+    "price": 3800,
+    "condition": "Б/у",
+    "model_key": "samsung s22ultra",
+    "verified_model": null
+  },
+  "96871264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17209687_apple-iphone-12-64-gb-product-red/",
+    "title": "Apple iPhone 12, 64 gb, Product Red",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "apple 12",
+    "verified_model": null
   }
 }

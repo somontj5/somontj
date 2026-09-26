@@ -13072,7 +13072,8 @@
     "price": 1600,
     "condition": "Б/у",
     "model_key": "samsung a17",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "21207714": {
     "logged": true,

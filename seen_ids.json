@@ -12022,7 +12022,8 @@
     "title": "Samsung Galaxy S22 Ultra 12/256Gb 5G",
     "price": 3540,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "20379764": {
     "logged": true,
@@ -12582,7 +12583,8 @@
     "price": 850,
     "condition": "Б/у",
     "model_key": "imei::",
-    "verified_model": ":"
+    "verified_model": ":",
+    "sold_checked": true
   },
   "83922152": {
     "logged": true,
@@ -13154,6 +13156,25 @@
     "price": 450,
     "condition": "Б/у",
     "model_key": "honor",
+    "verified_model": null
+  },
+  "83315128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17212833_apple-iphone-15-pro-128-gb-natural-titanium/",
+    "title": "Apple iPhone 15 Pro, 128 gb, Natural Titanium",
+    "price": 6990,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro"
+  },
+  "12860632": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17212860_apple-iphone-6s-32-gb/",
+    "title": "Apple iPhone 6s, 32 gb",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "apple 6s",
     "verified_model": null
   }
 }

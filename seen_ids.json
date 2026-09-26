@@ -12606,7 +12606,8 @@
     "price": 5200,
     "condition": "Б/у",
     "model_key": "imei::",
-    "verified_model": ":"
+    "verified_model": ":",
+    "sold_checked": true
   },
   "08046128": {
     "logged": true,
@@ -13018,7 +13019,8 @@
     "price": 3200,
     "condition": "Б/у",
     "model_key": "apple 12 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "76012128": {
     "logged": true,
@@ -13198,5 +13200,15 @@
     "price": 3900,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "72131925": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17213192_samsung-a5/",
+    "title": "Samsung Galaxy A5",
+    "price": 300,
+    "condition": "Б/у",
+    "model_key": "samsung a5",
+    "verified_model": null
   }
 }

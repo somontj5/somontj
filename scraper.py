@@ -33,6 +33,13 @@ DEFAULT_MIN_PROFIT = int(os.environ.get("DEFAULT_MIN_PROFIT", "0"))
 DEFAULT_MIN_CONFIDENCE = float(os.environ.get("DEFAULT_MIN_CONFIDENCE", "0"))
 DEFAULT_MAX_PRICE = int(os.environ.get("DEFAULT_MAX_PRICE", "0"))
 
+# Порог "активных объявлений" продавца, начиная с которого он однозначно похож на
+# магазин/перекупщика (жёсткая эвристика — блокируем сразу, без похода к Gemini).
+RESELLER_MIN_ACTIVE_ADS = int(os.environ.get("RESELLER_MIN_ACTIVE_ADS", "10"))
+# Более мягкий порог: срабатывает, только если ИМЯ продавца ещё и похоже на
+# название точки продаж (см. SHOP_NAME_RE ниже).
+RESELLER_SOFT_ACTIVE_ADS = int(os.environ.get("RESELLER_SOFT_ACTIVE_ADS", "5"))
+
 SEEN_FILE = "seen_ids.json"
 PRICE_HISTORY_FILE = "price_history.jsonl"
 REJECTED_FILE = "rejected_lots.jsonl"
@@ -48,6 +55,7 @@ MIN_PROFIT_FILE = "min_profit.json"
 MIN_CONFIDENCE_FILE = "min_confidence.json"
 MAX_PRICE_FILE = "max_price.json"
 ANOMALY_STATE_FILE = "known_anomalies.json"
+SELLER_BLACKLIST_FILE = "seller_blacklist.json"
 REMIGRATE_LIVE_STATE_FILE = "remigrate_live_state.json"
 REMIGRATE_LIVE_BATCH_SIZE = int(os.environ.get("REMIGRATE_LIVE_BATCH_SIZE", "20"))
 
@@ -117,8 +125,17 @@ STORAGE_SIZES = {16, 32, 64, 128, 256, 512, 1024, 2048}
 GB_WORDS = {"gb", "гб"}
 
 CONDITION_RE = re.compile(r"\b(Новый|Б\s*/\s*у|Б\s*\.\s*у\.?|Восстановлен\w*)\b(?:\s*[·|,;—-]\s*(\d+)\s*gb)?", re.I)
-NOISE_RE = re.compile(r"Еще\s*\d+\s*фото|VIP|IMEI\s*проверен", re.I)
+NOISE_RE = re.compile(r"Еще\s*\d+\s*фото|VIP|ТОП\b|TOP\b|IMEI\s*проверен", re.I)
 IMEI_VERIFIED_BADGE_RE = re.compile(r"IMEI\s*проверен", re.I)
+TOP_BADGE_RE = re.compile(r"(?<![а-яa-z])ТОП(?![а-яa-z])|\bTOP\b", re.I)
+# Признак того, что аккаунт продавца назван как магазин/точка продаж, а не как
+# имя частного человека — используется только как ДОПОЛНИТЕЛЬНЫЙ сигнал вместе
+# с количеством активных объявлений, никогда сам по себе.
+SHOP_NAME_RE = re.compile(
+    r"phone|mobile|gsm|shop|store|market|tex|tech|электрон|магазин|салон|маркет|"
+    r"техник|связ|apple\s*store|iphone\s*store",
+    re.I,
+)
 PRICE_RE = re.compile(r"(\d[\d\s]{2,})\s*[cс]\.")
 DESC_RE = re.compile(r"Описание\s*(.*?)\s*(?:Показать телефон|Начать чат|Пожаловаться|$)", re.S)
 
@@ -302,7 +319,7 @@ def log_market_point(item, model_key=None):
         f.write(json.dumps({
             "type": "market_point", "id": item["id"], "title": item["title"],
             "price": item["price"], "condition": item.get("condition"),
-            "memory_gb": item.get("memory"), "vip": item.get("vip", False),
+            "memory_gb": item.get("memory"), "vip": item.get("vip", False), "top": item.get("top", False),
             "model_key": model_key if model_key is not None else extract_model_key(item["title"]),
             "url": item.get("url"),
             "date": time.strftime("%Y-%m-%d"),
@@ -806,6 +823,72 @@ def set_max_price(value):
 
 
 # ---------- Курс USD/TJS ----------
+
+def seller_key_from_url(seller_url):
+    """Стабильный ключ продавца: слаг из ссылки на его профиль/все объявления
+    (например https://m.somon.tj/c/KhushangPhones/ -> 'khushangphones')."""
+    if not seller_url:
+        return None
+    slug = seller_url.rstrip("/").rsplit("/", 1)[-1].strip()
+    return slug.lower() or None
+
+
+def load_seller_blacklist():
+    return load_json(SELLER_BLACKLIST_FILE, {})
+
+
+def save_seller_blacklist(blacklist):
+    with open(SELLER_BLACKLIST_FILE, "w", encoding="utf-8") as f:
+        json.dump(blacklist, f, ensure_ascii=False, indent=2)
+
+
+def is_seller_blacklisted(seller_key):
+    if not seller_key:
+        return None
+    return load_seller_blacklist().get(seller_key)
+
+
+def blacklist_seller(seller_key, name, profile_url, reason, ad_url, extra=None):
+    """Добавляет продавца в чёрный список. ad_url — ссылка именно на то объявление,
+    из-за которого продавца заблокировали (обязательно сохраняем для /blacklist)."""
+    blacklist = load_seller_blacklist()
+    entry = blacklist.get(seller_key, {})
+    entry.update({
+        "name": name or entry.get("name"),
+        "profile_url": profile_url or entry.get("profile_url"),
+        "reason": reason,
+        "blocked_by_ad_url": ad_url,
+        "blocked_at": entry.get("blocked_at") or time.strftime("%Y-%m-%dT%H:%M:%S"),
+        "updated_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
+    })
+    if extra:
+        entry.update(extra)
+    blacklist[seller_key] = entry
+    save_seller_blacklist(blacklist)
+    return entry
+
+
+def unblacklist_seller(seller_key):
+    blacklist = load_seller_blacklist()
+    removed = blacklist.pop(seller_key, None)
+    if removed is not None:
+        save_seller_blacklist(blacklist)
+    return removed
+
+
+def reseller_heuristic_reason(item):
+    """Дешёвая эвристика по данным со страницы объявления (без обращения к Gemini):
+    много активных объявлений у продавца — почти наверняка магазин/перекупщик,
+    а не частник, который продаёт свой один телефон."""
+    active_ads = item.get("seller_active_ads")
+    name = item.get("seller_name") or ""
+    if active_ads is not None and active_ads >= RESELLER_MIN_ACTIVE_ADS:
+        return f"у продавца {active_ads} активных объявлений — похоже на магазин/перекупщика"
+    if active_ads is not None and active_ads >= RESELLER_SOFT_ACTIVE_ADS and SHOP_NAME_RE.search(name):
+        return (f"у продавца {active_ads} активных объявлений, а имя «{name}» похоже на название "
+                f"магазина/точки продаж — похоже на перекупщика")
+    return None
+
 
 def get_usd_tjs_rate():
     cached = load_json(EXCHANGE_RATE_FILE, {})
@@ -1469,6 +1552,58 @@ def check_telegram_commands(searches, subscribers):
                             f"{REMIGRATE_LIVE_BATCH_SIZE} за каждый прогон бота — это может занять несколько "
                             f"прогонов. Когда закончу, пересчитаю model_key всей базы и пришлю итог сюда."
                         )
+        elif command == "/blacklist":
+            blacklist = load_seller_blacklist()
+            if not blacklist:
+                send_telegram(chat_id, "🚫 Чёрный список продавцов пуст.")
+            else:
+                lines = [f"🚫 В чёрном списке продавцов: {len(blacklist)}"]
+                for key, bl_entry in sorted(blacklist.items(), key=lambda kv: kv[1].get("blocked_at", ""), reverse=True):
+                    lines.append(
+                        f"\n👤 {bl_entry.get('name') or key}"
+                        + (f"\n  профиль: {bl_entry['profile_url']}" if bl_entry.get("profile_url") else "")
+                        + f"\n  причина: {bl_entry.get('reason', '—')}"
+                        + f"\n  объявление-повод: {bl_entry.get('blocked_by_ad_url', '—')}"
+                        + f"\n  заблокирован: {(bl_entry.get('blocked_at') or '—')[:10]}"
+                    )
+                text = "\n".join(lines)
+                if len(text) > 3800:
+                    send_telegram(chat_id, lines[0] + "\n\nСписок длинный — отправляю файлом.")
+                    send_telegram_document(chat_id, "seller_blacklist.txt", text,
+                                            caption=f"Чёрный список продавцов: {len(blacklist)}")
+                else:
+                    send_telegram(chat_id, text)
+        elif command == "/blacklist_add":
+            raw = argument.strip()
+            if not raw:
+                send_telegram(chat_id, "Формат: /blacklist_add ссылка_на_объявление | причина (необязательно)")
+            else:
+                url_part, _, reason_part = raw.partition("|")
+                ad_url = url_part.strip()
+                reason = reason_part.strip() or "добавлено вручную владельцем"
+                try:
+                    detail = fetch_detail(ad_url)
+                    seller_name_m, seller_url_m, seller_active_ads_m = detail[8], detail[9], detail[10]
+                    seller_key_m = seller_key_from_url(seller_url_m)
+                    if not seller_key_m:
+                        send_telegram(chat_id, "Не нашёл продавца на этой странице объявления — проверьте ссылку.")
+                    else:
+                        blacklist_seller(seller_key_m, seller_name_m, seller_url_m, reason, ad_url,
+                                          extra={"active_ads_at_block": seller_active_ads_m})
+                        send_telegram(chat_id, f"✅ Продавец «{seller_name_m or seller_key_m}» добавлен в чёрный список.")
+                except Exception as e:
+                    send_telegram(chat_id, f"⚠️ Не удалось обработать ссылку: {e}")
+        elif command == "/blacklist_del":
+            arg = argument.strip()
+            if not arg:
+                send_telegram(chat_id, "Формат: /blacklist_del слаг_продавца ИЛИ ссылка на его профиль")
+            else:
+                key = seller_key_from_url(arg) if arg.startswith("http") else arg.lower()
+                removed = unblacklist_seller(key)
+                if removed:
+                    send_telegram(chat_id, f"✅ Продавец «{removed.get('name') or key}» удалён из чёрного списка.")
+                else:
+                    send_telegram(chat_id, "Такого продавца нет в чёрном списке.")
         elif command == "/stats":
             gem_usage = get_daily_usage(GEMINI_DAILY_FILE, [c["id"] for c in GEMINI_COMBOS])
             search_usage = get_search_usage()
@@ -1481,7 +1616,9 @@ def check_telegram_commands(searches, subscribers):
             lines += [f"  {c['id']}: {gem_usage.get(c['id'], 0)}/{GEMINI_DAILY_LIMIT_PER_COMBO}" for c in GEMINI_COMBOS]
             lines += ["", "Поиск в сети:"]
             lines += [f"  {p['id']}: {search_usage.get(p['id'], 0)}/{p['limit']} ({'мес' if p['period']=='month' else 'день'})" for p in SEARCH_PROVIDERS]
-            lines += ["", f"📁 Записей в базе: {db_count}", f"🚫 Отклонённых лотов: {rej_count}", f"👥 Подписчиков: {len(subscribers)}"]
+            bl_count = len(load_seller_blacklist())
+            lines += ["", f"📁 Записей в базе: {db_count}", f"🚫 Отклонённых лотов: {rej_count}",
+                      f"🚫 Продавцов в чёрном списке: {bl_count}", f"👥 Подписчиков: {len(subscribers)}"]
             send_telegram(chat_id, "\n".join(lines))
         elif command == "/help":
             send_telegram(chat_id, "Команды:\n/all /used /params — режим поиска\n"
@@ -1501,6 +1638,10 @@ def check_telegram_commands(searches, subscribers):
                                     "проверка объявления без фото (не сохраняется в базу)\n"
                                     "/bought ссылка — подтвердить удачную покупку по рекомендации бота\n"
                                     "/rejected — файл со всеми отклонёнными лотами\n"
+                                    "/blacklist — список продавцов в чёрном списке (причина + ссылка на "
+                                    "объявление-повод)\n"
+                                    "/blacklist_add ссылка_на_объявление | причина — заблокировать продавца вручную\n"
+                                    "/blacklist_del слаг_или_ссылка_на_профиль — убрать продавца из чёрного списка\n"
                                     "/stats — расход лимитов и размер базы\n"
                                     "/subscribers — сколько подписчиков\n/stop — отписаться")
 
@@ -1542,6 +1683,7 @@ def condition_signal(item):
 
 def clean_title(raw_text):
     is_vip = bool(re.search(r"\bVIP\b", raw_text, re.I))
+    is_top = bool(TOP_BADGE_RE.search(raw_text))
     # Бейдж "IMEI проверен" виден прямо на карточке в списке объявлений (поверх
     # превью фото), до захода в само объявление — определяем его тут, ДО того
     # как NOISE_RE вырежет этот же текст как шум из заголовка.
@@ -1558,7 +1700,7 @@ def clean_title(raw_text):
         memory = int(cond_match.group(2)) if cond_match.group(2) else None
     else:
         title, condition, memory = text.strip(), None, None
-    return title, price, condition, memory, is_vip, imei_verified_badge
+    return title, price, condition, memory, is_vip, is_top, imei_verified_badge
 
 
 def absolute_url(url):
@@ -1602,13 +1744,13 @@ def fetch_listings():
         raw_text = a.get_text(" ", strip=True)
         if len(raw_text) < 5:
             continue
-        title, price, condition, memory, is_vip, imei_verified_badge = clean_title(raw_text)
+        title, price, condition, memory, is_vip, is_top, imei_verified_badge = clean_title(raw_text)
         if not title:
             continue
         listings.append({
             "id": re.sub(r"\D", "", href)[-8:] or href,
             "title": title, "price": price, "condition": condition,
-            "memory": memory, "url": href, "vip": is_vip,
+            "memory": memory, "url": href, "vip": is_vip, "top": is_top,
             "imei_verified_badge": imei_verified_badge,
         })
     return listings, soup
@@ -1650,7 +1792,28 @@ def fetch_detail(ad_url):
             seen.add(src)
             photo_urls.append(src)
 
-    return condition, memory, description, photo_urls[:4], imei_status, city, published_at, verified_model
+    seller_name, seller_url, seller_active_ads, seller_verified = extract_seller_info(soup, full_text)
+
+    return (condition, memory, description, photo_urls[:4], imei_status, city, published_at, verified_model,
+            seller_name, seller_url, seller_active_ads, seller_verified)
+
+
+def extract_seller_info(soup, full_text):
+    """Данные о продавце со страницы объявления: имя, ссылка на его профиль/все
+    объявления и число активных объявлений — ключевые сигналы для отсева
+    перекупщиков (магазин с кучей объявлений vs частник с одним телефоном)."""
+    seller_name, seller_url = None, None
+    author_link = soup.find("a", attrs={"data-marker": re.compile(r"^advert-all_adverts_author-advert:")})
+    if author_link:
+        seller_name = (author_link.get("aria-label") or author_link.get_text(strip=True) or "").strip() or None
+        seller_url = absolute_url(author_link.get("href", "")) or None
+
+    active_ads_match = re.search(r"(\d+)\s*актив\w*\s*объявлен\w*", full_text, re.I)
+    seller_active_ads = int(active_ads_match.group(1)) if active_ads_match else None
+
+    seller_verified = bool(soup.find(class_=re.compile(r"^Contacts_verified")))
+
+    return seller_name, seller_url, seller_active_ads, seller_verified
 
 
 # ---------- Gemini: анализ ----------
@@ -1767,6 +1930,44 @@ def format_imei_block(item, usd_rate):
     return "\nСтатус IMEI на странице определить не удалось — если это важно, можешь спросить у продавца напрямую про растаможку."
 
 
+def format_seller_block(item, has_photos):
+    """Контекст о продавце для Gemini: сколько у него активных объявлений, платит ли
+    он за продвижение (VIP/ТОП), и просьба отдельно оценить фон на фото — это вместе
+    помогает отличить частника от перекупщика/магазина, продающего 'убитые' телефоны
+    под видом выгодных лотов."""
+    lines = []
+    if item.get("seller_name"):
+        lines.append(f"Продавец: {item['seller_name']}")
+    if item.get("seller_active_ads") is not None:
+        lines.append(f"Активных объявлений у продавца сейчас: {item['seller_active_ads']}")
+    promo = []
+    if item.get("vip"):
+        promo.append("VIP")
+    if item.get("top"):
+        promo.append("ТОП")
+    if promo:
+        lines.append(f"Объявление продвигается платно: {', '.join(promo)}")
+    if not lines:
+        return ""
+
+    if has_photos:
+        instruction = (
+            "\nОТДЕЛЬНО оцени ФОН на фотографиях: если видна витрина/стенд магазина телефонов, много "
+            "других телефонов или разной техники в кадре, фирменная выкладка товара — это признак "
+            "перекупщика/магазина, торгующего 'убитыми' телефонами под видом выгодных лотов, а не "
+            "частного владельца. Если фон обычный бытовой/случайный (рука, стол, диван, одежда, "
+            "комната) — это обычный частник, даже если у него несколько объявлений или платное "
+            "продвижение. Решай по совокупности: чем больше активных объявлений и чем больше фон "
+            "похож на магазин, тем увереннее ставь 'похоже на перекупщика'."
+        )
+    else:
+        instruction = (
+            "\nФото не анализируются, поэтому суди о продавце ТОЛЬКО по числу активных объявлений и "
+            "платному продвижению выше — если явных признаков магазина нет, ставь 'неясно', не выдумывай."
+        )
+    return "\n" + "\n".join(lines) + instruction
+
+
 def build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate, has_photos=True, condition_note=None, no_photo_reason=None):
     try:
         item_memory = int(item.get("memory")) if item.get("memory") else None
@@ -1786,6 +1987,7 @@ def build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, 
     )
     manual_text = format_manual_notes(manual_notes)
     imei_text = format_imei_block(item, usd_rate)
+    seller_text = format_seller_block(item, has_photos)
 
     if has_photos:
         intro = "Изучи текст объявления и фото."
@@ -1819,7 +2021,7 @@ def build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, 
 Опубликовано: {item.get('published_at') or 'неизвестно'}
 Состояние по словам продавца: {item.get('condition') or 'не указано'}
 Описание продавца: {item.get('description', '')[:800]}
-{imei_text}{no_photo_note}
+{imei_text}{seller_text}{no_photo_note}
 
 {good_calls_text}
 
@@ -1856,9 +2058,14 @@ def build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, 
   "market_verdict": "недооценено|справедливая цена|переоценено|недостаточно данных",
   "reasoning": "коротко: на чём основан вывод — с какими конкретно примерами сравнивал",
   "confidence": 0.0,
-  "questions_for_seller": []
+  "questions_for_seller": [],
+  "seller_type": "частник|похоже на перекупщика|неясно",
+  "seller_evidence": ""
 }}
 Если данных совсем мало — verdict "недостаточно данных", не выдумывай цифры.
+seller_type и seller_evidence заполняй по правилам про фон на фото и контекст о продавце выше; если
+контекста о продавце не было вообще (блок про продавца отсутствовал) — ставь "неясно" и оставляй
+seller_evidence пустой строкой.
 """.strip()
 
 
@@ -2167,7 +2374,8 @@ def main():
                 seen[item["id"]] = entry
                 continue
 
-            condition, memory, description, photo_urls, imei_status, city, published_at, verified_model = fetch_detail(item["url"])
+            (condition, memory, description, photo_urls, imei_status, city, published_at, verified_model,
+             seller_name, seller_url, seller_active_ads, seller_verified) = fetch_detail(item["url"])
             item["condition"] = condition or item.get("condition")
             item["memory"] = memory or item.get("memory")
             item["description"] = description
@@ -2175,8 +2383,50 @@ def main():
             item["city"] = city
             item["published_at"] = published_at
             item["verified_model"] = verified_model
+            item["seller_name"] = seller_name
+            item["seller_url"] = seller_url
+            item["seller_active_ads"] = seller_active_ads
+            item["seller_verified"] = seller_verified
             if imei_status in CUSTOMS_DUE_STATUSES:
                 item["estimated_customs_cost"] = estimate_customs_cost(item["price"], usd_rate)
+
+            # ---- Чёрный список продавцов: отсеиваем ДО похода к Gemini/веб-поиску ----
+            seller_key = seller_key_from_url(seller_url)
+            if seller_key:
+                bl_entry = is_seller_blacklisted(seller_key)
+                if bl_entry:
+                    log_rejected(
+                        item, {"market_verdict": "недостаточно данных"},
+                        note=f"Продавец «{bl_entry.get('name') or seller_key}» в чёрном списке: "
+                             f"{bl_entry.get('reason')}",
+                    )
+                    entry["photo_ok"] = True
+                    entry["url"] = item["url"]
+                    entry["title"] = item["title"]
+                    entry["price"] = item["price"]
+                    entry["condition"] = item.get("condition")
+                    entry["model_key"] = extract_model_key(item["title"])
+                    seen[item["id"]] = entry
+                    continue
+
+                heuristic_reason = reseller_heuristic_reason(item)
+                if heuristic_reason:
+                    blacklist_seller(seller_key, seller_name, seller_url, heuristic_reason, item["url"],
+                                      extra={"active_ads_at_block": seller_active_ads})
+                    log_rejected(item, {"market_verdict": "недостаточно данных"},
+                                 note=f"Продавец добавлен в чёрный список: {heuristic_reason}")
+                    alert_owner(
+                        f"🚫 Продавец «{seller_name or seller_key}» добавлен в чёрный список.\n"
+                        f"Причина: {heuristic_reason}\nОбъявление: {item['url']}"
+                    )
+                    entry["photo_ok"] = True
+                    entry["url"] = item["url"]
+                    entry["title"] = item["title"]
+                    entry["price"] = item["price"]
+                    entry["condition"] = item.get("condition")
+                    entry["model_key"] = extract_model_key(item["title"])
+                    seen[item["id"]] = entry
+                    continue
 
             # Верифицированная модель из базы IMEI надёжнее заголовка продавца —
             # используем её, когда она есть, и падаем на разбор заголовка только
@@ -2205,6 +2455,27 @@ def main():
             verdict = analysis.get("market_verdict", "недостаточно данных")
 
             log_full_analysis(item, analysis, verdict, data_sources, model_key)
+
+            # ---- Продавец похож на перекупщика по фону на фото (Gemini) ----
+            if seller_key and analysis.get("seller_type") == "похоже на перекупщика":
+                evidence = analysis.get("seller_evidence") or "по фону на фотографиях"
+                reason = f"похоже на перекупщика по фото: {evidence}"
+                blacklist_seller(seller_key, seller_name, seller_url, reason, item["url"],
+                                  extra={"active_ads_at_block": seller_active_ads})
+                log_rejected(item, analysis, note=f"Продавец добавлен в чёрный список: {reason}")
+                alert_owner(
+                    f"🚫 Продавец «{seller_name or seller_key}» добавлен в чёрный список (по фото).\n"
+                    f"Причина: {evidence}\nОбъявление: {item['url']}"
+                )
+                entry["photo_ok"] = True
+                entry["url"] = item["url"]
+                entry["title"] = item["title"]
+                entry["price"] = item["price"]
+                entry["condition"] = item.get("condition")
+                entry["model_key"] = model_key
+                entry["verified_model"] = verified_model
+                seen[item["id"]] = entry
+                continue
 
             resale = analysis.get("estimated_resale_price")
             total = analysis.get("estimated_total_cost")

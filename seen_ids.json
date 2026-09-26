@@ -13038,7 +13038,8 @@
     "price": 3199,
     "condition": "Б/у",
     "model_key": "apple 12 pro max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "21178931": {
     "logged": true,

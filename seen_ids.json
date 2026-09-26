@@ -12236,7 +12236,8 @@
     "title": "Xiaomi Redmi Note 11 blue 8/128g",
     "price": 1000,
     "condition": "Б/у",
-    "model_key": "redmi note 11"
+    "model_key": "redmi note 11",
+    "sold_checked": true
   },
   "20512256": {
     "logged": true,
@@ -12263,7 +12264,8 @@
     "title": "Samsung Galaxy S22 Ultra 5G 12/256Gb",
     "price": 3630,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "20614013": {
     "logged": true,
@@ -12272,7 +12274,8 @@
     "title": "Телефон Самсунг А13",
     "price": 1050,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "25115128": {
     "logged": true,
@@ -12757,5 +12760,32 @@
     "price": 3450,
     "condition": "Б/у",
     "model_key": "samsung a56"
+  },
+  "99411264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17209941_apple-iphone-12-64-gb-white/",
+    "title": "Apple iPhone 12, 64 gb, White",
+    "price": 2650,
+    "condition": "Б/у",
+    "model_key": "apple 12"
+  },
+  "10817512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17112108_apple-iphone-17-pro-max-512-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 512 gb, Silver",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
+  },
+  "29417512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17109294_apple-iphone-17-pro-max-512-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 512 gb, Silver Дубликат",
+    "price": 1599,
+    "condition": "Б/у",
+    "model_key": null
   }
 }

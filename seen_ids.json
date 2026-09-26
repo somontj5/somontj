@@ -12817,7 +12817,8 @@
     "price": 1550,
     "condition": "Б/у",
     "model_key": "huawei honor x7c duoc 6 128",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "77514128": {
     "logged": true,

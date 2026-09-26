@@ -13050,5 +13050,25 @@
     "condition": "Б/у",
     "model_key": "samsung a17",
     "verified_model": null
+  },
+  "21207714": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17212077_xiaomi-redmi-note-14-pro/",
+    "title": "Xiaomi Redmi Note 14 pro",
+    "price": 2300,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro",
+    "verified_model": null
+  },
+  "72121652": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17212165_tecno-pova-neo-2/",
+    "title": "Tecno Pova neo 2",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "tecno pova neo 2",
+    "verified_model": null
   }
 }

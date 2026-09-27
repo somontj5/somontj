@@ -13322,7 +13322,8 @@
     "title": "Samsung Galaxy S10+",
     "price": 3500,
     "condition": "Б/у",
-    "model_key": "samsung s10 plus"
+    "model_key": "samsung s10 plus",
+    "sold_checked": true
   },
   "11012885": {
     "logged": true,
@@ -13331,7 +13332,8 @@
     "title": "Samsung Galaxy S10 128/8Gb Carea 5G",
     "price": 1050,
     "condition": "Б/у",
-    "model_key": "samsung s10 carea"
+    "model_key": "samsung s10 carea",
+    "sold_checked": true
   },
   "47415256": {
     "logged": true,
@@ -13341,7 +13343,8 @@
     "price": 5900,
     "condition": "Б/у",
     "model_key": "apple 15 pro max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "89516256": {
     "logged": true,
@@ -13804,5 +13807,33 @@
     "condition": "Б/у",
     "model_key": "apple 15 pro",
     "verified_model": null
+  },
+  "21796415": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17217964_samsung-a15/",
+    "title": "Samsung Galaxy A15",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "samsung a15",
+    "verified_model": null
+  },
+  "35518310": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16735518_samsung-b310e/",
+    "title": "Samsung B310E",
+    "price": 150,
+    "condition": "Б/у",
+    "model_key": "samsung b310 e"
+  },
+  "62454072": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16245407_samsung-galaxy-2j-kore/",
+    "title": "Samsung Galaxy J2 core +",
+    "price": 350,
+    "condition": "Б/у",
+    "model_key": "samsung j2 core"
   }
 }

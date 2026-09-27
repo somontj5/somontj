@@ -14010,7 +14010,8 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "samsung s20fe",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "63676022": {
     "logged": true,
@@ -14517,6 +14518,17 @@
     "price": 1900,
     "condition": "Б/у",
     "model_key": "samsung s10 plus",
+    "verified_model": null
+  },
+  "28015256": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17221280_apple-iphone-15-pro-max-256-gb-white-titanium/",
+    "title": "Apple iPhone 15 Pro Max, 256 gb, White Titanium",
+    "price": 5600,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro max",
     "verified_model": null
   }
 }

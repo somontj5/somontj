@@ -13527,7 +13527,8 @@
     "title": "Nokia 105",
     "price": 130,
     "condition": "Б/у",
-    "model_key": "nokia 105"
+    "model_key": "nokia 105",
+    "sold_checked": true
   },
   "85691841": {
     "logged": true,

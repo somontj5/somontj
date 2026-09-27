@@ -13198,7 +13198,8 @@
     "price": 750,
     "condition": "Б/у",
     "model_key": "apple 6s",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "71574346": {
     "logged": true,

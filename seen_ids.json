@@ -13910,7 +13910,8 @@
     "price": 550,
     "condition": "Б/у",
     "model_key": "samsung a10",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "21807564": {
     "logged": true,
@@ -14432,6 +14433,16 @@
     "price": 3999,
     "condition": "Б/у",
     "model_key": "apple 14",
+    "verified_model": null
+  },
+  "72210599": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17221059_xiaomi-redmi-note-9/",
+    "title": "Xiaomi Redmi Note 9",
+    "price": 601,
+    "condition": "Б/у",
+    "model_key": "redmi note 9",
     "verified_model": null
   }
 }

@@ -13953,7 +13953,8 @@
     "price": 90,
     "condition": "Б/у",
     "model_key": "honor",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "39715256": {
     "logged": true,
@@ -14444,5 +14445,14 @@
     "condition": "Б/у",
     "model_key": "redmi note 9",
     "verified_model": null
+  },
+  "25682026": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17218032_telefon-infinx-hot-60i-256-8gb-2026/",
+    "title": "Infinx HOT 60i 256/8Gb 2026",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "infinix hot 60i 2026"
   }
 }

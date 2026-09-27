@@ -12997,7 +12997,8 @@
     "price": 750,
     "condition": "Б/у",
     "model_key": "redmi a3x",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "21162833": {
     "logged": true,
@@ -13584,5 +13585,15 @@
     "price": 1640,
     "condition": "Б/у",
     "model_key": "samsung а 24 dual sim"
+  },
+  "74008256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17119417_honor-400lite-8-256/",
+    "title": "Honor 400 Lite 8/256gb",
+    "price": 2200,
+    "condition": "Б/у",
+    "model_key": "honor 400 lite",
+    "verified_model": null
   }
 }

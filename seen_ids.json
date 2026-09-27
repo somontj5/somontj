@@ -13506,7 +13506,8 @@
     "price": 16000,
     "condition": "Б/у",
     "model_key": "apple 17 pro max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "48177256": {
     "logged": true,
@@ -14051,6 +14052,16 @@
     "price": 550,
     "condition": "Б/у",
     "model_key": "samsung a20",
+    "verified_model": null
+  },
+  "19200128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17219200_apple-iphone-xr-128-gb-black/",
+    "title": "Apple iPhone Xr, 128 gb, Black",
+    "price": 1550,
+    "condition": "Б/у",
+    "model_key": "apple xr",
     "verified_model": null
   }
 }

@@ -13774,6 +13774,13 @@
     "verified_model": null
   },
   "30914271": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16309142_samsung-a71/",
+    "title": "Samsung Galaxy A71",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "samsung a71",
+    "verified_model": null
   }
 }

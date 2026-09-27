@@ -13899,7 +13899,8 @@
     "title": "Samsung Galaxy S21Fe 128/6Gb Vetnam 2sim",
     "price": 2100,
     "condition": "Б/у",
-    "model_key": "samsung s21fe vetnam 2sim"
+    "model_key": "samsung s21fe vetnam 2sim",
+    "sold_checked": true
   },
   "84959010": {
     "logged": true,
@@ -14409,6 +14410,17 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "itel",
+    "verified_model": null
+  },
+  "04315256": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17219043_apple-iphone-15-256-gb-black/",
+    "title": "Apple iPhone 15, 256 gb, Black",
+    "price": 5249,
+    "condition": "Б/у",
+    "model_key": "apple 15",
     "verified_model": null
   }
 }

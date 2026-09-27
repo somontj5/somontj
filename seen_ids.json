@@ -12834,7 +12834,8 @@
     "title": "Apple iPhone 17 Pro Max, 512 gb, Silver Дубликат",
     "price": 1599,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "82315256": {
     "logged": true,
@@ -13450,6 +13451,16 @@
     "price": 3260,
     "condition": "Б/у",
     "model_key": "samsung a56",
+    "verified_model": null
+  },
+  "78717256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17215787_apple-iphone-17-pro-max-256-gb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
+    "price": 16000,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max",
     "verified_model": null
   }
 }

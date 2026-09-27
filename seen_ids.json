@@ -13966,7 +13966,8 @@
     "price": 4500,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "67012256": {
     "logged": true,

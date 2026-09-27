@@ -12731,7 +12731,8 @@
     "title": "Samsung Galaxy S23 Ultra 12/256Gb Duos Vietnam",
     "price": 3850,
     "condition": "Б/у",
-    "model_key": "samsung s23 ultra duos"
+    "model_key": "samsung s23 ultra duos",
+    "sold_checked": true
   },
   "44013325": {
     "logged": true,
@@ -13371,6 +13372,16 @@
     "price": 9999,
     "condition": "Б/у",
     "model_key": "apple 17 pro max",
+    "verified_model": null
+  },
+  "72146068": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17214606_redmi-8a/",
+    "title": "Xiaomi Redmi 8A",
+    "price": 350,
+    "condition": "Б/у",
+    "model_key": "redmi 8a",
     "verified_model": null
   }
 }

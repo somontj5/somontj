@@ -13546,7 +13546,8 @@
     "price": 750,
     "condition": "Б/у",
     "model_key": "redmi 10c 128",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "12025625": {
     "logged": true,
@@ -14063,6 +14064,16 @@
     "price": 1550,
     "condition": "Б/у",
     "model_key": "apple xr",
+    "verified_model": null
+  },
+  "17219232": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17219232_favran-furukhtan-darkor/",
+    "title": "Samsung Galaxy a 52",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "samsung a 52",
     "verified_model": null
   }
 }

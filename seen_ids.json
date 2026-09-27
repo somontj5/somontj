@@ -13673,7 +13673,8 @@
     "price": 1199,
     "condition": "Б/у",
     "model_key": "apple 11 pro max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "21708210": {
     "logged": true,

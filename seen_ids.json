@@ -13353,7 +13353,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
     "price": 10200,
     "condition": "Б/у",
-    "model_key": "apple 16 pro max"
+    "model_key": "apple 16 pro max",
+    "sold_checked": true
   },
   "32217256": {
     "logged": true,
@@ -13854,6 +13855,16 @@
     "price": 550,
     "condition": "Б/у",
     "model_key": "samsung a10",
+    "verified_model": null
+  },
+  "21807564": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17218075_apple-iphone-xr-64-gb-black/",
+    "title": "Apple iPhone Xr, 64 gb, Black",
+    "price": 1350,
+    "condition": "Б/у",
+    "model_key": "apple xr",
     "verified_model": null
   }
 }

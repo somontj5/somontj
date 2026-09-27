@@ -12878,7 +12878,8 @@
     "title": "Apple iPhone 14 Pro, 128 gb, Deep Purple",
     "price": 4600,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "23332017": {
     "logged": true,
@@ -13514,5 +13515,15 @@
     "price": 2740,
     "condition": "Б/у",
     "model_key": "samsung s20 ultra"
+  },
+  "11412512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16406661_xiaomi-14-black-12-512gb-global-version/",
+    "title": "Xiaomi 14 Black 12/512GB Global version",
+    "price": 5500,
+    "condition": "Б/у",
+    "model_key": "xiaomi 14",
+    "verified_model": null
   }
 }

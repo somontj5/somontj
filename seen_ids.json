@@ -13773,7 +13773,8 @@
     "price": 1250,
     "condition": "Б/у",
     "model_key": "apple xr",
-    "sold_check_attempts": 1
+    "sold_check_attempts": 1,
+    "sold_checked": true
   },
   "61212128": {
     "logged": true,

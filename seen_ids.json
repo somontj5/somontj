@@ -13536,7 +13536,8 @@
     "title": "Samsung Galaxy A41",
     "price": 650,
     "condition": "Б/у",
-    "model_key": "samsung a41"
+    "model_key": "samsung a41",
+    "sold_checked": true
   },
   "00410128": {
     "logged": true,
@@ -14075,5 +14076,14 @@
     "condition": "Б/у",
     "model_key": "samsung a 52",
     "verified_model": null
+  },
+  "39714128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16053397_redmi-note-14-128-gb/",
+    "title": "Xiaomi Redmi Note 14 128 gb",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "redmi note 14"
   }
 }

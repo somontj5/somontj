@@ -13362,7 +13362,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
     "price": 14700,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "01886825": {
     "logged": true,
@@ -13844,5 +13845,15 @@
     "price": 2100,
     "condition": "Б/у",
     "model_key": "samsung s21fe vetnam 2sim"
+  },
+  "84959010": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16849590_samsung-galaxy-a10/",
+    "title": "Samsung Galaxy A10",
+    "price": 550,
+    "condition": "Б/у",
+    "model_key": "samsung a10",
+    "verified_model": null
   }
 }

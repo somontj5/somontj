@@ -13609,7 +13609,8 @@
     "title": "Xiaomi Redmi 11 Note 64gb",
     "price": 1050,
     "condition": "Б/у",
-    "model_key": "redmi 11 note"
+    "model_key": "redmi 11 note",
+    "sold_checked": true
   },
   "21647516": {
     "logged": true,
@@ -13619,7 +13620,8 @@
     "price": 1250,
     "condition": "Б/у",
     "model_key": "samsung a16",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "63241286": {
     "logged": true,
@@ -14143,5 +14145,24 @@
     "condition": "Б/у",
     "model_key": "apple 17 pro max 1 tb",
     "verified_model": null
+  },
+  "99709128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17219970_telefon-redmi-not-9-128gb/",
+    "title": "Xiaomi Redmi Note 9 128gb",
+    "price": 899,
+    "condition": "Б/у",
+    "model_key": "redmi note 9",
+    "verified_model": null
+  },
+  "37892411": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/13378924_samsung-galaxy-a11/",
+    "title": "Samsung Galaxy А11, 32gb",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "samsung а11"
   }
 }

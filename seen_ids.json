@@ -12987,7 +12987,8 @@
     "title": "Samsung Galaxy A56",
     "price": 3650,
     "condition": "Б/у",
-    "model_key": "samsung a56"
+    "model_key": "samsung a56",
+    "sold_checked": true
   },
   "72114773": {
     "logged": true,
@@ -13008,7 +13009,8 @@
     "price": 400,
     "condition": "Б/у",
     "model_key": null,
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "57913256": {
     "logged": true,
@@ -13605,5 +13607,18 @@
     "price": 3260,
     "condition": "Б/у",
     "model_key": "samsung а56"
+  },
+  "17216594": {
+    "logged": true
+  },
+  "16569864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17216569_apple-iphone-8-plus-64-gb-space-grey/",
+    "title": "Apple iPhone 8 plus, 64 gb, Space Grey",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "apple 8 plus",
+    "verified_model": null
   }
 }

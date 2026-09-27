@@ -13451,7 +13451,8 @@
     "price": 1650,
     "condition": "Б/у",
     "model_key": "redmi note 14",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "12101288": {
     "logged": true,
@@ -14007,6 +14008,16 @@
     "price": 2299,
     "condition": "Б/у",
     "model_key": "samsung s22",
+    "verified_model": null
+  },
+  "18856171": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17218856_apple-iphone-17-pro-max-1-tb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro Max, 1 tb, Cosmic Orange",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max 1 tb",
     "verified_model": null
   }
 }

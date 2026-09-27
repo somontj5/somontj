@@ -13460,7 +13460,8 @@
     "title": "Samsung Galaxy S10 128/8Gb Carea",
     "price": 1450,
     "condition": "Б/у",
-    "model_key": "samsung s10 carea"
+    "model_key": "samsung s10 carea",
+    "sold_checked": true
   },
   "15219165": {
     "logged": true,
@@ -13977,6 +13978,35 @@
     "price": 1600,
     "condition": "Б/у",
     "model_key": "apple 12 pro",
+    "verified_model": null
+  },
+  "21869713": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17218697_redmi-note-13-pro-plus/",
+    "title": "Xiaomi Redmi Note 13 Pro plus",
+    "price": 2700,
+    "condition": "Б/у",
+    "model_key": "redmi note 13 pro plus",
+    "verified_model": null
+  },
+  "64101285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17218764_telefon-samsung-s10-128gb-carea-5g/",
+    "title": "Samsung Galaxy S10 128gb Carea 5G",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "samsung s10"
+  },
+  "21864822": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17218648_samsunggalaxys22/",
+    "title": "Samsung Galaxy S22",
+    "price": 2299,
+    "condition": "Б/у",
+    "model_key": "samsung s22",
     "verified_model": null
   }
 }

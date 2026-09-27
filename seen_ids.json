@@ -12943,7 +12943,8 @@
     "price": 3500,
     "condition": "Б/у",
     "model_key": "apple 13 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "87314256": {
     "logged": true,
@@ -12965,7 +12966,8 @@
     "price": 699,
     "condition": "Б/у",
     "model_key": "apple 8 plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "08915256": {
     "logged": true,
@@ -13545,5 +13547,42 @@
     "condition": "Б/у",
     "model_key": "samsung s23 ultra",
     "verified_model": null
+  },
+  "95515310": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16495515_samsung-b310e/",
+    "title": "Samsung E1202i",
+    "price": 140,
+    "condition": "Б/у",
+    "model_key": "samsung e1202i"
+  },
+  "64141164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17216414_telefon-redmi-11-note-64gb/",
+    "title": "Xiaomi Redmi 11 Note 64gb",
+    "price": 1050,
+    "condition": "Б/у",
+    "model_key": "redmi 11 note"
+  },
+  "21647516": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17216475_galaxy-a16/",
+    "title": "Samsung Galaxy A16",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "samsung a16",
+    "verified_model": null
+  },
+  "63241286": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17216463_telefon-samsung-24-128-6gb-dual-sim/",
+    "title": "Samsung Galaxy А 24 128/6Gb Dual sim",
+    "price": 1640,
+    "condition": "Б/у",
+    "model_key": "samsung а 24 dual sim"
   }
 }

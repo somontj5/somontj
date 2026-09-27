@@ -13722,7 +13722,8 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "infinix smart 8",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "21723554": {
     "logged": true,
@@ -14232,5 +14233,14 @@
     "price": 3280,
     "condition": "Б/у",
     "model_key": "samsung a56 duos"
+  },
+  "82110128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17219821_samsung-galaxy-s10-128gb/",
+    "title": "Samsung Galaxy S10 128Gb",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "samsung s10"
   }
 }

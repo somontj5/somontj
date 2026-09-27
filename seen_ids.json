@@ -13773,7 +13773,8 @@
     "title": "Samsung galaxy Note 20 Ultra 256Gb 2sim 5G",
     "price": 2750,
     "condition": "Б/у",
-    "model_key": "samsung note 20 ultra"
+    "model_key": "samsung note 20 ultra",
+    "sold_checked": true
   },
   "14561285": {
     "logged": true,
@@ -14284,6 +14285,26 @@
     "price": 4999,
     "condition": "Б/у",
     "model_key": "apple 14 pro",
+    "verified_model": null
+  },
+  "40514128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17219405_apple-iphone-14-pro-128-gb-silver/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Silver",
+    "price": 5200,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro",
+    "verified_model": null
+  },
+  "22047664": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17220476_apple-iphone-xs-max-64-gb-gold/",
+    "title": "Apple iPhone Xs Max, 64 gb, Gold",
+    "price": 1950,
+    "condition": "Б/у",
+    "model_key": "apple xs max",
     "verified_model": null
   }
 }

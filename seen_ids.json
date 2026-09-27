@@ -13302,7 +13302,8 @@
     "condition": "Б/у",
     "model_key": "samsung м12",
     "verified_model": null,
-    "sold_check_attempts": 1
+    "sold_check_attempts": 1,
+    "sold_checked": true
   },
   "09139400": {
     "logged": true,

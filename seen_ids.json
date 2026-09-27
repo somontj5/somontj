@@ -12846,7 +12846,8 @@
     "price": 6500,
     "condition": "Б/у",
     "model_key": "apple 15 pro max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "98176128": {
     "logged": true,

@@ -14474,5 +14474,16 @@
     "price": 3640,
     "condition": "Б/у",
     "model_key": "samsung s23 ultra"
+  },
+  "15612128": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17221156_apple-iphone-12-pro-128-gb-graphite/",
+    "title": "Apple iPhone 12 pro, 128 gb, Graphite",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro",
+    "verified_model": null
   }
 }

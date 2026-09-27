@@ -13269,7 +13269,8 @@
     "price": 7350,
     "condition": "Б/у",
     "model_key": "apple 15 pro max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "37314128": {
     "logged": true,
@@ -13278,7 +13279,8 @@
     "title": "Apple iPhone 14 Pro Max, 128 gb, Deep Purple",
     "price": 6300,
     "condition": "Б/у",
-    "model_key": "apple 14 pro max"
+    "model_key": "apple 14 pro max",
+    "sold_checked": true
   },
   "32812128": {
     "logged": true,
@@ -13751,5 +13753,24 @@
     "price": 860,
     "condition": "Б/у",
     "model_key": "redmi note 9"
+  },
+  "17209128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17217209_apple-iphone-xr-128-gb-blue/",
+    "title": "Apple iPhone Xr, 128 gb, Blue",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "apple xr"
+  },
+  "61212128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15057612_apple-iphone-12-pro-128-gb-graphite/",
+    "title": "Apple iPhone 12 pro, 128 gb, Graphite",
+    "price": 3500,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro",
+    "verified_model": null
   }
 }

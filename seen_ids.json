@@ -13204,7 +13204,8 @@
     "price": 450,
     "condition": "Б/у",
     "model_key": "honor",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "83315128": {
     "logged": true,
@@ -13213,7 +13214,8 @@
     "title": "Apple iPhone 15 Pro, 128 gb, Natural Titanium",
     "price": 6990,
     "condition": "Б/у",
-    "model_key": "apple 15 pro"
+    "model_key": "apple 15 pro",
+    "sold_checked": true
   },
   "12860632": {
     "logged": true,
@@ -13710,5 +13712,14 @@
     "price": 999,
     "condition": "Б/у",
     "model_key": "samsung s10 carea"
+  },
+  "02025625": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17215140_telefon-samsung-note-20-ultra-256gb-2sim-vetnam-5g/",
+    "title": "Samsung galaxy Note 20 Ultra 256Gb 2sim 5G",
+    "price": 2750,
+    "condition": "Б/у",
+    "model_key": "samsung note 20 ultra"
   }
 }

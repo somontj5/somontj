@@ -13237,7 +13237,8 @@
     "condition": "Б/у",
     "model_key": "honor magic v6",
     "verified_model": null,
-    "sold_check_attempts": 1
+    "sold_check_attempts": 1,
+    "sold_checked": true
   },
   "42914256": {
     "logged": true,

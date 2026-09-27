@@ -13117,7 +13117,8 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "tecno pova neo 2",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "41913128": {
     "logged": true,
@@ -13658,6 +13659,16 @@
     "price": 3999,
     "condition": "Б/у",
     "model_key": "apple 13 pro max",
+    "verified_model": null
+  },
+  "61419644": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/13261419_tel-nav-64kh4/",
+    "title": "Infinix Smart 8, 64 gb",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "infinix smart 8",
     "verified_model": null
   }
 }

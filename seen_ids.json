@@ -13976,7 +13976,8 @@
     "price": 750,
     "condition": "Б/у",
     "model_key": "apple 6s",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "72185245": {
     "logged": true,
@@ -13987,7 +13988,8 @@
     "price": 3600,
     "condition": "Б/у",
     "model_key": "samsung z flip 5",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "44014128": {
     "logged": true,
@@ -13997,7 +13999,8 @@
     "price": 6499,
     "condition": "Б/у",
     "model_key": "apple 14 pro max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "21860420": {
     "logged": true,
@@ -14484,6 +14487,36 @@
     "price": 2500,
     "condition": "Б/у",
     "model_key": "apple 12 pro",
+    "verified_model": null
+  },
+  "72213308": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17221330_redmi-not-8pro/",
+    "title": "Xiaomi Redmi note 8pro",
+    "price": 300,
+    "condition": "Б/у",
+    "model_key": "redmi note 8pro",
+    "verified_model": null
+  },
+  "17215752": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17215752_telefon/",
+    "title": "Samsung GalaxyА54",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "samsung galaxyа54",
+    "verified_model": null
+  },
+  "22130110": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17221301_samsung-s10/",
+    "title": "Samsung galaxy s10+",
+    "price": 1900,
+    "condition": "Б/у",
+    "model_key": "samsung s10 plus",
     "verified_model": null
   }
 }

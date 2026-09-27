@@ -13711,7 +13711,8 @@
     "price": 3999,
     "condition": "Б/у",
     "model_key": "apple 13 pro max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "61419644": {
     "logged": true,

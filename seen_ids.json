@@ -13558,7 +13558,8 @@
     "title": "Samsung Galaxy S20 Ultra 256Gb 2sim 5G",
     "price": 2740,
     "condition": "Б/у",
-    "model_key": "samsung s20 ultra"
+    "model_key": "samsung s20 ultra",
+    "sold_checked": true
   },
   "11412512": {
     "logged": true,
@@ -13568,7 +13569,8 @@
     "price": 5500,
     "condition": "Б/у",
     "model_key": "xiaomi 14",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "43015128": {
     "logged": true,
@@ -13577,7 +13579,8 @@
     "title": "Xiaomi Redmi Note 15 128gb",
     "price": 1480,
     "condition": "Б/у",
-    "model_key": "redmi note 15"
+    "model_key": "redmi note 15",
+    "sold_checked": true
   },
   "62312256": {
     "logged": true,
@@ -13587,7 +13590,8 @@
     "price": 5800,
     "condition": "Б/у",
     "model_key": "samsung s23 ultra",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "95515310": {
     "logged": true,
@@ -13624,7 +13628,8 @@
     "title": "Samsung Galaxy А 24 128/6Gb Dual sim",
     "price": 1640,
     "condition": "Б/у",
-    "model_key": "samsung а 24 dual sim"
+    "model_key": "samsung а 24 dual sim",
+    "sold_checked": true
   },
   "74008256": {
     "logged": true,
@@ -14096,6 +14101,47 @@
     "price": 3570,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra",
+    "verified_model": null
+  },
+  "91511464": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17219915_telefon-redmi-not-11-4-64gb/",
+    "title": "Xiaomi Redmi Note 11 4/64gb",
+    "price": 1140,
+    "condition": "Б/у",
+    "model_key": "redmi note 11",
+    "verified_model": null
+  },
+  "21990556": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17219905_samsung-galaxy-a56/",
+    "title": "Samsung Galaxy A56",
+    "price": 2750,
+    "condition": "Б/у",
+    "model_key": "samsung a56",
+    "verified_model": null
+  },
+  "98391064": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17219839_telefon-redmi-10s-64gb/",
+    "title": "Xiaomi Redmi 10C 64gb",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "redmi 10c",
+    "verified_model": null
+  },
+  "19849171": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17219849_apple-iphone-17-pro-max-1-tb-deep-blue/",
+    "title": "Apple iPhone 17 Pro Max, 1 tb, Deep Blue",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max 1 tb",
     "verified_model": null
   }
 }

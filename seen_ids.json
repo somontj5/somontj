@@ -13471,7 +13471,8 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "samsung a16",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "21546330": {
     "logged": true,
@@ -13955,6 +13956,26 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "samsung s20fe",
+    "verified_model": null
+  },
+  "63676022": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16636760_samsung-galaxys-22-ultra/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 4500,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra",
+    "verified_model": null
+  },
+  "67012256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17218670_apple-iphone-12-pro-256-gb-pacific-blue/",
+    "title": "Apple iPhone 12 pro, 256 gb, Pacific Blue",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro",
     "verified_model": null
   }
 }

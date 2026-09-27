@@ -13869,7 +13869,8 @@
     "price": 600,
     "condition": "Б/у",
     "model_key": "samsung a15",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "35518310": {
     "logged": true,
@@ -14398,6 +14399,16 @@
     "price": 4300,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra",
+    "verified_model": null
+  },
+  "20481128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17220481_telefon-dar-kholati-khub-karor-dorad-imai-shudagi-pamiat-128-korobka-dakumend-khaiad/",
+    "title": "Телефон Itel",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "itel",
     "verified_model": null
   }
 }

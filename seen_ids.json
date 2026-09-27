@@ -13751,7 +13751,8 @@
     "title": "Samsung Galaxy A54",
     "price": 1550,
     "condition": "Б/у",
-    "model_key": "samsung a54"
+    "model_key": "samsung a54",
+    "sold_checked": true
   },
   "91012885": {
     "logged": true,
@@ -14242,5 +14243,14 @@
     "price": 999,
     "condition": "Б/у",
     "model_key": "samsung s10"
+  },
+  "77756128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17219777_telefon-samsung-a56-128gb/",
+    "title": "Samsung Galaxy А56 128гб",
+    "price": 2980,
+    "condition": "Б/у",
+    "model_key": "samsung а56"
   }
 }

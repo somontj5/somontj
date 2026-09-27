@@ -13385,7 +13385,8 @@
     "price": 4300,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17214192": {
     "logged": true,
@@ -13877,6 +13878,26 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "apple xs",
+    "verified_model": null
+  },
+  "18237100": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17218237_telefon-100-rastamozhka-dorad/",
+    "title": "Samsung Galaxy A32",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "samsung a32",
+    "verified_model": null
+  },
+  "76322019": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17218276_push-shikastagi-ekran-rakh-pamiat-32-2019/",
+    "title": "Телефон Honor",
+    "price": 90,
+    "condition": "Б/у",
+    "model_key": "honor",
     "verified_model": null
   }
 }

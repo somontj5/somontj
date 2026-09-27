@@ -13638,5 +13638,15 @@
     "condition": "Б/у",
     "model_key": "apple 11 pro max",
     "verified_model": null
+  },
+  "21708210": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17217082_redmi-10s/",
+    "title": "Xiaomi Redmi 10C",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "redmi 10c",
+    "verified_model": null
   }
 }

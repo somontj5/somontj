@@ -13107,7 +13107,8 @@
     "price": 2300,
     "condition": "Б/у",
     "model_key": "redmi note 14 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "72121652": {
     "logged": true,
@@ -13191,7 +13192,8 @@
     "title": "Apple iPhone Xr, 128 gb, White",
     "price": 1800,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "17212751": {
     "logged": true,
@@ -13670,5 +13672,33 @@
     "condition": "Б/у",
     "model_key": "infinix smart 8",
     "verified_model": null
+  },
+  "21723554": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17217235_samsung-a54/",
+    "title": "Samsung Galaxy А54",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "samsung а54"
+  },
+  "21723922": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17217239_samsung-galaxy-s22/",
+    "title": "Samsung Galaxy S22",
+    "price": 2350,
+    "condition": "Б/у",
+    "model_key": "samsung s22",
+    "verified_model": null
+  },
+  "21725654": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17217256_samsung-a54/",
+    "title": "Samsung Galaxy A54",
+    "price": 1550,
+    "condition": "Б/у",
+    "model_key": "samsung a54"
   }
 }

@@ -13385,5 +13385,15 @@
     "condition": "Б/у",
     "model_key": "redmi 8a",
     "verified_model": null
+  },
+  "01913128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17215019_apple-iphone-13-pro-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
+    "price": 4500,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro",
+    "verified_model": null
   }
 }

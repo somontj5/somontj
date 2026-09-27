@@ -13484,7 +13484,8 @@
     "price": 780,
     "condition": "Б/у",
     "model_key": "samsung a30s",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "81561285": {
     "logged": true,
@@ -13494,7 +13495,8 @@
     "price": 3260,
     "condition": "Б/у",
     "model_key": "samsung a56",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "78717256": {
     "logged": true,
@@ -14018,6 +14020,37 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "apple 17 pro max 1 tb",
+    "verified_model": null
+  },
+  "05314128": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17219053_apple-iphone-14-pro-128-gb-space-black/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Space Black",
+    "price": 4900,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro",
+    "verified_model": null
+  },
+  "45213256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17215452_apple-iphone-13-pro-max-256-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro Max, 256 gb, Sierra Blue",
+    "price": 3999,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max",
+    "verified_model": null
+  },
+  "21545420": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17215454_samsung-a20/",
+    "title": "Samsung Galaxy A20",
+    "price": 550,
+    "condition": "Б/у",
+    "model_key": "samsung a20",
     "verified_model": null
   }
 }

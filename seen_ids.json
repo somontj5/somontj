@@ -13407,7 +13407,8 @@
     "price": 950,
     "condition": "Б/у",
     "model_key": "samsung a23 128",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "56917256": {
     "logged": true,
@@ -13428,7 +13429,8 @@
     "price": 350,
     "condition": "Б/у",
     "model_key": "redmi 8a",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "01913128": {
     "logged": true,
@@ -13910,6 +13912,37 @@
     "price": 6800,
     "condition": "Б/у",
     "model_key": "apple 15 pro",
+    "verified_model": null
+  },
+  "18536632": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17218536_apple-iphone-6s-32-gb/",
+    "title": "Apple iPhone 6s, 32 gb",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "apple 6s",
+    "verified_model": null
+  },
+  "72185245": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17218524_z-flip-5/",
+    "title": "Samsung Galaxy Z flip 5",
+    "price": 3600,
+    "condition": "Б/у",
+    "model_key": "samsung z flip 5",
+    "verified_model": null
+  },
+  "44014128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17218440_apple-iphone-14-pro-max-128-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro Max, 128 gb, Deep Purple",
+    "price": 6499,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max",
     "verified_model": null
   }
 }

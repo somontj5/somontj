@@ -333,8 +333,8 @@
   "52612256": {
     "logged": true,
     "notified": true,
-    "photo_ok": false,
-    "condition": "Новый",
+    "photo_ok": true,
+    "condition": "Б/у",
     "memory": 256,
     "description": "Samsung Galaxy S26 Ultra 12/256Gb 12 699 c. №15792765 in Душанбе  - Samsung - бесплатные объявления куплю продам б/у Somon.tj Категории Найти Вход Подать объявление Мобильная версия сайта Связаться с нами Карта сайта Карта районов Помощь Безопасность Наши вакансии Пользовательское соглашение Оферта на оказание платных услуг Лицензионный договор Политика конфиденциальности Прейскурант Архив редакций Правил сайта Cезон отзывов в Somon.tj Подать объявление Наведите камеру и установите приложение larixonclassifieds.com Найти Все объявления Телефоны и связь Мобильные телефоны Samsung Samsung Galaxy S26 Ultra 12/256Gb Душанбе Сегодня 148 ID: 15792765 70 IMEI телефона в белом списке IMEI : 3501459 XXXXXX 5 Модель : SAMSUNG Galaxy S26 Ultra (SM-S948B) Модель: Galaxy S26 Ultra Состояние: Новый Встроенная память: 256 gb Описание 📱S26 Ultra 12/256 Black&white&Violet\r\n\r\n✅Имей Гузаштаги Таёр 💯 % \r\n\r\n🔥Телефон новый Запечатанный! \r\n⚡️Год гарантия от магазина\r\n🎁Ламинат в подарок\r\n🚚Доставка бесплатно по городу ! 12 699 c. 17 699 c. Показать телефон Начать чат Whatsapp S Mobile.Tj Аккаунт проверен На сайте с Февраля 2025 39 активных объявлений 08:00 - 20:00 Пожаловаться",
     "photo_analysis": {
@@ -349,7 +349,11 @@
       "memory": "256 gb",
       "imei_status": ":",
       "device_model": ":"
-    }
+    },
+    "url": "https://m.somon.tj/adv/17220025_samsung-galaxy-s26-ultra-12-256/",
+    "title": "Samsung Galaxy S26 Ultra 12/256gb",
+    "price": 10800,
+    "model_key": "samsung s26 ultra"
   },
   "53317256": {
     "logged": true,
@@ -13600,7 +13604,8 @@
     "title": "Samsung E1202i",
     "price": 140,
     "condition": "Б/у",
-    "model_key": "samsung e1202i"
+    "model_key": "samsung e1202i",
+    "sold_checked": true
   },
   "64141164": {
     "logged": true,
@@ -13641,7 +13646,8 @@
     "price": 2200,
     "condition": "Б/у",
     "model_key": "honor 400 lite",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "21649456": {
     "logged": true,
@@ -13650,7 +13656,8 @@
     "title": "Samsung Galaxy А56",
     "price": 3260,
     "condition": "Б/у",
-    "model_key": "samsung а56"
+    "model_key": "samsung а56",
+    "sold_checked": true
   },
   "17216594": {
     "logged": true,
@@ -13660,7 +13667,8 @@
     "price": 1600,
     "condition": "Б/у",
     "model_key": "samsung а16",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "16569864": {
     "logged": true,
@@ -13670,7 +13678,8 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "apple 8 plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "68281164": {
     "logged": true,
@@ -14175,5 +14184,42 @@
     "condition": "Б/у",
     "model_key": "apple 17 pro max",
     "verified_model": null
+  },
+  "35553105": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16735553_nokia-105/",
+    "title": "Nokia 105",
+    "price": 150,
+    "condition": "Б/у",
+    "model_key": "nokia 105"
+  },
+  "93415128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17219934_telefon-redmi-not-15s-128gb/",
+    "title": "Xiaomi Redmi Note 15С 128гб",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "redmi note 15с"
+  },
+  "17220026": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17220026_khoroshoe-sostoianie/",
+    "title": "Samsung Galaxy A41",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "samsung a41",
+    "verified_model": null
+  },
+  "99951332": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17219995_samsung-galaxy-a13-32gb/",
+    "title": "Samsung Galaxy A13 32Gb",
+    "price": 1050,
+    "condition": "Б/у",
+    "model_key": "samsung a13"
   }
 }

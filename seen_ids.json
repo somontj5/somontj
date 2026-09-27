@@ -13041,7 +13041,8 @@
     "price": 5200,
     "condition": "Б/у",
     "model_key": "apple 13 pro max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "75512128": {
     "logged": true,
@@ -13647,6 +13648,16 @@
     "price": 650,
     "condition": "Б/у",
     "model_key": "redmi 10c",
+    "verified_model": null
+  },
+  "03113256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17217031_apple-iphone-13-pro-max-256-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro Max, 256 gb, Sierra Blue",
+    "price": 3999,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max",
     "verified_model": null
   }
 }

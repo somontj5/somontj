@@ -13301,7 +13301,8 @@
     "price": 899,
     "condition": "Б/у",
     "model_key": "samsung м12",
-    "verified_model": null
+    "verified_model": null,
+    "sold_check_attempts": 1
   },
   "09139400": {
     "logged": true,
@@ -13310,7 +13311,8 @@
     "title": "Honor 400 LITE",
     "price": 2450,
     "condition": "Б/у",
-    "model_key": "honor 400 lite"
+    "model_key": "honor 400 lite",
+    "sold_checked": true
   },
   "15572510": {
     "logged": true,
@@ -13781,6 +13783,25 @@
     "price": 1250,
     "condition": "Б/у",
     "model_key": "samsung a71",
+    "verified_model": null
+  },
+  "78791064": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17217879_telefon-redmi-10c-64gb/",
+    "title": "Xiaomi Redmi 10C 64Gb",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "redmi 10c"
+  },
+  "79215256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17217792_apple-iphone-15-pro-256-gb-black-titanium/",
+    "title": "Apple iPhone 15 Pro, 256 gb, Black Titanium",
+    "price": 6900,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro",
     "verified_model": null
   }
 }

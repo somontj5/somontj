@@ -13732,7 +13732,8 @@
     "title": "Samsung Galaxy А54",
     "price": 1700,
     "condition": "Б/у",
-    "model_key": "samsung а54"
+    "model_key": "samsung а54",
+    "sold_checked": true
   },
   "21723922": {
     "logged": true,
@@ -13742,7 +13743,8 @@
     "price": 2350,
     "condition": "Б/у",
     "model_key": "samsung s22",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "21725654": {
     "logged": true,
@@ -13761,7 +13763,8 @@
     "title": "Samsung galaxy S10 128/8Gb Carea 5G",
     "price": 999,
     "condition": "Б/у",
-    "model_key": "samsung s10 carea"
+    "model_key": "samsung s10 carea",
+    "sold_checked": true
   },
   "02025625": {
     "logged": true,
@@ -14252,5 +14255,35 @@
     "price": 2980,
     "condition": "Б/у",
     "model_key": "samsung а56"
+  },
+  "17617256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17215176_apple-iphone-17-pro-max-256-gb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
+    "price": 12990,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max",
+    "verified_model": null
+  },
+  "00816256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17215440_honor-600-8-16-256/",
+    "title": "Honor 600 8+16/256gb",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "honor 600 8",
+    "verified_model": null
+  },
+  "41314128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17220413_apple-iphone-14-pro-128-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Deep Purple",
+    "price": 4999,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro",
+    "verified_model": null
   }
 }

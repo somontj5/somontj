@@ -13794,7 +13794,8 @@
     "price": 1100,
     "condition": "Б/у",
     "model_key": "samsung а13",
-    "sold_check_attempts": 1
+    "sold_check_attempts": 1,
+    "sold_checked": true
   },
   "52619128": {
     "logged": true,
@@ -13857,7 +13858,8 @@
     "price": 6900,
     "condition": "Б/у",
     "model_key": "apple 15 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "21796415": {
     "logged": true,
@@ -13876,7 +13878,8 @@
     "title": "Samsung B310E",
     "price": 150,
     "condition": "Б/у",
-    "model_key": "samsung b310 e"
+    "model_key": "samsung b310 e",
+    "sold_checked": true
   },
   "62454072": {
     "logged": true,
@@ -13885,7 +13888,8 @@
     "title": "Samsung Galaxy J2 core +",
     "price": 350,
     "condition": "Б/у",
-    "model_key": "samsung j2 core"
+    "model_key": "samsung j2 core",
+    "sold_checked": true
   },
   "42112862": {
     "logged": true,
@@ -14333,7 +14337,13 @@
     "model_key": "redmi 4х"
   },
   "50409409": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15040940_xiaomi-redmi-9a/",
+    "title": "Xiaomi Redmi 9A",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "redmi 9a"
   },
   "58938610": {
     "logged": true,
@@ -14363,12 +14373,31 @@
     "model_key": "nokia 105"
   },
   "78445120": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16784451_tecno-spark-20s/",
+    "title": "Tecno spark Go 2022",
+    "price": 550,
+    "condition": "Б/у",
+    "model_key": "tecno spark go 2022"
   },
   "26892010": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16268920_samsung-galaxy-a10s/",
+    "title": "Samsung Galaxy А50",
+    "price": 680,
+    "condition": "Б/у",
+    "model_key": "samsung а50"
   },
   "62900922": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16629009_samsung-galaxy-s22-ultra/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra",
+    "verified_model": null
   }
 }

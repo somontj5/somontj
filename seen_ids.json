@@ -12774,7 +12774,8 @@
     "title": "Samsung Galaxy Note 20 Ultra 2sim 5G 256gb",
     "price": 2840,
     "condition": "Б/у",
-    "model_key": "samsung note 20 ultra 2sim"
+    "model_key": "samsung note 20 ultra 2sim",
+    "sold_checked": true
   },
   "20904114": {
     "logged": true,
@@ -13429,6 +13430,26 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "samsung a16",
+    "verified_model": null
+  },
+  "21546330": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17215463_samsung-a30s/",
+    "title": "Samsung Galaxy A30s",
+    "price": 780,
+    "condition": "Б/у",
+    "model_key": "samsung a30s",
+    "verified_model": null
+  },
+  "81561285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17215281_telefon-samsung-a56-128gb-vetnam-5g/",
+    "title": "Samsung Galaxy A56 128gb Vetnam 5G",
+    "price": 3260,
+    "condition": "Б/у",
+    "model_key": "samsung a56",
     "verified_model": null
   }
 }

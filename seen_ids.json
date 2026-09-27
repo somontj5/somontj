@@ -13440,7 +13440,8 @@
     "price": 4500,
     "condition": "Б/у",
     "model_key": "apple 13 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "03141285": {
     "logged": true,
@@ -13943,6 +13944,16 @@
     "price": 6499,
     "condition": "Б/у",
     "model_key": "apple 14 pro max",
+    "verified_model": null
+  },
+  "21860420": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17218604_galaxy-s20fe/",
+    "title": "Samsung Galaxy s20fe",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "samsung s20fe",
     "verified_model": null
   }
 }

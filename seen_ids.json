@@ -13374,7 +13374,8 @@
     "price": 9000,
     "condition": "Б/у",
     "model_key": "samsung s25 ultra",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "23671022": {
     "logged": true,
@@ -13865,6 +13866,16 @@
     "price": 1350,
     "condition": "Б/у",
     "model_key": "apple xr",
+    "verified_model": null
+  },
+  "11759264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17117592_apple-iphone-xs-64-gb-gold/",
+    "title": "Apple iPhone Xs, 64 gb, Gold",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "apple xs",
     "verified_model": null
   }
 }

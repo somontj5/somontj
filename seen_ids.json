@@ -13700,7 +13700,8 @@
     "price": 650,
     "condition": "Б/у",
     "model_key": "redmi 10c",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "03113256": {
     "logged": true,
@@ -14221,5 +14222,14 @@
     "price": 1050,
     "condition": "Б/у",
     "model_key": "samsung a13"
+  },
+  "46568128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17220046_samsung-galaxy-a56-8-128gb-duos-vietnam/",
+    "title": "Samsung Galaxy A56 8/128Gb Duos Vietnam",
+    "price": 3280,
+    "condition": "Б/у",
+    "model_key": "samsung a56 duos"
   }
 }

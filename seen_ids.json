@@ -13783,7 +13783,8 @@
     "title": "Samsung Galaxy A56 128gb",
     "price": 2860,
     "condition": "Б/у",
-    "model_key": "samsung a56"
+    "model_key": "samsung a56",
+    "sold_checked": true
   },
   "24113325": {
     "logged": true,
@@ -13792,7 +13793,8 @@
     "title": "Samsung galaxy А13 32Gb Vetnam 5G",
     "price": 1100,
     "condition": "Б/у",
-    "model_key": "samsung а13"
+    "model_key": "samsung а13",
+    "sold_check_attempts": 1
   },
   "52619128": {
     "logged": true,
@@ -13823,7 +13825,8 @@
     "price": 3500,
     "condition": "Б/у",
     "model_key": "apple 12 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "30914271": {
     "logged": true,
@@ -13833,7 +13836,8 @@
     "price": 1250,
     "condition": "Б/у",
     "model_key": "samsung a71",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "78791064": {
     "logged": true,
@@ -13842,7 +13846,8 @@
     "title": "Xiaomi Redmi 10C 64Gb",
     "price": 750,
     "condition": "Б/у",
-    "model_key": "redmi 10c"
+    "model_key": "redmi 10c",
+    "sold_checked": true
   },
   "79215256": {
     "logged": true,
@@ -14317,5 +14322,53 @@
     "condition": "Б/у",
     "model_key": "apple 17 pro max",
     "verified_model": null
+  },
+  "49457249": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14945724_xiaomi-redmi-9a/",
+    "title": "Xiaomi Redmi 4Х",
+    "price": 360,
+    "condition": "Б/у",
+    "model_key": "redmi 4х"
+  },
+  "50409409": {
+    "logged": true
+  },
+  "58938610": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16589386_xiaomi-redmi-10a/",
+    "title": "Xiaomi Redmi 9A+",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "redmi 9a plus"
+  },
+  "67845316": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16784531_xiaomi-redmi-a6/",
+    "title": "Xiaomi Redmi 5",
+    "price": 400,
+    "condition": "Б/у",
+    "model_key": "redmi 5"
+  },
+  "84323106": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16784323_nokia-106/",
+    "title": "Nokia 105",
+    "price": 150,
+    "condition": "Б/у",
+    "model_key": "nokia 105"
+  },
+  "78445120": {
+    "logged": true
+  },
+  "26892010": {
+    "logged": true
+  },
+  "62900922": {
+    "logged": true
   }
 }

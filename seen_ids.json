@@ -15012,7 +15012,8 @@
     "price": 4000,
     "condition": "Б/у",
     "model_key": "samsung а56",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "23725565": {
     "logged": true,
@@ -15033,7 +15034,8 @@
     "price": 1100,
     "condition": "Б/у",
     "model_key": "redmi 10s",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "04259322": {
     "logged": true,
@@ -15043,7 +15045,8 @@
     "price": 4300,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "16116256": {
     "logged": true,
@@ -15569,5 +15572,33 @@
     "condition": "Б/у",
     "model_key": "redmi 15",
     "verified_model": null
+  },
+  "77232565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17225077_samsung-galaxy-23-ultra-256gb-vetnam-5g/",
+    "title": "Samsung Galaxy 23 Ultra 256Gb Vetnam 5G",
+    "price": 3566,
+    "condition": "Б/у",
+    "model_key": "samsung 23 ultra"
+  },
+  "17227732": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17227732_telefon-dar-kholati-khub/",
+    "title": "Телефон Honor",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "honor",
+    "verified_model": null
+  },
+  "63714256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17227637_apple-iphone-14-pro-256-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro, 256 gb, Deep Purple",
+    "price": 4650,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

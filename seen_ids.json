@@ -14322,7 +14322,8 @@
     "price": 4300,
     "condition": "Б/у",
     "model_key": "honor 600 8",
-    "verified_model": null
+    "verified_model": null,
+    "sold_check_attempts": 1
   },
   "41314128": {
     "logged": true,
@@ -14819,5 +14820,14 @@
     "condition": "Б/у",
     "model_key": "vivo y31 pro",
     "verified_model": null
+  },
+  "22304213": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17223042_samsung-galaxy-f13/",
+    "title": "Samsung galaxy F13",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "samsung f13"
   }
 }

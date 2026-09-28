@@ -15204,7 +15204,8 @@
     "title": "Samsung Galaxy S21 256gb Carea",
     "price": 2350,
     "condition": "Б/у",
-    "model_key": "samsung s21"
+    "model_key": "samsung s21",
+    "sold_checked": true
   },
   "56101285": {
     "logged": true,
@@ -15769,5 +15770,14 @@
     "price": 1350,
     "condition": "Б/у",
     "model_key": "tecno spark 30c"
+  },
+  "57716128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17228577_apple-iphone-16-128-gb-black/",
+    "title": "Apple iPhone 16, 128 gb, Black",
+    "price": 5700,
+    "condition": "Б/у",
+    "model_key": "apple 16"
   }
 }

@@ -14626,7 +14626,8 @@
     "title": "Apple iPhone Xr, 128 gb, Product Red",
     "price": 2799,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "11365128": {
     "logged": true,
@@ -14686,7 +14687,8 @@
     "price": 6800,
     "condition": "Б/у",
     "model_key": "honor 600 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "42277256": {
     "logged": true,
@@ -14707,7 +14709,8 @@
     "price": 650,
     "condition": "Б/у",
     "model_key": "redmi note 10s",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "23129128": {
     "logged": true,
@@ -15164,5 +15167,36 @@
     "price": 899,
     "condition": "Б/у",
     "model_key": "samsung s10"
+  },
+  "23421864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17223421_apple-iphone-8-64-gb-space-grey/",
+    "title": "Apple iPhone 8, 64 gb, Space Grey",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "apple 8",
+    "verified_model": null
+  },
+  "22325652": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17225402_telefon-samsung-s23-ultra-256gb-vetnam-5g-2sim/",
+    "title": "Samsung Galaxy S23 Ultra 256gb Vetnam 5G 2sim",
+    "price": 3577,
+    "condition": "Б/у",
+    "model_key": "samsung s23 ultra",
+    "verified_model": null
+  },
+  "61222565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17225361_telefon-samsung-s22-ultra-256gb-carea-5g/",
+    "title": "Samsung Galaxy S22 Ultra 256Gb Carea 5G",
+    "price": 3588,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra",
+    "verified_model": null
   }
 }

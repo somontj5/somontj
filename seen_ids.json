@@ -14765,7 +14765,8 @@
     "title": "Samsung Galaxy S10 128gb Carea 5G",
     "price": 899,
     "condition": "Б/у",
-    "model_key": "samsung s10"
+    "model_key": "samsung s10",
+    "sold_checked": true
   },
   "16933917": {
     "logged": true,
@@ -15197,6 +15198,26 @@
     "price": 3588,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra",
+    "verified_model": null
+  },
+  "43503325": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17225435_telefon-samsung-a03s-32gb-vetnam-5g/",
+    "title": "Samsung Galaxy А03S 32gb Vetnam 5G",
+    "price": 840,
+    "condition": "Б/у",
+    "model_key": "samsung а03s",
+    "verified_model": null
+  },
+  "23212565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17225423_telefon-samsung-s21-256gb-carea-5g/",
+    "title": "Samsung Galaxy S21 256gb Carea 5G",
+    "price": 2300,
+    "condition": "Б/у",
+    "model_key": "samsung s21",
     "verified_model": null
   }
 }

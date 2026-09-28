@@ -14387,7 +14387,8 @@
     "title": "Xiaomi Redmi 9A",
     "price": 450,
     "condition": "Б/у",
-    "model_key": "redmi 9a"
+    "model_key": "redmi 9a",
+    "sold_checked": true
   },
   "58938610": {
     "logged": true,
@@ -14921,5 +14922,14 @@
     "price": 2800,
     "condition": "Б/у",
     "model_key": "apple xr"
+  },
+  "39618256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17223396_apple-iphone-18-pro-max-256-gb-black/",
+    "title": "Apple iPhone 18 Pro Max, 256 gb, Black дубликат",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": null
   }
 }

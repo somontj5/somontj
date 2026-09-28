@@ -14549,7 +14549,8 @@
     "price": 300,
     "condition": "Б/у",
     "model_key": "redmi note 8pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17215752": {
     "logged": true,
@@ -15079,5 +15080,15 @@
     "price": 1250,
     "condition": "Б/у",
     "model_key": "poco c 85"
+  },
+  "72248461": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17224846_vivo-t1/",
+    "title": "Vivo t1",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "vivo t1",
+    "verified_model": null
   }
 }

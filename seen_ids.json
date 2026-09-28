@@ -15600,5 +15600,15 @@
     "price": 4650,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "22777710": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17227777_redmi-10/",
+    "title": "Xiaomi Redmi 10",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "redmi 10",
+    "verified_model": null
   }
 }

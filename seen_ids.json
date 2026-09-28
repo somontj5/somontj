@@ -15127,7 +15127,8 @@
     "title": "Xiaomi Poco C 85",
     "price": 1250,
     "condition": "Б/у",
-    "model_key": "poco c 85"
+    "model_key": "poco c 85",
+    "sold_checked": true
   },
   "72248461": {
     "logged": true,
@@ -15675,5 +15676,14 @@
     "condition": "Б/у",
     "model_key": "apple 11",
     "verified_model": null
+  },
+  "01513128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17228015_apple-iphone-13-pro-max-128-gb-alpine-green/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Alpine Green",
+    "price": 6000,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
   }
 }

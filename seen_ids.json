@@ -14937,7 +14937,8 @@
     "title": "Samsung galaxy A 36",
     "price": 1950,
     "condition": "Б/у",
-    "model_key": "samsung a 36"
+    "model_key": "samsung a 36",
+    "sold_checked": true
   },
   "92411128": {
     "logged": true,
@@ -14946,7 +14947,8 @@
     "title": "Apple iPhone Xr, 128 gb, Product Red",
     "price": 2699,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "92405128": {
     "logged": true,
@@ -15465,5 +15467,25 @@
     "price": 6500,
     "condition": "Б/у",
     "model_key": "apple 15 pro"
+  },
+  "22742260": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17227422_smartfon-itel-a60s/",
+    "title": "itel a60s",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "itel a60s",
+    "verified_model": null
+  },
+  "22742464": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17227424_apple-iphone-se-64-gb/",
+    "title": "Apple iPhone SE, 64 gb",
+    "price": 749,
+    "condition": "Б/у",
+    "model_key": "apple se",
+    "verified_model": null
   }
 }

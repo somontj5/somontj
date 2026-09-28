@@ -14032,7 +14032,8 @@
     "price": 1600,
     "condition": "Б/у",
     "model_key": "apple 12 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "21869713": {
     "logged": true,
@@ -14529,6 +14530,16 @@
     "price": 5600,
     "condition": "Б/у",
     "model_key": "apple 15 pro max",
+    "verified_model": null
+  },
+  "88846120": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16888461_samsung-s-20/",
+    "title": "Samsung Galaxy S20",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "samsung s20",
     "verified_model": null
   }
 }

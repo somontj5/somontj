@@ -14570,7 +14570,8 @@
     "price": 1900,
     "condition": "Б/у",
     "model_key": "samsung s10 plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "28015256": {
     "logged": true,
@@ -14687,7 +14688,8 @@
     "price": 7000,
     "condition": "Б/у",
     "model_key": "apple air",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "22212410": {
     "logged": true,
@@ -15058,5 +15060,23 @@
     "price": 2800,
     "condition": "Б/у",
     "model_key": "samsung s21 plus"
+  },
+  "66018217": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14660182_samsung-galaxy-a17/",
+    "title": "Samsung Galaxy A17",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "samsung a17"
+  },
+  "22284085": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17222840_xiaomi-poco-c-85/",
+    "title": "Xiaomi Poco C 85",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "poco c 85"
   }
 }

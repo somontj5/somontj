@@ -14871,7 +14871,8 @@
     "price": 2999,
     "condition": "Б/у",
     "model_key": "vivo y31 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "22304213": {
     "logged": true,
@@ -14889,7 +14890,8 @@
     "title": "Tecno Spark Slim",
     "price": 2050,
     "condition": "Б/у",
-    "model_key": "tecno spark slim"
+    "model_key": "tecno spark slim",
+    "sold_checked": true
   },
   "69469914": {
     "logged": true,
@@ -15430,6 +15432,26 @@
     "price": 1250,
     "condition": "Б/у",
     "model_key": "honor x7c 6",
+    "verified_model": null
+  },
+  "22528910": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17225289_xiaomi-redmi-not-10s/",
+    "title": "Xiaomi Redmi note 10S",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "redmi note 10s",
+    "verified_model": null
+  },
+  "53211645": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17225532_telefon-redmi-note-11-64gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 11 64gb Glоbal Version 5G",
+    "price": 1050,
+    "condition": "Б/у",
+    "model_key": "redmi note 11",
     "verified_model": null
   }
 }

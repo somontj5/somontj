@@ -14301,7 +14301,8 @@
     "title": "Samsung Galaxy А56 128гб",
     "price": 2980,
     "condition": "Б/у",
-    "model_key": "samsung а56"
+    "model_key": "samsung а56",
+    "sold_checked": true
   },
   "17617256": {
     "logged": true,
@@ -14797,5 +14798,15 @@
     "price": 300,
     "condition": "Б/у",
     "model_key": "samsung j2 prime"
+  },
+  "56492732": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15649273_samsung-j2/",
+    "title": "Samsung Galaxy J2",
+    "price": 220,
+    "condition": "Б/у",
+    "model_key": "samsung j2",
+    "verified_model": null
   }
 }

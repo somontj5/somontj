@@ -14346,7 +14346,8 @@
     "price": 5200,
     "condition": "Б/у",
     "model_key": "apple 14 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "22047664": {
     "logged": true,
@@ -14841,5 +14842,14 @@
     "price": 2050,
     "condition": "Б/у",
     "model_key": "tecno spark slim"
+  },
+  "69469914": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14694699_samsung-galaxy-a14/",
+    "title": "Samsung Galaxy A14",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "samsung a14"
   }
 }

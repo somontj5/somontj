@@ -14955,7 +14955,8 @@
     "title": "Apple iPhone Xr, 128 gb, Product Red",
     "price": 2699,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "75861128": {
     "logged": true,
@@ -14964,7 +14965,8 @@
     "title": "Apple iPhone Xr, 128 gb, Product Red",
     "price": 2800,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "39618256": {
     "logged": true,
@@ -15454,5 +15456,14 @@
     "condition": "Б/у",
     "model_key": "redmi note 11",
     "verified_model": null
+  },
+  "42515256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17227425_apple-iphone-15-pro-256-gb-blue-titanium/",
+    "title": "Apple iPhone 15 Pro, 256 gb, Blue Titanium",
+    "price": 6500,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro"
   }
 }

@@ -14941,5 +14941,14 @@
     "price": 1600,
     "condition": "Б/у",
     "model_key": "apple 18 pro max"
+  },
+  "22368211": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17223682_xiaomi-redmi-note-11s/",
+    "title": "Xiaomi Redmi Note 11S",
+    "price": 1150,
+    "condition": "Б/у",
+    "model_key": "redmi note 11s"
   }
 }

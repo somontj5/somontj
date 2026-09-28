@@ -15421,5 +15421,15 @@
     "price": 799,
     "condition": "Б/у",
     "model_key": "apple 7 plus"
+  },
+  "72267757": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17226775_honor-x7c/",
+    "title": "Honor X7C 6+6/128gb",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "honor x7c 6",
+    "verified_model": null
   }
 }

@@ -15161,7 +15161,8 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "samsung s21",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "22307817": {
     "logged": true,
@@ -15696,7 +15697,8 @@
     "title": "Samsung Galaxy s22 Ulta 512",
     "price": 4500,
     "condition": "Б/у",
-    "model_key": "samsung s22 ulta 512"
+    "model_key": "samsung s22 ulta 512",
+    "sold_checked": true
   },
   "22374860": {
     "logged": true,
@@ -15706,5 +15708,25 @@
     "price": 1350,
     "condition": "Б/у",
     "model_key": "infinix hot 60i"
+  },
+  "28058205": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17228058_samsung-galaxy-s20-5g/",
+    "title": "Samsung galaxy s20+5G",
+    "price": 2300,
+    "condition": "Б/у",
+    "model_key": "samsung s20",
+    "verified_model": null
+  },
+  "17228040": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17228040_telefon-v-khoroshem-sostoianii/",
+    "title": "Телефон Samsung",
+    "price": 1900,
+    "condition": "Б/у",
+    "model_key": "samsung",
+    "verified_model": null
   }
 }

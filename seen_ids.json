@@ -15108,7 +15108,8 @@
     "title": "Samsung Galaxy S21 plus",
     "price": 2800,
     "condition": "Б/у",
-    "model_key": "samsung s21 plus"
+    "model_key": "samsung s21 plus",
+    "sold_checked": true
   },
   "66018217": {
     "logged": true,
@@ -15666,6 +15667,13 @@
     "verified_model": null
   },
   "79061164": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17227906_apple-iphone-11-64-gb-black/",
+    "title": "Apple iPhone 11, 64 gb, Black",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

@@ -14141,7 +14141,8 @@
     "title": "Xiaomi Redmi Note 14 128 gb",
     "price": 700,
     "condition": "Б/у",
-    "model_key": "redmi note 14"
+    "model_key": "redmi note 14",
+    "sold_checked": true
   },
   "21979622": {
     "logged": true,
@@ -14644,6 +14645,16 @@
     "price": 7000,
     "condition": "Б/у",
     "model_key": "apple air",
+    "verified_model": null
+  },
+  "22212410": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17222124_xiaomi-redmi-note-10s/",
+    "title": "Xiaomi Redmi note 10s",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "redmi note 10s",
     "verified_model": null
   }
 }

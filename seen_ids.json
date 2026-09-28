@@ -14797,7 +14797,8 @@
     "title": "Samsung Galaxy A56 128гб Vetnam 5G",
     "price": 2960,
     "condition": "Б/у",
-    "model_key": "samsung a56"
+    "model_key": "samsung a56",
+    "sold_checked": true
   },
   "23281164": {
     "logged": true,
@@ -15293,6 +15294,26 @@
     "price": 2500,
     "condition": "Б/у",
     "model_key": "samsung s22",
+    "verified_model": null
+  },
+  "22638264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17226382_apple-iphone-x-64-gb-silver/",
+    "title": "Apple iPhone X, 64 gb, Silver",
+    "price": 1350,
+    "condition": "Б/у",
+    "model_key": "apple x",
+    "verified_model": null
+  },
+  "65031164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17226503_apple-iphone-11-64-gb-yellow/",
+    "title": "Apple iPhone 11, 64 gb, Yellow",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "apple 11",
     "verified_model": null
   }
 }

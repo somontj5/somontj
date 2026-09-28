@@ -10594,7 +10594,8 @@
     "title": "Samsung Galaxy S21, 256gb",
     "price": 1100,
     "condition": "Б/у",
-    "model_key": "samsung s21"
+    "model_key": "samsung s21",
+    "sold_checked": true
   },
   "17192805": {
     "logged": true,

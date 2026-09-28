@@ -14291,7 +14291,8 @@
     "title": "Samsung Galaxy S10 128Gb",
     "price": 999,
     "condition": "Б/у",
-    "model_key": "samsung s10"
+    "model_key": "samsung s10",
+    "sold_checked": true
   },
   "77756128": {
     "logged": true,
@@ -14787,5 +14788,14 @@
     "price": 350,
     "condition": "Б/у",
     "model_key": "samsung j2 2018"
+  },
+  "51256732": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15125673_samsung-galaxy-j2-prime/",
+    "title": "Samsung galaxy J2 prime",
+    "price": 300,
+    "condition": "Б/у",
+    "model_key": "samsung j2 prime"
   }
 }

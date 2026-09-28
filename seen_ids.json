@@ -15182,7 +15182,8 @@
     "price": 1999,
     "condition": "Б/у",
     "model_key": "samsung s10",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "25133256": {
     "logged": true,
@@ -15729,5 +15730,14 @@
     "condition": "Б/у",
     "model_key": "samsung",
     "verified_model": null
+  },
+  "22810315": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17228103_redmi-note-15-pro/",
+    "title": "Xiaomi Redmi note 15 pro+",
+    "price": 3999,
+    "condition": "Б/у",
+    "model_key": "redmi note 15 pro plus"
   }
 }

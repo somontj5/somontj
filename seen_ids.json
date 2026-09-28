@@ -14483,7 +14483,8 @@
     "price": 3999,
     "condition": "Б/у",
     "model_key": "apple 14",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "72210599": {
     "logged": true,
@@ -14982,6 +14983,16 @@
     "price": 1100,
     "condition": "Б/у",
     "model_key": "redmi 10s",
+    "verified_model": null
+  },
+  "04259322": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16042593_samsung-galaxy-s-22-ultra/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra",
     "verified_model": null
   }
 }

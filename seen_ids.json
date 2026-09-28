@@ -14756,7 +14756,8 @@
     "title": "Samsung Galaxy S23 Ultra 12/256Gb 2sim Vetnam 5G",
     "price": 3540,
     "condition": "Б/у",
-    "model_key": "samsung s23 ultra 2sim vetnam"
+    "model_key": "samsung s23 ultra 2sim vetnam",
+    "sold_checked": true
   },
   "36101285": {
     "logged": true,
@@ -15218,6 +15219,26 @@
     "price": 2300,
     "condition": "Б/у",
     "model_key": "samsung s21",
+    "verified_model": null
+  },
+  "54999128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17225499_telefon-redmi-note-9-128gb-glabal-version/",
+    "title": "Xiaomi Redmi Note 9 128gb",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "redmi note 9",
+    "verified_model": null
+  },
+  "81202565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17225381_telefon-samsung-note-20-ultra-256gb-vetnam-5g/",
+    "title": "Телефон Самсунг Note 20 Ultra 256Gb Vetnam 5G",
+    "price": 2800,
+    "condition": "Б/у",
+    "model_key": null,
     "verified_model": null
   }
 }

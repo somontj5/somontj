@@ -15739,7 +15739,8 @@
     "title": "Xiaomi Redmi note 15 pro+",
     "price": 3999,
     "condition": "Б/у",
-    "model_key": "redmi note 15 pro plus"
+    "model_key": "redmi note 15 pro plus",
+    "sold_checked": true
   },
   "20016256": {
     "logged": true,

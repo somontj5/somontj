@@ -14581,7 +14581,8 @@
     "price": 5600,
     "condition": "Б/у",
     "model_key": "apple 15 pro max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "88846120": {
     "logged": true,
@@ -15048,5 +15049,14 @@
     "price": 3550,
     "condition": "Б/у",
     "model_key": "apple 13"
+  },
+  "80009121": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14800091_samsung-galaxy-s21-plus/",
+    "title": "Samsung Galaxy S21 plus",
+    "price": 2800,
+    "condition": "Б/у",
+    "model_key": "samsung s21 plus"
   }
 }

@@ -14900,7 +14900,8 @@
     "title": "Samsung Galaxy A14",
     "price": 900,
     "condition": "Б/у",
-    "model_key": "samsung a14"
+    "model_key": "samsung a14",
+    "sold_checked": true
   },
   "05674128": {
     "logged": true,

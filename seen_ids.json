@@ -15022,7 +15022,8 @@
     "price": 4000,
     "condition": "Б/у",
     "model_key": "samsung a56 5 g",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "22381010": {
     "logged": true,
@@ -15558,5 +15559,15 @@
     "price": 1050,
     "condition": "Б/у",
     "model_key": "samsung а13 dual sim"
+  },
+  "22768715": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17227687_redmi-15/",
+    "title": "Xiaomi Redmi 15",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "redmi 15",
+    "verified_model": null
   }
 }

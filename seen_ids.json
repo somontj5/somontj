@@ -14635,7 +14635,8 @@
     "title": "Apple iPhone Xr, 128 gb, Yellow",
     "price": 2700,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "39617512": {
     "logged": true,
@@ -15154,5 +15155,14 @@
     "price": 2350,
     "condition": "Б/у",
     "model_key": "samsung s21"
+  },
+  "56101285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17225056_samsung-galaxy-s10-128gb-carea-5g/",
+    "title": "Samsung Galaxy S10 128gb Carea 5G",
+    "price": 899,
+    "condition": "Б/у",
+    "model_key": "samsung s10"
   }
 }

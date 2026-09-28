@@ -15590,7 +15590,8 @@
     "price": 850,
     "condition": "Б/у",
     "model_key": "honor",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "63714256": {
     "logged": true,

@@ -16,5 +16,14 @@
     "blocked_at": "2026-09-28T16:17:27",
     "updated_at": "2026-09-28T16:17:27",
     "active_ads_at_block": 43
+  },
+  "14775465": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/14775465/",
+    "reason": "у продавца 12 активных объявлений — похоже на магазин/перекупщика",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17225413_telefon-samsung-s10-128gb-carea-5g/",
+    "blocked_at": "2026-09-28T16:39:26",
+    "updated_at": "2026-09-28T16:39:26",
+    "active_ads_at_block": 12
   }
 }

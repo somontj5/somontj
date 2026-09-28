@@ -14323,7 +14323,8 @@
     "condition": "Б/у",
     "model_key": "honor 600 8",
     "verified_model": null,
-    "sold_check_attempts": 1
+    "sold_check_attempts": 1,
+    "sold_checked": true
   },
   "41314128": {
     "logged": true,

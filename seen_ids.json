@@ -9934,7 +9934,8 @@
     "title": "Apple iPhone X, 512 gb, Space Grey",
     "price": 999,
     "condition": "Б/у",
-    "model_key": "apple x"
+    "model_key": "apple x",
+    "sold_checked": true
   },
   "89459215": {
     "logged": true,

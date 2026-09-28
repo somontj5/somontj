@@ -14152,7 +14152,8 @@
     "price": 3570,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "91511464": {
     "logged": true,
@@ -14162,7 +14163,8 @@
     "price": 1140,
     "condition": "Б/у",
     "model_key": "redmi note 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "21990556": {
     "logged": true,
@@ -14173,7 +14175,8 @@
     "price": 2750,
     "condition": "Б/у",
     "model_key": "samsung a56",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "98391064": {
     "logged": true,
@@ -14183,7 +14186,8 @@
     "price": 750,
     "condition": "Б/у",
     "model_key": "redmi 10c",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "19849171": {
     "logged": true,
@@ -14193,7 +14197,8 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "apple 17 pro max 1 tb",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "99709128": {
     "logged": true,
@@ -14656,5 +14661,53 @@
     "condition": "Б/у",
     "model_key": "redmi note 10s",
     "verified_model": null
+  },
+  "23129128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17222312_telefon-redmi-note-9-128gb-glabal-version/",
+    "title": "Xiaomi Redmi Note 9 128gb Global Version",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "redmi note 9"
+  },
+  "71412865": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17222317_telefon-redmi-note-14-128-6gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 14 128/6Gb Global Version 5G",
+    "price": 1650,
+    "condition": "Б/у",
+    "model_key": "redmi note 14"
+  },
+  "30213325": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17222302_telefon-samsung-a13-32gb-vetnam-5g/",
+    "title": "Samsung Galaxy А13 32Gb Vetnam 5G",
+    "price": 1050,
+    "condition": "Б/у",
+    "model_key": "samsung а13"
+  },
+  "77561285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17222277_telefon-samsung-a56-128-vetnam-5g/",
+    "title": "Samsung Galaxy А56 128 Vetnam 5G",
+    "price": 2850,
+    "condition": "Б/у",
+    "model_key": "samsung а56 128 vetnam"
+  },
+  "31225625": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17222251_telefon-samsung-s23-ultra-12-256gb-2sim-vetnam-5g/",
+    "title": "Samsung Galaxy S23 Ultra 12/256Gb 2sim Vetnam 5G",
+    "price": 3540,
+    "condition": "Б/у",
+    "model_key": "samsung s23 ultra 2sim vetnam"
+  },
+  "36101285": {
+    "logged": true
   }
 }

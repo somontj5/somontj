@@ -14806,7 +14806,8 @@
     "title": "Xiaomi Redmi Note 11 64gb Glabal Version",
     "price": 1100,
     "condition": "Б/у",
-    "model_key": "redmi note 11"
+    "model_key": "redmi note 11",
+    "sold_checked": true
   },
   "48711256": {
     "logged": true,
@@ -15281,6 +15282,16 @@
     "price": 3299,
     "condition": "Б/у",
     "model_key": "apple 13",
+    "verified_model": null
+  },
+  "22606222": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17226062_s22/",
+    "title": "Samsung galaxy S22",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "samsung s22",
     "verified_model": null
   }
 }

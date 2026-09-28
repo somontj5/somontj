@@ -14849,7 +14849,8 @@
     "title": "Samsung galaxy J2 prime",
     "price": 300,
     "condition": "Б/у",
-    "model_key": "samsung j2 prime"
+    "model_key": "samsung j2 prime",
+    "sold_checked": true
   },
   "56492732": {
     "logged": true,
@@ -15379,6 +15380,26 @@
     "price": 500,
     "condition": "Б/у",
     "model_key": "apple 7 plus",
+    "verified_model": null
+  },
+  "26860732": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17226860_apple-iphone-7-32-gb/",
+    "title": "Apple iPhone 7, 32 gb",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "apple 7",
+    "verified_model": null
+  },
+  "22680314": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17226803_redmi-not-14-pro/",
+    "title": "Xiaomi Redmi notе 14 pro",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "redmi notе 14 pro",
     "verified_model": null
   }
 }

@@ -14910,7 +14910,8 @@
     "title": "Apple iPhone Xr, 128 gb, Yellow",
     "price": 2700,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "93339128": {
     "logged": true,
@@ -14919,7 +14920,8 @@
     "title": "Apple iPhone Xr, 128 gb, Product Red",
     "price": 2699,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "93323128": {
     "logged": true,
@@ -14928,7 +14930,8 @@
     "title": "Apple iPhone Xr, 128 gb, Product Red",
     "price": 2699,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "22317336": {
     "logged": true,
@@ -15486,6 +15489,34 @@
     "price": 749,
     "condition": "Б/у",
     "model_key": "apple se",
+    "verified_model": null
+  },
+  "01717512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16237017_apple-iphone-17-pro-max-512-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 512 gb, Silver",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
+  },
+  "66952128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15866952_apple-iphone-xr-128-gb-product-red/",
+    "title": "Apple iPhone Xr, 128 gb, Product Red",
+    "price": 2899,
+    "condition": "Б/у",
+    "model_key": "apple xr"
+  },
+  "52030644": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17227520_telefon-samsung-galaxy-a30-64-4/",
+    "title": "Samsung Galaxy A30 64/4",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "samsung a30 64 4",
     "verified_model": null
   }
 }

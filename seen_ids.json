@@ -14819,7 +14819,8 @@
     "title": "Apple iPhone 11, 256 gb, Black",
     "price": 1520,
     "condition": "Б/у",
-    "model_key": "apple 11"
+    "model_key": "apple 11",
+    "sold_checked": true
   },
   "71284211": {
     "logged": true,
@@ -14828,7 +14829,8 @@
     "title": "Samsung Galaxy Grand prime",
     "price": 250,
     "condition": "Б/у",
-    "model_key": "samsung grand prime"
+    "model_key": "samsung grand prime",
+    "sold_checked": true
   },
   "00382018": {
     "logged": true,
@@ -14837,7 +14839,8 @@
     "title": "Samsung Galaxy J2, 2018",
     "price": 350,
     "condition": "Б/у",
-    "model_key": "samsung j2 2018"
+    "model_key": "samsung j2 2018",
+    "sold_checked": true
   },
   "51256732": {
     "logged": true,
@@ -15346,6 +15349,35 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "apple 11",
+    "verified_model": null
+  },
+  "72267739": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17226773_samsung-s9/",
+    "title": "Samsung Galaxy S9+",
+    "price": 2200,
+    "condition": "Б/у",
+    "model_key": "samsung s9 plus",
+    "verified_model": null
+  },
+  "73614128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17226736_apple-iphone-14-pro-128-gb-space-black/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Space Black",
+    "price": 5400,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
+  },
+  "67307256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17226730_apple-iphone-7-plus-256-gb/",
+    "title": "Apple iPhone 7 plus, 256 gb",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "apple 7 plus",
     "verified_model": null
   }
 }

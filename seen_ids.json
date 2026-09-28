@@ -353,7 +353,8 @@
     "url": "https://m.somon.tj/adv/17220025_samsung-galaxy-s26-ultra-12-256/",
     "title": "Samsung Galaxy S26 Ultra 12/256gb",
     "price": 10800,
-    "model_key": "samsung s26 ultra"
+    "model_key": "samsung s26 ultra",
+    "sold_checked": true
   },
   "53317256": {
     "logged": true,
@@ -14247,7 +14248,8 @@
     "title": "Xiaomi Redmi Note 15С 128гб",
     "price": 1400,
     "condition": "Б/у",
-    "model_key": "redmi note 15с"
+    "model_key": "redmi note 15с",
+    "sold_checked": true
   },
   "17220026": {
     "logged": true,
@@ -14257,7 +14259,8 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "samsung a41",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "99951332": {
     "logged": true,
@@ -14266,7 +14269,8 @@
     "title": "Samsung Galaxy A13 32Gb",
     "price": 1050,
     "condition": "Б/у",
-    "model_key": "samsung a13"
+    "model_key": "samsung a13",
+    "sold_checked": true
   },
   "46568128": {
     "logged": true,
@@ -14717,5 +14721,41 @@
     "price": 899,
     "condition": "Б/у",
     "model_key": "samsung s10"
+  },
+  "16933917": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16933917_samsung/",
+    "title": "Samsung Galaxy S6 edge +",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "samsung s6 edge"
+  },
+  "35561285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17222335_telefon-samsung-56-128-vetnam-5g-silver/",
+    "title": "Samsung Galaxy A56 128 Vetnam 5G Silver",
+    "price": 3200,
+    "condition": "Б/у",
+    "model_key": "samsung a56 128 vetnam"
+  },
+  "23401285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17222340_telefon-samsung-128gb-vetnam-5g/",
+    "title": "Samsung Galaxy A56 128гб Vetnam 5G",
+    "price": 2960,
+    "condition": "Б/у",
+    "model_key": "samsung a56"
+  },
+  "23281164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17222328_telefon-redmi-note-11-64gb-glabal-version/",
+    "title": "Xiaomi Redmi Note 11 64gb Glabal Version",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "redmi note 11"
   }
 }

@@ -14378,7 +14378,8 @@
     "title": "Xiaomi Redmi 4Х",
     "price": 360,
     "condition": "Б/у",
-    "model_key": "redmi 4х"
+    "model_key": "redmi 4х",
+    "sold_checked": true
   },
   "50409409": {
     "logged": true,
@@ -14459,7 +14460,8 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "itel",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "04315256": {
     "logged": true,
@@ -14950,5 +14952,25 @@
     "price": 1150,
     "condition": "Б/у",
     "model_key": "redmi note 11s"
+  },
+  "23735565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17223735_samsung-a56-5g/",
+    "title": "Samsung Galaxy А56 5g",
+    "price": 4000,
+    "condition": "Б/у",
+    "model_key": "samsung а56",
+    "verified_model": null
+  },
+  "23725565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17223725_samsung-galaxy-a56-5-g-telefon-nav-karoba-dokument-be-sarapin-rastamozhka-shudagi/",
+    "title": "Samsung Galaxy A56 5 G",
+    "price": 4000,
+    "condition": "Б/у",
+    "model_key": "samsung a56 5 g",
+    "verified_model": null
   }
 }

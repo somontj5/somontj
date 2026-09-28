@@ -14735,7 +14735,8 @@
     "title": "Samsung Galaxy А56 128 Vetnam 5G",
     "price": 2850,
     "condition": "Б/у",
-    "model_key": "samsung а56 128 vetnam"
+    "model_key": "samsung а56 128 vetnam",
+    "sold_checked": true
   },
   "31225625": {
     "logged": true,

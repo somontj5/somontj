@@ -15719,7 +15719,8 @@
     "price": 2300,
     "condition": "Б/у",
     "model_key": "samsung s20",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17228040": {
     "logged": true,
@@ -15739,5 +15740,14 @@
     "price": 3999,
     "condition": "Б/у",
     "model_key": "redmi note 15 pro plus"
+  },
+  "20016256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17228200_apple-iphone-16-pro-256-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro, 256 gb, Desert Titanium",
+    "price": 8699,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro"
   }
 }

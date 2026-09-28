@@ -14788,7 +14788,8 @@
     "title": "Samsung Galaxy A56 128 Vetnam 5G Silver",
     "price": 3200,
     "condition": "Б/у",
-    "model_key": "samsung a56 128 vetnam"
+    "model_key": "samsung a56 128 vetnam",
+    "sold_checked": true
   },
   "23401285": {
     "logged": true,
@@ -15314,6 +15315,26 @@
     "price": 1700,
     "condition": "Б/у",
     "model_key": "apple 11",
+    "verified_model": null
+  },
+  "72266147": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17226614_khonor-7kh/",
+    "title": "Honor 7х",
+    "price": 550,
+    "condition": "Б/у",
+    "model_key": "honor 7х",
+    "verified_model": null
+  },
+  "34713256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17226347_apple-iphone-13-pro-max-256-gb-alpine-green/",
+    "title": "Apple iPhone 13 Pro Max, 256 gb, Alpine Green",
+    "price": 5000,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max",
     "verified_model": null
   }
 }

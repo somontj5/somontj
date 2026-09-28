@@ -14472,7 +14472,8 @@
     "price": 5249,
     "condition": "Б/у",
     "model_key": "apple 15",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "04814128": {
     "logged": true,
@@ -14971,6 +14972,16 @@
     "price": 4000,
     "condition": "Б/у",
     "model_key": "samsung a56 5 g",
+    "verified_model": null
+  },
+  "22381010": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17223810_redmi-10s-khoroshem-sostaianee/",
+    "title": "Xiaomi Redmi 10S",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "redmi 10s",
     "verified_model": null
   }
 }

@@ -14653,7 +14653,8 @@
     "title": "Apple iPhone Xr, 128 gb, Product Red",
     "price": 2700,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "95985128": {
     "logged": true,
@@ -14662,7 +14663,8 @@
     "title": "Apple iPhone Xr, 128 gb, Product Red",
     "price": 2800,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "95773128": {
     "logged": true,
@@ -15131,6 +15133,16 @@
     "price": 1999,
     "condition": "Б/у",
     "model_key": "samsung s10",
+    "verified_model": null
+  },
+  "25133256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17225133_apple-iphone-xs-256-gb-gold/",
+    "title": "Apple iPhone Xs, 256 gb, Gold",
+    "price": 1599,
+    "condition": "Б/у",
+    "model_key": "apple xs",
     "verified_model": null
   }
 }

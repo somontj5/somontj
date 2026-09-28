@@ -14541,5 +14541,15 @@
     "condition": "Б/у",
     "model_key": "samsung s20",
     "verified_model": null
+  },
+  "91836822": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16918368_s22-ultra/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 4700,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra",
+    "verified_model": null
   }
 }

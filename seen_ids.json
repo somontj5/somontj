@@ -14120,7 +14120,8 @@
     "price": 1550,
     "condition": "Б/у",
     "model_key": "apple xr",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17219232": {
     "logged": true,
@@ -14623,5 +14624,15 @@
     "price": 2699,
     "condition": "Б/у",
     "model_key": "apple xr"
+  },
+  "60012512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17221881_honor-600-pro-12-512gb/",
+    "title": "Honor 600 Pro 12/512gb",
+    "price": 6800,
+    "condition": "Б/у",
+    "model_key": "honor 600 pro",
+    "verified_model": null
   }
 }

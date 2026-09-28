@@ -14230,7 +14230,8 @@
     "price": 9799,
     "condition": "Б/у",
     "model_key": "apple 17 pro max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "35553105": {
     "logged": true,
@@ -14757,5 +14758,14 @@
     "price": 1100,
     "condition": "Б/у",
     "model_key": "redmi note 11"
+  },
+  "48711256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17222487_apple-iphone-11-256-gb-black/",
+    "title": "Apple iPhone 11, 256 gb, Black",
+    "price": 1520,
+    "condition": "Б/у",
+    "model_key": "apple 11"
   }
 }

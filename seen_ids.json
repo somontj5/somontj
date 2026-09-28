@@ -14332,7 +14332,8 @@
     "price": 4999,
     "condition": "Б/у",
     "model_key": "apple 14 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "40514128": {
     "logged": true,
@@ -14807,6 +14808,16 @@
     "price": 220,
     "condition": "Б/у",
     "model_key": "samsung j2",
+    "verified_model": null
+  },
+  "84690315": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16784690_vivo-y31-pro-5g/",
+    "title": "Vivo Y31 Pro 5G",
+    "price": 2999,
+    "condition": "Б/у",
+    "model_key": "vivo y31 pro",
     "verified_model": null
   }
 }

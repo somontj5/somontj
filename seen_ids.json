@@ -15760,5 +15760,14 @@
     "price": 7599,
     "condition": "Б/у",
     "model_key": "apple 15 pro max"
+  },
+  "22315030": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17223150_tecno-spark-30c/",
+    "title": "Tecno Spark 30c",
+    "price": 1350,
+    "condition": "Б/у",
+    "model_key": "tecno spark 30c"
   }
 }

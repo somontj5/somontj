@@ -14728,7 +14728,8 @@
     "title": "Xiaomi Redmi Note 14 128/6Gb Global Version 5G",
     "price": 1650,
     "condition": "Б/у",
-    "model_key": "redmi note 14"
+    "model_key": "redmi note 14",
+    "sold_checked": true
   },
   "30213325": {
     "logged": true,
@@ -15259,6 +15260,16 @@
     "price": 320,
     "condition": "Б/у",
     "model_key": "samsung a6",
+    "verified_model": null
+  },
+  "36958243": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16836958_inoi-243-black/",
+    "title": "Inoi 243 black",
+    "price": 130,
+    "condition": "Б/у",
+    "model_key": null,
     "verified_model": null
   }
 }

@@ -14737,7 +14737,8 @@
     "title": "Samsung Galaxy А13 32Gb Vetnam 5G",
     "price": 1050,
     "condition": "Б/у",
-    "model_key": "samsung а13"
+    "model_key": "samsung а13",
+    "sold_checked": true
   },
   "77561285": {
     "logged": true,
@@ -15239,6 +15240,25 @@
     "price": 2800,
     "condition": "Б/у",
     "model_key": null,
+    "verified_model": null
+  },
+  "72256369": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17225636_xiaomi-redmi-note-9/",
+    "title": "Xiaomi Redmi Note 9, 64gb",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "redmi note 9"
+  },
+  "72255816": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17225581_samsung-galaxy-a6/",
+    "title": "Samsung Galaxy A6, 32gb",
+    "price": 320,
+    "condition": "Б/у",
+    "model_key": "samsung a6",
     "verified_model": null
   }
 }

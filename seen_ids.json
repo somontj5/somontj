@@ -14515,7 +14515,8 @@
     "price": 2500,
     "condition": "Б/у",
     "model_key": "samsung galaxyа54",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "22130110": {
     "logged": true,
@@ -14614,6 +14615,12 @@
     "model_key": "apple xr"
   },
   "95773128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16595773_apple-iphone-xr-128-gb-product-red/",
+    "title": "Apple iPhone Xr, 128 gb, Product Red",
+    "price": 2699,
+    "condition": "Б/у",
+    "model_key": "apple xr"
   }
 }

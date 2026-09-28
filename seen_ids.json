@@ -15172,7 +15172,8 @@
     "title": "Xiaomi Redmi Note 17",
     "price": 2550,
     "condition": "Б/у",
-    "model_key": "redmi note 17"
+    "model_key": "redmi note 17",
+    "sold_checked": true
   },
   "24994105": {
     "logged": true,

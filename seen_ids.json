@@ -14240,7 +14240,8 @@
     "title": "Nokia 105",
     "price": 150,
     "condition": "Б/у",
-    "model_key": "nokia 105"
+    "model_key": "nokia 105",
+    "sold_checked": true
   },
   "93415128": {
     "logged": true,
@@ -14280,7 +14281,8 @@
     "title": "Samsung Galaxy A56 8/128Gb Duos Vietnam",
     "price": 3280,
     "condition": "Б/у",
-    "model_key": "samsung a56 duos"
+    "model_key": "samsung a56 duos",
+    "sold_checked": true
   },
   "82110128": {
     "logged": true,
@@ -14767,5 +14769,23 @@
     "price": 1520,
     "condition": "Б/у",
     "model_key": "apple 11"
+  },
+  "71284211": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14712842_samsung-galaxy-a11/",
+    "title": "Samsung Galaxy Grand prime",
+    "price": 250,
+    "condition": "Б/у",
+    "model_key": "samsung grand prime"
+  },
+  "00382018": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14973003_samsung-galaxy-a8-2018-goda/",
+    "title": "Samsung Galaxy J2, 2018",
+    "price": 350,
+    "condition": "Б/у",
+    "model_key": "samsung j2 2018"
   }
 }

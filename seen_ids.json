@@ -14312,7 +14312,8 @@
     "price": 12990,
     "condition": "Б/у",
     "model_key": "apple 17 pro max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "00816256": {
     "logged": true,
@@ -14830,5 +14831,14 @@
     "price": 750,
     "condition": "Б/у",
     "model_key": "samsung f13"
+  },
+  "17223109": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17223109_tecno-spark-slim/",
+    "title": "Tecno Spark Slim",
+    "price": 2050,
+    "condition": "Б/у",
+    "model_key": "tecno spark slim"
   }
 }

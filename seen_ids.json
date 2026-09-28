@@ -14131,7 +14131,8 @@
     "price": 1100,
     "condition": "Б/у",
     "model_key": "samsung a 52",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "39714128": {
     "logged": true,
@@ -14633,6 +14634,16 @@
     "price": 6800,
     "condition": "Б/у",
     "model_key": "honor 600 pro",
+    "verified_model": null
+  },
+  "42277256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16242277_apple-iphone-air-256-gb-light-gold/",
+    "title": "Apple iPhone Air, 256 gb, Light Gold",
+    "price": 7000,
+    "condition": "Б/у",
+    "model_key": "apple air",
     "verified_model": null
   }
 }

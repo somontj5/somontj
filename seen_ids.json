@@ -14494,7 +14494,8 @@
     "price": 601,
     "condition": "Б/у",
     "model_key": "redmi note 9",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "25682026": {
     "logged": true,
@@ -14503,7 +14504,8 @@
     "title": "Infinx HOT 60i 256/8Gb 2026",
     "price": 1250,
     "condition": "Б/у",
-    "model_key": "infinix hot 60i 2026"
+    "model_key": "infinix hot 60i 2026",
+    "sold_checked": true
   },
   "63467128": {
     "logged": true,
@@ -14993,6 +14995,16 @@
     "price": 4300,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra",
+    "verified_model": null
+  },
+  "16116256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17224161_apple-iphone-16-pro-256-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro, 256 gb, Desert Titanium",
+    "price": 8900,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro",
     "verified_model": null
   }
 }

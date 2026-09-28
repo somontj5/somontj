@@ -14779,7 +14779,8 @@
     "title": "Samsung Galaxy S6 edge +",
     "price": 1000,
     "condition": "Б/у",
-    "model_key": "samsung s6 edge"
+    "model_key": "samsung s6 edge",
+    "sold_checked": true
   },
   "35561285": {
     "logged": true,
@@ -15335,6 +15336,16 @@
     "price": 5000,
     "condition": "Б/у",
     "model_key": "apple 13 pro max",
+    "verified_model": null
+  },
+  "64411128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17226644_apple-iphone-11-128-gb-green/",
+    "title": "Apple iPhone 11, 128 gb, Green",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "apple 11",
     "verified_model": null
   }
 }

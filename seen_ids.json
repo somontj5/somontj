@@ -14594,7 +14594,8 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "samsung s20",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "91836822": {
     "logged": true,
@@ -14604,7 +14605,8 @@
     "price": 4700,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "44915256": {
     "logged": true,
@@ -15089,6 +15091,26 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "vivo t1",
+    "verified_model": null
+  },
+  "49881164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17224988_apple-iphone-11-64-gb-black/",
+    "title": "Apple iPhone 11, 64 gb, Black",
+    "price": 1900,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "88721256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17224887_samsung-s21-256gb/",
+    "title": "Samsung Galaxy s21, 256gb",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "samsung s21",
     "verified_model": null
   }
 }

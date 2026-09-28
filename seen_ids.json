@@ -15056,7 +15056,8 @@
     "price": 8900,
     "condition": "Б/у",
     "model_key": "apple 16 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "13911128": {
     "logged": true,
@@ -15066,7 +15067,8 @@
     "price": 2099,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "97212565": {
     "logged": true,
@@ -15075,7 +15077,8 @@
     "title": "Samsung Galaxy S21 256gb 5G",
     "price": 2250,
     "condition": "Б/у",
-    "model_key": "samsung s21"
+    "model_key": "samsung s21",
+    "sold_checked": true
   },
   "22269730": {
     "logged": true,
@@ -15085,7 +15088,8 @@
     "price": 600,
     "condition": "Б/у",
     "model_key": "samsung a30",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "60213128": {
     "logged": true,
@@ -15094,7 +15098,8 @@
     "title": "Apple iPhone 13, 128 gb, Blue",
     "price": 3550,
     "condition": "Б/у",
-    "model_key": "apple 13"
+    "model_key": "apple 13",
+    "sold_checked": true
   },
   "80009121": {
     "logged": true,
@@ -15611,5 +15616,56 @@
     "condition": "Б/у",
     "model_key": "redmi 10",
     "verified_model": null
+  },
+  "33969732": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16833969_apple-iphone-7-32-gb/",
+    "title": "Apple iPhone 7, 32 gb",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "apple 7",
+    "verified_model": null
+  },
+  "39590332": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17223959_telefon-samsung-a03s-32gb-vetnam/",
+    "title": "Samsung Galaxy А03S",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "samsung а03s"
+  },
+  "97203325": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17223972_telefon-samsung-a03s-32gb-vetnam-5g/",
+    "title": "Телефон Самсунг А03S 32gb Vetnam 5G",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "28666128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17227928_honor-x6c-6-6-128gb/",
+    "title": "Honor x6c 6+6/128Gb",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "honor x6c 6",
+    "verified_model": null
+  },
+  "72279038": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17227903_redmi-note-8/",
+    "title": "Xiaomi Redmi note 8",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "redmi note 8",
+    "verified_model": null
+  },
+  "79061164": {
+    "logged": true
   }
 }

@@ -25,5 +25,23 @@
     "blocked_at": "2026-09-28T16:39:26",
     "updated_at": "2026-09-28T16:39:26",
     "active_ads_at_block": 12
+  },
+  "16857887": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/16857887/",
+    "reason": "у продавца 16 активных объявлений — похоже на магазин/перекупщика",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17223959_telefon-samsung-a03s-32gb-vetnam/",
+    "blocked_at": "2026-09-28T17:39:25",
+    "updated_at": "2026-09-28T17:39:25",
+    "active_ads_at_block": 16
+  },
+  "14575498": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/14575498/",
+    "reason": "у продавца 21 активных объявлений — похоже на магазин/перекупщика",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17223972_telefon-samsung-a03s-32gb-vetnam-5g/",
+    "blocked_at": "2026-09-28T17:39:27",
+    "updated_at": "2026-09-28T17:39:27",
+    "active_ads_at_block": 21
   }
 }

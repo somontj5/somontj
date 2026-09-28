@@ -14062,7 +14062,8 @@
     "price": 2299,
     "condition": "Б/у",
     "model_key": "samsung s22",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "18856171": {
     "logged": true,
@@ -14550,6 +14551,16 @@
     "price": 4700,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra",
+    "verified_model": null
+  },
+  "44915256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17221449_apple-iphone-15-pro-256-gb-natural-titanium/",
+    "title": "Apple iPhone 15 Pro, 256 gb, Natural Titanium",
+    "price": 5800,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro",
     "verified_model": null
   }
 }

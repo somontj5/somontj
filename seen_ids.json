@@ -16086,7 +16086,8 @@
     "title": "Samsung Galaxy A14 6/128",
     "price": 800,
     "condition": "Б/у",
-    "model_key": "samsung a14 6 128"
+    "model_key": "samsung a14 6 128",
+    "sold_checked": true
   },
   "12978355": {
     "logged": true,
@@ -16629,5 +16630,14 @@
     "condition": "Б/у",
     "model_key": "realme note 60x",
     "verified_model": null
+  },
+  "76913128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17097769_apple-iphone-13-pro-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

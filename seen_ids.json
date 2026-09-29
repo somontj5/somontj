@@ -16405,6 +16405,27 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "xiaomi",
+    "verified_model": null,
+    "sold_checked": true
+  },
+  "17232866": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17232866_imeil-nadorad/",
+    "title": "Samsung Galaxy A5, 16gb",
+    "price": 200,
+    "condition": "Б/у",
+    "model_key": "samsung a5",
+    "verified_model": null
+  },
+  "84413128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17232844_apple-iphone-13-pro-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
+    "price": 2800,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro",
     "verified_model": null
   }
 }

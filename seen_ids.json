@@ -16588,7 +16588,8 @@
     "title": "Honor 600 pro",
     "price": 7800,
     "condition": "Б/у",
-    "model_key": "honor 600 pro"
+    "model_key": "honor 600 pro",
+    "sold_checked": true
   },
   "23207064": {
     "logged": true,

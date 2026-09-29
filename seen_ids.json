@@ -16221,7 +16221,8 @@
     "title": "Samsung Galaxy S22 Ultra 256Gb Carea 5G",
     "price": 3450,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "23179555": {
     "logged": true,
@@ -16759,6 +16760,16 @@
     "price": 2100,
     "condition": "Б/у",
     "model_key": "honor x79",
+    "verified_model": null
+  },
+  "50231164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17235023_apple-iphone-11-64-gb-black/",
+    "title": "Apple iPhone 11, 64 gb, Black",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "apple 11",
     "verified_model": null
   }
 }

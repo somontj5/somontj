@@ -15799,7 +15799,8 @@
     "title": "Apple iPhone 16 Pro, 256 gb, Desert Titanium",
     "price": 8699,
     "condition": "Б/у",
-    "model_key": "apple 16 pro"
+    "model_key": "apple 16 pro",
+    "sold_checked": true
   },
   "41915256": {
     "logged": true,
@@ -16324,5 +16325,14 @@
     "price": 5100,
     "condition": "Б/у",
     "model_key": "apple 13 pro max"
+  },
+  "30067171": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17230067_apple-iphone-17-pro-max-1-tb-deep-blue/",
+    "title": "Apple iPhone 17 Pro Max, 1 tb, Deep Blue дубликат",
+    "price": 899,
+    "condition": "Б/у",
+    "model_key": null
   }
 }

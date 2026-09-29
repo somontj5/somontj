@@ -16106,7 +16106,8 @@
     "title": "Realme C30s",
     "price": 550,
     "condition": "Б/у",
-    "model_key": "realme c30s"
+    "model_key": "realme c30s",
+    "sold_checked": true
   },
   "14216014": {
     "logged": true,
@@ -16693,5 +16694,14 @@
     "condition": "Б/у",
     "model_key": "redmi",
     "verified_model": null
+  },
+  "23432817": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17234328_xiaomi-17-pro/",
+    "title": "Xiaomi 17 Pro",
+    "price": 10000,
+    "condition": "Б/у",
+    "model_key": "xiaomi 17 pro"
   }
 }

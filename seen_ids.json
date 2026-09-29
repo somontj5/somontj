@@ -15861,7 +15861,8 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "samsung",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "22918221": {
     "logged": true,

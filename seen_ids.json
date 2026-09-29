@@ -16190,7 +16190,8 @@
     "title": "Apple iPhone 14 Pro, 256 gb, Deep Purple",
     "price": 5400,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "88703124": {
     "logged": true,
@@ -16200,7 +16201,8 @@
     "price": 1550,
     "condition": "Б/у",
     "model_key": "redmi note 12pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "22984464": {
     "logged": true,
@@ -16737,5 +16739,25 @@
     "price": 8599,
     "condition": "Б/у",
     "model_key": "apple 16 pro"
+  },
+  "00552017": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16625005_samsung-galaxy-a5-2017-duos/",
+    "title": "Samsung Galaxy А5 2017 duos",
+    "price": 599,
+    "condition": "Б/у",
+    "model_key": "samsung а5 2017 duos",
+    "verified_model": null
+  },
+  "23492579": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17234925_honor-x79/",
+    "title": "Honor x79",
+    "price": 2100,
+    "condition": "Б/у",
+    "model_key": "honor x79",
+    "verified_model": null
   }
 }

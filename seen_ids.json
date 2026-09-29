@@ -15590,7 +15590,8 @@
     "title": "Телефон Самсунг S10 128gb Carea 5G",
     "price": 899,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "60561285": {
     "logged": true,
@@ -15599,7 +15600,8 @@
     "title": "Samsung galaxy А56 128 Dual sim 5G Silver",
     "price": 2950,
     "condition": "Б/у",
-    "model_key": "samsung а56 128 dual sim"
+    "model_key": "samsung а56 128 dual sim",
+    "sold_checked": true
   },
   "25450134": {
     "logged": true,
@@ -15619,7 +15621,8 @@
     "price": 1700,
     "condition": "Б/у",
     "model_key": "redmi 15",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "77232565": {
     "logged": true,
@@ -15648,7 +15651,8 @@
     "title": "Apple iPhone 14 Pro, 256 gb, Deep Purple",
     "price": 4650,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "22777710": {
     "logged": true,
@@ -16153,6 +16157,35 @@
     "price": 1550,
     "condition": "Б/у",
     "model_key": "redmi note 12pro",
+    "verified_model": null
+  },
+  "22984464": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17229844_apple-iphone-xs-64-gb-gold/",
+    "title": "Apple iPhone Xs, 64 gb, Gold",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "apple xs",
+    "verified_model": null
+  },
+  "19222565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17229819_telefon-samsung-s22-ultra-256gb-carea-5g/",
+    "title": "Samsung Galaxy S22 Ultra 256Gb Carea 5G",
+    "price": 3450,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
+  },
+  "23179555": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17231795_a-55/",
+    "title": "Samsung galaxy А 55",
+    "price": 2400,
+    "condition": "Б/у",
+    "model_key": "samsung а 55",
     "verified_model": null
   }
 }

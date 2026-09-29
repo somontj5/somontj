@@ -15236,7 +15236,8 @@
     "price": 3577,
     "condition": "Б/у",
     "model_key": "samsung s23 ultra",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "61222565": {
     "logged": true,
@@ -15800,5 +15801,14 @@
     "condition": "Б/у",
     "model_key": "nokia 106 duos",
     "verified_model": null
+  },
+  "22875623": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17228756_samsung-galaxy-s-23-ultra/",
+    "title": "Samsung Galaxy S23 Ultra",
+    "price": 4200,
+    "condition": "Б/у",
+    "model_key": "samsung s23 ultra"
   }
 }

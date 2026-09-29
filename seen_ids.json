@@ -15356,7 +15356,8 @@
     "price": 1350,
     "condition": "Б/у",
     "model_key": "apple x",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "65031164": {
     "logged": true,
@@ -15908,5 +15909,14 @@
     "price": 2780,
     "condition": "Б/у",
     "model_key": "samsung note 20 ultra"
+  },
+  "99330332": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17229933_telefon-samsung-a03s-32gb-dual-sim/",
+    "title": "Samsung Galaxy A03s 32Gb Dual sim",
+    "price": 866,
+    "condition": "Б/у",
+    "model_key": "samsung a03s"
   }
 }

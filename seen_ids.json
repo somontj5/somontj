@@ -16437,5 +16437,14 @@
     "price": 3200,
     "condition": "Б/у",
     "model_key": "apple 12 pro max"
+  },
+  "04671464": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17230467_techo-spark-go-1-4-64gb/",
+    "title": "Tecno spark Go 1 4/64гб",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "tecno spark go 1"
   }
 }

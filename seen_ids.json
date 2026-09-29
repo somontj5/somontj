@@ -15925,7 +15925,8 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "72298629": {
     "logged": true,
@@ -15934,7 +15935,8 @@
     "title": "Xiaomi Redmi 9",
     "price": 700,
     "condition": "Б/у",
-    "model_key": "redmi 9"
+    "model_key": "redmi 9",
+    "sold_checked": true
   },
   "97101285": {
     "logged": true,
@@ -15952,7 +15954,8 @@
     "title": "Samsung Galaxy Note 20 Ultra 256Gb 2sim Vetnam",
     "price": 2780,
     "condition": "Б/у",
-    "model_key": "samsung note 20 ultra"
+    "model_key": "samsung note 20 ultra",
+    "sold_checked": true
   },
   "99330332": {
     "logged": true,
@@ -16457,5 +16460,23 @@
     "condition": "Б/у",
     "model_key": "samsung а13",
     "verified_model": null
+  },
+  "23064725": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17230647_samsung-s25/",
+    "title": "Samsung Galaxy S25",
+    "price": 4000,
+    "condition": "Б/у",
+    "model_key": "samsung s25"
+  },
+  "72305888": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17230588_infinix-smart-8/",
+    "title": "Infinix Smart 8",
+    "price": 620,
+    "condition": "Б/у",
+    "model_key": "infinix smart 8"
   }
 }

@@ -16115,7 +16115,8 @@
     "title": "Xiaomi Redmi 14C",
     "price": 1150,
     "condition": "Б/у",
-    "model_key": "redmi 14c"
+    "model_key": "redmi 14c",
+    "sold_checked": true
   },
   "28700512": {
     "logged": true,
@@ -16681,6 +16682,16 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "apple xr",
+    "verified_model": null
+  },
+  "17234267": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17234267_sastaianish-nagz/",
+    "title": "Телефон Xiaomi Redmi",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "redmi",
     "verified_model": null
   }
 }

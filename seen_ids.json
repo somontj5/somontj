@@ -16306,5 +16306,23 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "infinix hot 50"
+  },
+  "32561285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17230032_telefon-samsung-56-128gb-vetnam-5g/",
+    "title": "Samsung Galaxy A56 128гб Vetnam 5G",
+    "price": 3300,
+    "condition": "Б/у",
+    "model_key": "samsung a56"
+  },
+  "14313128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17232143_apple-iphone-13-pro-max-128-gb-graphite/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Graphite",
+    "price": 5100,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
   }
 }

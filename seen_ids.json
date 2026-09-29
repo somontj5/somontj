@@ -15378,7 +15378,8 @@
     "price": 550,
     "condition": "Б/у",
     "model_key": "honor 7х",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "34713256": {
     "logged": true,
@@ -15388,7 +15389,8 @@
     "price": 5000,
     "condition": "Б/у",
     "model_key": "apple 13 pro max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "64411128": {
     "logged": true,
@@ -15918,5 +15920,23 @@
     "price": 866,
     "condition": "Б/у",
     "model_key": "samsung a03s"
+  },
+  "80013222": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14800132_samsung-galaxy-s22/",
+    "title": "Samsung Galaxy S22",
+    "price": 3150,
+    "condition": "Б/у",
+    "model_key": "samsung s22"
+  },
+  "51589250": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16515892_realme-note-50/",
+    "title": "Realme Note 50",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "realme note 50"
   }
 }

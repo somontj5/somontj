@@ -15871,7 +15871,8 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "apple 16 pro max 1 tb",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17225208": {
     "logged": true,
@@ -16384,6 +16385,25 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "apple xr",
+    "verified_model": null
+  },
+  "53914256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17232539_apple-iphone-14-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb, Silver",
+    "price": 6990,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
+  },
+  "17232587": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17232587_v-rabochem-sostoianii/",
+    "title": "Телефон Xiaomi",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "xiaomi",
     "verified_model": null
   }
 }

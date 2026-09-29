@@ -16133,7 +16133,8 @@
     "title": "lnfinix Smart 10",
     "price": 1000,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "43071464": {
     "logged": true,
@@ -16650,5 +16651,25 @@
     "price": 10800,
     "condition": "Б/у",
     "model_key": "apple 17 pro"
+  },
+  "72312005": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17231200_oppo-a5x/",
+    "title": "Oppo A5x",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "oppo a5x",
+    "verified_model": null
+  },
+  "60611128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17233606_apple-iphone-11-128-gb-product-red/",
+    "title": "Apple iPhone 11, 128 gb, Product Red",
+    "price": 1699,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

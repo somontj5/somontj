@@ -88,5 +88,14 @@
     "blocked_at": "2026-09-29T06:42:27",
     "updated_at": "2026-09-29T06:42:27",
     "active_ads_at_block": 41
+  },
+  "15000068": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/15000068/",
+    "reason": "похоже на перекупщика по фото: на фото четко видны витринный стенд магазина, коробки с другими смартфонами (Honor и др.) и характерная выкладка товара",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17231200_oppo-a5x/",
+    "blocked_at": "2026-09-29T14:51:50",
+    "updated_at": "2026-09-29T14:51:50",
+    "active_ads_at_block": 16
   }
 }

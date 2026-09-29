@@ -15674,7 +15674,8 @@
     "price": 650,
     "condition": "Б/у",
     "model_key": "apple 7",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "39590332": {
     "logged": true,
@@ -15736,7 +15737,8 @@
     "title": "Apple iPhone 13 Pro Max, 128 gb, Alpine Green",
     "price": 6000,
     "condition": "Б/у",
-    "model_key": "apple 13 pro max"
+    "model_key": "apple 13 pro max",
+    "sold_checked": true
   },
   "60142222": {
     "logged": true,
@@ -15755,7 +15757,8 @@
     "title": "Infinix hot 60i",
     "price": 1350,
     "condition": "Б/у",
-    "model_key": "infinix hot 60i"
+    "model_key": "infinix hot 60i",
+    "sold_checked": true
   },
   "28058205": {
     "logged": true,
@@ -15776,7 +15779,8 @@
     "price": 1900,
     "condition": "Б/у",
     "model_key": "samsung",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "22810315": {
     "logged": true,
@@ -16256,5 +16260,42 @@
     "price": 1050,
     "condition": "Б/у",
     "model_key": "samsung а13"
+  },
+  "00617256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17230006_apple-iphone-17-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
+    "price": 16999,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
+  },
+  "14141285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17230014_telefon-redmi-note-14-128gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 14 128gb Glabal Version 5G",
+    "price": 1644,
+    "condition": "Б/у",
+    "model_key": "redmi note 14"
+  },
+  "17231970": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17231970_a/",
+    "title": "Телефон Honor",
+    "price": 1900,
+    "condition": "Б/у",
+    "model_key": "honor",
+    "verified_model": null
+  },
+  "98811645": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17229988_telefon-redmi-note-11-64gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 11 64gb Glabal Version 5G",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "redmi note 11"
   }
 }

@@ -16273,7 +16273,8 @@
     "title": "Samsung Galaxy А56 128гб Vetnam 5G",
     "price": 2950,
     "condition": "Б/у",
-    "model_key": "samsung а56"
+    "model_key": "samsung а56",
+    "sold_checked": true
   },
   "97613128": {
     "logged": true,
@@ -16340,7 +16341,8 @@
     "title": "Xiaomi Redmi Note 11 64gb Glabal Version 5G",
     "price": 1100,
     "condition": "Б/у",
-    "model_key": "redmi note 11"
+    "model_key": "redmi note 11",
+    "sold_checked": true
   },
   "23222150": {
     "logged": true,
@@ -16889,5 +16891,23 @@
     "condition": "Б/у",
     "model_key": "samsung s4 mini lte",
     "verified_model": null
+  },
+  "72322369": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17232236_infinix-smart-9/",
+    "title": "Infinix Smart 9",
+    "price": 1150,
+    "condition": "Б/у",
+    "model_key": "infinix smart 9"
+  },
+  "22713128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17235227_apple-iphone-13-pro-max-128-gb-alpine-green/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Alpine Green",
+    "price": 4400,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
   }
 }

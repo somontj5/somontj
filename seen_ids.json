@@ -16300,7 +16300,8 @@
     "title": "Samsung Galaxy А13 32Gb Vetnam 5G",
     "price": 1050,
     "condition": "Б/у",
-    "model_key": "samsung а13"
+    "model_key": "samsung а13",
+    "sold_checked": true
   },
   "00617256": {
     "logged": true,
@@ -16814,6 +16815,26 @@
     "price": 2900,
     "condition": "Б/у",
     "model_key": "honor 400",
+    "verified_model": null
+  },
+  "51261264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17235126_apple-iphone-12-64-gb-blue/",
+    "title": "Apple iPhone 12, 64 gb, Blue",
+    "price": 1599,
+    "condition": "Б/у",
+    "model_key": "apple 12",
+    "verified_model": null
+  },
+  "51335128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17235133_apple-iphone-5-128-gb/",
+    "title": "Apple iPhone 5, 128 gb",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "apple 5",
     "verified_model": null
   }
 }

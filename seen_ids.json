@@ -16332,7 +16332,8 @@
     "price": 1900,
     "condition": "Б/у",
     "model_key": "honor",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "98811645": {
     "logged": true,
@@ -16918,5 +16919,24 @@
     "price": 3600,
     "condition": "Б/у",
     "model_key": "apple 13"
+  },
+  "35589565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17235589_samsung-a56-5g/",
+    "title": "Samsung Galaxy A56 5G",
+    "price": 3600,
+    "condition": "Б/у",
+    "model_key": "samsung a56"
+  },
+  "72308875": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17230887_honor-x5c/",
+    "title": "Honor x5c",
+    "price": 550,
+    "condition": "Б/у",
+    "model_key": "honor x5c",
+    "verified_model": null
   }
 }

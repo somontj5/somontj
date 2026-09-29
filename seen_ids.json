@@ -15549,7 +15549,8 @@
     "title": "Apple iPhone 17 Pro Max, 512 gb, Silver",
     "price": 1500,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "66952128": {
     "logged": true,
@@ -16100,5 +16101,14 @@
     "condition": "Б/у",
     "model_key": "poco c71",
     "verified_model": null
+  },
+  "87485064": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14308748_realme-not-50-64-g/",
+    "title": "Realme Note 50 64 gb",
+    "price": 799,
+    "condition": "Б/у",
+    "model_key": "realme note 50"
   }
 }

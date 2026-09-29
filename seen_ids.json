@@ -16212,7 +16212,8 @@
     "price": 1600,
     "condition": "Б/у",
     "model_key": "apple xs",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "19222565": {
     "logged": true,
@@ -16771,5 +16772,14 @@
     "condition": "Б/у",
     "model_key": "apple 11",
     "verified_model": null
+  },
+  "05013128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17235050_apple-iphone-13-128-gb-blue/",
+    "title": "Apple iPhone 13, 128 gb, Blue",
+    "price": 3650,
+    "condition": "Б/у",
+    "model_key": "apple 13"
   }
 }

@@ -16231,7 +16231,8 @@
     "price": 2400,
     "condition": "Б/у",
     "model_key": "samsung а 55",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "87732128": {
     "logged": true,

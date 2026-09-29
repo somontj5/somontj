@@ -15821,7 +15821,8 @@
     "title": "Apple iPhone 15, 128 gb, Pink",
     "price": 3300,
     "condition": "Б/у",
-    "model_key": "apple 15"
+    "model_key": "apple 15",
+    "sold_checked": true
   },
   "30302106": {
     "logged": true,

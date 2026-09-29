@@ -16297,5 +16297,14 @@
     "price": 1100,
     "condition": "Б/у",
     "model_key": "redmi note 11"
+  },
+  "23222150": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17232221_infinix-hot-50/",
+    "title": "Infinix Hot 50",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "infinix hot 50"
   }
 }

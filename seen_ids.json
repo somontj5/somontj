@@ -15652,7 +15652,8 @@
     "title": "Samsung Galaxy А03S",
     "price": 850,
     "condition": "Б/у",
-    "model_key": "samsung а03s"
+    "model_key": "samsung а03s",
+    "sold_checked": true
   },
   "97203325": {
     "logged": true,

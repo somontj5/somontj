@@ -15301,7 +15301,8 @@
     "title": "Xiaomi Redmi Note 9, 64gb",
     "price": 500,
     "condition": "Б/у",
-    "model_key": "redmi note 9"
+    "model_key": "redmi note 9",
+    "sold_checked": true
   },
   "72255816": {
     "logged": true,
@@ -15857,5 +15858,14 @@
     "condition": "Б/у",
     "model_key": "samsung s10",
     "verified_model": null
+  },
+  "40715256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17229407_apple-iphone-15-pro-max-256-gb-natural-titanium/",
+    "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
+    "price": 7999,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro max"
   }
 }

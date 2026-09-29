@@ -16158,7 +16158,8 @@
     "title": "Realme Note 50 64 gb",
     "price": 799,
     "condition": "Б/у",
-    "model_key": "realme note 50"
+    "model_key": "realme note 50",
+    "sold_checked": true
   },
   "72813128": {
     "logged": true,
@@ -16178,7 +16179,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Alpine Green",
     "price": 4000,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "32514256": {
     "logged": true,
@@ -16714,6 +16716,16 @@
     "price": 1100,
     "condition": "Б/у",
     "model_key": "redmi note 9 pro",
+    "verified_model": null
+  },
+  "48277128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17234827_khonor-kh7d-128gig/",
+    "title": "Honor х7d",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "honor х7d",
     "verified_model": null
   }
 }

@@ -15496,7 +15496,8 @@
     "price": 999,
     "condition": "Б/у",
     "model_key": "redmi note 10s",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "53211645": {
     "logged": true,
@@ -15506,7 +15507,8 @@
     "price": 1050,
     "condition": "Б/у",
     "model_key": "redmi note 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "42515256": {
     "logged": true,
@@ -16020,5 +16022,23 @@
     "price": 1499,
     "condition": "Б/у",
     "model_key": "samsung a16 128g"
+  },
+  "35919106": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16359191_samsung-galaxy-a06/",
+    "title": "Samsung Galaxy A06",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "samsung a06"
+  },
+  "45146128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16530045_samsung-galaxy-a14-6-128/",
+    "title": "Samsung Galaxy A14 6/128",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "samsung a14 6 128"
   }
 }

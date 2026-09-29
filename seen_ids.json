@@ -16950,5 +16950,14 @@
     "price": 11500,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "14513128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17231145_apple-iphone-13-128-gb-midnight/",
+    "title": "Apple iPhone 13, 128 gb, Midnight",
+    "price": 3300,
+    "condition": "Б/у",
+    "model_key": "apple 13"
   }
 }

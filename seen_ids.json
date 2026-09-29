@@ -15803,7 +15803,8 @@
     "title": "Apple iPhone 16, 128 gb, Black",
     "price": 5700,
     "condition": "Б/у",
-    "model_key": "apple 16"
+    "model_key": "apple 16",
+    "sold_checked": true
   },
   "15815128": {
     "logged": true,

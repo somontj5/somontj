@@ -15517,7 +15517,8 @@
     "title": "Apple iPhone 15 Pro, 256 gb, Blue Titanium",
     "price": 6500,
     "condition": "Б/у",
-    "model_key": "apple 15 pro"
+    "model_key": "apple 15 pro",
+    "sold_checked": true
   },
   "22742260": {
     "logged": true,
@@ -15527,7 +15528,8 @@
     "price": 600,
     "condition": "Б/у",
     "model_key": "itel a60s",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "22742464": {
     "logged": true,
@@ -15537,7 +15539,8 @@
     "price": 749,
     "condition": "Б/у",
     "model_key": "apple se",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "01717512": {
     "logged": true,
@@ -15555,7 +15558,8 @@
     "title": "Apple iPhone Xr, 128 gb, Product Red",
     "price": 2899,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "52030644": {
     "logged": true,
@@ -15565,7 +15569,8 @@
     "price": 600,
     "condition": "Б/у",
     "model_key": "samsung a30 64 4",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "00122562": {
     "logged": true,
@@ -16040,5 +16045,53 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "samsung a14 6 128"
+  },
+  "12978355": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16812978_samsung-galaxy-a35-5g/",
+    "title": "Samsung Galaxy A35 5G",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "samsung a35"
+  },
+  "28647530": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16286475_realmi-c30s/",
+    "title": "Realme C30s",
+    "price": 550,
+    "condition": "Б/у",
+    "model_key": "realme c30s"
+  },
+  "14216014": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16142160_redmi-14c/",
+    "title": "Xiaomi Redmi 14C",
+    "price": 1150,
+    "condition": "Б/у",
+    "model_key": "redmi 14c"
+  },
+  "28700512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16287005_redmi-12c/",
+    "title": "Xiaomi Redmi 12C",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "redmi 12c"
+  },
+  "27578410": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15275784_lnfinix-smart-10/",
+    "title": "lnfinix Smart 10",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "43071464": {
+    "logged": true
   }
 }

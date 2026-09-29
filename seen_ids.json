@@ -15890,7 +15890,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
     "price": 7999,
     "condition": "Б/у",
-    "model_key": "apple 15 pro max"
+    "model_key": "apple 15 pro max",
+    "sold_checked": true
   },
   "58811128": {
     "logged": true,
@@ -16111,5 +16112,25 @@
     "price": 799,
     "condition": "Б/у",
     "model_key": "realme note 50"
+  },
+  "72813128": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17230728_apple-iphone-13-pro-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
+    "price": 3000,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro",
+    "verified_model": null
+  },
+  "70413128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17230704_apple-iphone-13-pro-128-gb-alpine-green/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Alpine Green",
+    "price": 4000,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

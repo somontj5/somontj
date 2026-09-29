@@ -15400,7 +15400,8 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "72267739": {
     "logged": true,
@@ -15419,7 +15420,8 @@
     "title": "Apple iPhone 14 Pro, 128 gb, Space Black",
     "price": 5400,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "67307256": {
     "logged": true,
@@ -15938,5 +15940,34 @@
     "price": 850,
     "condition": "Б/у",
     "model_key": "realme note 50"
+  },
+  "53148128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16624753_redmi-note-14-8-128/",
+    "title": "Xiaomi Redmi Note 14 8/128",
+    "price": 1299,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 8 128",
+    "verified_model": null
+  },
+  "23015065": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17230150_xiaomi-poco-x6-pro-5g/",
+    "title": "Xiaomi Poco X6 Pro 5G",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "poco x6 pro",
+    "verified_model": null
+  },
+  "66116256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16071661_apple-iphone-16-pro-max-256-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
+    "price": 10200,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   }
 }

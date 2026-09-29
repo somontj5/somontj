@@ -16756,7 +16756,8 @@
     "price": 599,
     "condition": "Б/у",
     "model_key": "samsung а5 2017 duos",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "23492579": {
     "logged": true,
@@ -16805,7 +16806,8 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "samsung а17",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "33491400": {
     "logged": true,
@@ -16835,6 +16837,26 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "apple 5",
+    "verified_model": null,
+    "sold_checked": true
+  },
+  "89014256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17042890_apple-iphone-14-pro-256-gb-space-black/",
+    "title": "Apple iPhone 14 Pro, 256 gb, Space Black",
+    "price": 5600,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
+  },
+  "35190100": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17235190_telefon-dar-kholati-khub-karor-dora-iagon-dard-nadora-100-kor-mekna/",
+    "title": "Телефон Samsung",
+    "price": 2800,
+    "condition": "Б/у",
+    "model_key": "samsung",
     "verified_model": null
   }
 }

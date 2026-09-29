@@ -15850,7 +15850,8 @@
     "price": 220,
     "condition": "Б/у",
     "model_key": "nokia 106 duos",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "22875623": {
     "logged": true,
@@ -15859,7 +15860,8 @@
     "title": "Samsung Galaxy S23 Ultra",
     "price": 4200,
     "condition": "Б/у",
-    "model_key": "samsung s23 ultra"
+    "model_key": "samsung s23 ultra",
+    "sold_checked": true
   },
   "28898161": {
     "logged": true,
@@ -16353,5 +16355,35 @@
     "price": 3200,
     "condition": "Б/у",
     "model_key": "samsung s22 plus"
+  },
+  "25146864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17025146_apple-iphone-8-plus-64-gb-product-red/",
+    "title": "Apple iPhone 8 plus, 64 gb, Product Red",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "apple 8 plus",
+    "verified_model": null
+  },
+  "32550732": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17232550_apple-iphone-7-32-gb/",
+    "title": "Apple iPhone 7, 32 gb",
+    "price": 550,
+    "condition": "Б/у",
+    "model_key": "apple 7",
+    "verified_model": null
+  },
+  "32552128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17232552_apple-iphone-xr-128-gb-white/",
+    "title": "Apple iPhone Xr, 128 gb, White",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
   }
 }

@@ -16170,7 +16170,8 @@
     "price": 3000,
     "condition": "Б/у",
     "model_key": "apple 13 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "70413128": {
     "logged": true,
@@ -16727,5 +16728,14 @@
     "condition": "Б/у",
     "model_key": "honor х7d",
     "verified_model": null
+  },
+  "89016256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17234890_apple-iphone-16-pro-256-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro, 256 gb, Desert Titanium",
+    "price": 8599,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro"
   }
 }

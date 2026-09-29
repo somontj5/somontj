@@ -16124,7 +16124,8 @@
     "title": "Xiaomi Redmi 12C",
     "price": 750,
     "condition": "Б/у",
-    "model_key": "redmi 12c"
+    "model_key": "redmi 12c",
+    "sold_checked": true
   },
   "27578410": {
     "logged": true,
@@ -16670,6 +16671,16 @@
     "price": 1699,
     "condition": "Б/у",
     "model_key": "apple 11",
+    "verified_model": null
+  },
+  "23421664": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17234216_apple-iphone-xr-64-gb-blue/",
+    "title": "Apple iPhone Xr, 64 gb, Blue",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple xr",
     "verified_model": null
   }
 }

@@ -15345,7 +15345,8 @@
     "price": 2500,
     "condition": "Б/у",
     "model_key": "samsung s22",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "22638264": {
     "logged": true,
@@ -15365,7 +15366,8 @@
     "price": 1700,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "72266147": {
     "logged": true,
@@ -15887,5 +15889,23 @@
     "price": 700,
     "condition": "Б/у",
     "model_key": "redmi 9"
+  },
+  "97101285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17229897_telefon-samsung-s10-128gb-carea-5g/",
+    "title": "Samsung Galaxy S10 128gb Korea 5G",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "samsung s10"
+  },
+  "61202562": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17229861_telefon-samsung-note-20-ultra-256gb-2sim-vetnam/",
+    "title": "Samsung Galaxy Note 20 Ultra 256Gb 2sim Vetnam",
+    "price": 2780,
+    "condition": "Б/у",
+    "model_key": "samsung note 20 ultra"
   }
 }

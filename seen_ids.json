@@ -15246,7 +15246,8 @@
     "price": 3588,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "43503325": {
     "logged": true,
@@ -15789,5 +15790,15 @@
     "price": 3300,
     "condition": "Б/у",
     "model_key": "apple 15"
+  },
+  "30302106": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16430302_nokia-106-duos-original-new/",
+    "title": "Nokia 106 Duos",
+    "price": 220,
+    "condition": "Б/у",
+    "model_key": "nokia 106 duos",
+    "verified_model": null
   }
 }

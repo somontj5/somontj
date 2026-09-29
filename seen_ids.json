@@ -15330,7 +15330,8 @@
     "price": 3299,
     "condition": "Б/у",
     "model_key": "apple 13",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "22606222": {
     "logged": true,
@@ -15468,7 +15469,8 @@
     "price": 1250,
     "condition": "Б/у",
     "model_key": "honor x7c 6",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "22528910": {
     "logged": true,

@@ -16035,7 +16035,8 @@
     "title": "Xiaomi Redmi A2+",
     "price": 600,
     "condition": "Б/у",
-    "model_key": "redmi a2 plus"
+    "model_key": "redmi a2 plus",
+    "sold_checked": true
   },
   "38015412": {
     "logged": true,

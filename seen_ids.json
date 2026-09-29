@@ -16243,7 +16243,8 @@
     "title": "Samsung galaxy A32 128gb",
     "price": 1250,
     "condition": "Б/у",
-    "model_key": "samsung a32"
+    "model_key": "samsung a32",
+    "sold_checked": true
   },
   "10212565": {
     "logged": true,
@@ -16252,7 +16253,8 @@
     "title": "Samsung Galaxy S21 256gb Carea 5G",
     "price": 2300,
     "condition": "Б/у",
-    "model_key": "samsung s21"
+    "model_key": "samsung s21",
+    "sold_checked": true
   },
   "52325652": {
     "logged": true,
@@ -16261,7 +16263,8 @@
     "title": "Samsung Galaxy S23 Ultra 256gb Vetnam 5G 2sim",
     "price": 3540,
     "condition": "Б/у",
-    "model_key": "samsung s23 ultra"
+    "model_key": "samsung s23 ultra",
+    "sold_checked": true
   },
   "73561285": {
     "logged": true,
@@ -16781,5 +16784,35 @@
     "price": 3650,
     "condition": "Б/у",
     "model_key": "apple 13"
+  },
+  "72335245": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17233524_redmi-a5/",
+    "title": "Xiaomi Redmi A5",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "redmi a5",
+    "verified_model": null
+  },
+  "23507717": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17235077_galaxy-a17/",
+    "title": "Samsung Galaxy а17",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "samsung а17",
+    "verified_model": null
+  },
+  "33491400": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17233491_honor-400/",
+    "title": "Honor 400",
+    "price": 2900,
+    "condition": "Б/у",
+    "model_key": "honor 400",
+    "verified_model": null
   }
 }

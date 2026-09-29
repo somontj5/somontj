@@ -16282,7 +16282,8 @@
     "title": "Apple iPhone 13 mini, 128 gb, Pink",
     "price": 3500,
     "condition": "Б/у",
-    "model_key": "apple 13 mini"
+    "model_key": "apple 13 mini",
+    "sold_checked": true
   },
   "99659128": {
     "logged": true,
@@ -16291,7 +16292,8 @@
     "title": "Xiaomi Redmi Note 9 128gb Glabal Version",
     "price": 840,
     "condition": "Б/у",
-    "model_key": "redmi note 9"
+    "model_key": "redmi note 9",
+    "sold_checked": true
   },
   "95113325": {
     "logged": true,
@@ -16857,6 +16859,35 @@
     "price": 2800,
     "condition": "Б/у",
     "model_key": "samsung",
+    "verified_model": null
+  },
+  "23315625": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17233156_samsung-galaxy-s25-ultra/",
+    "title": "Samsung Galaxy s25 Ultra",
+    "price": 8999,
+    "condition": "Б/у",
+    "model_key": "samsung s25 ultra"
+  },
+  "72352119": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17235211_redmi-9c/",
+    "title": "Xiaomi Redmi 9C",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "redmi 9c",
+    "verified_model": null
+  },
+  "33060100": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17233060_telefon-100-batarei-nav-kadan-darkor-imelash-nest/",
+    "title": "Samsung Galaxy S4 Mini LTE",
+    "price": 150,
+    "condition": "Б/у",
+    "model_key": "samsung s4 mini lte",
     "verified_model": null
   }
 }

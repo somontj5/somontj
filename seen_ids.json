@@ -16097,7 +16097,8 @@
     "title": "Samsung Galaxy A35 5G",
     "price": 1999,
     "condition": "Б/у",
-    "model_key": "samsung a35"
+    "model_key": "samsung a35",
+    "sold_checked": true
   },
   "28647530": {
     "logged": true,
@@ -16703,5 +16704,15 @@
     "price": 10000,
     "condition": "Б/у",
     "model_key": "xiaomi 17 pro"
+  },
+  "89296128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/13447892_xiaomi-redmi-note-9-pro-6-128gb/",
+    "title": "Xiaomi Redmi Note 9 pro 6/128gb",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "redmi note 9 pro",
+    "verified_model": null
   }
 }

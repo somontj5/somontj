@@ -16694,7 +16694,8 @@
     "price": 600,
     "condition": "Б/у",
     "model_key": "redmi",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "23432817": {
     "logged": true,

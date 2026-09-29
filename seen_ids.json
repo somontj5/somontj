@@ -16062,7 +16062,8 @@
     "title": "Samsung Galaxy A16 128g",
     "price": 1499,
     "condition": "Б/у",
-    "model_key": "samsung a16 128g"
+    "model_key": "samsung a16 128g",
+    "sold_checked": true
   },
   "35919106": {
     "logged": true,
@@ -16541,6 +16542,26 @@
     "price": 2100,
     "condition": "Б/у",
     "model_key": "apple 11",
+    "verified_model": null,
+    "sold_checked": true
+  },
+  "23345450": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17233454_samsung-a50/",
+    "title": "Samsung Galaxy A50, 64gb",
+    "price": 400,
+    "condition": "Б/у",
+    "model_key": "samsung a50",
     "verified_model": null
+  },
+  "46713256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17233467_apple-iphone-13-pro-max-256-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro Max, 256 gb, Sierra Blue",
+    "price": 3599,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
   }
 }

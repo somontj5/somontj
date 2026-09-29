@@ -15608,7 +15608,8 @@
     "title": "Samsung Galaxy А13 Dual sim 4G",
     "price": 1050,
     "condition": "Б/у",
-    "model_key": "samsung а13 dual sim"
+    "model_key": "samsung а13 dual sim",
+    "sold_checked": true
   },
   "22768715": {
     "logged": true,
@@ -16143,5 +16144,15 @@
     "price": 5400,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "88703124": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16388703_redmi-note-12pro-4g/",
+    "title": "Xiaomi Redmi Note 12pro 4G",
+    "price": 1550,
+    "condition": "Б/у",
+    "model_key": "redmi note 12pro",
+    "verified_model": null
   }
 }

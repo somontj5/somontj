@@ -15580,7 +15580,8 @@
     "title": "Vivo X200 Ultra, 12/256 ГБ, 2 SIM",
     "price": 6800,
     "condition": "Б/у",
-    "model_key": "vivo x200 ultra 2 sim"
+    "model_key": "vivo x200 ultra 2 sim",
+    "sold_checked": true
   },
   "13101285": {
     "logged": true,

@@ -15996,7 +15996,8 @@
     "price": 1299,
     "condition": "Б/у",
     "model_key": "redmi note 14 8 128",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "23015065": {
     "logged": true,
@@ -16576,6 +16577,25 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "apple 8 plus",
+    "verified_model": null
+  },
+  "33903600": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17233903_honor-600-pro/",
+    "title": "Honor 600 pro",
+    "price": 7800,
+    "condition": "Б/у",
+    "model_key": "honor 600 pro"
+  },
+  "23207064": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17232070_apple-iphone-xs-64-gb-space-grey/",
+    "title": "Apple iPhone Xs, 64 gb, Silver",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "apple xs",
     "verified_model": null
   }
 }

@@ -15819,7 +15819,8 @@
     "title": "Tecno Spark 30c",
     "price": 1350,
     "condition": "Б/у",
-    "model_key": "tecno spark 30c"
+    "model_key": "tecno spark 30c",
+    "sold_checked": true
   },
   "57716128": {
     "logged": true,
@@ -16343,5 +16344,14 @@
     "price": 16999,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "53422256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17005534_samsung-galaxy-s22-256gb/",
+    "title": "Samsung Galaxy S22+ 256gb",
+    "price": 3200,
+    "condition": "Б/у",
+    "model_key": "samsung s22 plus"
   }
 }

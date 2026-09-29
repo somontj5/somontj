@@ -15893,7 +15893,8 @@
     "price": 2300,
     "condition": "Б/у",
     "model_key": "samsung s21",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "22943410": {
     "logged": true,
@@ -16427,5 +16428,14 @@
     "condition": "Б/у",
     "model_key": "apple 13 pro",
     "verified_model": null
+  },
+  "33612256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17230336_apple-iphone-12-pro-max-256-gb-pacific-blue/",
+    "title": "Apple iPhone 12 Pro Max, 256 gb, Pacific Blue",
+    "price": 3200,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro max"
   }
 }

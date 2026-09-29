@@ -16077,7 +16077,8 @@
     "title": "Samsung Galaxy A06",
     "price": 1000,
     "condition": "Б/у",
-    "model_key": "samsung a06"
+    "model_key": "samsung a06",
+    "sold_checked": true
   },
   "45146128": {
     "logged": true,
@@ -16639,5 +16640,14 @@
     "price": 4300,
     "condition": "Б/у",
     "model_key": "apple 13 pro"
+  },
+  "11117256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17234111_apple-iphone-17-pro-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro, 256 gb, Silver",
+    "price": 10800,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro"
   }
 }

@@ -16322,7 +16322,8 @@
     "title": "Xiaomi Redmi Note 14 128gb Glabal Version 5G",
     "price": 1644,
     "condition": "Б/у",
-    "model_key": "redmi note 14"
+    "model_key": "redmi note 14",
+    "sold_checked": true
   },
   "17231970": {
     "logged": true,
@@ -16938,5 +16939,14 @@
     "condition": "Б/у",
     "model_key": "honor x5c",
     "verified_model": null
+  },
+  "70716512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17235707_apple-iphone-16-pro-max-512-gb-black-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 512 gb, Black Titanium",
+    "price": 11500,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   }
 }

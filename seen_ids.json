@@ -16133,5 +16133,14 @@
     "price": 4000,
     "condition": "Б/у",
     "model_key": "apple 13 pro"
+  },
+  "32514256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17231325_apple-iphone-14-pro-256-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro, 256 gb, Deep Purple",
+    "price": 5400,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

@@ -15904,7 +15904,8 @@
     "price": 1650,
     "condition": "Б/у",
     "model_key": "samsung s10",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "40715256": {
     "logged": true,
@@ -16446,5 +16447,15 @@
     "price": 850,
     "condition": "Б/у",
     "model_key": "tecno spark go 1"
+  },
+  "23312013": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17233120_samsung-a13/",
+    "title": "Samsung galaxy А13",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "samsung а13",
+    "verified_model": null
   }
 }

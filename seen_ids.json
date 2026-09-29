@@ -15878,5 +15878,14 @@
     "condition": "Б/у",
     "model_key": "apple 11",
     "verified_model": null
+  },
+  "72298629": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17229862_xiaomi-redmi-9/",
+    "title": "Xiaomi Redmi 9",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "redmi 9"
   }
 }

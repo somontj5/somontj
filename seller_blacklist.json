@@ -79,5 +79,14 @@
     "blocked_at": "2026-09-29T06:18:30",
     "updated_at": "2026-09-29T06:18:30",
     "active_ads_at_block": 41
+  },
+  "13583018": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/13583018/",
+    "reason": "похоже на перекупщика по фото: на фоне видна витрина магазина электроники с коробками и колонками, а также товарная выкладка",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17230430_poco-c71-4-64gb/",
+    "blocked_at": "2026-09-29T06:42:27",
+    "updated_at": "2026-09-29T06:42:27",
+    "active_ads_at_block": 41
   }
 }

@@ -16027,7 +16027,8 @@
     "title": "Samsung Galaxy А07",
     "price": 1400,
     "condition": "Б/у",
-    "model_key": "samsung а07"
+    "model_key": "samsung а07",
+    "sold_checked": true
   },
   "65300132": {
     "logged": true,
@@ -16140,7 +16141,8 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "poco c71",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "87485064": {
     "logged": true,
@@ -16596,6 +16598,35 @@
     "price": 999,
     "condition": "Б/у",
     "model_key": "apple xs",
+    "verified_model": null
+  },
+  "98614256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17233986_apple-iphone-14-pro-max-256-gb-gold/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb, Gold",
+    "price": 6500,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
+  },
+  "33845864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17233845_apple-iphone-8-plus-64-gb-silver/",
+    "title": "Apple iPhone 8 plus, 64 gb, Silver",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple 8 plus",
+    "verified_model": null
+  },
+  "23389560": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17233895_realme-note-60x/",
+    "title": "Realme note 60x",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "realme note 60x",
     "verified_model": null
   }
 }

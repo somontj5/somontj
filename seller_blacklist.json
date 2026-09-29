@@ -61,5 +61,14 @@
     "blocked_at": "2026-09-29T03:58:30",
     "updated_at": "2026-09-29T03:58:30",
     "active_ads_at_block": 27
+  },
+  "17929042": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/17929042/",
+    "reason": "похоже на перекупщика по фото: на фото четко видна витрина магазина, коробки с аксессуарами и стеклянный прилавок",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17229434_samsung-s10/",
+    "blocked_at": "2026-09-29T04:42:56",
+    "updated_at": "2026-09-29T04:42:56",
+    "active_ads_at_block": 3
   }
 }

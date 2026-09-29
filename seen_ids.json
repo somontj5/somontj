@@ -15280,7 +15280,8 @@
     "price": 850,
     "condition": "Б/у",
     "model_key": "redmi note 9",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "81202565": {
     "logged": true,
@@ -15845,6 +15846,16 @@
     "price": 2300,
     "condition": "Б/у",
     "model_key": "samsung s21",
+    "verified_model": null
+  },
+  "22943410": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17229434_samsung-s10/",
+    "title": "Samsung Galaxy S10",
+    "price": 1650,
+    "condition": "Б/у",
+    "model_key": "samsung s10",
     "verified_model": null
   }
 }

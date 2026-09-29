@@ -15945,7 +15945,8 @@
     "title": "Samsung Galaxy S10 128gb Korea 5G",
     "price": 950,
     "condition": "Б/у",
-    "model_key": "samsung s10"
+    "model_key": "samsung s10",
+    "sold_checked": true
   },
   "61202562": {
     "logged": true,
@@ -15964,7 +15965,8 @@
     "title": "Samsung Galaxy A03s 32Gb Dual sim",
     "price": 866,
     "condition": "Б/у",
-    "model_key": "samsung a03s"
+    "model_key": "samsung a03s",
+    "sold_checked": true
   },
   "80013222": {
     "logged": true,
@@ -15973,7 +15975,8 @@
     "title": "Samsung Galaxy S22",
     "price": 3150,
     "condition": "Б/у",
-    "model_key": "samsung s22"
+    "model_key": "samsung s22",
+    "sold_checked": true
   },
   "51589250": {
     "logged": true,
@@ -15982,7 +15985,8 @@
     "title": "Realme Note 50",
     "price": 850,
     "condition": "Б/у",
-    "model_key": "realme note 50"
+    "model_key": "realme note 50",
+    "sold_checked": true
   },
   "53148128": {
     "logged": true,
@@ -16478,5 +16482,43 @@
     "price": 620,
     "condition": "Б/у",
     "model_key": "infinix smart 8"
+  },
+  "33715256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17233337_apple-iphone-15-pro-max-256-gb-natural-titanium/",
+    "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
+    "price": 7999,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro max"
+  },
+  "23069164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17230691_apple-iphone-xs-64-gb-gold/",
+    "title": "Apple iPhone Xs, 64 gb, Gold",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "apple xs",
+    "verified_model": null
+  },
+  "69213256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17230692_apple-iphone-13-pro-max-256-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro Max, 256 gb, Sierra Blue",
+    "price": 3300,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
+  },
+  "30657432": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17230657_apple-iphone-4s-32-gb/",
+    "title": "Apple iPhone 4s, 32 gb",
+    "price": 299,
+    "condition": "Б/у",
+    "model_key": "apple 4s",
+    "verified_model": null
   }
 }

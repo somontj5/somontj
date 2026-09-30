@@ -16658,7 +16658,8 @@
     "title": "Apple iPhone 14 Pro Max, 256 gb, Gold",
     "price": 6500,
     "condition": "Б/у",
-    "model_key": "apple 14 pro max"
+    "model_key": "apple 14 pro max",
+    "sold_checked": true
   },
   "33845864": {
     "logged": true,
@@ -16699,7 +16700,8 @@
     "title": "Apple iPhone 17 Pro, 256 gb, Silver",
     "price": 10800,
     "condition": "Б/у",
-    "model_key": "apple 17 pro"
+    "model_key": "apple 17 pro",
+    "sold_checked": true
   },
   "72312005": {
     "logged": true,
@@ -17236,6 +17238,35 @@
     "price": 550,
     "condition": "Б/у",
     "model_key": "samsung a51",
+    "verified_model": null
+  },
+  "23947935": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17239479_samsung-galaxy-a35/",
+    "title": "Samsung Galaxy А35",
+    "price": 2050,
+    "condition": "Б/у",
+    "model_key": "samsung а35",
+    "verified_model": null
+  },
+  "27122256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17237271_samsung-galaxy-s22-ultra-256gb/",
+    "title": "Samsung Galaxy S22 Ultra 256Gb",
+    "price": 3490,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
+  },
+  "72409128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17237240_telefon-redmi-not-9-128gb/",
+    "title": "Xiaomi Redmi Note 9 128Gb",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "redmi note 9",
     "verified_model": null
   }
 }

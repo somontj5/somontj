@@ -16383,7 +16383,8 @@
     "title": "Apple iPhone 17 Pro Max, 1 tb, Deep Blue дубликат",
     "price": 899,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "10717256": {
     "logged": true,
@@ -16392,7 +16393,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
     "price": 16999,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "53422256": {
     "logged": true,

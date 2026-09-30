@@ -16433,7 +16433,8 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "apple xr",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "53914256": {
     "logged": true,
@@ -16993,5 +16994,14 @@
     "condition": "Б/у",
     "model_key": "samsung s10",
     "verified_model": null
+  },
+  "51914128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17236519_apple-iphone-14-128-gb-blue/",
+    "title": "Apple iPhone 14, 128 gb, Blue",
+    "price": 3850,
+    "condition": "Б/у",
+    "model_key": "apple 14"
   }
 }

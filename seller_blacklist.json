@@ -106,5 +106,14 @@
     "blocked_at": "2026-09-30T13:39:34",
     "updated_at": "2026-09-30T13:39:34",
     "active_ads_at_block": 26
+  },
+  "12130070": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/12130070/",
+    "reason": "похоже на перекупщика по фото: У продавца 3 активных объявления, на фоне видна рабочая поверхность с записями/документами, характерная для точек мелкой торговли телефонами.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17241699_samsung-s21-ultra-5g/",
+    "blocked_at": "2026-09-30T15:39:46",
+    "updated_at": "2026-09-30T15:39:46",
+    "active_ads_at_block": 3
   }
 }

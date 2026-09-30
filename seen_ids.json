@@ -17537,7 +17537,8 @@
     "title": "Apple iPhone 16 Pro Max, 512 gb, Black Titanium",
     "price": 10000,
     "condition": "Б/у",
-    "model_key": "apple 16 pro max"
+    "model_key": "apple 16 pro max",
+    "sold_checked": true
   },
   "24110214": {
     "logged": true,

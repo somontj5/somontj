@@ -17240,7 +17240,8 @@
     "title": "Apple iPhone 14 Pro, 128 gb, Deep Purple",
     "price": 4700,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "21956128": {
     "logged": true,
@@ -17829,5 +17830,23 @@
     "condition": "Б/у",
     "model_key": "apple 11",
     "verified_model": null
+  },
+  "57314256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17242573_apple-iphone-14-pro-max-256-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb, Deep Purple",
+    "price": 6300,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
+  },
+  "56717256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17242567_apple-iphone-17-pro-max-256-gb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
+    "price": 8200,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
   }
 }

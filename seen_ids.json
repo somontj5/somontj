@@ -17863,5 +17863,15 @@
     "model_key": "apple se",
     "verified_model": null,
     "sold_checked": true
+  },
+  "43148128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17243148_apple-iphone-xr-128-gb-black/",
+    "title": "Apple iPhone Xr, 128 gb, Black",
+    "price": 1569,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
   }
 }

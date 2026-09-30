@@ -16968,7 +16968,8 @@
     "title": "Apple iPhone 13, 128 gb, Blue",
     "price": 3600,
     "condition": "Б/у",
-    "model_key": "apple 13"
+    "model_key": "apple 13",
+    "sold_checked": true
   },
   "35589565": {
     "logged": true,
@@ -17541,5 +17542,14 @@
     "condition": "Б/у",
     "model_key": "redmi note 14",
     "verified_model": null
+  },
+  "90714625": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16907146_realme-c25y/",
+    "title": "Realme C25Y",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "realme c25y"
   }
 }

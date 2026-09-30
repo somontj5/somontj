@@ -17188,7 +17188,8 @@
     "price": 1600,
     "condition": "Б/у",
     "model_key": "redmi notе 14",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "23789264": {
     "logged": true,
@@ -17249,7 +17250,8 @@
     "price": 2890,
     "condition": "Б/у",
     "model_key": "samsung a56",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "88568128": {
     "logged": true,
@@ -17806,5 +17808,26 @@
     "price": 7500,
     "condition": "Б/у",
     "model_key": "apple 16"
+  },
+  "42520100": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17242520_telefon-masali-kor-kunish-100-foiz/",
+    "title": "Телефон Samsung",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "samsung",
+    "verified_model": null
+  },
+  "88811128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17237888_apple-iphone-11-128-gb-white/",
+    "title": "Apple iPhone 11, 128 gb, White",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

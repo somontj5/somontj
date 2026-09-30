@@ -17217,7 +17217,8 @@
     "title": "Samsung Galaxy S23 Ultra 12/256Gb Duos",
     "price": 3660,
     "condition": "Б/у",
-    "model_key": "samsung s23 ultra duos"
+    "model_key": "samsung s23 ultra duos",
+    "sold_checked": true
   },
   "74568128": {
     "logged": true,
@@ -17753,6 +17754,16 @@
     "price": 120,
     "condition": "Б/у",
     "model_key": "samsung s3 duos",
+    "verified_model": null
+  },
+  "21871164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17242187_apple-iphone-11-64-gb-white/",
+    "title": "Apple iPhone 11, 64 gb, White",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "apple 11",
     "verified_model": null
   }
 }

@@ -17124,7 +17124,8 @@
     "title": "Apple iPhone 13 Pro, 512 gb, Graphite",
     "price": 4500,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "52812128": {
     "logged": true,
@@ -17676,6 +17677,27 @@
     "price": 199,
     "condition": "Б/у",
     "model_key": null,
+    "verified_model": null
+  },
+  "24209964": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17242099_apple-iphone-xs-64-gb-silver/",
+    "title": "Apple iPhone Xs, 64 gb, Silver",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "apple xs",
+    "verified_model": null
+  },
+  "24207735": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17242077_z-flip-3-5g/",
+    "title": "Samsung Galaxy Z Flip 3 5G",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "samsung z flip 3",
     "verified_model": null
   }
 }

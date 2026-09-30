@@ -16606,7 +16606,8 @@
     "price": 400,
     "condition": "Б/у",
     "model_key": "samsung a50",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "46713256": {
     "logged": true,
@@ -16626,7 +16627,8 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "apple 8 plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "33903600": {
     "logged": true,
@@ -16646,7 +16648,8 @@
     "price": 999,
     "condition": "Б/у",
     "model_key": "apple xs",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "98614256": {
     "logged": true,
@@ -17173,5 +17176,34 @@
     "price": 3660,
     "condition": "Б/у",
     "model_key": "samsung s23 ultra duos"
+  },
+  "74568128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17239174_samsung-galaxy-a56-8-128gb-duos-dubai/",
+    "title": "Samsung Galaxy A56 8/128Gb Duos Dubai",
+    "price": 2770,
+    "condition": "Б/у",
+    "model_key": "samsung a56 duos dubai",
+    "verified_model": null
+  },
+  "51614128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17238516_apple-iphone-14-pro-128-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Deep Purple",
+    "price": 4700,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
+  },
+  "21956128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17239219_samsung-galaxy-a56-128gb-dual-sim/",
+    "title": "Samsung Galaxy A56 128Gb Dual sim",
+    "price": 2890,
+    "condition": "Б/у",
+    "model_key": "samsung a56",
+    "verified_model": null
   }
 }

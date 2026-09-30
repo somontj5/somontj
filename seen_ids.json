@@ -17500,5 +17500,15 @@
     "price": 4300,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra"
+  },
+  "24113510": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17241135_galaxy-s10/",
+    "title": "Samsung Galaxy S10+",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "samsung s10 plus",
+    "verified_model": null
   }
 }

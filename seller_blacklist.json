@@ -97,5 +97,14 @@
     "blocked_at": "2026-09-29T14:51:50",
     "updated_at": "2026-09-29T14:51:50",
     "active_ads_at_block": 16
+  },
+  "10199571": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/10199571/",
+    "reason": "похоже на перекупщика по фото: на заднем фоне отчетливо видны витрины магазина с аксессуарами и другими товарами",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17240911_samsung-galaxy-a12/",
+    "blocked_at": "2026-09-30T13:39:34",
+    "updated_at": "2026-09-30T13:39:34",
+    "active_ads_at_block": 26
   }
 }

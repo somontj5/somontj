@@ -16925,7 +16925,8 @@
     "price": 450,
     "condition": "Б/у",
     "model_key": "redmi 9c",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "33060100": {
     "logged": true,
@@ -17466,6 +17467,16 @@
     "price": 760,
     "condition": "Б/у",
     "model_key": "redmi note 8",
+    "verified_model": null
+  },
+  "24091112": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17240911_samsung-galaxy-a12/",
+    "title": "Samsung Galaxy A12, 32gb",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "samsung a12",
     "verified_model": null
   }
 }

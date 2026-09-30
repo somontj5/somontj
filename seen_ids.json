@@ -16313,7 +16313,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
     "price": 16999,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "14141285": {
     "logged": true,
@@ -16969,5 +16970,15 @@
     "price": 5000,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "23152664": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17231526_apple-iphone-se-64-gb/",
+    "title": "Apple iPhone SE, 64 gb",
+    "price": 1650,
+    "condition": "Б/у",
+    "model_key": "apple se",
+    "verified_model": null
   }
 }

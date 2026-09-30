@@ -16668,7 +16668,8 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "apple 8 plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "23389560": {
     "logged": true,
@@ -16678,7 +16679,8 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "realme note 60x",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "76913128": {
     "logged": true,
@@ -17204,6 +17206,36 @@
     "price": 2890,
     "condition": "Б/у",
     "model_key": "samsung a56",
+    "verified_model": null
+  },
+  "88568128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17237188_telefon-samsung-a56-8-128gb/",
+    "title": "Samsung Galaxy А56 8/128гб",
+    "price": 2750,
+    "condition": "Б/у",
+    "model_key": "samsung а56",
+    "verified_model": null
+  },
+  "19614128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17237196_telefon-redmi-not-14-128gb/",
+    "title": "Xiaomi Redmi Note 14 128гб",
+    "price": 1550,
+    "condition": "Б/у",
+    "model_key": "redmi note 14",
+    "verified_model": null
+  },
+  "16251128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17237162_galaxy-a51-128gb/",
+    "title": "Samsung Galaxy A51 128gb",
+    "price": 550,
+    "condition": "Б/у",
+    "model_key": "samsung a51",
     "verified_model": null
   }
 }

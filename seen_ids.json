@@ -17413,7 +17413,8 @@
     "price": 650,
     "condition": "Б/у",
     "model_key": "apple 7 plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "04341264": {
     "logged": true,
@@ -17776,5 +17777,14 @@
     "condition": "Б/у",
     "model_key": "redmi a5",
     "verified_model": null
+  },
+  "19014128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16922190_apple-iphone-14-pro-128-gb-silver/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Silver",
+    "price": 5800,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

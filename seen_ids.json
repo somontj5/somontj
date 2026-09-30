@@ -16955,7 +16955,8 @@
     "title": "Apple iPhone 13 Pro Max, 128 gb, Alpine Green",
     "price": 4400,
     "condition": "Б/у",
-    "model_key": "apple 13 pro max"
+    "model_key": "apple 13 pro max",
+    "sold_checked": true
   },
   "50713128": {
     "logged": true,
@@ -17478,5 +17479,14 @@
     "condition": "Б/у",
     "model_key": "samsung a12",
     "verified_model": null
+  },
+  "72014128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17237720_apple-iphone-14-pro-128-gb-silver/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Silver",
+    "price": 5200,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

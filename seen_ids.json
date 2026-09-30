@@ -17041,7 +17041,8 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "samsung s10",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "51914128": {
     "logged": true,
@@ -17061,7 +17062,8 @@
     "price": 350,
     "condition": "Б/у",
     "model_key": "nokia 8800",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "70014128": {
     "logged": true,
@@ -17606,5 +17608,52 @@
     "price": 10500,
     "condition": "Б/у",
     "model_key": "apple 13 pro max"
+  },
+  "79514128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17240795_apple-iphone-14-pro-128-gb-space-black/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Space Black",
+    "price": 2999,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro",
+    "verified_model": null
+  },
+  "17241845": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17241845_sony-ericsson-xperia-ray/",
+    "title": "Sony Ericsson Xperia Ray",
+    "price": 150,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
+  },
+  "72408166": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17240816_samsung-galaxy-a6/",
+    "title": "Samsung Galaxy A6",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "samsung a6"
+  },
+  "80314256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17241803_apple-iphone-14-pro-256-gb-space-black/",
+    "title": "Apple iPhone 14 Pro, 256 gb, Space Black",
+    "price": 6000,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
+  },
+  "80617256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17241806_apple-iphone-17-pro-max-256-gb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
+    "price": 8000,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
   }
 }

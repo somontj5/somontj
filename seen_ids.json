@@ -16415,7 +16415,8 @@
     "price": 1400,
     "condition": "Б/у",
     "model_key": "apple 8 plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "32550732": {
     "logged": true,
@@ -16446,7 +16447,8 @@
     "title": "Apple iPhone 14 Pro Max, 256 gb, Silver",
     "price": 6990,
     "condition": "Б/у",
-    "model_key": "apple 14 pro max"
+    "model_key": "apple 14 pro max",
+    "sold_checked": true
   },
   "17232587": {
     "logged": true,
@@ -17034,5 +17036,34 @@
     "price": 8550,
     "condition": "Б/у",
     "model_key": "apple 16 pro"
+  },
+  "23792495": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17237924_honor-x9d-5g/",
+    "title": "Honor X9D 5G",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "honor x9d",
+    "verified_model": null
+  },
+  "23790517": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17237905_samsung-galaxy-a17/",
+    "title": "Samsung Galaxy A17",
+    "price": 2100,
+    "condition": "Б/у",
+    "model_key": "samsung a17",
+    "verified_model": null
+  },
+  "23791325": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17237913_samsung-s-25/",
+    "title": "Samsung Galaxy S 25",
+    "price": 7700,
+    "condition": "Б/у",
+    "model_key": "samsung s 25"
   }
 }

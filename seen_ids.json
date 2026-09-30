@@ -17499,7 +17499,8 @@
     "title": "Apple iPhone 14 Pro, 128 gb, Silver",
     "price": 5200,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "62922512": {
     "logged": true,

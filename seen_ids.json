@@ -16754,7 +16754,8 @@
     "title": "Xiaomi 17 Pro",
     "price": 10000,
     "condition": "Б/у",
-    "model_key": "xiaomi 17 pro"
+    "model_key": "xiaomi 17 pro",
+    "sold_checked": true
   },
   "89296128": {
     "logged": true,
@@ -17309,5 +17310,34 @@
     "price": 3500,
     "condition": "Б/у",
     "model_key": "samsung s23 ultra"
+  },
+  "72399449": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17239944_redmi-9t/",
+    "title": "Xiaomi Redmi 9t",
+    "price": 400,
+    "condition": "Б/у",
+    "model_key": "redmi 9t",
+    "verified_model": null
+  },
+  "31411256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17237314_apple-iphone-11-pro-256-gb-space-grey/",
+    "title": "Apple iPhone 11 Pro, 256 gb, Space Grey",
+    "price": 2299,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
+  },
+  "23732056": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17237320_samsung-galaxy-a56/",
+    "title": "Samsung Galaxy A56",
+    "price": 3100,
+    "condition": "Б/у",
+    "model_key": "samsung a56"
   }
 }

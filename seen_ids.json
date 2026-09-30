@@ -16490,7 +16490,8 @@
     "title": "Apple iPhone 12 Pro Max, 256 gb, Pacific Blue",
     "price": 3200,
     "condition": "Б/у",
-    "model_key": "apple 12 pro max"
+    "model_key": "apple 12 pro max",
+    "sold_checked": true
   },
   "04671464": {
     "logged": true,
@@ -16499,7 +16500,8 @@
     "title": "Tecno spark Go 1 4/64гб",
     "price": 850,
     "condition": "Б/у",
-    "model_key": "tecno spark go 1"
+    "model_key": "tecno spark go 1",
+    "sold_checked": true
   },
   "23312013": {
     "logged": true,
@@ -16509,7 +16511,8 @@
     "price": 1300,
     "condition": "Б/у",
     "model_key": "samsung а13",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "23064725": {
     "logged": true,
@@ -16527,7 +16530,8 @@
     "title": "Infinix Smart 8",
     "price": 620,
     "condition": "Б/у",
-    "model_key": "infinix smart 8"
+    "model_key": "infinix smart 8",
+    "sold_checked": true
   },
   "33715256": {
     "logged": true,
@@ -17087,5 +17091,44 @@
     "price": 3500,
     "condition": "Б/у",
     "model_key": "apple 12 pro max"
+  },
+  "17237023": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17237023_telefon-v-khoroshem-sostoianii-korobka-dokument-imeetsia/",
+    "title": "Samsung Galaxy A32",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "samsung a32",
+    "verified_model": null
+  },
+  "23911003": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17239110_samsung-galaxy-a03s/",
+    "title": "Samsung Galaxy A03S",
+    "price": 910,
+    "condition": "Б/у",
+    "model_key": "samsung a03s",
+    "verified_model": null
+  },
+  "23909222": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17239092_samsung-galaxy-s22-ultra/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 3540,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
+  },
+  "90719128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17239071_xiaomi-redmi-not-9-128gb/",
+    "title": "Xiaomi Redmi Not 9 128Gb",
+    "price": 920,
+    "condition": "Б/у",
+    "model_key": "redmi not 9",
+    "verified_model": null
   }
 }

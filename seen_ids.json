@@ -17475,7 +17475,8 @@
     "price": 2800,
     "condition": "Б/у",
     "model_key": "apple 13 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "63315256": {
     "logged": true,

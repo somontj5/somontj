@@ -16840,7 +16840,8 @@
     "price": 999,
     "condition": "Б/у",
     "model_key": "redmi a5",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "23507717": {
     "logged": true,
@@ -17425,5 +17426,24 @@
     "price": 5200,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "61813128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17240618_apple-iphone-13-pro-128-gb-graphite/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Graphite",
+    "price": 4800,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
+  },
+  "38813128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17237388_apple-iphone-13-pro-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
+    "price": 2800,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro",
+    "verified_model": null
   }
 }

@@ -16935,7 +16935,8 @@
     "price": 150,
     "condition": "Б/у",
     "model_key": "samsung s4 mini lte",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "72322369": {
     "logged": true,

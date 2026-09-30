@@ -16988,7 +16988,8 @@
     "price": 550,
     "condition": "Б/у",
     "model_key": "honor x5c",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "70716512": {
     "logged": true,

@@ -16948,7 +16948,8 @@
     "title": "Infinix Smart 9",
     "price": 1150,
     "condition": "Б/у",
-    "model_key": "infinix smart 9"
+    "model_key": "infinix smart 9",
+    "sold_checked": true
   },
   "22713128": {
     "logged": true,
@@ -17530,5 +17531,15 @@
     "price": 10000,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "24110214": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17241102_redmi-note-14/",
+    "title": "Xiaomi Redmi Note 14",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "redmi note 14",
+    "verified_model": null
   }
 }

@@ -17114,7 +17114,8 @@
     "title": "Samsung Galaxy S 25",
     "price": 7700,
     "condition": "Б/у",
-    "model_key": "samsung s 25"
+    "model_key": "samsung s 25",
+    "sold_checked": true
   },
   "24213512": {
     "logged": true,
@@ -17665,6 +17666,16 @@
     "price": 99,
     "condition": "Б/у",
     "model_key": "samsung c140",
+    "verified_model": null
+  },
+  "24199033": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17241990_zte-blade-a33/",
+    "title": "ZTE Blade A33+",
+    "price": 199,
+    "condition": "Б/у",
+    "model_key": null,
     "verified_model": null
   }
 }

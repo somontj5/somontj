@@ -16424,7 +16424,8 @@
     "price": 550,
     "condition": "Б/у",
     "model_key": "apple 7",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "32552128": {
     "logged": true,

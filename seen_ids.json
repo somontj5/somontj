@@ -16915,7 +16915,8 @@
     "title": "Samsung Galaxy s25 Ultra",
     "price": 8999,
     "condition": "Б/у",
-    "model_key": "samsung s25 ultra"
+    "model_key": "samsung s25 ultra",
+    "sold_checked": true
   },
   "72352119": {
     "logged": true,
@@ -17488,5 +17489,14 @@
     "price": 5200,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "62922512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16643629_samsung-galaxy-s22-ultra-512g/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
   }
 }

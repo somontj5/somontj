@@ -17004,5 +17004,15 @@
     "price": 3850,
     "condition": "Б/у",
     "model_key": "apple 14"
+  },
+  "46828800": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16524682_nokia-8800/",
+    "title": "Nokia 8800",
+    "price": 350,
+    "condition": "Б/у",
+    "model_key": "nokia 8800",
+    "verified_model": null
   }
 }

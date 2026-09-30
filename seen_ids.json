@@ -16894,7 +16894,8 @@
     "title": "Apple iPhone 14 Pro, 256 gb, Space Black",
     "price": 5600,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "35190100": {
     "logged": true,
@@ -17455,5 +17456,15 @@
     "price": 6999,
     "condition": "Б/у",
     "model_key": "apple 15 pro"
+  },
+  "72407928": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17240792_redmi-not-8/",
+    "title": "Xiaomi Redmi Note 8",
+    "price": 760,
+    "condition": "Б/у",
+    "model_key": "redmi note 8",
+    "verified_model": null
   }
 }

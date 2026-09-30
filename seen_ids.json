@@ -17402,7 +17402,8 @@
     "price": 700,
     "condition": "Б/у",
     "model_key": "apple 12",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "03521264": {
     "logged": true,
@@ -17422,7 +17423,8 @@
     "price": 700,
     "condition": "Б/у",
     "model_key": "apple 12",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "48114128": {
     "logged": true,

@@ -17860,6 +17860,7 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "apple se",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   }
 }

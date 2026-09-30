@@ -17082,7 +17082,8 @@
     "title": "Apple iPhone 16 Pro, 256 gb, Desert Titanium",
     "price": 8550,
     "condition": "Б/у",
-    "model_key": "apple 16 pro"
+    "model_key": "apple 16 pro",
+    "sold_checked": true
   },
   "23792495": {
     "logged": true,
@@ -17655,5 +17656,15 @@
     "price": 8000,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "41879140": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17241879_samsung-c140/",
+    "title": "Samsung c140",
+    "price": 99,
+    "condition": "Б/у",
+    "model_key": "samsung c140",
+    "verified_model": null
   }
 }

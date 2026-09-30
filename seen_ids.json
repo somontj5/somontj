@@ -17134,7 +17134,8 @@
     "title": "Apple iPhone 12 Pro Max, 128 gb, Pacific Blue",
     "price": 3500,
     "condition": "Б/у",
-    "model_key": "apple 12 pro max"
+    "model_key": "apple 12 pro max",
+    "sold_checked": true
   },
   "17237023": {
     "logged": true,
@@ -17144,7 +17145,8 @@
     "price": 1250,
     "condition": "Б/у",
     "model_key": "samsung a32",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "23911003": {
     "logged": true,
@@ -17154,7 +17156,8 @@
     "price": 910,
     "condition": "Б/у",
     "model_key": "samsung a03s",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "23909222": {
     "logged": true,
@@ -17163,7 +17166,8 @@
     "title": "Samsung Galaxy S22 Ultra",
     "price": 3540,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "90719128": {
     "logged": true,
@@ -17173,7 +17177,8 @@
     "price": 920,
     "condition": "Б/у",
     "model_key": "redmi not 9",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "98146128": {
     "logged": true,
@@ -17698,6 +17703,56 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "samsung z flip 3",
+    "verified_model": null
+  },
+  "51255152": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15125515_samsung-galaxy-j2-prime/",
+    "title": "Samsung Galaxy J2 prime",
+    "price": 280,
+    "condition": "Б/у",
+    "model_key": "samsung j2 prime",
+    "verified_model": null
+  },
+  "51271314": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15127131_samsung-galaxy-s4/",
+    "title": "Samsung Galaxy J2 core",
+    "price": 250,
+    "condition": "Б/у",
+    "model_key": "samsung j2 core",
+    "verified_model": null
+  },
+  "13446607": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/13446607_telephone-flu/",
+    "title": "Телефон MXMID",
+    "price": 150,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
+  },
+  "16638992": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16638992_fly/",
+    "title": "Телефон Fly",
+    "price": 100,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
+  },
+  "66389533": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16638953_samsung-galaxy-s3-duos/",
+    "title": "Samsung Galaxy S3 Duos",
+    "price": 120,
+    "condition": "Б/у",
+    "model_key": "samsung s3 duos",
     "verified_model": null
   }
 }

@@ -17198,7 +17198,8 @@
     "price": 1400,
     "condition": "Б/у",
     "model_key": "apple xs",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "23916313": {
     "logged": true,
@@ -17786,5 +17787,14 @@
     "price": 5800,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "23834924": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17238349_samsung-galaxy-s24-ultra/",
+    "title": "Samsung Galaxy S24 Ultra",
+    "price": 7700,
+    "condition": "Б/у",
+    "model_key": "samsung s24 ultra"
   }
 }

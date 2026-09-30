@@ -17208,7 +17208,8 @@
     "price": 999,
     "condition": "Б/у",
     "model_key": "samsung a13",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "82312256": {
     "logged": true,
@@ -17764,6 +17765,16 @@
     "price": 1600,
     "condition": "Б/у",
     "model_key": "apple 11",
+    "verified_model": null
+  },
+  "72422115": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17242211_xiaomi-redmi-a5/",
+    "title": "Xiaomi Redmi A5",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "redmi a5",
     "verified_model": null
   }
 }

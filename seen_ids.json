@@ -16765,7 +16765,8 @@
     "price": 1100,
     "condition": "Б/у",
     "model_key": "redmi note 9 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "48277128": {
     "logged": true,
@@ -16775,7 +16776,8 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "honor х7d",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "89016256": {
     "logged": true,
@@ -16784,7 +16786,8 @@
     "title": "Apple iPhone 16 Pro, 256 gb, Desert Titanium",
     "price": 8599,
     "condition": "Б/у",
-    "model_key": "apple 16 pro"
+    "model_key": "apple 16 pro",
+    "sold_checked": true
   },
   "00552017": {
     "logged": true,
@@ -17339,5 +17342,33 @@
     "price": 3100,
     "condition": "Б/у",
     "model_key": "samsung a56"
+  },
+  "72400767": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17240076_redmi-note-7/",
+    "title": "Xiaomi Redmi Note 7, 64gb",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "redmi note 7"
+  },
+  "34156128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17237341_samsung-galaxy-a56-128gb/",
+    "title": "Samsung Galaxy A56 128Gb",
+    "price": 2850,
+    "condition": "Б/у",
+    "model_key": "samsung a56",
+    "verified_model": null
+  },
+  "24005111": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17240051_samsung-galaxy-a11/",
+    "title": "Samsung Galaxy A11, 32gb",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "samsung a11"
   }
 }

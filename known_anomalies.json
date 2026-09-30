@@ -106,5 +106,9 @@
   "redmi note 12|128": {
     "first_seen": "2026-09-26",
     "ratio": 3.57
+  },
+  "apple 12|64": {
+    "first_seen": "2026-09-30",
+    "ratio": 4.0
   }
 }

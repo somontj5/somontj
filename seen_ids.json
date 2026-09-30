@@ -16808,7 +16808,8 @@
     "price": 2100,
     "condition": "Б/у",
     "model_key": "honor x79",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "50231164": {
     "logged": true,
@@ -16818,7 +16819,8 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "05013128": {
     "logged": true,
@@ -16827,7 +16829,8 @@
     "title": "Apple iPhone 13, 128 gb, Blue",
     "price": 3650,
     "condition": "Б/у",
-    "model_key": "apple 13"
+    "model_key": "apple 13",
+    "sold_checked": true
   },
   "72335245": {
     "logged": true,
@@ -17380,6 +17383,36 @@
     "price": 650,
     "condition": "Б/у",
     "model_key": "apple 7 plus",
+    "verified_model": null
+  },
+  "04341264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17240434_apple-iphone-12-64-gb-black/",
+    "title": "Apple iPhone 12, 64 gb, Black",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "apple 12",
+    "verified_model": null
+  },
+  "03521264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17240352_apple-iphone-12-64-gb-white/",
+    "title": "Apple iPhone 12, 64 gb, White",
+    "price": 1299,
+    "condition": "Б/у",
+    "model_key": "apple 12",
+    "verified_model": null
+  },
+  "03871232": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17240387_apple-iphone-12-32-gb-black/",
+    "title": "Apple iPhone 12, 32 gb, Black",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "apple 12",
     "verified_model": null
   }
 }

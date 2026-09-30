@@ -16521,7 +16521,8 @@
     "title": "Samsung Galaxy S25",
     "price": 4000,
     "condition": "Б/у",
-    "model_key": "samsung s25"
+    "model_key": "samsung s25",
+    "sold_checked": true
   },
   "72305888": {
     "logged": true,
@@ -16551,7 +16552,8 @@
     "price": 999,
     "condition": "Б/у",
     "model_key": "apple xs",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "69213256": {
     "logged": true,
@@ -16571,7 +16573,8 @@
     "price": 299,
     "condition": "Б/у",
     "model_key": "apple 4s",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "30791105": {
     "logged": true,
@@ -16581,7 +16584,8 @@
     "price": 2100,
     "condition": "Б/у",
     "model_key": "samsung s10",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "29911128": {
     "logged": true,
@@ -17130,5 +17134,44 @@
     "condition": "Б/у",
     "model_key": "redmi not 9",
     "verified_model": null
+  },
+  "98146128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17239198_xiaomi-redmi-not-14-6-128gb/",
+    "title": "Xiaomi Redmi Notе 14 6/128Gb",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "redmi notе 14",
+    "verified_model": null
+  },
+  "23789264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17237892_apple-iphone-xs-64-gb-gold/",
+    "title": "Apple iPhone Xs, 64 gb, Gold",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "apple xs",
+    "verified_model": null
+  },
+  "23916313": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17239163_samsung-galaxy-a13/",
+    "title": "Samsung Galaxy A13",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "samsung a13",
+    "verified_model": null
+  },
+  "82312256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17239148_samsung-galaxy-s23-ultra-12-256gb-duos/",
+    "title": "Samsung Galaxy S23 Ultra 12/256Gb Duos",
+    "price": 3660,
+    "condition": "Б/у",
+    "model_key": "samsung s23 ultra duos"
   }
 }

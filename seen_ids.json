@@ -17791,7 +17791,8 @@
     "price": 100,
     "condition": "Б/у",
     "model_key": null,
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "66389533": {
     "logged": true,
@@ -18330,5 +18331,15 @@
     "price": 4400,
     "condition": "Б/у",
     "model_key": "apple 13 pro"
+  },
+  "71150059": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17115005_redmi-9a/",
+    "title": "Xiaomi Redmi 9A",
+    "price": 550,
+    "condition": "Б/у",
+    "model_key": "redmi 9a",
+    "verified_model": null
   }
 }

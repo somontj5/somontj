@@ -18488,7 +18488,8 @@
     "title": "Samsung Galaxy A14",
     "price": 1000,
     "condition": "Б/у",
-    "model_key": "samsung a14"
+    "model_key": "samsung a14",
+    "sold_checked": true
   },
   "47038205": {
     "logged": true,

@@ -17922,7 +17922,8 @@
     "price": 1569,
     "condition": "Б/у",
     "model_key": "apple xr",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "43332864": {
     "logged": true,
@@ -17942,7 +17943,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
     "price": 8999,
     "condition": "Б/у",
-    "model_key": "apple 16 pro max"
+    "model_key": "apple 16 pro max",
+    "sold_checked": true
   },
   "46514128": {
     "logged": true,
@@ -17961,7 +17963,8 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "redmi note 8t",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "72438452": {
     "logged": true,
@@ -18446,5 +18449,32 @@
     "condition": "Б/у",
     "model_key": "samsung s20",
     "verified_model": null
+  },
+  "06611128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/13806066_apple-iphone-11-128-gb-product-red/",
+    "title": "Apple iPhone 11, 128 gb, Product Red",
+    "price": 3100,
+    "condition": "Б/у",
+    "model_key": "apple 11"
+  },
+  "37911128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15343379_apple-iphone-11-128-gb-product-red/",
+    "title": "Apple iPhone 11, 128 gb, Product Red",
+    "price": 3299,
+    "condition": "Б/у",
+    "model_key": "apple 11"
+  },
+  "60319128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/13860319_apple-iphone-xr-128-gb-product-red/",
+    "title": "Apple iPhone Xr, 128 gb, White",
+    "price": 2599,
+    "condition": "Б/у",
+    "model_key": "apple xr"
   }
 }

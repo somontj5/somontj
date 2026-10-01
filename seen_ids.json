@@ -18250,7 +18250,8 @@
     "title": "Apple iPhone Xr, 128 gb, Product Red",
     "price": 2799,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "93292128": {
     "logged": true,
@@ -18259,7 +18260,8 @@
     "title": "Apple iPhone Xr, 128 gb, Product Red",
     "price": 2700,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "78420128": {
     "logged": true,
@@ -18268,7 +18270,8 @@
     "title": "Apple iPhone Xr, 128 gb, Product Red",
     "price": 2799,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "36117512": {
     "logged": true,
@@ -18277,7 +18280,8 @@
     "title": "Apple iPhone 17 Pro Max, 512 gb, Deep Blue",
     "price": 1599,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "45241128": {
     "logged": true,
@@ -18782,6 +18786,45 @@
     "price": 950,
     "condition": "Б/у",
     "model_key": "apple x",
+    "verified_model": null
+  },
+  "55427070": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16554270_honor-70/",
+    "title": "Honor 70",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "honor 70",
+    "verified_model": null
+  },
+  "24874632": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17248746_samsung-galaxy-a32-iagonkhel-dard-nadorad-khamachoiash-radnoi/",
+    "title": "Samsung galaxy a32",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "samsung a32",
+    "verified_model": null
+  },
+  "72714128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17248727_apple-iphone-14-pro-max-128-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro Max, 128 gb, Deep Purple",
+    "price": 6150,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
+  },
+  "24863916": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17248639_galaxy-a16/",
+    "title": "Samsung Galaxy А16",
+    "price": 1550,
+    "condition": "Б/у",
+    "model_key": "samsung а16",
     "verified_model": null
   }
 }

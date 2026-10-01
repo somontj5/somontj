@@ -18970,5 +18970,15 @@
     "price": 4700,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "45112128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17249451_apple-iphone-12-128-gb-white/",
+    "title": "Apple iPhone 12, 128 gb, White",
+    "price": 2699,
+    "condition": "Б/у",
+    "model_key": "apple 12",
+    "verified_model": null
   }
 }

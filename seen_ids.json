@@ -18941,7 +18941,8 @@
     "title": "Samsung Galaxy A56 12/256Gb Vetnam 5G 2sim Silver",
     "price": 3550,
     "condition": "Б/у",
-    "model_key": "samsung a56 vetnam"
+    "model_key": "samsung a56 vetnam",
+    "sold_checked": true
   },
   "60330523": {
     "logged": true,

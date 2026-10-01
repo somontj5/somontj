@@ -18027,7 +18027,8 @@
     "title": "Телефон Xiaomi",
     "price": 3500,
     "condition": "Б/у",
-    "model_key": "xiaomi"
+    "model_key": "xiaomi",
+    "sold_checked": true
   },
   "24409722": {
     "logged": true,
@@ -18036,7 +18037,8 @@
     "title": "Samsung Galaxsy S22 Ultra",
     "price": 3500,
     "condition": "Б/у",
-    "model_key": "samsung galaxsy s22 ultra"
+    "model_key": "samsung galaxsy s22 ultra",
+    "sold_checked": true
   },
   "46712128": {
     "logged": true,
@@ -18528,9 +18530,21 @@
     "model_key": null
   },
   "10254128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15310254_apple-iphone-xr-128-gb-product-red/",
+    "title": "Apple iPhone Xr, 128 gb, Product Red",
+    "price": 2800,
+    "condition": "Б/у",
+    "model_key": "apple xr"
   },
   "10252128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15310252_apple-iphone-xr-128-gb-product-red/",
+    "title": "Apple iPhone Xr, 128 gb, Product Red",
+    "price": 2700,
+    "condition": "Б/у",
+    "model_key": "apple xr"
   }
 }

@@ -17410,7 +17410,8 @@
     "price": 2850,
     "condition": "Б/у",
     "model_key": "samsung a56",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "24005111": {
     "logged": true,
@@ -18008,6 +18009,16 @@
     "price": 550,
     "condition": "Б/у",
     "model_key": "samsung a6 2018",
+    "verified_model": null
+  },
+  "81234420": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16812344_galaxy-s20/",
+    "title": "Samsung Galaxy S20+",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "samsung s20 plus",
     "verified_model": null
   }
 }

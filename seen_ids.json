@@ -18393,7 +18393,8 @@
     "price": 550,
     "condition": "Б/у",
     "model_key": "redmi 9a",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "24613310": {
     "logged": true,
@@ -18980,5 +18981,14 @@
     "condition": "Б/у",
     "model_key": "apple 12",
     "verified_model": null
+  },
+  "37522512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16664375_galaxy-galaxy-22-ultra-512g/",
+    "title": "Samsung Galaxy 22 Ultra 512gb",
+    "price": 4500,
+    "condition": "Б/у",
+    "model_key": "samsung 22 ultra"
   }
 }

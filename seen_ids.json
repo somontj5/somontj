@@ -18132,7 +18132,8 @@
     "title": "Apple iPhone 14, 128 gb, Midnight",
     "price": 2900,
     "condition": "Б/у",
-    "model_key": "apple 14"
+    "model_key": "apple 14",
+    "sold_checked": true
   },
   "37413128": {
     "logged": true,
@@ -18278,5 +18279,15 @@
     "price": 2899,
     "condition": "Б/у",
     "model_key": "apple xr"
+  },
+  "55323644": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17245553_samsung-a23-64-4/",
+    "title": "Samsung galaxy a23 64/4",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "samsung a23 64 4",
+    "verified_model": null
   }
 }

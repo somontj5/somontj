@@ -18241,7 +18241,8 @@
     "title": "Apple iPhone 17 Pro Max, 512 gb, Silver Дубликат",
     "price": 1500,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "09245128": {
     "logged": true,
@@ -18826,5 +18827,14 @@
     "condition": "Б/у",
     "model_key": "samsung а16",
     "verified_model": null
+  },
+  "17248782": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17248782_be-iagon-problema-nadorad/",
+    "title": "Телефон Samsung",
+    "price": 3700,
+    "condition": "Б/у",
+    "model_key": "samsung"
   }
 }

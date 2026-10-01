@@ -18415,7 +18415,8 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "poco m3",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "52412256": {
     "logged": true,

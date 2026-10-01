@@ -18321,7 +18321,8 @@
     "title": "Apple iPhone 11, 128 gb, White",
     "price": 3350,
     "condition": "Б/у",
-    "model_key": "apple 11"
+    "model_key": "apple 11",
+    "sold_checked": true
   },
   "51786128": {
     "logged": true,
@@ -18330,7 +18331,8 @@
     "title": "Apple iPhone Xr, 128 gb, Product Red",
     "price": 2899,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "55323644": {
     "logged": true,
@@ -18350,7 +18352,8 @@
     "title": "Apple iPhone 16e, 128 gb",
     "price": 6500,
     "condition": "Б/у",
-    "model_key": "apple 16 e"
+    "model_key": "apple 16 e",
+    "sold_checked": true
   },
   "66517256": {
     "logged": true,
@@ -18887,5 +18890,34 @@
     "price": 1010,
     "condition": "Б/у",
     "model_key": "redmi note 9"
+  },
+  "93317256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17248933_apple-iphone-17-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
+    "price": 13500,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
+  },
+  "24891071": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17248910_xiaomi-poco-c71/",
+    "title": "Xiaomi Poco C71",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "poco c71",
+    "verified_model": null
+  },
+  "47094128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17247094_apple-iphone-xr-128-gb-black/",
+    "title": "Apple iPhone Xr, 128 gb, Black",
+    "price": 1649,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
   }
 }

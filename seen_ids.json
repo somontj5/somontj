@@ -17369,7 +17369,8 @@
     "price": 400,
     "condition": "Б/у",
     "model_key": "redmi 9t",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "31411256": {
     "logged": true,
@@ -17988,5 +17989,14 @@
     "price": 3500,
     "condition": "Б/у",
     "model_key": "samsung galaxsy s22 ultra"
+  },
+  "46712128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17244467_apple-iphone-12-pro-128-gb-graphite/",
+    "title": "Apple iPhone 12 pro, 128 gb, Graphite",
+    "price": 3200,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro"
   }
 }

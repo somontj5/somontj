@@ -17528,7 +17528,8 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "samsung a12",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "72014128": {
     "logged": true,
@@ -17558,7 +17559,8 @@
     "price": 2500,
     "condition": "Б/у",
     "model_key": "samsung s10 plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "30612128": {
     "logged": true,
@@ -18118,5 +18120,23 @@
     "price": 2900,
     "condition": "Б/у",
     "model_key": "apple 14"
+  },
+  "37413128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17245374_apple-iphone-13-pro-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
+    "price": 3300,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
+  },
+  "43771285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17244377_telefon-samsung-128gb-dual-sim-5g/",
+    "title": "Samsung Galaxy 128gb Dual sim 5G",
+    "price": 3250,
+    "condition": "Б/у",
+    "model_key": "samsung"
   }
 }

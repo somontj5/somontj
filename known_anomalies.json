@@ -110,5 +110,9 @@
   "apple 12|64": {
     "first_seen": "2026-09-30",
     "ratio": 4.0
+  },
+  "samsung|128": {
+    "first_seen": "2026-10-01",
+    "ratio": 3.82
   }
 }

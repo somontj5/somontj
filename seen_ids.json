@@ -17674,7 +17674,8 @@
     "price": 150,
     "condition": "Б/у",
     "model_key": null,
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "72408166": {
     "logged": true,
@@ -17683,7 +17684,8 @@
     "title": "Samsung Galaxy A6",
     "price": 650,
     "condition": "Б/у",
-    "model_key": "samsung a6"
+    "model_key": "samsung a6",
+    "sold_checked": true
   },
   "80314256": {
     "logged": true,
@@ -17692,7 +17694,8 @@
     "title": "Apple iPhone 14 Pro, 256 gb, Space Black",
     "price": 6000,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "80617256": {
     "logged": true,
@@ -18228,5 +18231,32 @@
     "price": 1599,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "45241128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15045241_apple-iphone-xr-128-gb-product-red/",
+    "title": "Apple iPhone Xr, 128 gb, Product Red",
+    "price": 2899,
+    "condition": "Б/у",
+    "model_key": "apple xr"
+  },
+  "73995128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15273995_apple-iphone-xr-128-gb-product-red/",
+    "title": "Apple iPhone Xr, 128 gb, Product Red",
+    "price": 2799,
+    "condition": "Б/у",
+    "model_key": "apple xr"
+  },
+  "45717128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15270457_apple-iphone-17-pro-128-gb-silver/",
+    "title": "Apple iPhone 17 Pro, 128 gb, Silver",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro"
   }
 }

@@ -18593,7 +18593,8 @@
     "price": 380,
     "condition": "Б/у",
     "model_key": "apple 17 pro max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "34214128": {
     "logged": true,

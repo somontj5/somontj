@@ -17664,7 +17664,8 @@
     "price": 2999,
     "condition": "Б/у",
     "model_key": "apple 14 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17241845": {
     "logged": true,
@@ -17715,7 +17716,8 @@
     "price": 99,
     "condition": "Б/у",
     "model_key": "samsung c140",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "24199033": {
     "logged": true,
@@ -18258,5 +18260,23 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "apple 17 pro"
+  },
+  "06411128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/13780064_apple-iphone-11-128-gb-product-red/",
+    "title": "Apple iPhone 11, 128 gb, White",
+    "price": 3350,
+    "condition": "Б/у",
+    "model_key": "apple 11"
+  },
+  "51786128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15051786_apple-iphone-xr-128-gb-product-red/",
+    "title": "Apple iPhone Xr, 128 gb, Product Red",
+    "price": 2899,
+    "condition": "Б/у",
+    "model_key": "apple xr"
   }
 }

@@ -18372,7 +18372,8 @@
     "title": "Apple iPhone 17 Pro, 256 gb, Cosmic Orange",
     "price": 11099,
     "condition": "Б/у",
-    "model_key": "apple 17 pro"
+    "model_key": "apple 17 pro",
+    "sold_checked": true
   },
   "28613128": {
     "logged": true,
@@ -18939,5 +18940,14 @@
     "price": 3550,
     "condition": "Б/у",
     "model_key": "samsung a56 vetnam"
+  },
+  "60330523": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15603305_samsung-galaxy-s-23-ultra/",
+    "title": "Samsung Galaxy S23 ultra",
+    "price": 6000,
+    "condition": "Б/у",
+    "model_key": "samsung s23 ultra"
   }
 }

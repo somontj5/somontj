@@ -17506,7 +17506,8 @@
     "title": "Apple iPhone 15 Pro, 256 gb, Natural Titanium",
     "price": 6999,
     "condition": "Б/у",
-    "model_key": "apple 15 pro"
+    "model_key": "apple 15 pro",
+    "sold_checked": true
   },
   "72407928": {
     "logged": true,
@@ -17516,7 +17517,8 @@
     "price": 760,
     "condition": "Б/у",
     "model_key": "redmi note 8",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "24091112": {
     "logged": true,
@@ -17545,7 +17547,8 @@
     "title": "Samsung Galaxy S22 Ultra",
     "price": 4300,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "24113510": {
     "logged": true,
@@ -18088,5 +18091,32 @@
     "price": 3450,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra"
+  },
+  "34714128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17244347_telefon-redmi-note-14-128gb-glabal-version/",
+    "title": "Xiaomi Redmi Note 14 128gb Glabal Version",
+    "price": 1650,
+    "condition": "Б/у",
+    "model_key": "redmi note 14"
+  },
+  "61561285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17244361_telefon-samsung-56-128gb-vetnam-5g-silver/",
+    "title": "Samsung Galaxy 56 128gb Vetnam 5G Silver",
+    "price": 2766,
+    "condition": "Б/у",
+    "model_key": "samsung 56"
+  },
+  "26114128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17245261_apple-iphone-14-128-gb-midnight/",
+    "title": "Apple iPhone 14, 128 gb, Midnight",
+    "price": 2900,
+    "condition": "Б/у",
+    "model_key": "apple 14"
   }
 }

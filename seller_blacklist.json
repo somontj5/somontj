@@ -115,5 +115,14 @@
     "blocked_at": "2026-09-30T15:39:46",
     "updated_at": "2026-09-30T15:39:46",
     "active_ads_at_block": 3
+  },
+  "15536938": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/15536938/",
+    "reason": "похоже на перекупщика по фото: у продавца 16 активных объявлений на площадке",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17244518_samsung-galaxy-a6-2018/",
+    "blocked_at": "2026-10-01T06:12:35",
+    "updated_at": "2026-10-01T06:12:35",
+    "active_ads_at_block": 16
   }
 }

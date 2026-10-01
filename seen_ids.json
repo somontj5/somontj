@@ -17419,7 +17419,8 @@
     "title": "Samsung Galaxy A11, 32gb",
     "price": 600,
     "condition": "Б/у",
-    "model_key": "samsung a11"
+    "model_key": "samsung a11",
+    "sold_checked": true
   },
   "02207256": {
     "logged": true,
@@ -17998,5 +17999,15 @@
     "price": 3200,
     "condition": "Б/у",
     "model_key": "apple 12 pro"
+  },
+  "51862018": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17244518_samsung-galaxy-a6-2018/",
+    "title": "Samsung galaxy A6 2018",
+    "price": 550,
+    "condition": "Б/у",
+    "model_key": "samsung a6 2018",
+    "verified_model": null
   }
 }

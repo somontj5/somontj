@@ -17400,7 +17400,8 @@
     "title": "Xiaomi Redmi Note 7, 64gb",
     "price": 600,
     "condition": "Б/у",
-    "model_key": "redmi note 7"
+    "model_key": "redmi note 7",
+    "sold_checked": true
   },
   "34156128": {
     "logged": true,
@@ -17453,7 +17454,8 @@
     "price": 1299,
     "condition": "Б/у",
     "model_key": "apple 12",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "03871232": {
     "logged": true,
@@ -18030,5 +18032,32 @@
     "price": 499,
     "condition": "Б/у",
     "model_key": "honor 7a pro"
+  },
+  "02714512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17245027_apple-iphone-14-pro-max-512-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro Max, 512 gb, Deep Purple",
+    "price": 4399,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
+  },
+  "42479128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17244247_telefon-redmi-note-9-128gb-glabal-version/",
+    "title": "Xiaomi Redmi Note 9 128gb Glabal Version",
+    "price": 840,
+    "condition": "Б/у",
+    "model_key": "redmi note 9"
+  },
+  "26203325": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17244262_telefon-samsung-a03s-32gb-vetnam-5g-silver/",
+    "title": "Samsung Galaxy А03S 32Gb Vetnam 5G Silver",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "samsung а03s"
   }
 }

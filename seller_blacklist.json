@@ -133,5 +133,14 @@
     "blocked_at": "2026-10-01T08:00:28",
     "updated_at": "2026-10-01T08:00:28",
     "active_ads_at_block": 225
+  },
+  "13820095": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/13820095/",
+    "reason": "похоже на перекупщика по фото: Наличие 21 активного объявления у продавца и формулировки в описании ('напа нав пачка') характерны для мелких магазинов или активных перекупщиков.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17248083_samsung-galaxy-a13-4-32gb-duos-vietnam/",
+    "blocked_at": "2026-10-01T13:42:29",
+    "updated_at": "2026-10-01T13:42:29",
+    "active_ads_at_block": 21
   }
 }

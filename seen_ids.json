@@ -18699,5 +18699,24 @@
     "model_key": "honor 200 lite",
     "verified_model": null,
     "sold_checked": true
+  },
+  "08313432": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17248083_samsung-galaxy-a13-4-32gb-duos-vietnam/",
+    "title": "Samsung Galaxy A13 4/32Gb Duos Vietnam",
+    "price": 1010,
+    "condition": "Б/у",
+    "model_key": "samsung a13 duos",
+    "verified_model": null
+  },
+  "04656128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17248046_samsung-galaxy-a56-128gb-duos-vietnam/",
+    "title": "Samsung Galaxy A56 128Gb Duos Vietnam",
+    "price": 2749,
+    "condition": "Б/у",
+    "model_key": "samsung a56"
   }
 }

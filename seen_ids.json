@@ -18089,7 +18089,8 @@
     "title": "Apple iPhone 14 Pro Max, 512 gb, Deep Purple",
     "price": 4399,
     "condition": "Б/у",
-    "model_key": "apple 14 pro max"
+    "model_key": "apple 14 pro max",
+    "sold_checked": true
   },
   "42479128": {
     "logged": true,

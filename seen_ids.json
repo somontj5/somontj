@@ -18139,7 +18139,8 @@
     "title": "Samsung Galaxy S22 Ultra 256Gb Carea 5G",
     "price": 3450,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "34714128": {
     "logged": true,
@@ -18673,6 +18674,16 @@
     "price": 1400,
     "condition": "Б/у",
     "model_key": "samsung note 10 plus",
+    "verified_model": null
+  },
+  "55315105": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16855315_samsung-galaxy-s10-5g/",
+    "title": "Samsung Galaxy S10 5G, 256gb",
+    "price": 1590,
+    "condition": "Б/у",
+    "model_key": "samsung s10",
     "verified_model": null
   }
 }

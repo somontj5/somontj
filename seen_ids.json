@@ -17801,7 +17801,8 @@
     "price": 120,
     "condition": "Б/у",
     "model_key": "samsung s3 duos",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "21871164": {
     "logged": true,
@@ -18320,5 +18321,14 @@
     "price": 11099,
     "condition": "Б/у",
     "model_key": "apple 17 pro"
+  },
+  "28613128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17245286_apple-iphone-13-pro-128-gb-alpine-green/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Alpine Green",
+    "price": 4400,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

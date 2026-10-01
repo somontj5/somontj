@@ -17475,7 +17475,8 @@
     "title": "Apple iPhone 14 Pro, 128 gb, Silver",
     "price": 5200,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "61813128": {
     "logged": true,
@@ -18059,5 +18060,23 @@
     "price": 850,
     "condition": "Б/у",
     "model_key": "samsung а03s"
+  },
+  "93561285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17244293_telefon-samsung-a56-128-vetnam-5g-silver/",
+    "title": "Samsung Galaxy А56 128 Vetnam 5G Silver",
+    "price": 2750,
+    "condition": "Б/у",
+    "model_key": "samsung а56 128 vetnam"
+  },
+  "27313322": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17244273_telefon-samsung-a13-32gb-vetnam-2sim/",
+    "title": "Samsung Galaxy А13 32Gb Vetnam 2sim",
+    "price": 1050,
+    "condition": "Б/у",
+    "model_key": "samsung а13"
   }
 }

@@ -18382,7 +18382,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Alpine Green",
     "price": 4400,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "71150059": {
     "logged": true,
@@ -18947,6 +18948,15 @@
     "url": "https://m.somon.tj/adv/15603305_samsung-galaxy-s-23-ultra/",
     "title": "Samsung Galaxy S23 ultra",
     "price": 6000,
+    "condition": "Б/у",
+    "model_key": "samsung s23 ultra"
+  },
+  "49043235": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17249043_galaxy-s23-ultra-5g/",
+    "title": "Samsung Galaxy S23 ultra 5G",
+    "price": 4990,
     "condition": "Б/у",
     "model_key": "samsung s23 ultra"
   }

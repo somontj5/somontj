@@ -18291,7 +18291,8 @@
     "title": "Apple iPhone Xr, 128 gb, Product Red",
     "price": 2899,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "73995128": {
     "logged": true,
@@ -18300,7 +18301,8 @@
     "title": "Apple iPhone Xr, 128 gb, Product Red",
     "price": 2799,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "45717128": {
     "logged": true,
@@ -18309,7 +18311,8 @@
     "title": "Apple iPhone 17 Pro, 128 gb, Silver",
     "price": 1500,
     "condition": "Б/у",
-    "model_key": "apple 17 pro"
+    "model_key": "apple 17 pro",
+    "sold_checked": true
   },
   "06411128": {
     "logged": true,
@@ -18337,7 +18340,8 @@
     "price": 750,
     "condition": "Б/у",
     "model_key": "samsung a23 64 4",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "57116128": {
     "logged": true,
@@ -18777,7 +18781,8 @@
     "price": 1150,
     "condition": "Б/у",
     "model_key": "apple xs max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "24849264": {
     "logged": true,
@@ -18836,5 +18841,50 @@
     "price": 3700,
     "condition": "Б/у",
     "model_key": "samsung"
+  },
+  "81140332": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17248114_samsung-galaxy-a03s-32gb-duos-vietnam/",
+    "title": "Samsung Galaxy A03S 32Gb Duos Vietnam",
+    "price": 980,
+    "condition": "Б/у",
+    "model_key": "samsung a03s"
+  },
+  "24814024": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17248140_s24-ultra/",
+    "title": "Samsung Galaxy S24 ultra",
+    "price": 7750,
+    "condition": "Б/у",
+    "model_key": "samsung s24 ultra"
+  },
+  "62212256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17248136_samsung-galaxy-s22-ultra-12-256gb/",
+    "title": "Samsung Galaxy S22 Ultra 12/256Gb",
+    "price": 3790,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
+  },
+  "81713128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17248817_apple-iphone-13-pro-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
+    "price": 3800,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
+  },
+  "81529128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17248152_telefon-redmi-not-9-128gb/",
+    "title": "Xiaomi Redmi Note 9 128gb",
+    "price": 1010,
+    "condition": "Б/у",
+    "model_key": "redmi note 9"
   }
 }

@@ -17761,7 +17761,8 @@
     "price": 280,
     "condition": "Б/у",
     "model_key": "samsung j2 prime",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "51271314": {
     "logged": true,
@@ -17826,7 +17827,8 @@
     "price": 999,
     "condition": "Б/у",
     "model_key": "redmi a5",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "19014128": {
     "logged": true,
@@ -18362,6 +18364,25 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "poco m3",
+    "verified_model": null
+  },
+  "52412256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17246415_samsung-galaxy-s24-ultra-12-256-gb/",
+    "title": "Samsung Galaxy S24 Ultra 12/256 GB",
+    "price": 7700,
+    "condition": "Б/у",
+    "model_key": "samsung s24 ultra"
+  },
+  "72457037": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17245703_poco-x7-pro/",
+    "title": "Poco X7 pro",
+    "price": 2900,
+    "condition": "Б/у",
+    "model_key": "poco x7 pro",
     "verified_model": null
   }
 }

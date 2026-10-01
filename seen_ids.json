@@ -18376,7 +18376,8 @@
     "price": 590,
     "condition": "Б/у",
     "model_key": "samsung s10",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "72461503": {
     "logged": true,
@@ -18642,5 +18643,14 @@
     "condition": "Б/у",
     "model_key": "apple x",
     "verified_model": null
+  },
+  "38344621": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16383446_samsung-galaxy-s21-ultra/",
+    "title": "Samsung Galaxy S21 Ultra",
+    "price": 3700,
+    "condition": "Б/у",
+    "model_key": "samsung s21 ultra"
   }
 }

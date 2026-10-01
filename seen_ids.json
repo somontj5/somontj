@@ -18425,7 +18425,8 @@
     "title": "Samsung Galaxy S24 Ultra 12/256 GB",
     "price": 7700,
     "condition": "Б/у",
-    "model_key": "samsung s24 ultra"
+    "model_key": "samsung s24 ultra",
+    "sold_checked": true
   },
   "72457037": {
     "logged": true,
@@ -18991,5 +18992,25 @@
     "price": 4500,
     "condition": "Б/у",
     "model_key": "samsung 22 ultra"
+  },
+  "17058276": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17058276_dodar/",
+    "title": "Xiaomi Redmi Note 11",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "redmi note 11",
+    "verified_model": null
+  },
+  "72455399": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17245539_redmi-9a/",
+    "title": "Xiaomi Redmi 9A",
+    "price": 499,
+    "condition": "Б/у",
+    "model_key": "redmi 9a",
+    "verified_model": null
   }
 }

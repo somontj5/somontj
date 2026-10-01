@@ -142,5 +142,14 @@
     "blocked_at": "2026-10-01T13:42:29",
     "updated_at": "2026-10-01T13:42:29",
     "active_ads_at_block": 21
+  },
+  "18079642": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/18079642/",
+    "reason": "похоже на перекупщика по фото: На заднем фоне четко видны витринные коробки с аксессуарами и чехлами для телефонов (Metal Pure Frame IP16PRO).",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17245539_redmi-9a/",
+    "blocked_at": "2026-10-01T17:51:44",
+    "updated_at": "2026-10-01T17:51:44",
+    "active_ads_at_block": 6
   }
 }

@@ -17263,7 +17263,8 @@
     "price": 2750,
     "condition": "Б/у",
     "model_key": "samsung а56",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "19614128": {
     "logged": true,
@@ -17315,7 +17316,8 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "redmi note 9",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "63514128": {
     "logged": true,
@@ -17894,5 +17896,24 @@
     "price": 8999,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "46514128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17243465_apple-iphone-14-128-gb-blue/",
+    "title": "Apple iPhone 14, 128 gb, Blue",
+    "price": 4100,
+    "condition": "Б/у",
+    "model_key": "apple 14"
+  },
+  "72434968": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17243496_redmi-not-8-t/",
+    "title": "Xiaomi Redmi Note 8T",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "redmi note 8t",
+    "verified_model": null
   }
 }

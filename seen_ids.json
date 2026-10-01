@@ -18099,7 +18099,8 @@
     "title": "Xiaomi Redmi Note 9 128gb Glabal Version",
     "price": 840,
     "condition": "Б/у",
-    "model_key": "redmi note 9"
+    "model_key": "redmi note 9",
+    "sold_checked": true
   },
   "26203325": {
     "logged": true,
@@ -18108,7 +18109,8 @@
     "title": "Samsung Galaxy А03S 32Gb Vetnam 5G Silver",
     "price": 850,
     "condition": "Б/у",
-    "model_key": "samsung а03s"
+    "model_key": "samsung а03s",
+    "sold_checked": true
   },
   "93561285": {
     "logged": true,
@@ -18611,5 +18613,23 @@
     "price": 850,
     "condition": "Б/у",
     "model_key": "infinix smart 7"
+  },
+  "61413128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17247614_apple-iphone-13-128-gb-blue/",
+    "title": "Apple iPhone 13, 128 gb, Blue",
+    "price": 3600,
+    "condition": "Б/у",
+    "model_key": "apple 13"
+  },
+  "61016256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17247610_apple-iphone-16-pro-max-256-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
+    "price": 9999,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   }
 }

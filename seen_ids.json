@@ -17388,7 +17388,8 @@
     "title": "Samsung Galaxy A56",
     "price": 3100,
     "condition": "Б/у",
-    "model_key": "samsung a56"
+    "model_key": "samsung a56",
+    "sold_checked": true
   },
   "72400767": {
     "logged": true,
@@ -17977,5 +17978,14 @@
     "price": 3500,
     "condition": "Б/у",
     "model_key": "xiaomi"
+  },
+  "24409722": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17244097_samsung-galaxsy-s22-ultra/",
+    "title": "Samsung Galaxsy S22 Ultra",
+    "price": 3500,
+    "condition": "Б/у",
+    "model_key": "samsung galaxsy s22 ultra"
   }
 }

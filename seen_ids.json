@@ -17890,7 +17890,8 @@
     "title": "Apple iPhone 14 Pro Max, 256 gb, Deep Purple",
     "price": 6300,
     "condition": "Б/у",
-    "model_key": "apple 14 pro max"
+    "model_key": "apple 14 pro max",
+    "sold_checked": true
   },
   "56717256": {
     "logged": true,
@@ -18425,6 +18426,25 @@
     "price": 2222,
     "condition": "Б/у",
     "model_key": "apple 12 pro",
+    "verified_model": null
+  },
+  "24703714": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17247037_samsung-galaxy-a14/",
+    "title": "Samsung Galaxy A14",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "samsung a14"
+  },
+  "47038205": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17247038_s20-5g/",
+    "title": "Samsung Galaxy S20 5G",
+    "price": 1349,
+    "condition": "Б/у",
+    "model_key": "samsung s20",
     "verified_model": null
   }
 }

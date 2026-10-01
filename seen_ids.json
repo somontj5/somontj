@@ -17485,7 +17485,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Graphite",
     "price": 4800,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "38813128": {
     "logged": true,
@@ -18078,5 +18079,14 @@
     "price": 1050,
     "condition": "Б/у",
     "model_key": "samsung а13"
+  },
+  "31222565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17244331_telefon-samsung-s22-ultra-256gb-carea-5g/",
+    "title": "Samsung Galaxy S22 Ultra 256Gb Carea 5G",
+    "price": 3450,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
   }
 }

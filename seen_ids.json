@@ -18362,7 +18362,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
     "price": 12299,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "71317256": {
     "logged": true,
@@ -18929,5 +18930,14 @@
     "condition": "Б/у",
     "model_key": "redmi note 13 pro plus",
     "verified_model": null
+  },
+  "61225652": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17249020_telefon-samsung-a56-12-256gb-vetnam-5g-2sim-silver/",
+    "title": "Samsung Galaxy A56 12/256Gb Vetnam 5G 2sim Silver",
+    "price": 3550,
+    "condition": "Б/у",
+    "model_key": "samsung a56 vetnam"
   }
 }

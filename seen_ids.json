@@ -18149,7 +18149,8 @@
     "title": "Xiaomi Redmi Note 14 128gb Glabal Version",
     "price": 1650,
     "condition": "Б/у",
-    "model_key": "redmi note 14"
+    "model_key": "redmi note 14",
+    "sold_checked": true
   },
   "61561285": {
     "logged": true,
@@ -18158,7 +18159,8 @@
     "title": "Samsung Galaxy 56 128gb Vetnam 5G Silver",
     "price": 2766,
     "condition": "Б/у",
-    "model_key": "samsung 56"
+    "model_key": "samsung 56",
+    "sold_checked": true
   },
   "26114128": {
     "logged": true,
@@ -18684,6 +18686,16 @@
     "price": 1590,
     "condition": "Б/у",
     "model_key": "samsung s10",
+    "verified_model": null
+  },
+  "48049200": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17248049_honor-200-lite/",
+    "title": "Honor 200 lite",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "honor 200 lite",
     "verified_model": null
   }
 }

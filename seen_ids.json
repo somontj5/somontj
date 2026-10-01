@@ -18518,7 +18518,8 @@
     "title": "Apple iPhone 11, 128 gb, Product Red",
     "price": 3299,
     "condition": "Б/у",
-    "model_key": "apple 11"
+    "model_key": "apple 11",
+    "sold_checked": true
   },
   "60319128": {
     "logged": true,
@@ -18527,7 +18528,8 @@
     "title": "Apple iPhone Xr, 128 gb, White",
     "price": 2599,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "17987128": {
     "logged": true,
@@ -19085,5 +19087,34 @@
     "price": 3400,
     "condition": "Б/у",
     "model_key": "apple 13 pro 1 tb"
+  },
+  "71456107": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17145610_samsung-galaxy-s7-gold/",
+    "title": "Samsung Galaxy S7 Gold",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "samsung s7",
+    "verified_model": null
+  },
+  "65058255": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16505825_samsung-galaxy-z-fold-5/",
+    "title": "Samsung Galaxy Z Fold 5",
+    "price": 5900,
+    "condition": "Б/у",
+    "model_key": "samsung z fold 5"
+  },
+  "05550202": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16505550_samsung-galaxy-note-20-ultra-2-sim/",
+    "title": "Samsung Galaxy Note 20 Ultra",
+    "price": 2700,
+    "condition": "Б/у",
+    "model_key": "samsung note 20 ultra",
+    "verified_model": null
   }
 }

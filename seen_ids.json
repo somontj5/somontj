@@ -13135,7 +13135,8 @@
     "title": "Apple iPhone 13 Pro Max, 128 gb, Sierra Blue",
     "price": 5700,
     "condition": "Б/у",
-    "model_key": "apple 13 pro max"
+    "model_key": "apple 13 pro max",
+    "sold_checked": true
   },
   "12613256": {
     "logged": true,
@@ -18696,6 +18697,7 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "honor 200 lite",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   }
 }

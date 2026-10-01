@@ -18201,7 +18201,8 @@
     "price": 2700,
     "condition": "Б/у",
     "model_key": "apple xr",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "28817512": {
     "logged": true,
@@ -18771,6 +18772,16 @@
     "price": 1150,
     "condition": "Б/у",
     "model_key": "apple xs max",
+    "verified_model": null
+  },
+  "24849264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17248492_apple-iphone-x-64-gb-silver/",
+    "title": "Apple iPhone X, 64 gb, Silver",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "apple x",
     "verified_model": null
   }
 }

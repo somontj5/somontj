@@ -18128,7 +18128,8 @@
     "title": "Samsung Galaxy А13 32Gb Vetnam 2sim",
     "price": 1050,
     "condition": "Б/у",
-    "model_key": "samsung а13"
+    "model_key": "samsung а13",
+    "sold_checked": true
   },
   "31222565": {
     "logged": true,
@@ -18652,5 +18653,15 @@
     "price": 3700,
     "condition": "Б/у",
     "model_key": "samsung s21 ultra"
+  },
+  "24775264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17247752_apple-iphone-xs-64-gb-space-grey/",
+    "title": "Apple iPhone Xs, 64 gb, Space Grey",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "apple xs",
+    "verified_model": null
   }
 }

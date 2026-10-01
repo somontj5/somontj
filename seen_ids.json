@@ -17857,7 +17857,8 @@
     "title": "Apple iPhone 16, 128 gb, White",
     "price": 7500,
     "condition": "Б/у",
-    "model_key": "apple 16"
+    "model_key": "apple 16",
+    "sold_checked": true
   },
   "42520100": {
     "logged": true,

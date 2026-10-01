@@ -18427,7 +18427,8 @@
     "price": 2900,
     "condition": "Б/у",
     "model_key": "poco x7 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "80189223": {
     "logged": true,

@@ -17570,7 +17570,8 @@
     "price": 2500,
     "condition": "Б/у",
     "model_key": "apple 12 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "30216512": {
     "logged": true,
@@ -17590,7 +17591,8 @@
     "price": 1750,
     "condition": "Б/у",
     "model_key": "redmi note 14",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "90714625": {
     "logged": true,
@@ -17599,7 +17601,8 @@
     "title": "Realme C25Y",
     "price": 650,
     "condition": "Б/у",
-    "model_key": "realme c25y"
+    "model_key": "realme c25y",
+    "sold_checked": true
   },
   "97813128": {
     "logged": true,
@@ -17944,7 +17947,8 @@
     "price": 350,
     "condition": "Б/у",
     "model_key": "redmi a2 plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "24389113": {
     "logged": true,
@@ -18138,5 +18142,42 @@
     "price": 3250,
     "condition": "Б/у",
     "model_key": "samsung"
+  },
+  "96273128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/13796273_apple-iphone-xr-128-gb-product-red/",
+    "title": "Apple iPhone Xr, 128 gb, Product Red",
+    "price": 2700,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
+  },
+  "28817512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16533288_apple-iphone-17-pro-max-512-gb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro Max, 512 gb, Cosmic Orange Дубликат",
+    "price": 1499,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "15817256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17244158_apple-iphone-17-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
+    "price": 15600,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
+  },
+  "72444145": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17244414_samsung-a5/",
+    "title": "Samsung Galaxy A5",
+    "price": 499,
+    "condition": "Б/у",
+    "model_key": "samsung a5"
   }
 }

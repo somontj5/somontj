@@ -17358,7 +17358,8 @@
     "title": "Samsung Galaxy S23 Ultra 12/256Gb",
     "price": 3500,
     "condition": "Б/у",
-    "model_key": "samsung s23 ultra"
+    "model_key": "samsung s23 ultra",
+    "sold_checked": true
   },
   "72399449": {
     "logged": true,
@@ -17967,5 +17968,14 @@
     "condition": "Б/у",
     "model_key": "redmi a5",
     "verified_model": null
+  },
+  "17243728": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17243728_korobka-dokument-khai-telefon-iagon-kambudi-nadorad/",
+    "title": "Телефон Xiaomi",
+    "price": 3500,
+    "condition": "Б/у",
+    "model_key": "xiaomi"
   }
 }

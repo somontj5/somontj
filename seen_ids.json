@@ -17953,7 +17953,8 @@
     "title": "Apple iPhone 14, 128 gb, Blue",
     "price": 4100,
     "condition": "Б/у",
-    "model_key": "apple 14"
+    "model_key": "apple 14",
+    "sold_checked": true
   },
   "72434968": {
     "logged": true,
@@ -17985,7 +17986,8 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "redmi note 13 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "84117256": {
     "logged": true,
@@ -17994,7 +17996,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
     "price": 15888,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "84214128": {
     "logged": true,
@@ -18003,7 +18006,8 @@
     "title": "Apple iPhone 14 Pro Max, 128 gb, Space Black",
     "price": 5500,
     "condition": "Б/у",
-    "model_key": "apple 14 pro max"
+    "model_key": "apple 14 pro max",
+    "sold_checked": true
   },
   "56390495": {
     "logged": true,
@@ -18013,7 +18017,8 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "redmi a5",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17243728": {
     "logged": true,
@@ -18476,5 +18481,56 @@
     "price": 2599,
     "condition": "Б/у",
     "model_key": "apple xr"
+  },
+  "17987128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16817987_apple-iphone-xr-128-gb-yellow/",
+    "title": "Apple iPhone Xr, 128 gb, Yellow",
+    "price": 2799,
+    "condition": "Б/у",
+    "model_key": "apple xr"
+  },
+  "17969128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16817969_apple-iphone-xr-128-gb-product-red/",
+    "title": "Apple iPhone Xr, 128 gb, Product Red",
+    "price": 2799,
+    "condition": "Б/у",
+    "model_key": "apple xr"
+  },
+  "19546128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15519546_apple-iphone-xr-128-gb-product-red/",
+    "title": "Apple iPhone Xr, 128 gb, Product Red",
+    "price": 2699,
+    "condition": "Б/у",
+    "model_key": "apple xr"
+  },
+  "14867128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15414867_apple-iphone-xr-128-gb-product-red/",
+    "title": "Apple iPhone Xr, 128 gb, Product Red",
+    "price": 2699,
+    "condition": "Б/у",
+    "model_key": "apple xr"
+  },
+  "27517512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15522275_apple-iphone-17-pro-max-512-gb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro Max, 512 gb, Cosmic Orange Дубликат",
+    "price": 1499,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "10254128": {
+    "logged": true
+  },
+  "10252128": {
+    "logged": true
   }
 }

@@ -18456,7 +18456,8 @@
     "price": 150,
     "condition": "Б/у",
     "model_key": null,
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "70822512": {
     "logged": true,
@@ -19012,5 +19013,14 @@
     "condition": "Б/у",
     "model_key": "redmi 9a",
     "verified_model": null
+  },
+  "55731364": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17245573_samsung-galaxy-a13-64gb/",
+    "title": "Samsung Galaxy A13 64GB",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "samsung a13"
   }
 }

@@ -19076,5 +19076,14 @@
     "price": 8000,
     "condition": "Б/у",
     "model_key": "apple 15 pro max"
+  },
+  "50247131": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17250247_apple-iphone-13-pro-1-tb-silver/",
+    "title": "Apple iPhone 13 Pro, 1 tb, Silver",
+    "price": 3400,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro 1 tb"
   }
 }

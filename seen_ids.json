@@ -17811,7 +17811,8 @@
     "price": 1600,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "72422115": {
     "logged": true,
@@ -18310,5 +18311,14 @@
     "price": 12299,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "71317256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17244713_apple-iphone-17-pro-256-gb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro, 256 gb, Cosmic Orange",
+    "price": 11099,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro"
   }
 }

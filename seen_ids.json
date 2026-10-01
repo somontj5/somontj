@@ -17771,7 +17771,8 @@
     "price": 250,
     "condition": "Б/у",
     "model_key": "samsung j2 core",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "13446607": {
     "logged": true,
@@ -17781,7 +17782,8 @@
     "price": 150,
     "condition": "Б/у",
     "model_key": null,
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "16638992": {
     "logged": true,
@@ -18340,6 +18342,26 @@
     "price": 550,
     "condition": "Б/у",
     "model_key": "redmi 9a",
+    "verified_model": null
+  },
+  "24613310": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17246133_samsung-galaxy-s10/",
+    "title": "Samsung Galaxy S10",
+    "price": 590,
+    "condition": "Б/у",
+    "model_key": "samsung s10",
+    "verified_model": null
+  },
+  "72461503": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17246150_poco-m3/",
+    "title": "Xiaomi POCO M3",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "poco m3",
     "verified_model": null
   }
 }

@@ -17727,7 +17727,8 @@
     "price": 199,
     "condition": "Б/у",
     "model_key": null,
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "24209964": {
     "logged": true,
@@ -18289,5 +18290,14 @@
     "condition": "Б/у",
     "model_key": "samsung a23 64 4",
     "verified_model": null
+  },
+  "57116128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17244571_apple-iphone-16e-128-gb/",
+    "title": "Apple iPhone 16e, 128 gb",
+    "price": 6500,
+    "condition": "Б/у",
+    "model_key": "apple 16 e"
   }
 }

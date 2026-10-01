@@ -18995,7 +18995,8 @@
     "title": "Samsung Galaxy 22 Ultra 512gb",
     "price": 4500,
     "condition": "Б/у",
-    "model_key": "samsung 22 ultra"
+    "model_key": "samsung 22 ultra",
+    "sold_checked": true
   },
   "17058276": {
     "logged": true,

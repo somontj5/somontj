@@ -17348,7 +17348,8 @@
     "title": "Apple iPhone 13 Pro Max, 256 gb, Alpine Green",
     "price": 5259,
     "condition": "Б/у",
-    "model_key": "apple 13 pro max"
+    "model_key": "apple 13 pro max",
+    "sold_checked": true
   },
   "32312256": {
     "logged": true,
@@ -17956,5 +17957,15 @@
     "price": 5500,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "56390495": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15639049_redmi-a-5/",
+    "title": "Xiaomi Redmi A5, 64gb",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "redmi a5",
+    "verified_model": null
   }
 }

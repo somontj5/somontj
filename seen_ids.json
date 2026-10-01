@@ -18047,7 +18047,8 @@
     "title": "Apple iPhone 12 pro, 128 gb, Graphite",
     "price": 3200,
     "condition": "Б/у",
-    "model_key": "apple 12 pro"
+    "model_key": "apple 12 pro",
+    "sold_checked": true
   },
   "51862018": {
     "logged": true,
@@ -18057,7 +18058,8 @@
     "price": 550,
     "condition": "Б/у",
     "model_key": "samsung a6 2018",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "81234420": {
     "logged": true,
@@ -18067,7 +18069,8 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "samsung s20 plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "72448937": {
     "logged": true,
@@ -18076,7 +18079,8 @@
     "title": "Honor 7A Pro",
     "price": 499,
     "condition": "Б/у",
-    "model_key": "honor 7a pro"
+    "model_key": "honor 7a pro",
+    "sold_checked": true
   },
   "02714512": {
     "logged": true,
@@ -18556,5 +18560,44 @@
     "condition": "Б/у",
     "model_key": "samsung s21",
     "verified_model": null
+  },
+  "73941164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17247394_apple-iphone-11-pro-64-gb-space-grey/",
+    "title": "Apple iPhone 11 Pro, 64 gb, Space Grey",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
+  },
+  "24739064": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17247390_apple-iphone-x-64-gb-silver/",
+    "title": "Apple iPhone X, 64 gb, Silver",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "apple x",
+    "verified_model": null
+  },
+  "36717512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17247367_apple-iphone-17-pro-max-512-gb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro Max, 512 gb, Cosmic Orange мини",
+    "price": 380,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max",
+    "verified_model": null
+  },
+  "34214128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17247342_apple-iphone-14-pro-128-gb-space-black/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Space Black",
+    "price": 3800,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

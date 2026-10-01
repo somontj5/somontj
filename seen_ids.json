@@ -18180,7 +18180,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
     "price": 3300,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "43771285": {
     "logged": true,
@@ -18189,7 +18190,8 @@
     "title": "Samsung Galaxy 128gb Dual sim 5G",
     "price": 3250,
     "condition": "Б/у",
-    "model_key": "samsung"
+    "model_key": "samsung",
+    "sold_checked": true
   },
   "96273128": {
     "logged": true,
@@ -18718,5 +18720,15 @@
     "price": 2749,
     "condition": "Б/у",
     "model_key": "samsung a56"
+  },
+  "48340864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17248340_apple-iphone-8-64-gb-gold/",
+    "title": "Apple iPhone 8, 64 gb, Gold",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "apple 8",
+    "verified_model": null
   }
 }

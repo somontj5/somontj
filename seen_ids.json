@@ -18967,7 +18967,8 @@
     "price": 1649,
     "condition": "Б/у",
     "model_key": "apple xr",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "24895113": {
     "logged": true,
@@ -19530,5 +19531,14 @@
     "price": 3500,
     "condition": "Б/у",
     "model_key": "apple 12 pro max"
+  },
+  "01877200": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16601877_vivo-x-200-pro/",
+    "title": "Vivo X 200 pro",
+    "price": 7450,
+    "condition": "Б/у",
+    "model_key": "vivo x 200 pro"
   }
 }

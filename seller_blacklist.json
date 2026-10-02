@@ -169,5 +169,14 @@
     "blocked_at": "2026-10-02T04:29:20",
     "updated_at": "2026-10-02T04:29:20",
     "active_ads_at_block": 1
+  },
+  "9511723": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/9511723/",
+    "reason": "похоже на перекупщика по фото: На заднем фоне четко видна витрина магазина с брендированными чемоданчиками/кейсами и одинаковыми коробками с аксессуарами.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17252605_apple-iphone-11-128-gb-green/",
+    "blocked_at": "2026-10-02T08:49:35",
+    "updated_at": "2026-10-02T08:49:35",
+    "active_ads_at_block": 6
   }
 }

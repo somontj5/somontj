@@ -18621,7 +18621,8 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "apple 11 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "24739064": {
     "logged": true,
@@ -18631,7 +18632,8 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "apple x",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "36717512": {
     "logged": true,
@@ -18661,7 +18663,8 @@
     "title": "Infinix Smart 7",
     "price": 850,
     "condition": "Б/у",
-    "model_key": "infinix smart 7"
+    "model_key": "infinix smart 7",
+    "sold_checked": true
   },
   "61413128": {
     "logged": true,
@@ -18679,7 +18682,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
     "price": 9999,
     "condition": "Б/у",
-    "model_key": "apple 16 pro max"
+    "model_key": "apple 16 pro max",
+    "sold_checked": true
   },
   "47720256": {
     "logged": true,
@@ -19213,5 +19217,43 @@
     "price": 8500,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "43963526": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16439635_samsung-galaxy-a26/",
+    "title": "Samsung Galaxy A26",
+    "price": 2450,
+    "condition": "Б/у",
+    "model_key": "samsung a26"
+  },
+  "60511128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17252605_apple-iphone-11-128-gb-green/",
+    "title": "Apple iPhone 11, 128 gb, Green",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "25262664": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17252626_apple-iphone-x-64-gb-silver/",
+    "title": "Apple iPhone X, 64 gb, Silver",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "apple x",
+    "verified_model": null
+  },
+  "26291164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17252629_apple-iphone-11-64-gb-black/",
+    "title": "Apple iPhone 11, 64 gb, Black",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "apple 11"
   }
 }

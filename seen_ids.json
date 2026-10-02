@@ -19195,5 +19195,14 @@
     "price": 7499,
     "condition": "Б/у",
     "model_key": "apple 15 pro max"
+  },
+  "89294314": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16892943_samsung-galaxy-a14/",
+    "title": "Samsung Galaxy A14",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "samsung a14"
   }
 }

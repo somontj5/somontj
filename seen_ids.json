@@ -19242,7 +19242,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
     "price": 7499,
     "condition": "Б/у",
-    "model_key": "apple 15 pro max"
+    "model_key": "apple 15 pro max",
+    "sold_checked": true
   },
   "89294314": {
     "logged": true,
@@ -19366,7 +19367,8 @@
     "price": 1700,
     "condition": "Б/у",
     "model_key": "samsung a34",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "19115128": {
     "logged": true,
@@ -19805,6 +19807,25 @@
     "price": 650,
     "condition": "Б/у",
     "model_key": "samsung a51",
+    "verified_model": null
+  },
+  "96614256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17251966_apple-iphone-14-pro-max-256-gb-gold/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb, Gold",
+    "price": 6050,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
+  },
+  "56678128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17256678_apple-iphone-xr-128-gb-white/",
+    "title": "Apple iPhone Xr, 128 gb, White",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "apple xr",
     "verified_model": null
   }
 }

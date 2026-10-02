@@ -18845,7 +18845,8 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "honor 70",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "24874632": {
     "logged": true,
@@ -18855,7 +18856,8 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "samsung a32",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "72714128": {
     "logged": true,
@@ -19417,5 +19419,32 @@
     "price": 7800,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "22813644": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17254228_telefon-samsung-a13-64gb-vetnam-4g/",
+    "title": "Samsung Galaxy А13 64gb Vetnam 4G",
+    "price": 1050,
+    "condition": "Б/у",
+    "model_key": "samsung а13"
+  },
+  "23956128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17254239_telefon-samsung-56-128gb/",
+    "title": "Samsung Galaxy A56 56 128гб",
+    "price": 2750,
+    "condition": "Б/у",
+    "model_key": "samsung a56 56"
+  },
+  "02325652": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17254120_telefon-samsung-s23-ultra-256gb-vetnam-5g-2sim/",
+    "title": "Samsung Galaxy S23 Ultra 256gb Vetnam 5G 2sim",
+    "price": 3499,
+    "condition": "Б/у",
+    "model_key": "samsung s23 ultra"
   }
 }

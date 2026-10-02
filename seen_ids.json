@@ -19584,5 +19584,15 @@
     "price": 10000,
     "condition": "Б/у",
     "model_key": "samsung s25 ultra"
+  },
+  "74547820": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15745478_samsung-galaxy-note-20-ultra/",
+    "title": "Samsung Galaxy Note 20 Ultra",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "samsung note 20 ultra",
+    "verified_model": null
   }
 }

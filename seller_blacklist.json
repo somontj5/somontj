@@ -187,5 +187,14 @@
     "blocked_at": "2026-10-02T12:41:27",
     "updated_at": "2026-10-02T12:41:27",
     "active_ads_at_block": 2
+  },
+  "15235481": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/15235481/",
+    "reason": "похоже на перекупщика по фото: На заднем плане фото отчетливо видна витрина или стенд магазина с телефонами и фирменной выкладкой.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/15745478_samsung-galaxy-note-20-ultra/",
+    "blocked_at": "2026-10-02T14:46:26",
+    "updated_at": "2026-10-02T14:46:26",
+    "active_ads_at_block": 5
   }
 }

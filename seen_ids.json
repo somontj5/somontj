@@ -18566,7 +18566,8 @@
     "title": "Apple iPhone Xr, 128 gb, Product Red",
     "price": 2699,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "27517512": {
     "logged": true,
@@ -19148,6 +19149,16 @@
     "price": 380,
     "condition": "Б/у",
     "model_key": "apple se",
+    "verified_model": null
+  },
+  "25067802": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17250678_samsung-galaxy-a02s/",
+    "title": "Samsung Galaxy A02s",
+    "price": 380,
+    "condition": "Б/у",
+    "model_key": "samsung a02s",
     "verified_model": null
   }
 }

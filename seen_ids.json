@@ -19204,5 +19204,14 @@
     "price": 1100,
     "condition": "Б/у",
     "model_key": "samsung a14"
+  },
+  "62217256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17251622_apple-iphone-17-pro-max-256-gb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
+    "price": 8500,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
   }
 }

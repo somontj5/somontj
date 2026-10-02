@@ -19378,5 +19378,15 @@
     "price": 3500,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "84917256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16884917_apple-iphone-xs-max-256-gb-gold/",
+    "title": "Apple iPhone Xs Max, 256 gb, Gold",
+    "price": 1900,
+    "condition": "Б/у",
+    "model_key": "apple xs max",
+    "verified_model": null
   }
 }

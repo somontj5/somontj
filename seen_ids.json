@@ -19490,5 +19490,14 @@
     "condition": "Б/у",
     "model_key": "honor 400",
     "verified_model": null
+  },
+  "16231080": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16231080_xiaomi-qin-phone/",
+    "title": "Xiaomi Qin phone",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "xiaomi qin phone"
   }
 }

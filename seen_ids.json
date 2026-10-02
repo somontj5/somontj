@@ -18897,7 +18897,8 @@
     "title": "Samsung Galaxy A03S 32Gb Duos Vietnam",
     "price": 980,
     "condition": "Б/у",
-    "model_key": "samsung a03s"
+    "model_key": "samsung a03s",
+    "sold_checked": true
   },
   "24814024": {
     "logged": true,
@@ -18906,7 +18907,8 @@
     "title": "Samsung Galaxy S24 ultra",
     "price": 7750,
     "condition": "Б/у",
-    "model_key": "samsung s24 ultra"
+    "model_key": "samsung s24 ultra",
+    "sold_checked": true
   },
   "62212256": {
     "logged": true,
@@ -19510,5 +19512,23 @@
     "price": 5500,
     "condition": "Б/у",
     "model_key": "apple 15"
+  },
+  "25478025": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17254780_samsung-s25-ultra/",
+    "title": "Samsung S25 Ultra",
+    "price": 9500,
+    "condition": "Б/у",
+    "model_key": "samsung s25 ultra"
+  },
+  "85412128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16672854_apple-iphone-12-pro-max-128-gb-silver/",
+    "title": "Apple iPhone 12 Pro Max, 128 gb, Silver",
+    "price": 3500,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro max"
   }
 }

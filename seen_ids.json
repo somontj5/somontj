@@ -19554,7 +19554,8 @@
     "title": "Apple iPhone 15 Pro, 128 gb, Black Titanium",
     "price": 5200,
     "condition": "Б/у",
-    "model_key": "apple 15 pro"
+    "model_key": "apple 15 pro",
+    "sold_checked": true
   },
   "77214128": {
     "logged": true,

@@ -19062,7 +19062,8 @@
     "price": 499,
     "condition": "Б/у",
     "model_key": "redmi 9a",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "55731364": {
     "logged": true,

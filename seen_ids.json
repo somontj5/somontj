@@ -19262,7 +19262,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
     "price": 8500,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "43963526": {
     "logged": true,
@@ -19847,5 +19848,15 @@
     "price": 5300,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "51212512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16601198_xiaomi-redmi-note-13-pro-5g-12-12-512g-karobkash-nest/",
+    "title": "Xiaomi Redmi note 13 pro 5g",
+    "price": 2450,
+    "condition": "Б/у",
+    "model_key": "redmi note 13 pro",
+    "verified_model": null
   }
 }

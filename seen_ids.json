@@ -19125,7 +19125,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
     "price": 8000,
     "condition": "Б/у",
-    "model_key": "apple 15 pro max"
+    "model_key": "apple 15 pro max",
+    "sold_checked": true
   },
   "50247131": {
     "logged": true,
@@ -19694,5 +19695,23 @@
     "condition": "Б/у",
     "model_key": "apple 13 pro max",
     "verified_model": null
+  },
+  "47129128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17254712_telefon-redmi-9-note-128gb-glabal-version/",
+    "title": "Xiaomi Redmi Note 9 128gb",
+    "price": 860,
+    "condition": "Б/у",
+    "model_key": "redmi note 9"
+  },
+  "72503325": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17254725_telefon-samsung-03-32gb-vetnam-5g/",
+    "title": "Телефон Самсунг 03 32Gb Vetnam 5G",
+    "price": 860,
+    "condition": "Б/у",
+    "model_key": null
   }
 }

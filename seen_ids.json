@@ -19135,7 +19135,8 @@
     "title": "Apple iPhone 13 Pro, 1 tb, Silver",
     "price": 3400,
     "condition": "Б/у",
-    "model_key": "apple 13 pro 1 tb"
+    "model_key": "apple 13 pro 1 tb",
+    "sold_checked": true
   },
   "71456107": {
     "logged": true,
@@ -19154,7 +19155,8 @@
     "title": "Samsung Galaxy Z Fold 5",
     "price": 5900,
     "condition": "Б/у",
-    "model_key": "samsung z fold 5"
+    "model_key": "samsung z fold 5",
+    "sold_checked": true
   },
   "05550202": {
     "logged": true,
@@ -19164,7 +19166,8 @@
     "price": 2700,
     "condition": "Б/у",
     "model_key": "samsung note 20 ultra",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "36516256": {
     "logged": true,
@@ -19722,5 +19725,23 @@
     "price": 6000,
     "condition": "Б/у",
     "model_key": "oppo find x9"
+  },
+  "81222565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17254181_telefon-samsung-s22-ultra-256gb-carea-5g/",
+    "title": "Samsung Galaxy S22 Ultra 256Gb Carea 5G",
+    "price": 3460,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
+  },
+  "17256331": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17256331_honor/",
+    "title": "Honor Magic V6 16 ГБ + 1 ТБ",
+    "price": 14000,
+    "condition": "Б/у",
+    "model_key": "honor magic v6"
   }
 }

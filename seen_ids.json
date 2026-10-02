@@ -19816,7 +19816,8 @@
     "title": "Apple iPhone 14 Pro Max, 256 gb, Gold",
     "price": 6050,
     "condition": "Б/у",
-    "model_key": "apple 14 pro max"
+    "model_key": "apple 14 pro max",
+    "sold_checked": true
   },
   "56678128": {
     "logged": true,
@@ -19827,5 +19828,14 @@
     "condition": "Б/у",
     "model_key": "apple xr",
     "verified_model": null
+  },
+  "25676825": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17256768_samsung-galaxy-s25-ultra/",
+    "title": "Samsung Galaxy s25 Ultra",
+    "price": 8999,
+    "condition": "Б/у",
+    "model_key": "samsung s25 ultra"
   }
 }

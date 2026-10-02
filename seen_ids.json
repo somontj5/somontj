@@ -18980,7 +18980,8 @@
     "price": 2700,
     "condition": "Б/у",
     "model_key": "redmi note 13 pro plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "61225652": {
     "logged": true,
@@ -19573,5 +19574,14 @@
     "condition": "Б/у",
     "model_key": "samsung note 20 ultra",
     "verified_model": null
+  },
+  "25513825": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17255138_samsung-s25-ultra-vietnam/",
+    "title": "Samsung Galaxy s25 Ultra Vietnam",
+    "price": 10000,
+    "condition": "Б/у",
+    "model_key": "samsung s25 ultra"
   }
 }

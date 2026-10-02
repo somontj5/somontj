@@ -19388,5 +19388,14 @@
     "condition": "Б/у",
     "model_key": "apple xs max",
     "verified_model": null
+  },
+  "25394323": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17253943_samsung-galaxy-s-23-ultra/",
+    "title": "Samsung Galaxy S23 ultra",
+    "price": 4100,
+    "condition": "Б/у",
+    "model_key": "samsung s23 ultra"
   }
 }

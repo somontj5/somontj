@@ -18887,7 +18887,8 @@
     "title": "Телефон Samsung",
     "price": 3700,
     "condition": "Б/у",
-    "model_key": "samsung"
+    "model_key": "samsung",
+    "sold_checked": true
   },
   "81140332": {
     "logged": true,
@@ -19446,5 +19447,25 @@
     "price": 3499,
     "condition": "Б/у",
     "model_key": "samsung s23 ultra"
+  },
+  "44237128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17254423_apple-iphone-7-128-gb/",
+    "title": "Apple iPhone 7, 128 gb",
+    "price": 499,
+    "condition": "Б/у",
+    "model_key": "apple 7",
+    "verified_model": null
+  },
+  "25434632": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17254346_samsung-galaxy-a32/",
+    "title": "Samsung Galaxy A32",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "samsung a32",
+    "verified_model": null
   }
 }

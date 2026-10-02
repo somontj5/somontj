@@ -18539,7 +18539,8 @@
     "title": "Apple iPhone Xr, 128 gb, Yellow",
     "price": 2799,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "17969128": {
     "logged": true,
@@ -19171,6 +19172,16 @@
     "price": 3000,
     "condition": "Б/у",
     "model_key": "apple 12 pro",
+    "verified_model": null
+  },
+  "09431164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17250943_apple-iphone-11-64-gb-white/",
+    "title": "Apple iPhone 11, 64 gb, White",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "apple 11",
     "verified_model": null
   }
 }

@@ -19221,7 +19221,8 @@
     "price": 3000,
     "condition": "Б/у",
     "model_key": "apple 12 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "09431164": {
     "logged": true,
@@ -19794,6 +19795,16 @@
     "price": 1300,
     "condition": "Б/у",
     "model_key": "samsung",
+    "verified_model": null
+  },
+  "77400351": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16774003_samsung-a51/",
+    "title": "Samsung Galaxy A51",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "samsung a51",
     "verified_model": null
   }
 }

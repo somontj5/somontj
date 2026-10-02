@@ -19328,7 +19328,8 @@
     "title": "Apple iPhone 15, 256 gb, Blue",
     "price": 7000,
     "condition": "Б/у",
-    "model_key": "apple 15"
+    "model_key": "apple 15",
+    "sold_checked": true
   },
   "10713128": {
     "logged": true,

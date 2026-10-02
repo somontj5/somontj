@@ -19301,7 +19301,8 @@
     "title": "Apple iPhone 11, 64 gb, Black",
     "price": 1999,
     "condition": "Б/у",
-    "model_key": "apple 11"
+    "model_key": "apple 11",
+    "sold_checked": true
   },
   "41412512": {
     "logged": true,
@@ -19858,5 +19859,14 @@
     "condition": "Б/у",
     "model_key": "redmi note 13 pro",
     "verified_model": null
+  },
+  "08422512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16669084_samsung-galaxy-22-ultra-512g/",
+    "title": "Samsung Galaxy 22 Ultra",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "samsung 22 ultra"
   }
 }

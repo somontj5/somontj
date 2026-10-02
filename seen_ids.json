@@ -19115,7 +19115,8 @@
     "title": "Apple iPhone 17 Pro, 256 gb, Deep Blue",
     "price": 12000,
     "condition": "Б/у",
-    "model_key": "apple 17 pro"
+    "model_key": "apple 17 pro",
+    "sold_checked": true
   },
   "12515256": {
     "logged": true,

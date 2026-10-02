@@ -18593,7 +18593,8 @@
     "title": "Apple iPhone Xr, 128 gb, Product Red",
     "price": 2700,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "27321256": {
     "logged": true,
@@ -19126,5 +19127,15 @@
     "price": 8450,
     "condition": "Б/у",
     "model_key": "apple 16 pro"
+  },
+  "55231865": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15523186_tecno-spark5-air/",
+    "title": "Tecno Spark Go 2022",
+    "price": 550,
+    "condition": "Б/у",
+    "model_key": "tecno spark go 2022",
+    "verified_model": null
   }
 }

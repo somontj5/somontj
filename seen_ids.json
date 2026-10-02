@@ -19052,7 +19052,8 @@
     "price": 850,
     "condition": "Б/у",
     "model_key": "redmi note 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "72455399": {
     "logged": true,
@@ -19072,7 +19073,8 @@
     "title": "Samsung Galaxy A13 64GB",
     "price": 650,
     "condition": "Б/у",
-    "model_key": "samsung a13"
+    "model_key": "samsung a13",
+    "sold_checked": true
   },
   "72451315": {
     "logged": true,
@@ -19638,5 +19640,25 @@
     "price": 9000,
     "condition": "Б/у",
     "model_key": "samsung s25 ultra"
+  },
+  "76112256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17255761_apple-iphone-12-pro-256-gb-pacific-blue/",
+    "title": "Apple iPhone 12 pro, 256 gb, Pacific Blue",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro",
+    "verified_model": null
+  },
+  "57559128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17255755_infinix-smart-9-128gb/",
+    "title": "Infinix smart 9 128gb",
+    "price": 399,
+    "condition": "Б/у",
+    "model_key": "infinix smart 9",
+    "verified_model": null
   }
 }

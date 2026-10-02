@@ -19265,7 +19265,8 @@
     "title": "Xiaomi 14 12/512gb",
     "price": 5000,
     "condition": "Б/у",
-    "model_key": "xiaomi 14"
+    "model_key": "xiaomi 14",
+    "sold_checked": true
   },
   "90515256": {
     "logged": true,
@@ -19275,5 +19276,14 @@
     "price": 6999,
     "condition": "Б/у",
     "model_key": "apple 15 pro max"
+  },
+  "25231714": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17252317_redmi-turbo-14-pro/",
+    "title": "Xiaomi Redmi Turbo 14 про",
+    "price": 3700,
+    "condition": "Б/у",
+    "model_key": "redmi turbo 14 про"
   }
 }

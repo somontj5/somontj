@@ -19164,7 +19164,8 @@
     "price": 380,
     "condition": "Б/у",
     "model_key": "samsung a02s",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "88312128": {
     "logged": true,

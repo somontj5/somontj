@@ -18834,7 +18834,8 @@
     "price": 950,
     "condition": "Б/у",
     "model_key": "apple x",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "55427070": {
     "logged": true,
@@ -18874,7 +18875,8 @@
     "price": 1550,
     "condition": "Б/у",
     "model_key": "samsung а16",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17248782": {
     "logged": true,
@@ -19397,5 +19399,23 @@
     "price": 4100,
     "condition": "Б/у",
     "model_key": "samsung s23 ultra"
+  },
+  "61102565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17254161_telefon-samsung-note-10-256gb-carea-5g/",
+    "title": "Samsung Galaxy Note 10+ 256gb Carea 5G",
+    "price": 1450,
+    "condition": "Б/у",
+    "model_key": "samsung note 10 plus"
+  },
+  "10516256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17254105_apple-iphone-16-pro-max-256-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
+    "price": 7800,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   }
 }

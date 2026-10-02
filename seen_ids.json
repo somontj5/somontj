@@ -19596,5 +19596,14 @@
     "condition": "Б/у",
     "model_key": "samsung note 20 ultra",
     "verified_model": null
+  },
+  "37514256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17255375_apple-iphone-14-pro-max-256-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb, Deep Purple",
+    "price": 6000,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
   }
 }

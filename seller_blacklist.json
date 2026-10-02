@@ -160,5 +160,14 @@
     "blocked_at": "2026-10-02T02:29:31",
     "updated_at": "2026-10-02T02:29:31",
     "active_ads_at_block": 49
+  },
+  "18113243": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/18113243/",
+    "reason": "похоже на перекупщика по фото: На заднем плане фотографий виден специфический витринный стенд с товарами и аксессуарами, что характерно для торговой точки или перекупщика.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17250883_apple-iphone-12-pro-128-gb-graphite/",
+    "blocked_at": "2026-10-02T04:29:20",
+    "updated_at": "2026-10-02T04:29:20",
+    "active_ads_at_block": 1
   }
 }

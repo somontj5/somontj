@@ -18915,7 +18915,8 @@
     "title": "Samsung Galaxy S22 Ultra 12/256Gb",
     "price": 3790,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "81713128": {
     "logged": true,

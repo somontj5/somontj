@@ -18737,7 +18737,8 @@
     "price": 1590,
     "condition": "Б/у",
     "model_key": "samsung s10",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "48049200": {
     "logged": true,
@@ -19307,5 +19308,24 @@
     "price": 7000,
     "condition": "Б/у",
     "model_key": "apple 15"
+  },
+  "10713128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17253107_apple-iphone-13-pro-128-gb-graphite/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Graphite",
+    "price": 3200,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
+  },
+  "73451266": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17252357_telefon-a34-5g-126gb-na-6gb/",
+    "title": "Samsung Galaxy A34 5G",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "samsung a34",
+    "verified_model": null
   }
 }

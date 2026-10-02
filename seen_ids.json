@@ -18575,7 +18575,8 @@
     "title": "Apple iPhone 17 Pro Max, 512 gb, Cosmic Orange Дубликат",
     "price": 1499,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "10254128": {
     "logged": true,
@@ -19137,6 +19138,16 @@
     "price": 550,
     "condition": "Б/у",
     "model_key": "tecno spark go 2022",
+    "verified_model": null
+  },
+  "25062716": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17250627_apple-iphone-se-16-gb/",
+    "title": "Apple iPhone SE, 16 gb",
+    "price": 380,
+    "condition": "Б/у",
+    "model_key": "apple se",
     "verified_model": null
   }
 }

@@ -18780,7 +18780,8 @@
     "price": 999,
     "condition": "Б/у",
     "model_key": "apple 8",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "44815128": {
     "logged": true,
@@ -19347,5 +19348,15 @@
     "price": 6300,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "72520605": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17252060_redmi-a5/",
+    "title": "Xiaomi Redmi A5",
+    "price": 991,
+    "condition": "Б/у",
+    "model_key": "redmi a5",
+    "verified_model": null
   }
 }

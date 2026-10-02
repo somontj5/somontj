@@ -19146,7 +19146,8 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "samsung s7",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "65058255": {
     "logged": true,
@@ -19187,7 +19188,8 @@
     "price": 550,
     "condition": "Б/у",
     "model_key": "tecno spark go 2022",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "25062716": {
     "logged": true,
@@ -19743,5 +19745,35 @@
     "price": 14000,
     "condition": "Б/у",
     "model_key": "honor magic v6"
+  },
+  "25411012": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17254110_samsung-a12/",
+    "title": "Samsung Galaxy а12",
+    "price": 499,
+    "condition": "Б/у",
+    "model_key": "samsung а12",
+    "verified_model": null
+  },
+  "56406664": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17256406_apple-iphone-6-64-gb/",
+    "title": "Apple iPhone 6, 64 gb",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "apple 6",
+    "verified_model": null
+  },
+  "63883264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17256388_galaxy-a32-64gb-korea/",
+    "title": "Samsung Galaxy A32 64gb Korea",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "samsung a32",
+    "verified_model": null
   }
 }

@@ -18673,7 +18673,8 @@
     "title": "Apple iPhone 13, 128 gb, Blue",
     "price": 3600,
     "condition": "Б/у",
-    "model_key": "apple 13"
+    "model_key": "apple 13",
+    "sold_checked": true
   },
   "61016256": {
     "logged": true,
@@ -19255,5 +19256,14 @@
     "price": 1999,
     "condition": "Б/у",
     "model_key": "apple 11"
+  },
+  "41412512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17252844_xiaomi-14-12-512gb/",
+    "title": "Xiaomi 14 12/512gb",
+    "price": 5000,
+    "condition": "Б/у",
+    "model_key": "xiaomi 14"
   }
 }

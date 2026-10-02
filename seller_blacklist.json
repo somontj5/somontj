@@ -178,5 +178,14 @@
     "blocked_at": "2026-10-02T08:49:35",
     "updated_at": "2026-10-02T08:49:35",
     "active_ads_at_block": 6
+  },
+  "10937644": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/10937644/",
+    "reason": "похоже на перекупщика по фото: у продавца 2 активных объявления, на фото виден кирпичный фон стены, похожий на витрину или оформление торговой точки",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17254470_furushi/",
+    "blocked_at": "2026-10-02T12:41:27",
+    "updated_at": "2026-10-02T12:41:27",
+    "active_ads_at_block": 2
   }
 }

@@ -19559,6 +19559,7 @@
     "title": "Apple iPhone 14, 128 gb, Blue",
     "price": 3500,
     "condition": "Б/у",
-    "model_key": "apple 14"
+    "model_key": "apple 14",
+    "sold_checked": true
   }
 }

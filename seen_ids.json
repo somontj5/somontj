@@ -18800,7 +18800,8 @@
     "price": 1289,
     "condition": "Б/у",
     "model_key": "apple x",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "24843464": {
     "logged": true,
@@ -19358,5 +19359,14 @@
     "condition": "Б/у",
     "model_key": "redmi a5",
     "verified_model": null
+  },
+  "25204922": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17252049_s22/",
+    "title": "Samsung Galaxy S22",
+    "price": 3100,
+    "condition": "Б/у",
+    "model_key": "samsung s22"
   }
 }

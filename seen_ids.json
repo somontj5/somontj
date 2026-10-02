@@ -19084,7 +19084,8 @@
     "price": 950,
     "condition": "Б/у",
     "model_key": "redmi a5",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "51415256": {
     "logged": true,
@@ -19104,7 +19105,8 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "apple 17 pro 1 tb cosmic",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "10117256": {
     "logged": true,
@@ -19660,5 +19662,24 @@
     "condition": "Б/у",
     "model_key": "infinix smart 9",
     "verified_model": null
+  },
+  "25580752": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17255807_samsung-galaxy-a-52/",
+    "title": "Samsung galaxy A 52",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "samsung a 52",
+    "verified_model": null
+  },
+  "25591722": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17255917_samsung-galxsy-s22-ultra/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 3400,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
   }
 }

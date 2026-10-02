@@ -18584,7 +18584,8 @@
     "title": "Apple iPhone Xr, 128 gb, Product Red",
     "price": 2800,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "10252128": {
     "logged": true,

@@ -19319,7 +19319,8 @@
     "title": "Xiaomi Redmi Turbo 14 про",
     "price": 3700,
     "condition": "Б/у",
-    "model_key": "redmi turbo 14 про"
+    "model_key": "redmi turbo 14 про",
+    "sold_checked": true
   },
   "10123128": {
     "logged": true,
@@ -19652,7 +19653,8 @@
     "price": 1300,
     "condition": "Б/у",
     "model_key": "apple 12 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "57559128": {
     "logged": true,
@@ -19682,5 +19684,15 @@
     "price": 3400,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra"
+  },
+  "03413256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17256034_apple-iphone-13-pro-max-256-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro Max, 256 gb, Sierra Blue",
+    "price": 2999,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max",
+    "verified_model": null
   }
 }

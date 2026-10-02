@@ -19000,7 +19000,8 @@
     "title": "Samsung Galaxy S23 ultra",
     "price": 6000,
     "condition": "Б/у",
-    "model_key": "samsung s23 ultra"
+    "model_key": "samsung s23 ultra",
+    "sold_checked": true
   },
   "49043235": {
     "logged": true,
@@ -19009,7 +19010,8 @@
     "title": "Samsung Galaxy S23 ultra 5G",
     "price": 4990,
     "condition": "Б/у",
-    "model_key": "samsung s23 ultra"
+    "model_key": "samsung s23 ultra",
+    "sold_checked": true
   },
   "70414256": {
     "logged": true,
@@ -19018,7 +19020,8 @@
     "title": "Apple iPhone 14 Pro Max, 256 gb, Space Black",
     "price": 4700,
     "condition": "Б/у",
-    "model_key": "apple 14 pro max"
+    "model_key": "apple 14 pro max",
+    "sold_checked": true
   },
   "45112128": {
     "logged": true,
@@ -19614,5 +19617,24 @@
     "price": 5800,
     "condition": "Б/у",
     "model_key": "apple 13 pro max"
+  },
+  "55556664": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17255556_apple-iphone-6s-plus-64-gb/",
+    "title": "Apple iPhone 6S plus, 64 gb",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "apple 6s plus",
+    "verified_model": null
+  },
+  "25554025": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17255540_samsung-galaxy-s25-ultra/",
+    "title": "Samsung Galaxy s25 Ultra",
+    "price": 9000,
+    "condition": "Б/у",
+    "model_key": "samsung s25 ultra"
   }
 }

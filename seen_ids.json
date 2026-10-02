@@ -19605,5 +19605,14 @@
     "price": 6000,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "44313512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17255443_apple-iphone-13-pro-max-512-gb-gold/",
+    "title": "Apple iPhone 13 Pro Max, 512 gb, Gold",
+    "price": 5800,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
   }
 }

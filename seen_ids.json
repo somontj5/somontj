@@ -18759,7 +18759,8 @@
     "price": 1010,
     "condition": "Б/у",
     "model_key": "samsung a13 duos",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "04656128": {
     "logged": true,
@@ -19337,5 +19338,14 @@
     "price": 6500,
     "condition": "Б/у",
     "model_key": "apple 15 pro"
+  },
+  "29114256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17253291_apple-iphone-14-pro-max-256-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb, Deep Purple",
+    "price": 6300,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
   }
 }

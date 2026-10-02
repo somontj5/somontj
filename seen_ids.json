@@ -18768,7 +18768,8 @@
     "title": "Samsung Galaxy A56 128Gb Duos Vietnam",
     "price": 2749,
     "condition": "Б/у",
-    "model_key": "samsung a56"
+    "model_key": "samsung a56",
+    "sold_checked": true
   },
   "48340864": {
     "logged": true,
@@ -19327,5 +19328,14 @@
     "condition": "Б/у",
     "model_key": "samsung a34",
     "verified_model": null
+  },
+  "19115128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17253191_apple-iphone-15-pro-128-gb-blue-titanium/",
+    "title": "Apple iPhone 15 Pro, 128 gb, Blue Titanium",
+    "price": 6500,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro"
   }
 }

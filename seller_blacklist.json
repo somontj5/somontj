@@ -223,5 +223,14 @@
     "blocked_at": "2026-10-03T08:49:30",
     "updated_at": "2026-10-03T08:49:30",
     "active_ads_at_block": 1
+  },
+  "9698750": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/9698750/",
+    "reason": "похоже на перекупщика по фото: У продавца 15 активных объявлений, что указывает на регулярную продажу устройств.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17155288_samsung-j5-pro/",
+    "blocked_at": "2026-10-03T09:12:51",
+    "updated_at": "2026-10-03T09:12:51",
+    "active_ads_at_block": 15
   }
 }

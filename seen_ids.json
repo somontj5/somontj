@@ -20199,5 +20199,15 @@
     "condition": "Б/у",
     "model_key": "apple 11 pro",
     "verified_model": null
+  },
+  "71552885": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17155288_samsung-j5-pro/",
+    "title": "Samsung Galaxy j5 pro",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "samsung j5 pro",
+    "verified_model": null
   }
 }

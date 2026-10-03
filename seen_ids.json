@@ -20093,7 +20093,8 @@
     "title": "Xiaomi Redmi 10A",
     "price": 650,
     "condition": "Б/у",
-    "model_key": "redmi 10a"
+    "model_key": "redmi 10a",
+    "sold_checked": true
   },
   "36561285": {
     "logged": true,
@@ -20674,5 +20675,14 @@
     "condition": "Б/у",
     "model_key": "samsung s10",
     "verified_model": null
+  },
+  "26254657": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17262546_samsung-a57/",
+    "title": "Samsung Galaxy a57",
+    "price": 4350,
+    "condition": "Б/у",
+    "model_key": "samsung a57"
   }
 }

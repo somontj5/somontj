@@ -19478,7 +19478,8 @@
     "title": "Samsung Galaxy А13 64gb Vetnam 4G",
     "price": 1050,
     "condition": "Б/у",
-    "model_key": "samsung а13"
+    "model_key": "samsung а13",
+    "sold_checked": true
   },
   "23956128": {
     "logged": true,
@@ -19487,7 +19488,8 @@
     "title": "Samsung Galaxy A56 56 128гб",
     "price": 2750,
     "condition": "Б/у",
-    "model_key": "samsung a56 56"
+    "model_key": "samsung a56 56",
+    "sold_checked": true
   },
   "02325652": {
     "logged": true,
@@ -19507,7 +19509,8 @@
     "price": 499,
     "condition": "Б/у",
     "model_key": "apple 7",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "25434632": {
     "logged": true,
@@ -19517,7 +19520,8 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "samsung a32",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17254470": {
     "logged": true,
@@ -19527,7 +19531,8 @@
     "price": 1100,
     "condition": "Б/у",
     "model_key": "redmi note 14",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "54429400": {
     "logged": true,
@@ -20047,5 +20052,52 @@
     "price": 3266,
     "condition": "Б/у",
     "model_key": null
+  },
+  "25838324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17258383_galaxy-s24-ultra-vetnam/",
+    "title": "Samsung Galaxy S24 ultra",
+    "price": 7300,
+    "condition": "Б/у",
+    "model_key": "samsung s24 ultra"
+  },
+  "52514128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17258525_apple-iphone-14-pro-max-128-gb-space-black/",
+    "title": "Apple iPhone 14 Pro Max, 128 gb, Space Black",
+    "price": 5999,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
+  },
+  "39213325": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17258392_telefon-samsung-a13-32gb-vetnam-5g-silver/",
+    "title": "Samsung Galaxy А13 32Gb Vetnam 5G Silver",
+    "price": 1050,
+    "condition": "Б/у",
+    "model_key": "samsung а13",
+    "verified_model": null
+  },
+  "38703325": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17258387_telefon-samsung-a03s-32gb-vetnam-5g/",
+    "title": "Samsung Galaxy А03s 32Gb Vetnam 5G",
+    "price": 870,
+    "condition": "Б/у",
+    "model_key": "samsung а03s",
+    "verified_model": null
+  },
+  "55312128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17258553_apple-iphone-12-pro-max-128-gb-pacific-blue/",
+    "title": "Apple iPhone 12 Pro Max, 128 gb, Pacific Blue",
+    "price": 3999,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro max"
   }
 }

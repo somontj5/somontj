@@ -20291,7 +20291,8 @@
     "title": "Самсунг Galaxy S21+ 256Gb Carea 5G",
     "price": 1999,
     "condition": "Б/у",
-    "model_key": "samsung s21 plus"
+    "model_key": "samsung s21 plus",
+    "sold_checked": true
   },
   "75216256": {
     "logged": true,
@@ -20858,5 +20859,14 @@
     "condition": "Б/у",
     "model_key": "apple 11 pro",
     "verified_model": null
+  },
+  "53616256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17263536_apple-iphone-16-pro-256-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro, 256 gb, Desert Titanium",
+    "price": 8999,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro"
   }
 }

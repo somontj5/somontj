@@ -20113,7 +20113,8 @@
     "title": "Samsung Galaxy S24 ultra",
     "price": 7300,
     "condition": "Б/у",
-    "model_key": "samsung s24 ultra"
+    "model_key": "samsung s24 ultra",
+    "sold_checked": true
   },
   "52514128": {
     "logged": true,
@@ -20738,6 +20739,16 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "apple 11 pro",
+    "verified_model": null
+  },
+  "30281164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17263028_apple-iphone-11-64-gb-black/",
+    "title": "Apple iPhone 11, 64 gb, Black",
+    "price": 1900,
+    "condition": "Б/у",
+    "model_key": "apple 11",
     "verified_model": null
   }
 }

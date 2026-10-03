@@ -20208,7 +20208,8 @@
     "title": "Самсунг А54 8/256 Gb Vetnam 2sim 5G",
     "price": 2350,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "31513128": {
     "logged": true,

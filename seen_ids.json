@@ -19818,7 +19818,8 @@
     "price": 650,
     "condition": "Б/у",
     "model_key": "apple 6",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "63883264": {
     "logged": true,
@@ -19828,7 +19829,8 @@
     "price": 700,
     "condition": "Б/у",
     "model_key": "samsung a32",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "56450664": {
     "logged": true,
@@ -20369,9 +20371,23 @@
     "verified_model": null
   },
   "26066022": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17260660_xiaomi-qin-f22/",
+    "title": "Xiaomi Qin F22",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "xiaomi qin f22",
+    "verified_model": null
   },
   "06655128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17260665_xiaomi-redmi-a5-128gb/",
+    "title": "Xiaomi Redmi A5 128gb",
+    "price": 699,
+    "condition": "Б/у",
+    "model_key": "redmi a5",
+    "verified_model": null
   }
 }

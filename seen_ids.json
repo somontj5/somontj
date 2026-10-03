@@ -20248,7 +20248,8 @@
     "price": 1999,
     "condition": "Б/у",
     "model_key": "apple 11 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "71552885": {
     "logged": true,
@@ -20795,5 +20796,14 @@
     "condition": "Б/у",
     "model_key": "infinix hot 60 pro",
     "verified_model": null
+  },
+  "17263150": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17263150_furukhta-meshavad/",
+    "title": "Телефон Tecnо",
+    "price": 3500,
+    "condition": "Б/у",
+    "model_key": null
   }
 }

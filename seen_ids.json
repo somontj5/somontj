@@ -20305,5 +20305,14 @@
     "condition": "Б/у",
     "model_key": "redmi note 10pro",
     "verified_model": null
+  },
+  "64291963": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16429196_xiaomi-redmi-a3/",
+    "title": "Xiaomi Redmi A3",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "redmi a3"
   }
 }

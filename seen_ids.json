@@ -19925,7 +19925,8 @@
     "title": "Samsung Galaxy 22 Ultra",
     "price": 4300,
     "condition": "Б/у",
-    "model_key": "samsung 22 ultra"
+    "model_key": "samsung 22 ultra",
+    "sold_checked": true
   },
   "58358256": {
     "logged": true,
@@ -19935,7 +19936,8 @@
     "price": 2500,
     "condition": "Б/у",
     "model_key": "samsung a35",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "57558155": {
     "logged": true,
@@ -20471,5 +20473,25 @@
     "price": 5000,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "96313256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17260963_apple-iphone-13-256-gb-pink/",
+    "title": "Apple iPhone 13, 256 gb, Pink",
+    "price": 2100,
+    "condition": "Б/у",
+    "model_key": "apple 13",
+    "verified_model": null
+  },
+  "60914732": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17260914_apple-iphone-7-32-gb/",
+    "title": "Apple iPhone 7, 32 gb",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "apple 7",
+    "verified_model": null
   }
 }

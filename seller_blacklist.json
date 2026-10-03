@@ -232,5 +232,14 @@
     "blocked_at": "2026-10-03T09:12:51",
     "updated_at": "2026-10-03T09:12:51",
     "active_ads_at_block": 15
+  },
+  "5824257": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/5824257/",
+    "reason": "похоже на перекупщика по фото: Продавец указал 'нав омад аз Корея ... як чанд дона хаст' (привезли из Кореи, есть несколько штук), что говорит о партии товара на продажу.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/16937298_samsung-galaxy-s105g/",
+    "blocked_at": "2026-10-03T09:57:04",
+    "updated_at": "2026-10-03T09:57:04",
+    "active_ads_at_block": 5
   }
 }

@@ -19682,7 +19682,8 @@
     "price": 500,
     "condition": "Б/у",
     "model_key": "apple 6s plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "25554025": {
     "logged": true,
@@ -19713,7 +19714,8 @@
     "price": 399,
     "condition": "Б/у",
     "model_key": "infinix smart 9",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "25580752": {
     "logged": true,
@@ -20249,5 +20251,15 @@
     "price": 9599,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "37298105": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16937298_samsung-galaxy-s105g/",
+    "title": "Samsung Galaxy S105g",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "samsung s105g",
+    "verified_model": null
   }
 }

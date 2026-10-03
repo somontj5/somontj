@@ -19272,7 +19272,8 @@
     "title": "Samsung Galaxy A26",
     "price": 2450,
     "condition": "Б/у",
-    "model_key": "samsung a26"
+    "model_key": "samsung a26",
+    "sold_checked": true
   },
   "60511128": {
     "logged": true,
@@ -19890,5 +19891,15 @@
     "price": 4200,
     "condition": "Б/у",
     "model_key": "redmi note 15 pro plus"
+  },
+  "57602105": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17257602_nokia-105/",
+    "title": "Nokia 105",
+    "price": 150,
+    "condition": "Б/у",
+    "model_key": "nokia 105",
+    "verified_model": null
   }
 }

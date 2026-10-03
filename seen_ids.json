@@ -19757,7 +19757,8 @@
     "title": "Xiaomi Redmi Note 9 128gb",
     "price": 860,
     "condition": "Б/у",
-    "model_key": "redmi note 9"
+    "model_key": "redmi note 9",
+    "sold_checked": true
   },
   "72503325": {
     "logged": true,
@@ -19766,7 +19767,8 @@
     "title": "Телефон Самсунг 03 32Gb Vetnam 5G",
     "price": 860,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "72562969": {
     "logged": true,
@@ -19775,7 +19777,8 @@
     "title": "Oppo Find X9",
     "price": 6000,
     "condition": "Б/у",
-    "model_key": "oppo find x9"
+    "model_key": "oppo find x9",
+    "sold_checked": true
   },
   "81222565": {
     "logged": true,
@@ -19784,7 +19787,8 @@
     "title": "Samsung Galaxy S22 Ultra 256Gb Carea 5G",
     "price": 3460,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "17256331": {
     "logged": true,
@@ -19793,7 +19797,8 @@
     "title": "Honor Magic V6 16 ГБ + 1 ТБ",
     "price": 14000,
     "condition": "Б/у",
-    "model_key": "honor magic v6"
+    "model_key": "honor magic v6",
+    "sold_checked": true
   },
   "25411012": {
     "logged": true,
@@ -20314,5 +20319,59 @@
     "price": 850,
     "condition": "Б/у",
     "model_key": "redmi a3"
+  },
+  "43769964": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17143769_infinix-smart-9-64gb/",
+    "title": "Infinix smart 9 64GB",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "infinix smart 9",
+    "verified_model": null
+  },
+  "22412256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17260712_samsung-galaxy-s24-ultra-12-256gb/",
+    "title": "Samsung Galaxy S24 Ultra 12/256gb",
+    "price": 7750,
+    "condition": "Б/у",
+    "model_key": "samsung s24 ultra"
+  },
+  "92612256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17260669_samsung-galaxy-s26-ultra-12-256gb/",
+    "title": "Samsung Galaxy S26 Ultra 12/256gb",
+    "price": 11500,
+    "condition": "Б/у",
+    "model_key": "samsung s26 ultra"
+  },
+  "59411128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17260594_xiaomi-redmi-note-11-128gb/",
+    "title": "Xiaomi Redmi Note 11 128gb",
+    "price": 599,
+    "condition": "Б/у",
+    "model_key": "redmi note 11",
+    "verified_model": null
+  },
+  "26062740": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17260627_samsung-galaxy-a40/",
+    "title": "Samsung Galaxy A40",
+    "price": 399,
+    "condition": "Б/у",
+    "model_key": "samsung a40",
+    "verified_model": null
+  },
+  "26066022": {
+    "logged": true
+  },
+  "06655128": {
+    "logged": true
   }
 }

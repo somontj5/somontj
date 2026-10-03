@@ -20122,7 +20122,8 @@
     "title": "Apple iPhone 14 Pro Max, 128 gb, Space Black",
     "price": 5999,
     "condition": "Б/у",
-    "model_key": "apple 14 pro max"
+    "model_key": "apple 14 pro max",
+    "sold_checked": true
   },
   "39213325": {
     "logged": true,
@@ -20717,6 +20718,26 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "apple 17 pro max",
+    "verified_model": null
+  },
+  "26289922": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17262899_samsung-galxsy-s22/",
+    "title": "Samsung Galаxy S22",
+    "price": 2900,
+    "condition": "Б/у",
+    "model_key": "samsung galаxy s22",
+    "verified_model": null
+  },
+  "28691164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17262869_apple-iphone-11-pro-64-gb-gold/",
+    "title": "Apple iPhone 11 Pro, 64 gb, Gold",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
     "verified_model": null
   }
 }

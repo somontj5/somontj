@@ -20218,7 +20218,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
     "price": 3999,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "37512256": {
     "logged": true,
@@ -20805,5 +20806,15 @@
     "price": 3500,
     "condition": "Б/у",
     "model_key": null
+  },
+  "68454205": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16868454_samsung-note-20-5g-sostoianie-khoroshee/",
+    "title": "Samsung Galaxy Note 20 5g",
+    "price": 2200,
+    "condition": "Б/у",
+    "model_key": "samsung note 20",
+    "verified_model": null
   }
 }

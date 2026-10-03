@@ -19386,7 +19386,8 @@
     "title": "Apple iPhone 15 Pro, 128 gb, Blue Titanium",
     "price": 6500,
     "condition": "Б/у",
-    "model_key": "apple 15 pro"
+    "model_key": "apple 15 pro",
+    "sold_checked": true
   },
   "29114256": {
     "logged": true,
@@ -19961,5 +19962,16 @@
     "price": 3600,
     "condition": "Б/у",
     "model_key": "poco x8 pro max 12 256"
+  },
+  "10122565": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17258243_telefon-samsung-note-10-pilus-12-256gb-carea-5g/",
+    "title": "Samsung Galaxy Note 10 pilus 12/256Gb Carea 5G",
+    "price": 1460,
+    "condition": "Б/у",
+    "model_key": "samsung note 10 pilus carea",
+    "verified_model": null
   }
 }

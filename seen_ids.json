@@ -19671,7 +19671,8 @@
     "title": "Apple iPhone 13 Pro Max, 512 gb, Gold",
     "price": 5800,
     "condition": "Б/у",
-    "model_key": "apple 13 pro max"
+    "model_key": "apple 13 pro max",
+    "sold_checked": true
   },
   "55556664": {
     "logged": true,
@@ -20209,5 +20210,14 @@
     "condition": "Б/у",
     "model_key": "samsung j5 pro",
     "verified_model": null
+  },
+  "75511270": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16755112_huawei-pura-70/",
+    "title": "Huawei Pura 70",
+    "price": 4700,
+    "condition": "Б/у",
+    "model_key": "huawei pura 70"
   }
 }

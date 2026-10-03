@@ -20327,7 +20327,8 @@
     "price": 999,
     "condition": "Б/у",
     "model_key": "redmi note 10pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "64291963": {
     "logged": true,

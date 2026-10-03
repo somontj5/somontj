@@ -19902,5 +19902,15 @@
     "condition": "Б/у",
     "model_key": "nokia 105",
     "verified_model": null
+  },
+  "76252060": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17257625_nokia-2060/",
+    "title": "Nokia 2060",
+    "price": 200,
+    "condition": "Б/у",
+    "model_key": "nokia 2060",
+    "verified_model": null
   }
 }

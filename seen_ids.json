@@ -20132,7 +20132,8 @@
     "price": 1050,
     "condition": "Б/у",
     "model_key": "samsung а13",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "38703325": {
     "logged": true,
@@ -20695,6 +20696,16 @@
     "price": 950,
     "condition": "Б/у",
     "model_key": "redmi a5",
+    "verified_model": null
+  },
+  "27647128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17262764_apple-iphone-7-128-gb/",
+    "title": "Apple iPhone 7, 128 gb",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "apple 7",
     "verified_model": null
   }
 }

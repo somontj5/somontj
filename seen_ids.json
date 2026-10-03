@@ -19808,7 +19808,8 @@
     "price": 499,
     "condition": "Б/у",
     "model_key": "samsung а12",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "56406664": {
     "logged": true,
@@ -19840,7 +19841,8 @@
     "price": 650,
     "condition": "Б/у",
     "model_key": "apple 6",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17253856": {
     "logged": true,
@@ -20389,5 +20391,14 @@
     "condition": "Б/у",
     "model_key": "redmi a5",
     "verified_model": null
+  },
+  "46528128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17260746_samsung-galaxy-m52-8-128gb-duos-vietnam/",
+    "title": "Samsung Galaxy M52 8/128Gb Duos Vietnam",
+    "price": 1350,
+    "condition": "Б/у",
+    "model_key": "samsung m52 duos"
   }
 }

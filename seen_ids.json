@@ -19579,7 +19579,8 @@
     "title": "Samsung S25 Ultra",
     "price": 9500,
     "condition": "Б/у",
-    "model_key": "samsung s25 ultra"
+    "model_key": "samsung s25 ultra",
+    "sold_checked": true
   },
   "85412128": {
     "logged": true,
@@ -19746,7 +19747,8 @@
     "price": 2999,
     "condition": "Б/у",
     "model_key": "apple 13 pro max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "47129128": {
     "logged": true,
@@ -20281,6 +20283,26 @@
     "price": 2199,
     "condition": "Б/у",
     "model_key": "samsung s10",
+    "verified_model": null
+  },
+  "26050036": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17260500_oukitel-wp-36-pro/",
+    "title": "Oukitel Wp 36 Pro",
+    "price": 1900,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
+  },
+  "26045510": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17260455_xiaomi-redmi-note-10pro/",
+    "title": "Xiaomi Redmi Note 10pro",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "redmi note 10pro",
     "verified_model": null
   }
 }

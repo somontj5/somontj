@@ -19552,7 +19552,8 @@
     "title": "Xiaomi Qin phone",
     "price": 850,
     "condition": "Б/у",
-    "model_key": "xiaomi qin phone"
+    "model_key": "xiaomi qin phone",
+    "sold_checked": true
   },
   "51515128": {
     "logged": true,
@@ -19561,7 +19562,8 @@
     "title": "Apple iPhone 15, 128 gb, Black",
     "price": 5500,
     "condition": "Б/у",
-    "model_key": "apple 15"
+    "model_key": "apple 15",
+    "sold_checked": true
   },
   "25478025": {
     "logged": true,
@@ -20099,5 +20101,24 @@
     "price": 3999,
     "condition": "Б/у",
     "model_key": "apple 12 pro max"
+  },
+  "25620265": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17258344_telefon-honor-400-8-256gb-2026-5g/",
+    "title": "Honor 400 8/256Gb 2026 5G",
+    "price": 2980,
+    "condition": "Б/у",
+    "model_key": "honor 400 2026",
+    "verified_model": null
+  },
+  "25862712": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17258627_redmi-note-12/",
+    "title": "Xiaomi Redmi Note 12",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "redmi note 12"
   }
 }

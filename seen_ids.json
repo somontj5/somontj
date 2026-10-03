@@ -20229,7 +20229,8 @@
     "price": 2100,
     "condition": "Б/у",
     "model_key": "apple 12 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "25941664": {
     "logged": true,
@@ -20239,7 +20240,8 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "apple se",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "92471164": {
     "logged": true,
@@ -20260,7 +20262,8 @@
     "price": 450,
     "condition": "Б/у",
     "model_key": "samsung j5 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "75511270": {
     "logged": true,
@@ -20816,5 +20819,33 @@
     "condition": "Б/у",
     "model_key": "samsung note 20",
     "verified_model": null
+  },
+  "37411128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17263374_apple-iphone-11-128-gb-black/",
+    "title": "Apple iPhone 11, 128 gb, Black",
+    "price": 1399,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "45215128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17263452_apple-iphone-15-pro-128-gb-white-titanium/",
+    "title": "Apple iPhone 15 Pro, 128 gb, White Titanium",
+    "price": 6600,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro"
+  },
+  "55422512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16678554_samsung-galaxy-22-ultra-512g/",
+    "title": "Samsung Galaxy 22 Ultra",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "samsung 22 ultra"
   }
 }

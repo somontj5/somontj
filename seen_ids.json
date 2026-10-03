@@ -20272,7 +20272,8 @@
     "title": "Huawei Pura 70",
     "price": 4700,
     "condition": "Б/у",
-    "model_key": "huawei pura 70"
+    "model_key": "huawei pura 70",
+    "sold_checked": true
   },
   "05281282": {
     "logged": true,
@@ -20847,5 +20848,15 @@
     "price": 4300,
     "condition": "Б/у",
     "model_key": "samsung 22 ultra"
+  },
+  "43211256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17263432_apple-iphone-11-pro-256-gb-silver/",
+    "title": "Apple iPhone 11 Pro, 256 gb, Silver",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
   }
 }

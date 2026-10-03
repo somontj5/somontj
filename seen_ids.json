@@ -19978,7 +19978,8 @@
     "title": "Apple iPhone 15, 128 gb, Blue",
     "price": 4700,
     "condition": "Б/у",
-    "model_key": "apple 15"
+    "model_key": "apple 15",
+    "sold_checked": true
   },
   "53802212": {
     "logged": true,
@@ -20537,5 +20538,14 @@
     "condition": "Б/у",
     "model_key": "apple xs",
     "verified_model": null
+  },
+  "82182860": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16821828_infinix-hot-60i/",
+    "title": "Infinix hot 60i",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "infinix hot 60i"
   }
 }

@@ -19448,7 +19448,8 @@
     "title": "Samsung Galaxy S23 ultra",
     "price": 4100,
     "condition": "Б/у",
-    "model_key": "samsung s23 ultra"
+    "model_key": "samsung s23 ultra",
+    "sold_checked": true
   },
   "61102565": {
     "logged": true,
@@ -19457,7 +19458,8 @@
     "title": "Samsung Galaxy Note 10+ 256gb Carea 5G",
     "price": 1450,
     "condition": "Б/у",
-    "model_key": "samsung note 10 plus"
+    "model_key": "samsung note 10 plus",
+    "sold_checked": true
   },
   "10516256": {
     "logged": true,
@@ -19466,7 +19468,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
     "price": 7800,
     "condition": "Б/у",
-    "model_key": "apple 16 pro max"
+    "model_key": "apple 16 pro max",
+    "sold_checked": true
   },
   "22813644": {
     "logged": true,
@@ -19493,7 +19496,8 @@
     "title": "Samsung Galaxy S23 Ultra 256gb Vetnam 5G 2sim",
     "price": 3499,
     "condition": "Б/у",
-    "model_key": "samsung s23 ultra"
+    "model_key": "samsung s23 ultra",
+    "sold_checked": true
   },
   "44237128": {
     "logged": true,
@@ -20015,5 +20019,33 @@
     "condition": "Б/у",
     "model_key": "redmi note 9",
     "verified_model": null
+  },
+  "08220256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16808220_apple-iphone-xs-256-gb-gold/",
+    "title": "Apple iPhone Xs, 256 gb, Gold",
+    "price": 1599,
+    "condition": "Б/у",
+    "model_key": "apple xs",
+    "verified_model": null
+  },
+  "25849010": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17258490_xiaomi-redmi-10a/",
+    "title": "Xiaomi Redmi 10A",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "redmi 10a"
+  },
+  "36561285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17258436_telefon-samsung-56-128gb-vetnam-5g/",
+    "title": "Самсунг 56 128гб Vetnam 5G",
+    "price": 3266,
+    "condition": "Б/у",
+    "model_key": null
   }
 }

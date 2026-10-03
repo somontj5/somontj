@@ -20142,7 +20142,8 @@
     "price": 870,
     "condition": "Б/у",
     "model_key": "samsung а03s",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "55312128": {
     "logged": true,

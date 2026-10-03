@@ -19324,7 +19324,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Black Titanium",
     "price": 6999,
     "condition": "Б/у",
-    "model_key": "apple 15 pro max"
+    "model_key": "apple 15 pro max",
+    "sold_checked": true
   },
   "25231714": {
     "logged": true,

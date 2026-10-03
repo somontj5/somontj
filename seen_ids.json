@@ -19598,7 +19598,8 @@
     "title": "Vivo X 200 pro",
     "price": 7450,
     "condition": "Б/у",
-    "model_key": "vivo x 200 pro"
+    "model_key": "vivo x 200 pro",
+    "sold_checked": true
   },
   "68615128": {
     "logged": true,
@@ -20147,5 +20148,14 @@
     "condition": "Б/у",
     "model_key": "samsung a15 6 128",
     "verified_model": null
+  },
+  "54825625": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17258308_telefon-samsung-a54-8-256-gb-vetnam-2sim-5g/",
+    "title": "Самсунг А54 8/256 Gb Vetnam 2sim 5G",
+    "price": 2350,
+    "condition": "Б/у",
+    "model_key": null
   }
 }

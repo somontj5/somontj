@@ -20008,7 +20008,8 @@
     "title": "Samsung Galaxy S26 ultra",
     "price": 9500,
     "condition": "Б/у",
-    "model_key": "samsung s26 ultra"
+    "model_key": "samsung s26 ultra",
+    "sold_checked": true
   },
   "15812256": {
     "logged": true,
@@ -20017,7 +20018,8 @@
     "title": "Xiaomi Poco X8 Pro Max 12/256",
     "price": 3600,
     "condition": "Б/у",
-    "model_key": "poco x8 pro max 12 256"
+    "model_key": "poco x8 pro max 12 256",
+    "sold_checked": true
   },
   "10122565": {
     "logged": true,
@@ -20568,6 +20570,26 @@
     "price": 1300,
     "condition": "Б/у",
     "model_key": "apple 12",
+    "verified_model": null
+  },
+  "61894215": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17261894_samsung-galaxy-s21-5g/",
+    "title": "Samsung Galaxy S21 5G",
+    "price": 1780,
+    "condition": "Б/у",
+    "model_key": "samsung s21",
+    "verified_model": null
+  },
+  "61853155": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17261853_xiomi-redmi-note-15pro-5g/",
+    "title": "Xiaomi Redmi Note 15 Pro 5G",
+    "price": 3000,
+    "condition": "Б/у",
+    "model_key": "redmi note 15 pro",
     "verified_model": null
   }
 }

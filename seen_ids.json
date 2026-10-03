@@ -20051,7 +20051,8 @@
     "price": 2850,
     "condition": "Б/у",
     "model_key": "samsung а56 128 dual sim",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "25840724": {
     "logged": true,
@@ -20101,7 +20102,8 @@
     "title": "Самсунг 56 128гб Vetnam 5G",
     "price": 3266,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "25838324": {
     "logged": true,
@@ -20643,5 +20645,24 @@
     "condition": "Б/у",
     "model_key": "apple 11",
     "verified_model": null
+  },
+  "72623618": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17262361_samsung-not-8/",
+    "title": "Samsung galaxy note 8",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "samsung note 8",
+    "verified_model": null
+  },
+  "54548256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17262354_samsung-galaxy-a54-8-256gb-duos-vietnam/",
+    "title": "Samsung Galaxy A54 8/256Gb Duos Vietnam",
+    "price": 2350,
+    "condition": "Б/у",
+    "model_key": "samsung a54 duos"
   }
 }

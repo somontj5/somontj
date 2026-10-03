@@ -20432,7 +20432,8 @@
     "title": "Apple iPhone 17 Pro Max, 512 gb, Deep Blue",
     "price": 12500,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "26078122": {
     "logged": true,
@@ -20558,5 +20559,15 @@
     "price": 8600,
     "condition": "Б/у",
     "model_key": "apple 15 pro max"
+  },
+  "15951264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17261595_apple-iphone-12-64-gb-black/",
+    "title": "Apple iPhone 12, 64 gb, Black",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "apple 12",
+    "verified_model": null
   }
 }

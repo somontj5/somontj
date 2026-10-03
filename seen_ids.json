@@ -19649,7 +19649,8 @@
     "price": 1600,
     "condition": "Б/у",
     "model_key": "samsung note 20 ultra",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "37514256": {
     "logged": true,
@@ -20157,5 +20158,14 @@
     "price": 2350,
     "condition": "Б/у",
     "model_key": null
+  },
+  "31513128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17259315_apple-iphone-13-pro-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
+    "price": 3999,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

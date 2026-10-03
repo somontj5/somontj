@@ -19630,7 +19630,8 @@
     "price": 1600,
     "condition": "Б/у",
     "model_key": "samsung note 20 ultra",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "25513825": {
     "logged": true,
@@ -20167,5 +20168,15 @@
     "price": 3999,
     "condition": "Б/у",
     "model_key": "apple 13 pro"
+  },
+  "37512256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17259375_apple-iphone-12-pro-256-gb-silver/",
+    "title": "Apple iPhone 12 pro, 256 gb, Silver",
+    "price": 2100,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro",
+    "verified_model": null
   }
 }

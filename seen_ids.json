@@ -19365,7 +19365,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Graphite",
     "price": 3200,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "73451266": {
     "logged": true,
@@ -19951,5 +19952,14 @@
     "price": 9500,
     "condition": "Б/у",
     "model_key": "samsung s26 ultra"
+  },
+  "15812256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17258115_poco-x8-pro-max-12-256/",
+    "title": "Xiaomi Poco X8 Pro Max 12/256",
+    "price": 3600,
+    "condition": "Б/у",
+    "model_key": "poco x8 pro max 12 256"
   }
 }

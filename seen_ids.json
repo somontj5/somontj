@@ -19282,7 +19282,8 @@
     "price": 1999,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "25262664": {
     "logged": true,
@@ -19880,5 +19881,14 @@
     "condition": "Б/у",
     "model_key": "samsung a35",
     "verified_model": null
+  },
+  "57558155": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17257558_redmi-note-15-pro-5g/",
+    "title": "Xiaomi Redmi note 15 pro+ 5g",
+    "price": 4200,
+    "condition": "Б/у",
+    "model_key": "redmi note 15 pro plus"
   }
 }

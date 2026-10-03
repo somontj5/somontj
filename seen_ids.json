@@ -20030,7 +20030,8 @@
     "price": 1460,
     "condition": "Б/у",
     "model_key": "samsung note 10 pilus carea",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "31225652": {
     "logged": true,
@@ -20590,6 +20591,16 @@
     "price": 3000,
     "condition": "Б/у",
     "model_key": "redmi note 15 pro",
+    "verified_model": null
+  },
+  "95011256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17261950_apple-iphone-11-pro-256-gb-silver/",
+    "title": "Apple iPhone 11 Pro, 256 gb, Silver",
+    "price": 2200,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
     "verified_model": null
   }
 }

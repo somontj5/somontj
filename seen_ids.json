@@ -20452,5 +20452,14 @@
     "price": 899,
     "condition": "Б/у",
     "model_key": "redmi note 9"
+  },
+  "92215256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17260922_apple-iphone-15-pro-max-256-gb-natural-titanium/",
+    "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
+    "price": 7000,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro max"
   }
 }

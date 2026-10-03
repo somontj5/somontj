@@ -1719,7 +1719,8 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "apple 17 pro max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "47915256": {
     "logged": true
@@ -20166,7 +20167,8 @@
     "price": 2980,
     "condition": "Б/у",
     "model_key": "honor 400 2026",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "25862712": {
     "logged": true,
@@ -20196,7 +20198,8 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "samsung a15 6 128",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "54825625": {
     "logged": true,
@@ -20749,6 +20752,36 @@
     "price": 1900,
     "condition": "Б/у",
     "model_key": "apple 11",
+    "verified_model": null
+  },
+  "26250464": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17262504_apple-iphone-x-64-gb-space-grey/",
+    "title": "Apple iPhone X, 64 gb, Space Grey",
+    "price": 1050,
+    "condition": "Б/у",
+    "model_key": "apple x",
+    "verified_model": null
+  },
+  "50611256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17262506_apple-iphone-11-pro-256-gb-space-grey/",
+    "title": "Apple iPhone 11 Pro, 256 gb, Space Grey",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
+  },
+  "72630611": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17263061_tecno-spark-go-1/",
+    "title": "Tecno spark go 1",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "tecno spark go 1",
     "verified_model": null
   }
 }

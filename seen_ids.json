@@ -20060,7 +20060,8 @@
     "title": "Samsung Galaxy S24 ultra",
     "price": 6999,
     "condition": "Б/у",
-    "model_key": "samsung s24 ultra"
+    "model_key": "samsung s24 ultra",
+    "sold_checked": true
   },
   "84139128": {
     "logged": true,
@@ -20070,7 +20071,8 @@
     "price": 860,
     "condition": "Б/у",
     "model_key": "redmi note 9",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "08220256": {
     "logged": true,
@@ -20631,5 +20633,15 @@
     "price": 7700,
     "condition": "Б/у",
     "model_key": "apple 15 pro max"
+  },
+  "21671164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17262167_apple-iphone-11-64-gb-purple/",
+    "title": "Apple iPhone 11, 64 gb, Purple",
+    "price": 2099,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

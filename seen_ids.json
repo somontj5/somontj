@@ -19929,6 +19929,16 @@
     "title": "Samsung Galaxsy s22 ultra dubay",
     "price": 3300,
     "condition": "Б/у",
-    "model_key": "samsung galaxsy s22 ultra dubay"
+    "model_key": "samsung galaxsy s22 ultra dubay",
+    "sold_checked": true
+  },
+  "79714128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17257797_apple-iphone-14-pro-128-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Deep Purple",
+    "price": 4499,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

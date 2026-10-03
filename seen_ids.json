@@ -20151,7 +20151,8 @@
     "title": "Apple iPhone 12 Pro Max, 128 gb, Pacific Blue",
     "price": 3999,
     "condition": "Б/у",
-    "model_key": "apple 12 pro max"
+    "model_key": "apple 12 pro max",
+    "sold_checked": true
   },
   "25620265": {
     "logged": true,
@@ -20684,5 +20685,15 @@
     "price": 4350,
     "condition": "Б/у",
     "model_key": "samsung a57"
+  },
+  "72626895": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17262689_redmi-a5/",
+    "title": "Xiaomi Redmi A5",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "redmi a5",
+    "verified_model": null
   }
 }

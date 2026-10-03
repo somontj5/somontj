@@ -20282,7 +20282,8 @@
     "title": "Samsung Galaxy M52 8/128Gb Vetnam 2sim",
     "price": 1350,
     "condition": "Б/у",
-    "model_key": "samsung m52 vetnam 2sim"
+    "model_key": "samsung m52 vetnam 2sim",
+    "sold_checked": true
   },
   "18212565": {
     "logged": true,
@@ -20868,5 +20869,14 @@
     "price": 8999,
     "condition": "Б/у",
     "model_key": "apple 16 pro"
+  },
+  "67515128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17263675_apple-iphone-15-128-gb-black/",
+    "title": "Apple iPhone 15, 128 gb, Black",
+    "price": 6000,
+    "condition": "Б/у",
+    "model_key": "apple 15"
   }
 }

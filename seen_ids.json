@@ -19852,7 +19852,8 @@
     "price": 1300,
     "condition": "Б/у",
     "model_key": "samsung",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "77400351": {
     "logged": true,
@@ -19862,7 +19863,8 @@
     "price": 650,
     "condition": "Б/у",
     "model_key": "samsung a51",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "96614256": {
     "logged": true,
@@ -19882,7 +19884,8 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "apple xr",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "25676825": {
     "logged": true,
@@ -19891,7 +19894,8 @@
     "title": "Samsung Galaxy s25 Ultra",
     "price": 8999,
     "condition": "Б/у",
-    "model_key": "samsung s25 ultra"
+    "model_key": "samsung s25 ultra",
+    "sold_checked": true
   },
   "70314128": {
     "logged": true,
@@ -20400,5 +20404,41 @@
     "price": 1350,
     "condition": "Б/у",
     "model_key": "samsung m52 duos"
+  },
+  "79721256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17260797_samsung-galaxy-s21-plus-256gb/",
+    "title": "Samsung Galaxy S21 Plus 256Gb",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "samsung s21 plus"
+  },
+  "78517512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17260785_apple-iphone-17-pro-max-512-gb-deep-blue/",
+    "title": "Apple iPhone 17 Pro Max, 512 gb, Deep Blue",
+    "price": 12500,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
+  },
+  "26078122": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17260781_samsung-galaxy-s22-ultra/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 3480,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
+  },
+  "42312256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17260754_samsung-galaxy-s23-ultra-12-256gb-dual-sim/",
+    "title": "Samsung Galaxy S23 Ultra 12/256Gb Dual sim",
+    "price": 3590,
+    "condition": "Б/у",
+    "model_key": "samsung s23 ultra dual sim"
   }
 }

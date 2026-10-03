@@ -19723,7 +19723,8 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "samsung a 52",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "25591722": {
     "logged": true,
@@ -20238,5 +20239,14 @@
     "price": 1999,
     "condition": "Б/у",
     "model_key": "samsung s21 plus"
+  },
+  "75216256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17259752_apple-iphone-16-pro-max-256-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
+    "price": 9599,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   }
 }

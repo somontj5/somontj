@@ -20137,5 +20137,15 @@
     "price": 5500,
     "condition": "Б/у",
     "model_key": "apple 15 pro max"
+  },
+  "23156128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17259023_samsung-a15-6-128/",
+    "title": "Samsung Galaxy A15 6/128",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "samsung a15 6 128",
+    "verified_model": null
   }
 }

@@ -19640,7 +19640,8 @@
     "title": "Samsung Galaxy s25 Ultra Vietnam",
     "price": 10000,
     "condition": "Б/у",
-    "model_key": "samsung s25 ultra"
+    "model_key": "samsung s25 ultra",
+    "sold_checked": true
   },
   "74547820": {
     "logged": true,
@@ -20177,6 +20178,26 @@
     "price": 2100,
     "condition": "Б/у",
     "model_key": "apple 12 pro",
+    "verified_model": null
+  },
+  "25941664": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17259416_apple-iphone-se-64-gb/",
+    "title": "Apple iPhone SE, 64 gb",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "apple se",
+    "verified_model": null
+  },
+  "92471164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17259247_apple-iphone-11-pro-64-gb-space-grey/",
+    "title": "Apple iPhone 11 Pro, 64 gb, Space Grey",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
     "verified_model": null
   }
 }

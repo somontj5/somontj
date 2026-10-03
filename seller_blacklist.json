@@ -214,5 +214,14 @@
     "blocked_at": "2026-10-03T07:02:31",
     "updated_at": "2026-10-03T07:02:31",
     "active_ads_at_block": 244
+  },
+  "9718237": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/9718237/",
+    "reason": "похоже на перекупщика по фото: Искусственный фон (зеленый искусственный газон/трава) типичен для торговой выкладки товаров перекупщиками или мелкими магазинами.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17259416_apple-iphone-se-64-gb/",
+    "blocked_at": "2026-10-03T08:49:30",
+    "updated_at": "2026-10-03T08:49:30",
+    "active_ads_at_block": 1
   }
 }

@@ -19869,5 +19869,15 @@
     "price": 4300,
     "condition": "Б/у",
     "model_key": "samsung 22 ultra"
+  },
+  "58358256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16954758_samsung-galaxy-a35-8-256-gb/",
+    "title": "Samsung Galaxy A35 8/256 gb",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "samsung a35",
+    "verified_model": null
   }
 }

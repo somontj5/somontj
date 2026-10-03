@@ -20478,7 +20478,8 @@
     "title": "Apple iPhone 14 Pro Max, 256 gb, Deep Purple",
     "price": 5000,
     "condition": "Б/у",
-    "model_key": "apple 14 pro max"
+    "model_key": "apple 14 pro max",
+    "sold_checked": true
   },
   "96313256": {
     "logged": true,

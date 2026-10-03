@@ -20692,7 +20692,8 @@
     "title": "Samsung Galaxy a57",
     "price": 4350,
     "condition": "Б/у",
-    "model_key": "samsung a57"
+    "model_key": "samsung a57",
+    "sold_checked": true
   },
   "72626895": {
     "logged": true,
@@ -20782,6 +20783,16 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "tecno spark go 1",
+    "verified_model": null
+  },
+  "26309460": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17263094_infinix-hot-60-pro/",
+    "title": "Infinix hot 60 pro +",
+    "price": 3000,
+    "condition": "Б/у",
+    "model_key": "infinix hot 60 pro",
     "verified_model": null
   }
 }

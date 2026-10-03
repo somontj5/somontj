@@ -1712,7 +1712,14 @@
     "logged": true
   },
   "23317512": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16966233_apple-iphone-17-pro-max-512-gb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro Max, 512 gb, Cosmic Orange",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max",
+    "verified_model": null
   },
   "47915256": {
     "logged": true
@@ -19581,7 +19588,8 @@
     "title": "Apple iPhone 12 Pro Max, 128 gb, Silver",
     "price": 3500,
     "condition": "Б/у",
-    "model_key": "apple 12 pro max"
+    "model_key": "apple 12 pro max",
+    "sold_checked": true
   },
   "01877200": {
     "logged": true,

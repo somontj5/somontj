@@ -205,5 +205,14 @@
     "blocked_at": "2026-10-03T06:57:26",
     "updated_at": "2026-10-03T06:57:26",
     "active_ads_at_block": 9
+  },
+  "15204540": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/15204540/",
+    "reason": "похоже на перекупщика по фото: Использование постановочных эстетичных фото из интернета вместо реальных снимков товара, а также большое количество активных объявлений (244) при подозрительно низкой цене.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/16966233_apple-iphone-17-pro-max-512-gb-cosmic-orange/",
+    "blocked_at": "2026-10-03T07:02:31",
+    "updated_at": "2026-10-03T07:02:31",
+    "active_ads_at_block": 244
   }
 }

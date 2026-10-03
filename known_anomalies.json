@@ -114,5 +114,9 @@
   "samsung|128": {
     "first_seen": "2026-10-01",
     "ratio": 3.82
+  },
+  "samsung s10|128": {
+    "first_seen": "2026-10-03",
+    "ratio": 3.73
   }
 }

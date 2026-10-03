@@ -20272,5 +20272,15 @@
     "condition": "Б/у",
     "model_key": "apple 11",
     "verified_model": null
+  },
+  "26020810": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17260208_samsung-s10/",
+    "title": "Samsung Galaxy S10",
+    "price": 2199,
+    "condition": "Б/у",
+    "model_key": "samsung s10",
+    "verified_model": null
   }
 }

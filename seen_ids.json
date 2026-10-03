@@ -19957,7 +19957,8 @@
     "price": 150,
     "condition": "Б/у",
     "model_key": "nokia 105",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "76252060": {
     "logged": true,
@@ -19967,7 +19968,8 @@
     "price": 200,
     "condition": "Б/у",
     "model_key": "nokia 2060",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "74215128": {
     "logged": true,
@@ -20514,6 +20516,26 @@
     "price": 1950,
     "condition": "Б/у",
     "model_key": "honor x9b 12 8 256",
+    "verified_model": null
+  },
+  "17259771": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17259771_khoroshe-telefon/",
+    "title": "Samsung Galaxy S22",
+    "price": 2800,
+    "condition": "Б/у",
+    "model_key": "samsung s22",
+    "verified_model": null
+  },
+  "60302256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17260302_apple-iphone-xs-256-gb-space-grey/",
+    "title": "Apple iPhone Xs, 256 gb, Space Grey",
+    "price": 2199,
+    "condition": "Б/у",
+    "model_key": "apple xs",
     "verified_model": null
   }
 }

@@ -19691,7 +19691,8 @@
     "title": "Samsung Galaxy s25 Ultra",
     "price": 9000,
     "condition": "Б/у",
-    "model_key": "samsung s25 ultra"
+    "model_key": "samsung s25 ultra",
+    "sold_checked": true
   },
   "76112256": {
     "logged": true,
@@ -20219,5 +20220,23 @@
     "price": 4700,
     "condition": "Б/у",
     "model_key": "huawei pura 70"
+  },
+  "05281282": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17259740_telefon-samsung-m52-8-128gb-vetnam-2sim/",
+    "title": "Samsung Galaxy M52 8/128Gb Vetnam 2sim",
+    "price": 1350,
+    "condition": "Б/у",
+    "model_key": "samsung m52 vetnam 2sim"
+  },
+  "18212565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17259718_telefon-samsung-s21-256gb-carea-5g/",
+    "title": "Самсунг Galaxy S21+ 256Gb Carea 5G",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "samsung s21 plus"
   }
 }

@@ -20566,7 +20566,8 @@
     "price": 1950,
     "condition": "Б/у",
     "model_key": "honor x9b 12 8 256",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17259771": {
     "logged": true,
@@ -20576,7 +20577,8 @@
     "price": 2800,
     "condition": "Б/у",
     "model_key": "samsung s22",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "60302256": {
     "logged": true,

@@ -20947,7 +20947,8 @@
     "title": "Vivo x 200 pro mini",
     "price": 7400,
     "condition": "Б/у",
-    "model_key": "vivo x 200 pro mini"
+    "model_key": "vivo x 200 pro mini",
+    "sold_checked": true
   },
   "99586222": {
     "logged": true,
@@ -20956,7 +20957,8 @@
     "title": "Samsung Galaxy s22 ultra",
     "price": 4300,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "99584024": {
     "logged": true,
@@ -20965,7 +20967,8 @@
     "title": "Samsung Galaxy S24+",
     "price": 5600,
     "condition": "Б/у",
-    "model_key": "samsung s24 plus"
+    "model_key": "samsung s24 plus",
+    "sold_checked": true
   },
   "67513128": {
     "logged": true,
@@ -20974,7 +20977,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Graphite",
     "price": 5000,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "60906929": {
     "logged": true,
@@ -20983,7 +20987,8 @@
     "title": "Xiaomi Redmi 9T",
     "price": 900,
     "condition": "Б/у",
-    "model_key": "redmi 9t"
+    "model_key": "redmi 9t",
+    "sold_checked": true
   },
   "08411220": {
     "logged": true,
@@ -21462,5 +21467,52 @@
     "price": 1250,
     "condition": "Б/у",
     "model_key": null
+  },
+  "55425685": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17267785_telefon-samsung-a54-256-8gb-vetnam-5g/",
+    "title": "Samsung Galaxy А54 256/8Gb Vetnam 5G",
+    "price": 2344,
+    "condition": "Б/у",
+    "model_key": "samsung а54 vetnam"
+  },
+  "67854128": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17267854_apple-iphone-xr-128-gb-black/",
+    "title": "Apple iPhone Xr, 128 gb, Black",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
+  },
+  "83004645": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17267830_telefon-samsung-04-64gb-vetnam-5g/",
+    "title": "Samsung Galaxy 04 64Gb Vetnam 5G",
+    "price": 980,
+    "condition": "Б/у",
+    "model_key": "samsung 04"
+  },
+  "16521285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17267816_telefon-samsung-m52-128gb-vetnam-5g/",
+    "title": "Самсунг М52 128гб Vetnam 5G",
+    "price": 1350,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "01561285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17267801_telefon-samsung-a56-128-vetnam-5g-silver/",
+    "title": "Samsung Galaxy А56 128 Vetnam 5G Silver",
+    "price": 3200,
+    "condition": "Б/у",
+    "model_key": "samsung а56 128 vetnam"
   }
 }

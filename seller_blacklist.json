@@ -250,5 +250,14 @@
     "blocked_at": "2026-10-04T03:58:34",
     "updated_at": "2026-10-04T03:58:34",
     "active_ads_at_block": 36
+  },
+  "9807219": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/9807219/",
+    "reason": "похоже на перекупщика по фото: На заднем плане фотографий четко видны стеллажи с товарными упаковками и специфической выкладкой, характерные для магазина или торговой точки.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17265544_apple-iphone-12-pro-128-gb-pacific-blue/",
+    "blocked_at": "2026-10-04T07:37:28",
+    "updated_at": "2026-10-04T07:37:28",
+    "active_ads_at_block": 1
   }
 }

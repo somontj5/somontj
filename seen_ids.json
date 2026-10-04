@@ -21122,7 +21122,8 @@
     "title": "Xiaomi Redmi 8A",
     "price": 450,
     "condition": "Б/у",
-    "model_key": "redmi 8a"
+    "model_key": "redmi 8a",
+    "sold_checked": true
   },
   "30939629": {
     "logged": true,
@@ -21657,5 +21658,24 @@
     "condition": "Б/у",
     "model_key": "samsung a41",
     "verified_model": null
+  },
+  "26996122": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17269961_samsung-s22-ultra/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 3000,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra",
+    "verified_model": null
+  },
+  "96316256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17269963_apple-iphone-16-pro-256-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro, 256 gb, Desert Titanium",
+    "price": 9200,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro"
   }
 }

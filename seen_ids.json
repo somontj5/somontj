@@ -20927,7 +20927,8 @@
     "title": "Apple iPhone 15, 128 gb, Black",
     "price": 6000,
     "condition": "Б/у",
-    "model_key": "apple 15"
+    "model_key": "apple 15",
+    "sold_checked": true
   },
   "09061902": {
     "logged": true,
@@ -20991,7 +20992,8 @@
     "title": "Samsung Galaxy Note 20",
     "price": 2000,
     "condition": "Б/у",
-    "model_key": "samsung note 20"
+    "model_key": "samsung note 20",
+    "sold_checked": true
   },
   "11955915": {
     "logged": true,
@@ -21000,7 +21002,8 @@
     "title": "Xiaomi Redmi 15",
     "price": 1700,
     "condition": "Б/у",
-    "model_key": "redmi 15"
+    "model_key": "redmi 15",
+    "sold_checked": true
   },
   "11959524": {
     "logged": true,
@@ -21009,7 +21012,8 @@
     "title": "Samsung Galaxy S24 Ultra",
     "price": 7800,
     "condition": "Б/у",
-    "model_key": "samsung s24 ultra"
+    "model_key": "samsung s24 ultra",
+    "sold_checked": true
   },
   "45125512": {
     "logged": true,
@@ -21421,5 +21425,42 @@
     "price": 3999,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "26776415": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17267764_samsung-a15/",
+    "title": "Samsung Galaxy A15",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "samsung a15",
+    "verified_model": null
+  },
+  "52562026": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17267765_telefon-honor-x9d-5g-256gb-2026/",
+    "title": "Huawei Honor X9d 5G 256gb 2026",
+    "price": 2950,
+    "condition": "Б/у",
+    "model_key": "huawei honor x9d"
+  },
+  "74204645": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17267742_telefon-samsung-f04-64gb-vetnam-5g/",
+    "title": "Samsung Galaxy F04 64gb Vetnam 5G",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "samsung f04"
+  },
+  "93212852": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17267729_telefon-samsung-a32-128gb-vetnam-5g-2sim/",
+    "title": "Самсунг А32 128gb Vetnam 5G 2sim",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": null
   }
 }

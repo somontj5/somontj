@@ -259,5 +259,14 @@
     "blocked_at": "2026-10-04T07:37:28",
     "updated_at": "2026-10-04T07:37:28",
     "active_ads_at_block": 1
+  },
+  "6028126": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/6028126/",
+    "reason": "похоже на перекупщика по фото: На фото отчетливо видны витрины магазина с другой техникой и коробками в фоновом режиме, что характерно для торговых точек, а не частных лиц.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17267764_samsung-a15/",
+    "blocked_at": "2026-10-04T12:12:33",
+    "updated_at": "2026-10-04T12:12:33",
+    "active_ads_at_block": 1
   }
 }

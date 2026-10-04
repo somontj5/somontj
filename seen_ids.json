@@ -20574,7 +20574,8 @@
     "price": 2199,
     "condition": "Б/у",
     "model_key": "apple xs",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "82182860": {
     "logged": true,
@@ -20855,7 +20856,8 @@
     "title": "Samsung Galaxy 22 Ultra",
     "price": 4300,
     "condition": "Б/у",
-    "model_key": "samsung 22 ultra"
+    "model_key": "samsung 22 ultra",
+    "sold_checked": true
   },
   "43211256": {
     "logged": true,
@@ -20932,15 +20934,39 @@
     "model_key": "apple 13 pro"
   },
   "60906929": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16090692_redmi-9t/",
+    "title": "Xiaomi Redmi 9T",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "redmi 9t"
   },
   "08411220": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15084112_samsung-hote-20/",
+    "title": "Samsung Galaxy Note 20",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "samsung note 20"
   },
   "11955915": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17119559_redmi-15/",
+    "title": "Xiaomi Redmi 15",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "redmi 15"
   },
   "11959524": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17119595_s24-ultra/",
+    "title": "Samsung Galaxy S24 Ultra",
+    "price": 7800,
+    "condition": "Б/у",
+    "model_key": "samsung s24 ultra"
   }
 }

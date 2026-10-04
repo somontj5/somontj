@@ -20778,7 +20778,8 @@
     "price": 2900,
     "condition": "Б/у",
     "model_key": "samsung galаxy s22",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "28691164": {
     "logged": true,
@@ -21337,5 +21338,14 @@
     "condition": "Б/у",
     "model_key": "apple 11 pro",
     "verified_model": null
+  },
+  "72644500": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17267264_4500/",
+    "title": "Samsung Galaxy A57",
+    "price": 4299,
+    "condition": "Б/у",
+    "model_key": "samsung a57"
   }
 }

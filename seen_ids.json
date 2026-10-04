@@ -20876,7 +20876,8 @@
     "price": 1399,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "45215128": {
     "logged": true,
@@ -20885,7 +20886,8 @@
     "title": "Apple iPhone 15 Pro, 128 gb, White Titanium",
     "price": 6600,
     "condition": "Б/у",
-    "model_key": "apple 15 pro"
+    "model_key": "apple 15 pro",
+    "sold_checked": true
   },
   "55422512": {
     "logged": true,
@@ -20905,7 +20907,8 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "apple 11 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "53616256": {
     "logged": true,
@@ -20914,7 +20917,8 @@
     "title": "Apple iPhone 16 Pro, 256 gb, Desert Titanium",
     "price": 8999,
     "condition": "Б/у",
-    "model_key": "apple 16 pro"
+    "model_key": "apple 16 pro",
+    "sold_checked": true
   },
   "67515128": {
     "logged": true,
@@ -21410,6 +21414,12 @@
     "model_key": null
   },
   "65914256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17267659_apple-iphone-14-pro-max-256-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb, Deep Purple",
+    "price": 3999,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
   }
 }

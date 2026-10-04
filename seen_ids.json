@@ -21183,7 +21183,8 @@
     "title": "Samsung Galaxy S22",
     "price": 3100,
     "condition": "Б/у",
-    "model_key": "samsung s22"
+    "model_key": "samsung s22",
+    "sold_checked": true
   },
   "54412128": {
     "logged": true,

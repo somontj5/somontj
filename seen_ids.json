@@ -21304,7 +21304,8 @@
     "price": 850,
     "condition": "Б/у",
     "model_key": "samsung s duos 2",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "74268256": {
     "logged": true,

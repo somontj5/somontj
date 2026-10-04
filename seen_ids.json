@@ -21729,6 +21729,7 @@
     "price": 950,
     "condition": "Б/у",
     "model_key": "samsung a05",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   }
 }

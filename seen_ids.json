@@ -20938,7 +20938,8 @@
     "price": 750,
     "condition": "Б/у",
     "model_key": "vivo y02",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "79952200": {
     "logged": true,
@@ -21514,5 +21515,15 @@
     "price": 3200,
     "condition": "Б/у",
     "model_key": "samsung а56 128 vetnam"
+  },
+  "67909256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17267909_apple-iphone-xr-256-gb-blue/",
+    "title": "Apple iPhone Xr, 256 gb, Blue",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
   }
 }

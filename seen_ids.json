@@ -21131,7 +21131,8 @@
     "title": "Xiaomi Redmi 9A, 32gb",
     "price": 450,
     "condition": "Б/у",
-    "model_key": "redmi 9a"
+    "model_key": "redmi 9a",
+    "sold_checked": true
   },
   "72648659": {
     "logged": true,
@@ -21644,6 +21645,16 @@
     "price": 650,
     "condition": "Б/у",
     "model_key": "apple 7",
+    "verified_model": null
+  },
+  "26979841": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17269798_samsung-galaxy-a-41/",
+    "title": "Samsung Galaxy A41",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "samsung a41",
     "verified_model": null
   }
 }

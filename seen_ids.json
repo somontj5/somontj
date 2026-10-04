@@ -21028,7 +21028,8 @@
     "title": "Samsung Galaxy S25 Ultra 512gb",
     "price": 10500,
     "condition": "Б/у",
-    "model_key": "samsung s25 ultra"
+    "model_key": "samsung s25 ultra",
+    "sold_checked": true
   },
   "29214128": {
     "logged": true,
@@ -21522,6 +21523,26 @@
     "url": "https://m.somon.tj/adv/17267909_apple-iphone-xr-256-gb-blue/",
     "title": "Apple iPhone Xr, 256 gb, Blue",
     "price": 999,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
+  },
+  "17268444": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17268444_bu/",
+    "title": "Samsung Galaxy S21 Plus",
+    "price": 400,
+    "condition": "Б/у",
+    "model_key": "samsung s21 plus",
+    "verified_model": null
+  },
+  "68378128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17268378_apple-iphone-xr-128-gb-yellow/",
+    "title": "Apple iPhone Xr, 128 gb, Yellow",
+    "price": 1500,
     "condition": "Б/у",
     "model_key": "apple xr",
     "verified_model": null

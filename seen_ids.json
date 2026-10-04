@@ -20800,7 +20800,8 @@
     "price": 1900,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "26250464": {
     "logged": true,
@@ -21347,5 +21348,14 @@
     "price": 4299,
     "condition": "Б/у",
     "model_key": "samsung a57"
+  },
+  "26724323": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17267243_samsung-s23-ultra/",
+    "title": "Samsung Galaxy S23 Ultra",
+    "price": 4200,
+    "condition": "Б/у",
+    "model_key": "samsung s23 ultra"
   }
 }

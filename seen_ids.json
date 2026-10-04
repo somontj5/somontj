@@ -21571,7 +21571,8 @@
     "price": 2200,
     "condition": "Б/у",
     "model_key": "samsung s22",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "68108769": {
     "logged": true,

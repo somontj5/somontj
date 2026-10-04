@@ -21292,7 +21292,8 @@
     "title": "Apple iPhone 12, 128 gb, Purple",
     "price": 3200,
     "condition": "Б/у",
-    "model_key": "apple 12"
+    "model_key": "apple 12",
+    "sold_checked": true
   },
   "26654432": {
     "logged": true,

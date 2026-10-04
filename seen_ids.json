@@ -20652,7 +20652,8 @@
     "price": 2200,
     "condition": "Б/у",
     "model_key": "apple 11 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "69940171": {
     "logged": true,
@@ -21197,6 +21198,16 @@
     "price": 799,
     "condition": "Б/у",
     "model_key": "apple 11",
+    "verified_model": null
+  },
+  "58411264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17265841_apple-iphone-12-64-gb-blue/",
+    "title": "Apple iPhone 12, 64 gb, Blue",
+    "price": 1799,
+    "condition": "Б/у",
+    "model_key": "apple 12",
     "verified_model": null
   }
 }

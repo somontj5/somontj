@@ -21377,7 +21377,8 @@
     "title": "Samsung Galaxy A57",
     "price": 4299,
     "condition": "Б/у",
-    "model_key": "samsung a57"
+    "model_key": "samsung a57",
+    "sold_checked": true
   },
   "26724323": {
     "logged": true,

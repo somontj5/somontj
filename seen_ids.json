@@ -20405,7 +20405,8 @@
     "price": 599,
     "condition": "Б/у",
     "model_key": "redmi note 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "26062740": {
     "logged": true,
@@ -20988,5 +20989,15 @@
     "price": 5500,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "81010128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17264358_redmi-10c-redmi-10c-128gbimei-rastamozhka-karagiiagon-kambudi-nadora/",
+    "title": "Xiaomi Redmi 10c Redmi 10c 128gb IMEI",
+    "price": 669,
+    "condition": "Б/у",
+    "model_key": "redmi 10c 10c",
+    "verified_model": null
   }
 }

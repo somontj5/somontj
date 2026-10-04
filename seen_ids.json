@@ -20415,7 +20415,8 @@
     "price": 399,
     "condition": "Б/у",
     "model_key": "samsung a40",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "26066022": {
     "logged": true,
@@ -20968,5 +20969,14 @@
     "price": 7800,
     "condition": "Б/у",
     "model_key": "samsung s24 ultra"
+  },
+  "45125512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16191451_samsung-galaxy-s25-ultra-512gb/",
+    "title": "Samsung Galaxy S25 Ultra 512gb",
+    "price": 10500,
+    "condition": "Б/у",
+    "model_key": "samsung s25 ultra"
   }
 }

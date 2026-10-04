@@ -20451,7 +20451,8 @@
     "title": "Samsung Galaxy M52 8/128Gb Duos Vietnam",
     "price": 1350,
     "condition": "Б/у",
-    "model_key": "samsung m52 duos"
+    "model_key": "samsung m52 duos",
+    "sold_checked": true
   },
   "79721256": {
     "logged": true,
@@ -20618,7 +20619,8 @@
     "price": 1780,
     "condition": "Б/у",
     "model_key": "samsung s21",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "61853155": {
     "logged": true,
@@ -21060,5 +21062,23 @@
     "condition": "Б/у",
     "model_key": "apple 11 pro max",
     "verified_model": null
+  },
+  "69495758": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16949575_xiaomi-redmi-8a/",
+    "title": "Xiaomi Redmi 8A",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "redmi 8a"
+  },
+  "30939629": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/13093962_xiaomi-redmi-9a/",
+    "title": "Xiaomi Redmi 9A, 32gb",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "redmi 9a"
   }
 }

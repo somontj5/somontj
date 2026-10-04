@@ -21308,7 +21308,8 @@
     "price": 2900,
     "condition": "Б/у",
     "model_key": "samsung а56",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "54012128": {
     "logged": true,

@@ -20367,7 +20367,8 @@
     "title": "Xiaomi Redmi A3",
     "price": 850,
     "condition": "Б/у",
-    "model_key": "redmi a3"
+    "model_key": "redmi a3",
+    "sold_checked": true
   },
   "43769964": {
     "logged": true,
@@ -20386,7 +20387,8 @@
     "title": "Samsung Galaxy S24 Ultra 12/256gb",
     "price": 7750,
     "condition": "Б/у",
-    "model_key": "samsung s24 ultra"
+    "model_key": "samsung s24 ultra",
+    "sold_checked": true
   },
   "92612256": {
     "logged": true,
@@ -21030,5 +21032,23 @@
     "condition": "Б/у",
     "model_key": "samsung a 16 128",
     "verified_model": null
+  },
+  "67814128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17264678_apple-iphone-14-pro-128-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Deep Purple",
+    "price": 4250,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
+  },
+  "26453725": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17264537_samsung-galaxy-s25-ultra/",
+    "title": "Samsung Galaxy s25 Ultra",
+    "price": 9000,
+    "condition": "Б/у",
+    "model_key": "samsung s25 ultra"
   }
 }

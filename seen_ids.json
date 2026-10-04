@@ -20302,7 +20302,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
     "price": 9599,
     "condition": "Б/у",
-    "model_key": "apple 16 pro max"
+    "model_key": "apple 16 pro max",
+    "sold_checked": true
   },
   "37298105": {
     "logged": true,
@@ -20312,7 +20313,8 @@
     "price": 1700,
     "condition": "Б/у",
     "model_key": "samsung s105g",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "00371164": {
     "logged": true,
@@ -20322,7 +20324,8 @@
     "price": 2200,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "26020810": {
     "logged": true,
@@ -20332,7 +20335,8 @@
     "price": 2199,
     "condition": "Б/у",
     "model_key": "samsung s10",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "26050036": {
     "logged": true,
@@ -20421,7 +20425,8 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "xiaomi qin f22",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "06655128": {
     "logged": true,
@@ -20879,5 +20884,63 @@
     "price": 6000,
     "condition": "Б/у",
     "model_key": "apple 15"
+  },
+  "09061902": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16090619_vivo-y02/",
+    "title": "Vivo Y02",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "vivo y02",
+    "verified_model": null
+  },
+  "79952200": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17079952_vivo-x-200-pro-mini/",
+    "title": "Vivo x 200 pro mini",
+    "price": 7400,
+    "condition": "Б/у",
+    "model_key": "vivo x 200 pro mini"
+  },
+  "99586222": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16995862_galaxy-s22-ultra/",
+    "title": "Samsung Galaxy s22 ultra",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
+  },
+  "99584024": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16995840_s24/",
+    "title": "Samsung Galaxy S24+",
+    "price": 5600,
+    "condition": "Б/у",
+    "model_key": "samsung s24 plus"
+  },
+  "67513128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16995675_apple-iphone-13-pro-128-gb-graphite/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Graphite",
+    "price": 5000,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
+  },
+  "60906929": {
+    "logged": true
+  },
+  "08411220": {
+    "logged": true
+  },
+  "11955915": {
+    "logged": true
+  },
+  "11959524": {
+    "logged": true
   }
 }

@@ -20378,7 +20378,8 @@
     "price": 650,
     "condition": "Б/у",
     "model_key": "infinix smart 9",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "22412256": {
     "logged": true,
@@ -20480,7 +20481,8 @@
     "title": "Samsung Galaxy S22 Ultra",
     "price": 3480,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "42312256": {
     "logged": true,
@@ -20489,7 +20491,8 @@
     "title": "Samsung Galaxy S23 Ultra 12/256Gb Dual sim",
     "price": 3590,
     "condition": "Б/у",
-    "model_key": "samsung s23 ultra dual sim"
+    "model_key": "samsung s23 ultra dual sim",
+    "sold_checked": true
   },
   "08739128": {
     "logged": true,
@@ -21080,5 +21083,33 @@
     "price": 450,
     "condition": "Б/у",
     "model_key": "redmi 9a"
+  },
+  "72648659": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17264865_honor-9x/",
+    "title": "Huawei Honor 9X",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "huawei honor 9x"
+  },
+  "26487012": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17264870_redmi-12c/",
+    "title": "Xiaomi Redmi 12c",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "redmi 12c",
+    "verified_model": null
+  },
+  "26485722": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17264857_samsung-galaxy-s-22-ultra/",
+    "title": "Samsung Galaxy S 22 Ultra",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "samsung s 22 ultra"
   }
 }

@@ -21142,7 +21142,8 @@
     "title": "Huawei Honor 9X",
     "price": 950,
     "condition": "Б/у",
-    "model_key": "huawei honor 9x"
+    "model_key": "huawei honor 9x",
+    "sold_checked": true
   },
   "26487012": {
     "logged": true,
@@ -21152,7 +21153,8 @@
     "price": 1600,
     "condition": "Б/у",
     "model_key": "redmi 12c",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "26485722": {
     "logged": true,
@@ -21697,5 +21699,23 @@
     "price": 4300,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra"
+  },
+  "27112128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17270271_apple-iphone-12-pro-128-gb-graphite/",
+    "title": "Apple iPhone 12 pro, 128 gb, Graphite",
+    "price": 3300,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro"
+  },
+  "27019425": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17270194_samsung-galaxy-s25-ultra/",
+    "title": "Samsung Galaxy s25 Ultra",
+    "price": 9000,
+    "condition": "Б/у",
+    "model_key": "samsung s25 ultra"
   }
 }

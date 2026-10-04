@@ -20645,7 +20645,8 @@
     "title": "Apple iPhone 17 Pro Max, 1 tb, Cosmic Orange",
     "price": 2100,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max 1 tb"
+    "model_key": "apple 17 pro max 1 tb",
+    "sold_checked": true
   },
   "11515256": {
     "logged": true,
@@ -21019,5 +21020,15 @@
     "price": 1499,
     "condition": "Б/у",
     "model_key": "apple 12 mini"
+  },
+  "41706128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17264170_pamit-6-128/",
+    "title": "Samsung Galaxy A 16/128",
+    "price": 1350,
+    "condition": "Б/у",
+    "model_key": "samsung a 16 128",
+    "verified_model": null
   }
 }

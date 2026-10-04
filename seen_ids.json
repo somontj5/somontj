@@ -20999,5 +20999,15 @@
     "condition": "Б/у",
     "model_key": "redmi 10c 10c",
     "verified_model": null
+  },
+  "17264370": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17264370_vivo/",
+    "title": "Vivo",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "vivo",
+    "verified_model": null
   }
 }

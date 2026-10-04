@@ -20767,7 +20767,8 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "apple 17 pro max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "26289922": {
     "logged": true,
@@ -20787,7 +20788,8 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "apple 11 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "30281164": {
     "logged": true,
@@ -21315,6 +21317,25 @@
     "price": 2100,
     "condition": "Б/у",
     "model_key": "samsung a26 8 256",
+    "verified_model": null
+  },
+  "71601264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17267160_apple-iphone-12-mini-64-gb-white/",
+    "title": "Apple iPhone 12 mini, 64 gb, White",
+    "price": 1499,
+    "condition": "Б/у",
+    "model_key": "apple 12 mini"
+  },
+  "12411256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17267124_apple-iphone-11-pro-256-gb-midnight-green/",
+    "title": "Apple iPhone 11 Pro, 256 gb, Midnight Green",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
     "verified_model": null
   }
 }

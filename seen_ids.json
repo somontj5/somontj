@@ -21174,7 +21174,8 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "apple 11 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "26500022": {
     "logged": true,
@@ -21719,5 +21720,15 @@
     "price": 9000,
     "condition": "Б/у",
     "model_key": "samsung s25 ultra"
+  },
+  "27035605": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17270356_samsung-a05/",
+    "title": "Samsung Galaxy A05",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "samsung a05",
+    "verified_model": null
   }
 }

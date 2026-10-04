@@ -20641,7 +20641,8 @@
     "price": 3000,
     "condition": "Б/у",
     "model_key": "redmi note 15 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "95011256": {
     "logged": true,
@@ -21177,5 +21178,25 @@
     "price": 200,
     "condition": "Б/у",
     "model_key": "nokia 206"
+  },
+  "26576364": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17265763_apple-iphone-x-64-gb-space-grey/",
+    "title": "Apple iPhone X, 64 gb, Space Grey",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "apple x",
+    "verified_model": null
+  },
+  "48221164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17264822_apple-iphone-11-64-gb-black/",
+    "title": "Apple iPhone 11, 64 gb, Black",
+    "price": 799,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

@@ -21161,7 +21161,8 @@
     "title": "Samsung Galaxy S 22 Ultra",
     "price": 4300,
     "condition": "Б/у",
-    "model_key": "samsung s 22 ultra"
+    "model_key": "samsung s 22 ultra",
+    "sold_checked": true
   },
   "10011256": {
     "logged": true,
@@ -21677,5 +21678,24 @@
     "price": 9200,
     "condition": "Б/у",
     "model_key": "apple 16 pro"
+  },
+  "02291264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17270229_apple-iphone-12-64-gb-black/",
+    "title": "Apple iPhone 12, 64 gb, Black",
+    "price": 2699,
+    "condition": "Б/у",
+    "model_key": "apple 12",
+    "verified_model": null
+  },
+  "27024522": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17270245_samsung-galaxy-s22-ultra/",
+    "title": "Samsung Galaxy s22 Ultra",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
   }
 }

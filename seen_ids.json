@@ -20462,7 +20462,8 @@
     "title": "Samsung Galaxy S21 Plus 256Gb",
     "price": 2000,
     "condition": "Б/у",
-    "model_key": "samsung s21 plus"
+    "model_key": "samsung s21 plus",
+    "sold_checked": true
   },
   "78517512": {
     "logged": true,
@@ -20501,7 +20502,8 @@
     "title": "Xiaomi Redmi Note 9",
     "price": 899,
     "condition": "Б/у",
-    "model_key": "redmi note 9"
+    "model_key": "redmi note 9",
+    "sold_checked": true
   },
   "92215256": {
     "logged": true,
@@ -21111,5 +21113,24 @@
     "price": 4300,
     "condition": "Б/у",
     "model_key": "samsung s 22 ultra"
+  },
+  "10011256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17265100_apple-iphone-11-pro-256-gb-silver/",
+    "title": "Apple iPhone 11 Pro, 256 gb, Silver",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
+  },
+  "26500022": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17265000_samsung-s22/",
+    "title": "Samsung Galaxy S22",
+    "price": 3100,
+    "condition": "Б/у",
+    "model_key": "samsung s22"
   }
 }

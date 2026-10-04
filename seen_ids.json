@@ -20745,7 +20745,8 @@
     "price": 950,
     "condition": "Б/у",
     "model_key": "redmi a5",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "27647128": {
     "logged": true,
@@ -20755,7 +20756,8 @@
     "price": 650,
     "condition": "Б/у",
     "model_key": "apple 7",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "82017256": {
     "logged": true,
@@ -21272,5 +21274,34 @@
     "price": 8300,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "17266538": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17266538_sruchona-sum-lozim/",
+    "title": "Samsung Galaxy А56",
+    "price": 2900,
+    "condition": "Б/у",
+    "model_key": "samsung а56",
+    "verified_model": null
+  },
+  "54012128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17266540_apple-iphone-12-128-gb-purple/",
+    "title": "Apple iPhone 12, 128 gb, Purple",
+    "price": 3200,
+    "condition": "Б/у",
+    "model_key": "apple 12"
+  },
+  "26654432": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17266544_samsung-m32/",
+    "title": "Samsung Galaxy S Duos 2",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "samsung s duos 2",
+    "verified_model": null
   }
 }

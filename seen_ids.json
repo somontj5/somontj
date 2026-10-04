@@ -21049,7 +21049,8 @@
     "price": 669,
     "condition": "Б/у",
     "model_key": "redmi 10c 10c",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17264370": {
     "logged": true,
@@ -21567,6 +21568,16 @@
     "price": 2200,
     "condition": "Б/у",
     "model_key": "samsung s22",
+    "verified_model": null
+  },
+  "68108769": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16810876_xiaomi-redmi-9a/",
+    "title": "Xiaomi Redmi 9A",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "redmi 9a",
     "verified_model": null
   }
 }

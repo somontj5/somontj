@@ -20395,7 +20395,8 @@
     "title": "Samsung Galaxy S26 Ultra 12/256gb",
     "price": 11500,
     "condition": "Б/у",
-    "model_key": "samsung s26 ultra"
+    "model_key": "samsung s26 ultra",
+    "sold_checked": true
   },
   "59411128": {
     "logged": true,
@@ -21009,5 +21010,14 @@
     "condition": "Б/у",
     "model_key": "vivo",
     "verified_model": null
+  },
+  "43101264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17264310_apple-iphone-12-mini-64-gb-white/",
+    "title": "Apple iPhone 12 mini, 64 gb, White",
+    "price": 1499,
+    "condition": "Б/у",
+    "model_key": "apple 12 mini"
   }
 }

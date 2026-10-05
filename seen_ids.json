@@ -22305,5 +22305,14 @@
     "price": 4999,
     "condition": "Б/у",
     "model_key": "apple 13 pro max"
+  },
+  "54917256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17274549_apple-iphone-17-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
+    "price": 10600,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
   }
 }

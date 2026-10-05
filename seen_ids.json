@@ -22027,7 +22027,8 @@
     "price": 2600,
     "condition": "Б/у",
     "model_key": "samsung a26",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "50142565": {
     "logged": true,
@@ -22036,7 +22037,8 @@
     "title": "Xiaomi Redmi Note 14 pro 256gb Global Version 5G",
     "price": 2350,
     "condition": "Б/у",
-    "model_key": "redmi note 14 pro"
+    "model_key": "redmi note 14 pro",
+    "sold_checked": true
   },
   "25482565": {
     "logged": true,
@@ -22045,7 +22047,8 @@
     "title": "Samsung Galaxy А54 8/256Gb Vetnam 5G",
     "price": 2300,
     "condition": "Б/у",
-    "model_key": "samsung а54 vetnam"
+    "model_key": "samsung а54 vetnam",
+    "sold_checked": true
   },
   "23102565": {
     "logged": true,
@@ -22054,7 +22057,8 @@
     "title": "Samsung Galaxy Note 10 Plus 256gb Korea 5G",
     "price": 1566,
     "condition": "Б/у",
-    "model_key": "samsung note 10 plus"
+    "model_key": "samsung note 10 plus",
+    "sold_checked": true
   },
   "10222565": {
     "logged": true,
@@ -22063,7 +22067,8 @@
     "title": "Samsung Galaxy S22 Ultra 256Gb Carea 5G",
     "price": 3460,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "43261285": {
     "logged": true,
@@ -22538,5 +22543,34 @@
     "condition": "Б/у",
     "model_key": "realme 11",
     "verified_model": null
+  },
+  "58517256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17275585_apple-iphone-17-pro-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro, 256 gb, Silver",
+    "price": 10500,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro"
+  },
+  "55637128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17275563_apple-iphone-7-plus-128-gb/",
+    "title": "Apple iPhone 7 plus, 128 gb",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "apple 7 plus",
+    "verified_model": null
+  },
+  "30217256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17277302_samsung-galaxy-a17-256gb/",
+    "title": "Samsung Galaxy A17 256GB",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "imei:galaxy a16",
+    "verified_model": "Galaxy A16"
   }
 }

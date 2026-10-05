@@ -313,5 +313,14 @@
     "blocked_at": "2026-10-05T13:39:06",
     "updated_at": "2026-10-05T13:39:06",
     "active_ads_at_block": 1
+  },
+  "4202135": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/4202135/",
+    "reason": "похоже на перекупщика по фото: На заднем плане на фотографиях четко видна витрина или стенд магазина с фирменной выкладкой чехол и аксессуаров.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17275563_apple-iphone-7-plus-128-gb/",
+    "blocked_at": "2026-10-05T16:57:42",
+    "updated_at": "2026-10-05T16:57:42",
+    "active_ads_at_block": 2
   }
 }

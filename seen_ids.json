@@ -22228,7 +22228,8 @@
     "title": "Xiaomi Redmi Note 13 pro",
     "price": 1950,
     "condition": "Б/у",
-    "model_key": "redmi note 13 pro"
+    "model_key": "redmi note 13 pro",
+    "sold_checked": true
   },
   "72734863": {
     "logged": true,
@@ -22237,7 +22238,8 @@
     "title": "Tecno Spark Go 3",
     "price": 1350,
     "condition": "Б/у",
-    "model_key": "tecno spark go 3"
+    "model_key": "tecno spark go 3",
+    "sold_checked": true
   },
   "45416256": {
     "logged": true,
@@ -22246,7 +22248,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
     "price": 9199,
     "condition": "Б/у",
-    "model_key": "apple 16 pro max"
+    "model_key": "apple 16 pro max",
+    "sold_checked": true
   },
   "27345714": {
     "logged": true,
@@ -22275,7 +22278,8 @@
     "title": "Samsung galaxy A56 128 Vetnam 5G",
     "price": 3260,
     "condition": "Б/у",
-    "model_key": "samsung a56 128 vetnam"
+    "model_key": "samsung a56 128 vetnam",
+    "sold_checked": true
   },
   "20111128": {
     "logged": true,
@@ -22285,7 +22289,8 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "36351264": {
     "logged": true,
@@ -22684,5 +22689,59 @@
     "price": 6200,
     "condition": "Б/у",
     "model_key": "apple 16 pro"
+  },
+  "27800025": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17278000_samsung-galaxy-s25-ultra/",
+    "title": "Samsung Galaxy s25 Ultra",
+    "price": 9100,
+    "condition": "Б/у",
+    "model_key": "samsung s25 ultra"
+  },
+  "99415256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17277994_apple-iphone-15-pro-max-256-gb-black-titanium/",
+    "title": "Apple iPhone 15 Pro Max, 256 gb, Black Titanium",
+    "price": 5200,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro max"
+  },
+  "86816256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17038868_apple-iphone-16-pro-max-256-gb-natural-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Natural Titanium",
+    "price": 9800,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
+  },
+  "09917256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17278099_apple-iphone-17-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
+    "price": 11500,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
+  },
+  "27794822": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17277948_samsung-galaxy-s-22-ultra/",
+    "title": "Samsung Galaxy S 22 Ultra",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "samsung s 22 ultra"
+  },
+  "85913256": {
+    "logged": true
+  },
+  "82015256": {
+    "logged": true
+  },
+  "92814256": {
+    "logged": true
   }
 }

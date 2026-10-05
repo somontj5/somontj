@@ -21869,7 +21869,8 @@
     "price": 1700,
     "condition": "Б/у",
     "model_key": "samsung s10",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "27123815": {
     "logged": true,
@@ -22349,5 +22350,14 @@
     "condition": "Б/у",
     "model_key": "apple 11",
     "verified_model": null
+  },
+  "27515115": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17275151_redmi-not-15pro-plus/",
+    "title": "Xiaomi Redmi Note 15pro plus, 256gb",
+    "price": 3400,
+    "condition": "Б/у",
+    "model_key": "redmi note 15pro plus"
   }
 }

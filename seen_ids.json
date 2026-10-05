@@ -22342,7 +22342,8 @@
     "title": "Apple iPhone 14 Pro, 256 gb, Space Black",
     "price": 5000,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "98813128": {
     "logged": true,
@@ -22773,6 +22774,16 @@
     "price": 2300,
     "condition": "Б/у",
     "model_key": "samsung s21",
+    "verified_model": null
+  },
+  "82761164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17278276_apple-iphone-11-pro-64-gb-midnight-green/",
+    "title": "Apple iPhone 11 Pro, 64 gb, Midnight Green",
+    "price": 2100,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
     "verified_model": null
   }
 }

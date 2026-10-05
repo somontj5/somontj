@@ -21206,7 +21206,8 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "samsung a22",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "26563610": {
     "logged": true,
@@ -21779,6 +21780,16 @@
     "price": 2399,
     "condition": "Б/у",
     "model_key": "apple 11 pro",
+    "verified_model": null
+  },
+  "17270989": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17270989_telefon-tekno/",
+    "title": "Tecno Spark Go, 2022",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "tecno spark go 2022",
     "verified_model": null
   }
 }

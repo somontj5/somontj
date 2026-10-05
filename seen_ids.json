@@ -21952,7 +21952,8 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "infinix hot 30",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "72726819": {
     "logged": true,
@@ -22471,6 +22472,16 @@
     "price": 666,
     "condition": "Б/у",
     "model_key": "redmi note 12",
+    "verified_model": null
+  },
+  "65612128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17276656_apple-iphone-12-128-gb-green/",
+    "title": "Apple iPhone 12, 128 gb, Green",
+    "price": 2100,
+    "condition": "Б/у",
+    "model_key": "apple 12",
     "verified_model": null
   }
 }

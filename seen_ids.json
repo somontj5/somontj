@@ -22108,12 +22108,30 @@
     "model_key": "samsung s26"
   },
   "09203325": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17273092_telefon-samsung-a03s-32gb-vetnam-5g/",
+    "title": "Samsung Galaxy A03S 32gb Vietnam 5G",
+    "price": 860,
+    "condition": "Б/у",
+    "model_key": "samsung a03s"
   },
   "41616256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17273062_xiaomi-redmi-turbo-4-pro-16-16-256/",
+    "title": "Xiaomi Redmi Turbo 4 Pro 16+16/256",
+    "price": 3800,
+    "condition": "Б/у",
+    "model_key": "redmi turbo 4 pro 16 16"
   },
   "92562026": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17273080_telefon-honor-x9d-256gb-2026/",
+    "title": "Honor X9d 256gb 2026",
+    "price": 2980,
+    "condition": "Б/у",
+    "model_key": "honor x9d"
   }
 }

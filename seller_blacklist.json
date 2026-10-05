@@ -286,5 +286,14 @@
     "blocked_at": "2026-10-05T07:08:29",
     "updated_at": "2026-10-05T07:08:29",
     "active_ads_at_block": 5
+  },
+  "4608832": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/4608832/",
+    "reason": "похоже на перекупщика по фото: На заднем фоне фотографий четко видны витринные полки магазина с коробками и телефонами, что указывает на торговую точку или профессионального продавца.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/14246619_samsung-galaxy-a26-5g/",
+    "blocked_at": "2026-10-05T07:42:29",
+    "updated_at": "2026-10-05T07:42:29",
+    "active_ads_at_block": 10
   }
 }

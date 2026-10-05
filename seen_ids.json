@@ -21497,7 +21497,8 @@
     "title": "Samsung Galaxy F04 64gb Vetnam 5G",
     "price": 950,
     "condition": "Б/у",
-    "model_key": "samsung f04"
+    "model_key": "samsung f04",
+    "sold_checked": true
   },
   "93212852": {
     "logged": true,
@@ -21974,6 +21975,16 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "redmi note 8",
+    "verified_model": null
+  },
+  "46619265": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14246619_samsung-galaxy-a26-5g/",
+    "title": "Samsung Galaxy A26 5G",
+    "price": 2600,
+    "condition": "Б/у",
+    "model_key": "samsung a26",
     "verified_model": null
   }
 }

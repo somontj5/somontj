@@ -277,5 +277,14 @@
     "blocked_at": "2026-10-04T16:10:49",
     "updated_at": "2026-10-04T16:10:49",
     "active_ads_at_block": 4
+  },
+  "8590587": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/8590587/",
+    "reason": "похоже на перекупщика по фото: На заднем плане фотографий отчетливо видна витрина магазина с большим количеством аксессуаров и чехлов.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17272681_honor-x9d/",
+    "blocked_at": "2026-10-05T07:08:29",
+    "updated_at": "2026-10-05T07:08:29",
+    "active_ads_at_block": 5
   }
 }

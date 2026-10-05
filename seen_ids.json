@@ -22162,5 +22162,14 @@
     "condition": "Б/у",
     "model_key": "apple xs max",
     "verified_model": null
+  },
+  "27343050": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17273430_tecno-camon-50/",
+    "title": "Tecno Camon 50",
+    "price": 2750,
+    "condition": "Б/у",
+    "model_key": "tecno camon 50"
   }
 }

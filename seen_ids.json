@@ -21890,7 +21890,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
     "price": 7500,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "41213128": {
     "logged": true,
@@ -22370,5 +22371,14 @@
     "condition": "Б/у",
     "model_key": "redmi a5",
     "verified_model": null
+  },
+  "53817256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17275538_apple-iphone-17-pro-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro, 256 gb, Silver",
+    "price": 12000,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro"
   }
 }

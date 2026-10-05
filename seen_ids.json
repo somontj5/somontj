@@ -21669,7 +21669,8 @@
     "price": 2200,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "46715256": {
     "logged": true,
@@ -21689,7 +21690,8 @@
     "price": 650,
     "condition": "Б/у",
     "model_key": "apple 7",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "26979841": {
     "logged": true,
@@ -21699,7 +21701,8 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "samsung a41",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "26996122": {
     "logged": true,
@@ -21709,7 +21712,8 @@
     "price": 3000,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "96316256": {
     "logged": true,
@@ -21718,7 +21722,8 @@
     "title": "Apple iPhone 16 Pro, 256 gb, Desert Titanium",
     "price": 9200,
     "condition": "Б/у",
-    "model_key": "apple 16 pro"
+    "model_key": "apple 16 pro",
+    "sold_checked": true
   },
   "02291264": {
     "logged": true,
@@ -22171,5 +22176,50 @@
     "price": 2750,
     "condition": "Б/у",
     "model_key": "tecno camon 50"
+  },
+  "27350513": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17273505_xiaomi-redmi-note-13-pro/",
+    "title": "Xiaomi Redmi Note 13 pro",
+    "price": 1950,
+    "condition": "Б/у",
+    "model_key": "redmi note 13 pro"
+  },
+  "72734863": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17273486_tecno-spark-go-3/",
+    "title": "Tecno Spark Go 3",
+    "price": 1350,
+    "condition": "Б/у",
+    "model_key": "tecno spark go 3"
+  },
+  "45416256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17273454_apple-iphone-16-pro-max-256-gb-black-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
+    "price": 9199,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
+  },
+  "27345714": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17273457_xiaomi-mi-14t-pro/",
+    "title": "Xiaomi Mi 14T Pro",
+    "price": 5950,
+    "condition": "Б/у",
+    "model_key": "xiaomi mi 14t pro"
+  },
+  "27344313": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17273443_xiaomi-redmi-13/",
+    "title": "Xiaomi Redmi 13",
+    "price": 1450,
+    "condition": "Б/у",
+    "model_key": "redmi 13"
   }
 }

@@ -22263,6 +22263,7 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   }
 }

@@ -22143,5 +22143,24 @@
     "price": 960,
     "condition": "Б/у",
     "model_key": "samsung f04"
+  },
+  "73412405": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17273412_tecno-camon-40pro-5g/",
+    "title": "Tecno Camon 40pro 5G",
+    "price": 2950,
+    "condition": "Б/у",
+    "model_key": "tecno camon 40pro"
+  },
+  "73394256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17273394_apple-iphone-xs-max-256-gb-space-grey/",
+    "title": "Apple iPhone Xs Max, 256 gb, Space Grey",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "apple xs max",
+    "verified_model": null
   }
 }

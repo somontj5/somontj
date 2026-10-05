@@ -22274,5 +22274,15 @@
     "price": 3500,
     "condition": "Б/у",
     "model_key": "apple 13"
+  },
+  "27397864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17273978_apple-iphone-x-64-gb-space-grey/",
+    "title": "Apple iPhone X, 64 gb, Space Grey",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "apple x",
+    "verified_model": null
   }
 }

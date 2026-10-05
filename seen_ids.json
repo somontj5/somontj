@@ -22475,7 +22475,8 @@
     "title": "Apple iPhone 13 Pro Max, 128 gb, Gold",
     "price": 5000,
     "condition": "Б/у",
-    "model_key": "apple 13 pro max"
+    "model_key": "apple 13 pro max",
+    "sold_checked": true
   },
   "76472171": {
     "logged": true,

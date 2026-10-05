@@ -21973,7 +21973,8 @@
     "title": "Xiaomi Mi 13T 256gb",
     "price": 3300,
     "condition": "Б/у",
-    "model_key": "xiaomi mi 13t"
+    "model_key": "xiaomi mi 13t",
+    "sold_checked": true
   },
   "86512128": {
     "logged": true,
@@ -22526,6 +22527,16 @@
     "price": 950,
     "condition": "Б/у",
     "model_key": "samsung s 8",
+    "verified_model": null
+  },
+  "17277233": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17277233_telefon-nagz/",
+    "title": "Realme 11",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "realme 11",
     "verified_model": null
   }
 }

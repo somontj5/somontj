@@ -22175,7 +22175,8 @@
     "title": "Honor X9d 256gb 2026",
     "price": 2980,
     "condition": "Б/у",
-    "model_key": "honor x9d"
+    "model_key": "honor x9d",
+    "sold_checked": true
   },
   "31860464": {
     "logged": true,

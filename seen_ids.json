@@ -21479,7 +21479,8 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "samsung a15",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "52562026": {
     "logged": true,
@@ -21488,7 +21489,8 @@
     "title": "Huawei Honor X9d 5G 256gb 2026",
     "price": 2950,
     "condition": "Б/у",
-    "model_key": "huawei honor x9d"
+    "model_key": "huawei honor x9d",
+    "sold_checked": true
   },
   "74204645": {
     "logged": true,
@@ -21517,7 +21519,8 @@
     "title": "Samsung Galaxy А54 256/8Gb Vetnam 5G",
     "price": 2344,
     "condition": "Б/у",
-    "model_key": "samsung а54 vetnam"
+    "model_key": "samsung а54 vetnam",
+    "sold_checked": true
   },
   "67854128": {
     "logged": true,
@@ -21528,7 +21531,8 @@
     "price": 600,
     "condition": "Б/у",
     "model_key": "apple xr",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "83004645": {
     "logged": true,
@@ -21537,7 +21541,8 @@
     "title": "Samsung Galaxy 04 64Gb Vetnam 5G",
     "price": 980,
     "condition": "Б/у",
-    "model_key": "samsung 04"
+    "model_key": "samsung 04",
+    "sold_checked": true
   },
   "16521285": {
     "logged": true,
@@ -21986,5 +21991,56 @@
     "condition": "Б/у",
     "model_key": "samsung a26",
     "verified_model": null
+  },
+  "50142565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17273050_telefon-redmi-note-14-pro-256gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 14 pro 256gb Global Version 5G",
+    "price": 2350,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro"
+  },
+  "25482565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17273032_telefon-samsung-a54-8-256gb-vetnam-5g/",
+    "title": "Samsung Galaxy А54 8/256Gb Vetnam 5G",
+    "price": 2300,
+    "condition": "Б/у",
+    "model_key": "samsung а54 vetnam"
+  },
+  "23102565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17273023_telefon-samsung-note-10-pilus-256gb-carea-5g/",
+    "title": "Samsung Galaxy Note 10 Plus 256gb Korea 5G",
+    "price": 1566,
+    "condition": "Б/у",
+    "model_key": "samsung note 10 plus"
+  },
+  "10222565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17273010_telefon-samsung-s22-ultra-256gb-carea-5g/",
+    "title": "Samsung Galaxy S22 Ultra 256Gb Carea 5G",
+    "price": 3460,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
+  },
+  "43261285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17272954_telefon-samsung-m32-6-128gb-dual-sim-5g/",
+    "title": "Samsung galaxy M32 6/128Gb Dual sim 5G",
+    "price": 1350,
+    "condition": "Б/у",
+    "model_key": "samsung m32 dual sim"
+  },
+  "99216256": {
+    "logged": true
+  },
+  "94212565": {
+    "logged": true
   }
 }

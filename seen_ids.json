@@ -21899,7 +21899,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Graphite",
     "price": 3100,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "45715256": {
     "logged": true,
@@ -22359,5 +22360,15 @@
     "price": 3400,
     "condition": "Б/у",
     "model_key": "redmi note 15pro plus"
+  },
+  "27545852": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17275458_redmi-a5-telfon-khele-nav-ast-2-mokh-shud-karobkash-khast/",
+    "title": "Xiaomi Redmi A5",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "redmi a5",
+    "verified_model": null
   }
 }

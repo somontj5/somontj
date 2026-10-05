@@ -304,5 +304,14 @@
     "blocked_at": "2026-10-05T12:22:45",
     "updated_at": "2026-10-05T12:22:45",
     "active_ads_at_block": 5
+  },
+  "11668997": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/11668997/",
+    "reason": "похоже на перекупщика по фото: Фотографии сделаны на характерной металлической/промышленной поверхности витрины или рабочего стола мастера/магазина.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17275849_apple-iphone-11-64-gb-white/",
+    "blocked_at": "2026-10-05T13:39:06",
+    "updated_at": "2026-10-05T13:39:06",
+    "active_ads_at_block": 1
   }
 }

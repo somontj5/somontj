@@ -21920,7 +21920,8 @@
     "title": "Apple iPhone 14 Pro Max, 128 gb",
     "price": 7000,
     "condition": "Б/у",
-    "model_key": "apple 14 pro max"
+    "model_key": "apple 14 pro max",
+    "sold_checked": true
   },
   "70547265": {
     "logged": true,
@@ -22380,5 +22381,45 @@
     "price": 12000,
     "condition": "Б/у",
     "model_key": "apple 17 pro"
+  },
+  "59091164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17275909_apple-iphone-11-64-gb-white/",
+    "title": "Apple iPhone 11, 64 gb, White",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "58491164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17275849_apple-iphone-11-64-gb-white/",
+    "title": "Apple iPhone 11, 64 gb, White",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "88512128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17275885_apple-iphone-12-pro-128-gb-pacific-blue/",
+    "title": "Apple iPhone 12 pro, 128 gb, Pacific Blue",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro",
+    "verified_model": null
+  },
+  "27586295": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17275862_realme-9-5g/",
+    "title": "Realme 9 5G",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "realme 9",
+    "verified_model": null
   }
 }

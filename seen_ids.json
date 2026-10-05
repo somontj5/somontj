@@ -22437,7 +22437,8 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "realme 9",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "82375800": {
     "logged": true,
@@ -22574,5 +22575,15 @@
     "condition": "Б/у",
     "model_key": "imei:galaxy a16",
     "verified_model": "Galaxy A16"
+  },
+  "16022256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16225160_samsung-galaxy-s22-256gb/",
+    "title": "Samsung Galaxy S22 256GB",
+    "price": 2700,
+    "condition": "Б/у",
+    "model_key": "samsung s22",
+    "verified_model": null
   }
 }

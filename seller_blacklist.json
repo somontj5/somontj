@@ -322,5 +322,14 @@
     "blocked_at": "2026-10-05T16:57:42",
     "updated_at": "2026-10-05T16:57:42",
     "active_ads_at_block": 2
+  },
+  "379179": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/379179/",
+    "reason": "похоже на перекупщика по фото: У продавца 18 активных объявлений, что указывает на коммерческий характер продаж.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/16225160_samsung-galaxy-s22-256gb/",
+    "blocked_at": "2026-10-05T17:03:51",
+    "updated_at": "2026-10-05T17:03:51",
+    "active_ads_at_block": 18
   }
 }

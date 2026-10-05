@@ -21826,7 +21826,8 @@
     "price": 2399,
     "condition": "Б/у",
     "model_key": "apple 11 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17270989": {
     "logged": true,
@@ -21836,7 +21837,8 @@
     "price": 600,
     "condition": "Б/у",
     "model_key": "tecno spark go 2022",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "79217256": {
     "logged": true,
@@ -21845,7 +21847,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
     "price": 10500,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "27072964": {
     "logged": true,
@@ -22316,5 +22319,24 @@
     "price": 10600,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "17274885": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17274885_korobka-dokument-dar-kholati-khub-karor-dorad/",
+    "title": "Xiaomi Redmi Note 8",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "redmi note 8",
+    "verified_model": null
+  },
+  "04216256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17275042_apple-iphone-16-pro-max-256-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
+    "price": 9800,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   }
 }

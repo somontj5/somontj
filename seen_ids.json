@@ -21362,7 +21362,8 @@
     "price": 2100,
     "condition": "Б/у",
     "model_key": "samsung a26 8 256",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "71601264": {
     "logged": true,
@@ -21699,7 +21700,8 @@
     "price": 2699,
     "condition": "Б/у",
     "model_key": "apple 12",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "27024522": {
     "logged": true,
@@ -21833,6 +21835,7 @@
     "price": 2800,
     "condition": "Б/у",
     "model_key": "redmi note 15",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   }
 }

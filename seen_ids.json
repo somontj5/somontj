@@ -21551,7 +21551,8 @@
     "title": "Самсунг М52 128гб Vetnam 5G",
     "price": 1350,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "01561285": {
     "logged": true,
@@ -21560,7 +21561,8 @@
     "title": "Samsung Galaxy А56 128 Vetnam 5G Silver",
     "price": 3200,
     "condition": "Б/у",
-    "model_key": "samsung а56 128 vetnam"
+    "model_key": "samsung а56 128 vetnam",
+    "sold_checked": true
   },
   "67909256": {
     "logged": true,
@@ -22038,9 +22040,21 @@
     "model_key": "samsung m32 dual sim"
   },
   "99216256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17272992_apple-iphone-16-pro-max-256-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
+    "price": 7999,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   },
   "94212565": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17272994_telefon-samsung-s21-256gb-carea-5g/",
+    "title": "Samsung Galaxy S21+ 256gb Korea 5G",
+    "price": 1980,
+    "condition": "Б/у",
+    "model_key": "samsung s21 plus"
   }
 }

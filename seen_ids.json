@@ -22197,7 +22197,8 @@
     "title": "Tecno Camon 40pro 5G",
     "price": 2950,
     "condition": "Б/у",
-    "model_key": "tecno camon 40pro"
+    "model_key": "tecno camon 40pro",
+    "sold_checked": true
   },
   "73394256": {
     "logged": true,
@@ -22651,5 +22652,14 @@
     "condition": "Б/у",
     "model_key": "samsung s10",
     "verified_model": null
+  },
+  "78217256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17275782_apple-iphone-17-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
+    "price": 11900,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
   }
 }

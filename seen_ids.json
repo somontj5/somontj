@@ -22218,7 +22218,8 @@
     "title": "Tecno Camon 50",
     "price": 2750,
     "condition": "Б/у",
-    "model_key": "tecno camon 50"
+    "model_key": "tecno camon 50",
+    "sold_checked": true
   },
   "27350513": {
     "logged": true,
@@ -22661,5 +22662,14 @@
     "price": 11900,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "67114128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17277671_apple-iphone-14-pro-128-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Deep Purple",
+    "price": 5200,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

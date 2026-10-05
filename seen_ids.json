@@ -22316,7 +22316,8 @@
     "title": "Apple iPhone 13, 128 gb, Midnight",
     "price": 3500,
     "condition": "Б/у",
-    "model_key": "apple 13"
+    "model_key": "apple 13",
+    "sold_checked": true
   },
   "27397864": {
     "logged": true,

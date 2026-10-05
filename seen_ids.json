@@ -22273,7 +22273,8 @@
     "price": 1600,
     "condition": "Б/у",
     "model_key": "apple 12",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "65511128": {
     "logged": true,
@@ -22515,6 +22516,16 @@
     "price": 666,
     "condition": "Б/у",
     "model_key": "redmi note 8",
+    "verified_model": null
+  },
+  "72771058": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17277105_samsung-galaxy-s-8/",
+    "title": "Samsung Galaxy S 8",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "samsung s 8",
     "verified_model": null
   }
 }

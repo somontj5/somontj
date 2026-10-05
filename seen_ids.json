@@ -21795,7 +21795,8 @@
     "title": "Apple iPhone 14 Pro, 128 gb, Deep Purple",
     "price": 5200,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "66515256": {
     "logged": true,
@@ -21804,7 +21805,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Blue Titanium",
     "price": 5500,
     "condition": "Б/у",
-    "model_key": "apple 15 pro max"
+    "model_key": "apple 15 pro max",
+    "sold_checked": true
   },
   "69214128": {
     "logged": true,
@@ -22284,5 +22286,23 @@
     "condition": "Б/у",
     "model_key": "apple x",
     "verified_model": null
+  },
+  "02714256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16739027_apple-iphone-14-pro-256-gb-space-black/",
+    "title": "Apple iPhone 14 Pro, 256 gb, Space Black",
+    "price": 5000,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
+  },
+  "98813128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17273988_apple-iphone-13-pro-max-128-gb-graphite/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Graphite",
+    "price": 4999,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
   }
 }

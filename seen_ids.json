@@ -22125,7 +22125,8 @@
     "title": "Xiaomi Redmi 10C 128/4Gb Global Version",
     "price": 960,
     "condition": "Б/у",
-    "model_key": "redmi 10c"
+    "model_key": "redmi 10c",
+    "sold_checked": true
   },
   "31089128": {
     "logged": true,
@@ -22134,7 +22135,8 @@
     "title": "Xiaomi Redmi Note 9 128gb Glabal Version",
     "price": 860,
     "condition": "Б/у",
-    "model_key": "redmi note 9"
+    "model_key": "redmi note 9",
+    "sold_checked": true
   },
   "17273109": {
     "logged": true,
@@ -22143,7 +22145,8 @@
     "title": "Samsung Galaxy S26",
     "price": 7500,
     "condition": "Б/у",
-    "model_key": "samsung s26"
+    "model_key": "samsung s26",
+    "sold_checked": true
   },
   "09203325": {
     "logged": true,
@@ -22152,7 +22155,8 @@
     "title": "Samsung Galaxy A03S 32gb Vietnam 5G",
     "price": 860,
     "condition": "Б/у",
-    "model_key": "samsung a03s"
+    "model_key": "samsung a03s",
+    "sold_checked": true
   },
   "41616256": {
     "logged": true,
@@ -22161,7 +22165,8 @@
     "title": "Xiaomi Redmi Turbo 4 Pro 16+16/256",
     "price": 3800,
     "condition": "Б/у",
-    "model_key": "redmi turbo 4 pro 16 16"
+    "model_key": "redmi turbo 4 pro 16 16",
+    "sold_checked": true
   },
   "92562026": {
     "logged": true,
@@ -22585,5 +22590,23 @@
     "condition": "Б/у",
     "model_key": "samsung s22",
     "verified_model": null
+  },
+  "27743164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17277431_apple-iphone-xs-64-gb-space-grey/",
+    "title": "Apple iPhone Xs, 64 gb, Space Grey",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "apple xs"
+  },
+  "27736523": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17277365_samsung-galaxy-s23-ultra/",
+    "title": "Samsung Galaxy S23 Ultra",
+    "price": 3450,
+    "condition": "Б/у",
+    "model_key": "samsung s23 ultra"
   }
 }

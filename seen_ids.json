@@ -22187,7 +22187,8 @@
     "title": "Samsung Galaxy F04 64gb Vietnam",
     "price": 960,
     "condition": "Б/у",
-    "model_key": "samsung f04"
+    "model_key": "samsung f04",
+    "sold_checked": true
   },
   "73412405": {
     "logged": true,
@@ -22206,7 +22207,8 @@
     "price": 1400,
     "condition": "Б/у",
     "model_key": "apple xs max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "27343050": {
     "logged": true,
@@ -22630,5 +22632,24 @@
     "price": 3500,
     "condition": "Б/у",
     "model_key": "apple 13"
+  },
+  "57013128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17277570_apple-iphone-13-pro-max-128-gb-silver/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Alpine Green",
+    "price": 5150,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
+  },
+  "75678105": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17275678_samsung-galaxy-s10-5g/",
+    "title": "Samsung Galaxy S10+5G",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "samsung s10",
+    "verified_model": null
   }
 }

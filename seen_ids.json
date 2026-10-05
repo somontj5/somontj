@@ -21304,7 +21304,8 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "samsung s10",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "33212128": {
     "logged": true,
@@ -21322,7 +21323,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
     "price": 8300,
     "condition": "Б/у",
-    "model_key": "apple 16 pro max"
+    "model_key": "apple 16 pro max",
+    "sold_checked": true
   },
   "17266538": {
     "logged": true,
@@ -21866,5 +21868,14 @@
     "price": 5000,
     "condition": "Б/у",
     "model_key": "apple 15 pro max"
+  },
+  "71617128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17270716_apple-iphone-17-pro-max-128-gb-silver/",
+    "title": "Apple iPhone 14 Pro Max, 128 gb",
+    "price": 7000,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
   }
 }

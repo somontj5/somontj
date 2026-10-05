@@ -22077,7 +22077,8 @@
     "title": "Samsung galaxy M32 6/128Gb Dual sim 5G",
     "price": 1350,
     "condition": "Б/у",
-    "model_key": "samsung m32 dual sim"
+    "model_key": "samsung m32 dual sim",
+    "sold_checked": true
   },
   "99216256": {
     "logged": true,
@@ -22096,7 +22097,8 @@
     "title": "Samsung Galaxy S21+ 256gb Korea 5G",
     "price": 1980,
     "condition": "Б/у",
-    "model_key": "samsung s21 plus"
+    "model_key": "samsung s21 plus",
+    "sold_checked": true
   },
   "13212825": {
     "logged": true,

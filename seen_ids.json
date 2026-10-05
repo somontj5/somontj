@@ -22265,5 +22265,14 @@
     "model_key": "apple 11",
     "verified_model": null,
     "sold_checked": true
+  },
+  "90213128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17273902_apple-iphone-13-128-gb-midnight/",
+    "title": "Apple iPhone 13, 128 gb, Midnight",
+    "price": 3500,
+    "condition": "Б/у",
+    "model_key": "apple 13"
   }
 }

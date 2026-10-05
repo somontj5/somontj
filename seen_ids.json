@@ -21931,7 +21931,8 @@
     "price": 2300,
     "condition": "Б/у",
     "model_key": "samsung а26",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "40615256": {
     "logged": true,
@@ -22420,6 +22421,16 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "realme 9",
+    "verified_model": null
+  },
+  "82375800": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15358237_samsung-galaxy-s5-mini-sm-g800h-ds/",
+    "title": "Samsung Galaxy S5 mini SM-G800H/DS",
+    "price": 250,
+    "condition": "Б/у",
+    "model_key": "samsung s5 mini sm g800h ds",
     "verified_model": null
   }
 }

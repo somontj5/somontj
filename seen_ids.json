@@ -22462,5 +22462,15 @@
     "price": 550,
     "condition": "Б/у",
     "model_key": null
+  },
+  "27656612": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17276566_redmi-note-12/",
+    "title": "Xiaomi Redmi note 12",
+    "price": 666,
+    "condition": "Б/у",
+    "model_key": "redmi note 12",
+    "verified_model": null
   }
 }

@@ -21572,7 +21572,8 @@
     "price": 999,
     "condition": "Б/у",
     "model_key": "apple xr",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17268444": {
     "logged": true,
@@ -21582,7 +21583,8 @@
     "price": 400,
     "condition": "Б/у",
     "model_key": "samsung s21 plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "68378128": {
     "logged": true,
@@ -21592,7 +21594,8 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "apple xr",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "26879450": {
     "logged": true,
@@ -21602,7 +21605,8 @@
     "price": 450,
     "condition": "Б/у",
     "model_key": "realme note 50",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "68858225": {
     "logged": true,
@@ -21623,7 +21627,8 @@
     "price": 450,
     "condition": "Б/у",
     "model_key": "redmi 9a",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "26891625": {
     "logged": true,
@@ -22056,5 +22061,59 @@
     "price": 1980,
     "condition": "Б/у",
     "model_key": "samsung s21 plus"
+  },
+  "13212825": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17273151_telefon-samsung-a32-128gb-vetnam-2sim-5g/",
+    "title": "Samsung Galaxy А32 128gb Vietnam 2sim 5G",
+    "price": 1350,
+    "condition": "Б/у",
+    "model_key": "samsung а32"
+  },
+  "24133225": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17273124_telefon-samsung-a13-32gb-vetnam-2sim-5g/",
+    "title": "Samsung Galaxy A13 32Gb Vetnam 2sim 5G",
+    "price": 1030,
+    "condition": "Б/у",
+    "model_key": "samsung a13"
+  },
+  "38101284": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17273138_telefon-redmi-10c-128-4gb-glabal-version/",
+    "title": "Xiaomi Redmi 10C 128/4Gb Global Version",
+    "price": 960,
+    "condition": "Б/у",
+    "model_key": "redmi 10c"
+  },
+  "31089128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17273108_telefon-redmi-note-9-128gb-glabal-version/",
+    "title": "Xiaomi Redmi Note 9 128gb Glabal Version",
+    "price": 860,
+    "condition": "Б/у",
+    "model_key": "redmi note 9"
+  },
+  "17273109": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17273109_telfon-pachti-nav/",
+    "title": "Samsung Galaxy S26",
+    "price": 7500,
+    "condition": "Б/у",
+    "model_key": "samsung s26"
+  },
+  "09203325": {
+    "logged": true
+  },
+  "41616256": {
+    "logged": true
+  },
+  "92562026": {
+    "logged": true
   }
 }

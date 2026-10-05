@@ -22439,7 +22439,8 @@
     "price": 2500,
     "condition": "Б/у",
     "model_key": "apple 12 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "27586295": {
     "logged": true,

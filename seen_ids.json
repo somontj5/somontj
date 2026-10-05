@@ -21260,7 +21260,8 @@
     "price": 1799,
     "condition": "Б/у",
     "model_key": "apple 12",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "26587964": {
     "logged": true,
@@ -21270,7 +21271,8 @@
     "price": 1250,
     "condition": "Б/у",
     "model_key": "apple x",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "26597411": {
     "logged": true,
@@ -21811,6 +21813,26 @@
     "price": 1199,
     "condition": "Б/у",
     "model_key": "apple x",
+    "verified_model": null
+  },
+  "27126610": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17271266_samsung-s10/",
+    "title": "Samsung Galaxy S10",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "samsung s10",
+    "verified_model": null
+  },
+  "27123815": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17271238_redmi-not-15/",
+    "title": "Xiaomi Redmi Note 15",
+    "price": 2800,
+    "condition": "Б/у",
+    "model_key": "redmi note 15",
     "verified_model": null
   }
 }

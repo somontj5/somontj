@@ -22264,7 +22264,8 @@
     "title": "Xiaomi Redmi 13",
     "price": 1450,
     "condition": "Б/у",
-    "model_key": "redmi 13"
+    "model_key": "redmi 13",
+    "sold_checked": true
   },
   "09561285": {
     "logged": true,

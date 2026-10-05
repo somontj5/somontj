@@ -21941,7 +21941,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Blue Titanium",
     "price": 8300,
     "condition": "Б/у",
-    "model_key": "apple 15 pro max"
+    "model_key": "apple 15 pro max",
+    "sold_checked": true
   },
   "17272477": {
     "logged": true,
@@ -22451,5 +22452,14 @@
     "price": 5000,
     "condition": "Б/у",
     "model_key": "apple 13 pro max"
+  },
+  "76472171": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17276472_apple-iphone-17-pro-max-1-tb-deep-blue/",
+    "title": "Apple iPhone 17 Pro Max, 1 tb, Deep Blue дубликат",
+    "price": 550,
+    "condition": "Б/у",
+    "model_key": null
   }
 }

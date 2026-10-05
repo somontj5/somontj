@@ -22003,7 +22003,8 @@
     "title": "Samsung Galaxy S23 Ultra Vietnam 5G",
     "price": 3577,
     "condition": "Б/у",
-    "model_key": "samsung s23 ultra"
+    "model_key": "samsung s23 ultra",
+    "sold_checked": true
   },
   "52146598": {
     "logged": true,
@@ -22013,7 +22014,8 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "redmi note 8",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "46619265": {
     "logged": true,
@@ -22483,6 +22485,35 @@
     "price": 2100,
     "condition": "Б/у",
     "model_key": "apple 12",
+    "verified_model": null
+  },
+  "82512128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17276825_apple-iphone-12-mini-128-gb-blue/",
+    "title": "Apple iPhone 12 mini, 128 gb, Blue",
+    "price": 1499,
+    "condition": "Б/у",
+    "model_key": "apple 12 mini"
+  },
+  "68081164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17276808_apple-iphone-11-64-gb-white/",
+    "title": "Apple iPhone 11, 64 gb, White",
+    "price": 2050,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "72767838": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17276783_redmi-note-8/",
+    "title": "Xiaomi Redmi note 8",
+    "price": 666,
+    "condition": "Б/у",
+    "model_key": "redmi note 8",
     "verified_model": null
   }
 }

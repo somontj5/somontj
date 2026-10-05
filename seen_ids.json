@@ -21858,7 +21858,8 @@
     "price": 1199,
     "condition": "Б/у",
     "model_key": "apple x",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "27126610": {
     "logged": true,
@@ -22338,5 +22339,15 @@
     "price": 9800,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "51561164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17275156_apple-iphone-11-64-gb-purple/",
+    "title": "Apple iPhone 11, 64 gb, Purple",
+    "price": 1650,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

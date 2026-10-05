@@ -21963,7 +21963,8 @@
     "price": 2700,
     "condition": "Б/у",
     "model_key": "huawei honor x9d",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "08913256": {
     "logged": true,

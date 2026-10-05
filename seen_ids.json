@@ -22243,5 +22243,15 @@
     "condition": "Б/у",
     "model_key": "apple 11",
     "verified_model": null
+  },
+  "36351264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17273635_apple-iphone-12-64-gb-blue/",
+    "title": "Apple iPhone 12, 64 gb, Blue",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "apple 12",
+    "verified_model": null
   }
 }

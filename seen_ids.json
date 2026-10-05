@@ -22107,7 +22107,8 @@
     "title": "Samsung Galaxy А32 128gb Vietnam 2sim 5G",
     "price": 1350,
     "condition": "Б/у",
-    "model_key": "samsung а32"
+    "model_key": "samsung а32",
+    "sold_checked": true
   },
   "24133225": {
     "logged": true,
@@ -22116,7 +22117,8 @@
     "title": "Samsung Galaxy A13 32Gb Vetnam 2sim 5G",
     "price": 1030,
     "condition": "Б/у",
-    "model_key": "samsung a13"
+    "model_key": "samsung a13",
+    "sold_checked": true
   },
   "38101284": {
     "logged": true,
@@ -22609,5 +22611,23 @@
     "price": 3450,
     "condition": "Б/у",
     "model_key": "samsung s23 ultra"
+  },
+  "50412128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17277504_apple-iphone-12-pro-max-128-gb-graphite/",
+    "title": "Apple iPhone 12 Pro Max, 128 gb, Graphite",
+    "price": 3850,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro max"
+  },
+  "46813128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17277468_apple-iphone-13-128-gb-midnight/",
+    "title": "Apple iPhone 13, 128 gb, Midnight",
+    "price": 3500,
+    "condition": "Б/у",
+    "model_key": "apple 13"
   }
 }

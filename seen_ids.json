@@ -21994,7 +21994,8 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "samsung a50",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "72971235": {
     "logged": true,

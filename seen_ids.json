@@ -21377,7 +21377,8 @@
     "title": "Apple iPhone 12 mini, 64 gb, White",
     "price": 1499,
     "condition": "Б/у",
-    "model_key": "apple 12 mini"
+    "model_key": "apple 12 mini",
+    "sold_checked": true
   },
   "12411256": {
     "logged": true,
@@ -21387,7 +21388,8 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "apple 11 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "72644500": {
     "logged": true,

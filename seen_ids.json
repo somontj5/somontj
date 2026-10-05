@@ -21238,7 +21238,8 @@
     "price": 950,
     "condition": "Б/у",
     "model_key": "apple x",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "48221164": {
     "logged": true,
@@ -21801,5 +21802,15 @@
     "price": 10500,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "27072964": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17270729_apple-iphone-x-64-gb-space-grey/",
+    "title": "Apple iPhone X, 64 gb, Space Grey",
+    "price": 1199,
+    "condition": "Б/у",
+    "model_key": "apple x",
+    "verified_model": null
   }
 }

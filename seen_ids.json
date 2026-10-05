@@ -21248,7 +21248,8 @@
     "price": 799,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "58411264": {
     "logged": true,
@@ -21791,5 +21792,14 @@
     "condition": "Б/у",
     "model_key": "tecno spark go 2022",
     "verified_model": null
+  },
+  "79217256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17270792_apple-iphone-17-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
+    "price": 10500,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
   }
 }

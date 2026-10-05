@@ -22351,7 +22351,8 @@
     "title": "Apple iPhone 13 Pro Max, 128 gb, Graphite",
     "price": 4999,
     "condition": "Б/у",
-    "model_key": "apple 13 pro max"
+    "model_key": "apple 13 pro max",
+    "sold_checked": true
   },
   "54917256": {
     "logged": true,
@@ -22763,5 +22764,15 @@
     "price": 7000,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "62152568": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17278096_galaxy-s21-5gsostoianie-idealnyirastamozhka-khastpamiat-256g-8remont-nashuda/",
+    "title": "Samsung Galaxy S21 5G",
+    "price": 2300,
+    "condition": "Б/у",
+    "model_key": "samsung s21",
+    "verified_model": null
   }
 }

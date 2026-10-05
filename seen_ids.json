@@ -21314,7 +21314,8 @@
     "title": "Apple iPhone 12 mini, 128 gb, Blue",
     "price": 1399,
     "condition": "Б/у",
-    "model_key": "apple 12 mini"
+    "model_key": "apple 12 mini",
+    "sold_checked": true
   },
   "29616256": {
     "logged": true,
@@ -21877,5 +21878,15 @@
     "price": 7000,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "70547265": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16770547_a26-5g/",
+    "title": "Samsung Galaxy А26 5G",
+    "price": 2300,
+    "condition": "Б/у",
+    "model_key": "samsung а26",
+    "verified_model": null
   }
 }

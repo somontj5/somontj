@@ -21445,7 +21445,8 @@
     "title": "Samsung Galaxy А03s 32Gb Vetnam 5G",
     "price": 860,
     "condition": "Б/у",
-    "model_key": "samsung а03s"
+    "model_key": "samsung а03s",
+    "sold_checked": true
   },
   "22182565": {
     "logged": true,
@@ -21901,5 +21902,15 @@
     "price": 8300,
     "condition": "Б/у",
     "model_key": "apple 15 pro max"
+  },
+  "17272477": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17272477_tilifon-darkholati-khubai-rastamoshka-dora/",
+    "title": "Infinix Hot 30",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "infinix hot 30",
+    "verified_model": null
   }
 }

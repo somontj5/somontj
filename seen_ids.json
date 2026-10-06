@@ -23280,5 +23280,14 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "apple 12 mini"
+  },
+  "77228256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17282677_samsung-galaxy-s22-8-256-gb/",
+    "title": "Samsung Galaxy S22 8/256 GB",
+    "price": 2150,
+    "condition": "Б/у",
+    "model_key": "samsung s22"
   }
 }

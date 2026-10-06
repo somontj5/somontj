@@ -22935,5 +22935,15 @@
     "condition": "Б/у",
     "model_key": "samsung а34",
     "verified_model": null
+  },
+  "06991164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17280699_apple-iphone-11-64-gb-green/",
+    "title": "Apple iPhone 11, 64 gb, Green",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

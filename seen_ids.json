@@ -23023,7 +23023,8 @@
     "title": "Samsung galaxy А03S 32Gb Vetnam 2sim",
     "price": 822,
     "condition": "Б/у",
-    "model_key": "samsung а03s"
+    "model_key": "samsung а03s",
+    "sold_checked": true
   },
   "74222565": {
     "logged": true,

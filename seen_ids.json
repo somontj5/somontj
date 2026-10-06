@@ -22740,7 +22740,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
     "price": 11500,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "27794822": {
     "logged": true,
@@ -22865,5 +22866,15 @@
     "price": 3100,
     "condition": "Б/у",
     "model_key": "poco x6 pro"
+  },
+  "27982764": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17279827_apple-iphone-xs-64-gb-gold/",
+    "title": "Apple iPhone Xs, 64 gb, Gold",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "apple xs",
+    "verified_model": null
   }
 }

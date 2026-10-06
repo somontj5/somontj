@@ -23126,7 +23126,8 @@
     "title": "Samsung Galaxy F04 64Gb 2sim 5G",
     "price": 940,
     "condition": "Б/у",
-    "model_key": "samsung f04"
+    "model_key": "samsung f04",
+    "sold_checked": true
   },
   "28913322": {
     "logged": true,
@@ -23630,5 +23631,15 @@
     "price": 5000,
     "condition": "Б/у",
     "model_key": "apple 15"
+  },
+  "51061164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17285106_apple-iphone-11-pro-64-gb-gold/",
+    "title": "Apple iPhone 11 Pro, 64 gb, Gold",
+    "price": 1499,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
   }
 }

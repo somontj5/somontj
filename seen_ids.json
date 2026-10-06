@@ -23472,5 +23472,25 @@
     "condition": "Б/у",
     "model_key": "infinix smart",
     "verified_model": null
+  },
+  "33511128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17284335_apple-iphone-11-128-gb-white/",
+    "title": "Apple iPhone 11, 128 gb, White",
+    "price": 1900,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "17284298": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17284298_b-u/",
+    "title": "Телефон Infinix",
+    "price": 1320,
+    "condition": "Б/у",
+    "model_key": "infinix",
+    "verified_model": null
   }
 }

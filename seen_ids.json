@@ -22404,7 +22404,8 @@
     "title": "Xiaomi Redmi Note 15pro plus, 256gb",
     "price": 3400,
     "condition": "Б/у",
-    "model_key": "redmi note 15pro plus"
+    "model_key": "redmi note 15pro plus",
+    "sold_checked": true
   },
   "27545852": {
     "logged": true,

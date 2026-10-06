@@ -23312,5 +23312,24 @@
     "price": 850,
     "condition": "Б/у",
     "model_key": "samsung а12"
+  },
+  "89912128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17282899_xiaomi-redmi-not-12s-128gb/",
+    "title": "Xiaomi Redmi Not 12S 128Gb",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "redmi not 12s"
+  },
+  "29041164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17282904_apple-iphone-11-64-gb-white/",
+    "title": "Apple iPhone 11, 64 gb, White",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

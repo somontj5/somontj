@@ -23166,7 +23166,8 @@
     "title": "Samsung galaxy A15 128Gb Vetnam 2sim 5G",
     "price": 1450,
     "condition": "Б/у",
-    "model_key": "samsung a15"
+    "model_key": "samsung a15",
+    "sold_checked": true
   },
   "37017256": {
     "logged": true,

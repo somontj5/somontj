@@ -22920,7 +22920,8 @@
     "title": "Samsung Galaxy S21ultra",
     "price": 3300,
     "condition": "Б/у",
-    "model_key": "samsung s21ultra"
+    "model_key": "samsung s21ultra",
+    "sold_checked": true
   },
   "73156641": {
     "logged": true,
@@ -22929,7 +22930,8 @@
     "title": "Samsung Galaxy A41",
     "price": 950,
     "condition": "Б/у",
-    "model_key": "samsung a41"
+    "model_key": "samsung a41",
+    "sold_checked": true
   },
   "35913128": {
     "logged": true,
@@ -23370,6 +23372,16 @@
     "price": 600,
     "condition": "Б/у",
     "model_key": "apple 7 plus",
+    "verified_model": null
+  },
+  "36851164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17283685_apple-iphone-11-64-gb-white/",
+    "title": "Apple iPhone 11, 64 gb, White",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "apple 11",
     "verified_model": null
   }
 }

@@ -22415,7 +22415,8 @@
     "price": 700,
     "condition": "Б/у",
     "model_key": "redmi a5",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "53817256": {
     "logged": true,
@@ -22424,7 +22425,8 @@
     "title": "Apple iPhone 17 Pro, 256 gb, Silver",
     "price": 12000,
     "condition": "Б/у",
-    "model_key": "apple 17 pro"
+    "model_key": "apple 17 pro",
+    "sold_checked": true
   },
   "59091164": {
     "logged": true,
@@ -22434,7 +22436,8 @@
     "price": 1400,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "58491164": {
     "logged": true,
@@ -22477,7 +22480,8 @@
     "price": 250,
     "condition": "Б/у",
     "model_key": "samsung s5 mini sm g800h ds",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "27618533": {
     "logged": true,
@@ -22487,7 +22491,8 @@
     "price": 1199,
     "condition": "Б/у",
     "model_key": "samsung m33",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "26913128": {
     "logged": true,
@@ -22840,5 +22845,24 @@
     "condition": "Б/у",
     "model_key": "redmi note 13",
     "verified_model": null
+  },
+  "31912464": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14978319_samsung-galaxy-a12-4-64/",
+    "title": "Samsung Galaxy A12 4/64Gb",
+    "price": 550,
+    "condition": "Б/у",
+    "model_key": "samsung a12",
+    "verified_model": null
+  },
+  "74889565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15748895_poco-x6-pro-5g/",
+    "title": "Xiaomi Poco X6 Pro 5G",
+    "price": 3100,
+    "condition": "Б/у",
+    "model_key": "poco x6 pro"
   }
 }

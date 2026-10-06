@@ -22798,5 +22798,15 @@
     "condition": "Б/у",
     "model_key": "samsung a16",
     "verified_model": null
+  },
+  "88701264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17278870_apple-iphone-12-64-gb-white/",
+    "title": "Apple iPhone 12, 64 gb, White",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "apple 12",
+    "verified_model": null
   }
 }

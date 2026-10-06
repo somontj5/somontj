@@ -22940,7 +22940,8 @@
     "title": "Apple iPhone 13 Pro Max, 128 gb, Graphite",
     "price": 3200,
     "condition": "Б/у",
-    "model_key": "apple 13 pro max"
+    "model_key": "apple 13 pro max",
+    "sold_checked": true
   },
   "04278256": {
     "logged": true,

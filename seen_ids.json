@@ -22993,7 +22993,8 @@
     "title": "Samsung Galaxy S21 pilus 8/128Gb Dual sim 5G",
     "price": 2100,
     "condition": "Б/у",
-    "model_key": "samsung s21 pilus dual sim"
+    "model_key": "samsung s21 pilus dual sim",
+    "sold_checked": true
   },
   "26561285": {
     "logged": true,
@@ -23002,7 +23003,8 @@
     "title": "Samsung galaxy A56 128 Dual sim 5G Silver",
     "price": 3340,
     "condition": "Б/у",
-    "model_key": "samsung a56 128 dual sim"
+    "model_key": "samsung a56 128 dual sim",
+    "sold_checked": true
   },
   "01415256": {
     "logged": true,
@@ -23427,6 +23429,35 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "redmi note 9",
+    "verified_model": null
+  },
+  "83917335": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17283917_samsung-galaxy-a33-5g/",
+    "title": "Samsung Galaxy A33 5G",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "samsung a33",
+    "verified_model": null
+  },
+  "91815256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17283918_apple-iphone-15-pro-max-256-gb-natural-titanium/",
+    "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
+    "price": 5899,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro max"
+  },
+  "83883256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17283883_apple-iphone-xs-256-gb-silver/",
+    "title": "Apple iPhone Xs, 256 gb, Silver",
+    "price": 799,
+    "condition": "Б/у",
+    "model_key": "apple xs",
     "verified_model": null
   }
 }

@@ -23291,5 +23291,23 @@
     "price": 2150,
     "condition": "Б/у",
     "model_key": "samsung s22"
+  },
+  "88221128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17282882_samsung-galaxy-s21-plus-128gb-duos-vietnam/",
+    "title": "Samsung Galaxy S21 Plus 128Gb Duos Vietnam",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "samsung s21 plus"
+  },
+  "28286012": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17282860_telefon-samsung-a12/",
+    "title": "Samsung Galaxy А12",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "samsung а12"
   }
 }

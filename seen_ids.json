@@ -22789,7 +22789,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
     "price": 7499,
     "condition": "Б/у",
-    "model_key": "apple 15 pro max"
+    "model_key": "apple 15 pro max",
+    "sold_checked": true
   },
   "92814256": {
     "logged": true,
@@ -23197,5 +23198,14 @@
     "price": 950,
     "condition": "Б/у",
     "model_key": "redmi note 12s"
+  },
+  "41714256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17281417_apple-iphone-14-pro-256-gb-space-black/",
+    "title": "Apple iPhone 14 Pro, 256 gb, Space Black",
+    "price": 5600,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

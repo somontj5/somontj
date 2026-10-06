@@ -23157,7 +23157,8 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "realme c33",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "11512825": {
     "logged": true,
@@ -23686,5 +23687,24 @@
     "condition": "Б/у",
     "model_key": "samsung a16",
     "verified_model": null
+  },
+  "34400256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17156334_honor-400-lite-256gb/",
+    "title": "Honor 400 LITE 256GB",
+    "price": 2150,
+    "condition": "Б/у",
+    "model_key": "honor 400 lite",
+    "verified_model": null
+  },
+  "71267620": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16712676_samsung-galaxy-note-20-ultra/",
+    "title": "Samsung Galaxy Note 20 Ultra",
+    "price": 3100,
+    "condition": "Б/у",
+    "model_key": "samsung note 20 ultra"
   }
 }

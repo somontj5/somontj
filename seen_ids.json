@@ -23706,5 +23706,15 @@
     "price": 3100,
     "condition": "Б/у",
     "model_key": "samsung note 20 ultra"
+  },
+  "52412128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17285524_apple-iphone-12-pro-max-128-gb-gold/",
+    "title": "Apple iPhone 12 Pro Max, 128 gb, Gold",
+    "price": 2600,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro max",
+    "verified_model": null
   }
 }

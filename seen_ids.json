@@ -22661,7 +22661,8 @@
     "title": "Apple iPhone 12 Pro Max, 128 gb, Graphite",
     "price": 3850,
     "condition": "Б/у",
-    "model_key": "apple 12 pro max"
+    "model_key": "apple 12 pro max",
+    "sold_checked": true
   },
   "46813128": {
     "logged": true,
@@ -23145,5 +23146,14 @@
     "price": 860,
     "condition": "Б/у",
     "model_key": "redmi note 9"
+  },
+  "90421264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17059042_apple-iphone-12-mini-64-gb-blue/",
+    "title": "Apple iPhone 12 mini, 64 gb, Blue",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "apple 12 mini"
   }
 }

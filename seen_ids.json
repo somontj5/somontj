@@ -22846,7 +22846,8 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "apple 12",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "27895451": {
     "logged": true,
@@ -22856,7 +22857,8 @@
     "price": 699,
     "condition": "Б/у",
     "model_key": "samsung a51",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "06915256": {
     "logged": true,
@@ -22876,7 +22878,8 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "redmi note 13",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "31912464": {
     "logged": true,

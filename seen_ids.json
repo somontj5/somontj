@@ -22889,7 +22889,8 @@
     "price": 550,
     "condition": "Б/у",
     "model_key": "samsung a12",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "74889565": {
     "logged": true,
@@ -22909,7 +22910,8 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "apple xs",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "58047721": {
     "logged": true,
@@ -23350,5 +23352,24 @@
     "price": 3199,
     "condition": "Б/у",
     "model_key": "samsung a56"
+  },
+  "54123225": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17283654_telefon-samsung-a12-32gb-vetnam-2sim-5g/",
+    "title": "Samsung Galaxy A12",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "samsung a12"
+  },
+  "83642732": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17283642_apple-iphone-7-plus-32-gb/",
+    "title": "Apple iPhone 7 plus, 32 gb",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "apple 7 plus",
+    "verified_model": null
   }
 }

@@ -22373,7 +22373,8 @@
     "price": 700,
     "condition": "Б/у",
     "model_key": "redmi note 8",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "04216256": {
     "logged": true,

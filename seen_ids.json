@@ -23380,7 +23380,8 @@
     "price": 600,
     "condition": "Б/у",
     "model_key": "apple 7 plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "36851164": {
     "logged": true,
@@ -23390,7 +23391,8 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "38081164": {
     "logged": true,
@@ -23459,6 +23461,16 @@
     "price": 799,
     "condition": "Б/у",
     "model_key": "apple xs",
+    "verified_model": null
+  },
+  "17284260": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17284260_b-u-khoroshim-sostoiani/",
+    "title": "Телефон Infinix Smart",
+    "price": 1320,
+    "condition": "Б/у",
+    "model_key": "infinix smart",
     "verified_model": null
   }
 }

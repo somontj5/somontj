@@ -23085,7 +23085,8 @@
     "title": "Samsung Galaxy F04 64gb Vetnam",
     "price": 950,
     "condition": "Б/у",
-    "model_key": "samsung f04"
+    "model_key": "samsung f04",
+    "sold_checked": true
   },
   "78384100": {
     "logged": true,
@@ -23095,7 +23096,8 @@
     "price": 2900,
     "condition": "Б/у",
     "model_key": "samsung note 10",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "66142565": {
     "logged": true,
@@ -23579,5 +23581,32 @@
     "condition": "Б/у",
     "model_key": "apple xs",
     "verified_model": null
+  },
+  "17548256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17283017_samsung-galaxy-a54-8-256gb-duos-vietnam/",
+    "title": "Samsung Galaxy A54 8/256Gb Duos Vietnam",
+    "price": 2399,
+    "condition": "Б/у",
+    "model_key": "samsung a54 duos"
+  },
+  "28303725": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17283037_samsung-galaxy-s25-ultra/",
+    "title": "Samsung Galaxy s25 Ultra",
+    "price": 8900,
+    "condition": "Б/у",
+    "model_key": "samsung s25 ultra"
+  },
+  "08113128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17283081_apple-iphone-13-pro-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
+    "price": 4800,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

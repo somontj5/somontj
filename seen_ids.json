@@ -23175,7 +23175,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Deep Blue",
     "price": 11200,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "12739128": {
     "logged": true,
@@ -23184,7 +23185,8 @@
     "title": "Xiaomi Redmi Note 9 128gb Global Version",
     "price": 860,
     "condition": "Б/у",
-    "model_key": "redmi note 9"
+    "model_key": "redmi note 9",
+    "sold_checked": true
   },
   "90421264": {
     "logged": true,
@@ -23639,6 +23641,25 @@
     "url": "https://m.somon.tj/adv/17285106_apple-iphone-11-pro-64-gb-gold/",
     "title": "Apple iPhone 11 Pro, 64 gb, Gold",
     "price": 1499,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
+  },
+  "21315128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17285213_apple-iphone-15-128-gb-blue/",
+    "title": "Apple iPhone 15, 128 gb, Blue",
+    "price": 4599,
+    "condition": "Б/у",
+    "model_key": "apple 15"
+  },
+  "52011164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17285201_apple-iphone-11-pro-64-gb-silver/",
+    "title": "Apple iPhone 11 Pro, 64 gb, Silver",
+    "price": 2199,
     "condition": "Б/у",
     "model_key": "apple 11 pro",
     "verified_model": null

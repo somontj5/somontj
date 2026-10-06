@@ -22876,5 +22876,14 @@
     "condition": "Б/у",
     "model_key": "apple xs",
     "verified_model": null
+  },
+  "58047721": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16580477_samsung-galaxy-s21ultra/",
+    "title": "Samsung Galaxy S21ultra",
+    "price": 3300,
+    "condition": "Б/у",
+    "model_key": "samsung s21ultra"
   }
 }

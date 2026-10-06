@@ -22961,7 +22961,8 @@
     "title": "Xiaomi Mi 13 T",
     "price": 3500,
     "condition": "Б/у",
-    "model_key": "xiaomi mi 13 t"
+    "model_key": "xiaomi mi 13 t",
+    "sold_checked": true
   },
   "13784134": {
     "logged": true,
@@ -22971,7 +22972,8 @@
     "price": 1700,
     "condition": "Б/у",
     "model_key": "samsung а34",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "06991164": {
     "logged": true,
@@ -22981,7 +22983,8 @@
     "price": 1999,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "32181285": {
     "logged": true,
@@ -23394,6 +23397,36 @@
     "price": 1799,
     "condition": "Б/у",
     "model_key": "apple 11 pro max",
+    "verified_model": null
+  },
+  "28387014": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17283870_redmi-not-14-pro/",
+    "title": "Xiaomi Redmi Note 14 Pro",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro",
+    "verified_model": null
+  },
+  "38481164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17283848_apple-iphone-11-64-gb-white/",
+    "title": "Apple iPhone 11, 64 gb, White",
+    "price": 1499,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "72838139": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17283813_redmi-not9-tel-beu-korash-nagz-zariatash-iakruz-izofa-mebarad-kharidoro-navisad/",
+    "title": "Xiaomi Redmi Note 9",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "redmi note 9",
     "verified_model": null
   }
 }

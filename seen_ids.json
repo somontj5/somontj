@@ -22771,7 +22771,8 @@
     "title": "Samsung Galaxy S 22 Ultra",
     "price": 4300,
     "condition": "Б/у",
-    "model_key": "samsung s 22 ultra"
+    "model_key": "samsung s 22 ultra",
+    "sold_checked": true
   },
   "85913256": {
     "logged": true,
@@ -22780,7 +22781,8 @@
     "title": "Apple iPhone 13 Pro, 256 gb, Gold",
     "price": 4500,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "82015256": {
     "logged": true,
@@ -23207,5 +23209,24 @@
     "price": 5600,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "28039712": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17280397_xiaomi-redmi-12/",
+    "title": "Xiaomi Redmi 12",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "redmi 12"
+  },
+  "80400128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17280400_apple-iphone-xr-128-gb-black/",
+    "title": "Apple iPhone Xr, 128 gb, Black",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
   }
 }

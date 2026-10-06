@@ -22671,7 +22671,8 @@
     "title": "Apple iPhone 13, 128 gb, Midnight",
     "price": 3500,
     "condition": "Б/у",
-    "model_key": "apple 13"
+    "model_key": "apple 13",
+    "sold_checked": true
   },
   "57013128": {
     "logged": true,
@@ -22721,7 +22722,8 @@
     "title": "Apple iPhone 16 Pro, 128 gb, Desert Titanium",
     "price": 6200,
     "condition": "Б/у",
-    "model_key": "apple 16 pro"
+    "model_key": "apple 16 pro",
+    "sold_checked": true
   },
   "27800025": {
     "logged": true,
@@ -22796,7 +22798,8 @@
     "title": "Apple iPhone 14 Pro Max, 256 gb, Space Black",
     "price": 7000,
     "condition": "Б/у",
-    "model_key": "apple 14 pro max"
+    "model_key": "apple 14 pro max",
+    "sold_checked": true
   },
   "62152568": {
     "logged": true,
@@ -23155,5 +23158,44 @@
     "price": 1700,
     "condition": "Б/у",
     "model_key": "apple 12 mini"
+  },
+  "85612128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17280856_apple-iphone-12-pro-128-gb-pacific-blue/",
+    "title": "Apple iPhone 12 pro, 128 gb, Pacific Blue",
+    "price": 3000,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro",
+    "verified_model": null
+  },
+  "28082510": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17280825_redmi-10s/",
+    "title": "Xiaomi Redmi 10S",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "redmi 10s",
+    "verified_model": null
+  },
+  "14121164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17281412_apple-iphone-11-64-gb-black/",
+    "title": "Apple iPhone 11, 64 gb, Black",
+    "price": 2650,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "30912128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17281309_telefon-redmi-note-12s-128gb-glabal-version/",
+    "title": "Xiaomi Redmi Note 12S 128gb Glabal Version",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "redmi note 12s"
   }
 }

@@ -22562,7 +22562,8 @@
     "price": 666,
     "condition": "Б/у",
     "model_key": "redmi note 8",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "72771058": {
     "logged": true,
@@ -22905,5 +22906,15 @@
     "price": 3200,
     "condition": "Б/у",
     "model_key": "apple 13 pro max"
+  },
+  "04278256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17280427_tekhno-slim-8-256gb/",
+    "title": "Tecno Spark Slim 8/256GB",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "tecno spark slim",
+    "verified_model": null
   }
 }

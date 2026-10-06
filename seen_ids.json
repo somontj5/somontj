@@ -22702,7 +22702,8 @@
     "title": "Samsung Galaxy s25 Ultra",
     "price": 9100,
     "condition": "Б/у",
-    "model_key": "samsung s25 ultra"
+    "model_key": "samsung s25 ultra",
+    "sold_checked": true
   },
   "99415256": {
     "logged": true,

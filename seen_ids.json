@@ -22631,7 +22631,8 @@
     "price": 2700,
     "condition": "Б/у",
     "model_key": "samsung s22",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "27743164": {
     "logged": true,
@@ -22649,7 +22650,8 @@
     "title": "Samsung Galaxy S23 Ultra",
     "price": 3450,
     "condition": "Б/у",
-    "model_key": "samsung s23 ultra"
+    "model_key": "samsung s23 ultra",
+    "sold_checked": true
   },
   "50412128": {
     "logged": true,
@@ -23065,5 +23067,14 @@
     "price": 2350,
     "condition": "Б/у",
     "model_key": "redmi note 14 pro"
+  },
+  "41321285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17281241_telefon-samsung-m32-128gb-dual-sim-5g/",
+    "title": "Samsung Galaxy M32 128gb Dual sim 5G",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "samsung m32"
   }
 }

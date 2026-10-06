@@ -23512,6 +23512,7 @@
     "price": 2800,
     "condition": "Б/у",
     "model_key": "samsung a56",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   }
 }

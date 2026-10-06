@@ -22835,7 +22835,8 @@
     "price": 1350,
     "condition": "Б/у",
     "model_key": "samsung a16",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "88701264": {
     "logged": true,
@@ -23270,5 +23271,14 @@
     "condition": "Б/у",
     "model_key": "apple xs",
     "verified_model": null
+  },
+  "04511264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17280451_apple-iphone-12-mini-64-gb-blue/",
+    "title": "Apple iPhone 12 mini, 64 gb, Blue",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "apple 12 mini"
   }
 }

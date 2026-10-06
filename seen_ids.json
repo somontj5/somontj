@@ -23051,7 +23051,8 @@
     "price": 1600,
     "condition": "Б/у",
     "model_key": "honor x8c",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "79573512": {
     "logged": true,
@@ -23514,5 +23515,24 @@
     "model_key": "samsung a56",
     "verified_model": null,
     "sold_checked": true
+  },
+  "83159256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17283159_apple-iphone-air-256-gb-space-black/",
+    "title": "Apple iPhone Air, 256 gb, Space Black",
+    "price": 11000,
+    "condition": "Б/у",
+    "model_key": "apple air"
+  },
+  "72845446": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17284544_tecna-pova-6-neo/",
+    "title": "Tecno POVA 6 NEO",
+    "price": 2100,
+    "condition": "Б/у",
+    "model_key": "tecno pova 6 neo",
+    "verified_model": null
   }
 }

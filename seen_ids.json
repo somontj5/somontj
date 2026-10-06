@@ -23104,7 +23104,8 @@
     "title": "Xiaomi Redmi Note 14 pro 256gb 5G",
     "price": 2350,
     "condition": "Б/у",
-    "model_key": "redmi note 14 pro"
+    "model_key": "redmi note 14 pro",
+    "sold_checked": true
   },
   "41321285": {
     "logged": true,
@@ -23456,7 +23457,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
     "price": 5899,
     "condition": "Б/у",
-    "model_key": "apple 15 pro max"
+    "model_key": "apple 15 pro max",
+    "sold_checked": true
   },
   "83883256": {
     "logged": true,
@@ -23556,6 +23558,26 @@
     "price": 1700,
     "condition": "Б/у",
     "model_key": "samsung s9 plus",
+    "verified_model": null
+  },
+  "17284874": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17284874_tel-ba-simkartai-tukhfash/",
+    "title": "Телефон Infinix",
+    "price": 599,
+    "condition": "Б/у",
+    "model_key": "infinix",
+    "verified_model": null
+  },
+  "28485464": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17284854_apple-iphone-xs-64-gb-space-grey/",
+    "title": "Apple iPhone Xs, 64 gb, Space Grey",
+    "price": 1150,
+    "condition": "Б/у",
+    "model_key": "apple xs",
     "verified_model": null
   }
 }

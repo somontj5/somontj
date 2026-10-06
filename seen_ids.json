@@ -22916,5 +22916,24 @@
     "condition": "Б/у",
     "model_key": "tecno spark slim",
     "verified_model": null
+  },
+  "69157013": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14691570_mi-13-t/",
+    "title": "Xiaomi Mi 13 T",
+    "price": 3500,
+    "condition": "Б/у",
+    "model_key": "xiaomi mi 13 t"
+  },
+  "13784134": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14137841_samsung-a-34/",
+    "title": "Samsung Galaxy А34",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "samsung а34",
+    "verified_model": null
   }
 }

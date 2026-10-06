@@ -22641,7 +22641,8 @@
     "title": "Apple iPhone Xs, 64 gb, Space Grey",
     "price": 1600,
     "condition": "Б/у",
-    "model_key": "apple xs"
+    "model_key": "apple xs",
+    "sold_checked": true
   },
   "27736523": {
     "logged": true,
@@ -22678,7 +22679,8 @@
     "title": "Apple iPhone 13 Pro Max, 128 gb, Alpine Green",
     "price": 5150,
     "condition": "Б/у",
-    "model_key": "apple 13 pro max"
+    "model_key": "apple 13 pro max",
+    "sold_checked": true
   },
   "75678105": {
     "logged": true,
@@ -22688,7 +22690,8 @@
     "price": 2500,
     "condition": "Б/у",
     "model_key": "samsung s10",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "78217256": {
     "logged": true,
@@ -22697,7 +22700,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
     "price": 11900,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "67114128": {
     "logged": true,
@@ -22706,7 +22710,8 @@
     "title": "Apple iPhone 14 Pro, 128 gb, Deep Purple",
     "price": 5200,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "90416128": {
     "logged": true,
@@ -23103,5 +23108,42 @@
     "price": 1300,
     "condition": "Б/у",
     "model_key": "samsung а32"
+  },
+  "28132133": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17281321_realme-c33/",
+    "title": "Realme c33",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "realme c33",
+    "verified_model": null
+  },
+  "11512825": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17281331_telefon-samsung-a15-128gb-vetnam-2sim-5g/",
+    "title": "Samsung galaxy A15 128Gb Vetnam 2sim 5G",
+    "price": 1450,
+    "condition": "Б/у",
+    "model_key": "samsung a15"
+  },
+  "37017256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17281370_apple-iphone-17-pro-max-256-gb-deep-blue/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Deep Blue",
+    "price": 11200,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
+  },
+  "12739128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17281273_telefon-redmi-note-9-128gb-glabal-version/",
+    "title": "Xiaomi Redmi Note 9 128gb Global Version",
+    "price": 860,
+    "condition": "Б/у",
+    "model_key": "redmi note 9"
   }
 }

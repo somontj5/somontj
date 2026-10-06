@@ -340,5 +340,14 @@
     "blocked_at": "2026-10-06T07:50:42",
     "updated_at": "2026-10-06T07:50:42",
     "active_ads_at_block": 28
+  },
+  "294013": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/294013/",
+    "reason": "похоже на перекупщика по фото: На заднем плане фотографий четко видна витрина или стенд магазина мобильных аксессуаров (подвесные чехлы в упаковках с ценниками), что указывает на торговую точку.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17279573_apple-iphone-xs-max-512-gb-space-grey/",
+    "blocked_at": "2026-10-06T08:49:30",
+    "updated_at": "2026-10-06T08:49:30",
+    "active_ads_at_block": 4
   }
 }

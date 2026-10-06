@@ -22577,7 +22577,8 @@
     "price": 950,
     "condition": "Б/у",
     "model_key": "samsung s 8",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17277233": {
     "logged": true,
@@ -22587,7 +22588,8 @@
     "price": 700,
     "condition": "Б/у",
     "model_key": "realme 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "58517256": {
     "logged": true,
@@ -22606,7 +22608,8 @@
     "price": 850,
     "condition": "Б/у",
     "model_key": "apple 7 plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "30217256": {
     "logged": true,
@@ -22976,5 +22979,55 @@
     "price": 8000,
     "condition": "Б/у",
     "model_key": "apple 15 pro max"
+  },
+  "11603322": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17281116_telefon-samsung-a03s-32gb-vetnam-2sim/",
+    "title": "Samsung galaxy А03S 32Gb Vetnam 2sim",
+    "price": 822,
+    "condition": "Б/у",
+    "model_key": "samsung а03s"
+  },
+  "74222565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17281074_telefon-samsung-s22-ultra-256gb-carea-5g/",
+    "title": "Samsung Galaxy S22 Ultra 256Gb Carea 5G",
+    "price": 3488,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
+  },
+  "65425685": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17281106_telefon-samsung-a54-256-8gb-vetnam-5g/",
+    "title": "Samsung galaxy A54 256/8Gb Vetnam 5G",
+    "price": 2250,
+    "condition": "Б/у",
+    "model_key": "samsung a54 vetnam"
+  },
+  "72811108": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17281110_honor-x8c/",
+    "title": "Honor X8c",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "honor x8c",
+    "verified_model": null
+  },
+  "79573512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17279573_apple-iphone-xs-max-512-gb-space-grey/",
+    "title": "Apple iPhone Xs Max, 512 gb, Space Grey",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple xs max",
+    "verified_model": null
+  },
+  "81086215": {
+    "logged": true
   }
 }

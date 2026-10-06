@@ -22511,7 +22511,8 @@
     "title": "Apple iPhone 17 Pro Max, 1 tb, Deep Blue дубликат",
     "price": 550,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "27656612": {
     "logged": true,
@@ -22894,5 +22895,14 @@
     "price": 950,
     "condition": "Б/у",
     "model_key": "samsung a41"
+  },
+  "35913128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17280359_apple-iphone-13-pro-max-128-gb-graphite/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Graphite",
+    "price": 3200,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
   }
 }

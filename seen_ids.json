@@ -23032,7 +23032,8 @@
     "title": "Samsung Galaxy S22 Ultra 256Gb Carea 5G",
     "price": 3488,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "65425685": {
     "logged": true,
@@ -23041,7 +23042,8 @@
     "title": "Samsung galaxy A54 256/8Gb Vetnam 5G",
     "price": 2250,
     "condition": "Б/у",
-    "model_key": "samsung a54 vetnam"
+    "model_key": "samsung a54 vetnam",
+    "sold_checked": true
   },
   "72811108": {
     "logged": true,
@@ -23533,6 +23535,26 @@
     "price": 2100,
     "condition": "Б/у",
     "model_key": "tecno pova 6 neo",
+    "verified_model": null
+  },
+  "17284615": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17284615_honor/",
+    "title": "Honor Х8с",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "honor х8с",
+    "verified_model": null
+  },
+  "72845609": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17284560_samsung-s9/",
+    "title": "Samsung Galaxy S9+",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "samsung s9 plus",
     "verified_model": null
   }
 }

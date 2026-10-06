@@ -23076,5 +23076,32 @@
     "price": 1250,
     "condition": "Б/у",
     "model_key": "samsung m32"
+  },
+  "80046425": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17281280_telefon-samsung-04-64gb-2sim-5g/",
+    "title": "Samsung Galaxy F04 64Gb 2sim 5G",
+    "price": 940,
+    "condition": "Б/у",
+    "model_key": "samsung f04"
+  },
+  "28913322": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17281289_telefon-samsung-a13-32gb-vetnam-2sim/",
+    "title": "Samsung Galaxy А13 32Gb Vetnam 2sim",
+    "price": 1040,
+    "condition": "Б/у",
+    "model_key": "samsung а13"
+  },
+  "26832128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17281268_telefon-samsung-a32-128gb-vetnam/",
+    "title": "Samsung Galaxy А32 128Gb Vetnam",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "samsung а32"
   }
 }

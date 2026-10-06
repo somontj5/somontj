@@ -22998,7 +22998,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
     "price": 8000,
     "condition": "Б/у",
-    "model_key": "apple 15 pro max"
+    "model_key": "apple 15 pro max",
+    "sold_checked": true
   },
   "11603322": {
     "logged": true,
@@ -23185,7 +23186,8 @@
     "price": 950,
     "condition": "Б/у",
     "model_key": "redmi 10s",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "14121164": {
     "logged": true,

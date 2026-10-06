@@ -22824,7 +22824,8 @@
     "price": 2100,
     "condition": "Б/у",
     "model_key": "apple 11 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "16623690": {
     "logged": true,
@@ -23259,5 +23260,15 @@
     "price": 1399,
     "condition": "Б/у",
     "model_key": "apple 12 mini"
+  },
+  "28230864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17282308_apple-iphone-xs-64-gb-silver/",
+    "title": "Apple iPhone Xs, 64 gb, Silver",
+    "price": 1499,
+    "condition": "Б/у",
+    "model_key": "apple xs",
+    "verified_model": null
   }
 }

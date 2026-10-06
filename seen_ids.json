@@ -23228,7 +23228,8 @@
     "price": 2650,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "30912128": {
     "logged": true,
@@ -23247,7 +23248,8 @@
     "title": "Apple iPhone 14 Pro, 256 gb, Space Black",
     "price": 5600,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "28039712": {
     "logged": true,
@@ -23727,5 +23729,23 @@
     "condition": "Б/у",
     "model_key": "samsung a17",
     "verified_model": null
+  },
+  "64916512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17285649_apple-iphone-16-pro-max-512-gb-natural-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 512 gb, Natural Titanium",
+    "price": 7666,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
+  },
+  "65115128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17285651_apple-iphone-15-pro-128-gb-natural-titanium/",
+    "title": "Apple iPhone 15 Pro, 128 gb, Natural Titanium",
+    "price": 5850,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro"
   }
 }

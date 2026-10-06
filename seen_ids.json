@@ -22837,7 +22837,8 @@
     "title": "Apple iPhone 15 Pro, 256 gb, Blue Titanium",
     "price": 6550,
     "condition": "Б/у",
-    "model_key": "apple 15 pro"
+    "model_key": "apple 15 pro",
+    "sold_checked": true
   },
   "27914313": {
     "logged": true,

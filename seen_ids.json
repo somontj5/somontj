@@ -22885,5 +22885,14 @@
     "price": 3300,
     "condition": "Б/у",
     "model_key": "samsung s21ultra"
+  },
+  "73156641": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16731566_samsung-galaxy-a41/",
+    "title": "Samsung Galaxy A41",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "samsung a41"
   }
 }

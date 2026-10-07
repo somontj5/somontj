@@ -24162,7 +24162,8 @@
     "price": 2500,
     "condition": "Б/у",
     "model_key": "apple 12",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "28847410": {
     "logged": true,

@@ -23502,7 +23502,8 @@
     "price": 799,
     "condition": "Б/у",
     "model_key": "apple xs",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17284260": {
     "logged": true,
@@ -24017,6 +24018,27 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
     "price": 8200,
     "condition": "Б/у",
-    "model_key": "apple 15 pro max"
+    "model_key": "apple 15 pro max",
+    "sold_checked": true
+  },
+  "88116145": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17288116_redmi-not-14-pro-5g/",
+    "title": "Xiaomi Redmi note 14 pro+5G",
+    "price": 2699,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro",
+    "verified_model": null
+  },
+  "28807815": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17288078_samsung-a15/",
+    "title": "Samsung Galaxy A15",
+    "price": 1199,
+    "condition": "Б/у",
+    "model_key": "samsung a15",
+    "verified_model": null
   }
 }

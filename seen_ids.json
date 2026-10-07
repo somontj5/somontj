@@ -23292,7 +23292,8 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "samsung m13",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "21631264": {
     "logged": true,
@@ -23829,5 +23830,14 @@
     "price": 2800,
     "condition": "Б/у",
     "model_key": "samsung s 22"
+  },
+  "65268256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17286565_samsung-a26-8-256gb/",
+    "title": "Samsung A26 8/256гб",
+    "price": 2100,
+    "condition": "Б/у",
+    "model_key": "samsung a26"
   }
 }

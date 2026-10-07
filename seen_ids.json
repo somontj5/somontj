@@ -23911,7 +23911,8 @@
     "title": "Samsung Galaxy Note 10 pilus 256/12Gb Carea 5G",
     "price": 1566,
     "condition": "Б/у",
-    "model_key": "samsung note 10 pilus carea"
+    "model_key": "samsung note 10 pilus carea",
+    "sold_checked": true
   },
   "52222565": {
     "logged": true,

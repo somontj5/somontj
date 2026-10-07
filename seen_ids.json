@@ -23989,7 +23989,8 @@
     "title": "Samsung Galaxy S21+ 5G 128/8 2sim Vetnam 5G Silver",
     "price": 2100,
     "condition": "Б/у",
-    "model_key": "samsung s21 plus"
+    "model_key": "samsung s21 plus",
+    "sold_checked": true
   },
   "86812322": {
     "logged": true,

@@ -23632,7 +23632,8 @@
     "title": "Samsung Galaxy A54 8/256Gb Duos Vietnam",
     "price": 2399,
     "condition": "Б/у",
-    "model_key": "samsung a54 duos"
+    "model_key": "samsung a54 duos",
+    "sold_checked": true
   },
   "28303725": {
     "logged": true,
@@ -24156,5 +24157,23 @@
     "price": 7300,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "12852026": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17289520_telefon-redmi-note-14-6-128gb-glabal-version-5g-2026/",
+    "title": "Xiaomi Redmi Note 14 6/128Gb Global Version 5G 2026",
+    "price": 1550,
+    "condition": "Б/у",
+    "model_key": "redmi note 14"
+  },
+  "92915128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16865929_apple-iphone-15-pro-128-gb-blue-titanium/",
+    "title": "Apple iPhone 15 Pro, 128 gb, Blue Titanium",
+    "price": 6199,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro"
   }
 }

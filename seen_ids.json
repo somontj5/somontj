@@ -23650,7 +23650,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
     "price": 4800,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "82725516": {
     "logged": true,
@@ -24134,5 +24135,14 @@
     "condition": "Б/у",
     "model_key": "apple 12",
     "verified_model": null
+  },
+  "28847410": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17288474_samsung-a10s/",
+    "title": "Samsung Galaxy A10s",
+    "price": 300,
+    "condition": "Б/у",
+    "model_key": "samsung a10s"
   }
 }

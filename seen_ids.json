@@ -23883,7 +23883,8 @@
     "title": "Samsung A26 8/256гб",
     "price": 2100,
     "condition": "Б/у",
-    "model_key": "samsung a26"
+    "model_key": "samsung a26",
+    "sold_checked": true
   },
   "32128625": {
     "logged": true,
@@ -24370,5 +24371,14 @@
     "condition": "Б/у",
     "model_key": "redmi note 12",
     "verified_model": null
+  },
+  "98715256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17290987_apple-iphone-15-pro-max-256-gb-natural-titanium/",
+    "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
+    "price": 5199,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro max"
   }
 }

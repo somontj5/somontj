@@ -23394,7 +23394,8 @@
     "title": "Samsung Galaxy A56 128Gb Duos Vietnam",
     "price": 3199,
     "condition": "Б/у",
-    "model_key": "samsung a56"
+    "model_key": "samsung a56",
+    "sold_checked": true
   },
   "54123225": {
     "logged": true,

@@ -23301,7 +23301,8 @@
     "title": "Apple iPhone 12 mini, 64 gb, White",
     "price": 1399,
     "condition": "Б/у",
-    "model_key": "apple 12 mini"
+    "model_key": "apple 12 mini",
+    "sold_checked": true
   },
   "28230864": {
     "logged": true,
@@ -23819,5 +23820,14 @@
     "price": 1100,
     "condition": "Б/у",
     "model_key": "infinix note 60 4 8"
+  },
+  "28644422": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17286444_samsung-s-22/",
+    "title": "Samsung Galaxy S 22",
+    "price": 2800,
+    "condition": "Б/у",
+    "model_key": "samsung s 22"
   }
 }

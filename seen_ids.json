@@ -23363,7 +23363,8 @@
     "title": "Xiaomi Redmi Not 12S 128Gb",
     "price": 950,
     "condition": "Б/у",
-    "model_key": "redmi not 12s"
+    "model_key": "redmi not 12s",
+    "sold_checked": true
   },
   "29041164": {
     "logged": true,
@@ -23900,5 +23901,41 @@
     "price": 844,
     "condition": "Б/у",
     "model_key": "redmi note 9"
+  },
+  "84114128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17279841_apple-iphone-14-128-gb-starlight/",
+    "title": "Apple iPhone 14, 128 gb, Starlight",
+    "price": 3600,
+    "condition": "Б/у",
+    "model_key": "apple 14"
+  },
+  "17816256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17287178_apple-iphone-16-pro-max-256-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
+    "price": 12000,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
+  },
+  "18114128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17287181_apple-iphone-14-pro-max-128-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro Max, 128 gb, Deep Purple",
+    "price": 5599,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
+  },
+  "20212565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17286720_telefon-samsung-s21-pilus-256gb-carea-5g/",
+    "title": "Samsung Galaxy S21 Pilus 256gb Carea 5G",
+    "price": 1960,
+    "condition": "Б/у",
+    "model_key": "samsung s21 pilus"
   }
 }

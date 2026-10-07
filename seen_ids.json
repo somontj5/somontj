@@ -23589,7 +23589,8 @@
     "price": 1600,
     "condition": "Б/у",
     "model_key": "honor х8с",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "72845609": {
     "logged": true,
@@ -23599,7 +23600,8 @@
     "price": 1700,
     "condition": "Б/у",
     "model_key": "samsung s9 plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17284874": {
     "logged": true,
@@ -24102,5 +24104,24 @@
     "price": 7299,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "51514256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17288515_apple-iphone-14-pro-max-256-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb, Deep Purple",
+    "price": 6050,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
+  },
+  "51911128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17288519_apple-iphone-11-128-gb-black/",
+    "title": "Apple iPhone 11, 128 gb, Black",
+    "price": 2300,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

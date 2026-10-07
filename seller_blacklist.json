@@ -367,5 +367,14 @@
     "blocked_at": "2026-10-06T20:14:37",
     "updated_at": "2026-10-06T20:14:37",
     "active_ads_at_block": 51
+  },
+  "10208491": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/10208491/",
+    "reason": "похоже на перекупщика по фото: На заднем фоне фотографий четко видна витрина с ценниками и товаром (коробки, телефоны), характерная для торговой точки.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17288519_apple-iphone-11-128-gb-black/",
+    "blocked_at": "2026-10-07T09:47:34",
+    "updated_at": "2026-10-07T09:47:34",
+    "active_ads_at_block": 1
   }
 }

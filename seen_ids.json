@@ -24003,7 +24003,8 @@
     "title": "Samsung Galaxy А03s 32Gb Vetnam 2sim 5G",
     "price": 840,
     "condition": "Б/у",
-    "model_key": "samsung а03s"
+    "model_key": "samsung а03s",
+    "sold_checked": true
   },
   "27046425": {
     "logged": true,
@@ -24574,6 +24575,16 @@
     "price": 1799,
     "condition": "Б/у",
     "model_key": "apple 11",
+    "verified_model": null
+  },
+  "38817128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16803881_apple-iphone-7-plus-128-gb/",
+    "title": "Apple iPhone 7 plus, 128 gb",
+    "price": 300,
+    "condition": "Б/у",
+    "model_key": "apple 7 plus",
     "verified_model": null
   }
 }

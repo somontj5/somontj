@@ -24106,7 +24106,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
     "price": 7299,
     "condition": "Б/у",
-    "model_key": "apple 16 pro max"
+    "model_key": "apple 16 pro max",
+    "sold_checked": true
   },
   "51514256": {
     "logged": true,
@@ -24115,7 +24116,8 @@
     "title": "Apple iPhone 14 Pro Max, 256 gb, Deep Purple",
     "price": 6050,
     "condition": "Б/у",
-    "model_key": "apple 14 pro max"
+    "model_key": "apple 14 pro max",
+    "sold_checked": true
   },
   "51911128": {
     "logged": true,

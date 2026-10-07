@@ -23694,7 +23694,8 @@
     "title": "Apple iPhone 15, 128 gb, Blue",
     "price": 4599,
     "condition": "Б/у",
-    "model_key": "apple 15"
+    "model_key": "apple 15",
+    "sold_checked": true
   },
   "52011164": {
     "logged": true,
@@ -24206,5 +24207,24 @@
     "price": 4100,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra"
+  },
+  "42418256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17289424_apple-iphone-18-pro-256-gb-black/",
+    "title": "Apple iPhone 18 Pro, 256 gb, Black",
+    "price": 13000,
+    "condition": "Б/у",
+    "model_key": "apple 18 pro"
+  },
+  "64712128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17289647_apple-iphone-12-pro-max-128-gb-gold/",
+    "title": "Apple iPhone 12 Pro Max, 128 gb, Gold",
+    "price": 3000,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro max",
+    "verified_model": null
   }
 }

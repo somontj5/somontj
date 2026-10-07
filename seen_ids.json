@@ -23920,7 +23920,8 @@
     "title": "Samsung Galaxy S22 Ultra 256Gb Carea 5G",
     "price": 3455,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "42562026": {
     "logged": true,
@@ -24380,5 +24381,24 @@
     "price": 5199,
     "condition": "Б/у",
     "model_key": "apple 15 pro max"
+  },
+  "12216512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17291122_apple-iphone-16-pro-512-gb-black-titanium/",
+    "title": "Apple iPhone 16 Pro, 512 gb, Black Titanium",
+    "price": 9600,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro"
+  },
+  "29112564": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17291125_apple-iphone-xs-64-gb-silver/",
+    "title": "Apple iPhone Xs, 64 gb, Silver",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "apple xs",
+    "verified_model": null
   }
 }

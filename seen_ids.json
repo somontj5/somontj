@@ -23893,7 +23893,8 @@
     "title": "Samsung Galaxy A32 128/6Gb Vetnam 2sim 5G",
     "price": 1360,
     "condition": "Б/у",
-    "model_key": "samsung a32 vetnam 2sim"
+    "model_key": "samsung a32 vetnam 2sim",
+    "sold_checked": true
   },
   "76512128": {
     "logged": true,
@@ -23932,7 +23933,8 @@
     "title": "Xiaomi Redmi Note 14 pro 256gb 2026",
     "price": 2344,
     "condition": "Б/у",
-    "model_key": "redmi note 14 pro"
+    "model_key": "redmi note 14 pro",
+    "sold_checked": true
   },
   "94391285": {
     "logged": true,
@@ -24424,6 +24426,35 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "apple 11",
+    "verified_model": null
+  },
+  "97414256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17291974_apple-iphone-14-pro-max-256-gb-space-black/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb, Space Black",
+    "price": 6800,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
+  },
+  "74751264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17057475_apple-iphone-12-mini-64-gb-blue/",
+    "title": "Apple iPhone 12 mini, 64 gb, Blue",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "apple 12 mini"
+  },
+  "55212862": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17291965_samsung-a52-pamiat128-ba-6-tel-sakh-toza-iakdas-kor-kadom-rastamozhka-shudagi-2sm/",
+    "title": "Samsung Galaxy А52",
+    "price": 1450,
+    "condition": "Б/у",
+    "model_key": "samsung а52",
     "verified_model": null
   }
 }

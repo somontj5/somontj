@@ -23646,7 +23646,8 @@
     "title": "Apple iPhone 15, 128 gb, Blue",
     "price": 5000,
     "condition": "Б/у",
-    "model_key": "apple 15"
+    "model_key": "apple 15",
+    "sold_checked": true
   },
   "51061164": {
     "logged": true,

@@ -23963,7 +23963,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
     "price": 12000,
     "condition": "Б/у",
-    "model_key": "apple 16 pro max"
+    "model_key": "apple 16 pro max",
+    "sold_checked": true
   },
   "18114128": {
     "logged": true,
@@ -24509,6 +24510,16 @@
     "price": 2600,
     "condition": "Б/у",
     "model_key": "samsung s21 ultra",
+    "verified_model": null
+  },
+  "29249314": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17292493_xiaomi-redmi-note-14pro/",
+    "title": "Xiaomi Redmi Note 14 pro",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro",
     "verified_model": null
   }
 }

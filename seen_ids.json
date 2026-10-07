@@ -24402,5 +24402,15 @@
     "model_key": "apple xs",
     "verified_model": null,
     "sold_checked": true
+  },
+  "29150964": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17291509_apple-iphone-xs-max-64-gb-gold/",
+    "title": "Apple iPhone Xs Max, 64 gb, Gold",
+    "price": 1900,
+    "condition": "Б/у",
+    "model_key": "apple xs max",
+    "verified_model": null
   }
 }

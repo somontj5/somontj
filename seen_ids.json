@@ -24070,5 +24070,15 @@
     "price": 5999,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "35713128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17288357_apple-iphone-13-128-gb-starlight/",
+    "title": "Apple iPhone 13, 128 gb, Starlight",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "apple 13",
+    "verified_model": null
   }
 }

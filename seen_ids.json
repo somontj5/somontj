@@ -23608,7 +23608,8 @@
     "price": 1150,
     "condition": "Б/у",
     "model_key": "apple xs",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17548256": {
     "logged": true,
@@ -23939,5 +23940,14 @@
     "price": 1960,
     "condition": "Б/у",
     "model_key": "samsung s21 pilus"
+  },
+  "28256128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17286728_samsung-a25-6-128gb/",
+    "title": "Samsung Galaxy A25 6/128gb",
+    "price": 1650,
+    "condition": "Б/у",
+    "model_key": "samsung a25"
   }
 }

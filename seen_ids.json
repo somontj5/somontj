@@ -23822,7 +23822,8 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "apple xs max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "34966256": {
     "logged": true,
@@ -24298,5 +24299,14 @@
     "price": 3999,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "03915128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17290039_telefon-samsung-a15-128gb/",
+    "title": "Samsung Galaxy А15, 128gb",
+    "price": 1430,
+    "condition": "Б/у",
+    "model_key": "samsung а15"
   }
 }

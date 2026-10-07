@@ -23513,7 +23513,8 @@
     "price": 1320,
     "condition": "Б/у",
     "model_key": "infinix smart",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "33511128": {
     "logged": true,
@@ -23534,7 +23535,8 @@
     "price": 1320,
     "condition": "Б/у",
     "model_key": "infinix",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "84418632": {
     "logged": true,
@@ -24049,5 +24051,24 @@
     "price": 3666,
     "condition": "Б/у",
     "model_key": "apple 13 pro max"
+  },
+  "87973128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17287973_apple-iphone-xr-128-gb-white/",
+    "title": "Apple iPhone Xr, 128 gb, White",
+    "price": 1550,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
+  },
+  "21514256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17288215_apple-iphone-14-pro-256-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro, 256 gb, Deep Purple",
+    "price": 5999,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

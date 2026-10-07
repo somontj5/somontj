@@ -24389,7 +24389,8 @@
     "title": "Apple iPhone 16 Pro, 512 gb, Black Titanium",
     "price": 9600,
     "condition": "Б/у",
-    "model_key": "apple 16 pro"
+    "model_key": "apple 16 pro",
+    "sold_checked": true
   },
   "29112564": {
     "logged": true,
@@ -24399,6 +24400,7 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "apple xs",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   }
 }

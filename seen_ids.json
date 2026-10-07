@@ -23663,7 +23663,8 @@
     "price": 220,
     "condition": "Б/у",
     "model_key": "apple 5",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "95715128": {
     "logged": true,
@@ -23683,7 +23684,8 @@
     "price": 1499,
     "condition": "Б/у",
     "model_key": "apple 11 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "21315128": {
     "logged": true,
@@ -24185,5 +24187,24 @@
     "condition": "Б/у",
     "model_key": "redmi 9a",
     "verified_model": null
+  },
+  "28969656": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17289696_samsung-galaxy-a56/",
+    "title": "Samsung Galaxy A56",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "samsung a56",
+    "verified_model": null
+  },
+  "28964422": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17289644_samsung-s22ultra/",
+    "title": "Samsung Galaxy S22 Ultra, 256gb",
+    "price": 4100,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
   }
 }

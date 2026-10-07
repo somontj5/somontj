@@ -23943,7 +23943,8 @@
     "title": "Телефон Redmi Note 9 128gb Glabal Version 5G",
     "price": 844,
     "condition": "Б/у",
-    "model_key": "redmi note 9"
+    "model_key": "redmi note 9",
+    "sold_checked": true
   },
   "84114128": {
     "logged": true,
@@ -23980,7 +23981,8 @@
     "title": "Samsung Galaxy S21 Pilus 256gb Carea 5G",
     "price": 1960,
     "condition": "Б/у",
-    "model_key": "samsung s21 pilus"
+    "model_key": "samsung s21 pilus",
+    "sold_checked": true
   },
   "28256128": {
     "logged": true,
@@ -24466,6 +24468,35 @@
     "price": 450,
     "condition": "Б/у",
     "model_key": "tecno spark 7",
+    "verified_model": null
+  },
+  "72921826": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17292182_oneplus-ace-6t/",
+    "title": "Oneplus Ace 6T",
+    "price": 5700,
+    "condition": "Б/у",
+    "model_key": "oneplus ace 6t"
+  },
+  "14811128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17292148_apple-iphone-11-128-gb-black/",
+    "title": "Apple iPhone 11, 128 gb, Black",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "17292215": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17292215_telefon-samsung/",
+    "title": "Телефон Samsung",
+    "price": 2649,
+    "condition": "Б/у",
+    "model_key": "samsung",
     "verified_model": null
   }
 }

@@ -23197,7 +23197,8 @@
     "title": "Apple iPhone 12 mini, 64 gb, Blue",
     "price": 1700,
     "condition": "Б/у",
-    "model_key": "apple 12 mini"
+    "model_key": "apple 12 mini",
+    "sold_checked": true
   },
   "85612128": {
     "logged": true,
@@ -23757,6 +23758,26 @@
     "price": 600,
     "condition": "Б/у",
     "model_key": "honor 10x",
+    "verified_model": null
+  },
+  "72860759": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17286075_samsung-s9/",
+    "title": "Samsung Galaxy s9",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "samsung s9",
+    "verified_model": null
+  },
+  "28601964": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17286019_apple-iphone-xs-max-64-gb-gold/",
+    "title": "Apple iPhone Xs Max, 64 gb, Gold",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "apple xs max",
     "verified_model": null
   }
 }

@@ -23567,7 +23567,8 @@
     "title": "Apple iPhone Air, 256 gb, Space Black",
     "price": 11000,
     "condition": "Б/у",
-    "model_key": "apple air"
+    "model_key": "apple air",
+    "sold_checked": true
   },
   "72845446": {
     "logged": true,
@@ -24092,5 +24093,14 @@
     "price": 999,
     "condition": "Б/у",
     "model_key": "apple 8"
+  },
+  "47916256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17288479_apple-iphone-16-pro-max-256-gb-black-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
+    "price": 7299,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   }
 }

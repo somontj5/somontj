@@ -23577,7 +23577,8 @@
     "price": 2100,
     "condition": "Б/у",
     "model_key": "tecno pova 6 neo",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17284615": {
     "logged": true,

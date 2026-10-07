@@ -23373,7 +23373,8 @@
     "price": 1750,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "19416256": {
     "logged": true,
@@ -23890,5 +23891,14 @@
     "price": 2344,
     "condition": "Б/у",
     "model_key": "redmi note 14 pro"
+  },
+  "94391285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17286943_telefon-redmi-note-9-128gb-glabal-version-5g/",
+    "title": "Телефон Redmi Note 9 128gb Glabal Version 5G",
+    "price": 844,
+    "condition": "Б/у",
+    "model_key": "redmi note 9"
   }
 }

@@ -23909,7 +23909,8 @@
     "title": "Apple iPhone 14, 128 gb, Starlight",
     "price": 3600,
     "condition": "Б/у",
-    "model_key": "apple 14"
+    "model_key": "apple 14",
+    "sold_checked": true
   },
   "17816256": {
     "logged": true,

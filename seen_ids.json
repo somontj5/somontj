@@ -23611,7 +23611,8 @@
     "price": 599,
     "condition": "Б/у",
     "model_key": "infinix",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "28485464": {
     "logged": true,
@@ -24122,6 +24123,16 @@
     "price": 2300,
     "condition": "Б/у",
     "model_key": "apple 11",
+    "verified_model": null
+  },
+  "71812256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17288718_apple-iphone-12-256-gb-blue/",
+    "title": "Apple iPhone 12, 256 gb, Blue",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "apple 12",
     "verified_model": null
   }
 }

@@ -24306,7 +24306,8 @@
     "title": "Apple iPhone 14 Pro, 256 gb, Deep Purple",
     "price": 3999,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "03915128": {
     "logged": true,

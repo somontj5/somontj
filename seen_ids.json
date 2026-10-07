@@ -23748,5 +23748,15 @@
     "price": 5850,
     "condition": "Б/у",
     "model_key": "apple 15 pro"
+  },
+  "28598710": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17285987_honor-10x/",
+    "title": "Honor 10X",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "honor 10x",
+    "verified_model": null
   }
 }

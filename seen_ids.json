@@ -23260,7 +23260,8 @@
     "title": "Xiaomi Redmi 12",
     "price": 850,
     "condition": "Б/у",
-    "model_key": "redmi 12"
+    "model_key": "redmi 12",
+    "sold_checked": true
   },
   "80400128": {
     "logged": true,
@@ -23800,5 +23801,23 @@
     "price": 720,
     "condition": "Б/у",
     "model_key": "realme c25y"
+  },
+  "38014128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17286380_apple-iphone-14-pro-128-gb-space-black/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Space Black",
+    "price": 5399,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
+  },
+  "96048128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17286389_infinix-note-60-4-8-128gb/",
+    "title": "Infinix Note 60 4+8-128гб",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "infinix note 60 4 8"
   }
 }

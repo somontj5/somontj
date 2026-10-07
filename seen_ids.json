@@ -24012,7 +24012,8 @@
     "title": "Samsung Galaxy F04 64gb 2sim Vetnam 5G",
     "price": 960,
     "condition": "Б/у",
-    "model_key": "samsung f04"
+    "model_key": "samsung f04",
+    "sold_checked": true
   },
   "35151285": {
     "logged": true,
@@ -24562,6 +24563,16 @@
     "price": 599,
     "condition": "Б/у",
     "model_key": "apple 8 plus",
+    "verified_model": null
+  },
+  "98661164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17289866_apple-iphone-11-64-gb-white/",
+    "title": "Apple iPhone 11, 64 gb, White",
+    "price": 1799,
+    "condition": "Б/у",
+    "model_key": "apple 11",
     "verified_model": null
   }
 }

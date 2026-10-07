@@ -24482,7 +24482,8 @@
     "title": "Oneplus Ace 6T",
     "price": 5700,
     "condition": "Б/у",
-    "model_key": "oneplus ace 6t"
+    "model_key": "oneplus ace 6t",
+    "sold_checked": true
   },
   "14811128": {
     "logged": true,

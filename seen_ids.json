@@ -24175,5 +24175,15 @@
     "price": 6199,
     "condition": "Б/у",
     "model_key": "apple 15 pro"
+  },
+  "69635189": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16963518_xiaomi-redmi-9a/",
+    "title": "Xiaomi Redmi 9A",
+    "price": 400,
+    "condition": "Б/у",
+    "model_key": "redmi 9a",
+    "verified_model": null
   }
 }

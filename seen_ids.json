@@ -23546,7 +23546,8 @@
     "price": 449,
     "condition": "Б/у",
     "model_key": "apple 6",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "15652562": {
     "logged": true,
@@ -24080,5 +24081,14 @@
     "condition": "Б/у",
     "model_key": "apple 13",
     "verified_model": null
+  },
+  "88418864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17288418_apple-iphone-8-64-gb-silver/",
+    "title": "Apple iPhone 8, 64 gb, Silver",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "apple 8"
   }
 }

@@ -23404,7 +23404,8 @@
     "title": "Samsung Galaxy A12",
     "price": 950,
     "condition": "Б/у",
-    "model_key": "samsung a12"
+    "model_key": "samsung a12",
+    "sold_checked": true
   },
   "83642732": {
     "logged": true,
@@ -23436,7 +23437,8 @@
     "price": 1799,
     "condition": "Б/у",
     "model_key": "apple 11 pro max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "28387014": {
     "logged": true,
@@ -23950,5 +23952,41 @@
     "price": 1650,
     "condition": "Б/у",
     "model_key": "samsung a25"
+  },
+  "10033225": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17286910_telefon-samsung-a03s-32gb-vetnam-2sim-5g/",
+    "title": "Samsung Galaxy А03s 32Gb Vetnam 2sim 5G",
+    "price": 840,
+    "condition": "Б/у",
+    "model_key": "samsung а03s"
+  },
+  "27046425": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17286927_telefon-samsung-f04-64gb-2sim-vetnam-5g/",
+    "title": "Samsung Galaxy F04 64gb 2sim Vetnam 5G",
+    "price": 960,
+    "condition": "Б/у",
+    "model_key": "samsung f04"
+  },
+  "35151285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17286935_telefon-samsung-a15-128-vetnam-5g/",
+    "title": "Samsung galaxy A15 128 Vetnam 5G",
+    "price": 1366,
+    "condition": "Б/у",
+    "model_key": "samsung a15 128 vetnam"
+  },
+  "21128825": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17286973_telefon-samsung-21-128-8-2sim-vetnam-5g-silver/",
+    "title": "Samsung Galaxy S21+ 5G 128/8 2sim Vetnam 5G Silver",
+    "price": 2100,
+    "condition": "Б/у",
+    "model_key": "samsung s21 plus"
   }
 }

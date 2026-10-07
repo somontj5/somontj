@@ -23716,7 +23716,8 @@
     "price": 1599,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17285444": {
     "logged": true,
@@ -23726,7 +23727,8 @@
     "price": 1759,
     "condition": "Б/у",
     "model_key": "samsung a16",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "34400256": {
     "logged": true,
@@ -24225,6 +24227,25 @@
     "price": 3000,
     "condition": "Б/у",
     "model_key": "apple 12 pro max",
+    "verified_model": null
+  },
+  "84722256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17289847_samsung-galaxy-s22-ultra-256gb/",
+    "title": "Samsung Galaxy S22 Ultra 256Gb",
+    "price": 3699,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
+  },
+  "28976424": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17289764_s24fe/",
+    "title": "Samsung Galaxy S24",
+    "price": 2600,
+    "condition": "Б/у",
+    "model_key": "samsung s24",
     "verified_model": null
   }
 }

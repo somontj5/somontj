@@ -23853,7 +23853,8 @@
     "title": "Apple iPhone 14 Pro, 128 gb, Space Black",
     "price": 5399,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "96048128": {
     "logged": true,
@@ -24348,5 +24349,15 @@
     "price": 2420,
     "condition": "Б/у",
     "model_key": "samsung а54 vetnam"
+  },
+  "17973215": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16917973_galaxy-s21-5g/",
+    "title": "Samsung Galaxy S21+ 5G",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "samsung s21 plus",
+    "verified_model": null
   }
 }

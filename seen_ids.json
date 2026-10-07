@@ -23972,7 +23972,8 @@
     "title": "Apple iPhone 14 Pro Max, 128 gb, Deep Purple",
     "price": 5599,
     "condition": "Б/у",
-    "model_key": "apple 14 pro max"
+    "model_key": "apple 14 pro max",
+    "sold_checked": true
   },
   "20212565": {
     "logged": true,
@@ -24497,6 +24498,16 @@
     "price": 2649,
     "condition": "Б/у",
     "model_key": "samsung",
+    "verified_model": null
+  },
+  "92366100": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17292366_be-karopka-sastaiani-zur-100-foiz/",
+    "title": "Samsung Galaxy S21 Ultra",
+    "price": 2600,
+    "condition": "Б/у",
+    "model_key": "samsung s21 ultra",
     "verified_model": null
   }
 }

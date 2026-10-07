@@ -24521,5 +24521,15 @@
     "condition": "Б/у",
     "model_key": "redmi note 14 pro",
     "verified_model": null
+  },
+  "17292630": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17292630_arzon-meshad/",
+    "title": "Телефон Samsung",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "samsung",
+    "verified_model": null
   }
 }

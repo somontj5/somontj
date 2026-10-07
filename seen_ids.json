@@ -23780,7 +23780,8 @@
     "title": "Apple iPhone 16 Pro Max, 512 gb, Natural Titanium",
     "price": 7666,
     "condition": "Б/у",
-    "model_key": "apple 16 pro max"
+    "model_key": "apple 16 pro max",
+    "sold_checked": true
   },
   "65115128": {
     "logged": true,
@@ -23800,7 +23801,8 @@
     "price": 600,
     "condition": "Б/у",
     "model_key": "honor 10x",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "72860759": {
     "logged": true,
@@ -24278,5 +24280,23 @@
     "price": 2380,
     "condition": "Б/у",
     "model_key": "samsung a54"
+  },
+  "00980464": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17290098_samsung-galaxy-f04-64gb-duos-dubai/",
+    "title": "Samsung Galaxy F04 64Gb Duos Dubai",
+    "price": 940,
+    "condition": "Б/у",
+    "model_key": "samsung f04"
+  },
+  "13314256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17290133_apple-iphone-14-pro-256-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro, 256 gb, Deep Purple",
+    "price": 3999,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

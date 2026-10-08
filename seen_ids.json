@@ -24303,7 +24303,8 @@
     "title": "Samsung Galaxy A03s",
     "price": 790,
     "condition": "Б/у",
-    "model_key": "samsung a03s"
+    "model_key": "samsung a03s",
+    "sold_checked": true
   },
   "99932128": {
     "logged": true,
@@ -24312,7 +24313,8 @@
     "title": "Samsung Galaxy А32 128гб",
     "price": 1399,
     "condition": "Б/у",
-    "model_key": "samsung а32"
+    "model_key": "samsung а32",
+    "sold_checked": true
   },
   "91754256": {
     "logged": true,
@@ -24387,7 +24389,8 @@
     "title": "Samsung Galaxy А54 256/8Gb Vetnam",
     "price": 2420,
     "condition": "Б/у",
-    "model_key": "samsung а54 vetnam"
+    "model_key": "samsung а54 vetnam",
+    "sold_checked": true
   },
   "17973215": {
     "logged": true,
@@ -24795,5 +24798,33 @@
     "price": 9000,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "42932464": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17295429_samsung-galaxy-a32-4-64/",
+    "title": "Samsung galaxy a32 4/64",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "samsung a32 4 64",
+    "verified_model": null
+  },
+  "29540522": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17295405_samsung-galaxy-s22/",
+    "title": "Samsung Galaxy S22",
+    "price": 2800,
+    "condition": "Б/у",
+    "model_key": "samsung s22"
+  },
+  "95326225": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17295326_samsung-galaxy-s22ultra-5g/",
+    "title": "Samsung Galaxy S22Ultra 5G",
+    "price": 3399,
+    "condition": "Б/у",
+    "model_key": "samsung s22ultra"
   }
 }

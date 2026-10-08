@@ -24835,6 +24835,7 @@
     "title": "Samsung Galaxy Note 10",
     "price": 1399,
     "condition": "Б/у",
-    "model_key": "samsung note 10"
+    "model_key": "samsung note 10",
+    "sold_checked": true
   }
 }

@@ -25247,5 +25247,33 @@
     "condition": "Б/у",
     "model_key": "samsung s21",
     "verified_model": null
+  },
+  "19613128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17298196_apple-iphone-13-pro-128-gb-graphite/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Graphite",
+    "price": 3350,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
+  },
+  "29905624": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17299056_samsung-s24fe/",
+    "title": "Samsung Galaxy S24FE",
+    "price": 3500,
+    "condition": "Б/у",
+    "model_key": "samsung s24fe"
+  },
+  "99027128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17299027_apple-iphone-xr-128-gb-white/",
+    "title": "Apple iPhone Xr, 128 gb, White",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
   }
 }

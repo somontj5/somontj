@@ -24907,7 +24907,8 @@
     "title": "Xiaomi Redmi 12c 64gb 2025",
     "price": 950,
     "condition": "Б/у",
-    "model_key": "redmi 12c"
+    "model_key": "redmi 12c",
+    "sold_checked": true
   },
   "88713256": {
     "logged": true,
@@ -24935,7 +24936,8 @@
     "title": "Samsung Galaxy S22 Ultra 256Gb Carea 5G",
     "price": 3488,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "61601325": {
     "logged": true,
@@ -25334,5 +25336,35 @@
     "condition": "Б/у",
     "model_key": "apple 16 pro",
     "sold_checked": true
+  },
+  "72999925": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17299992_honor-x5b-plus/",
+    "title": "Honor X5b Plus",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "honor x5b plus",
+    "verified_model": null
+  },
+  "29998317": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17299983_oppo-a17k/",
+    "title": "Oppo A17k",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "oppo a17k",
+    "verified_model": null
+  },
+  "72999676": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17299967_redmo-note-6-pro/",
+    "title": "Xiaomi Redmi Note 6 Pro",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "redmi note 6 pro",
+    "verified_model": null
   }
 }

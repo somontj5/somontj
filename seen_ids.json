@@ -25331,6 +25331,7 @@
     "title": "Apple iPhone 16 Pro, 128 gb, Black Titanium",
     "price": 9000,
     "condition": "Б/у",
-    "model_key": "apple 16 pro"
+    "model_key": "apple 16 pro",
+    "sold_checked": true
   }
 }

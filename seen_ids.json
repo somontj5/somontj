@@ -24455,7 +24455,8 @@
     "title": "Apple iPhone 14 Pro Max, 256 gb, Space Black",
     "price": 6800,
     "condition": "Б/у",
-    "model_key": "apple 14 pro max"
+    "model_key": "apple 14 pro max",
+    "sold_checked": true
   },
   "74751264": {
     "logged": true,

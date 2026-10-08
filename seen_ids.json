@@ -24074,7 +24074,8 @@
     "price": 2699,
     "condition": "Б/у",
     "model_key": "redmi note 14 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "28807815": {
     "logged": true,
@@ -24084,7 +24085,8 @@
     "price": 1199,
     "condition": "Б/у",
     "model_key": "samsung a15",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "18313128": {
     "logged": true,
@@ -24609,5 +24611,33 @@
     "price": 2200,
     "condition": "Б/у",
     "model_key": "tecno spark slim"
+  },
+  "61012256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17293926_samsung-galaxy-not-10-plus-12-256gb/",
+    "title": "Samsung Galaxy Not 10 Plus 12/256Gb",
+    "price": 1650,
+    "condition": "Б/у",
+    "model_key": "samsung not 10 plus"
+  },
+  "29391315": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17293913_samsung-a15/",
+    "title": "Samsung Galaxy A15",
+    "price": 1189,
+    "condition": "Б/у",
+    "model_key": "samsung a15",
+    "verified_model": null
+  },
+  "91614128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17293916_apple-iphone-14-pro-128-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Deep Purple",
+    "price": 4599,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

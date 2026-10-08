@@ -376,5 +376,14 @@
     "blocked_at": "2026-10-07T09:47:34",
     "updated_at": "2026-10-07T09:47:34",
     "active_ads_at_block": 1
+  },
+  "11140373": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/11140373/",
+    "reason": "похоже на перекупщика по фото: На фото видна витрина или брендированная стойка магазина с характерными планками, что указывает на торговую точку.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17293913_samsung-a15/",
+    "blocked_at": "2026-10-08T04:48:51",
+    "updated_at": "2026-10-08T04:48:51",
+    "active_ads_at_block": 5
   }
 }

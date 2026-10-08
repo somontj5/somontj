@@ -24927,7 +24927,8 @@
     "title": "Samsung galaxy Note 10+ 256gb Carea 5G",
     "price": 1650,
     "condition": "Б/у",
-    "model_key": "samsung note 10 plus"
+    "model_key": "samsung note 10 plus",
+    "sold_checked": true
   },
   "56222565": {
     "logged": true,
@@ -24993,7 +24994,8 @@
     "title": "Samsung Galaxy А56 128gb Vetnam 5G",
     "price": 3340,
     "condition": "Б/у",
-    "model_key": "samsung а56"
+    "model_key": "samsung а56",
+    "sold_checked": true
   },
   "45123225": {
     "logged": true,
@@ -25365,6 +25367,25 @@
     "price": 600,
     "condition": "Б/у",
     "model_key": "redmi note 6 pro",
+    "verified_model": null
+  },
+  "25121024": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17300062_poco-f5-12-1024/",
+    "title": "Xiaomi Poco F5 12/1024",
+    "price": 3200,
+    "condition": "Б/у",
+    "model_key": "poco f5 12 1024"
+  },
+  "96542664": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17296542_apple-iphone-6s-64-gb/",
+    "title": "Apple iPhone 6s, 64 gb",
+    "price": 499,
+    "condition": "Б/у",
+    "model_key": "apple 6s",
     "verified_model": null
   }
 }

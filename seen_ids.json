@@ -24230,7 +24230,8 @@
     "price": 400,
     "condition": "Б/у",
     "model_key": "redmi 9a",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "28969656": {
     "logged": true,
@@ -24759,5 +24760,15 @@
     "price": 5500,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "94603215": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17294603_samsung-galaxy-s21ultra-5g/",
+    "title": "Samsung Galaxy s21Ultra 5G",
+    "price": 2399,
+    "condition": "Б/у",
+    "model_key": "samsung s21ultra",
+    "verified_model": null
   }
 }

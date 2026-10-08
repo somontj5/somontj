@@ -394,5 +394,14 @@
     "blocked_at": "2026-10-08T05:28:35",
     "updated_at": "2026-10-08T05:28:35",
     "active_ads_at_block": 17
+  },
+  "8173994": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/8173994/",
+    "reason": "похоже на перекупщика по фото: На заднем плане фотографий отчетливо видна витрина магазина, прилавок с подсветкой и торговый зал.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17294603_samsung-galaxy-s21ultra-5g/",
+    "blocked_at": "2026-10-08T06:09:36",
+    "updated_at": "2026-10-08T06:09:36",
+    "active_ads_at_block": 1
   }
 }

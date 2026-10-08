@@ -24199,7 +24199,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
     "price": 7300,
     "condition": "Б/у",
-    "model_key": "apple 16 pro max"
+    "model_key": "apple 16 pro max",
+    "sold_checked": true
   },
   "12852026": {
     "logged": true,
@@ -24217,7 +24218,8 @@
     "title": "Apple iPhone 15 Pro, 128 gb, Blue Titanium",
     "price": 6199,
     "condition": "Б/у",
-    "model_key": "apple 15 pro"
+    "model_key": "apple 15 pro",
+    "sold_checked": true
   },
   "69635189": {
     "logged": true,
@@ -24701,5 +24703,51 @@
     "price": 1700,
     "condition": "Б/у",
     "model_key": "redmi not 14"
+  },
+  "94281128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17294281_apple-iphone-xr-128-gb-white/",
+    "title": "Apple iPhone Xr, 128 gb, White",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
+  },
+  "29424711": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17294247_redmi-note-11/",
+    "title": "Xiaomi Redmi note 11",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "redmi note 11"
+  },
+  "25012128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17294250_apple-iphone-12-pro-128-gb-silver/",
+    "title": "Apple iPhone 12 pro, 128 gb, Silver",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro"
+  },
+  "42391164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17294239_apple-iphone-11-pro-64-gb-space-grey/",
+    "title": "Apple iPhone 11 Pro, 64 gb, Space Grey",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro"
+  },
+  "22214128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17294222_apple-iphone-14-pro-128-gb-space-black/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Space Black",
+    "price": 4500,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

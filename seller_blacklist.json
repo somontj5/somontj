@@ -385,5 +385,14 @@
     "blocked_at": "2026-10-08T04:48:51",
     "updated_at": "2026-10-08T04:48:51",
     "active_ads_at_block": 5
+  },
+  "14366200": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/14366200/",
+    "reason": "похоже на перекупщика по фото: Фон на фото представляет собой характерную стеновую панель/стенд, а у продавца 17 активных объявлений.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17294281_apple-iphone-xr-128-gb-white/",
+    "blocked_at": "2026-10-08T05:28:35",
+    "updated_at": "2026-10-08T05:28:35",
+    "active_ads_at_block": 17
   }
 }

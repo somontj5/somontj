@@ -24189,7 +24189,8 @@
     "title": "Samsung Galaxy A10s",
     "price": 300,
     "condition": "Б/у",
-    "model_key": "samsung a10s"
+    "model_key": "samsung a10s",
+    "sold_checked": true
   },
   "83316256": {
     "logged": true,

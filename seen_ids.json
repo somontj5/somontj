@@ -24711,7 +24711,8 @@
     "title": "Samsung Galaxy А15 128гб",
     "price": 1440,
     "condition": "Б/у",
-    "model_key": "samsung а15"
+    "model_key": "samsung а15",
+    "sold_checked": true
   },
   "29401412": {
     "logged": true,

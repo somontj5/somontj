@@ -24751,7 +24751,8 @@
     "title": "Xiaomi Redmi note 11",
     "price": 700,
     "condition": "Б/у",
-    "model_key": "redmi note 11"
+    "model_key": "redmi note 11",
+    "sold_checked": true
   },
   "25012128": {
     "logged": true,
@@ -24797,7 +24798,8 @@
     "price": 2399,
     "condition": "Б/у",
     "model_key": "samsung s21ultra",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "61614128": {
     "logged": true,
@@ -24843,7 +24845,8 @@
     "title": "Samsung Galaxy S22Ultra 5G",
     "price": 3399,
     "condition": "Б/у",
-    "model_key": "samsung s22ultra"
+    "model_key": "samsung s22ultra",
+    "sold_checked": true
   },
   "29551110": {
     "logged": true,
@@ -25029,5 +25032,14 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "samsung f04"
+  },
+  "49513128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17296495_apple-iphone-13-pro-max-128-gb-alpine-green/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Alpine Green",
+    "price": 5799,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
   }
 }

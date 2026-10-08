@@ -24693,7 +24693,8 @@
     "title": "Xiaomi Redmi Not 12S",
     "price": 850,
     "condition": "Б/у",
-    "model_key": "redmi not 12s"
+    "model_key": "redmi not 12s",
+    "sold_checked": true
   },
   "24008256": {
     "logged": true,

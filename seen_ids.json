@@ -24457,7 +24457,8 @@
     "price": 1900,
     "condition": "Б/у",
     "model_key": "apple xs max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "16621164": {
     "logged": true,
@@ -24467,7 +24468,8 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "97414256": {
     "logged": true,
@@ -24486,7 +24488,8 @@
     "title": "Apple iPhone 12 mini, 64 gb, Blue",
     "price": 1800,
     "condition": "Б/у",
-    "model_key": "apple 12 mini"
+    "model_key": "apple 12 mini",
+    "sold_checked": true
   },
   "55212862": {
     "logged": true,
@@ -24497,7 +24500,8 @@
     "price": 1450,
     "condition": "Б/у",
     "model_key": "samsung а52",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "21307644": {
     "logged": true,
@@ -24507,7 +24511,8 @@
     "price": 450,
     "condition": "Б/у",
     "model_key": "tecno spark 7",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "72921826": {
     "logged": true,
@@ -24898,5 +24903,55 @@
     "price": 3488,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra"
+  },
+  "61601325": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17296160_telefon-samsung-a13-2sim-vetnam-5g/",
+    "title": "Samsung galaxy A13 2sim Vetnam 5G",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "samsung a13 2sim vetnam"
+  },
+  "29557013": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17295570_redmi-13c/",
+    "title": "Xiaomi Redmi 13C",
+    "price": 400,
+    "condition": "Б/у",
+    "model_key": "redmi 13c",
+    "verified_model": null
+  },
+  "17112128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17296171_telefon-redmi-note-12s-128gb-glabal-version/",
+    "title": "Xiaomi Redmi Note 12s 128gb Glabal Version",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "redmi note 12s"
+  },
+  "14826512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17296148_samsung-galaksi-26-ultra-512gb/",
+    "title": "Samsung galaxy S26 ultra 512gb",
+    "price": 14000,
+    "condition": "Б/у",
+    "model_key": "samsung s26 ultra"
+  },
+  "17296128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17296128_telefon-bekhad-khub-raztamoshka-shudagi/",
+    "title": "Телефон Xiaomi Redmi",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "redmi",
+    "verified_model": null
+  },
+  "18561285": {
+    "logged": true
   }
 }

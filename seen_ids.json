@@ -24241,7 +24241,8 @@
     "price": 2500,
     "condition": "Б/у",
     "model_key": "samsung a56",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "28964422": {
     "logged": true,
@@ -24281,7 +24282,8 @@
     "title": "Samsung Galaxy S22 Ultra 256Gb",
     "price": 3699,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "28976424": {
     "logged": true,
@@ -24291,7 +24293,8 @@
     "price": 2600,
     "condition": "Б/у",
     "model_key": "samsung s24",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "29002703": {
     "logged": true,
@@ -24318,7 +24321,8 @@
     "title": "Samsung Galaxy A54, 256gb",
     "price": 2380,
     "condition": "Б/у",
-    "model_key": "samsung a54"
+    "model_key": "samsung a54",
+    "sold_checked": true
   },
   "00980464": {
     "logged": true,

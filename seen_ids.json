@@ -24353,7 +24353,8 @@
     "title": "Samsung Galaxy А15, 128gb",
     "price": 1430,
     "condition": "Б/у",
-    "model_key": "samsung а15"
+    "model_key": "samsung а15",
+    "sold_checked": true
   },
   "87214128": {
     "logged": true,
@@ -24372,7 +24373,8 @@
     "title": "Xiaomi Redmi Note 14 Pro 256Gb",
     "price": 2300,
     "condition": "Б/у",
-    "model_key": "redmi note 14 pro"
+    "model_key": "redmi note 14 pro",
+    "sold_checked": true
   },
   "08315128": {
     "logged": true,
@@ -24402,7 +24404,8 @@
     "price": 2500,
     "condition": "Б/у",
     "model_key": "samsung s21 plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "29083912": {
     "logged": true,
@@ -24857,5 +24860,23 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "samsung a54"
+  },
+  "12642025": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17296032_telefon-redmi-12c-64gb-2025/",
+    "title": "Xiaomi Redmi 12c 64gb 2025",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "redmi 12c"
+  },
+  "88713256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17295887_apple-iphone-13-pro-max-256-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro Max, 256 gb, Sierra Blue",
+    "price": 4777,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
   }
 }

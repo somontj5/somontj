@@ -24598,7 +24598,8 @@
     "price": 2250,
     "condition": "Б/у",
     "model_key": "apple 11 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "92794864": {
     "logged": true,
@@ -24608,7 +24609,8 @@
     "price": 599,
     "condition": "Б/у",
     "model_key": "apple 8 plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "98661164": {
     "logged": true,
@@ -25009,5 +25011,23 @@
     "price": 1650,
     "condition": "Б/у",
     "model_key": "redmi note 14 glabal"
+  },
+  "27291285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17296272_telefon-redmi-note-9-128gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 9 128gb Glabal Version 5G",
+    "price": 844,
+    "condition": "Б/у",
+    "model_key": "redmi note 9"
+  },
+  "26104645": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17296261_telefon-samsung-04-64gb-dual-sim-5g/",
+    "title": "Samsung galaxy F04 64Gb Dual sim 5G",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "samsung f04"
   }
 }

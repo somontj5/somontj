@@ -24729,7 +24729,8 @@
     "title": "Apple iPhone 13 Pro, 256 gb, Graphite",
     "price": 4400,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "53146128": {
     "logged": true,
@@ -24738,7 +24739,8 @@
     "title": "Xiaomi Redmi Not 14 6/128гб",
     "price": 1700,
     "condition": "Б/у",
-    "model_key": "redmi not 14"
+    "model_key": "redmi not 14",
+    "sold_checked": true
   },
   "94281128": {
     "logged": true,
@@ -25140,5 +25142,24 @@
     "price": 3899,
     "condition": "Б/у",
     "model_key": "apple 15"
+  },
+  "74916256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17297749_apple-iphone-16-pro-max-256-gb-black-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
+    "price": 7499,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
+  },
+  "72976802": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17297680_samsung-galaxy-j2-prime/",
+    "title": "Samsung Galaxy J2 Prime, 32gb",
+    "price": 250,
+    "condition": "Б/у",
+    "model_key": "samsung j2 prime",
+    "verified_model": null
   }
 }

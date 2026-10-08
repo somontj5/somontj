@@ -24897,7 +24897,8 @@
     "title": "Samsung galaxy A54",
     "price": 2000,
     "condition": "Б/у",
-    "model_key": "samsung a54"
+    "model_key": "samsung a54",
+    "sold_checked": true
   },
   "12642025": {
     "logged": true,

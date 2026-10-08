@@ -24662,7 +24662,8 @@
     "title": "Samsung Galaxy Not 10 Plus 12/256Gb",
     "price": 1650,
     "condition": "Б/у",
-    "model_key": "samsung not 10 plus"
+    "model_key": "samsung not 10 plus",
+    "sold_checked": true
   },
   "29391315": {
     "logged": true,
@@ -25121,5 +25122,23 @@
     "price": 799,
     "condition": "Б/у",
     "model_key": null
+  },
+  "29755721": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17297557_samsung-galaxy-s21/",
+    "title": "Samsung galaxy s21",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "samsung s21"
+  },
+  "45015128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17294450_apple-iphone-15-128-gb-black/",
+    "title": "Apple iPhone 15, 128 gb, Black",
+    "price": 3899,
+    "condition": "Б/у",
+    "model_key": "apple 15"
   }
 }

@@ -25151,7 +25151,8 @@
     "title": "Samsung galaxy s21",
     "price": 1800,
     "condition": "Б/у",
-    "model_key": "samsung s21"
+    "model_key": "samsung s21",
+    "sold_checked": true
   },
   "45015128": {
     "logged": true,
@@ -25387,5 +25388,14 @@
     "condition": "Б/у",
     "model_key": "apple 6s",
     "verified_model": null
+  },
+  "12214256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17300122_apple-iphone-14-pro-max-256-gb-space-black/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb, Space Black",
+    "price": 5600,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
   }
 }

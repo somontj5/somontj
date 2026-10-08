@@ -25398,5 +25398,14 @@
     "price": 5600,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "30056522": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17300565_samsung-galaxy-s22-ultra/",
+    "title": "Samsung Galaxy s22 Ultra",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
   }
 }

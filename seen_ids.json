@@ -24668,7 +24668,8 @@
     "price": 1189,
     "condition": "Б/у",
     "model_key": "samsung a15",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "91614128": {
     "logged": true,

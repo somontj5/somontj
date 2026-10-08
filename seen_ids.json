@@ -24052,7 +24052,8 @@
     "title": "Samsung Galaxy A13 32Gb Vetnam 2sim",
     "price": 1044,
     "condition": "Б/у",
-    "model_key": "samsung a13"
+    "model_key": "samsung a13",
+    "sold_checked": true
   },
   "80215256": {
     "logged": true,
@@ -24585,6 +24586,16 @@
     "price": 300,
     "condition": "Б/у",
     "model_key": "apple 7 plus",
+    "verified_model": null
+  },
+  "43231739": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14323173_redmi-note-9-pro/",
+    "title": "Xiaomi Redmi Note 9 pro",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "redmi note 9 pro",
     "verified_model": null
   }
 }

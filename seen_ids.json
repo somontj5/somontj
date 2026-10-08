@@ -24720,7 +24720,8 @@
     "title": "Xiaomi redmi Note 12 pro",
     "price": 1550,
     "condition": "Б/у",
-    "model_key": "redmi note 12 pro"
+    "model_key": "redmi note 12 pro",
+    "sold_checked": true
   },
   "95913256": {
     "logged": true,
@@ -25161,5 +25162,23 @@
     "condition": "Б/у",
     "model_key": "samsung j2 prime",
     "verified_model": null
+  },
+  "17297820": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17297820_tecno-spark/",
+    "title": "Tecno Spark 50",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "tecno spark 50"
+  },
+  "77381164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17297738_apple-iphone-11-64-gb-purple/",
+    "title": "Apple iPhone 11, 64 gb, Purple",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "apple 11"
   }
 }

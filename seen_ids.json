@@ -24804,7 +24804,8 @@
     "title": "Apple iPhone 14 Pro, 256 gb, Space Black",
     "price": 5500,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "94603215": {
     "logged": true,
@@ -25216,5 +25217,14 @@
     "condition": "Б/у",
     "model_key": "samsung s22 ultra",
     "verified_model": null
+  },
+  "33412128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17298334_apple-iphone-12-pro-128-gb-pacific-blue/",
+    "title": "Apple iPhone 12 pro, 128 gb, Pacific Blue",
+    "price": 2666,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro"
   }
 }

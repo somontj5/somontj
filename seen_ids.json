@@ -25042,5 +25042,23 @@
     "price": 5799,
     "condition": "Б/у",
     "model_key": "apple 13 pro max"
+  },
+  "72968124": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17296812_redmi-4x/",
+    "title": "Xiaomi Redmi 4x, 16gb",
+    "price": 350,
+    "condition": "Б/у",
+    "model_key": "redmi 4x"
+  },
+  "67771110": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17296777_nokia-1110/",
+    "title": "Nokia 1110",
+    "price": 130,
+    "condition": "Б/у",
+    "model_key": "nokia 1110"
   }
 }

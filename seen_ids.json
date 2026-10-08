@@ -24209,7 +24209,8 @@
     "title": "Xiaomi Redmi Note 14 6/128Gb Global Version 5G 2026",
     "price": 1550,
     "condition": "Б/у",
-    "model_key": "redmi note 14"
+    "model_key": "redmi note 14",
+    "sold_checked": true
   },
   "92915128": {
     "logged": true,
@@ -24747,6 +24748,15 @@
     "url": "https://m.somon.tj/adv/17294222_apple-iphone-14-pro-128-gb-space-black/",
     "title": "Apple iPhone 14 Pro, 128 gb, Space Black",
     "price": 4500,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
+  },
+  "31614256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17294316_apple-iphone-14-pro-256-gb-space-black/",
+    "title": "Apple iPhone 14 Pro, 256 gb, Space Black",
+    "price": 5500,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
   }

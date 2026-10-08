@@ -24642,7 +24642,8 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "redmi note 9 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17293687": {
     "logged": true,
@@ -25081,5 +25082,15 @@
     "price": 4600,
     "condition": "Б/у",
     "model_key": "apple 13 pro max"
+  },
+  "97300100": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17297300_sastaiani-100/",
+    "title": "Xiaomi Redmi note 8 pro",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "redmi note 8 pro",
+    "verified_model": null
   }
 }

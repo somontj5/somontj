@@ -24548,7 +24548,8 @@
     "price": 1600,
     "condition": "Б/у",
     "model_key": "apple xs",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "77311256": {
     "logged": true,

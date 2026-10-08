@@ -24631,7 +24631,8 @@
     "price": 300,
     "condition": "Б/у",
     "model_key": "apple 7 plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "43231739": {
     "logged": true,
@@ -25070,5 +25071,14 @@
     "price": 3400,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra"
+  },
+  "00313128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17297003_apple-iphone-13-pro-max-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Sierra Blue",
+    "price": 4600,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
   }
 }

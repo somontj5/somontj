@@ -24773,7 +24773,8 @@
     "title": "Apple iPhone 12 pro, 128 gb, Silver",
     "price": 1800,
     "condition": "Б/у",
-    "model_key": "apple 12 pro"
+    "model_key": "apple 12 pro",
+    "sold_checked": true
   },
   "42391164": {
     "logged": true,

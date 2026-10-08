@@ -24846,7 +24846,8 @@
     "price": 750,
     "condition": "Б/у",
     "model_key": "samsung a32 4 64",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "29540522": {
     "logged": true,
@@ -25275,5 +25276,32 @@
     "condition": "Б/у",
     "model_key": "apple xr",
     "verified_model": null
+  },
+  "29767610": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17297676_redmi-10a/",
+    "title": "Xiaomi Redmi 10А",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "redmi 10а"
+  },
+  "29766001": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17297660_samsung-a01/",
+    "title": "Samsung Galaxy А01",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "samsung а01"
+  },
+  "29770370": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17297703_huawei-nova-y70/",
+    "title": "Huawei nova Y70",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "huawei nova y70"
   }
 }

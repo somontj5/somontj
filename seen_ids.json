@@ -24333,7 +24333,8 @@
     "title": "Samsung Galaxy F04 64Gb Duos Dubai",
     "price": 940,
     "condition": "Б/у",
-    "model_key": "samsung f04"
+    "model_key": "samsung f04",
+    "sold_checked": true
   },
   "13314256": {
     "logged": true,
@@ -24847,5 +24848,14 @@
     "condition": "Б/у",
     "model_key": "redmi note 14 pro",
     "verified_model": null
+  },
+  "29590654": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17295906_samsung-a-54/",
+    "title": "Samsung galaxy A54",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "samsung a54"
   }
 }

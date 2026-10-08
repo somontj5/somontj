@@ -24837,5 +24837,15 @@
     "condition": "Б/у",
     "model_key": "samsung note 10",
     "sold_checked": true
+  },
+  "29577414": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17295774_redmi-not-14-pro/",
+    "title": "Xiaomi Redmi note 14 Pro",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro",
+    "verified_model": null
   }
 }

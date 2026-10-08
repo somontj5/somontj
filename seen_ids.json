@@ -24652,7 +24652,8 @@
     "title": "Tecno spark Slim",
     "price": 2200,
     "condition": "Б/у",
-    "model_key": "tecno spark slim"
+    "model_key": "tecno spark slim",
+    "sold_checked": true
   },
   "61012256": {
     "logged": true,
@@ -25092,5 +25093,32 @@
     "condition": "Б/у",
     "model_key": "redmi note 8 pro",
     "verified_model": null
+  },
+  "40184128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16863401_redmi-note-8t-4-128gb/",
+    "title": "Xiaomi Redmi NOTE 8T 4/128гб",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "redmi note 8t"
+  },
+  "80171032": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16798017_redmi-10a-32gb/",
+    "title": "Xiaomi Redmi 10a 32гб",
+    "price": 599,
+    "condition": "Б/у",
+    "model_key": "redmi 10a"
+  },
+  "40530464": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16805405_realmu-c30s-4-64gb/",
+    "title": "Realmе C30s 4/64GB",
+    "price": 799,
+    "condition": "Б/у",
+    "model_key": null
   }
 }

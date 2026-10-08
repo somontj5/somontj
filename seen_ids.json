@@ -24702,7 +24702,8 @@
     "title": "Honor 400 Lite 8/256Gb",
     "price": 1799,
     "condition": "Б/у",
-    "model_key": "honor 400 lite"
+    "model_key": "honor 400 lite",
+    "sold_checked": true
   },
   "01215128": {
     "logged": true,
@@ -25181,5 +25182,15 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "apple 11"
+  },
+  "72978112": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17297811_samsung-galaxy-j2-core/",
+    "title": "Samsung Galaxy J2 Core",
+    "price": 300,
+    "condition": "Б/у",
+    "model_key": "samsung j2 core",
+    "verified_model": null
   }
 }

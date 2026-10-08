@@ -24380,7 +24380,8 @@
     "title": "Samsung Galaxy А15 128GB",
     "price": 1460,
     "condition": "Б/у",
-    "model_key": "samsung а15"
+    "model_key": "samsung а15",
+    "sold_checked": true
   },
   "66541288": {
     "logged": true,
@@ -24826,5 +24827,14 @@
     "price": 3399,
     "condition": "Б/у",
     "model_key": "samsung s22ultra"
+  },
+  "29551110": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17295511_samsung-not-10/",
+    "title": "Samsung Galaxy Note 10",
+    "price": 1399,
+    "condition": "Б/у",
+    "model_key": "samsung note 10"
   }
 }

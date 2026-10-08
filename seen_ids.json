@@ -24754,7 +24754,8 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "apple xr",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "29424711": {
     "logged": true,
@@ -25205,5 +25206,15 @@
     "price": 3800,
     "condition": "Б/у",
     "model_key": "apple 14"
+  },
+  "29834022": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17298340_samsung-s22-ultra/",
+    "title": "Samsung Galaxy S22 Ultra, 256gb",
+    "price": 1900,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra",
+    "verified_model": null
   }
 }

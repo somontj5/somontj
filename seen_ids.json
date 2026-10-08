@@ -24270,7 +24270,8 @@
     "price": 3000,
     "condition": "Б/у",
     "model_key": "apple 12 pro max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "84722256": {
     "logged": true,
@@ -24770,5 +24771,14 @@
     "condition": "Б/у",
     "model_key": "samsung s21ultra",
     "verified_model": null
+  },
+  "61614128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17294616_apple-iphone-14-pro-max-128-gb-space-black/",
+    "title": "Apple iPhone 14 Pro Max, 128 gb, Space Black",
+    "price": 5700,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
   }
 }

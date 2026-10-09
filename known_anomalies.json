@@ -122,5 +122,9 @@
   "samsung s21 plus|128": {
     "first_seen": "2026-10-06",
     "ratio": 5.0
+  },
+  "apple 14 pro max|128": {
+    "first_seen": "2026-10-09",
+    "ratio": 3.61
   }
 }

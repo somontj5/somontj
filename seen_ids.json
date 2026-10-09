@@ -25937,7 +25937,8 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "samsung a16",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17169829": {
     "logged": true,

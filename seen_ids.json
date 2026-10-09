@@ -25739,6 +25739,35 @@
     "price": 300,
     "condition": "Б/у",
     "model_key": "samsung a10",
+    "verified_model": null,
+    "sold_checked": true
+  },
+  "14512512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17303503_xiaomi-redmi-note-14-pro-5g-12-512gb/",
+    "title": "Xiaomi Redmi Note 14 Pro+ 5G 12/512gb",
+    "price": 3300,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro plus"
+  },
+  "47811256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17303478_apple-iphone-11-pro-256-gb-midnight-green/",
+    "title": "Apple iPhone 11 Pro, 256 gb, Midnight Green",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
     "verified_model": null
+  },
+  "30255213": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17302552_samsung-a-13/",
+    "title": "Samsung Galaxy A13",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "samsung a13"
   }
 }

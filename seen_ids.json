@@ -25285,7 +25285,8 @@
     "price": 2059,
     "condition": "Б/у",
     "model_key": "samsung s21",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "19613128": {
     "logged": true,
@@ -25783,5 +25784,14 @@
     "condition": "Б/у",
     "model_key": "apple 14 pro max",
     "sold_checked": true
+  },
+  "80816128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17303808_apple-iphone-16-pro-128-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro, 128 gb, Desert Titanium",
+    "price": 8600,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro"
   }
 }

@@ -24975,7 +24975,8 @@
     "title": "Samsung galaxy S26 ultra 512gb",
     "price": 14000,
     "condition": "Б/у",
-    "model_key": "samsung s26 ultra"
+    "model_key": "samsung s26 ultra",
+    "sold_checked": true
   },
   "17296128": {
     "logged": true,

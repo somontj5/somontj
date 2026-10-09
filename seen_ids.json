@@ -25009,7 +25009,8 @@
     "title": "Samsung galaxy A12 32Gb Vetnam 2sim 5G",
     "price": 930,
     "condition": "Б/у",
-    "model_key": "samsung a12"
+    "model_key": "samsung a12",
+    "sold_checked": true
   },
   "23604645": {
     "logged": true,

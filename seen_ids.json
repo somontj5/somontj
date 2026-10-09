@@ -24947,7 +24947,8 @@
     "title": "Samsung galaxy A13 2sim Vetnam 5G",
     "price": 1000,
     "condition": "Б/у",
-    "model_key": "samsung a13 2sim vetnam"
+    "model_key": "samsung a13 2sim vetnam",
+    "sold_checked": true
   },
   "29557013": {
     "logged": true,
@@ -25449,5 +25450,14 @@
     "price": 4500,
     "condition": "Б/у",
     "model_key": "apple 13"
+  },
+  "30113510": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17301135_google-pixel-10a/",
+    "title": "Google Pixel 10A",
+    "price": 3600,
+    "condition": "Б/у",
+    "model_key": "pixel 10a"
   }
 }

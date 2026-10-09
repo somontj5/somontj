@@ -25242,7 +25242,8 @@
     "title": "Apple iPhone 12 pro, 128 gb, Pacific Blue",
     "price": 2666,
     "condition": "Б/у",
-    "model_key": "apple 12 pro"
+    "model_key": "apple 12 pro",
+    "sold_checked": true
   },
   "29887326": {
     "logged": true,

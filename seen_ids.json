@@ -25672,7 +25672,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
     "price": 12199,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "53218256": {
     "logged": true,
@@ -26192,5 +26193,14 @@
     "condition": "Б/у",
     "model_key": "redmi note 15 pro 8 256",
     "verified_model": null
+  },
+  "79615128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17306796_apple-iphone-15-pro-128-gb-natural-titanium/",
+    "title": "Apple iPhone 15 Pro, 128 gb, Natural Titanium",
+    "price": 6800,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro"
   }
 }

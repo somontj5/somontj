@@ -25274,7 +25274,8 @@
     "title": "Samsung Galaxy S26 Ultra",
     "price": 11200,
     "condition": "Б/у",
-    "model_key": "samsung s26 ultra"
+    "model_key": "samsung s26 ultra",
+    "sold_checked": true
   },
   "98910215": {
     "logged": true,
@@ -25407,7 +25408,8 @@
     "title": "Xiaomi Poco F5 12/1024",
     "price": 3200,
     "condition": "Б/у",
-    "model_key": "poco f5 12 1024"
+    "model_key": "poco f5 12 1024",
+    "sold_checked": true
   },
   "96542664": {
     "logged": true,
@@ -25778,6 +25780,7 @@
     "title": "Apple iPhone 14 Pro Max, 256 gb",
     "price": 6200,
     "condition": "Б/у",
-    "model_key": "apple 14 pro max"
+    "model_key": "apple 14 pro max",
+    "sold_checked": true
   }
 }

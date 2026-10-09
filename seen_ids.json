@@ -25060,7 +25060,8 @@
     "title": "Xiaomi Redmi Note 9 128gb Glabal Version 5G",
     "price": 844,
     "condition": "Б/у",
-    "model_key": "redmi note 9"
+    "model_key": "redmi note 9",
+    "sold_checked": true
   },
   "26104645": {
     "logged": true,
@@ -25069,7 +25070,8 @@
     "title": "Samsung galaxy F04 64Gb Dual sim 5G",
     "price": 900,
     "condition": "Б/у",
-    "model_key": "samsung f04"
+    "model_key": "samsung f04",
+    "sold_checked": true
   },
   "49513128": {
     "logged": true,
@@ -25078,7 +25080,8 @@
     "title": "Apple iPhone 13 Pro Max, 128 gb, Alpine Green",
     "price": 5799,
     "condition": "Б/у",
-    "model_key": "apple 13 pro max"
+    "model_key": "apple 13 pro max",
+    "sold_checked": true
   },
   "72968124": {
     "logged": true,
@@ -25534,6 +25537,35 @@
     "price": 600,
     "condition": "Б/у",
     "model_key": "realme note 50",
+    "verified_model": null
+  },
+  "68994516": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/13068994_samsung-galaxy-j5-16gb/",
+    "title": "Samsung Galaxy J5 16gb",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "samsung j5",
+    "verified_model": null
+  },
+  "77113128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17301771_apple-iphone-13-pro-max-128-gb-gold/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Gold",
+    "price": 40099,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
+  },
+  "17301630": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17301630_redmi-khamachosh-nagz/",
+    "title": "Xiaomi Redmi Note 13 5G",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "redmi note 13",
     "verified_model": null
   }
 }

@@ -26294,5 +26294,14 @@
     "price": 2300,
     "condition": "Б/у",
     "model_key": "samsung а54"
+  },
+  "48990464": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17304899_samsung-galaxy-f04-64gb/",
+    "title": "Samsung Galaxy F04 64Gb",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "samsung f04"
   }
 }

@@ -24957,7 +24957,8 @@
     "price": 400,
     "condition": "Б/у",
     "model_key": "redmi 13c",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17112128": {
     "logged": true,
@@ -25438,5 +25439,14 @@
     "condition": "Б/у",
     "model_key": "apple 11",
     "verified_model": null
+  },
+  "81213128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17294812_apple-iphone-13-128-gb-midnight/",
+    "title": "Apple iPhone 13, 128 gb, Midnight",
+    "price": 4500,
+    "condition": "Б/у",
+    "model_key": "apple 13"
   }
 }

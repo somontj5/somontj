@@ -25581,5 +25581,15 @@
     "condition": "Б/у",
     "model_key": "redmi note 9 pro",
     "verified_model": null
+  },
+  "30206302": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17302063_samsung-galaxy-a02/",
+    "title": "Samsung Galaxy A02",
+    "price": 550,
+    "condition": "Б/у",
+    "model_key": "samsung a02",
+    "verified_model": null
   }
 }

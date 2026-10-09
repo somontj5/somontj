@@ -412,5 +412,14 @@
     "blocked_at": "2026-10-09T05:02:35",
     "updated_at": "2026-10-09T05:02:35",
     "active_ads_at_block": 3
+  },
+  "14631716": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/14631716/",
+    "reason": "похоже на перекупщика по фото: на фото четко видна витрина магазина мобильных аксессуаров и стеллажи с товаром",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17302063_samsung-galaxy-a02/",
+    "blocked_at": "2026-10-09T06:31:49",
+    "updated_at": "2026-10-09T06:31:49",
+    "active_ads_at_block": 66
   }
 }

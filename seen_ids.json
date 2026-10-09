@@ -25524,7 +25524,8 @@
     "price": 1400,
     "condition": "Б/у",
     "model_key": "apple xr",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "30138514": {
     "logged": true,
@@ -26026,5 +26027,24 @@
     "condition": "Б/у",
     "model_key": null,
     "verified_model": null
+  },
+  "30543364": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17305433_apple-iphone-xr-64-gb-yellow/",
+    "title": "Apple iPhone Xr, 64 gb, Yellow",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
+  },
+  "56613128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17073566_apple-iphone-13-pro-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
+    "price": 4000,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

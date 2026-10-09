@@ -403,5 +403,14 @@
     "blocked_at": "2026-10-08T06:09:36",
     "updated_at": "2026-10-08T06:09:36",
     "active_ads_at_block": 1
+  },
+  "13326492": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/13326492/",
+    "reason": "похоже на перекупщика по фото: На фоне видна витрина или салонное/магазинное оформление с искусственной зеленью и вывеской, что характерно для точек продаж телефонов.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17301438_apple-iphone-xr-128-gb-yellow/",
+    "blocked_at": "2026-10-09T05:02:35",
+    "updated_at": "2026-10-09T05:02:35",
+    "active_ads_at_block": 3
   }
 }

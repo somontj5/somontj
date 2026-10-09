@@ -25519,7 +25519,8 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "apple 12",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17301540": {
     "logged": true,
@@ -25529,7 +25530,8 @@
     "price": 300,
     "condition": "Б/у",
     "model_key": "samsung j2 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "30152950": {
     "logged": true,

@@ -25790,7 +25790,8 @@
     "title": "Xiaomi Redmi Note 14 Pro+ 5G 12/512gb",
     "price": 3300,
     "condition": "Б/у",
-    "model_key": "redmi note 14 pro plus"
+    "model_key": "redmi note 14 pro plus",
+    "sold_checked": true
   },
   "47811256": {
     "logged": true,
@@ -26326,5 +26327,14 @@
     "condition": "Б/у",
     "model_key": "apple xs max",
     "verified_model": null
+  },
+  "98012512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16754709_huawei-pura-80-pro-12-512-white/",
+    "title": "Huawei Pura 80 Pro 12/512 White",
+    "price": 7500,
+    "condition": "Б/у",
+    "model_key": "huawei pura 80 pro 12 512"
   }
 }

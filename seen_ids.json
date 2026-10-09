@@ -26046,5 +26046,15 @@
     "price": 4000,
     "condition": "Б/у",
     "model_key": "apple 13 pro"
+  },
+  "76412256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17305764_apple-iphone-12-pro-256-gb-silver/",
+    "title": "Apple iPhone 12 pro, 256 gb, Silver",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro",
+    "verified_model": null
   }
 }

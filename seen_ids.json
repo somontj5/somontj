@@ -25714,7 +25714,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
     "price": 5099,
     "condition": "Б/у",
-    "model_key": "apple 15 pro max"
+    "model_key": "apple 15 pro max",
+    "sold_checked": true
   },
   "18111256": {
     "logged": true,
@@ -25724,7 +25725,8 @@
     "price": 1999,
     "condition": "Б/у",
     "model_key": "apple 11 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "03155545": {
     "logged": true,
@@ -25735,7 +25737,8 @@
     "price": 990,
     "condition": "Б/у",
     "model_key": "samsung a54",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "27715128": {
     "logged": true,
@@ -25744,7 +25747,8 @@
     "title": "Apple iPhone 15 Pro, 128 gb, White Titanium",
     "price": 5500,
     "condition": "Б/у",
-    "model_key": "apple 15 pro"
+    "model_key": "apple 15 pro",
+    "sold_checked": true
   },
   "73032427": {
     "logged": true,
@@ -25754,7 +25758,8 @@
     "price": 1250,
     "condition": "Б/у",
     "model_key": "honor x7c",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17303214": {
     "logged": true,
@@ -26244,5 +26249,50 @@
     "condition": "Б/у",
     "model_key": "samsung j2 prime",
     "verified_model": null
+  },
+  "02222565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17305002_telefon-samsung-s22-ultra-256gb-carea-5g/",
+    "title": "Samsung Galaxy S22 Ultra 256Gb Corea 5G",
+    "price": 3460,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
+  },
+  "14008256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17304951_honor-400-lite-8-256gb/",
+    "title": "Honor 400 Lite 8/256Gb",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "honor 400 lite"
+  },
+  "96140645": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17304961_telefon-samsung-f40-64gb-vetnam-5g/",
+    "title": "Samsung Galaxy F40 64gb Vietnam 5G",
+    "price": 944,
+    "condition": "Б/у",
+    "model_key": "samsung f40"
+  },
+  "97232128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17304972_telefon-samsung-a32-128gb/",
+    "title": "Samsung Galaxy А32 128gb",
+    "price": 1350,
+    "condition": "Б/у",
+    "model_key": "samsung а32"
+  },
+  "85425685": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17304978_telefon-samsung-a54-256-8gb-vetnam-5g/",
+    "title": "Samsung Galaxy А54 256/8gb Vietnam 5G",
+    "price": 2300,
+    "condition": "Б/у",
+    "model_key": "samsung а54"
   }
 }

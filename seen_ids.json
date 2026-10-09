@@ -25492,7 +25492,8 @@
     "title": "Apple iPhone 13, 128 gb, Midnight",
     "price": 4500,
     "condition": "Б/у",
-    "model_key": "apple 13"
+    "model_key": "apple 13",
+    "sold_checked": true
   },
   "30113510": {
     "logged": true,
@@ -25501,7 +25502,8 @@
     "title": "Google Pixel 10A",
     "price": 3600,
     "condition": "Б/у",
-    "model_key": "pixel 10a"
+    "model_key": "pixel 10a",
+    "sold_checked": true
   },
   "01362732": {
     "logged": true,
@@ -25993,5 +25995,24 @@
     "price": 950,
     "condition": "Б/у",
     "model_key": "redmi 12с"
+  },
+  "11516256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17305115_apple-iphone-16-pro-max-256-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
+    "price": 8199,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
+  },
+  "73051198": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17305119_samsung-a8/",
+    "title": "Samsung Galaxy A8",
+    "price": 799,
+    "condition": "Б/у",
+    "model_key": "samsung a8",
+    "verified_model": null
   }
 }

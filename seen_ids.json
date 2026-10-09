@@ -25959,7 +25959,8 @@
     "title": "Apple iPhone 15 Pro Max, 512 gb, Natural Titanium",
     "price": 8700,
     "condition": "Б/у",
-    "model_key": "apple 15 pro max"
+    "model_key": "apple 15 pro max",
+    "sold_checked": true
   },
   "30501103": {
     "logged": true,

@@ -25683,7 +25683,8 @@
     "price": 1550,
     "condition": "Б/у",
     "model_key": "samsung s21 plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "97612256": {
     "logged": true,
@@ -26212,6 +26213,16 @@
     "price": 2500,
     "condition": "Б/у",
     "model_key": "apple 13 8",
+    "verified_model": null
+  },
+  "73070019": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17307001_samsung-s9/",
+    "title": "Samsung Galaxy s9",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "samsung s9",
     "verified_model": null
   }
 }

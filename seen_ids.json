@@ -25450,7 +25450,8 @@
     "title": "Samsung Galaxy s22 Ultra",
     "price": 4300,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "30051524": {
     "logged": true,
@@ -25936,5 +25937,23 @@
     "condition": "Б/у",
     "model_key": "tecno spark slim",
     "verified_model": null
+  },
+  "30484113": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17304841_samsung-galaxy-a13/",
+    "title": "Samsung Galaxy A13",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "samsung a13"
+  },
+  "84415512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17304844_apple-iphone-15-pro-max-512-gb-natural-titanium/",
+    "title": "Apple iPhone 15 Pro Max, 512 gb, Natural Titanium",
+    "price": 8700,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro max"
   }
 }

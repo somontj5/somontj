@@ -25642,7 +25642,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Blue Titanium",
     "price": 6850,
     "condition": "Б/у",
-    "model_key": "apple 15 pro max"
+    "model_key": "apple 15 pro max",
+    "sold_checked": true
   },
   "19251264": {
     "logged": true,
@@ -26153,5 +26154,14 @@
     "condition": "Б/у",
     "model_key": "poco x7",
     "verified_model": null
+  },
+  "73616256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17303736_apple-iphone-16-pro-max-256-gb-black-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
+    "price": 8999,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   }
 }

@@ -25254,7 +25254,8 @@
     "price": 1900,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "33412128": {
     "logged": true,
@@ -25769,5 +25770,14 @@
     "price": 950,
     "condition": "Б/у",
     "model_key": "samsung a13"
+  },
+  "57814256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17303578_apple-iphone-14-pro-max-256-gb/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb",
+    "price": 6200,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
   }
 }

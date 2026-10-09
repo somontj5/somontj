@@ -26112,5 +26112,24 @@
     "price": 7100,
     "condition": "Б/у",
     "model_key": "apple 15 pro max"
+  },
+  "30625664": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17306256_apple-iphone-xr-64-gb-yellow/",
+    "title": "Apple iPhone Xr, 64 gb, Yellow",
+    "price": 2300,
+    "condition": "Б/у",
+    "model_key": "apple xr"
+  },
+  "29188256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17306291_honor-x8d-8-256/",
+    "title": "Honor X8d 8/256",
+    "price": 2200,
+    "condition": "Б/у",
+    "model_key": "honor x8d 8 256",
+    "verified_model": null
   }
 }

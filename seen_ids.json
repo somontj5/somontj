@@ -25090,7 +25090,8 @@
     "title": "Xiaomi Redmi 4x, 16gb",
     "price": 350,
     "condition": "Б/у",
-    "model_key": "redmi 4x"
+    "model_key": "redmi 4x",
+    "sold_checked": true
   },
   "67771110": {
     "logged": true,
@@ -25591,5 +25592,23 @@
     "condition": "Б/у",
     "model_key": "samsung a02",
     "verified_model": null
+  },
+  "99315256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17301993_apple-iphone-15-pro-max-256-gb-blue-titanium/",
+    "title": "Apple iPhone 15 Pro Max, 256 gb, Blue Titanium",
+    "price": 6850,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro max"
+  },
+  "19251264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17301925_apple-iphone-12-64-gb-green/",
+    "title": "Apple iPhone 12, 64 gb, Green",
+    "price": 2250,
+    "condition": "Б/у",
+    "model_key": "apple 12"
   }
 }

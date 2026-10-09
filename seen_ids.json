@@ -25295,7 +25295,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Graphite",
     "price": 3350,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "29905624": {
     "logged": true,
@@ -25325,7 +25326,8 @@
     "title": "Xiaomi Redmi 10А",
     "price": 600,
     "condition": "Б/у",
-    "model_key": "redmi 10а"
+    "model_key": "redmi 10а",
+    "sold_checked": true
   },
   "29766001": {
     "logged": true,
@@ -25334,7 +25336,8 @@
     "title": "Samsung Galaxy А01",
     "price": 450,
     "condition": "Б/у",
-    "model_key": "samsung а01"
+    "model_key": "samsung а01",
+    "sold_checked": true
   },
   "29770370": {
     "logged": true,
@@ -25813,5 +25816,33 @@
     "price": 7800,
     "condition": "Б/у",
     "model_key": "apple 15 pro max"
+  },
+  "30398513": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17303985_redmi-note-13/",
+    "title": "Xiaomi Redmi Note 13",
+    "price": 1499,
+    "condition": "Б/у",
+    "model_key": "redmi note 13",
+    "verified_model": null
+  },
+  "30395319": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17303953_tecno-camon-19/",
+    "title": "Tecno Camon 19",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "tecno camon 19"
+  },
+  "95513256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17303955_apple-iphone-13-pro-256-gb-silver/",
+    "title": "Apple iPhone 13 Pro, 256 gb, Silver",
+    "price": 4100,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

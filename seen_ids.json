@@ -25027,7 +25027,8 @@
     "title": "Samsung Galaxy А03 32Gb Vetnam 2sim",
     "price": 860,
     "condition": "Б/у",
-    "model_key": "samsung а03"
+    "model_key": "samsung а03",
+    "sold_checked": true
   },
   "96207616": {
     "logged": true,
@@ -25491,6 +25492,25 @@
     "price": 1400,
     "condition": "Б/у",
     "model_key": "redmi note 14",
+    "verified_model": null
+  },
+  "42713128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17301427_apple-iphone-13-pro-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
+  },
+  "41312128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17301413_apple-iphone-12-128-gb-black/",
+    "title": "Apple iPhone 12, 128 gb, Black",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "apple 12",
     "verified_model": null
   }
 }

@@ -25407,7 +25407,8 @@
     "price": 600,
     "condition": "Б/у",
     "model_key": "redmi note 6 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "25121024": {
     "logged": true,
@@ -25874,5 +25875,14 @@
     "condition": "Б/у",
     "model_key": "apple 12",
     "verified_model": null
+  },
+  "09712128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17304097_apple-iphone-12-pro-128-gb-pacific-blue/",
+    "title": "Apple iPhone 12 pro, 128 gb, Pacific Blue",
+    "price": 2999,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro"
   }
 }

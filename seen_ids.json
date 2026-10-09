@@ -25704,7 +25704,8 @@
     "title": "Apple iPhone 15 Pro, 128 gb, Natural Titanium",
     "price": 6599,
     "condition": "Б/у",
-    "model_key": "apple 15 pro"
+    "model_key": "apple 15 pro",
+    "sold_checked": true
   },
   "17515256": {
     "logged": true,
@@ -26223,6 +26224,25 @@
     "price": 650,
     "condition": "Б/у",
     "model_key": "samsung s9",
+    "verified_model": null
+  },
+  "02212128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17305022_telefon-redmi-note-12s-128gb/",
+    "title": "Xiaomi Redmi Note 12s 128gb",
+    "price": 840,
+    "condition": "Б/у",
+    "model_key": "redmi note 12s"
+  },
+  "73070662": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17307066_ch2/",
+    "title": "Samsung Galaxy J2 Prime",
+    "price": 199,
+    "condition": "Б/у",
+    "model_key": "samsung j2 prime",
     "verified_model": null
   }
 }

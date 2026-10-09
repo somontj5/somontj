@@ -25471,7 +25471,8 @@
     "price": 2600,
     "condition": "Б/у",
     "model_key": "samsung s21",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "10101164": {
     "logged": true,
@@ -25955,5 +25956,32 @@
     "price": 8700,
     "condition": "Б/у",
     "model_key": "apple 15 pro max"
+  },
+  "30501103": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17305011_samsung-galaxy-a03s/",
+    "title": "Samsung Galaxy A03s",
+    "price": 880,
+    "condition": "Б/у",
+    "model_key": "samsung a03s"
+  },
+  "98913128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17304989_apple-iphone-13-128-gb-pink/",
+    "title": "Apple iPhone 13, 128 gb, Pink",
+    "price": 4200,
+    "condition": "Б/у",
+    "model_key": "apple 13"
+  },
+  "48627164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17304862_poco-c71-64gb/",
+    "title": "Xiaomi Poco C71 64Gb",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "poco c71"
   }
 }

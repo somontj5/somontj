@@ -25513,5 +25513,15 @@
     "condition": "Б/у",
     "model_key": "apple 12",
     "verified_model": null
+  },
+  "17301540": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17301540_bo-savdo/",
+    "title": "Samsung Galaxy J2 Pro",
+    "price": 300,
+    "condition": "Б/у",
+    "model_key": "samsung j2 pro",
+    "verified_model": null
   }
 }

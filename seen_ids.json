@@ -25848,7 +25848,8 @@
     "price": 1499,
     "condition": "Б/у",
     "model_key": "redmi note 13",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "30395319": {
     "logged": true,
@@ -26163,5 +26164,33 @@
     "price": 8999,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "30672923": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17306729_samsung-s23-ultra/",
+    "title": "Samsung Galaxy S23 ultra",
+    "price": 5499,
+    "condition": "Б/у",
+    "model_key": "samsung s23 ultra"
+  },
+  "73917256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17306739_apple-iphone-17-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
+    "price": 11550,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
+  },
+  "58158256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17306758_redmi-note-15-pro-8-256/",
+    "title": "Xiaomi Redmi Note 15 pro 8/256",
+    "price": 2850,
+    "condition": "Б/у",
+    "model_key": "redmi note 15 pro 8 256",
+    "verified_model": null
   }
 }

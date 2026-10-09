@@ -25800,7 +25800,8 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "apple 11 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "30255213": {
     "logged": true,
@@ -25809,7 +25810,8 @@
     "title": "Samsung Galaxy A13",
     "price": 950,
     "condition": "Б/у",
-    "model_key": "samsung a13"
+    "model_key": "samsung a13",
+    "sold_checked": true
   },
   "57814256": {
     "logged": true,
@@ -26303,5 +26305,15 @@
     "price": 1100,
     "condition": "Б/у",
     "model_key": "samsung f04"
+  },
+  "48528256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17304852_apple-iphone-8-plus-256-gb-gold/",
+    "title": "Apple iPhone 8 plus, 256 gb, Gold",
+    "price": 599,
+    "condition": "Б/у",
+    "model_key": "apple 8 plus",
+    "verified_model": null
   }
 }

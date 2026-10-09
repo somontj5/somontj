@@ -25233,7 +25233,8 @@
     "price": 300,
     "condition": "Б/у",
     "model_key": "samsung j2 core",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "06914128": {
     "logged": true,
@@ -25242,7 +25243,8 @@
     "title": "Apple iPhone 14, 128 gb, Midnight",
     "price": 3800,
     "condition": "Б/у",
-    "model_key": "apple 14"
+    "model_key": "apple 14",
+    "sold_checked": true
   },
   "29834022": {
     "logged": true,
@@ -25708,5 +25710,25 @@
     "price": 5500,
     "condition": "Б/у",
     "model_key": "apple 15 pro"
+  },
+  "73032427": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17303242_honor-x7c/",
+    "title": "Honor x7c",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "honor x7c",
+    "verified_model": null
+  },
+  "17303214": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17303214_tsena/",
+    "title": "Samsung Galaxy A26",
+    "price": 2199,
+    "condition": "Б/у",
+    "model_key": "samsung a26",
+    "verified_model": null
   }
 }

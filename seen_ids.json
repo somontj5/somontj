@@ -25440,7 +25440,8 @@
     "title": "Apple iPhone 14 Pro Max, 256 gb, Space Black",
     "price": 5600,
     "condition": "Б/у",
-    "model_key": "apple 14 pro max"
+    "model_key": "apple 14 pro max",
+    "sold_checked": true
   },
   "30056522": {
     "logged": true,
@@ -25924,6 +25925,16 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "samsung a16",
+    "verified_model": null
+  },
+  "17169829": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17169829_tecno/",
+    "title": "Tecno Spark Slim",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "tecno spark slim",
     "verified_model": null
   }
 }

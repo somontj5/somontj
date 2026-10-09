@@ -25482,7 +25482,8 @@
     "price": 1699,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "81213128": {
     "logged": true,
@@ -25983,5 +25984,14 @@
     "price": 1100,
     "condition": "Б/у",
     "model_key": "poco c71"
+  },
+  "50381264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17305038_telefon-redmi-12s-64gb/",
+    "title": "Xiaomi Redmi 12С 64гб",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "redmi 12с"
   }
 }

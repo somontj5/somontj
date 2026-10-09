@@ -25325,7 +25325,8 @@
     "title": "Huawei nova Y70",
     "price": 800,
     "condition": "Б/у",
-    "model_key": "huawei nova y70"
+    "model_key": "huawei nova y70",
+    "sold_checked": true
   },
   "29762725": {
     "logged": true,

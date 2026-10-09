@@ -25578,7 +25578,8 @@
     "price": 600,
     "condition": "Б/у",
     "model_key": "realme note 50",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "68994516": {
     "logged": true,
@@ -25588,7 +25589,8 @@
     "price": 450,
     "condition": "Б/у",
     "model_key": "samsung j5",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "77113128": {
     "logged": true,
@@ -25597,7 +25599,8 @@
     "title": "Apple iPhone 13 Pro Max, 128 gb, Gold",
     "price": 40099,
     "condition": "Б/у",
-    "model_key": "apple 13 pro max"
+    "model_key": "apple 13 pro max",
+    "sold_checked": true
   },
   "17301630": {
     "logged": true,
@@ -25607,7 +25610,8 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "redmi note 13",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17959128": {
     "logged": true,
@@ -26065,6 +26069,36 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "infinix zero 30",
+    "verified_model": null
+  },
+  "30598214": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17305982_rebmi-14-s/",
+    "title": "Xiaomi Redmi 14 s",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "redmi 14 s",
+    "verified_model": null
+  },
+  "05108664": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17305108_apple-iphone-6-64-gb/",
+    "title": "Apple iPhone 6, 64 gb",
+    "price": 599,
+    "condition": "Б/у",
+    "model_key": "apple 6",
+    "verified_model": null
+  },
+  "39512128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17305395_apple-iphone-12-pro-128-gb-silver/",
+    "title": "Apple iPhone 12 pro, 128 gb, Silver",
+    "price": 2400,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro",
     "verified_model": null
   }
 }

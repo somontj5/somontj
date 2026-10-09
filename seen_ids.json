@@ -25534,7 +25534,8 @@
     "price": 1400,
     "condition": "Б/у",
     "model_key": "redmi note 14",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "42713128": {
     "logged": true,
@@ -26013,6 +26014,16 @@
     "price": 799,
     "condition": "Б/у",
     "model_key": "samsung a8",
+    "verified_model": null
+  },
+  "73052384": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17305238_texno-max-4gsmart/",
+    "title": "Texno max 4gsmart",
+    "price": 550,
+    "condition": "Б/у",
+    "model_key": null,
     "verified_model": null
   }
 }

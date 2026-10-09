@@ -25141,7 +25141,8 @@
     "title": "Xiaomi Redmi NOTE 8T 4/128гб",
     "price": 700,
     "condition": "Б/у",
-    "model_key": "redmi note 8t"
+    "model_key": "redmi note 8t",
+    "sold_checked": true
   },
   "80171032": {
     "logged": true,
@@ -25150,7 +25151,8 @@
     "title": "Xiaomi Redmi 10a 32гб",
     "price": 599,
     "condition": "Б/у",
-    "model_key": "redmi 10a"
+    "model_key": "redmi 10a",
+    "sold_checked": true
   },
   "40530464": {
     "logged": true,
@@ -25159,7 +25161,8 @@
     "title": "Realmе C30s 4/64GB",
     "price": 799,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "29755721": {
     "logged": true,
@@ -25178,7 +25181,8 @@
     "title": "Apple iPhone 15, 128 gb, Black",
     "price": 3899,
     "condition": "Б/у",
-    "model_key": "apple 15"
+    "model_key": "apple 15",
+    "sold_checked": true
   },
   "74916256": {
     "logged": true,
@@ -25632,5 +25636,25 @@
     "price": 12199,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "53218256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17303053_samsung-galaxy-s21-8-256/",
+    "title": "Samsung Galaxy S21+ 8/256gb",
+    "price": 1550,
+    "condition": "Б/у",
+    "model_key": "samsung s21 plus",
+    "verified_model": null
+  },
+  "97612256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17302976_apple-iphone-12-pro-max-256-gb-gold/",
+    "title": "Apple iPhone 12 Pro Max, 256 gb, Gold",
+    "price": 2800,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro max",
+    "verified_model": null
   }
 }

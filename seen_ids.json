@@ -25191,7 +25191,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
     "price": 7499,
     "condition": "Б/у",
-    "model_key": "apple 16 pro max"
+    "model_key": "apple 16 pro max",
+    "sold_checked": true
   },
   "72976802": {
     "logged": true,
@@ -25211,7 +25212,8 @@
     "title": "Tecno Spark 50",
     "price": 1400,
     "condition": "Б/у",
-    "model_key": "tecno spark 50"
+    "model_key": "tecno spark 50",
+    "sold_checked": true
   },
   "77381164": {
     "logged": true,
@@ -25220,7 +25222,8 @@
     "title": "Apple iPhone 11, 64 gb, Purple",
     "price": 2000,
     "condition": "Б/у",
-    "model_key": "apple 11"
+    "model_key": "apple 11",
+    "sold_checked": true
   },
   "72978112": {
     "logged": true,
@@ -25666,5 +25669,35 @@
     "price": 6599,
     "condition": "Б/у",
     "model_key": "apple 15 pro"
+  },
+  "17515256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17303175_apple-iphone-15-pro-max-256-gb-natural-titanium/",
+    "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
+    "price": 5099,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro max"
+  },
+  "18111256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17303181_apple-iphone-11-pro-256-gb-space-grey/",
+    "title": "Apple iPhone 11 Pro, 256 gb, Space Grey",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
+  },
+  "03155545": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17303155_samsung-galaxy-a54-5g/",
+    "title": "Samsung Galaxy A54 5G",
+    "price": 990,
+    "condition": "Б/у",
+    "model_key": "samsung a54",
+    "verified_model": null
   }
 }

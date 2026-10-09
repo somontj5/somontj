@@ -25524,5 +25524,15 @@
     "condition": "Б/у",
     "model_key": "samsung j2 pro",
     "verified_model": null
+  },
+  "30152950": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17301529_realme-note-50/",
+    "title": "Realme note 50",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "realme note 50",
+    "verified_model": null
   }
 }

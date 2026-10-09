@@ -25418,7 +25418,8 @@
     "title": "Samsung Galaxy S24",
     "price": 4987,
     "condition": "Б/у",
-    "model_key": "samsung s24"
+    "model_key": "samsung s24",
+    "sold_checked": true
   },
   "30020821": {
     "logged": true,

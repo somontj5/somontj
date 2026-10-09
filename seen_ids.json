@@ -26056,5 +26056,15 @@
     "condition": "Б/у",
     "model_key": "apple 12 pro",
     "verified_model": null
+  },
+  "30570230": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17305702_infinix-zero-30/",
+    "title": "Infinix ZERO 30",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "infinix zero 30",
+    "verified_model": null
   }
 }

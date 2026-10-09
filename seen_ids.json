@@ -25018,7 +25018,8 @@
     "title": "Samsung Galaxy F04 64Gb Vetnam 5G",
     "price": 966,
     "condition": "Б/у",
-    "model_key": "samsung f04"
+    "model_key": "samsung f04",
+    "sold_checked": true
   },
   "23003322": {
     "logged": true,

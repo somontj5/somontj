@@ -25693,7 +25693,8 @@
     "price": 2800,
     "condition": "Б/у",
     "model_key": "apple 12 pro max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "72115128": {
     "logged": true,
@@ -26202,5 +26203,15 @@
     "price": 6800,
     "condition": "Б/у",
     "model_key": "apple 15 pro"
+  },
+  "05075138": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17305075_apple-iphone-13-8-gb-pink/",
+    "title": "Apple iPhone 13, 8 gb, Pink",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "apple 13 8",
+    "verified_model": null
   }
 }

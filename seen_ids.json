@@ -26155,7 +26155,8 @@
     "price": 1150,
     "condition": "Б/у",
     "model_key": "samsung a41",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "63407512": {
     "logged": true,

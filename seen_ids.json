@@ -25046,7 +25046,8 @@
     "title": "Xiaomi Redmi Note 14 128/6Gb Glabal Version 5G",
     "price": 1650,
     "condition": "Б/у",
-    "model_key": "redmi note 14 glabal"
+    "model_key": "redmi note 14 glabal",
+    "sold_checked": true
   },
   "27291285": {
     "logged": true,
@@ -25459,5 +25460,15 @@
     "price": 3600,
     "condition": "Б/у",
     "model_key": "pixel 10a"
+  },
+  "01362732": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17301362_apple-iphone-7-32-gb/",
+    "title": "Apple iPhone 7, 32 gb",
+    "price": 400,
+    "condition": "Б/у",
+    "model_key": "apple 7",
+    "verified_model": null
   }
 }

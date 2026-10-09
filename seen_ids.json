@@ -25905,5 +25905,14 @@
     "price": 2100,
     "condition": "Б/у",
     "model_key": "apple 12 mini"
+  },
+  "42781164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17304278_apple-iphone-11-pro-max-64-gb-silver/",
+    "title": "Apple iPhone 11 Pro Max, 64 gb, Silver",
+    "price": 2999,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro max"
   }
 }

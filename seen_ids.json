@@ -27006,5 +27006,15 @@
     "price": 3500,
     "condition": "Б/у",
     "model_key": "apple 13 pro"
+  },
+  "31286015": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17312860_redmi-note-15-pro/",
+    "title": "Xiaomi Redmi Note 15 pro",
+    "price": 2800,
+    "condition": "Б/у",
+    "model_key": "redmi note 15 pro",
+    "verified_model": null
   }
 }

@@ -26045,7 +26045,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
     "price": 8199,
     "condition": "Б/у",
-    "model_key": "apple 16 pro max"
+    "model_key": "apple 16 pro max",
+    "sold_checked": true
   },
   "73051198": {
     "logged": true,
@@ -26055,7 +26056,8 @@
     "price": 799,
     "condition": "Б/у",
     "model_key": "samsung a8",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "73052384": {
     "logged": true,
@@ -26065,7 +26067,8 @@
     "price": 550,
     "condition": "Б/у",
     "model_key": null,
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "30543364": {
     "logged": true,
@@ -26075,7 +26078,8 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "apple xr",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "56613128": {
     "logged": true,
@@ -26095,7 +26099,8 @@
     "price": 1700,
     "condition": "Б/у",
     "model_key": "apple 12 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "30570230": {
     "logged": true,
@@ -26545,5 +26550,51 @@
     "condition": "Б/у",
     "model_key": "samsung s21",
     "verified_model": null
+  },
+  "53891285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17308538_telefon-redmi-note-9-128gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 9 128gb Glabal Version 5G",
+    "price": 865,
+    "condition": "Б/у",
+    "model_key": "redmi note 9"
+  },
+  "57013322": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17308570_telefon-samsung-a13-32gb-vetnam-2sim/",
+    "title": "Samsung Galaxy А13 32Gb Vetnam 2sim",
+    "price": 1040,
+    "condition": "Б/у",
+    "model_key": "samsung а13"
+  },
+  "08553125": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17308553_telefon-samsung-a12-dual-sim-5g-silver/",
+    "title": "Samsung A12 Dual sim 5G Silver",
+    "price": 966,
+    "condition": "Б/у",
+    "model_key": "samsung a12 dual sim"
+  },
+  "30777316": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17307773_samsung-a16/",
+    "title": "Samsung Galaxy А16",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "samsung а16",
+    "verified_model": null
+  },
+  "85301264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17308530_telefon-redmi-12c-64gb/",
+    "title": "Xiaomi Redmi 12C 64gb",
+    "price": 944,
+    "condition": "Б/у",
+    "model_key": "redmi 12c"
   }
 }

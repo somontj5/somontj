@@ -26098,7 +26098,8 @@
     "price": 1300,
     "condition": "Б/у",
     "model_key": "redmi 14 s",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "05108664": {
     "logged": true,

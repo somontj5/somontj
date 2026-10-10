@@ -26393,7 +26393,8 @@
     "price": 220,
     "condition": "Б/у",
     "model_key": "apple 5",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "07458864": {
     "logged": true,
@@ -26787,5 +26788,14 @@
     "price": 1199,
     "condition": "Б/у",
     "model_key": "redmi note 13"
+  },
+  "71102565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17310371_telefon-samsung-note-10-256gb-carea-5g/",
+    "title": "Samsung Galaxy Note 10+ 256gb Carea 5G",
+    "price": 1550,
+    "condition": "Б/у",
+    "model_key": "samsung note 10 plus"
   }
 }

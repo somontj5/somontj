@@ -26372,7 +26372,8 @@
     "price": 1299,
     "condition": "Б/у",
     "model_key": "apple xs max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "98012512": {
     "logged": true,
@@ -26381,7 +26382,8 @@
     "title": "Huawei Pura 80 Pro 12/512 White",
     "price": 7500,
     "condition": "Б/у",
-    "model_key": "huawei pura 80 pro 12 512"
+    "model_key": "huawei pura 80 pro 12 512",
+    "sold_checked": true
   },
   "68215128": {
     "logged": true,
@@ -26880,5 +26882,23 @@
     "condition": "Б/у",
     "model_key": "apple x",
     "verified_model": null
+  },
+  "31121264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17311212_apple-iphone-xs-64-gb-silver/",
+    "title": "Apple iPhone Xs, 64 gb, Silver",
+    "price": 1480,
+    "condition": "Б/у",
+    "model_key": "apple xs"
+  },
+  "22514128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17311225_apple-iphone-14-pro-128-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Deep Purple",
+    "price": 5400,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

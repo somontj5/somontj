@@ -430,5 +430,14 @@
     "blocked_at": "2026-10-09T11:18:14",
     "updated_at": "2026-10-09T11:18:14",
     "active_ads_at_block": 7
+  },
+  "2796599": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/2796599/",
+    "reason": "похоже на перекупщика по фото: На заднем фоне четко видна витрина или стеллаж магазина со множеством коробок и аксессуаров.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17308416_duo-qin-f22/",
+    "blocked_at": "2026-10-10T05:09:34",
+    "updated_at": "2026-10-10T05:09:34",
+    "active_ads_at_block": 114
   }
 }

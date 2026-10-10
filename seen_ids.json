@@ -26005,7 +26005,8 @@
     "title": "Samsung Galaxy A03s",
     "price": 880,
     "condition": "Б/у",
-    "model_key": "samsung a03s"
+    "model_key": "samsung a03s",
+    "sold_checked": true
   },
   "98913128": {
     "logged": true,
@@ -26014,7 +26015,8 @@
     "title": "Apple iPhone 13, 128 gb, Pink",
     "price": 4200,
     "condition": "Б/у",
-    "model_key": "apple 13"
+    "model_key": "apple 13",
+    "sold_checked": true
   },
   "48627164": {
     "logged": true,
@@ -26513,5 +26515,24 @@
     "price": 8800,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "30841622": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17308416_duo-qin-f22/",
+    "title": "Duo Qin F22",
+    "price": 889,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
+  },
+  "33215256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17308332_apple-iphone-15-pro-max-256-gb-natural-titanium/",
+    "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
+    "price": 8299,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro max"
   }
 }

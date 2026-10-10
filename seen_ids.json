@@ -26435,7 +26435,8 @@
     "title": "Apple iPhone 12 Pro Max, 256 gb, Pacific Blue",
     "price": 2899,
     "condition": "Б/у",
-    "model_key": "apple 12 pro max"
+    "model_key": "apple 12 pro max",
+    "sold_checked": true
   },
   "78771164": {
     "logged": true,

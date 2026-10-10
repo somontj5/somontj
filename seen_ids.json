@@ -26870,5 +26870,15 @@
     "price": 2750,
     "condition": "Б/у",
     "model_key": "samsung note 20 vetnam 2sim"
+  },
+  "31116764": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17311167_apple-iphone-x-64-gb-space-grey/",
+    "title": "Apple iPhone X, 64 gb, Space Grey",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "apple x",
+    "verified_model": null
   }
 }

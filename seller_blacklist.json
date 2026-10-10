@@ -448,5 +448,14 @@
     "blocked_at": "2026-10-10T05:26:37",
     "updated_at": "2026-10-10T05:26:37",
     "active_ads_at_block": 1
+  },
+  "10198589": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/10198589/",
+    "reason": "похоже на перекупщика по фото: На заднем плане фотографий четко видна витрина или склад магазина с большим количеством товаров промышленного назначения и электроники, что характерно для торговой точки.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17311167_apple-iphone-x-64-gb-space-grey/",
+    "blocked_at": "2026-10-10T11:40:01",
+    "updated_at": "2026-10-10T11:40:01",
+    "active_ads_at_block": 2
   }
 }

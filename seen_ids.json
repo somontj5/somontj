@@ -26300,7 +26300,8 @@
     "title": "Samsung Galaxy S22 Ultra 256Gb Corea 5G",
     "price": 3460,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "14008256": {
     "logged": true,
@@ -26349,7 +26350,8 @@
     "title": "Samsung Galaxy F04 64Gb",
     "price": 1100,
     "condition": "Б/у",
-    "model_key": "samsung f04"
+    "model_key": "samsung f04",
+    "sold_checked": true
   },
   "48528256": {
     "logged": true,
@@ -26359,7 +26361,8 @@
     "price": 599,
     "condition": "Б/у",
     "model_key": "apple 8 plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "07299256": {
     "logged": true,
@@ -26838,5 +26841,33 @@
     "price": 2350,
     "condition": "Б/у",
     "model_key": "samsung самсунг а35 vetnam 2sim"
+  },
+  "21512128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17311215_apple-iphone-12-pro-128-gb-gold/",
+    "title": "Apple iPhone 12 pro, 128 gb, Gold",
+    "price": 2700,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro",
+    "verified_model": null
+  },
+  "19614256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17311196_telefon-redmi-note-14-pro-256gb/",
+    "title": "Xiaomi Redmi Note 14 pro 256gb",
+    "price": 1766,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro"
+  },
+  "20825625": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17311179_telefon-samsung-note-20-8-256gb-vetnam-2sim-5g-silver/",
+    "title": "Samsung Galaxy Note 20 8/256Gb Vetnam 2sim 5G Silver",
+    "price": 2750,
+    "condition": "Б/у",
+    "model_key": "samsung note 20 vetnam 2sim"
   }
 }

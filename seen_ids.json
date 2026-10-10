@@ -25841,7 +25841,8 @@
     "title": "Apple iPhone 14 Pro Max, 128 gb, Gold",
     "price": 5600,
     "condition": "Б/у",
-    "model_key": "apple 14 pro max"
+    "model_key": "apple 14 pro max",
+    "sold_checked": true
   },
   "87215256": {
     "logged": true,
@@ -25880,7 +25881,8 @@
     "title": "Apple iPhone 13 Pro, 256 gb, Silver",
     "price": 4100,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "08215256": {
     "logged": true,
@@ -26386,5 +26388,33 @@
     "price": 2899,
     "condition": "Б/у",
     "model_key": "apple 12 pro max"
+  },
+  "78771164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17307877_apple-iphone-11-pro-64-gb-space-grey/",
+    "title": "Apple iPhone 11 Pro, 64 gb, Space Grey",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
+  },
+  "87916256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17307879_apple-iphone-16-pro-max-256-gb-black-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
+    "price": 7777,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
+  },
+  "78805512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17307880_z-fold-5-512gb/",
+    "title": "Samsung Galaxy Z fold 5 512gb",
+    "price": 5500,
+    "condition": "Б/у",
+    "model_key": "samsung z fold 5"
   }
 }

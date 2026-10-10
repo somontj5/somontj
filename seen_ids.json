@@ -26518,7 +26518,8 @@
     "price": 1600,
     "condition": "Б/у",
     "model_key": "samsung a16",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "08172105": {
     "logged": true,
@@ -27107,6 +27108,16 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "samsung м16",
+    "verified_model": null
+  },
+  "73135537": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17313553_redmi-7a/",
+    "title": "Xiaomi Redmi 7A",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "redmi 7a",
     "verified_model": null
   }
 }

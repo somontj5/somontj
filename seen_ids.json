@@ -26035,7 +26035,8 @@
     "title": "Xiaomi Redmi 12С 64гб",
     "price": 950,
     "condition": "Б/у",
-    "model_key": "redmi 12с"
+    "model_key": "redmi 12с",
+    "sold_checked": true
   },
   "11516256": {
     "logged": true,
@@ -26534,5 +26535,15 @@
     "price": 8299,
     "condition": "Б/у",
     "model_key": "apple 15 pro max"
+  },
+  "08493215": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17308493_s21-5g/",
+    "title": "Samsung Galaxy S21 5g",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "samsung s21",
+    "verified_model": null
   }
 }

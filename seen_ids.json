@@ -26886,7 +26886,8 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "apple x",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "31121264": {
     "logged": true,
@@ -26895,7 +26896,8 @@
     "title": "Apple iPhone Xs, 64 gb, Silver",
     "price": 1480,
     "condition": "Б/у",
-    "model_key": "apple xs"
+    "model_key": "apple xs",
+    "sold_checked": true
   },
   "22514128": {
     "logged": true,

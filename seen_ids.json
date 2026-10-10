@@ -26881,7 +26881,8 @@
     "title": "Samsung Galaxy Note 20 8/256Gb Vetnam 2sim 5G Silver",
     "price": 2750,
     "condition": "Б/у",
-    "model_key": "samsung note 20 vetnam 2sim"
+    "model_key": "samsung note 20 vetnam 2sim",
+    "sold_checked": true
   },
   "31116764": {
     "logged": true,

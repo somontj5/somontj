@@ -25985,7 +25985,8 @@
     "title": "Samsung Galaxy A13",
     "price": 1000,
     "condition": "Б/у",
-    "model_key": "samsung a13"
+    "model_key": "samsung a13",
+    "sold_checked": true
   },
   "84415512": {
     "logged": true,
@@ -26022,7 +26023,8 @@
     "title": "Xiaomi Poco C71 64Gb",
     "price": 1100,
     "condition": "Б/у",
-    "model_key": "poco c71"
+    "model_key": "poco c71",
+    "sold_checked": true
   },
   "50381264": {
     "logged": true,
@@ -26502,5 +26504,14 @@
     "condition": "Б/у",
     "model_key": "redmi note 15 pro",
     "verified_model": null
+  },
+  "30516256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17308305_apple-iphone-16-pro-max-256-gb-black-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
+    "price": 8800,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   }
 }

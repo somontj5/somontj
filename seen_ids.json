@@ -25872,7 +25872,8 @@
     "title": "Tecno Camon 19",
     "price": 950,
     "condition": "Б/у",
-    "model_key": "tecno camon 19"
+    "model_key": "tecno camon 19",
+    "sold_checked": true
   },
   "95513256": {
     "logged": true,

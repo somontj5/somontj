@@ -26132,7 +26132,8 @@
     "price": 599,
     "condition": "Б/у",
     "model_key": "apple 6",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "39512128": {
     "logged": true,
@@ -26152,7 +26153,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
     "price": 7100,
     "condition": "Б/у",
-    "model_key": "apple 15 pro max"
+    "model_key": "apple 15 pro max",
+    "sold_checked": true
   },
   "30625664": {
     "logged": true,
@@ -26171,7 +26173,8 @@
     "price": 2200,
     "condition": "Б/у",
     "model_key": "honor x8d 8 256",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "30639441": {
     "logged": true,
@@ -26436,7 +26439,8 @@
     "title": "Samsung Galaxy Z fold 5 512gb",
     "price": 5500,
     "condition": "Б/у",
-    "model_key": "samsung z fold 5"
+    "model_key": "samsung z fold 5",
+    "sold_checked": true
   },
   "06914256": {
     "logged": true,
@@ -26597,5 +26601,54 @@
     "price": 944,
     "condition": "Б/у",
     "model_key": "redmi 12c"
+  },
+  "56820265": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17308600_telefon-redmi-15-256-8gb-2026-5g/",
+    "title": "Xioami Redmi 15 256/8Gb 2026 5G",
+    "price": 1560,
+    "condition": "Б/у",
+    "model_key": "redmi 15 2026"
+  },
+  "08648732": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17308648_apple-iphone-7-32-gb/",
+    "title": "Apple iPhone 7, 32 gb",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "apple 7",
+    "verified_model": null
+  },
+  "64903322": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17308649_telefon-samsung-a03s-32gb-vetnam-2sim/",
+    "title": "Samsung Galaxy А03s 32gb Vetnam 2sim",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "samsung а03s"
+  },
+  "19542565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17308619_telefon-samsung-a54-256gb-vetnam-5g/",
+    "title": "Samsung Galaxy А54 256Gb Vetnam 5G",
+    "price": 2266,
+    "condition": "Б/у",
+    "model_key": "samsung а54"
+  },
+  "62504645": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17308625_telefon-samsung-f04-64gb-vetnam-5g/",
+    "title": "Samsung Galaxy F04 64Gb Vetnam 5G",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "samsung f04"
+  },
+  "14825652": {
+    "logged": true
   }
 }

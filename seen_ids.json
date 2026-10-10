@@ -26163,7 +26163,8 @@
     "title": "Apple iPhone Xr, 64 gb, Yellow",
     "price": 2300,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "29188256": {
     "logged": true,
@@ -26656,5 +26657,14 @@
     "price": 2300,
     "condition": "Б/у",
     "model_key": "redmi note 14 glabal"
+  },
+  "68204644": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17308682_telefon-samsung-04-64gb-dual-sim-4g/",
+    "title": "Samsung Galaxy 04 64gb Dual sim 4G",
+    "price": 955,
+    "condition": "Б/у",
+    "model_key": "samsung 04"
   }
 }

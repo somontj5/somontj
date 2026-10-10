@@ -26327,7 +26327,8 @@
     "title": "Samsung Galaxy А32 128gb",
     "price": 1350,
     "condition": "Б/у",
-    "model_key": "samsung а32"
+    "model_key": "samsung а32",
+    "sold_checked": true
   },
   "85425685": {
     "logged": true,
@@ -26807,5 +26808,15 @@
     "price": 4600,
     "condition": "Б/у",
     "model_key": "apple 13 pro max"
+  },
+  "31061210": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17310612_xiaomi-redmi-not-10s/",
+    "title": "Xiaomi Redmi notе 10S",
+    "price": 1199,
+    "condition": "Б/у",
+    "model_key": "redmi notе 10s",
+    "verified_model": null
   }
 }

@@ -26527,7 +26527,8 @@
     "title": "Samsung Not 10 5G",
     "price": 1399,
     "condition": "Б/у",
-    "model_key": "samsung not 10"
+    "model_key": "samsung not 10",
+    "sold_checked": true
   },
   "84614256": {
     "logged": true,
@@ -27058,5 +27059,23 @@
     "condition": "Б/у",
     "model_key": "apple 8 plus",
     "verified_model": null
+  },
+  "53130642": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17313531_telefon-samsung-a30s-64gb-vetnam-2sim/",
+    "title": "Samsung Galaxy А30s 64gb Vetnam 2sim",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "samsung а30s"
+  },
+  "03142565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17313503_telefon-redmi-note-14-pro-256gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 14 Pro 256gb Global Version 5G",
+    "price": 2350,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro"
   }
 }

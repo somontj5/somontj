@@ -26392,7 +26392,8 @@
     "title": "Apple iPhone 15 Pro, 128 gb, White Titanium",
     "price": 6199,
     "condition": "Б/у",
-    "model_key": "apple 15 pro"
+    "model_key": "apple 15 pro",
+    "sold_checked": true
   },
   "04724516": {
     "logged": true,
@@ -26909,5 +26910,25 @@
     "price": 1450,
     "condition": "Б/у",
     "model_key": "redmi note 13 2025"
+  },
+  "31177564": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17311775_apple-iphone-xs-64-gb-gold/",
+    "title": "Apple iPhone Xs, 64 gb, Gold",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "apple xs",
+    "verified_model": null
+  },
+  "31177164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17311771_apple-iphone-x-64-gb-space-grey/",
+    "title": "Apple iPhone X, 64 gb, Space Grey",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "apple x",
+    "verified_model": null
   }
 }

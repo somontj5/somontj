@@ -26216,7 +26216,8 @@
     "title": "Samsung Galaxy S23 ultra",
     "price": 5499,
     "condition": "Б/у",
-    "model_key": "samsung s23 ultra"
+    "model_key": "samsung s23 ultra",
+    "sold_checked": true
   },
   "73917256": {
     "logged": true,
@@ -26726,5 +26727,14 @@
     "condition": "Б/у",
     "model_key": null,
     "verified_model": null
+  },
+  "69321285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17308669_telefon-samsung-a32-128gb-vetnam-5g/",
+    "title": "Самсунг А32 128гб Vetnam 5G",
+    "price": 1260,
+    "condition": "Б/у",
+    "model_key": null
   }
 }

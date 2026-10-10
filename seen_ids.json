@@ -26507,7 +26507,8 @@
     "title": "Apple iPhone 14 Pro, 256 gb, Space Black",
     "price": 3099,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "17308224": {
     "logged": true,

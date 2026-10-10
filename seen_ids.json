@@ -26289,7 +26289,8 @@
     "price": 199,
     "condition": "Б/у",
     "model_key": "samsung j2 prime",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "02222565": {
     "logged": true,
@@ -26757,5 +26758,14 @@
     "price": 1250,
     "condition": "Б/у",
     "model_key": "poco c71"
+  },
+  "77314256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17309773_telefon-redmi-not-14-pro-256gb/",
+    "title": "Xiaomi Редми нот 14 про 256гб",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "xiaomi редми нот 14 про"
   }
 }

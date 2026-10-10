@@ -25933,7 +25933,8 @@
     "title": "Apple iPhone X, 64 gb, Silver",
     "price": 1100,
     "condition": "Б/у",
-    "model_key": "apple x"
+    "model_key": "apple x",
+    "sold_checked": true
   },
   "42571264": {
     "logged": true,
@@ -25952,7 +25953,8 @@
     "title": "Apple iPhone 11 Pro Max, 64 gb, Silver",
     "price": 2999,
     "condition": "Б/у",
-    "model_key": "apple 11 pro max"
+    "model_key": "apple 11 pro max",
+    "sold_checked": true
   },
   "30447216": {
     "logged": true,
@@ -26460,5 +26462,24 @@
     "price": 4100,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "30798716": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17307987_samsung-a16/",
+    "title": "Samsung Galaxy A16",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "samsung a16",
+    "verified_model": null
+  },
+  "08172105": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17308172_samsung-not-10-5g/",
+    "title": "Samsung Not 10 5G",
+    "price": 1399,
+    "condition": "Б/у",
+    "model_key": "samsung not 10"
   }
 }

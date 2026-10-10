@@ -27079,5 +27079,23 @@
     "price": 2350,
     "condition": "Б/у",
     "model_key": "redmi note 14 pro"
+  },
+  "66016512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17313660_apple-iphone-16-pro-max-512-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 512 gb, Desert Titanium",
+    "price": 7500,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
+  },
+  "31349426": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17313494_samsung-galaxy-s26-ultra/",
+    "title": "Samsung Galaxy S26 Ultra",
+    "price": 11000,
+    "condition": "Б/у",
+    "model_key": "samsung s26 ultra"
   }
 }

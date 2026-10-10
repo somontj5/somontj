@@ -26953,7 +26953,8 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "samsung a31",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "26115256": {
     "logged": true,

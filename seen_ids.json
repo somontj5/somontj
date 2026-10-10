@@ -26930,5 +26930,14 @@
     "condition": "Б/у",
     "model_key": "apple x",
     "verified_model": null
+  },
+  "17516256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17312175_apple-iphone-16-pro-max-256-gb-black-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
+    "price": 9000,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   }
 }

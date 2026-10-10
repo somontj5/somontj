@@ -26279,7 +26279,8 @@
     "title": "Xiaomi Redmi Note 12s 128gb",
     "price": 840,
     "condition": "Б/у",
-    "model_key": "redmi note 12s"
+    "model_key": "redmi note 12s",
+    "sold_checked": true
   },
   "73070662": {
     "logged": true,
@@ -26767,5 +26768,14 @@
     "price": 1700,
     "condition": "Б/у",
     "model_key": "xiaomi редми нот 14 про"
+  },
+  "29814256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17310298_apple-iphone-14-pro-256-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro, 256 gb, Deep Purple",
+    "price": 3899,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

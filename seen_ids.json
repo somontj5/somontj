@@ -26549,7 +26549,8 @@
     "price": 3000,
     "condition": "Б/у",
     "model_key": "redmi note 15 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "30516256": {
     "logged": true,
@@ -27118,6 +27119,16 @@
     "price": 500,
     "condition": "Б/у",
     "model_key": "redmi 7a",
+    "verified_model": null
+  },
+  "24711256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17314247_apple-iphone-11-pro-max-256-gb-gold/",
+    "title": "Apple iPhone 11 Pro Max, 256 gb, Gold",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro max",
     "verified_model": null
   }
 }

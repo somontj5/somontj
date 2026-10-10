@@ -26446,7 +26446,8 @@
     "price": 1999,
     "condition": "Б/у",
     "model_key": "apple 11 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "87916256": {
     "logged": true,
@@ -26971,6 +26972,26 @@
     "price": 2300,
     "condition": "Б/у",
     "model_key": "redmi note 15",
+    "verified_model": null
+  },
+  "38311128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17312383_apple-iphone-11-128-gb-white/",
+    "title": "Apple iPhone 11, 128 gb, White",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "31236114": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17312361_xiaomi-redmi-not-14-pro/",
+    "title": "Xiaomi redmi not 14 про",
+    "price": 2200,
+    "condition": "Б/у",
+    "model_key": "redmi not 14 про",
     "verified_model": null
   }
 }

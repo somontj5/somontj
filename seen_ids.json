@@ -26110,7 +26110,8 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "infinix zero 30",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "30598214": {
     "logged": true,

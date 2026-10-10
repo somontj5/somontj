@@ -26318,7 +26318,8 @@
     "title": "Samsung Galaxy F40 64gb Vietnam 5G",
     "price": 944,
     "condition": "Б/у",
-    "model_key": "samsung f40"
+    "model_key": "samsung f40",
+    "sold_checked": true
   },
   "97232128": {
     "logged": true,
@@ -26818,5 +26819,14 @@
     "condition": "Б/у",
     "model_key": "redmi notе 10s",
     "verified_model": null
+  },
+  "91016256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17310910_apple-iphone-16-pro-max-256-gb-black-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
+    "price": 7777,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   }
 }

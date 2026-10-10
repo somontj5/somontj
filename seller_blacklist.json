@@ -457,5 +457,14 @@
     "blocked_at": "2026-10-10T11:40:01",
     "updated_at": "2026-10-10T11:40:01",
     "active_ads_at_block": 2
+  },
+  "4631583": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/4631583/",
+    "reason": "похоже на перекупщика по фото: у продавца 18 активных объявлений на площадке",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17312328_samsung-galaxsy-a31/",
+    "blocked_at": "2026-10-10T13:50:30",
+    "updated_at": "2026-10-10T13:50:30",
+    "active_ads_at_block": 18
   }
 }

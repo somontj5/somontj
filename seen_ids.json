@@ -26336,7 +26336,8 @@
     "title": "Samsung Galaxy А54 256/8gb Vietnam 5G",
     "price": 2300,
     "condition": "Б/у",
-    "model_key": "samsung а54"
+    "model_key": "samsung а54",
+    "sold_checked": true
   },
   "48990464": {
     "logged": true,
@@ -26797,5 +26798,14 @@
     "price": 1550,
     "condition": "Б/у",
     "model_key": "samsung note 10 plus"
+  },
+  "12113128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17310121_apple-iphone-13-pro-max-128-gb-graphite/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Graphite",
+    "price": 4600,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
   }
 }

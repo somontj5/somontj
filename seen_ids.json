@@ -26196,7 +26196,8 @@
     "price": 2500,
     "condition": "Б/у",
     "model_key": "poco x7",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "73616256": {
     "logged": true,
@@ -26667,5 +26668,23 @@
     "price": 955,
     "condition": "Б/у",
     "model_key": "samsung 04"
+  },
+  "30476712": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17304767_samsung-galaxy-a12/",
+    "title": "Samsung Galaxy A12",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "samsung a12"
+  },
+  "11366225": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17113662_samsung-s-25-fe/",
+    "title": "Samsung Galaxy S25 Fe",
+    "price": 3200,
+    "condition": "Б/у",
+    "model_key": "samsung s25 fe"
   }
 }

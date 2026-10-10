@@ -26309,7 +26309,8 @@
     "title": "Honor 400 Lite 8/256Gb",
     "price": 1750,
     "condition": "Б/у",
-    "model_key": "honor 400 lite"
+    "model_key": "honor 400 lite",
+    "sold_checked": true
   },
   "96140645": {
     "logged": true,

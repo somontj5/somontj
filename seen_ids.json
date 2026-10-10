@@ -26225,7 +26225,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
     "price": 11550,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "58158256": {
     "logged": true,
@@ -26715,5 +26716,15 @@
     "price": 6999,
     "condition": "Б/у",
     "model_key": "apple 15 pro max"
+  },
+  "30947210": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17309472_readme-10a/",
+    "title": "Realme10a",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
   }
 }

@@ -27087,7 +27087,8 @@
     "title": "Apple iPhone 16 Pro Max, 512 gb, Desert Titanium",
     "price": 7500,
     "condition": "Б/у",
-    "model_key": "apple 16 pro max"
+    "model_key": "apple 16 pro max",
+    "sold_checked": true
   },
   "31349426": {
     "logged": true,

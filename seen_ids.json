@@ -26441,7 +26441,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
     "price": 7777,
     "condition": "Б/у",
-    "model_key": "apple 16 pro max"
+    "model_key": "apple 16 pro max",
+    "sold_checked": true
   },
   "78805512": {
     "logged": true,
@@ -26777,5 +26778,14 @@
     "price": 3899,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "31034713": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17310347_redmi-note-13/",
+    "title": "Xiaomi redmi note 13",
+    "price": 1199,
+    "condition": "Б/у",
+    "model_key": "redmi note 13"
   }
 }

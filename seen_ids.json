@@ -27277,7 +27277,8 @@
     "title": "Самсунг А12 32Gb Vetnam 2sim",
     "price": 860,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "25430645": {
     "logged": true,
@@ -27305,7 +27306,8 @@
     "title": "|Xiaomi Redmi Note 13 256gb Glabal Version 5G",
     "price": 1560,
     "condition": "Б/у",
-    "model_key": "redmi note 13"
+    "model_key": "redmi note 13",
+    "sold_checked": true
   },
   "15378135": {
     "logged": true,
@@ -27718,5 +27720,24 @@
     "price": 2050,
     "condition": "Б/у",
     "model_key": "poco m6 pro"
+  },
+  "19291141": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17319291_apple-iphone-14-pro-max-1-tb-space-black/",
+    "title": "Apple iPhone 14 Pro Max, 1 tb, Space Black",
+    "price": 6250,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max 1 tb"
+  },
+  "31921610": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17319216_samsung-galaxy-s10/",
+    "title": "Samsung Galaxy S10",
+    "price": 1900,
+    "condition": "Б/у",
+    "model_key": "samsung s10",
+    "verified_model": null
   }
 }

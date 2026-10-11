@@ -27266,7 +27266,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
     "price": 15000,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "26712322": {
     "logged": true,
@@ -27707,5 +27708,14 @@
     "price": 9999,
     "condition": "Б/у",
     "model_key": "samsung s25 ultra"
+  },
+  "73192006": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17319200_xiaomi-poco-m6-pro/",
+    "title": "Xiaomi Poco M6 Pro",
+    "price": 2050,
+    "condition": "Б/у",
+    "model_key": "poco m6 pro"
   }
 }

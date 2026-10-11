@@ -27335,7 +27335,8 @@
     "title": "Xiaomi Redmi Note 9 128gb Glabal Version",
     "price": 840,
     "condition": "Б/у",
-    "model_key": "redmi note 9"
+    "model_key": "redmi note 9",
+    "sold_checked": true
   },
   "53970464": {
     "logged": true,
@@ -27761,6 +27762,26 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "apple xr",
+    "verified_model": null
+  },
+  "73196668": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17319666_google-pixel-8/",
+    "title": "Google Pixel 8",
+    "price": 2100,
+    "condition": "Б/у",
+    "model_key": "pixel 8",
+    "verified_model": null
+  },
+  "73195973": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17319597_redmi-a-3/",
+    "title": "Redmi A3",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "redmi a3",
     "verified_model": null
   }
 }

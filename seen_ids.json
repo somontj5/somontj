@@ -26749,7 +26749,8 @@
     "title": "Xiaomi Redmi Not 8",
     "price": 700,
     "condition": "Б/у",
-    "model_key": "redmi not 8"
+    "model_key": "redmi not 8",
+    "sold_checked": true
   },
   "47979128": {
     "logged": true,

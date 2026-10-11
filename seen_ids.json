@@ -27440,5 +27440,24 @@
     "price": 7000,
     "condition": "Б/у",
     "model_key": "apple 15 pro"
+  },
+  "80813128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17316808_apple-iphone-13-pro-max-128-gb-graphite/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Graphite",
+    "price": 4500,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
+  },
+  "31681016": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17316810_samsung-galaxy-a16/",
+    "title": "Samsung Galaxy A16",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "samsung a16",
+    "verified_model": null
   }
 }

@@ -27036,7 +27036,8 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "31236114": {
     "logged": true,
@@ -27046,7 +27047,8 @@
     "price": 2200,
     "condition": "Б/у",
     "model_key": "redmi not 14 про",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "42513128": {
     "logged": true,
@@ -27055,7 +27057,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
     "price": 3500,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "31286015": {
     "logged": true,
@@ -27065,7 +27068,8 @@
     "price": 2800,
     "condition": "Б/у",
     "model_key": "redmi note 15 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "32591164": {
     "logged": true,
@@ -27503,6 +27507,26 @@
     "price": 3000,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra",
+    "verified_model": null
+  },
+  "31719564": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17317195_apple-iphone-x-64-gb-space-grey/",
+    "title": "Apple iPhone X, 64 gb, Space Grey",
+    "price": 1199,
+    "condition": "Б/у",
+    "model_key": "apple x",
+    "verified_model": null
+  },
+  "31716564": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17317165_apple-iphone-xs-64-gb-silver/",
+    "title": "Apple iPhone Xs, 64 gb, Silver",
+    "price": 1449,
+    "condition": "Б/у",
+    "model_key": "apple xs",
     "verified_model": null
   }
 }

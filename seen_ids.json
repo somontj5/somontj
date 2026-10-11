@@ -26629,7 +26629,8 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "samsung а16",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "85301264": {
     "logged": true,
@@ -26638,7 +26639,8 @@
     "title": "Xiaomi Redmi 12C 64gb",
     "price": 944,
     "condition": "Б/у",
-    "model_key": "redmi 12c"
+    "model_key": "redmi 12c",
+    "sold_checked": true
   },
   "56820265": {
     "logged": true,
@@ -27192,5 +27194,23 @@
     "price": 701,
     "condition": "Б/у",
     "model_key": "tecno spark go 2022"
+  },
+  "21712128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17315217_telefon-redmi-note-12s-128gb-glabal-version/",
+    "title": "Redmi Note 12s,128gb",
+    "price": 799,
+    "condition": "Б/у",
+    "model_key": "redmi note 12s"
+  },
+  "84817256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17314848_apple-iphone-17-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
+    "price": 15000,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
   }
 }

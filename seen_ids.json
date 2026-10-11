@@ -27162,7 +27162,8 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "samsung м16",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "73135537": {
     "logged": true,
@@ -27615,5 +27616,15 @@
     "price": 10800,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "17898864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17317898_apple-iphone-8-64-gb-silver/",
+    "title": "Apple iPhone 8, 64 gb, Silver",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "apple 8",
+    "verified_model": null
   }
 }

@@ -27910,5 +27910,14 @@
     "condition": "Б/у",
     "model_key": "apple 11 pro",
     "verified_model": null
+  },
+  "86165522": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16861655_samsung-galaxy-s22-ulta/",
+    "title": "Samsung Galaxy S22 ultra",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
   }
 }

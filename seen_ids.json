@@ -27111,7 +27111,8 @@
     "price": 499,
     "condition": "Б/у",
     "model_key": "apple 8 plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "53130642": {
     "logged": true,
@@ -27471,7 +27472,8 @@
     "price": 950,
     "condition": "Б/у",
     "model_key": "samsung a16",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17005225": {
     "logged": true,
@@ -27572,5 +27574,23 @@
     "condition": "Б/у",
     "model_key": "apple xr",
     "verified_model": null
+  },
+  "22912644": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17315229_telefon-redmi-12c-64gb-4g/",
+    "title": "Xiaomi Redmi 12C 64gb 4G",
+    "price": 866,
+    "condition": "Б/у",
+    "model_key": "redmi 12c"
+  },
+  "25652025": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17315314_telefon-redmi-14-pro-256gb-glabal-version-5g-2025/",
+    "title": "Xiaomi Redmi Note 14 pro 256gb Global Version 5G 2025",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro"
   }
 }

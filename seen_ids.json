@@ -26782,7 +26782,8 @@
     "title": "Самсунг А32 128гб Vetnam 5G",
     "price": 1260,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "96222565": {
     "logged": true,

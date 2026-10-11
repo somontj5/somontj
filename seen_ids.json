@@ -26671,7 +26671,8 @@
     "title": "Samsung Galaxy А03s 32gb Vetnam 2sim",
     "price": 800,
     "condition": "Б/у",
-    "model_key": "samsung а03s"
+    "model_key": "samsung а03s",
+    "sold_checked": true
   },
   "19542565": {
     "logged": true,
@@ -26680,7 +26681,8 @@
     "title": "Samsung Galaxy А54 256Gb Vetnam 5G",
     "price": 2266,
     "condition": "Б/у",
-    "model_key": "samsung а54"
+    "model_key": "samsung а54",
+    "sold_checked": true
   },
   "62504645": {
     "logged": true,
@@ -26689,7 +26691,8 @@
     "title": "Samsung Galaxy F04 64Gb Vetnam 5G",
     "price": 900,
     "condition": "Б/у",
-    "model_key": "samsung f04"
+    "model_key": "samsung f04",
+    "sold_checked": true
   },
   "14825652": {
     "logged": true,
@@ -27253,5 +27256,32 @@
     "price": 1560,
     "condition": "Б/у",
     "model_key": "redmi note 13"
+  },
+  "15378135": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17315378_telefon-samsung-a13-dual-sim-5g/",
+    "title": "Самсунг А13 Dual sim 5G",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "64542565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17315364_telefon-samsung-a54-256gb-vetnam-5g/",
+    "title": "Самсунг А54 256гб Vetnam 5G",
+    "price": 2340,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "53449128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17315344_telefon-redmi-note-9-128gb-glabal-version/",
+    "title": "Xiaomi Redmi Note 9 128gb Glabal Version",
+    "price": 840,
+    "condition": "Б/у",
+    "model_key": "redmi note 9"
   }
 }

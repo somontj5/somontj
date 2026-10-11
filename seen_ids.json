@@ -27089,7 +27089,8 @@
     "price": 600,
     "condition": "Б/у",
     "model_key": null,
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "73133019": {
     "logged": true,

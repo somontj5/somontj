@@ -27174,7 +27174,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Silver",
     "price": 4800,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "87412128": {
     "logged": true,

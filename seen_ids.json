@@ -27359,7 +27359,8 @@
     "title": "Samsung Galaxy A03S 32gb Vietnam 2sim",
     "price": 800,
     "condition": "Б/у",
-    "model_key": "samsung a03s"
+    "model_key": "samsung a03s",
+    "sold_checked": true
   },
   "50114256": {
     "logged": true,
@@ -27368,7 +27369,8 @@
     "title": "Apple iPhone 14 Pro Max, 256 gb, Deep Purple",
     "price": 6000,
     "condition": "Б/у",
-    "model_key": "apple 14 pro max"
+    "model_key": "apple 14 pro max",
+    "sold_checked": true
   },
   "83212825": {
     "logged": true,
@@ -27377,7 +27379,8 @@
     "title": "Samsung Galaxy А32 128Gb Vetnam 2sim 5G",
     "price": 1260,
     "condition": "Б/у",
-    "model_key": "samsung а32"
+    "model_key": "samsung а32",
+    "sold_checked": true
   },
   "45604645": {
     "logged": true,
@@ -27868,5 +27871,24 @@
     "price": 3200,
     "condition": "Б/у",
     "model_key": "infinix gt 30 pro"
+  },
+  "23915128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17321239_apple-iphone-15-pro-128-gb-blue-titanium/",
+    "title": "Apple iPhone 15 Pro, 128 gb, Blue Titanium",
+    "price": 5800,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro"
+  },
+  "32122923": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17321229_s23fe/",
+    "title": "Samsung galaxy S23 fe",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "samsung s23 fe",
+    "verified_model": null
   }
 }

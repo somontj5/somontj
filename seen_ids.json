@@ -27152,5 +27152,15 @@
     "condition": "Б/у",
     "model_key": "samsung s10",
     "verified_model": null
+  },
+  "30176128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17314830_samsung-galaxy-a17-6-128/",
+    "title": "Samsung Galaxy A17 6/128",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "samsung a17 6 128",
+    "verified_model": null
   }
 }

@@ -27412,7 +27412,8 @@
     "price": 2499,
     "condition": "Б/у",
     "model_key": "apple 14",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "72413256": {
     "logged": true,

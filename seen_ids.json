@@ -27750,5 +27750,15 @@
     "condition": "Б/у",
     "model_key": "poco m4 pro",
     "verified_model": null
+  },
+  "19466128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17319466_apple-iphone-xr-128-gb-black/",
+    "title": "Apple iPhone Xr, 128 gb, Black",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
   }
 }

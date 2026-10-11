@@ -1383,7 +1383,13 @@
     "logged": true
   },
   "13388421": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17133884_samsung-galaxy-s-21-ultra/",
+    "title": "Samsung Galaxy S21 Ultra",
+    "price": 3400,
+    "condition": "Б/у",
+    "model_key": "samsung s21 ultra"
   },
   "78816256": {
     "logged": true
@@ -26652,7 +26658,8 @@
     "title": "Xioami Redmi 15 256/8Gb 2026 5G",
     "price": 1560,
     "condition": "Б/у",
-    "model_key": "redmi 15 2026"
+    "model_key": "redmi 15 2026",
+    "sold_checked": true
   },
   "08648732": {
     "logged": true,
@@ -27345,5 +27352,15 @@
     "price": 2300,
     "condition": "Б/у",
     "model_key": "samsung а35 vetnam"
+  },
+  "72018464": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17315601_galaxy-a7-2018-4-64-gb/",
+    "title": "Samsung Galaxy A7 2018 4/64 gb",
+    "price": 120,
+    "condition": "Б/у",
+    "model_key": "samsung a7 2018",
+    "verified_model": null
   }
 }

@@ -27326,7 +27326,8 @@
     "title": "Самсунг А54 256гб Vetnam 5G",
     "price": 2340,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "53449128": {
     "logged": true,
@@ -27793,5 +27794,15 @@
     "price": 2400,
     "condition": "Б/у",
     "model_key": "samsung a35"
+  },
+  "71266128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16698571_samsung-galaxy-a26-6-128/",
+    "title": "Samsung Galaxy A26",
+    "price": 1900,
+    "condition": "Б/у",
+    "model_key": "samsung a26",
+    "verified_model": null
   }
 }

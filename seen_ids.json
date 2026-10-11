@@ -27678,5 +27678,14 @@
     "price": 450,
     "condition": "Б/у",
     "model_key": "samsung a3"
+  },
+  "31876317": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17318763_samsung-galaxy-a17/",
+    "title": "Samsung Galaxy A17",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "samsung a17"
   }
 }

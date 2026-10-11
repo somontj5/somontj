@@ -27432,7 +27432,8 @@
     "title": "Apple iPhone 13 Pro, 256 gb, Sierra Blue",
     "price": 4000,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "84417256": {
     "logged": true,
@@ -27889,6 +27890,25 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "samsung s23 fe",
+    "verified_model": null
+  },
+  "27413128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17321274_apple-iphone-13-pro-128-gb-graphite/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Graphite",
+    "price": 5100,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
+  },
+  "12561164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17321256_apple-iphone-11-pro-64-gb-space-grey/",
+    "title": "Apple iPhone 11 Pro, 64 gb, Space Grey",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
     "verified_model": null
   }
 }

@@ -27205,7 +27205,8 @@
     "price": 1450,
     "condition": "Б/у",
     "model_key": "samsung s10",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "30176128": {
     "logged": true,
@@ -27215,7 +27216,8 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "samsung a17 6 128",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "87213128": {
     "logged": true,
@@ -27657,5 +27659,23 @@
     "condition": "Б/у",
     "model_key": "apple 12",
     "verified_model": null
+  },
+  "17318710": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17318710_tecno-spark-go/",
+    "title": "Tecno Spark Go",
+    "price": 799,
+    "condition": "Б/у",
+    "model_key": "tecno spark go"
+  },
+  "73186903": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17318690_samsung-galaxy-a3/",
+    "title": "Samsung Galaxy A3",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "samsung a3"
   }
 }

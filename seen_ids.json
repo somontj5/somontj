@@ -26579,7 +26579,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
     "price": 8299,
     "condition": "Б/у",
-    "model_key": "apple 15 pro max"
+    "model_key": "apple 15 pro max",
+    "sold_checked": true
   },
   "08493215": {
     "logged": true,
@@ -27140,5 +27141,15 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "apple 12 mini"
+  },
+  "31477010": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17314770_samsung-s10/",
+    "title": "Samsung Galaxy S10",
+    "price": 1450,
+    "condition": "Б/у",
+    "model_key": "samsung s10",
+    "verified_model": null
   }
 }

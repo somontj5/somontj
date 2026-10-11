@@ -27452,7 +27452,8 @@
     "title": "Samsung Galaxy a20",
     "price": 650,
     "condition": "Б/у",
-    "model_key": "samsung a20"
+    "model_key": "samsung a20",
+    "sold_checked": true
   },
   "31575521": {
     "logged": true,

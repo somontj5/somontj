@@ -26910,7 +26910,8 @@
     "title": "Xiaomi Redmi Note 14 pro 256gb",
     "price": 1766,
     "condition": "Б/у",
-    "model_key": "redmi note 14 pro"
+    "model_key": "redmi note 14 pro",
+    "sold_checked": true
   },
   "20825625": {
     "logged": true,
@@ -27398,5 +27399,14 @@
     "price": 12750,
     "condition": "Б/у",
     "model_key": "apple 17 pro"
+  },
+  "31612320": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17316123_samsung-a20/",
+    "title": "Samsung Galaxy a20",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "samsung a20"
   }
 }

@@ -27297,7 +27297,8 @@
     "title": "Xiaomi Redmi Note 14 pro 256gb Glabal Version 5G",
     "price": 2355,
     "condition": "Б/у",
-    "model_key": "redmi note 14 pro"
+    "model_key": "redmi note 14 pro",
+    "sold_checked": true
   },
   "87132565": {
     "logged": true,

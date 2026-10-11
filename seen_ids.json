@@ -27098,7 +27098,8 @@
     "title": "Honor X9b 5G",
     "price": 3100,
     "condition": "Б/у",
-    "model_key": "honor x9b"
+    "model_key": "honor x9b",
+    "sold_checked": true
   },
   "13275864": {
     "logged": true,
@@ -27488,7 +27489,8 @@
     "price": 2299,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "70576216": {
     "logged": true,
@@ -27528,6 +27530,35 @@
     "price": 1449,
     "condition": "Б/у",
     "model_key": "apple xs",
+    "verified_model": null
+  },
+  "36772016": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17317367_samsung-galxsy-a7-2016/",
+    "title": "Samsung Galaxy A7 2016",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "samsung a7 2016"
+  },
+  "17322256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17317322_apple-iphone-xs-256-gb-gold/",
+    "title": "Apple iPhone Xs, 256 gb, Gold",
+    "price": 1399,
+    "condition": "Б/у",
+    "model_key": "apple xs",
+    "verified_model": null
+  },
+  "31723240": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17317232_samsung-a40/",
+    "title": "Samsung Galaxy a40",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "samsung a40",
     "verified_model": null
   }
 }

@@ -27386,7 +27386,8 @@
     "title": "Samsung Galaxy А04 64gb Vietnam 5G",
     "price": 950,
     "condition": "Б/у",
-    "model_key": "samsung а04"
+    "model_key": "samsung а04",
+    "sold_checked": true
   },
   "53512885": {
     "logged": true,
@@ -27848,5 +27849,24 @@
     "condition": "Б/у",
     "model_key": "apple 6s",
     "verified_model": null
+  },
+  "73210719": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17321071_redmi-note-9/",
+    "title": "Xiaomi Redmi Note 9",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "redmi note 9",
+    "verified_model": null
+  },
+  "17321171": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17321171_b-u/",
+    "title": "Infinix GT 30 Pro",
+    "price": 3200,
+    "condition": "Б/у",
+    "model_key": "infinix gt 30 pro"
   }
 }

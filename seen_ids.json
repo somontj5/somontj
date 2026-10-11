@@ -27109,7 +27109,8 @@
     "title": "Samsung Galaxy А30s 64gb Vetnam 2sim",
     "price": 750,
     "condition": "Б/у",
-    "model_key": "samsung а30s"
+    "model_key": "samsung а30s",
+    "sold_checked": true
   },
   "03142565": {
     "logged": true,
@@ -27261,7 +27262,8 @@
     "title": "Самсунг А30S 64Gb Dual sim 5G",
     "price": 699,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "94142565": {
     "logged": true,

@@ -27194,7 +27194,8 @@
     "title": "Apple iPhone 12 mini, 128 gb, Black",
     "price": 1200,
     "condition": "Б/у",
-    "model_key": "apple 12 mini"
+    "model_key": "apple 12 mini",
+    "sold_checked": true
   },
   "31477010": {
     "logged": true,
@@ -27646,5 +27647,15 @@
     "price": 4800,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "32312128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17318323_apple-iphone-12-128-gb-product-red/",
+    "title": "Apple iPhone 12, 128 gb, Product Red",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "apple 12",
+    "verified_model": null
   }
 }

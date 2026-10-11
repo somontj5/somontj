@@ -27079,7 +27079,8 @@
     "price": 2500,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17313298": {
     "logged": true,
@@ -27560,6 +27561,16 @@
     "price": 500,
     "condition": "Б/у",
     "model_key": "samsung a40",
+    "verified_model": null
+  },
+  "17364128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17317364_apple-iphone-xr-128-gb-blue/",
+    "title": "Apple iPhone Xr, 128 gb, Blue",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "apple xr",
     "verified_model": null
   }
 }

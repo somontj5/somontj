@@ -27173,7 +27173,8 @@
     "price": 500,
     "condition": "Б/у",
     "model_key": "redmi 7a",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "24711256": {
     "logged": true,
@@ -27626,5 +27627,14 @@
     "condition": "Б/у",
     "model_key": "apple 8",
     "verified_model": null
+  },
+  "31807112": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17318071_xiaomi-redmi-note-12/",
+    "title": "Xiaomi Redmi Note 12",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "redmi note 12"
   }
 }

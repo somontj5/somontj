@@ -27739,5 +27739,15 @@
     "condition": "Б/у",
     "model_key": "samsung s10",
     "verified_model": null
+  },
+  "67658664": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16765866_poco-m4-pro/",
+    "title": "Xioami Poco M4 Pro",
+    "price": 1499,
+    "condition": "Б/у",
+    "model_key": "poco m4 pro",
+    "verified_model": null
   }
 }

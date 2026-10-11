@@ -27257,7 +27257,8 @@
     "title": "Redmi Note 12s,128gb",
     "price": 799,
     "condition": "Б/у",
-    "model_key": "redmi note 12s"
+    "model_key": "redmi note 12s",
+    "sold_checked": true
   },
   "84817256": {
     "logged": true,

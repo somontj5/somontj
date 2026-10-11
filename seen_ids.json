@@ -26712,7 +26712,8 @@
     "title": "Samsung Galaxy 04 64gb Dual sim 4G",
     "price": 955,
     "condition": "Б/у",
-    "model_key": "samsung 04"
+    "model_key": "samsung 04",
+    "sold_checked": true
   },
   "30476712": {
     "logged": true,
@@ -26721,7 +26722,8 @@
     "title": "Samsung Galaxy A12",
     "price": 900,
     "condition": "Б/у",
-    "model_key": "samsung a12"
+    "model_key": "samsung a12",
+    "sold_checked": true
   },
   "11366225": {
     "logged": true,
@@ -26730,7 +26732,8 @@
     "title": "Samsung Galaxy S25 Fe",
     "price": 3200,
     "condition": "Б/у",
-    "model_key": "samsung s25 fe"
+    "model_key": "samsung s25 fe",
+    "sold_checked": true
   },
   "73026018": {
     "logged": true,
@@ -26748,7 +26751,8 @@
     "title": "Xiaomi Redmi Note 9 128gb",
     "price": 950,
     "condition": "Б/у",
-    "model_key": "redmi note 9"
+    "model_key": "redmi note 9",
+    "sold_checked": true
   },
   "45215256": {
     "logged": true,
@@ -26757,7 +26761,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
     "price": 6999,
     "condition": "Б/у",
-    "model_key": "apple 15 pro max"
+    "model_key": "apple 15 pro max",
+    "sold_checked": true
   },
   "30947210": {
     "logged": true,
@@ -27293,5 +27298,50 @@
     "price": 920,
     "condition": "Б/у",
     "model_key": "samsung f04"
+  },
+  "43703322": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17315437_telefon-samsung-a03s-32gb-vetnam-2sim/",
+    "title": "Samsung Galaxy A03S 32gb Vietnam 2sim",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "samsung a03s"
+  },
+  "50114256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17315501_apple-iphone-14-pro-max-256-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb, Deep Purple",
+    "price": 6000,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
+  },
+  "83212825": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17315448_telefon-samsung-a32-128gb-vetnam-2sim-5g/",
+    "title": "Samsung Galaxy А32 128Gb Vetnam 2sim 5G",
+    "price": 1260,
+    "condition": "Б/у",
+    "model_key": "samsung а32"
+  },
+  "45604645": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17315456_telefon-samsung-04-64gb-vetnam-5g/",
+    "title": "Samsung Galaxy А04 64gb Vietnam 5G",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "samsung а04"
+  },
+  "53512885": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17315335_telefon-samsung-a35-128-8gb-vetnam-5g/",
+    "title": "Samsung Galaxy А35 128/8Gb Vetnam 5G",
+    "price": 2300,
+    "condition": "Б/у",
+    "model_key": "samsung а35 vetnam"
   }
 }

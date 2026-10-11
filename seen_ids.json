@@ -26570,7 +26570,8 @@
     "price": 889,
     "condition": "Б/у",
     "model_key": null,
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "33215256": {
     "logged": true,
@@ -26590,7 +26591,8 @@
     "price": 1999,
     "condition": "Б/у",
     "model_key": "samsung s21",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "53891285": {
     "logged": true,
@@ -27161,6 +27163,25 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "samsung a17 6 128",
+    "verified_model": null
+  },
+  "87213128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17314872_apple-iphone-13-pro-128-gb-silver/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Silver",
+    "price": 4800,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
+  },
+  "87412128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17314874_apple-iphone-12-pro-128-gb-silver/",
+    "title": "Apple iPhone 12 pro, 128 gb, Silver",
+    "price": 2599,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro",
     "verified_model": null
   }
 }

@@ -26818,7 +26818,8 @@
     "title": "Xiaomi Редми нот 14 про 256гб",
     "price": 1700,
     "condition": "Б/у",
-    "model_key": "xiaomi редми нот 14 про"
+    "model_key": "xiaomi редми нот 14 про",
+    "sold_checked": true
   },
   "29814256": {
     "logged": true,
@@ -26837,7 +26838,8 @@
     "title": "Xiaomi redmi note 13",
     "price": 1199,
     "condition": "Б/у",
-    "model_key": "redmi note 13"
+    "model_key": "redmi note 13",
+    "sold_checked": true
   },
   "71102565": {
     "logged": true,
@@ -26846,7 +26848,8 @@
     "title": "Samsung Galaxy Note 10+ 256gb Carea 5G",
     "price": 1550,
     "condition": "Б/у",
-    "model_key": "samsung note 10 plus"
+    "model_key": "samsung note 10 plus",
+    "sold_checked": true
   },
   "12113128": {
     "logged": true,
@@ -26855,7 +26858,8 @@
     "title": "Apple iPhone 13 Pro Max, 128 gb, Graphite",
     "price": 4600,
     "condition": "Б/у",
-    "model_key": "apple 13 pro max"
+    "model_key": "apple 13 pro max",
+    "sold_checked": true
   },
   "31061210": {
     "logged": true,
@@ -27362,5 +27366,25 @@
     "condition": "Б/у",
     "model_key": "samsung a7 2018",
     "verified_model": null
+  },
+  "76314128": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17315763_apple-iphone-14-128-gb-starlight/",
+    "title": "Apple iPhone 14, 128 gb, Starlight",
+    "price": 2499,
+    "condition": "Б/у",
+    "model_key": "apple 14",
+    "verified_model": null
+  },
+  "72413256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17315724_apple-iphone-13-pro-256-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 256 gb, Sierra Blue",
+    "price": 4000,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

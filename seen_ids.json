@@ -26772,7 +26772,8 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": null,
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "69321285": {
     "logged": true,

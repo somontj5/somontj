@@ -27784,5 +27784,14 @@
     "condition": "Б/у",
     "model_key": "redmi a3",
     "verified_model": null
+  },
+  "86935128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17319869_samsung-galaxy-a35-128gb/",
+    "title": "Samsung Galaxy A35 128Gb",
+    "price": 2400,
+    "condition": "Б/у",
+    "model_key": "samsung a35"
   }
 }

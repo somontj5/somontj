@@ -27237,7 +27237,8 @@
     "price": 2599,
     "condition": "Б/у",
     "model_key": "apple 12 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "48922022": {
     "logged": true,
@@ -27687,5 +27688,14 @@
     "price": 1750,
     "condition": "Б/у",
     "model_key": "samsung a17"
+  },
+  "92713128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17318927_apple-iphone-13-pro-max-128-gb-gold/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Gold",
+    "price": 4499,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
   }
 }

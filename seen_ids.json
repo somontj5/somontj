@@ -27014,7 +27014,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
     "price": 7300,
     "condition": "Б/у",
-    "model_key": "apple 15 pro max"
+    "model_key": "apple 15 pro max",
+    "sold_checked": true
   },
   "31229515": {
     "logged": true,
@@ -27024,7 +27025,8 @@
     "price": 2300,
     "condition": "Б/у",
     "model_key": "redmi note 15",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "38311128": {
     "logged": true,
@@ -27422,7 +27424,8 @@
     "title": "Samsung Galaxy S21 Ultra",
     "price": 3100,
     "condition": "Б/у",
-    "model_key": "samsung s21 ultra"
+    "model_key": "samsung s21 ultra",
+    "sold_checked": true
   },
   "51114256": {
     "logged": true,
@@ -27470,6 +27473,36 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "samsung s22",
+    "verified_model": null
+  },
+  "09911128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17317099_apple-iphone-11-128-gb-black/",
+    "title": "Apple iPhone 11, 128 gb, Black",
+    "price": 2299,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "70576216": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17317057_xiaomi-redmi-6a-2-16gb/",
+    "title": "Xiaomi Redmi 6A 2/16gb",
+    "price": 130,
+    "condition": "Б/у",
+    "model_key": "redmi 6a",
+    "verified_model": null
+  },
+  "31707222": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17317072_s22-ultra/",
+    "title": "Samsung Galaxy S22 ultra",
+    "price": 3000,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra",
     "verified_model": null
   }
 }

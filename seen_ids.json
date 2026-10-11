@@ -27473,7 +27473,8 @@
     "price": 100,
     "condition": "Б/у",
     "model_key": "apple 14 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "76015256": {
     "logged": true,
@@ -27922,5 +27923,14 @@
     "price": 4300,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra"
+  },
+  "31717154": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17317171_inoi-a54/",
+    "title": "Inoi A54",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": null
   }
 }

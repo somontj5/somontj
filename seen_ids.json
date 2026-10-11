@@ -26951,7 +26951,8 @@
     "title": "Apple iPhone 14 Pro, 128 gb, Deep Purple",
     "price": 5400,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "25682025": {
     "logged": true,
@@ -26960,7 +26961,8 @@
     "title": "Xiaomi Redmi Note 13 256/8Gb 2025",
     "price": 1450,
     "condition": "Б/у",
-    "model_key": "redmi note 13 2025"
+    "model_key": "redmi note 13 2025",
+    "sold_checked": true
   },
   "31177564": {
     "logged": true,
@@ -27417,5 +27419,15 @@
     "price": 3100,
     "condition": "Б/у",
     "model_key": "samsung s21 ultra"
+  },
+  "51114256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17316511_apple-iphone-14-pro-256-gb-space-black/",
+    "title": "Apple iPhone 14 Pro, 256 gb, Space Black",
+    "price": 100,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro",
+    "verified_model": null
   }
 }

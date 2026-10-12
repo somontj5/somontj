@@ -28227,7 +28227,8 @@
     "price": 1999,
     "condition": "Б/у",
     "model_key": "apple 11 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "24426345": {
     "logged": true,

@@ -28050,7 +28050,8 @@
     "title": "Apple iPhone Air, 256 gb, Cloud White",
     "price": 9500,
     "condition": "Б/у",
-    "model_key": "apple air"
+    "model_key": "apple air",
+    "sold_checked": true
   },
   "26201164": {
     "logged": true,
@@ -28069,7 +28070,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
     "price": 13800,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "22883256": {
     "logged": true,
@@ -28399,5 +28401,23 @@
     "condition": "Б/у",
     "model_key": "apple xr",
     "verified_model": null
+  },
+  "72613325": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17326726_telefon-samsung-a13-32gb-vetnam-5g/",
+    "title": "Samsung Galaxy А13 32Gb Vetnam 5G",
+    "price": 1030,
+    "condition": "Б/у",
+    "model_key": "samsung а13"
+  },
+  "95321285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17326695_telefon-samsung-a32-128gb-dual-sim-5g/",
+    "title": "Samsung Galaxy А32 128GB",
+    "price": 1266,
+    "condition": "Б/у",
+    "model_key": "samsung а32"
   }
 }

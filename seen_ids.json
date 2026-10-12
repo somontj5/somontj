@@ -28144,7 +28144,8 @@
     "price": 1100,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "32434024": {
     "logged": true,
@@ -28153,7 +28154,8 @@
     "title": "Samsung galaxy s24ultra",
     "price": 7300,
     "condition": "Б/у",
-    "model_key": "samsung s24ultra"
+    "model_key": "samsung s24ultra",
+    "sold_checked": true
   },
   "32431625": {
     "logged": true,
@@ -28162,7 +28164,8 @@
     "title": "Samsung Galaxy S25 FE",
     "price": 3400,
     "condition": "Б/у",
-    "model_key": "samsung s25 fe"
+    "model_key": "samsung s25 fe",
+    "sold_checked": true
   },
   "51812128": {
     "logged": true,
@@ -28181,7 +28184,8 @@
     "title": "Apple iPhone 13 Pro Max, 128 gb",
     "price": 5100,
     "condition": "Б/у",
-    "model_key": "apple 13 pro max"
+    "model_key": "apple 13 pro max",
+    "sold_checked": true
   },
   "32487052": {
     "logged": true,
@@ -28635,6 +28639,46 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "realme note 60 x",
+    "verified_model": null
+  },
+  "76486256": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17327648_apple-iphone-6s-256-gb/",
+    "title": "Samsung Galaxy a17",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "samsung a17",
+    "verified_model": null
+  },
+  "73283785": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17328378_redmi-5-plus/",
+    "title": "Xiaomi Redmi 5 Plus",
+    "price": 400,
+    "condition": "Б/у",
+    "model_key": "redmi 5 plus",
+    "verified_model": null
+  },
+  "77161264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17327716_telefon-redmi-12s-64gb/",
+    "title": "Xiaomi Redmi 12с 64gb",
+    "price": 880,
+    "condition": "Б/у",
+    "model_key": "redmi 12с"
+  },
+  "35116128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17328351_samsung-galaxy-a16-128gb/",
+    "title": "Samsung Galaxy A16 128GB",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "samsung a16",
     "verified_model": null
   }
 }

@@ -27853,7 +27853,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
     "price": 7200,
     "condition": "Б/у",
-    "model_key": "apple 15 pro max"
+    "model_key": "apple 15 pro max",
+    "sold_checked": true
   },
   "31997303": {
     "logged": true,
@@ -28190,6 +28191,25 @@
     "price": 1300,
     "condition": "Б/у",
     "model_key": "apple xr",
+    "verified_model": null
+  },
+  "32463114": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17324631_xiaomi-redmi-note-14-pro-plus/",
+    "title": "Xiaomi Redmi Note 14 pro plus",
+    "price": 3100,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro plus"
+  },
+  "17325006": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17325006_bo-savdo-meshad-karopka-dokumentov-khai/",
+    "title": "Samsung Galaxy A05s",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "samsung a05s",
     "verified_model": null
   }
 }

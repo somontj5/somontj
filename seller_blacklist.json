@@ -475,5 +475,14 @@
     "blocked_at": "2026-10-11T08:42:28",
     "updated_at": "2026-10-11T08:42:28",
     "active_ads_at_block": 5
+  },
+  "9939988": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/9939988/",
+    "reason": "похоже на перекупщика по фото: Фон в виде декоративной кирпичной стены часто используется магазинами и перекупщиками для предметной съемки товаров на продажу.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17326614_apple-iphone-xr-128-gb-black/",
+    "blocked_at": "2026-10-12T12:38:36",
+    "updated_at": "2026-10-12T12:38:36",
+    "active_ads_at_block": 1
   }
 }

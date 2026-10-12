@@ -28009,7 +28009,8 @@
     "title": "Apple iPhone 18 Pro Max, 256 gb, Black",
     "price": 16500,
     "condition": "Б/у",
-    "model_key": "apple 18 pro max"
+    "model_key": "apple 18 pro max",
+    "sold_checked": true
   },
   "10617256": {
     "logged": true,
@@ -28018,7 +28019,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
     "price": 11500,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "73223278": {
     "logged": true,
@@ -28028,7 +28030,8 @@
     "price": 600,
     "condition": "Б/у",
     "model_key": "samsung note 8",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "32265864": {
     "logged": true,
@@ -28056,7 +28059,8 @@
     "title": "Apple iPhone 11 Pro Max, 64 gb",
     "price": 2000,
     "condition": "Б/у",
-    "model_key": "apple 11 pro max"
+    "model_key": "apple 11 pro max",
+    "sold_checked": true
   },
   "69817256": {
     "logged": true,
@@ -28367,5 +28371,33 @@
     "price": 1545,
     "condition": "Б/у",
     "model_key": "samsung note 10 plus"
+  },
+  "66329128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17326632_telefon-redmi-note-9-128gb-glabal-version/",
+    "title": "Xiaomi Redmi Note 9 128gb Glabal Version",
+    "price": 760,
+    "condition": "Б/у",
+    "model_key": "redmi note 9"
+  },
+  "08142565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17326608_telefon-redmi-note-14-pro-256gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 14 pro 256gb Glabal Version 5G",
+    "price": 1744,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro"
+  },
+  "26614128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17326614_apple-iphone-xr-128-gb-black/",
+    "title": "Apple iPhone Xr, 128 gb, Black",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
   }
 }

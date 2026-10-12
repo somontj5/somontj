@@ -28196,7 +28196,8 @@
     "price": 1100,
     "condition": "Б/у",
     "model_key": "samsung a52",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "32481452": {
     "logged": true,
@@ -28206,7 +28207,8 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "samsung a52",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "32495864": {
     "logged": true,
@@ -28216,7 +28218,8 @@
     "price": 1300,
     "condition": "Б/у",
     "model_key": "apple xr",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "32463114": {
     "logged": true,
@@ -28711,6 +28714,44 @@
     "price": 1400,
     "condition": "Б/у",
     "model_key": "apple 11",
+    "verified_model": null
+  },
+  "28497664": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17328497_apple-iphone-6s-plus-64-gb/",
+    "title": "Apple iPhone 6S plus, 64 gb",
+    "price": 499,
+    "condition": "Б/у",
+    "model_key": "apple 6s plus",
+    "verified_model": null
+  },
+  "05013256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17327050_telefon-redmi-not-13-256gb/",
+    "title": "Xiaomi Redmi Note 13",
+    "price": 1580,
+    "condition": "Б/у",
+    "model_key": "redmi note 13"
+  },
+  "02414256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17327024_telefon-redmi-not-14-pro-256gb/",
+    "title": "Xiaomi Redmi note 14 Pro 256gb",
+    "price": 1850,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro"
+  },
+  "32697910": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17326979_redmi-10s-telefon-biior-khub-sostoianie-ideal-tu-tel-kharduiash-iak-khel/",
+    "title": "Xiaomi Redmi 10c",
+    "price": 899,
+    "condition": "Б/у",
+    "model_key": "redmi 10c",
     "verified_model": null
   }
 }

@@ -27875,7 +27875,8 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "samsung a31",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "20006616": {
     "logged": true,
@@ -27885,7 +27886,8 @@
     "price": 500,
     "condition": "Б/у",
     "model_key": "apple 6s",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "73210719": {
     "logged": true,
@@ -27905,7 +27907,8 @@
     "title": "Infinix GT 30 Pro",
     "price": 3200,
     "condition": "Б/у",
-    "model_key": "infinix gt 30 pro"
+    "model_key": "infinix gt 30 pro",
+    "sold_checked": true
   },
   "23915128": {
     "logged": true,
@@ -27925,7 +27928,8 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "samsung s23 fe",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "27413128": {
     "logged": true,
@@ -28210,6 +28214,47 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "samsung a05s",
+    "verified_model": null
+  },
+  "12911256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17325129_apple-iphone-11-pro-256-gb-midnight-green/",
+    "title": "Apple iPhone 11 Pro, 256 gb, Midnight Green",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
+  },
+  "24426345": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17324426_samsung-galaxy-a34-5g/",
+    "title": "Samsung galaxy А34 5G",
+    "price": 2100,
+    "condition": "Б/у",
+    "model_key": "samsung а34",
+    "verified_model": null
+  },
+  "24455345": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17324455_samsung-a34-5g/",
+    "title": "Samsung Galaxy A34 5G",
+    "price": 2250,
+    "condition": "Б/у",
+    "model_key": "samsung a34",
+    "verified_model": null
+  },
+  "46611128": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17324466_apple-iphone-11-128-gb-yellow/",
+    "title": "Apple iPhone 11, 128 gb, Yellow",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "apple 11",
     "verified_model": null
   }
 }

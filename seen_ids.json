@@ -27645,7 +27645,8 @@
     "price": 999,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "92716256": {
     "logged": true,

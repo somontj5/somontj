@@ -27707,7 +27707,8 @@
     "title": "Tecno Spark Go",
     "price": 799,
     "condition": "Б/у",
-    "model_key": "tecno spark go"
+    "model_key": "tecno spark go",
+    "sold_checked": true
   },
   "73186903": {
     "logged": true,
@@ -27716,7 +27717,8 @@
     "title": "Samsung Galaxy A3",
     "price": 450,
     "condition": "Б/у",
-    "model_key": "samsung a3"
+    "model_key": "samsung a3",
+    "sold_checked": true
   },
   "31876317": {
     "logged": true,
@@ -27725,7 +27727,8 @@
     "title": "Samsung Galaxy A17",
     "price": 1750,
     "condition": "Б/у",
-    "model_key": "samsung a17"
+    "model_key": "samsung a17",
+    "sold_checked": true
   },
   "92713128": {
     "logged": true,

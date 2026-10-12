@@ -28616,5 +28616,25 @@
     "condition": "Б/у",
     "model_key": "redmi 15c",
     "verified_model": null
+  },
+  "28811128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17328288_apple-iphone-11-128-gb-black/",
+    "title": "Apple iPhone 11, 128 gb, Black",
+    "price": 899,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "17328236": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17328236_telefon-dar-kholati-khub-karor-dorad/",
+    "title": "Realmi note 60 x",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "realme note 60 x",
+    "verified_model": null
   }
 }

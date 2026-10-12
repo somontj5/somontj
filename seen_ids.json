@@ -28315,7 +28315,8 @@
     "price": 1750,
     "condition": "Б/у",
     "model_key": "redmi note 15 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "32564521": {
     "logged": true,
@@ -28804,6 +28805,16 @@
     "price": 700,
     "condition": "Б/у",
     "model_key": "samsung a32",
+    "verified_model": null
+  },
+  "78411128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17328784_apple-iphone-11-128-gb-white/",
+    "title": "Apple iPhone 11, 128 gb, White",
+    "price": 2299,
+    "condition": "Б/у",
+    "model_key": "apple 11",
     "verified_model": null
   }
 }

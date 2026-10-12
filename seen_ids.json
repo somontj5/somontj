@@ -28297,5 +28297,15 @@
     "price": 3500,
     "condition": "Б/у",
     "model_key": "samsung s21 ultra"
+  },
+  "32583921": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17325839_samsung-s21/",
+    "title": "Samsung Galaxy S21+",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "samsung s21 plus",
+    "verified_model": null
   }
 }

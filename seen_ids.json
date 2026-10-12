@@ -28272,7 +28272,8 @@
     "price": 2250,
     "condition": "Б/у",
     "model_key": "samsung a34",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "46611128": {
     "logged": true,
@@ -28773,6 +28774,16 @@
     "price": 2600,
     "condition": "Б/у",
     "model_key": "apple 12 pro",
+    "verified_model": null
+  },
+  "32721517": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17327215_samsung-a17/",
+    "title": "Samsung Galaxy A17",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "samsung a17",
     "verified_model": null
   }
 }

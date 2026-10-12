@@ -28488,6 +28488,7 @@
     "title": "Xiaomi Redmi Note 13 256Gb Global Version",
     "price": 750,
     "condition": "Б/у",
-    "model_key": "redmi note 13"
+    "model_key": "redmi note 13",
+    "sold_checked": true
   }
 }

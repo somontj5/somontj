@@ -28606,5 +28606,15 @@
     "condition": "Б/у",
     "model_key": "apple 15 pro max",
     "verified_model": null
+  },
+  "32809715": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17328097_xiaomi-redmi-15c/",
+    "title": "Xiaomi Redmi 15c",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "redmi 15c",
+    "verified_model": null
   }
 }

@@ -28318,5 +28318,15 @@
     "condition": "Б/у",
     "model_key": "samsung a12",
     "verified_model": null
+  },
+  "52469109": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15246910_redmi-9c/",
+    "title": "Xiaomi Redmi 9C 64GB",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "redmi 9c",
+    "verified_model": null
   }
 }

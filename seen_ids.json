@@ -28597,7 +28597,8 @@
     "title": "Samsung Galaxy S22 Ultra",
     "price": 4444,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "79461164": {
     "logged": true,

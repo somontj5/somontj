@@ -27877,7 +27877,8 @@
     "price": 450,
     "condition": "Б/у",
     "model_key": "redmi note 9",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17321171": {
     "logged": true,

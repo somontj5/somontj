@@ -27821,7 +27821,8 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "redmi a3",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "86935128": {
     "logged": true,
@@ -28146,5 +28147,14 @@
     "condition": "Б/у",
     "model_key": "apple 12 pro max",
     "verified_model": null
+  },
+  "28214128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17324282_apple-iphone-14-pro-max-128-gb-space-black/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb",
+    "price": 5100,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
   }
 }

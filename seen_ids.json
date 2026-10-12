@@ -28440,7 +28440,8 @@
     "title": "Xiaomi Redmi Note 13 256гб",
     "price": 750,
     "condition": "Б/у",
-    "model_key": "redmi note 13"
+    "model_key": "redmi note 13",
+    "sold_checked": true
   },
   "73258969": {
     "logged": true,
@@ -28479,5 +28480,14 @@
     "price": 2390,
     "condition": "Б/у",
     "model_key": "samsung а54"
+  },
+  "40013256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17326400_telefon-redmi-note-13-256gb-glabal-version/",
+    "title": "Xiaomi Redmi Note 13 256Gb Global Version",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "redmi note 13"
   }
 }

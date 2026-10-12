@@ -28439,5 +28439,15 @@
     "price": 750,
     "condition": "Б/у",
     "model_key": "redmi note 13"
+  },
+  "73258969": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17325896_infiniks-smat-9/",
+    "title": "infinix Smart 9",
+    "price": 349,
+    "condition": "Б/у",
+    "model_key": "infinix smart 9",
+    "verified_model": null
   }
 }

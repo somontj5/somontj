@@ -126,5 +126,9 @@
   "apple 14 pro max|128": {
     "first_seen": "2026-10-09",
     "ratio": 3.61
+  },
+  "infinix smart 9|128": {
+    "first_seen": "2026-10-12",
+    "ratio": 3.3
   }
 }

@@ -28133,7 +28133,8 @@
     "price": 400,
     "condition": "Б/у",
     "model_key": "samsung s7 edge",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "43431164": {
     "logged": true,
@@ -28510,5 +28511,14 @@
     "price": 8500,
     "condition": "Б/у",
     "model_key": "apple 16 pro"
+  },
+  "32773712": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17327737_xiaomi-redmi-not-12s/",
+    "title": "Xiaomi Redmi Notе 12S",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "redmi notе 12s"
   }
 }

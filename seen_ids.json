@@ -28039,7 +28039,8 @@
     "price": 1150,
     "condition": "Б/у",
     "model_key": "apple xs max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "32295022": {
     "logged": true,

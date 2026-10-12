@@ -27863,7 +27863,8 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "samsung а03 core",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "32012331": {
     "logged": true,
@@ -28178,6 +28179,16 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "samsung a52",
+    "verified_model": null
+  },
+  "32495864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17324958_apple-iphone-xr-64-gb-white/",
+    "title": "Apple iPhone Xr, 64 gb, White",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "apple xr",
     "verified_model": null
   }
 }

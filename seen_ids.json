@@ -28640,7 +28640,8 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "realme note 60 x",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "76486256": {
     "logged": true,
@@ -28698,6 +28699,17 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
     "price": 9500,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
+  },
+  "31111128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17327311_apple-iphone-11-128-gb-product-red/",
+    "title": "Apple iPhone 11, 128 gb, Product Red",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

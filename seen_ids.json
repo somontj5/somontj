@@ -27778,7 +27778,8 @@
     "price": 1499,
     "condition": "Б/у",
     "model_key": "poco m4 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "19466128": {
     "logged": true,
@@ -28074,5 +28075,14 @@
     "condition": "Б/у",
     "model_key": "apple x",
     "verified_model": null
+  },
+  "68017256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17323680_apple-iphone-17-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
+    "price": 10100,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
   }
 }

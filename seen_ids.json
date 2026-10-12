@@ -27537,7 +27537,8 @@
     "price": 130,
     "condition": "Б/у",
     "model_key": "redmi 6a",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "31707222": {
     "logged": true,
@@ -27970,5 +27971,24 @@
     "price": 16500,
     "condition": "Б/у",
     "model_key": "apple 18 pro max"
+  },
+  "10617256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17215106_apple-iphone-17-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
+    "price": 11500,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
+  },
+  "73223278": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17322327_samsung-note-8/",
+    "title": "Samsung Galaxy Note 8",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "samsung note 8",
+    "verified_model": null
   }
 }

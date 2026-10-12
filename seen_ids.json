@@ -28084,5 +28084,15 @@
     "price": 10100,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "73232777": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17323277_s-7-edge/",
+    "title": "Samsung Galaxy S7 edge",
+    "price": 400,
+    "condition": "Б/у",
+    "model_key": "samsung s7 edge",
+    "verified_model": null
   }
 }

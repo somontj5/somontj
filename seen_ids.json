@@ -28026,7 +28026,8 @@
     "title": "Apple iPhone Xs Max, 64 gb, Silver",
     "price": 1000,
     "condition": "Б/у",
-    "model_key": "apple xs max"
+    "model_key": "apple xs max",
+    "sold_checked": true
   },
   "22579256": {
     "logged": true,

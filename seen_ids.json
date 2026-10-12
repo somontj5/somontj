@@ -27632,7 +27632,8 @@
     "title": "Xiaomi Redmi Note 14 pro 256gb Global Version 5G 2025",
     "price": 1750,
     "condition": "Б/у",
-    "model_key": "redmi note 14 pro"
+    "model_key": "redmi note 14 pro",
+    "sold_checked": true
   },
   "74511128": {
     "logged": true,

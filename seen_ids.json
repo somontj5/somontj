@@ -28278,7 +28278,8 @@
     "title": "Apple iPhone 15 Pro, 128 gb, Natural Titanium",
     "price": 6199,
     "condition": "Б/у",
-    "model_key": "apple 15 pro"
+    "model_key": "apple 15 pro",
+    "sold_checked": true
   },
   "55767256": {
     "logged": true,
@@ -28431,6 +28432,12 @@
     "model_key": "poco c71"
   },
   "95013256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17326950_telefon-redmi-not-13-256gb/",
+    "title": "Xiaomi Redmi Note 13 256гб",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "redmi note 13"
   }
 }

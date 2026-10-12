@@ -28283,7 +28283,8 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "28115128": {
     "logged": true,
@@ -28763,5 +28764,15 @@
     "price": 1740,
     "condition": "Б/у",
     "model_key": "honor 400 lite"
+  },
+  "81312128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17123813_apple-iphone-12-pro-128-gb-pacific-blue/",
+    "title": "Apple iPhone 12 pro, 128 gb, Pacific Blue",
+    "price": 2600,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro",
+    "verified_model": null
   }
 }

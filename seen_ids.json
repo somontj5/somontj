@@ -27623,7 +27623,8 @@
     "title": "Xiaomi Redmi 12C 64gb 4G",
     "price": 866,
     "condition": "Б/у",
-    "model_key": "redmi 12c"
+    "model_key": "redmi 12c",
+    "sold_checked": true
   },
   "25652025": {
     "logged": true,
@@ -28053,5 +28054,14 @@
     "condition": "Б/у",
     "model_key": "samsung s22 k r",
     "verified_model": null
+  },
+  "30414256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17248304_apple-iphone-14-pro-256-gb-gold/",
+    "title": "Apple iPhone 14 Pro, 256 gb, Gold",
+    "price": 3800,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

@@ -28338,7 +28338,8 @@
     "price": 600,
     "condition": "Б/у",
     "model_key": "samsung a12",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "52469109": {
     "logged": true,

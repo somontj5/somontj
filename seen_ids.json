@@ -27938,7 +27938,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Graphite",
     "price": 5100,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "12561164": {
     "logged": true,
@@ -27958,7 +27959,8 @@
     "title": "Samsung Galaxy S22 ultra",
     "price": 4300,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "31717154": {
     "logged": true,
@@ -28266,5 +28268,25 @@
     "price": 6199,
     "condition": "Б/у",
     "model_key": "apple 15 pro"
+  },
+  "55767256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17325576_apple-iphone-7-256-gb/",
+    "title": "Apple iPhone 7, 256 gb",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "apple 7",
+    "verified_model": null
+  },
+  "74158256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17325474_redmi-note-15-pro-8-256gb/",
+    "title": "Xiaomi Redmi Note 15 pro 8/256gb",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "redmi note 15 pro",
+    "verified_model": null
   }
 }

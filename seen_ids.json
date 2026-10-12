@@ -27936,7 +27936,8 @@
     "title": "Inoi A54",
     "price": 1200,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "08713512": {
     "logged": true,
@@ -28028,5 +28029,15 @@
     "price": 13800,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "22883256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17322883_apple-iphone-xs-max-256-gb-space-grey/",
+    "title": "Apple iPhone Xs Max, 256 gb, Space Grey",
+    "price": 1150,
+    "condition": "Б/у",
+    "model_key": "apple xs max",
+    "verified_model": null
   }
 }

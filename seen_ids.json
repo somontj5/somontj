@@ -27767,7 +27767,8 @@
     "title": "Apple iPhone 14 Pro Max, 1 tb, Space Black",
     "price": 6250,
     "condition": "Б/у",
-    "model_key": "apple 14 pro max 1 tb"
+    "model_key": "apple 14 pro max 1 tb",
+    "sold_checked": true
   },
   "31921610": {
     "logged": true,
@@ -27799,7 +27800,8 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "apple xr",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "73196668": {
     "logged": true,
@@ -28106,5 +28108,33 @@
     "condition": "Б/у",
     "model_key": "samsung s7 edge",
     "verified_model": null
+  },
+  "43431164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17324343_apple-iphone-11-64-gb/",
+    "title": "Apple iPhone 11, 64 gb",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "32434024": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17324340_samsung-s24ultra/",
+    "title": "Samsung galaxy s24ultra",
+    "price": 7300,
+    "condition": "Б/у",
+    "model_key": "samsung s24ultra"
+  },
+  "32431625": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17324316_samsung-s25-fe/",
+    "title": "Samsung Galaxy S25 FE",
+    "price": 3400,
+    "condition": "Б/у",
+    "model_key": "samsung s25 fe"
   }
 }

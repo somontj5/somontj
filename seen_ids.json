@@ -28249,7 +28249,8 @@
     "price": 2100,
     "condition": "Б/у",
     "model_key": "samsung а34",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "24455345": {
     "logged": true,

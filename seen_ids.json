@@ -27570,7 +27570,8 @@
     "price": 1449,
     "condition": "Б/у",
     "model_key": "apple xs",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "36772016": {
     "logged": true,
@@ -27990,5 +27991,32 @@
     "condition": "Б/у",
     "model_key": "samsung note 8",
     "verified_model": null
+  },
+  "32265864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17322658_apple-iphone-xs-max-64-gb-silver/",
+    "title": "Apple iPhone Xs Max, 64 gb, Silver",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "apple xs max"
+  },
+  "22579256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17322579_apple-iphone-air-256-gb-cloud-white/",
+    "title": "Apple iPhone Air, 256 gb, Cloud White",
+    "price": 9500,
+    "condition": "Б/у",
+    "model_key": "apple air"
+  },
+  "26201164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17322620_apple-iphone-11-pro-max-64-gb-midnight-green/",
+    "title": "Apple iPhone 11 Pro Max, 64 gb",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro max"
   }
 }

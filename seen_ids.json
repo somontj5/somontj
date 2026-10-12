@@ -28305,7 +28305,8 @@
     "price": 500,
     "condition": "Б/у",
     "model_key": "apple 7",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "74158256": {
     "logged": true,
@@ -28827,6 +28828,16 @@
     "price": 550,
     "condition": "Б/у",
     "model_key": "realme c21 y",
+    "verified_model": null
+  },
+  "32758264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17327582_apple-iphone-xs-64-gb-gold/",
+    "title": "Apple iPhone Xs, 64 gb, Gold",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple xs",
     "verified_model": null
   }
 }

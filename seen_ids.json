@@ -28122,7 +28122,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
     "price": 10100,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "73232777": {
     "logged": true,
@@ -28490,5 +28491,24 @@
     "condition": "Б/у",
     "model_key": "redmi note 13",
     "sold_checked": true
+  },
+  "76611164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17327661_apple-iphone-11-64-gb-yellow/",
+    "title": "Apple iPhone 11, 64 gb, Yellow",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "61216256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17327612_apple-iphone-16-pro-256-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro, 256 gb, Desert Titanium",
+    "price": 8500,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro"
   }
 }

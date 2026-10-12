@@ -28816,6 +28816,17 @@
     "price": 2299,
     "condition": "Б/у",
     "model_key": "apple 11",
+    "verified_model": null,
+    "sold_checked": true
+  },
+  "16529308": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16529308_telefon-dar-kholati-bekhtarin/",
+    "title": "Realme C21-Y",
+    "price": 550,
+    "condition": "Б/у",
+    "model_key": "realme c21 y",
     "verified_model": null
   }
 }

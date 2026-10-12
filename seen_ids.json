@@ -28575,5 +28575,24 @@
     "price": 7699,
     "condition": "Б/у",
     "model_key": "apple 16 pro"
+  },
+  "32794022": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17327940_galaxy-s22-ultra/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 4444,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
+  },
+  "79461164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17327946_apple-iphone-11-64-gb-white/",
+    "title": "Apple iPhone 11, 64 gb, White",
+    "price": 1399,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

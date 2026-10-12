@@ -27655,7 +27655,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
     "price": 10800,
     "condition": "Б/у",
-    "model_key": "apple 16 pro max"
+    "model_key": "apple 16 pro max",
+    "sold_checked": true
   },
   "17898864": {
     "logged": true,
@@ -27665,7 +27666,8 @@
     "price": 950,
     "condition": "Б/у",
     "model_key": "apple 8",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "31807112": {
     "logged": true,
@@ -27674,7 +27676,8 @@
     "title": "Xiaomi Redmi Note 12",
     "price": 1250,
     "condition": "Б/у",
-    "model_key": "redmi note 12"
+    "model_key": "redmi note 12",
+    "sold_checked": true
   },
   "30114128": {
     "logged": true,
@@ -27683,7 +27686,8 @@
     "title": "Apple iPhone 14 Pro, 128 gb, Space Black",
     "price": 4800,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "32312128": {
     "logged": true,
@@ -27693,7 +27697,8 @@
     "price": 1400,
     "condition": "Б/у",
     "model_key": "apple 12",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17318710": {
     "logged": true,

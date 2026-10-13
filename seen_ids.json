@@ -28818,7 +28818,8 @@
     "price": 2600,
     "condition": "Б/у",
     "model_key": "apple 12 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "32721517": {
     "logged": true,
@@ -28839,7 +28840,8 @@
     "price": 2999,
     "condition": "Б/у",
     "model_key": "apple 12 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "32875832": {
     "logged": true,
@@ -28849,7 +28851,8 @@
     "price": 700,
     "condition": "Б/у",
     "model_key": "samsung a32",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "78411128": {
     "logged": true,
@@ -28870,7 +28873,8 @@
     "price": 550,
     "condition": "Б/у",
     "model_key": "realme c21 y",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "32758264": {
     "logged": true,
@@ -29285,5 +29289,24 @@
     "price": 1590,
     "condition": "Б/у",
     "model_key": "redmi note 13 8"
+  },
+  "59211128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17332592_apple-iphone-11-128-gb-purple/",
+    "title": "Apple iPhone 11, 128 gb, Purple",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "55617256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17332556_apple-iphone-17-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
+    "price": 9700,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
   }
 }

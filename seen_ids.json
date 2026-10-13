@@ -28491,7 +28491,8 @@
     "title": "Xiaomi Redmi Note 9 128GB",
     "price": 920,
     "condition": "Б/у",
-    "model_key": "redmi note 9"
+    "model_key": "redmi note 9",
+    "sold_checked": true
   },
   "27219128": {
     "logged": true,
@@ -28501,7 +28502,8 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "apple xr",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "30154256": {
     "logged": true,
@@ -28510,7 +28512,8 @@
     "title": "Samsung Galaxy А54 256гб",
     "price": 2390,
     "condition": "Б/у",
-    "model_key": "samsung а54"
+    "model_key": "samsung а54",
+    "sold_checked": true
   },
   "40013256": {
     "logged": true,
@@ -28734,7 +28737,8 @@
     "price": 1400,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "28497664": {
     "logged": true,
@@ -28982,5 +28986,44 @@
     "price": 700,
     "condition": "Б/у",
     "model_key": "redmi note 12c"
+  },
+  "23552025": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17330182_telefon-samsung-a35-5g-2025/",
+    "title": "Телефон samsung А35 5G 2025",
+    "price": 2300,
+    "condition": "Б/у",
+    "model_key": "samsung а35"
+  },
+  "29213256": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17330292_xiaomi-mi-13-256gb/",
+    "title": "Xiaomi mi 13 256gb",
+    "price": 2150,
+    "condition": "Б/у",
+    "model_key": "xiaomi mi 13",
+    "verified_model": null
+  },
+  "17011256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17330170_apple-iphone-11-pro-256-gb/",
+    "title": "Apple iPhone 11 Pro, 256 gb",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
+  },
+  "16542565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17330216_telefon-samsung-a54-256gb-vetnam-5g/",
+    "title": "Samsung Galaxy А54 256Gb Vetnam 5G",
+    "price": 2250,
+    "condition": "Б/у",
+    "model_key": "samsung а54"
   }
 }

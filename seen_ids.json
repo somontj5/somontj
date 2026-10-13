@@ -29059,7 +29059,8 @@
     "price": 1999,
     "condition": "Б/у",
     "model_key": "apple 11 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "16542565": {
     "logged": true,
@@ -29068,7 +29069,8 @@
     "title": "Samsung Galaxy А54 256Gb Vetnam 5G",
     "price": 2250,
     "condition": "Б/у",
-    "model_key": "samsung а54"
+    "model_key": "samsung а54",
+    "sold_checked": true
   },
   "41513256": {
     "logged": true,
@@ -29515,6 +29517,25 @@
     "price": 650,
     "condition": "Б/у",
     "model_key": null,
+    "verified_model": null
+  },
+  "33452495": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17334524_honor-x9d-5g/",
+    "title": "HONOR X9d_5G",
+    "price": 3700,
+    "condition": "Б/у",
+    "model_key": "honor x9d"
+  },
+  "45366128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17334536_apple-iphone-6-plus-128-gb/",
+    "title": "Apple iPhone 6 plus, 128 gb",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "apple 6 plus",
     "verified_model": null
   }
 }

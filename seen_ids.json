@@ -28766,7 +28766,8 @@
     "price": 499,
     "condition": "Б/у",
     "model_key": "apple 6s plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "05013256": {
     "logged": true,

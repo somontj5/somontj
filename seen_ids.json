@@ -29081,7 +29081,8 @@
     "title": "Apple iPhone 13 Pro, 256 gb, Sierra Blue",
     "price": 4700,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "32016128": {
     "logged": true,
@@ -29091,7 +29092,8 @@
     "price": 1250,
     "condition": "Б/у",
     "model_key": "samsung m16",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "06142565": {
     "logged": true,
@@ -29570,5 +29572,23 @@
     "price": 6489,
     "condition": "Б/у",
     "model_key": "apple 15 pro"
+  },
+  "15516128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17335155_apple-iphone-16-pro-128-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro, 128 gb, Desert Titanium",
+    "price": 8450,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro"
+  },
+  "14613256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17335146_apple-iphone-13-pro-max-256-gb-gold/",
+    "title": "Apple iPhone 13 Pro Max, 256 gb, Gold",
+    "price": 4499,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
   }
 }

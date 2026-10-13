@@ -29198,7 +29198,8 @@
     "price": 1289,
     "condition": "Б/у",
     "model_key": "apple x",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "56820255": {
     "logged": true,
@@ -29207,7 +29208,8 @@
     "title": "Xiaomi Redmi 15 256/8Gb 2025 5G",
     "price": 1500,
     "condition": "Б/у",
-    "model_key": "redmi 15 2025"
+    "model_key": "redmi 15 2025",
+    "sold_checked": true
   },
   "62215128": {
     "logged": true,

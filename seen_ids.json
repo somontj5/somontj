@@ -28388,7 +28388,8 @@
     "title": "Xiaomi Redmi Note 12C 128gb Glabal Version",
     "price": 850,
     "condition": "Б/у",
-    "model_key": "redmi note 12c"
+    "model_key": "redmi note 12c",
+    "sold_checked": true
   },
   "01102565": {
     "logged": true,
@@ -28899,5 +28900,15 @@
     "price": 1300,
     "condition": "Б/у",
     "model_key": null
+  },
+  "32977032": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17329770_apple-iphone-se-32-gb/",
+    "title": "Apple iPhone SE, 32 gb",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "apple se",
+    "verified_model": null
   }
 }

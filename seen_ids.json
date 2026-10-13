@@ -28702,7 +28702,8 @@
     "price": 400,
     "condition": "Б/у",
     "model_key": "redmi 5 plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "77161264": {
     "logged": true,
@@ -29207,6 +29208,16 @@
     "price": 1100,
     "condition": "Б/у",
     "model_key": "redmi note 13",
+    "verified_model": null
+  },
+  "31748256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17331748_apple-iphone-xs-256-gb-gold/",
+    "title": "Apple iPhone Xs, 256 gb, Gold",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "apple xs",
     "verified_model": null
   }
 }

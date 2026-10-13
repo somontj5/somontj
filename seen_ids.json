@@ -29102,7 +29102,8 @@
     "title": "Телефон Redmi Note 14 pro 256gb 5G",
     "price": 1750,
     "condition": "Б/у",
-    "model_key": "redmi note 14 pro"
+    "model_key": "redmi note 14 pro",
+    "sold_checked": true
   },
   "51714128": {
     "logged": true,
@@ -29590,5 +29591,14 @@
     "price": 4499,
     "condition": "Б/у",
     "model_key": "apple 13 pro max"
+  },
+  "15416256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17335154_apple-iphone-16-pro-max-256-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
+    "price": 10800,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   }
 }

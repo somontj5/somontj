@@ -29326,7 +29326,8 @@
     "title": "Xiaomi Redmi Note 13 8+8/512Gb",
     "price": 1590,
     "condition": "Б/у",
-    "model_key": "redmi note 13 8"
+    "model_key": "redmi note 13 8",
+    "sold_checked": true
   },
   "59211128": {
     "logged": true,
@@ -29336,7 +29337,8 @@
     "price": 500,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "55617256": {
     "logged": true,
@@ -29365,7 +29367,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
     "price": 9999,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "11488256": {
     "logged": true,
@@ -29374,7 +29377,8 @@
     "title": "Xiaomi Redmi Note 14 Pro 8+8/256Gb",
     "price": 1650,
     "condition": "Б/у",
-    "model_key": "redmi note 14 pro 8"
+    "model_key": "redmi note 14 pro 8",
+    "sold_checked": true
   },
   "14514128": {
     "logged": true,

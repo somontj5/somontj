@@ -28658,7 +28658,8 @@
     "price": 999,
     "condition": "Б/у",
     "model_key": "redmi 15c",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "28811128": {
     "logged": true,

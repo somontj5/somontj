@@ -29088,7 +29088,8 @@
     "title": "Xiaomi Redmi K100 pro max",
     "price": 9200,
     "condition": "Б/у",
-    "model_key": "redmi k100 pro max"
+    "model_key": "redmi k100 pro max",
+    "sold_checked": true
   },
   "02269128": {
     "logged": true,

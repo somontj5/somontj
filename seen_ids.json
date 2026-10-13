@@ -28563,7 +28563,8 @@
     "title": "Xiaomi Redmi Note 13 256/8Gb Global Version 5G",
     "price": 1560,
     "condition": "Б/у",
-    "model_key": "redmi note 13"
+    "model_key": "redmi note 13",
+    "sold_checked": true
   },
   "78891164": {
     "logged": true,
@@ -29065,5 +29066,15 @@
     "price": 3600,
     "condition": "Б/у",
     "model_key": "apple 14"
+  },
+  "33080552": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17330805_a52/",
+    "title": "Samsung Galaxy А52",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "samsung а52",
+    "verified_model": null
   }
 }

@@ -29500,7 +29500,8 @@
     "price": 1350,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "90103324": {
     "logged": true,
@@ -29558,7 +29559,8 @@
     "price": 600,
     "condition": "Б/у",
     "model_key": "redmi а2 plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "02015128": {
     "logged": true,

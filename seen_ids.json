@@ -29241,7 +29241,8 @@
     "price": 1600,
     "condition": "Б/у",
     "model_key": "imei:galaxy a25",
-    "verified_model": "Galaxy A25"
+    "verified_model": "Galaxy A25",
+    "sold_checked": true
   },
   "33164413": {
     "logged": true,
@@ -29262,7 +29263,8 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "apple xs",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "33237214": {
     "logged": true,
@@ -29283,7 +29285,8 @@
     "price": 850,
     "condition": "Б/у",
     "model_key": null,
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "32352256": {
     "logged": true,
@@ -29303,7 +29306,8 @@
     "price": 470,
     "condition": "Б/у",
     "model_key": "redmi note 8",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "44013161": {
     "logged": true,
@@ -29312,7 +29316,8 @@
     "title": "Xiaomi 13 ultra 16 на 1 ТБ",
     "price": 4360,
     "condition": "Б/у",
-    "model_key": "xiaomi 13 ultra 16 на 1"
+    "model_key": "xiaomi 13 ultra 16 на 1",
+    "sold_checked": true
   },
   "31388512": {
     "logged": true,
@@ -29647,6 +29652,34 @@
     "price": 1150,
     "condition": "Б/у",
     "model_key": "samsung s10",
+    "verified_model": null
+  },
+  "14232565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17335814_telefon-samsung-s23-ultra-256gb-vetnam-5g/",
+    "title": "Телефон Самсунг S23 Ultra 256gb Vetnam 5G",
+    "price": 3500,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "33576115": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17335761_xiaomi-15t-global-version/",
+    "title": "Xiaomi 15T Global Version",
+    "price": 3900,
+    "condition": "Б/у",
+    "model_key": "xiaomi 15t"
+  },
+  "35769256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17335769_apple-iphone-xs-256-gb-silver/",
+    "title": "Apple iPhone Xs, 256 gb, Silver",
+    "price": 699,
+    "condition": "Б/у",
+    "model_key": "apple xs",
     "verified_model": null
   }
 }

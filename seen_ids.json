@@ -29139,6 +29139,7 @@
     "price": 880,
     "condition": "Б/у",
     "model_key": "apple 16 pro max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   }
 }

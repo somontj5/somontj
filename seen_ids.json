@@ -29204,7 +29204,8 @@
     "price": 2700,
     "condition": "Б/у",
     "model_key": "apple 13 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "30523255": {
     "logged": true,
@@ -29350,5 +29351,15 @@
     "price": 5200,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "33325730": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17333257_huawei-p30-lite/",
+    "title": "Huawei P30 lite",
+    "price": 350,
+    "condition": "Б/у",
+    "model_key": "huawei p30 lite",
+    "verified_model": null
   }
 }

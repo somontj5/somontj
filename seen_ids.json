@@ -29133,7 +29133,8 @@
     "price": 1400,
     "condition": "Б/у",
     "model_key": "samsung s21",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "12616256": {
     "logged": true,

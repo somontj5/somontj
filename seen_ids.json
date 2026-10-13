@@ -29164,7 +29164,8 @@
     "price": 500,
     "condition": "Б/у",
     "model_key": "honor 10 x",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "33112421": {
     "logged": true,

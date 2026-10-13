@@ -29271,7 +29271,8 @@
     "title": "Apple iPhone Air, 256 gb, Cloud White",
     "price": 11800,
     "condition": "Б/у",
-    "model_key": "apple air"
+    "model_key": "apple air",
+    "sold_checked": true
   },
   "73323188": {
     "logged": true,

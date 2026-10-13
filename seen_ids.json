@@ -28542,7 +28542,8 @@
     "title": "Apple iPhone 16 Pro, 256 gb, Desert Titanium",
     "price": 8500,
     "condition": "Б/у",
-    "model_key": "apple 16 pro"
+    "model_key": "apple 16 pro",
+    "sold_checked": true
   },
   "32773712": {
     "logged": true,
@@ -29025,5 +29026,24 @@
     "price": 2250,
     "condition": "Б/у",
     "model_key": "samsung а54"
+  },
+  "41513256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17330415_apple-iphone-13-pro-256-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 256 gb, Sierra Blue",
+    "price": 4700,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
+  },
+  "32016128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17330320_galaxy-m16-128gb-duos/",
+    "title": "Samsung Galaxy m16 128gb duos",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "samsung m16",
+    "verified_model": null
   }
 }

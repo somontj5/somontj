@@ -28721,7 +28721,8 @@
     "price": 1300,
     "condition": "Б/у",
     "model_key": "samsung a16",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "43714256": {
     "logged": true,
@@ -29185,5 +29186,15 @@
     "condition": "Б/у",
     "model_key": "apple 13 pro",
     "verified_model": null
+  },
+  "30523255": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17330523_samsung-galaxy-a25-5g/",
+    "title": "Samsung Galaxy A25 5G",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "imei:galaxy a25",
+    "verified_model": "Galaxy A25"
   }
 }

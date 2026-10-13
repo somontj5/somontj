@@ -28933,7 +28933,8 @@
     "title": "Zte Nubia Redmagic 9 Pro Black",
     "price": 5000,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "37617256": {
     "logged": true,

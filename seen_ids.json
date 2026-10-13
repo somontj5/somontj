@@ -29659,7 +29659,8 @@
     "price": 1150,
     "condition": "Б/у",
     "model_key": "samsung s10",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "14232565": {
     "logged": true,

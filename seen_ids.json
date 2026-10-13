@@ -29600,5 +29600,15 @@
     "price": 10800,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "35256532": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17335256_apple-iphone-5s-32-gb/",
+    "title": "Apple iPhone 5s, 32 gb",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "apple 5s",
+    "verified_model": null
   }
 }

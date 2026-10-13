@@ -29154,7 +29154,8 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "tecno pova neo 3",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "33096610": {
     "logged": true,

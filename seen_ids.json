@@ -28635,7 +28635,8 @@
     "price": 1399,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "00015256": {
     "logged": true,
@@ -28646,7 +28647,8 @@
     "price": 2700,
     "condition": "Б/у",
     "model_key": "apple 15 pro max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "32809715": {
     "logged": true,
@@ -29141,5 +29143,24 @@
     "model_key": "apple 16 pro max",
     "verified_model": null,
     "sold_checked": true
+  },
+  "33149364": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17331493_apple-iphone-x-64-gb-space-grey/",
+    "title": "Apple iPhone X, 64 gb, Space Grey",
+    "price": 1289,
+    "condition": "Б/у",
+    "model_key": "apple x",
+    "verified_model": null
+  },
+  "56820255": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17330089_telefon-redmi-15-256-8gb-2025-5g/",
+    "title": "Xiaomi Redmi 15 256/8Gb 2025 5G",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "redmi 15 2025"
   }
 }

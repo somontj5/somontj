@@ -28692,7 +28692,8 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "samsung a17",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "73283785": {
     "logged": true,
@@ -28733,7 +28734,8 @@
     "title": "Apple iPhone 14 Pro, 256 gb, Silver",
     "price": 4500,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "59217256": {
     "logged": true,
@@ -28782,7 +28784,8 @@
     "title": "Xiaomi Redmi note 14 Pro 256gb",
     "price": 1850,
     "condition": "Б/у",
-    "model_key": "redmi note 14 pro"
+    "model_key": "redmi note 14 pro",
+    "sold_checked": true
   },
   "32697910": {
     "logged": true,
@@ -28792,7 +28795,8 @@
     "price": 899,
     "condition": "Б/у",
     "model_key": "redmi 10c",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "70834005": {
     "logged": true,
@@ -29218,6 +29222,45 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "apple xs",
+    "verified_model": null
+  },
+  "33237214": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17332372_redmi-not-14-pro-plus/",
+    "title": "Xiaomi Redmi note 14 Pro plus",
+    "price": 3000,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro plus",
+    "verified_model": null
+  },
+  "33211710": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17332117_red-mi-not-10/",
+    "title": "Red mi Not 10",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
+  },
+  "32352256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17332352_apple-iphone-air-256-gb-cloud-white/",
+    "title": "Apple iPhone Air, 256 gb, Cloud White",
+    "price": 11800,
+    "condition": "Б/у",
+    "model_key": "apple air"
+  },
+  "73323188": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17332318_redmi-not-8/",
+    "title": "Xiaomi Redmi Note 8",
+    "price": 470,
+    "condition": "Б/у",
+    "model_key": "redmi note 8",
     "verified_model": null
   }
 }

@@ -28977,7 +28977,8 @@
     "title": "Samsung Galaxy S22 ultra",
     "price": 4200,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "13113325": {
     "logged": true,
@@ -29414,5 +29415,24 @@
     "price": 1699,
     "condition": "Б/у",
     "model_key": "redmi 14 pro"
+  },
+  "36614256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17334366_apple-iphone-14-pro-256-gb-space-black/",
+    "title": "Apple iPhone 14 Pro, 256 gb, Space Black",
+    "price": 5500,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
+  },
+  "33386413": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17333864_redmi-13r/",
+    "title": "Xiaomi Redmi 13R",
+    "price": 1099,
+    "condition": "Б/у",
+    "model_key": "redmi 13r",
+    "verified_model": null
   }
 }

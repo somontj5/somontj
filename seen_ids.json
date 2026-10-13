@@ -28669,7 +28669,8 @@
     "price": 899,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17328236": {
     "logged": true,
@@ -29172,5 +29173,16 @@
     "price": 5500,
     "condition": "Б/у",
     "model_key": "apple 15 pro"
+  },
+  "81013128": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17331810_apple-iphone-13-pro-128-gb-silver/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Silver",
+    "price": 2700,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro",
+    "verified_model": null
   }
 }

@@ -28379,7 +28379,8 @@
     "title": "Samsung Galaxy А03S 32Gb Vetnam",
     "price": 820,
     "condition": "Б/у",
-    "model_key": "samsung а03s"
+    "model_key": "samsung а03s",
+    "sold_checked": true
   },
   "53012128": {
     "logged": true,
@@ -28909,6 +28910,16 @@
     "price": 999,
     "condition": "Б/у",
     "model_key": "apple se",
+    "verified_model": null
+  },
+  "32989264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17329892_apple-iphone-xr-64-gb/",
+    "title": "Apple iPhone Xr, 64 gb",
+    "price": 1450,
+    "condition": "Б/у",
+    "model_key": "apple xr",
     "verified_model": null
   }
 }

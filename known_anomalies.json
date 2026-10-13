@@ -130,5 +130,9 @@
   "infinix smart 9|128": {
     "first_seen": "2026-10-12",
     "ratio": 3.3
+  },
+  "samsung|256": {
+    "first_seen": "2026-10-13",
+    "ratio": 3.38
   }
 }

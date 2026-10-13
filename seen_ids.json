@@ -29031,7 +29031,8 @@
     "title": "Телефон samsung А35 5G 2025",
     "price": 2300,
     "condition": "Б/у",
-    "model_key": "samsung а35"
+    "model_key": "samsung а35",
+    "sold_checked": true
   },
   "29213256": {
     "logged": true,

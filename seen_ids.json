@@ -29245,7 +29245,8 @@
     "price": 3000,
     "condition": "Б/у",
     "model_key": "redmi note 14 pro plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "33211710": {
     "logged": true,

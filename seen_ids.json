@@ -29624,5 +29624,15 @@
     "condition": "Б/у",
     "model_key": "apple 14 pro",
     "sold_checked": true
+  },
+  "91312884": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17335599_xiaomi-13-lite-128-8-4/",
+    "title": "Xiaomi 13 Lite 128/8+4",
+    "price": 1650,
+    "condition": "Б/у",
+    "model_key": "xiaomi 13 lite 128 8 4",
+    "verified_model": null
   }
 }

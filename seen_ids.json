@@ -28369,7 +28369,8 @@
     "title": "Xiaomi Poco F7",
     "price": 5000,
     "condition": "Б/у",
-    "model_key": "poco f7"
+    "model_key": "poco f7",
+    "sold_checked": true
   },
   "65420332": {
     "logged": true,
@@ -28879,5 +28880,14 @@
     "condition": "Б/у",
     "model_key": "samsung a26",
     "verified_model": null
+  },
+  "62036599": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16203659_zte-nubia-redmagic-9-pro-black-redmeidzhik/",
+    "title": "Zte Nubia Redmagic 9 Pro Black",
+    "price": 5000,
+    "condition": "Б/у",
+    "model_key": null
   }
 }

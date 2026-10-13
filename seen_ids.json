@@ -28601,7 +28601,8 @@
     "title": "Apple iPhone 16 Pro, 128 gb, Natural Titanium",
     "price": 8600,
     "condition": "Б/у",
-    "model_key": "apple 16 pro"
+    "model_key": "apple 16 pro",
+    "sold_checked": true
   },
   "61516128": {
     "logged": true,
@@ -28610,7 +28611,8 @@
     "title": "Apple iPhone 16 Pro, 128 gb, Black Titanium",
     "price": 7699,
     "condition": "Б/у",
-    "model_key": "apple 16 pro"
+    "model_key": "apple 16 pro",
+    "sold_checked": true
   },
   "32794022": {
     "logged": true,
@@ -29076,5 +29078,23 @@
     "condition": "Б/у",
     "model_key": "samsung а52",
     "verified_model": null
+  },
+  "16725100": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17316725_xiaomi-redmi-100-pro-max/",
+    "title": "Xiaomi Redmi K100 pro max",
+    "price": 9200,
+    "condition": "Б/у",
+    "model_key": "redmi k100 pro max"
+  },
+  "02269128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17330226_telefon-redmi-note-9-128gb-glabal-version/",
+    "title": "Xiaomi Redmi Note 9 128gb Global Version",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "redmi note 9"
   }
 }

@@ -28533,7 +28533,8 @@
     "price": 1100,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "61216256": {
     "logged": true,
@@ -28552,7 +28553,8 @@
     "title": "Xiaomi Redmi Notе 12S",
     "price": 700,
     "condition": "Б/у",
-    "model_key": "redmi notе 12s"
+    "model_key": "redmi notе 12s",
+    "sold_checked": true
   },
   "91325685": {
     "logged": true,
@@ -29045,5 +29047,14 @@
     "condition": "Б/у",
     "model_key": "samsung m16",
     "verified_model": null
+  },
+  "06142565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17330206_telefon-redmi-note-14-pro-256gb-5g/",
+    "title": "Телефон Redmi Note 14 pro 256gb 5G",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro"
   }
 }

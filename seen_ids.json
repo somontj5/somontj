@@ -28583,7 +28583,8 @@
     "title": "Samsung Galaxy А54 256gb Vietnam 5G",
     "price": 2300,
     "condition": "Б/у",
-    "model_key": "samsung а54"
+    "model_key": "samsung а54",
+    "sold_checked": true
   },
   "52562025": {
     "logged": true,
@@ -28592,7 +28593,8 @@
     "title": "Xiaomi Redmi 15 256gb 2025",
     "price": 1574,
     "condition": "Б/у",
-    "model_key": "redmi 15"
+    "model_key": "redmi 15",
+    "sold_checked": true
   },
   "81816128": {
     "logged": true,
@@ -29096,5 +29098,25 @@
     "price": 750,
     "condition": "Б/у",
     "model_key": "redmi note 9"
+  },
+  "73303283": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17330328_tecno-pova-neo-3/",
+    "title": "Tecno Pova Neo 3",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "tecno pova neo 3",
+    "verified_model": null
+  },
+  "33096610": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17330966_honor-10-x/",
+    "title": "Honor 10 x",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "honor 10 x",
+    "verified_model": null
   }
 }

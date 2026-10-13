@@ -29218,7 +29218,8 @@
     "title": "Apple iPhone 15 Pro, 128 gb, Blue Titanium",
     "price": 5500,
     "condition": "Б/у",
-    "model_key": "apple 15 pro"
+    "model_key": "apple 15 pro",
+    "sold_checked": true
   },
   "81013128": {
     "logged": true,
@@ -29636,6 +29637,16 @@
     "price": 1650,
     "condition": "Б/у",
     "model_key": "xiaomi 13 lite 128 8 4",
+    "verified_model": null
+  },
+  "33572110": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17335721_galaxy-s10/",
+    "title": "Samsung Galaxy S10",
+    "price": 1150,
+    "condition": "Б/у",
+    "model_key": "samsung s10",
     "verified_model": null
   }
 }

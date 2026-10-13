@@ -29358,7 +29358,8 @@
     "price": 650,
     "condition": "Б/у",
     "model_key": "apple 7",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "65117256": {
     "logged": true,
@@ -29705,5 +29706,14 @@
     "condition": "Б/у",
     "model_key": "apple 11 pro",
     "verified_model": null
+  },
+  "43518256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17334351_poco-x8-pro-256/",
+    "title": "Xiaomi Poco X8 pro 256",
+    "price": 4000,
+    "condition": "Б/у",
+    "model_key": "poco x8 pro 256"
   }
 }

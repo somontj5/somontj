@@ -28574,7 +28574,8 @@
     "price": 2299,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "53542565": {
     "logged": true,
@@ -29118,6 +29119,26 @@
     "price": 500,
     "condition": "Б/у",
     "model_key": "honor 10 x",
+    "verified_model": null
+  },
+  "33112421": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17331124_samsung-s21-korea/",
+    "title": "Samsung galaxy S21",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "samsung s21",
+    "verified_model": null
+  },
+  "12616256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17331126_apple-iphone-16-pro-max-256-gb-black-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
+    "price": 880,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max",
     "verified_model": null
   }
 }

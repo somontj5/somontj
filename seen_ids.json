@@ -28775,7 +28775,8 @@
     "title": "Xiaomi Redmi Note 13",
     "price": 1580,
     "condition": "Б/у",
-    "model_key": "redmi note 13"
+    "model_key": "redmi note 13",
+    "sold_checked": true
   },
   "02414256": {
     "logged": true,
@@ -29212,7 +29213,8 @@
     "price": 1100,
     "condition": "Б/у",
     "model_key": "redmi note 13",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "31748256": {
     "logged": true,
@@ -29262,5 +29264,14 @@
     "condition": "Б/у",
     "model_key": "redmi note 8",
     "verified_model": null
+  },
+  "44013161": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17332440_xiaomi-13-ultra-16-na-1-tb-zelionyi-tsvet-i-zariadnik-original/",
+    "title": "Xiaomi 13 ultra 16 на 1 ТБ",
+    "price": 4360,
+    "condition": "Б/у",
+    "model_key": "xiaomi 13 ultra 16 на 1"
   }
 }

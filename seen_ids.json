@@ -28807,7 +28807,8 @@
     "title": "Honor 400 Lite 5G",
     "price": 1740,
     "condition": "Б/у",
-    "model_key": "honor 400 lite"
+    "model_key": "honor 400 lite",
+    "sold_checked": true
   },
   "81312128": {
     "logged": true,
@@ -29274,5 +29275,14 @@
     "price": 4360,
     "condition": "Б/у",
     "model_key": "xiaomi 13 ultra 16 на 1"
+  },
+  "31388512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17332553_telefon-redmi-not-13-8-8-512gb/",
+    "title": "Xiaomi Redmi Note 13 8+8/512Gb",
+    "price": 1590,
+    "condition": "Б/у",
+    "model_key": "redmi note 13 8"
   }
 }

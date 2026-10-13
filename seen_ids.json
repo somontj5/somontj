@@ -28711,7 +28711,8 @@
     "title": "Xiaomi Redmi 12с 64gb",
     "price": 880,
     "condition": "Б/у",
-    "model_key": "redmi 12с"
+    "model_key": "redmi 12с",
+    "sold_checked": true
   },
   "35116128": {
     "logged": true,

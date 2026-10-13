@@ -28337,7 +28337,8 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "samsung s21 plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "32616912": {
     "logged": true,

@@ -29103,7 +29103,8 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "samsung а52",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "16725100": {
     "logged": true,

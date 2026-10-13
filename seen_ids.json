@@ -28884,7 +28884,8 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "apple xs",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "06413128": {
     "logged": true,
@@ -28893,7 +28894,8 @@
     "title": "Apple iPhone 13, 128 gb, Midnight",
     "price": 4300,
     "condition": "Б/у",
-    "model_key": "apple 13"
+    "model_key": "apple 13",
+    "sold_checked": true
   },
   "32912222": {
     "logged": true,
@@ -28902,7 +28904,8 @@
     "title": "Samsung Galaxy S22 Ultra",
     "price": 3999,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "40713128": {
     "logged": true,
@@ -29308,5 +29311,33 @@
     "price": 9700,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "26777128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17332677_apple-iphone-7-128-gb/",
+    "title": "Apple iPhone 7, 128 gb",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "apple 7",
+    "verified_model": null
+  },
+  "65117256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17332651_apple-iphone-17-pro-max-256-gb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
+    "price": 9999,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
+  },
+  "11488256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17332641_telefon-redmi-not-14-pro-8-8-256gb/",
+    "title": "Xiaomi Redmi Note 14 Pro 8+8/256Gb",
+    "price": 1650,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro 8"
   }
 }

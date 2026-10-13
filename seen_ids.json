@@ -28926,7 +28926,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange Дубликат",
     "price": 1300,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "32977032": {
     "logged": true,
@@ -29197,5 +29198,15 @@
     "condition": "Б/у",
     "model_key": "imei:galaxy a25",
     "verified_model": "Galaxy A25"
+  },
+  "33164413": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17331644_redmi-note-13/",
+    "title": "Xiaomi Redmi Note 13",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "redmi note 13",
+    "verified_model": null
   }
 }

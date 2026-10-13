@@ -29112,7 +29112,8 @@
     "title": "Apple iPhone 14, 128 gb, Midnight",
     "price": 3600,
     "condition": "Б/у",
-    "model_key": "apple 14"
+    "model_key": "apple 14",
+    "sold_checked": true
   },
   "33080552": {
     "logged": true,
@@ -29610,5 +29611,14 @@
     "condition": "Б/у",
     "model_key": "apple 5s",
     "verified_model": null
+  },
+  "33014128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17335330_apple-iphone-14-pro-128-gb-silver/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Silver",
+    "price": 3500,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

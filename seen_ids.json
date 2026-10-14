@@ -30341,9 +30341,21 @@
     "model_key": null
   },
   "72317256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17342723_apple-iphone-17-pro-max-256-gb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
+    "price": 11800,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
   },
   "71913128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17342719_apple-iphone-13-pro-max-128-gb-graphite/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Graphite",
+    "price": 4699,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
   }
 }

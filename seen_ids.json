@@ -29521,7 +29521,8 @@
     "title": "Honor 400 256gb 2026",
     "price": 1799,
     "condition": "Б/у",
-    "model_key": "honor 400"
+    "model_key": "honor 400",
+    "sold_checked": true
   },
   "67811256": {
     "logged": true,
@@ -29849,5 +29850,25 @@
     "price": 9500,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "37374215": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17337374_samsung-galaxy-s21-5g/",
+    "title": "Samsung galaxy s21+ 5g",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "samsung s21 plus",
+    "verified_model": null
+  },
+  "33742006": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17337420_a06/",
+    "title": "Samsung Galaxy А06",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "samsung а06",
+    "verified_model": null
   }
 }

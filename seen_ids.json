@@ -29649,7 +29649,8 @@
     "price": 500,
     "condition": "Б/у",
     "model_key": "apple 5s",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "33014128": {
     "logged": true,

@@ -29787,7 +29787,8 @@
     "title": "Xiaomi Poco C71 64Gb",
     "price": 1100,
     "condition": "Б/у",
-    "model_key": "poco c71"
+    "model_key": "poco c71",
+    "sold_checked": true
   },
   "70569128": {
     "logged": true,
@@ -29796,7 +29797,8 @@
     "title": "Xiaomi Redmi Note 9 128gb",
     "price": 749,
     "condition": "Б/у",
-    "model_key": "redmi note 9"
+    "model_key": "redmi note 9",
+    "sold_checked": true
   },
   "33702903": {
     "logged": true,
@@ -29844,7 +29846,8 @@
     "title": "Samsung Galaxy A13",
     "price": 970,
     "condition": "Б/у",
-    "model_key": "samsung a13"
+    "model_key": "samsung a13",
+    "sold_checked": true
   },
   "33713012": {
     "logged": true,
@@ -30111,5 +30114,25 @@
     "price": 4999,
     "condition": "Б/у",
     "model_key": "apple 15 pro"
+  },
+  "61512256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15621736_xiaomi-redmi-note-15pro-12-256gb-black/",
+    "title": "Qin Phone Black",
+    "price": 699,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
+  },
+  "14321164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17341432_apple-iphone-11-64-gb-purple/",
+    "title": "Apple iPhone 11, 64 gb, Purple",
+    "price": 2222,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

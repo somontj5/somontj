@@ -484,5 +484,14 @@
     "blocked_at": "2026-10-12T12:38:36",
     "updated_at": "2026-10-12T12:38:36",
     "active_ads_at_block": 1
+  },
+  "14900708": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/14900708/",
+    "reason": "похоже на перекупщика по фото: На заднем плане отчетливо видна витрина магазина с коробками телефонов и аксессуарами, а также в тексте указано название магазина Starmobile и адрес.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/15621736_xiaomi-redmi-note-15pro-12-256gb-black/",
+    "blocked_at": "2026-10-14T13:40:40",
+    "updated_at": "2026-10-14T13:40:40",
+    "active_ads_at_block": 45
   }
 }

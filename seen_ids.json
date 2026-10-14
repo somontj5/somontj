@@ -29711,7 +29711,8 @@
     "price": 699,
     "condition": "Б/у",
     "model_key": "apple xs",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "33559364": {
     "logged": true,
@@ -30027,5 +30028,41 @@
     "price": 820,
     "condition": "Б/у",
     "model_key": "redmi 12s"
+  },
+  "80511128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17340805_apple-iphone-11-128-gb-black/",
+    "title": "Apple iPhone 11, 128 gb, Black",
+    "price": 1900,
+    "condition": "Б/у",
+    "model_key": "apple 11"
+  },
+  "37616256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17289376_apple-iphone-16-pro-max-256-gb-black-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
+    "price": 7999,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
+  },
+  "73121285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17340673_telefon-redmi-note-12s-128gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 12S 128gb Glabal Version 5G",
+    "price": 699,
+    "condition": "Б/у",
+    "model_key": "redmi note 12s"
+  },
+  "40676225": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17340676_samsung-s22-ultra-5g/",
+    "title": "Samsung Galaxy S22 ultra 5G",
+    "price": 3899,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
   }
 }

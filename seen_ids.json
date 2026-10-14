@@ -30122,7 +30122,8 @@
     "title": "Samsung Galaxy А13 2sim 4G",
     "price": 950,
     "condition": "Б/у",
-    "model_key": "samsung а13 2sim"
+    "model_key": "samsung а13 2sim",
+    "sold_checked": true
   },
   "86015128": {
     "logged": true,
@@ -30429,5 +30430,15 @@
     "price": 2700,
     "condition": "Б/у",
     "model_key": "samsung galxsy s23"
+  },
+  "18311256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17340183_apple-iphone-11-pro-256-gb-space-grey/",
+    "title": "Apple iPhone 11 Pro, 256 gb, Space Grey",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
   }
 }

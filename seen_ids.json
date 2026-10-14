@@ -29627,7 +29627,8 @@
     "title": "Apple iPhone 13 Pro Max, 256 gb, Gold",
     "price": 4499,
     "condition": "Б/у",
-    "model_key": "apple 13 pro max"
+    "model_key": "apple 13 pro max",
+    "sold_checked": true
   },
   "15416256": {
     "logged": true,
@@ -29914,5 +29915,14 @@
     "condition": "Б/у",
     "model_key": "tecno spark slim",
     "verified_model": null
+  },
+  "94161264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16299416_apple-iphone-12-mini-64-gb-blue/",
+    "title": "Apple iPhone 12 mini, 64 gb, Blue",
+    "price": 1900,
+    "condition": "Б/у",
+    "model_key": "apple 12 mini"
   }
 }

@@ -30131,7 +30131,8 @@
     "title": "Apple iPhone 15 Pro, 128 gb, Blue Titanium",
     "price": 4999,
     "condition": "Б/у",
-    "model_key": "apple 15 pro"
+    "model_key": "apple 15 pro",
+    "sold_checked": true
   },
   "61512256": {
     "logged": true,
@@ -30419,5 +30420,14 @@
     "condition": "Б/у",
     "model_key": "redmi",
     "verified_model": null
+  },
+  "34311223": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17343112_samsung-galxsy-s23/",
+    "title": "Samsung Galxsy s23",
+    "price": 2700,
+    "condition": "Б/у",
+    "model_key": "samsung galxsy s23"
   }
 }

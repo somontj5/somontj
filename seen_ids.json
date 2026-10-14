@@ -29638,7 +29638,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
     "price": 10800,
     "condition": "Б/у",
-    "model_key": "apple 16 pro max"
+    "model_key": "apple 16 pro max",
+    "sold_checked": true
   },
   "35256532": {
     "logged": true,
@@ -29946,5 +29947,14 @@
     "condition": "Б/у",
     "model_key": "samsung s20 fe",
     "verified_model": null
+  },
+  "33885306": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17338853_samsung-a-06/",
+    "title": "Samsung Galaxy A 06",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "samsung a 06"
   }
 }

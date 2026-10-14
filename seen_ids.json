@@ -29915,7 +29915,8 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "tecno spark slim",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "94161264": {
     "logged": true,
@@ -29925,5 +29926,14 @@
     "price": 1900,
     "condition": "Б/у",
     "model_key": "apple 12 mini"
+  },
+  "33864915": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17338649_xiaomi-15t-global-version/",
+    "title": "Xiaomi 15T Global Version",
+    "price": 3800,
+    "condition": "Б/у",
+    "model_key": "xiaomi 15t"
   }
 }

@@ -29827,7 +29827,8 @@
     "title": "Xiaomi Redmi Note 12S",
     "price": 650,
     "condition": "Б/у",
-    "model_key": "redmi note 12s"
+    "model_key": "redmi note 12s",
+    "sold_checked": true
   },
   "10354256": {
     "logged": true,
@@ -30143,5 +30144,15 @@
     "price": 1560,
     "condition": "Б/у",
     "model_key": "redmi note 10 pro"
+  },
+  "37368128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17341737_samsung-galaxy-a36-black-8-128gb-ideal/",
+    "title": "Samsung Galaxy A36",
+    "price": 2700,
+    "condition": "Б/у",
+    "model_key": "samsung a36",
+    "verified_model": null
   }
 }

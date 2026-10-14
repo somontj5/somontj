@@ -29689,7 +29689,8 @@
     "title": "Xiaomi 15T Global Version",
     "price": 3900,
     "condition": "Б/у",
-    "model_key": "xiaomi 15t"
+    "model_key": "xiaomi 15t",
+    "sold_checked": true
   },
   "35769256": {
     "logged": true,

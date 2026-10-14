@@ -29503,7 +29503,8 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "xiaomi 12 lite",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "37542565": {
     "logged": true,
@@ -29574,7 +29575,8 @@
     "price": 650,
     "condition": "Б/у",
     "model_key": "apple 6 plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "33505913": {
     "logged": true,

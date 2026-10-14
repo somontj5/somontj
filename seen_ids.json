@@ -29877,7 +29877,8 @@
     "title": "Apple iPhone 16 Pro Max, 512 gb, Desert Titanium",
     "price": 9500,
     "condition": "Б/у",
-    "model_key": "apple 16 pro max"
+    "model_key": "apple 16 pro max",
+    "sold_checked": true
   },
   "37374215": {
     "logged": true,
@@ -30165,5 +30166,14 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "samsung note 10 plus"
+  },
+  "68613128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17340686_apple-iphone-13-pro-128-gb-graphite/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Graphite",
+    "price": 3900,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

@@ -29777,7 +29777,8 @@
     "price": 120,
     "condition": "Б/у",
     "model_key": "nokia 1280",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "70447164": {
     "logged": true,
@@ -29804,7 +29805,8 @@
     "title": "Samsung Galaxy A03s",
     "price": 699,
     "condition": "Б/у",
-    "model_key": "samsung a03s"
+    "model_key": "samsung a03s",
+    "sold_checked": true
   },
   "11400256": {
     "logged": true,

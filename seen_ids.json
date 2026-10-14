@@ -29727,5 +29727,15 @@
     "price": 4400,
     "condition": "Б/у",
     "model_key": "samsung"
+  },
+  "11912128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15680119_apple-iphone-12-128-gb-white/",
+    "title": "Apple iPhone 12, 128 gb, White",
+    "price": 1599,
+    "condition": "Б/у",
+    "model_key": "apple 12",
+    "verified_model": null
   }
 }

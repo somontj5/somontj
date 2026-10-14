@@ -30460,6 +30460,7 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "apple 8",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   }
 }

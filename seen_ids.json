@@ -29565,7 +29565,8 @@
     "title": "HONOR X9d_5G",
     "price": 3700,
     "condition": "Б/у",
-    "model_key": "honor x9d"
+    "model_key": "honor x9d",
+    "sold_checked": true
   },
   "45366128": {
     "logged": true,

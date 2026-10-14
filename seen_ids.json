@@ -29419,7 +29419,8 @@
     "title": "Xiaomi Redmi Not 13 512/8Gb Glabal Version 5G",
     "price": 1588,
     "condition": "Б/у",
-    "model_key": "redmi not 13 glabal"
+    "model_key": "redmi not 13 glabal",
+    "sold_checked": true
   },
   "38331264": {
     "logged": true,
@@ -29428,7 +29429,8 @@
     "title": "Xiaomi Redmi 12C 64gb",
     "price": 750,
     "condition": "Б/у",
-    "model_key": "redmi 12c"
+    "model_key": "redmi 12c",
+    "sold_checked": true
   },
   "11102565": {
     "logged": true,
@@ -29437,7 +29439,8 @@
     "title": "Samsung Galaxy Note 10+ 256gb 5G",
     "price": 1599,
     "condition": "Б/у",
-    "model_key": "samsung note 10 plus"
+    "model_key": "samsung note 10 plus",
+    "sold_checked": true
   },
   "83142565": {
     "logged": true,
@@ -29446,7 +29449,8 @@
     "title": "Xiaomi Redmi 14 pro 256gb Glabal Version 5G",
     "price": 1699,
     "condition": "Б/у",
-    "model_key": "redmi 14 pro"
+    "model_key": "redmi 14 pro",
+    "sold_checked": true
   },
   "36614256": {
     "logged": true,
@@ -29748,5 +29752,41 @@
     "condition": "Б/у",
     "model_key": "nokia 1280",
     "verified_model": null
+  },
+  "70447164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17337044_poco-c71-64gb/",
+    "title": "Xiaomi Poco C71 64Gb",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "poco c71"
+  },
+  "70569128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17337056_telefon-redmi-not-9-128gb/",
+    "title": "Xiaomi Redmi Note 9 128gb",
+    "price": 749,
+    "condition": "Б/у",
+    "model_key": "redmi note 9"
+  },
+  "33702903": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17337029_samsung-galaxy-a03s/",
+    "title": "Samsung Galaxy A03s",
+    "price": 699,
+    "condition": "Б/у",
+    "model_key": "samsung a03s"
+  },
+  "11400256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17337011_honor-400-lite-256gb/",
+    "title": "Honor 400 Lite 256Gb",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "honor 400 lite"
   }
 }

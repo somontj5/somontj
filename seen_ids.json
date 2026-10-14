@@ -30008,5 +30008,15 @@
     "price": 3450,
     "condition": "Б/у",
     "model_key": "apple 14"
+  },
+  "38106128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17340238_s10e-6-128/",
+    "title": "Samsung Galaxy S10e 6/128",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "samsung s10 e 6 128",
+    "verified_model": null
   }
 }

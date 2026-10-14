@@ -30394,7 +30394,8 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "apple xs",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "84716256": {
     "logged": true,
@@ -30491,6 +30492,16 @@
     "price": 2250,
     "condition": "Б/у",
     "model_key": "samsung s21",
+    "verified_model": null
+  },
+  "34351752": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17343517_samsung-a52/",
+    "title": "Samsung Galaxy A52",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "samsung a52",
     "verified_model": null
   }
 }

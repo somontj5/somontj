@@ -30462,5 +30462,15 @@
     "model_key": "apple 8",
     "verified_model": null,
     "sold_checked": true
+  },
+  "31544128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17343403_xiaomi-redmi-15c-4-4-128gb/",
+    "title": "Xiaomi Redmi 15C 4+4/128Gb",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "redmi 15c 4",
+    "verified_model": null
   }
 }

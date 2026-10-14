@@ -29670,7 +29670,8 @@
     "price": 1650,
     "condition": "Б/у",
     "model_key": "xiaomi 13 lite 128 8 4",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "33572110": {
     "logged": true,

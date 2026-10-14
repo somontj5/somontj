@@ -29978,7 +29978,8 @@
     "title": "Samsung Galaxy A35 8/256Gb Duos Vietnam",
     "price": 2750,
     "condition": "Б/у",
-    "model_key": "samsung a35 duos"
+    "model_key": "samsung a35 duos",
+    "sold_checked": true
   },
   "35717256": {
     "logged": true,

@@ -29982,7 +29982,8 @@
     "title": "Samsung Galaxy A 06",
     "price": 950,
     "condition": "Б/у",
-    "model_key": "samsung a 06"
+    "model_key": "samsung a 06",
+    "sold_checked": true
   },
   "94189128": {
     "logged": true,
@@ -30029,7 +30030,8 @@
     "title": "Apple iPhone 14, 128 gb, Starlight",
     "price": 3450,
     "condition": "Б/у",
-    "model_key": "apple 14"
+    "model_key": "apple 14",
+    "sold_checked": true
   },
   "38106128": {
     "logged": true,
@@ -30266,5 +30268,24 @@
     "price": 1566,
     "condition": "Б/у",
     "model_key": "redmi note 13 glabal"
+  },
+  "19316128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17341193_apple-iphone-16e-128-gb/",
+    "title": "Apple iPhone 16e, 128 gb",
+    "price": 4750,
+    "condition": "Б/у",
+    "model_key": "apple 16 e"
+  },
+  "64212128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17342642_vivo-pamiat12-128gbkholatash-nagz/",
+    "title": "Doogee N30",
+    "price": 549,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
   }
 }

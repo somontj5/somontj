@@ -29904,7 +29904,8 @@
     "title": "Samsung Galaxy Z Fold 8",
     "price": 12999,
     "condition": "Б/у",
-    "model_key": "samsung z fold 8"
+    "model_key": "samsung z fold 8",
+    "sold_checked": true
   },
   "17337702": {
     "logged": true,

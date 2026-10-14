@@ -30054,7 +30054,8 @@
     "title": "Xiaomi Redmi 12S 64gb 2024",
     "price": 820,
     "condition": "Б/у",
-    "model_key": "redmi 12s"
+    "model_key": "redmi 12s",
+    "sold_checked": true
   },
   "80511128": {
     "logged": true,
@@ -30082,7 +30083,8 @@
     "title": "Xiaomi Redmi Note 12S 128gb Glabal Version 5G",
     "price": 699,
     "condition": "Б/у",
-    "model_key": "redmi note 12s"
+    "model_key": "redmi note 12s",
+    "sold_checked": true
   },
   "40676225": {
     "logged": true,
@@ -30377,5 +30379,24 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "honor x6c"
+  },
+  "34288364": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17342883_apple-iphone-xs-64-gb-gold/",
+    "title": "Apple iPhone Xs, 64 gb, Gold",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "apple xs",
+    "verified_model": null
+  },
+  "84716256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17342847_apple-iphone-16-pro-max-256-gb-black-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
+    "price": 7444,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   }
 }

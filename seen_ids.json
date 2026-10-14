@@ -29935,5 +29935,15 @@
     "price": 3800,
     "condition": "Б/у",
     "model_key": "xiaomi 15t"
+  },
+  "33876020": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17338760_samsung-s20-fe/",
+    "title": "Samsung Galaxy S20 FE",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "samsung s20 fe",
+    "verified_model": null
   }
 }

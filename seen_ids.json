@@ -29904,5 +29904,15 @@
     "price": 12999,
     "condition": "Б/у",
     "model_key": "samsung z fold 8"
+  },
+  "17337702": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17337702_rasprodazha/",
+    "title": "Tecno Spark Slim 256gb",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "tecno spark slim",
+    "verified_model": null
   }
 }

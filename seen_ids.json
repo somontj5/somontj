@@ -29895,5 +29895,14 @@
     "price": 5800,
     "condition": "Б/у",
     "model_key": "apple 15 pro max"
+  },
+  "73382978": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17338297_samsung-galaxy-z-fold-8/",
+    "title": "Samsung Galaxy Z Fold 8",
+    "price": 12999,
+    "condition": "Б/у",
+    "model_key": "samsung z fold 8"
   }
 }

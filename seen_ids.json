@@ -1389,7 +1389,8 @@
     "title": "Samsung Galaxy S21 Ultra",
     "price": 3400,
     "condition": "Б/у",
-    "model_key": "samsung s21 ultra"
+    "model_key": "samsung s21 ultra",
+    "sold_checked": true
   },
   "78816256": {
     "logged": true
@@ -29691,7 +29692,8 @@
     "title": "Телефон Самсунг S23 Ultra 256gb Vetnam 5G",
     "price": 3500,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
   },
   "33576115": {
     "logged": true,

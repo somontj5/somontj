@@ -29724,7 +29724,8 @@
     "price": 850,
     "condition": "Б/у",
     "model_key": "apple xs",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "58221164": {
     "logged": true,
@@ -29734,7 +29735,8 @@
     "price": 1399,
     "condition": "Б/у",
     "model_key": "apple 11 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "43518256": {
     "logged": true,
@@ -29743,7 +29745,8 @@
     "title": "Xiaomi Poco X8 pro 256",
     "price": 4000,
     "condition": "Б/у",
-    "model_key": "poco x8 pro 256"
+    "model_key": "poco x8 pro 256",
+    "sold_checked": true
   },
   "17336038": {
     "logged": true,
@@ -29752,7 +29755,8 @@
     "title": "Телефон Samsung",
     "price": 4400,
     "condition": "Б/у",
-    "model_key": "samsung"
+    "model_key": "samsung",
+    "sold_checked": true
   },
   "11912128": {
     "logged": true,
@@ -29762,7 +29766,8 @@
     "price": 1599,
     "condition": "Б/у",
     "model_key": "apple 12",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "65441280": {
     "logged": true,

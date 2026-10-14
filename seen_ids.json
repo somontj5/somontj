@@ -29997,5 +29997,14 @@
     "condition": "Б/у",
     "model_key": "apple 11 pro max",
     "verified_model": null
+  },
+  "10614128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17340106_apple-iphone-14-128-gb-starlight/",
+    "title": "Apple iPhone 14, 128 gb, Starlight",
+    "price": 3450,
+    "condition": "Б/у",
+    "model_key": "apple 14"
   }
 }

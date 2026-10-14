@@ -30104,7 +30104,8 @@
     "title": "Samsung Galaxy A03S 32Gb Vetnam",
     "price": 699,
     "condition": "Б/у",
-    "model_key": "samsung a03s"
+    "model_key": "samsung a03s",
+    "sold_checked": true
   },
   "82142565": {
     "logged": true,
@@ -30450,5 +30451,15 @@
     "price": 3900,
     "condition": "Б/у",
     "model_key": "apple 15"
+  },
+  "33648128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17343364_apple-iphone-8-128-gb-space-grey/",
+    "title": "Apple iPhone 8, 128 gb, Space Grey",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "apple 8",
+    "verified_model": null
   }
 }

@@ -29512,7 +29512,8 @@
     "title": "Samsung Galaxy A54 256gb 5G",
     "price": 2200,
     "condition": "Б/у",
-    "model_key": "samsung a54"
+    "model_key": "samsung a54",
+    "sold_checked": true
   },
   "02562026": {
     "logged": true,

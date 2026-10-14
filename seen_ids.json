@@ -29951,7 +29951,8 @@
     "title": "Apple iPhone 12 mini, 64 gb, Blue",
     "price": 1900,
     "condition": "Б/у",
-    "model_key": "apple 12 mini"
+    "model_key": "apple 12 mini",
+    "sold_checked": true
   },
   "33864915": {
     "logged": true,
@@ -30236,5 +30237,14 @@
     "price": 6499,
     "condition": "Б/у",
     "model_key": "apple 15 pro"
+  },
+  "46517256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17342465_apple-iphone-17-pro-256-gb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro, 256 gb, Cosmic Orange",
+    "price": 11500,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro"
   }
 }

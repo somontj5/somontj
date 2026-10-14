@@ -29899,7 +29899,8 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "samsung а06",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "33799321": {
     "logged": true,
@@ -30175,5 +30176,25 @@
     "price": 3900,
     "condition": "Б/у",
     "model_key": "apple 13 pro"
+  },
+  "73416618": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17341661_redmi-not-8/",
+    "title": "Xiaomi Redmi Note 8",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "redmi note 8",
+    "verified_model": null
+  },
+  "17341999": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17341999_srochnabo-muomila-dorad/",
+    "title": "Samsung Galaxy S10+",
+    "price": 2100,
+    "condition": "Б/у",
+    "model_key": "samsung s10 plus",
+    "verified_model": null
   }
 }

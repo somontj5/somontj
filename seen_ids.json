@@ -30309,7 +30309,8 @@
     "title": "Samsung Galaxy S24 Ultra",
     "price": 7199,
     "condition": "Б/у",
-    "model_key": "samsung s24 ultra"
+    "model_key": "samsung s24 ultra",
+    "sold_checked": true
   },
   "34273264": {
     "logged": true,

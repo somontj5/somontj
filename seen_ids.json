@@ -29992,7 +29992,8 @@
     "title": "Samsung Galaxy Note 9 128Gb Duos",
     "price": 1500,
     "condition": "Б/у",
-    "model_key": "samsung note 9"
+    "model_key": "samsung note 9",
+    "sold_checked": true
   },
   "94358256": {
     "logged": true,
@@ -30011,7 +30012,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Deep Blue",
     "price": 11999,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "31011256": {
     "logged": true,
@@ -30021,7 +30023,8 @@
     "price": 1599,
     "condition": "Б/у",
     "model_key": "apple 11 pro max",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "10614128": {
     "logged": true,
@@ -30041,7 +30044,8 @@
     "price": 1100,
     "condition": "Б/у",
     "model_key": "samsung s10 e 6 128",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "12642024": {
     "logged": true,
@@ -30287,5 +30291,59 @@
     "condition": "Б/у",
     "model_key": null,
     "verified_model": null
+  },
+  "17342757": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17342757_samsung/",
+    "title": "Samsung Galaxy S21 Ultra 5G",
+    "price": 2900,
+    "condition": "Б/у",
+    "model_key": "samsung s21 ultra",
+    "verified_model": null
+  },
+  "34275924": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17342759_s24-ultra/",
+    "title": "Samsung Galaxy S24 Ultra",
+    "price": 7199,
+    "condition": "Б/у",
+    "model_key": "samsung s24 ultra"
+  },
+  "34273264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17342732_apple-iphone-x-64-gb-silver/",
+    "title": "Apple iPhone X, 64 gb, Silver",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "apple x",
+    "verified_model": null
+  },
+  "73333432": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17342733_zte-blade-a33-pamiat4-32gb/",
+    "title": "ZTE Blade A33+, 4/32гб",
+    "price": 320,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
+  },
+  "73818256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17342738_apple-iphone-18-pro-max-256-gb-burgundy/",
+    "title": "Apple iPhone 18 Pro Max, 256 gb, Burgundy Дубликат",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "72317256": {
+    "logged": true
+  },
+  "71913128": {
+    "logged": true
   }
 }

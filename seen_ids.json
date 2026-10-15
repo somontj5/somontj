@@ -30445,7 +30445,8 @@
     "title": "Samsung Galaxy S22 DUOS 256gb",
     "price": 3399,
     "condition": "Б/у",
-    "model_key": "samsung s22 duos"
+    "model_key": "samsung s22 duos",
+    "sold_checked": true
   },
   "17343020": {
     "logged": true,
@@ -30691,5 +30692,15 @@
     "price": 5699,
     "condition": "Б/у",
     "model_key": "samsung s23 ultra"
+  },
+  "63456300": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17346345_nokia-6300/",
+    "title": "Nokia 6300",
+    "price": 150,
+    "condition": "Б/у",
+    "model_key": "nokia 6300",
+    "verified_model": null
   }
 }

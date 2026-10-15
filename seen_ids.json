@@ -31200,7 +31200,8 @@
     "price": 599,
     "condition": "Б/у",
     "model_key": "samsung a14",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "38410128": {
     "logged": true,

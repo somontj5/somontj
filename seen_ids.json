@@ -30522,7 +30522,8 @@
     "price": 2250,
     "condition": "Б/у",
     "model_key": "samsung s21",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "34351752": {
     "logged": true,
@@ -30588,7 +30589,8 @@
     "title": "Samsung Galaxy A56",
     "price": 3200,
     "condition": "Б/у",
-    "model_key": "samsung a56"
+    "model_key": "samsung a56",
+    "sold_checked": true
   },
   "17417256": {
     "logged": true,

@@ -30625,7 +30625,8 @@
     "price": 1600,
     "condition": "Б/у",
     "model_key": "redmi note 13 pro 8 8",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "34463610": {
     "logged": true,

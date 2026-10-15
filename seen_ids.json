@@ -30145,7 +30145,8 @@
     "price": 699,
     "condition": "Б/у",
     "model_key": null,
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "14321164": {
     "logged": true,

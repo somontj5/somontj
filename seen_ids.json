@@ -30900,5 +30900,14 @@
     "price": 5800,
     "condition": "Б/у",
     "model_key": "samsung s23 ultra"
+  },
+  "64905118": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16490511_xiaomi-redmi-note-8/",
+    "title": "Xiaomi Redmi Note 8",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "redmi note 8"
   }
 }

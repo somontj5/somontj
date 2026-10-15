@@ -30817,7 +30817,8 @@
     "title": "Apple iPhone 17 Pro, 256 gb, Silver",
     "price": 9700,
     "condition": "Б/у",
-    "model_key": "apple 17 pro"
+    "model_key": "apple 17 pro",
+    "sold_checked": true
   },
   "34702264": {
     "logged": true,

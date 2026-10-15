@@ -30553,7 +30553,8 @@
     "price": 450,
     "condition": "Б/у",
     "model_key": "samsung a10",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17343935": {
     "logged": true,

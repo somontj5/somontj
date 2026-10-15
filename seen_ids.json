@@ -30652,7 +30652,8 @@
     "title": "Apple iPhone 13, 128 gb, Green",
     "price": 3550,
     "condition": "Б/у",
-    "model_key": "apple 13"
+    "model_key": "apple 13",
+    "sold_checked": true
   },
   "34528064": {
     "logged": true,
@@ -30808,5 +30809,24 @@
     "price": 13500,
     "condition": "Б/у",
     "model_key": "honor magic v6 16"
+  },
+  "72817256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17345728_apple-iphone-17-pro-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro, 256 gb, Silver",
+    "price": 9700,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro"
+  },
+  "34702264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17347022_apple-iphone-xr-64-gb-white/",
+    "title": "Apple iPhone Xr, 64 gb, White",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
   }
 }

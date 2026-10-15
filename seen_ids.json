@@ -30730,7 +30730,8 @@
     "price": 550,
     "condition": "Б/у",
     "model_key": "redmi note 9",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "50113128": {
     "logged": true,
@@ -30828,6 +30829,26 @@
     "price": 1700,
     "condition": "Б/у",
     "model_key": "apple xr",
+    "verified_model": null
+  },
+  "47332128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17347332_apple-iphone-xr-128-gb-black/",
+    "title": "Apple iPhone Xr, 128 gb, Black",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
+  },
+  "34731164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17347311_apple-iphone-x-64-gb-space-grey/",
+    "title": "Apple iPhone X, 64 gb, Space Grey",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "apple x",
     "verified_model": null
   }
 }

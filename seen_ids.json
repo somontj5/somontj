@@ -30413,7 +30413,8 @@
     "title": "Honor X6C",
     "price": 1200,
     "condition": "Б/у",
-    "model_key": "honor x6c"
+    "model_key": "honor x6c",
+    "sold_checked": true
   },
   "34288364": {
     "logged": true,
@@ -30668,6 +30669,17 @@
     "title": "Inoi A54 2026",
     "price": 1000,
     "condition": "Б/у",
-    "model_key": null
+    "model_key": null,
+    "sold_checked": true
+  },
+  "17345747": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17345747_sensornyi-telefon/",
+    "title": "Сенсорный телефон Newman",
+    "price": 400,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
   }
 }

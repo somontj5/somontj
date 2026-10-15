@@ -30564,7 +30564,8 @@
     "price": 150,
     "condition": "Б/у",
     "model_key": "nokia c5",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "97214128": {
     "logged": true,
@@ -30907,6 +30908,33 @@
     "url": "https://m.somon.tj/adv/16490511_xiaomi-redmi-note-8/",
     "title": "Xiaomi Redmi Note 8",
     "price": 750,
+    "condition": "Б/у",
+    "model_key": "redmi note 8"
+  },
+  "69713325": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17347697_telefon-samsung-a13-32gb-vetnam-5g/",
+    "title": "Samsung Galaxy А13 32Gb Vetnam 5G",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "samsung а13"
+  },
+  "15425685": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17347651_telefon-samsung-a54-256-8gb-dual-sim-5g/",
+    "title": "Samsung Galaxy A54 256/8Gb Dual sim 5G",
+    "price": 2300,
+    "condition": "Б/у",
+    "model_key": "samsung a54 dual sim"
+  },
+  "47627864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17347627_telefon-redmi-note-8-64gb-glabal-version/",
+    "title": "Xiaomi Redmi Note 8 64gb Glabal Version",
+    "price": 850,
     "condition": "Б/у",
     "model_key": "redmi note 8"
   }

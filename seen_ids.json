@@ -30319,7 +30319,8 @@
     "price": 549,
     "condition": "Б/у",
     "model_key": null,
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17342757": {
     "logged": true,
@@ -30621,5 +30622,14 @@
     "model_key": "redmi note 15",
     "verified_model": null,
     "sold_checked": true
+  },
+  "02813128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17097028_apple-iphone-13-128-gb-green/",
+    "title": "Apple iPhone 13, 128 gb, Green",
+    "price": 3550,
+    "condition": "Б/у",
+    "model_key": "apple 13"
   }
 }

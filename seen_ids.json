@@ -30844,7 +30844,8 @@
     "price": 1700,
     "condition": "Б/у",
     "model_key": "apple xr",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "47332128": {
     "logged": true,

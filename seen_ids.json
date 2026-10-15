@@ -30896,7 +30896,8 @@
     "price": 599,
     "condition": "Б/у",
     "model_key": "apple x",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "34753523": {
     "logged": true,
@@ -31019,5 +31020,23 @@
     "price": 13999,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "34803007": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17348030_samsung-a07/",
+    "title": "Samsung Galaxy A07",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "samsung a07"
+  },
+  "92013128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17347920_apple-iphone-13-pro-max-128-gb-gold/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Gold",
+    "price": 5799,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
   }
 }

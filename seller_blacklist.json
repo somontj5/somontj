@@ -493,5 +493,14 @@
     "blocked_at": "2026-10-14T13:40:40",
     "updated_at": "2026-10-14T13:40:40",
     "active_ads_at_block": 45
+  },
+  "15520358": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/15520358/",
+    "reason": "похоже на перекупщика по фото: Крайне подозрительно низкая цена за топовую новинку и явная реплика на фото указывают на попытку обмана покупателей.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17346566_apple-iphone-17-pro-max-2-tb-silver/",
+    "blocked_at": "2026-10-15T09:48:38",
+    "updated_at": "2026-10-15T09:48:38",
+    "active_ads_at_block": 1
   }
 }

@@ -30567,7 +30567,8 @@
     "title": "Apple iPhone 14 Pro, 128 gb, Space Black",
     "price": 4000,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "12920256": {
     "logged": true,
@@ -30731,6 +30732,17 @@
     "title": "Apple iPhone 13 Pro Max, 128 gb, Gold",
     "price": 5799,
     "condition": "Б/у",
-    "model_key": "apple 13 pro max"
+    "model_key": "apple 13 pro max",
+    "sold_checked": true
+  },
+  "46566172": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17346566_apple-iphone-17-pro-max-2-tb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 2 tb, Silver",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max 2 tb",
+    "verified_model": null
   }
 }

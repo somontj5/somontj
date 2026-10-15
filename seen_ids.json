@@ -31038,5 +31038,32 @@
     "price": 5799,
     "condition": "Б/у",
     "model_key": "apple 13 pro max"
+  },
+  "75228310": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16752283_samsung-note-10/",
+    "title": "Samsung Galaxy Note 10+",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "samsung note 10 plus"
+  },
+  "34807131": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17348071_samsung-a31/",
+    "title": "Samsung Galaxy A31",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "samsung a31"
+  },
+  "34805214": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17348052_redmi-note-14/",
+    "title": "Xiaomi Redmi note 14, 256gb",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "redmi note 14"
   }
 }

@@ -30197,7 +30197,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Graphite",
     "price": 3900,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "73416618": {
     "logged": true,
@@ -30217,7 +30218,8 @@
     "price": 2100,
     "condition": "Б/у",
     "model_key": "samsung s10 plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "34232411": {
     "logged": true,

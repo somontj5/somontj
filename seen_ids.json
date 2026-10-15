@@ -30351,7 +30351,8 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "apple x",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "73333432": {
     "logged": true,

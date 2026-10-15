@@ -30699,7 +30699,8 @@
     "price": 400,
     "condition": "Б/у",
     "model_key": null,
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "34467823": {
     "logged": true,
@@ -31092,5 +31093,14 @@
     "price": 500,
     "condition": "Б/у",
     "model_key": "redmi 5 plus"
+  },
+  "64023256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/12944640_samsung-galaxy-s23-ultra-white-256gb/",
+    "title": "Samsung Galaxy S23 Ultra White 256Gb",
+    "price": 6000,
+    "condition": "Б/у",
+    "model_key": "samsung s23 ultra"
   }
 }

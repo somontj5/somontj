@@ -30614,7 +30614,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
     "price": 10500,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "88138256": {
     "logged": true,
@@ -30985,5 +30986,27 @@
     "price": 5999,
     "condition": "Б/у",
     "model_key": "apple 15 pro"
+  },
+  "34788721": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17347887_samsung-galaxy-s21/",
+    "title": "Samsung Galaxy S21",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "samsung s21",
+    "verified_model": null
+  },
+  "80413256": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17347804_apple-iphone-13-pro-256-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 256 gb, Sierra Blue",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro",
+    "verified_model": null
   }
 }

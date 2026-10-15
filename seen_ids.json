@@ -30866,7 +30866,8 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "apple x",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "47426256": {
     "logged": true,
@@ -31280,5 +31281,14 @@
     "condition": "Б/у",
     "model_key": "apple 14 pro",
     "sold_checked": true
+  },
+  "34982825": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17349828_samsung-galaxy-s25-ultra/",
+    "title": "Samsung Galaxy s25 Ultra",
+    "price": 8800,
+    "condition": "Б/у",
+    "model_key": "samsung s25 ultra"
   }
 }

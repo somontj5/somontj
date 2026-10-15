@@ -30282,7 +30282,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Gold",
     "price": 3999,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "11385125": {
     "logged": true,
@@ -30591,6 +30592,26 @@
     "price": 1600,
     "condition": "Б/у",
     "model_key": "redmi note 13 pro 8 8",
+    "verified_model": null
+  },
+  "34463610": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17344636_samsung-not10/",
+    "title": "Samsung Galaxy Note10+",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "samsung note10 plus",
+    "verified_model": null
+  },
+  "34468215": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17344682_smartfon-redmi-not-15/",
+    "title": "Redmi note 15",
+    "price": 2400,
+    "condition": "Б/у",
+    "model_key": "redmi note 15",
     "verified_model": null
   }
 }

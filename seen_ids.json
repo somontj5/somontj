@@ -30542,7 +30542,8 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "samsung a52",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "35901032": {
     "logged": true,
@@ -30797,5 +30798,14 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "apple 11 pro"
+  },
+  "25616512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17328925_honor-magic-v6-16-512gb/",
+    "title": "Honor magic V6 16-512gb",
+    "price": 13500,
+    "condition": "Б/у",
+    "model_key": "honor magic v6 16"
   }
 }

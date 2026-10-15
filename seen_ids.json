@@ -30649,6 +30649,7 @@
     "title": "Apple iPhone Xs, 64 gb, Silver",
     "price": 1100,
     "condition": "Б/у",
-    "model_key": "apple xs"
+    "model_key": "apple xs",
+    "sold_checked": true
   }
 }

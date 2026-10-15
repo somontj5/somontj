@@ -30166,7 +30166,8 @@
     "title": "Xiaomi Redmi Note 10 pro 256gb Global Version 5G 2sim",
     "price": 1560,
     "condition": "Б/у",
-    "model_key": "redmi note 10 pro"
+    "model_key": "redmi note 10 pro",
+    "sold_checked": true
   },
   "37368128": {
     "logged": true,

@@ -30929,7 +30929,8 @@
     "title": "Xiaomi Redmi Note 8",
     "price": 750,
     "condition": "Б/у",
-    "model_key": "redmi note 8"
+    "model_key": "redmi note 8",
+    "sold_checked": true
   },
   "69713325": {
     "logged": true,
@@ -31312,5 +31313,14 @@
     "condition": "Б/у",
     "model_key": "samsung a9",
     "verified_model": null
+  },
+  "35028020": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17350280_note-20-ultra/",
+    "title": "Samsung Galaxy Note 20 ultra",
+    "price": 3200,
+    "condition": "Б/у",
+    "model_key": "samsung note 20 ultra"
   }
 }

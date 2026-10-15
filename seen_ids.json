@@ -30805,7 +30805,8 @@
     "price": 450,
     "condition": "Б/у",
     "model_key": "redmi 9c",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "86811256": {
     "logged": true,
@@ -31186,6 +31187,16 @@
     "price": 300,
     "condition": "Б/у",
     "model_key": "apple 7",
+    "verified_model": null
+  },
+  "34899414": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17348994_samsung-a14/",
+    "title": "Samsung Galaxy A14",
+    "price": 599,
+    "condition": "Б/у",
+    "model_key": "samsung a14",
     "verified_model": null
   }
 }

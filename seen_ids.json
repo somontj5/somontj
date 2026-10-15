@@ -30772,7 +30772,8 @@
     "title": "Apple iPhone Xr, 64 gb, Yellow",
     "price": 1500,
     "condition": "Б/у",
-    "model_key": "apple xr"
+    "model_key": "apple xr",
+    "sold_checked": true
   },
   "05205256": {
     "logged": true,

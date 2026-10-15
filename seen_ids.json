@@ -30466,7 +30466,8 @@
     "title": "Samsung Galxsy s23",
     "price": 2700,
     "condition": "Б/у",
-    "model_key": "samsung galxsy s23"
+    "model_key": "samsung galxsy s23",
+    "sold_checked": true
   },
   "18311256": {
     "logged": true,
@@ -30722,5 +30723,14 @@
     "condition": "Б/у",
     "model_key": "redmi note 9",
     "verified_model": null
+  },
+  "50113128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17346501_apple-iphone-13-pro-max-128-gb-gold/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Gold",
+    "price": 5799,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
   }
 }

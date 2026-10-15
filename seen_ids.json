@@ -30776,7 +30776,8 @@
     "price": 1400,
     "condition": "Б/у",
     "model_key": "apple 11 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17346731": {
     "logged": true,
@@ -30787,5 +30788,14 @@
     "condition": "Б/у",
     "model_key": "redmi 9c",
     "verified_model": null
+  },
+  "86811256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17346868_apple-iphone-11-pro-256-gb-midnight-green/",
+    "title": "Apple iPhone 11 Pro, 256 gb, Midnight Green",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro"
   }
 }

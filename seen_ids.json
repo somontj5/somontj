@@ -30230,7 +30230,8 @@
     "price": 1100,
     "condition": "Б/у",
     "model_key": "redmi note 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "38411256": {
     "logged": true,
@@ -30250,7 +30251,8 @@
     "price": 600,
     "condition": "Б/у",
     "model_key": "samsung a50",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "43215128": {
     "logged": true,
@@ -30549,5 +30551,14 @@
     "price": 3300,
     "condition": "Б/у",
     "model_key": "samsung note 20 ultra"
+  },
+  "34406022": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17344060_samsung-s22-ultra/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 4200,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
   }
 }

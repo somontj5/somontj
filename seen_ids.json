@@ -30988,7 +30988,8 @@
     "title": "Xiaomi Redmi Note 13 512/8Gb",
     "price": 1550,
     "condition": "Б/у",
-    "model_key": "redmi note 13"
+    "model_key": "redmi note 13",
+    "sold_checked": true
   },
   "55615128": {
     "logged": true,

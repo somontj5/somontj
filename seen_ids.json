@@ -31074,5 +31074,23 @@
     "price": 9100,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "15142565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17347615_telefon-redmi-note-14-pro-256gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 14 pro 256gb Glabal Version 5G",
+    "price": 2300,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro"
+  },
+  "73481965": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17348196_xiaomi-redmi-5plus/",
+    "title": "Xiaomi Redmi 5 plus",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "redmi 5 plus"
   }
 }

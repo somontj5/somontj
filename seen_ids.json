@@ -30815,7 +30815,8 @@
     "title": "Apple iPhone 11 Pro, 256 gb, Midnight Green",
     "price": 1800,
     "condition": "Б/у",
-    "model_key": "apple 11 pro"
+    "model_key": "apple 11 pro",
+    "sold_checked": true
   },
   "25616512": {
     "logged": true,
@@ -31228,6 +31229,19 @@
     "price": 1499,
     "condition": "Б/у",
     "model_key": "apple xr",
+    "verified_model": null
+  },
+  "17101286": {
+    "logged": true
+  },
+  "73486119": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17348611_rezhim-9a-i/",
+    "title": "Xiaomi Redmi 9А",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "redmi 9а",
     "verified_model": null
   }
 }

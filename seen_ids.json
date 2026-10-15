@@ -30433,7 +30433,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
     "price": 7444,
     "condition": "Б/у",
-    "model_key": "apple 16 pro max"
+    "model_key": "apple 16 pro max",
+    "sold_checked": true
   },
   "97522256": {
     "logged": true,
@@ -30616,7 +30617,8 @@
     "price": 1100,
     "condition": "Б/у",
     "model_key": "samsung note10 plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "34468215": {
     "logged": true,

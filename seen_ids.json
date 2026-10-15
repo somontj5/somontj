@@ -30331,7 +30331,8 @@
     "price": 2900,
     "condition": "Б/у",
     "model_key": "samsung s21 ultra",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "34275924": {
     "logged": true,

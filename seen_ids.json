@@ -30208,7 +30208,8 @@
     "price": 500,
     "condition": "Б/у",
     "model_key": "redmi note 8",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17341999": {
     "logged": true,
@@ -30539,5 +30540,14 @@
     "price": 4000,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "12920256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17344129_note-20-ultra-256gb/",
+    "title": "Samsung Galaxy Note 20 Ultra 256gb",
+    "price": 3300,
+    "condition": "Б/у",
+    "model_key": "samsung note 20 ultra"
   }
 }

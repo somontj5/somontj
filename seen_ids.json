@@ -31250,5 +31250,23 @@
     "condition": "Б/у",
     "model_key": "redmi 9а",
     "verified_model": null
+  },
+  "31417256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17349314_apple-iphone-17-pro-max-256-gb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
+    "price": 11000,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
+  },
+  "30213256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17349302_apple-iphone-13-pro-256-gb-graphite/",
+    "title": "Apple iPhone 13 Pro, 256 gb, Graphite",
+    "price": 4999,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

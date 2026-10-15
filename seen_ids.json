@@ -1740,7 +1740,8 @@
     "price": 1600,
     "condition": "Б/у",
     "model_key": "samsung s20 fe duos",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "69891364": {
     "logged": true
@@ -31009,5 +31010,14 @@
     "condition": "Б/у",
     "model_key": "apple 13 pro",
     "verified_model": null
+  },
+  "88417256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17347884_apple-iphone-17-pro-max-256-gb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
+    "price": 13999,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
   }
 }

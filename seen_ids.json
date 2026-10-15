@@ -31102,5 +31102,14 @@
     "price": 6000,
     "condition": "Б/у",
     "model_key": "samsung s23 ultra"
+  },
+  "28914128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17348289_apple-iphone-14-pro-128-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Deep Purple",
+    "price": 4900,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

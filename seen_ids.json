@@ -30730,7 +30730,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
     "price": 7750,
     "condition": "Б/у",
-    "model_key": "apple 15 pro max"
+    "model_key": "apple 15 pro max",
+    "sold_checked": true
   },
   "17346133": {
     "logged": true,
@@ -31141,6 +31142,16 @@
     "price": 700,
     "condition": "Б/у",
     "model_key": "realme c25s",
+    "verified_model": null
+  },
+  "09826256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16720982_poco-m6-pro-256-gb-otlichnoe-sostoianie/",
+    "title": "Xiaomi Poco M6 Pro 256gb",
+    "price": 1699,
+    "condition": "Б/у",
+    "model_key": "poco m6 pro",
     "verified_model": null
   }
 }

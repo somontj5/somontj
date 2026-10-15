@@ -30291,7 +30291,8 @@
     "title": "Xiaomi Redmi Note 13 8/512Gb Glabal Version 5G",
     "price": 1566,
     "condition": "Б/у",
-    "model_key": "redmi note 13 glabal"
+    "model_key": "redmi note 13 glabal",
+    "sold_checked": true
   },
   "19316128": {
     "logged": true,
@@ -30581,5 +30582,15 @@
     "price": 10500,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "88138256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15218888_redmi-note-13-pro-8-256/",
+    "title": "Xiaomi Redmi Note 13 Pro 8+8/16/256gb",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "redmi note 13 pro 8 8",
+    "verified_model": null
   }
 }

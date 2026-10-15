@@ -31199,5 +31199,24 @@
     "condition": "Б/у",
     "model_key": "samsung a14",
     "verified_model": null
+  },
+  "38410128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17348384_telefon-redmi-10-pro-128gb-glabal-version/",
+    "title": "Xiaomi Redmi 10 pro 128gb Global Version",
+    "price": 1260,
+    "condition": "Б/у",
+    "model_key": "redmi 10 pro"
+  },
+  "07011128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17349070_apple-iphone-11-128-gb-black/",
+    "title": "Apple iPhone 11, 128 gb, Black",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

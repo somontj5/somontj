@@ -30241,7 +30241,8 @@
     "price": 2199,
     "condition": "Б/у",
     "model_key": "apple 11 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "34231050": {
     "logged": true,
@@ -30560,5 +30561,14 @@
     "price": 4200,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra"
+  },
+  "34423056": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17344230_samsung-a56/",
+    "title": "Samsung Galaxy A56",
+    "price": 3200,
+    "condition": "Б/у",
+    "model_key": "samsung a56"
   }
 }

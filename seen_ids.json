@@ -30487,7 +30487,8 @@
     "title": "Apple iPhone 15, 256 gb, Black",
     "price": 3900,
     "condition": "Б/у",
-    "model_key": "apple 15"
+    "model_key": "apple 15",
+    "sold_checked": true
   },
   "33648128": {
     "logged": true,
@@ -30508,7 +30509,8 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "redmi 15c 4",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "32281281": {
     "logged": true,
@@ -30518,7 +30520,8 @@
     "price": 1800,
     "condition": "Б/у",
     "model_key": "samsung s22 8 128",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "34347621": {
     "logged": true,
@@ -30763,6 +30766,26 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "samsung s20 ultra",
+    "verified_model": null
+  },
+  "67011164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17346701_apple-iphone-11-pro-64-gb-silver/",
+    "title": "Apple iPhone 11 Pro, 64 gb, Silver",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
+  },
+  "17346731": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17346731_tilifon-ekran-shikastagi-plasmasi-pusht-shikastagi/",
+    "title": "Xiaomi Redmi 9C",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "redmi 9c",
     "verified_model": null
   }
 }

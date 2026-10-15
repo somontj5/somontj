@@ -30720,7 +30720,8 @@
     "price": 150,
     "condition": "Б/у",
     "model_key": "nokia 6300",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "12815256": {
     "logged": true,
@@ -31121,5 +31122,25 @@
     "price": 6500,
     "condition": "Б/у",
     "model_key": "apple 15 pro"
+  },
+  "34871921": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17348719_samsung-galaxy-s21-plus/",
+    "title": "Samsung Galaxy S21+",
+    "price": 2499,
+    "condition": "Б/у",
+    "model_key": "samsung s21 plus",
+    "verified_model": null
+  },
+  "34869925": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17348699_realme-c25s/",
+    "title": "Realme C25s",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "realme c25s",
+    "verified_model": null
   }
 }

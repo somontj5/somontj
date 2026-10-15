@@ -134,5 +134,9 @@
   "samsung|256": {
     "first_seen": "2026-10-13",
     "ratio": 3.38
+  },
+  "samsung s20 ultra|256": {
+    "first_seen": "2026-10-15",
+    "ratio": 3.04
   }
 }

@@ -30477,7 +30477,8 @@
     "price": 1750,
     "condition": "Б/у",
     "model_key": "apple 11 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "35315256": {
     "logged": true,
@@ -30743,6 +30744,25 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "apple 17 pro max 2 tb",
+    "verified_model": null
+  },
+  "34670964": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17346709_apple-iphone-xr-64-gb-yellow/",
+    "title": "Apple iPhone Xr, 64 gb, Yellow",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple xr"
+  },
+  "05205256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17345005_samsung-s20-ultra-5g-256gb/",
+    "title": "Samsung S20 Ultra 5G 256gb",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "samsung s20 ultra",
     "verified_model": null
   }
 }

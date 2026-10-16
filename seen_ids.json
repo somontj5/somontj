@@ -31199,7 +31199,8 @@
     "price": 1499,
     "condition": "Б/у",
     "model_key": "apple se",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "34885413": {
     "logged": true,
@@ -31209,7 +31210,8 @@
     "price": 1150,
     "condition": "Б/у",
     "model_key": "redmi note 13",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "84857128": {
     "logged": true,
@@ -31219,7 +31221,8 @@
     "price": 300,
     "condition": "Б/у",
     "model_key": "apple 7",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "34899414": {
     "logged": true,
@@ -31556,5 +31559,34 @@
     "price": 599,
     "condition": "Б/у",
     "model_key": "samsung а12"
+  },
+  "38262565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17353826_xiaomi-redmi-256gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 14 Pro 256gb Glabal Version 5G",
+    "price": 2300,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro"
+  },
+  "17352840": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17352840_telfon-be-nikhoiat-nagz-karopka-dakument-dorad/",
+    "title": "Honor X6c",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "honor x6c",
+    "verified_model": null
+  },
+  "17352846": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17352846_malumoti-beshtar-tel/",
+    "title": "Samsung Galaxy Note 10",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "samsung note 10",
+    "verified_model": null
   }
 }

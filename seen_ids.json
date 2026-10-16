@@ -31444,7 +31444,8 @@
     "price": 2300,
     "condition": "Б/у",
     "model_key": "samsung a35",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "63542565": {
     "logged": true,
@@ -31548,7 +31549,8 @@
     "title": "Apple iPhone 14 Pro, 256 gb, Deep Purple",
     "price": 5150,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "20878645": {
     "logged": true,
@@ -31786,5 +31788,24 @@
     "condition": "Б/у",
     "model_key": "redmi",
     "verified_model": null
+  },
+  "56886128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17356568_xiaomi-mi-8-6-128/",
+    "title": "Xiaomi mi 8 6/128",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "xiaomi mi 8 6 128",
+    "verified_model": null
+  },
+  "35652023": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17356520_samsung-s23-iagon-tsarapin-nadorad/",
+    "title": "Samsung Galaxy S23",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "samsung s23"
   }
 }

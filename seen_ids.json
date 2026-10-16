@@ -31454,7 +31454,8 @@
     "title": "Samsung Galaxy А54 256гб Vetnam 5G Silver",
     "price": 2300,
     "condition": "Б/у",
-    "model_key": "samsung а54"
+    "model_key": "samsung а54",
+    "sold_checked": true
   },
   "25102565": {
     "logged": true,
@@ -31846,5 +31847,14 @@
     "condition": "Б/у",
     "model_key": "redmi a5",
     "verified_model": null
+  },
+  "35685624": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17356856_samsung-s24-ultra/",
+    "title": "Samsung Galaxy S24 Ultra",
+    "price": 5800,
+    "condition": "Б/у",
+    "model_key": "samsung s24 ultra"
   }
 }

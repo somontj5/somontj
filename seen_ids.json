@@ -31155,7 +31155,8 @@
     "title": "Apple iPhone 15 Pro, 128 gb, Natural Titanium",
     "price": 6500,
     "condition": "Б/у",
-    "model_key": "apple 15 pro"
+    "model_key": "apple 15 pro",
+    "sold_checked": true
   },
   "34871921": {
     "logged": true,
@@ -31176,7 +31177,8 @@
     "price": 700,
     "condition": "Б/у",
     "model_key": "realme c25s",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "09826256": {
     "logged": true,
@@ -31186,7 +31188,8 @@
     "price": 1699,
     "condition": "Б/у",
     "model_key": "poco m6 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "48780128": {
     "logged": true,
@@ -31526,5 +31529,32 @@
     "price": 5150,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "20878645": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17352087_telefon-redmi-note-8-64gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 8 64gb Glabal Version 5G",
+    "price": 820,
+    "condition": "Б/у",
+    "model_key": "redmi note 8"
+  },
+  "97126425": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17351997_telefon-redmi-12c-64gb-2sim-5g/",
+    "title": "Xiaomi Redmi 12C 64gb 2sim 5G",
+    "price": 799,
+    "condition": "Б/у",
+    "model_key": "redmi 12c"
+  },
+  "97812324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17351978_telefon-samsung-a12-32gb-vetnam-4g/",
+    "title": "Samsung Galaxy А12 32Gb Vetnam 4G",
+    "price": 599,
+    "condition": "Б/у",
+    "model_key": "samsung а12"
   }
 }

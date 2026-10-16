@@ -31431,7 +31431,8 @@
     "price": 1250,
     "condition": "Б/у",
     "model_key": "apple xs",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "35137935": {
     "logged": true,
@@ -31761,6 +31762,16 @@
     "price": 750,
     "condition": "Б/у",
     "model_key": "samsung а 50",
+    "verified_model": null
+  },
+  "55020256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17355020_apple-iphone-x-256-gb-space-grey/",
+    "title": "Apple iPhone X, 256 gb, Space Grey",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "apple x",
     "verified_model": null
   }
 }

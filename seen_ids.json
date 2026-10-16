@@ -31358,7 +31358,8 @@
     "title": "Samsung Galaxy Note 20 ultra",
     "price": 3200,
     "condition": "Б/у",
-    "model_key": "samsung note 20 ultra"
+    "model_key": "samsung note 20 ultra",
+    "sold_checked": true
   },
   "50812256": {
     "logged": true,
@@ -31719,5 +31720,15 @@
     "price": 2200,
     "condition": "Б/у",
     "model_key": "apple 15"
+  },
+  "57917128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17355791_apple-iphone-7-128-gb/",
+    "title": "Apple iPhone 7, 128 gb",
+    "price": 499,
+    "condition": "Б/у",
+    "model_key": "apple 7",
+    "verified_model": null
   }
 }

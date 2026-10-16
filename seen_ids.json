@@ -31399,7 +31399,8 @@
     "price": 2300,
     "condition": "Б/у",
     "model_key": "honor 400 lite",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "12661164": {
     "logged": true,
@@ -31409,7 +31410,8 @@
     "price": 1550,
     "condition": "Б/у",
     "model_key": "apple 11 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "31105256": {
     "logged": true,
@@ -31526,7 +31528,8 @@
     "price": 1350,
     "condition": "Б/у",
     "model_key": "apple 11",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "35341210": {
     "logged": true,
@@ -31772,6 +31775,16 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "apple x",
+    "verified_model": null
+  },
+  "17356519": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17356519_telefon-redmi/",
+    "title": "Телефон Redmi",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "redmi",
     "verified_model": null
   }
 }

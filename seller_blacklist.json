@@ -502,5 +502,14 @@
     "blocked_at": "2026-10-15T09:48:38",
     "updated_at": "2026-10-15T09:48:38",
     "active_ads_at_block": 1
+  },
+  "4456046": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/4456046/",
+    "reason": "похоже на перекупщика по фото: На фото четко видна витрина/стенд магазина телефонов с фирменной подставкой и коробкой на белом прилавке, а также размытые коробки на заднем плане.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/16825381_samsung-galaxy-a17/",
+    "blocked_at": "2026-10-16T20:37:28",
+    "updated_at": "2026-10-16T20:37:28",
+    "active_ads_at_block": 26
   }
 }

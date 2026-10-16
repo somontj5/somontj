@@ -31473,7 +31473,8 @@
     "title": "Xiaomi Redmi 14 pro 256gb Glabal Version 5G",
     "price": 2300,
     "condition": "Б/у",
-    "model_key": "redmi 14 pro"
+    "model_key": "redmi 14 pro",
+    "sold_checked": true
   },
   "21451332": {
     "logged": true,
@@ -31875,5 +31876,15 @@
     "price": 4199,
     "condition": "Б/у",
     "model_key": "apple 13 pro"
+  },
+  "82538117": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16825381_samsung-galaxy-a17/",
+    "title": "Samsung Galaxy A17",
+    "price": 1900,
+    "condition": "Б/у",
+    "model_key": "samsung a17",
+    "verified_model": null
   }
 }

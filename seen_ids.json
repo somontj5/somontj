@@ -31296,7 +31296,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
     "price": 11000,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "30213256": {
     "logged": true,
@@ -31305,7 +31306,8 @@
     "title": "Apple iPhone 13 Pro, 256 gb, Graphite",
     "price": 4999,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "65814128": {
     "logged": true,
@@ -31650,5 +31652,14 @@
     "condition": "Б/у",
     "model_key": "poco x7 pro",
     "verified_model": null
+  },
+  "35449440": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17354494_tecno-camon-40-pro/",
+    "title": "Tecno Camon 40 pro",
+    "price": 2550,
+    "condition": "Б/у",
+    "model_key": "tecno camon 40 pro"
   }
 }

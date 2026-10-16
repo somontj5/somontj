@@ -30921,7 +30921,8 @@
     "title": "Samsung Galaxy S23 Ultra",
     "price": 5800,
     "condition": "Б/у",
-    "model_key": "samsung s23 ultra"
+    "model_key": "samsung s23 ultra",
+    "sold_checked": true
   },
   "64905118": {
     "logged": true,
@@ -31006,7 +31007,8 @@
     "title": "Apple iPhone 15 Pro, 128 gb, Natural Titanium",
     "price": 5999,
     "condition": "Б/у",
-    "model_key": "apple 15 pro"
+    "model_key": "apple 15 pro",
+    "sold_checked": true
   },
   "34788721": {
     "logged": true,
@@ -31351,5 +31353,46 @@
     "condition": "Б/у",
     "model_key": "apple 12 pro",
     "sold_checked": true
+  },
+  "51261400": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17351261_honor-400-lite/",
+    "title": "Honor 400 lite",
+    "price": 2300,
+    "condition": "Б/у",
+    "model_key": "honor 400 lite",
+    "verified_model": null
+  },
+  "12661164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17351266_apple-iphone-11-pro-64-gb-midnight-green/",
+    "title": "Apple iPhone 11 Pro, 64 gb, Midnight Green",
+    "price": 1550,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
+  },
+  "31105256": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17351031_samsung-s10-5g-pamiat-256-sostoianie-kafosh-kamakak-tsarapina-dorad/",
+    "title": "Samsung Galaxy S10 5g \\ 256",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "samsung s10",
+    "verified_model": null
+  },
+  "35123164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17351231_apple-iphone-xs-64-gb-gold/",
+    "title": "Apple iPhone Xs, 64 gb, Gold",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "apple xs",
+    "verified_model": null
   }
 }

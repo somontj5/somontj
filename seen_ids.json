@@ -31349,6 +31349,7 @@
     "title": "Apple iPhone 12 pro, 128 gb, Graphite",
     "price": 3400,
     "condition": "Б/у",
-    "model_key": "apple 12 pro"
+    "model_key": "apple 12 pro",
+    "sold_checked": true
   }
 }

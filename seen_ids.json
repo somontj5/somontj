@@ -31264,7 +31264,8 @@
     "price": 1499,
     "condition": "Б/у",
     "model_key": "apple xr",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17101286": {
     "logged": true,
@@ -31274,7 +31275,8 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "samsung s10 e",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "73486119": {
     "logged": true,
@@ -31284,7 +31286,8 @@
     "price": 500,
     "condition": "Б/у",
     "model_key": "redmi 9а",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "31417256": {
     "logged": true,
@@ -31618,6 +31621,34 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "apple 11 pro",
+    "verified_model": null
+  },
+  "73544376": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17354437_huawei-honor-x6c/",
+    "title": "Huawei Honor X6c",
+    "price": 1450,
+    "condition": "Б/у",
+    "model_key": "huawei honor x6c"
+  },
+  "73207702": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16732077_samsung-galaxy-a02/",
+    "title": "Samsung Galaxy A02",
+    "price": 550,
+    "condition": "Б/у",
+    "model_key": "samsung a02"
+  },
+  "73537677": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17353767_poco-x7pro/",
+    "title": "Xiaomi Poco X7 pro",
+    "price": 2799,
+    "condition": "Б/у",
+    "model_key": "poco x7 pro",
     "verified_model": null
   }
 }

@@ -30900,7 +30900,8 @@
     "price": 499,
     "condition": "Б/у",
     "model_key": "apple 7",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "47450256": {
     "logged": true,
@@ -31331,5 +31332,14 @@
     "price": 3200,
     "condition": "Б/у",
     "model_key": "apple 12 pro max"
+  },
+  "93713256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17350937_apple-iphone-13-pro-max-256-gb-graphite/",
+    "title": "Apple iPhone 13 Pro Max, 256 gb, Graphite",
+    "price": 3999,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
   }
 }

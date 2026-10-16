@@ -31075,7 +31075,8 @@
     "title": "Samsung Galaxy Note 10+",
     "price": 1100,
     "condition": "Б/у",
-    "model_key": "samsung note 10 plus"
+    "model_key": "samsung note 10 plus",
+    "sold_checked": true
   },
   "34807131": {
     "logged": true,

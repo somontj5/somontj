@@ -31836,5 +31836,15 @@
     "condition": "Б/у",
     "model_key": "tecno",
     "verified_model": null
+  },
+  "17356208": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17356208_mefurusham/",
+    "title": "Телефон Xiaomi Redmi A5",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "redmi a5",
+    "verified_model": null
   }
 }

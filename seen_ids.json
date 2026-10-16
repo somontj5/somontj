@@ -30941,7 +30941,8 @@
     "title": "Samsung Galaxy А13 32Gb Vetnam 5G",
     "price": 950,
     "condition": "Б/у",
-    "model_key": "samsung а13"
+    "model_key": "samsung а13",
+    "sold_checked": true
   },
   "15425685": {
     "logged": true,
@@ -30950,7 +30951,8 @@
     "title": "Samsung Galaxy A54 256/8Gb Dual sim 5G",
     "price": 2300,
     "condition": "Б/у",
-    "model_key": "samsung a54 dual sim"
+    "model_key": "samsung a54 dual sim",
+    "sold_checked": true
   },
   "47627864": {
     "logged": true,

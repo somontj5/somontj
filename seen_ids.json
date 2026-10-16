@@ -31105,7 +31105,8 @@
     "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
     "price": 9100,
     "condition": "Б/у",
-    "model_key": "apple 16 pro max"
+    "model_key": "apple 16 pro max",
+    "sold_checked": true
   },
   "15142565": {
     "logged": true,
@@ -31472,5 +31473,14 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "redmi note 10pro"
+  },
+  "35278026": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17352780_s-26-ultra/",
+    "title": "Samsung Galaxy S 26 ultra",
+    "price": 7400,
+    "condition": "Б/у",
+    "model_key": "samsung s 26 ultra"
   }
 }

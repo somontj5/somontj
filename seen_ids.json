@@ -31588,5 +31588,15 @@
     "condition": "Б/у",
     "model_key": "samsung note 10",
     "verified_model": null
+  },
+  "28462018": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17354284_huawel-y6-prime-2018/",
+    "title": "Huawei Y6 Prime 2018",
+    "price": 400,
+    "condition": "Б/у",
+    "model_key": "huawei y6 prime 2018",
+    "verified_model": null
   }
 }

@@ -31024,7 +31024,8 @@
     "price": 700,
     "condition": "Б/у",
     "model_key": "samsung s21",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "80413256": {
     "logged": true,
@@ -31045,7 +31046,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
     "price": 13999,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "34803007": {
     "logged": true,
@@ -31420,5 +31422,32 @@
     "price": 2300,
     "condition": "Б/у",
     "model_key": "samsung а54"
+  },
+  "25102565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17352125_telefon-redmi-10-pro-256gb-5g/",
+    "title": "Xiaomi Redmi 10 pro 256gb 5G",
+    "price": 1530,
+    "condition": "Б/у",
+    "model_key": "redmi 10 pro"
+  },
+  "56142565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17352156_telefon-redmi-14-pro-256gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi 14 pro 256gb Glabal Version 5G",
+    "price": 2300,
+    "condition": "Б/у",
+    "model_key": "redmi 14 pro"
+  },
+  "21451332": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17352145_telefon-samsung-a13-32gb-vetnam/",
+    "title": "Samsung Galaxy А13 32Gb",
+    "price": 940,
+    "condition": "Б/у",
+    "model_key": "samsung а13"
   }
 }

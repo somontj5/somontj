@@ -31051,7 +31051,8 @@
     "title": "Samsung Galaxy A07",
     "price": 1000,
     "condition": "Б/у",
-    "model_key": "samsung a07"
+    "model_key": "samsung a07",
+    "sold_checked": true
   },
   "92013128": {
     "logged": true,

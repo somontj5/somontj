@@ -31322,5 +31322,14 @@
     "price": 3200,
     "condition": "Б/у",
     "model_key": "samsung note 20 ultra"
+  },
+  "50812256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17350508_apple-iphone-12-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 12 Pro Max, 256 gb, Silver",
+    "price": 3200,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro max"
   }
 }

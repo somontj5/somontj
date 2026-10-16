@@ -31450,7 +31450,8 @@
     "title": "Samsung Galaxy А13 32Gb",
     "price": 940,
     "condition": "Б/у",
-    "model_key": "samsung а13"
+    "model_key": "samsung а13",
+    "sold_checked": true
   },
   "26215256": {
     "logged": true,

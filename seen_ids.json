@@ -31124,7 +31124,8 @@
     "title": "Xiaomi Redmi 5 plus",
     "price": 500,
     "condition": "Б/у",
-    "model_key": "redmi 5 plus"
+    "model_key": "redmi 5 plus",
+    "sold_checked": true
   },
   "64023256": {
     "logged": true,
@@ -31483,5 +31484,15 @@
     "price": 7400,
     "condition": "Б/у",
     "model_key": "samsung s 26 ultra"
+  },
+  "53023864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17353023_apple-iphone-8-64-gb-silver/",
+    "title": "Apple iPhone 8, 64 gb, Silver",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "apple 8",
+    "verified_model": null
   }
 }

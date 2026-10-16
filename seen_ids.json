@@ -30982,7 +30982,8 @@
     "price": 600,
     "condition": "Б/у",
     "model_key": "apple xr",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "77201232": {
     "logged": true,
@@ -30991,7 +30992,8 @@
     "title": "Samsung Galaxy А12 32Gb Vetnam",
     "price": 650,
     "condition": "Б/у",
-    "model_key": "samsung а12"
+    "model_key": "samsung а12",
+    "sold_checked": true
   },
   "91351285": {
     "logged": true,
@@ -31408,5 +31410,14 @@
     "condition": "Б/у",
     "model_key": "samsung a35",
     "verified_model": null
+  },
+  "63542565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17352063_telefon-samsung-a54-256gb-vetnam-5g-silver/",
+    "title": "Samsung Galaxy А54 256гб Vetnam 5G Silver",
+    "price": 2300,
+    "condition": "Б/у",
+    "model_key": "samsung а54"
   }
 }

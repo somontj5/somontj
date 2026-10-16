@@ -31752,5 +31752,15 @@
     "condition": "Б/у",
     "model_key": "apple se",
     "verified_model": null
+  },
+  "35634050": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17356340_samsung-a-50/",
+    "title": "Samsung Galaxy А 50",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "samsung а 50",
+    "verified_model": null
   }
 }

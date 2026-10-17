@@ -31819,7 +31819,8 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "redmi",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "56886128": {
     "logged": true,
@@ -32286,5 +32287,41 @@
     "price": 1260,
     "condition": "Б/у",
     "model_key": "redmi 14c"
+  },
+  "24106128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17360124_telefon-redmi-10-pro-6-128gb/",
+    "title": "Xiaomi Redmi 10 pro 6/128Gb",
+    "price": 1450,
+    "condition": "Б/у",
+    "model_key": "redmi 10 pro"
+  },
+  "11514324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17360115_telefon-samsung-a14-32gb-vetnam-4g/",
+    "title": "Samsung Galaxy А14 32Gb Vetnam 4G",
+    "price": 945,
+    "condition": "Б/у",
+    "model_key": "samsung а14"
+  },
+  "60097864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17360097_telefon-redmi-note-8-64gb-glabal-version/",
+    "title": "Xiaomi Redmi Note 8 64gb Glabal Version",
+    "price": 799,
+    "condition": "Б/у",
+    "model_key": "redmi note 8"
+  },
+  "86102565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17360086_telefon-redmi-note-10pro-256gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 10pro 256gb Glabal Version 5G",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "redmi note 10pro"
   }
 }

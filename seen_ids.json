@@ -31723,7 +31723,8 @@
     "title": "Samsung Galaxy S23 Ultra",
     "price": 5250,
     "condition": "Б/у",
-    "model_key": "samsung s23 ultra"
+    "model_key": "samsung s23 ultra",
+    "sold_checked": true
   },
   "50415256": {
     "logged": true,
@@ -32183,5 +32184,34 @@
     "condition": "Б/у",
     "model_key": "apple xr",
     "verified_model": null
+  },
+  "59083105": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17359083_samsung-galaxy-note-10-5g/",
+    "title": "Samsung Galaxy note 10 5g",
+    "price": 2050,
+    "condition": "Б/у",
+    "model_key": "samsung note 10",
+    "verified_model": null
+  },
+  "07138256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17355707_redmi-note-13pro-8-256/",
+    "title": "Xiaomi Redmi Note 13Pro 8/256Gb",
+    "price": 1650,
+    "condition": "Б/у",
+    "model_key": "redmi note 13pro",
+    "verified_model": null
+  },
+  "48025256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17359480_samsung-galaxy-s25-ultra-256gb-titanium-gray/",
+    "title": "Samsung Galaxy S25 Ultra 256GB Titanium Gray",
+    "price": 9200,
+    "condition": "Б/у",
+    "model_key": "samsung s25 ultra"
   }
 }

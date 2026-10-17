@@ -32060,7 +32060,8 @@
     "price": 950,
     "condition": "Б/у",
     "model_key": "samsung а23 128",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "40613128": {
     "logged": true,
@@ -32467,5 +32468,14 @@
     "condition": "Б/у",
     "model_key": "apple 13 pro",
     "verified_model": null
+  },
+  "36142220": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17361422_samsung-galaxy-a20/",
+    "title": "Samsung Galaxy A20",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "samsung a20"
   }
 }

@@ -31525,7 +31525,8 @@
     "price": 500,
     "condition": "Б/у",
     "model_key": "apple 8",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "13311164": {
     "logged": true,
@@ -31948,6 +31949,25 @@
     "price": 1222,
     "condition": "Б/у",
     "model_key": "apple xs max",
+    "verified_model": null
+  },
+  "10962018": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17358109_samsung-a6-2018/",
+    "title": "Samsung Galaxy А6 2018",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "samsung а6 2018"
+  },
+  "16725258": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16725258_infinix/",
+    "title": "Infinix Smart 10, 128gb",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "infinix smart 10",
     "verified_model": null
   }
 }

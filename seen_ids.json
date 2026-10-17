@@ -32103,7 +32103,8 @@
     "price": 3000,
     "condition": "Б/у",
     "model_key": "samsung s22 plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "35898940": {
     "logged": true,
@@ -32133,7 +32134,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
     "price": 7199,
     "condition": "Б/у",
-    "model_key": "apple 15 pro max"
+    "model_key": "apple 15 pro max",
+    "sold_checked": true
   },
   "35922524": {
     "logged": true,
@@ -32499,5 +32501,14 @@
     "condition": "Б/у",
     "model_key": "apple 12",
     "verified_model": null
+  },
+  "37617512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15058376_apple-iphone-17-pro-max-512-gb/",
+    "title": "Apple iPhone 17 Pro Max, 512 gb дубликат",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": null
   }
 }

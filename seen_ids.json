@@ -31576,7 +31576,8 @@
     "title": "Xiaomi Redmi 12C 64gb 2sim 5G",
     "price": 799,
     "condition": "Б/у",
-    "model_key": "redmi 12c"
+    "model_key": "redmi 12c",
+    "sold_checked": true
   },
   "97812324": {
     "logged": true,
@@ -31585,7 +31586,8 @@
     "title": "Samsung Galaxy А12 32Gb Vetnam 4G",
     "price": 599,
     "condition": "Б/у",
-    "model_key": "samsung а12"
+    "model_key": "samsung а12",
+    "sold_checked": true
   },
   "38262565": {
     "logged": true,
@@ -32008,5 +32010,24 @@
     "condition": "Б/у",
     "model_key": "apple 11 pro",
     "verified_model": null
+  },
+  "38323128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17358383_samsung-a23-128g/",
+    "title": "Samsung Galaxy А23 128",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "samsung а23 128",
+    "verified_model": null
+  },
+  "40613128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17358406_apple-iphone-13-pro-128-gb-gold/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Gold",
+    "price": 3800,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

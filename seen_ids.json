@@ -32367,7 +32367,8 @@
     "title": "Xiaomi Redmi Note 10pro 256gb Glabal Version 5G",
     "price": 1500,
     "condition": "Б/у",
-    "model_key": "redmi note 10pro"
+    "model_key": "redmi note 10pro",
+    "sold_checked": true
   },
   "67542565": {
     "logged": true,
@@ -32762,5 +32763,14 @@
     "price": 3500,
     "condition": "Б/у",
     "model_key": "samsung s22 plus"
+  },
+  "63872256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17363872_apple-iphone-air-256-gb-cloud-white/",
+    "title": "Apple iPhone Air, 256 gb, Cloud White",
+    "price": 8000,
+    "condition": "Б/у",
+    "model_key": "apple air"
   }
 }

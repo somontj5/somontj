@@ -32144,7 +32144,8 @@
     "title": "Samsung Galaxy S24",
     "price": 4500,
     "condition": "Б/у",
-    "model_key": "samsung s24"
+    "model_key": "samsung s24",
+    "sold_checked": true
   },
   "30815128": {
     "logged": true,
@@ -32153,7 +32154,8 @@
     "title": "Apple iPhone 15 Pro, 128 gb, Blue Titanium",
     "price": 6800,
     "condition": "Б/у",
-    "model_key": "apple 15 pro"
+    "model_key": "apple 15 pro",
+    "sold_checked": true
   },
   "30925256": {
     "logged": true,
@@ -32508,6 +32510,24 @@
     "url": "https://m.somon.tj/adv/15058376_apple-iphone-17-pro-max-512-gb/",
     "title": "Apple iPhone 17 Pro Max, 512 gb дубликат",
     "price": 1500,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "98631128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/12698631_apple-iphone-xr-128-gb-product-red/",
+    "title": "Apple iPhone Xr, 128 gb, Product Red",
+    "price": 3299,
+    "condition": "Б/у",
+    "model_key": "apple xr"
+  },
+  "73217512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16142732_apple-iphone-17-pro-max-512-gb-deep-blue/",
+    "title": "Apple iPhone 17 Pro Max, 512 gb, Deep Blue Дубликат",
+    "price": 1399,
     "condition": "Б/у",
     "model_key": null
   }

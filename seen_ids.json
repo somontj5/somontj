@@ -31703,7 +31703,8 @@
     "title": "Samsung Galaxy S23, 256gb",
     "price": 3600,
     "condition": "Б/у",
-    "model_key": "samsung s23"
+    "model_key": "samsung s23",
+    "sold_checked": true
   },
   "01452025": {
     "logged": true,
@@ -32134,5 +32135,23 @@
     "price": 4700,
     "condition": "Б/у",
     "model_key": "apple 13 pro"
+  },
+  "46101285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17355446_telefon-redmi-note-10pro-128gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 10pro 128gb Glabal Version 5G",
+    "price": 1550,
+    "condition": "Б/у",
+    "model_key": "redmi note 10pro"
+  },
+  "93631264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17359363_apple-iphone-12-64-gb-white/",
+    "title": "Apple iPhone 12, 64 gb, White",
+    "price": 2600,
+    "condition": "Б/у",
+    "model_key": "apple 12"
   }
 }

@@ -32319,7 +32319,8 @@
     "title": "Samsung Galaxy А12 64Gb Vetnam 2sim",
     "price": 950,
     "condition": "Б/у",
-    "model_key": "samsung а12"
+    "model_key": "samsung а12",
+    "sold_checked": true
   },
   "07141285": {
     "logged": true,
@@ -32729,6 +32730,16 @@
     "price": 1099,
     "condition": "Б/у",
     "model_key": "honor x6c",
+    "verified_model": null
+  },
+  "36347650": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17363476_tecno-spark-50/",
+    "title": "Tecno spark 50",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "tecno spark 50",
     "verified_model": null
   }
 }

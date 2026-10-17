@@ -32184,7 +32184,8 @@
     "title": "Xiaomi Redmi Note 10pro 128gb Glabal Version 5G",
     "price": 1550,
     "condition": "Б/у",
-    "model_key": "redmi note 10pro"
+    "model_key": "redmi note 10pro",
+    "sold_checked": true
   },
   "93631264": {
     "logged": true,
@@ -32223,7 +32224,8 @@
     "price": 1600,
     "condition": "Б/у",
     "model_key": "apple xr",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "59083105": {
     "logged": true,
@@ -32562,5 +32564,23 @@
     "price": 2350,
     "condition": "Б/у",
     "model_key": "redmi 14 pro"
+  },
+  "13542565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17362213_telefon-samsung-54-256gb-vetnam-5g/",
+    "title": "Samsung Galaxy А 54 256гб Vetnam 5G",
+    "price": 2200,
+    "condition": "Б/у",
+    "model_key": "samsung а 54"
+  },
+  "17451645": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17362174_telefon-samsung-a51-64gb-vetnam-5g/",
+    "title": "Samsung Galaxy А51 64Gb Vetnam 5G",
+    "price": 1350,
+    "condition": "Б/у",
+    "model_key": "samsung а51"
   }
 }

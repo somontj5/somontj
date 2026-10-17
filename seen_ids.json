@@ -31597,7 +31597,8 @@
     "title": "Xiaomi Redmi Note 14 Pro 256gb Glabal Version 5G",
     "price": 2300,
     "condition": "Б/у",
-    "model_key": "redmi note 14 pro"
+    "model_key": "redmi note 14 pro",
+    "sold_checked": true
   },
   "17352840": {
     "logged": true,
@@ -31607,7 +31608,8 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "honor x6c",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17352846": {
     "logged": true,
@@ -31617,7 +31619,8 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "samsung note 10",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "28462018": {
     "logged": true,
@@ -32051,5 +32054,34 @@
     "condition": "Б/у",
     "model_key": "samsung a32",
     "verified_model": null
+  },
+  "35905622": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17359056_samsung-s22/",
+    "title": "Samsung Galaxy S22+",
+    "price": 3000,
+    "condition": "Б/у",
+    "model_key": "samsung s22 plus",
+    "verified_model": null
+  },
+  "35898940": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17358989_samsung-galaxy-a40/",
+    "title": "Samsung Galaxy А40",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "samsung а40",
+    "verified_model": null
+  },
+  "35815023": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17358150_samsung-galaxy-s-23-ultra/",
+    "title": "Samsung Galaxy S23 ultra",
+    "price": 4200,
+    "condition": "Б/у",
+    "model_key": "samsung s23 ultra"
   }
 }

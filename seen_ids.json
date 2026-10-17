@@ -31503,7 +31503,8 @@
     "title": "Xiaomi Redmi Note 10pro 128gb Glabal Version 5G",
     "price": 1200,
     "condition": "Б/у",
-    "model_key": "redmi note 10pro"
+    "model_key": "redmi note 10pro",
+    "sold_checked": true
   },
   "35278026": {
     "logged": true,

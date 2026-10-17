@@ -32358,5 +32358,15 @@
     "condition": "Б/у",
     "model_key": null,
     "verified_model": null
+  },
+  "36053864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17360538_apple-iphone-xs-max-64-gb-space-grey/",
+    "title": "Apple iPhone Xs Max, 64 gb, Space Grey",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "apple xs max",
+    "verified_model": null
   }
 }

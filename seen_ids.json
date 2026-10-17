@@ -32204,7 +32204,8 @@
     "title": "Xiaomi Redmi Note 13",
     "price": 1400,
     "condition": "Б/у",
-    "model_key": "redmi note 13"
+    "model_key": "redmi note 13",
+    "sold_checked": true
   },
   "17355605": {
     "logged": true,
@@ -32255,7 +32256,8 @@
     "title": "Samsung Galaxy S25 Ultra 256GB Titanium Gray",
     "price": 9200,
     "condition": "Б/у",
-    "model_key": "samsung s25 ultra"
+    "model_key": "samsung s25 ultra",
+    "sold_checked": true
   },
   "71716116": {
     "logged": true,
@@ -32645,6 +32647,25 @@
     "price": 899,
     "condition": "Б/у",
     "model_key": "redmi a5",
+    "verified_model": null
+  },
+  "72712256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17362727_apple-iphone-12-pro-max-256-gb-pacific-blue/",
+    "title": "Apple iPhone 12 Pro Max, 256 gb, Pacific Blue",
+    "price": 2200,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro max"
+  },
+  "36270115": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17362701_samsung-a15-rastamozhka-nest/",
+    "title": "Samsung Galaxy А15",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "samsung а15",
     "verified_model": null
   }
 }

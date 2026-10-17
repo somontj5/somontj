@@ -32310,7 +32310,8 @@
     "title": "Xiaomi Redmi 8 32Gb 4G",
     "price": 750,
     "condition": "Б/у",
-    "model_key": "redmi 8"
+    "model_key": "redmi 8",
+    "sold_checked": true
   },
   "01912642": {
     "logged": true,
@@ -32752,5 +32753,14 @@
     "condition": "Б/у",
     "model_key": "redmi note 9",
     "verified_model": null
+  },
+  "17363722": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17363722_telfon-dar-kholati-khub-ast-kharidori-anik-boshad-zang-zananad-bo-muomila-meshava/",
+    "title": "Samsung Galaxy S22+",
+    "price": 3500,
+    "condition": "Б/у",
+    "model_key": "samsung s22 plus"
   }
 }

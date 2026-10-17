@@ -31661,7 +31661,8 @@
     "title": "Huawei Honor X6c",
     "price": 1450,
     "condition": "Б/у",
-    "model_key": "huawei honor x6c"
+    "model_key": "huawei honor x6c",
+    "sold_checked": true
   },
   "73207702": {
     "logged": true,
@@ -31670,7 +31671,8 @@
     "title": "Samsung Galaxy A02",
     "price": 550,
     "condition": "Б/у",
-    "model_key": "samsung a02"
+    "model_key": "samsung a02",
+    "sold_checked": true
   },
   "73537677": {
     "logged": true,
@@ -31690,7 +31692,8 @@
     "title": "Tecno Camon 40 pro",
     "price": 2550,
     "condition": "Б/у",
-    "model_key": "tecno camon 40 pro"
+    "model_key": "tecno camon 40 pro",
+    "sold_check_attempts": 1
   },
   "35487323": {
     "logged": true,
@@ -32103,5 +32106,32 @@
     "price": 4500,
     "condition": "Б/у",
     "model_key": "samsung s24"
+  },
+  "30815128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17359308_apple-iphone-15-pro-128-gb-blue-titanium/",
+    "title": "Apple iPhone 15 Pro, 128 gb, Blue Titanium",
+    "price": 6800,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro"
+  },
+  "30925256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17359309_samsung-galaxy-s25-ultra-256gb/",
+    "title": "Samsung Galaxy S25 Ultra 256GB",
+    "price": 8800,
+    "condition": "Б/у",
+    "model_key": "samsung s25 ultra"
+  },
+  "36513256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17357365_apple-iphone-13-pro-256-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 256 gb, Sierra Blue",
+    "price": 4700,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

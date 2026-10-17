@@ -32482,7 +32482,8 @@
     "price": 2200,
     "condition": "Б/у",
     "model_key": "apple 13 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "36142220": {
     "logged": true,
@@ -32606,5 +32607,14 @@
     "condition": "Б/у",
     "model_key": "apple xr",
     "verified_model": null
+  },
+  "56512256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17362483_samsung-galaxy-a56-5g-12-256gb-black/",
+    "title": "Samsung Galaxy A56 5G 12/256Gb black",
+    "price": 4500,
+    "condition": "Б/у",
+    "model_key": "samsung a56"
   }
 }

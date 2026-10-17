@@ -31514,7 +31514,8 @@
     "title": "Samsung Galaxy S 26 ultra",
     "price": 7400,
     "condition": "Б/у",
-    "model_key": "samsung s 26 ultra"
+    "model_key": "samsung s 26 ultra",
+    "sold_checked": true
   },
   "53023864": {
     "logged": true,
@@ -31928,6 +31929,25 @@
     "price": 1299,
     "condition": "Б/у",
     "model_key": "apple xr",
+    "verified_model": null
+  },
+  "35756726": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17357567_samsung-galaxy-s26/",
+    "title": "Samsung Galaxy S26",
+    "price": 7350,
+    "condition": "Б/у",
+    "model_key": "samsung s26"
+  },
+  "57617256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17357617_apple-iphone-xs-max-256-gb-gold/",
+    "title": "Apple iPhone Xs Max, 256 gb, Gold",
+    "price": 1222,
+    "condition": "Б/у",
+    "model_key": "apple xs max",
     "verified_model": null
   }
 }

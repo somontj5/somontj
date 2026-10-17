@@ -31888,5 +31888,24 @@
     "condition": "Б/у",
     "model_key": "samsung a17",
     "verified_model": null
+  },
+  "35751121": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17357511_samsung-galaxy-s21/",
+    "title": "Samsung Galaxy S21",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "samsung s21",
+    "verified_model": null
+  },
+  "58313256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17357583_apple-iphone-13-pro-max-256-gb-graphite/",
+    "title": "Apple iPhone 13 Pro Max, 256 gb, Graphite",
+    "price": 3999,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
   }
 }

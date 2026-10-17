@@ -31872,7 +31872,8 @@
     "price": 1400,
     "condition": "Б/у",
     "model_key": "tecno",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "17356208": {
     "logged": true,

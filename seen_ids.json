@@ -32274,7 +32274,8 @@
     "title": "Apple iPhone Air, 256 gb, Space Black",
     "price": 9999,
     "condition": "Б/у",
-    "model_key": "apple air"
+    "model_key": "apple air",
+    "sold_checked": true
   },
   "59853100": {
     "logged": true,
@@ -32545,7 +32546,8 @@
     "price": 200,
     "condition": "Б/у",
     "model_key": "nokia 8800",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "61978564": {
     "logged": true,

@@ -31640,7 +31640,8 @@
     "title": "Apple iPhone 14 Pro, 128 gb",
     "price": 4444,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "32011256": {
     "logged": true,
@@ -32093,5 +32094,14 @@
     "price": 7199,
     "condition": "Б/у",
     "model_key": "apple 15 pro max"
+  },
+  "35922524": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17359225_samsung-s24/",
+    "title": "Samsung Galaxy S24",
+    "price": 4500,
+    "condition": "Б/у",
+    "model_key": "samsung s24"
   }
 }

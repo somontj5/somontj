@@ -32237,7 +32237,8 @@
     "price": 2050,
     "condition": "Б/у",
     "model_key": "samsung note 10",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "07138256": {
     "logged": true,
@@ -32247,7 +32248,8 @@
     "price": 1650,
     "condition": "Б/у",
     "model_key": "redmi note 13pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "48025256": {
     "logged": true,
@@ -32647,7 +32649,8 @@
     "price": 899,
     "condition": "Б/у",
     "model_key": "redmi a5",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "72712256": {
     "logged": true,

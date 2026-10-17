@@ -31650,7 +31650,8 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "apple 11 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "73544376": {
     "logged": true,
@@ -32083,5 +32084,14 @@
     "price": 4200,
     "condition": "Б/у",
     "model_key": "samsung s23 ultra"
+  },
+  "70415256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17358704_apple-iphone-15-pro-max-256-gb-natural-titanium/",
+    "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
+    "price": 7199,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro max"
   }
 }

@@ -31693,7 +31693,8 @@
     "price": 2550,
     "condition": "Б/у",
     "model_key": "tecno camon 40 pro",
-    "sold_check_attempts": 1
+    "sold_check_attempts": 1,
+    "sold_checked": true
   },
   "35487323": {
     "logged": true,

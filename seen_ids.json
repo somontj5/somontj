@@ -31743,7 +31743,8 @@
     "title": "Apple iPhone 13, 128 gb",
     "price": 3850,
     "condition": "Б/у",
-    "model_key": "apple 13"
+    "model_key": "apple 13",
+    "sold_checked": true
   },
   "71915128": {
     "logged": true,
@@ -32213,5 +32214,15 @@
     "price": 9200,
     "condition": "Б/у",
     "model_key": "samsung s25 ultra"
+  },
+  "71716116": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17359554_871716116/",
+    "title": "Infinix NOTE 40 Pro+ 5G",
+    "price": 2300,
+    "condition": "Б/у",
+    "model_key": "infinix note 40 pro plus",
+    "verified_model": null
   }
 }

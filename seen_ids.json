@@ -32290,7 +32290,8 @@
     "price": 850,
     "condition": "Б/у",
     "model_key": "tecno spark 30 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "47312885": {
     "logged": true,
@@ -32681,6 +32682,26 @@
     "price": 1111,
     "condition": "Б/у",
     "model_key": "samsung а70",
+    "verified_model": null
+  },
+  "36306017": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17363060_samsung-a17/",
+    "title": "Samsung Galaxy a17",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "samsung a17",
+    "verified_model": null
+  },
+  "99711128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17362997_apple-iphone-11-128-gb-product-red/",
+    "title": "Apple iPhone 11, 128 gb, Product Red",
+    "price": 1499,
+    "condition": "Б/у",
+    "model_key": "apple 11",
     "verified_model": null
   }
 }

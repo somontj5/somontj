@@ -511,5 +511,14 @@
     "blocked_at": "2026-10-16T20:37:28",
     "updated_at": "2026-10-16T20:37:28",
     "active_ads_at_block": 26
+  },
+  "18143210": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/18143210/",
+    "reason": "похоже на перекупщика по фото: На заднем плане фотографий виден календарь/стенд магазина и характерная желтая витринная стена, что типично для торговых точек или перекупщиков.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17355605_telefon-realme/",
+    "blocked_at": "2026-10-17T07:49:30",
+    "updated_at": "2026-10-17T07:49:30",
+    "active_ads_at_block": 2
   }
 }

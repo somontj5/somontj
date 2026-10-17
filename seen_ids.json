@@ -31713,7 +31713,8 @@
     "title": "Xiaomi Redmi 14 Note 5G 2025",
     "price": 1700,
     "condition": "Б/у",
-    "model_key": "redmi 14 note"
+    "model_key": "redmi 14 note",
+    "sold_checked": true
   },
   "31251252": {
     "logged": true,
@@ -32153,5 +32154,34 @@
     "price": 2600,
     "condition": "Б/у",
     "model_key": "apple 12"
+  },
+  "35947513": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17359475_xiaomi-redmi-note-13/",
+    "title": "Xiaomi Redmi Note 13",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "redmi note 13"
+  },
+  "17355605": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17355605_telefon-realme/",
+    "title": "Телефон Realme",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "realme",
+    "verified_model": null
+  },
+  "35942264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17359422_apple-iphone-xr-64-gb-white/",
+    "title": "Apple iPhone Xr, 64 gb, White",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
   }
 }

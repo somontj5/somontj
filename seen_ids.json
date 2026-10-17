@@ -32686,7 +32686,8 @@
     "price": 1111,
     "condition": "Б/у",
     "model_key": "samsung а70",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "36306017": {
     "logged": true,

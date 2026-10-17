@@ -32269,7 +32269,8 @@
     "price": 2300,
     "condition": "Б/у",
     "model_key": "infinix note 40 pro plus",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "59594256": {
     "logged": true,
@@ -32669,6 +32670,16 @@
     "price": 750,
     "condition": "Б/у",
     "model_key": "samsung а15",
+    "verified_model": null
+  },
+  "36277970": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17362779_a70/",
+    "title": "Samsung Galaxy А70",
+    "price": 1111,
+    "condition": "Б/у",
+    "model_key": "samsung а70",
     "verified_model": null
   }
 }

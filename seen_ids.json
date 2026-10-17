@@ -31775,7 +31775,8 @@
     "price": 500,
     "condition": "Б/у",
     "model_key": "apple 7",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "35444364": {
     "logged": true,
@@ -31785,7 +31786,8 @@
     "price": 1599,
     "condition": "Б/у",
     "model_key": "apple se",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "35634050": {
     "logged": true,
@@ -31795,7 +31797,8 @@
     "price": 750,
     "condition": "Б/у",
     "model_key": "samsung а 50",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "55020256": {
     "logged": true,
@@ -31874,7 +31877,8 @@
     "price": 1100,
     "condition": "Б/у",
     "model_key": "redmi a5",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "35685624": {
     "logged": true,
@@ -32246,5 +32250,41 @@
     "condition": "Б/у",
     "model_key": "tecno spark 30 pro",
     "verified_model": null
+  },
+  "47312885": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17360054_telefon-samsung-a73-128-8gb-vetnam-5g/",
+    "title": "Samsung Galaxy А73 128/8Gb Vetnam 5G",
+    "price": 1470,
+    "condition": "Б/у",
+    "model_key": "samsung а73 vetnam"
+  },
+  "00418324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17360041_telefon-redmi-8-32gb-4g/",
+    "title": "Xiaomi Redmi 8 32Gb 4G",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "redmi 8"
+  },
+  "01912642": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17360019_telefon-samsung-a12-64gb-vetnam-2sim/",
+    "title": "Samsung Galaxy А12 64Gb Vetnam 2sim",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "samsung а12"
+  },
+  "07141285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17360007_telefon-redmi-14c-128gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi 14C 128gb Glabal Version 5G",
+    "price": 1260,
+    "condition": "Б/у",
+    "model_key": "redmi 14c"
   }
 }

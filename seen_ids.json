@@ -31919,5 +31919,15 @@
     "price": 3700,
     "condition": "Б/у",
     "model_key": "samsung s24 ultra"
+  },
+  "35776464": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17357764_apple-iphone-xr-64-gb-yellow/",
+    "title": "Apple iPhone Xr, 64 gb, Yellow",
+    "price": 1299,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
   }
 }

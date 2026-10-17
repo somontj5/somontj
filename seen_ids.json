@@ -31997,7 +31997,8 @@
     "title": "Samsung Galaxy А6 2018",
     "price": 500,
     "condition": "Б/у",
-    "model_key": "samsung а6 2018"
+    "model_key": "samsung а6 2018",
+    "sold_checked": true
   },
   "16725258": {
     "logged": true,

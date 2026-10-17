@@ -520,5 +520,14 @@
     "blocked_at": "2026-10-17T07:49:30",
     "updated_at": "2026-10-17T07:49:30",
     "active_ads_at_block": 2
+  },
+  "245792": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/245792/",
+    "reason": "похоже на перекупщика по фото: Фотографии сделаны на металлическом или блестящем прилавке/столе, характерном для витрин магазинов или точек по продаже телефонов.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17361978_redmi-5-plus-64gb/",
+    "blocked_at": "2026-10-17T13:42:25",
+    "updated_at": "2026-10-17T13:42:25",
+    "active_ads_at_block": 1
   }
 }

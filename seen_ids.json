@@ -32164,7 +32164,8 @@
     "title": "Samsung Galaxy S25 Ultra 256GB",
     "price": 8800,
     "condition": "Б/у",
-    "model_key": "samsung s25 ultra"
+    "model_key": "samsung s25 ultra",
+    "sold_checked": true
   },
   "36513256": {
     "logged": true,
@@ -32531,5 +32532,25 @@
     "price": 1399,
     "condition": "Б/у",
     "model_key": null
+  },
+  "18938800": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17361893_8800/",
+    "title": "Nokia 8800",
+    "price": 200,
+    "condition": "Б/у",
+    "model_key": "nokia 8800",
+    "verified_model": null
+  },
+  "61978564": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17361978_redmi-5-plus-64gb/",
+    "title": "Xiaomi Redmi 5 plus 64гб",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "redmi 5 plus",
+    "verified_model": null
   }
 }

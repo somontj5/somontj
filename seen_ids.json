@@ -31567,7 +31567,8 @@
     "title": "Xiaomi Redmi Note 8 64gb Glabal Version 5G",
     "price": 820,
     "condition": "Б/у",
-    "model_key": "redmi note 8"
+    "model_key": "redmi note 8",
+    "sold_checked": true
   },
   "97126425": {
     "logged": true,
@@ -32029,5 +32030,15 @@
     "price": 3800,
     "condition": "Б/у",
     "model_key": "apple 13 pro"
+  },
+  "35860416": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17358604_samsung-a16/",
+    "title": "Samsung Galaxy a16",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "samsung a16",
+    "verified_model": null
   }
 }

@@ -32328,7 +32328,8 @@
     "title": "Xiaomi Redmi 14C 128gb Glabal Version 5G",
     "price": 1260,
     "condition": "Б/у",
-    "model_key": "redmi 14c"
+    "model_key": "redmi 14c",
+    "sold_checked": true
   },
   "24106128": {
     "logged": true,

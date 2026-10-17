@@ -31753,7 +31753,8 @@
     "title": "Apple iPhone 15, 128 gb, Green",
     "price": 2200,
     "condition": "Б/у",
-    "model_key": "apple 15"
+    "model_key": "apple 15",
+    "sold_checked": true
   },
   "57917128": {
     "logged": true,
@@ -31763,7 +31764,8 @@
     "price": 499,
     "condition": "Б/у",
     "model_key": "apple 7",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "59497128": {
     "logged": true,
@@ -32223,6 +32225,25 @@
     "price": 2300,
     "condition": "Б/у",
     "model_key": "infinix note 40 pro plus",
+    "verified_model": null
+  },
+  "59594256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17359594_apple-iphone-air-256-gb-space-black/",
+    "title": "Apple iPhone Air, 256 gb, Space Black",
+    "price": 9999,
+    "condition": "Б/у",
+    "model_key": "apple air"
+  },
+  "59853100": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17359853_tel-100/",
+    "title": "Tecno Spark 30 Pro",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "tecno spark 30 pro",
     "verified_model": null
   }
 }

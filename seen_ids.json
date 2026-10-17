@@ -32214,7 +32214,8 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "realme",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "35942264": {
     "logged": true,
@@ -32582,5 +32583,15 @@
     "price": 1350,
     "condition": "Б/у",
     "model_key": "samsung а51"
+  },
+  "23401164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17362340_apple-iphone-11-64-gb-purple/",
+    "title": "Apple iPhone 11, 64 gb, Purple",
+    "price": 1150,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

@@ -32358,7 +32358,8 @@
     "title": "Xiaomi Redmi Note 8 64gb Glabal Version",
     "price": 799,
     "condition": "Б/у",
-    "model_key": "redmi note 8"
+    "model_key": "redmi note 8",
+    "sold_checked": true
   },
   "86102565": {
     "logged": true,

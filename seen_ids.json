@@ -31976,7 +31976,8 @@
     "title": "Samsung Galaxy S26",
     "price": 7350,
     "condition": "Б/у",
-    "model_key": "samsung s26"
+    "model_key": "samsung s26",
+    "sold_checked": true
   },
   "57617256": {
     "logged": true,
@@ -32418,6 +32419,16 @@
     "price": 500,
     "condition": "Б/у",
     "model_key": "apple 8",
+    "verified_model": null
+  },
+  "36086030": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17360860_prodaiotsia-galaxy-a30/",
+    "title": "Samsung Galaxy a30",
+    "price": 550,
+    "condition": "Б/у",
+    "model_key": "samsung a30",
     "verified_model": null
   }
 }

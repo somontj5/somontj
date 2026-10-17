@@ -31494,7 +31494,8 @@
     "title": "Apple iPhone 15 Pro Max, 256 gb, Black Titanium",
     "price": 7290,
     "condition": "Б/у",
-    "model_key": "apple 15 pro max"
+    "model_key": "apple 15 pro max",
+    "sold_checked": true
   },
   "10101285": {
     "logged": true,
@@ -31909,5 +31910,14 @@
     "price": 3999,
     "condition": "Б/у",
     "model_key": "apple 13 pro max"
+  },
+  "35774124": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17357741_samsung-galaxy-s24-ultra/",
+    "title": "Samsung Galaxy S24 Ultra",
+    "price": 3700,
+    "condition": "Б/у",
+    "model_key": "samsung s24 ultra"
   }
 }

@@ -32430,7 +32430,8 @@
     "title": "Samsung Galaxy 23 Ultra 512Gb Carea 5G",
     "price": 4999,
     "condition": "Б/у",
-    "model_key": "samsung 23 ultra"
+    "model_key": "samsung 23 ultra",
+    "sold_checked": true
   },
   "25938422": {
     "logged": true,

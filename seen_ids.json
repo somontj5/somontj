@@ -32028,7 +32028,8 @@
     "title": "Xiaomi Redmi Note 13 6/128Gb",
     "price": 1399,
     "condition": "Б/у",
-    "model_key": "redmi note 13"
+    "model_key": "redmi note 13",
+    "sold_checked": true
   },
   "08034614": {
     "logged": true,
@@ -32037,7 +32038,8 @@
     "title": "Xiaomi Redmi Note 14 Pro",
     "price": 2299,
     "condition": "Б/у",
-    "model_key": "redmi note 14 pro"
+    "model_key": "redmi note 14 pro",
+    "sold_checked": true
   },
   "36511256": {
     "logged": true,

@@ -31979,5 +31979,23 @@
     "price": 14000,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "21136128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16813021_redmi-note-13-6-128/",
+    "title": "Xiaomi Redmi Note 13 6/128Gb",
+    "price": 1399,
+    "condition": "Б/у",
+    "model_key": "redmi note 13"
+  },
+  "08034614": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16080346_redmi-note-14-pro/",
+    "title": "Xiaomi Redmi Note 14 Pro",
+    "price": 2299,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro"
   }
 }

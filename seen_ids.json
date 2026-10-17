@@ -32008,7 +32008,8 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "infinix smart 10",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "94817256": {
     "logged": true,
@@ -32017,7 +32018,8 @@
     "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
     "price": 14000,
     "condition": "Б/у",
-    "model_key": "apple 17 pro max"
+    "model_key": "apple 17 pro max",
+    "sold_checked": true
   },
   "21136128": {
     "logged": true,
@@ -32441,6 +32443,26 @@
     "price": 1999,
     "condition": "Б/у",
     "model_key": "apple 11 pro max",
+    "verified_model": null
+  },
+  "14311128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17361143_apple-iphone-11-128-gb-white/",
+    "title": "Apple iPhone 11, 128 gb, White",
+    "price": 1850,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "14713256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17361147_apple-iphone-13-pro-256-gb-gold/",
+    "title": "Apple iPhone 13 Pro, 256 gb, Gold",
+    "price": 2200,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro",
     "verified_model": null
   }
 }

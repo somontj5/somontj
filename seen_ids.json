@@ -31893,7 +31893,8 @@
     "title": "Samsung Galaxy S24 Ultra",
     "price": 5800,
     "condition": "Б/у",
-    "model_key": "samsung s24 ultra"
+    "model_key": "samsung s24 ultra",
+    "sold_checked": true
   },
   "90316256": {
     "logged": true,
@@ -32037,7 +32038,8 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "apple 11 pro",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "38323128": {
     "logged": true,
@@ -32337,5 +32339,24 @@
     "price": 2250,
     "condition": "Б/у",
     "model_key": "samsung а54"
+  },
+  "73603235": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17360323_honor-x5c-plus/",
+    "title": "Honor X5c plus",
+    "price": 1350,
+    "condition": "Б/у",
+    "model_key": "honor x5c plus"
+  },
+  "36034721": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17360347_melzu-note-21/",
+    "title": "Melzu note 21",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
   }
 }

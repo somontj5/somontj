@@ -32114,7 +32114,8 @@
     "title": "Samsung Galaxy S23 ultra",
     "price": 4200,
     "condition": "Б/у",
-    "model_key": "samsung s23 ultra"
+    "model_key": "samsung s23 ultra",
+    "sold_checked": true
   },
   "70415256": {
     "logged": true,
@@ -32430,6 +32431,16 @@
     "price": 550,
     "condition": "Б/у",
     "model_key": "samsung a30",
+    "verified_model": null
+  },
+  "11091164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17361109_apple-iphone-11-pro-max-64-gb-silver/",
+    "title": "Apple iPhone 11 Pro Max, 64 gb, Silver",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro max",
     "verified_model": null
   }
 }

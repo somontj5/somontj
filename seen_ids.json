@@ -31913,7 +31913,8 @@
     "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
     "price": 4199,
     "condition": "Б/у",
-    "model_key": "apple 13 pro"
+    "model_key": "apple 13 pro",
+    "sold_checked": true
   },
   "82538117": {
     "logged": true,
@@ -31923,7 +31924,8 @@
     "price": 1900,
     "condition": "Б/у",
     "model_key": "samsung a17",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "35751121": {
     "logged": true,
@@ -31933,7 +31935,8 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "samsung s21",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "58313256": {
     "logged": true,
@@ -31942,7 +31945,8 @@
     "title": "Apple iPhone 13 Pro Max, 256 gb, Graphite",
     "price": 3999,
     "condition": "Б/у",
-    "model_key": "apple 13 pro max"
+    "model_key": "apple 13 pro max",
+    "sold_checked": true
   },
   "35774124": {
     "logged": true,
@@ -32368,5 +32372,41 @@
     "condition": "Б/у",
     "model_key": "apple xs max",
     "verified_model": null
+  },
+  "06912644": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17360069_telefon-redmi-12c-64gb-4g/",
+    "title": "Xiaomi Redmi 12C 64gb 4G",
+    "price": 799,
+    "condition": "Б/у",
+    "model_key": "redmi 12c"
+  },
+  "61214256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17360612_apple-iphone-14-pro-256-gb-space-black/",
+    "title": "Apple iPhone 14 Pro, 256 gb, Space Black",
+    "price": 5400,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
+  },
+  "62235125": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17360562_telefon-samsung-23-ultro-512gb-carea-5g/",
+    "title": "Samsung Galaxy 23 Ultra 512Gb Carea 5G",
+    "price": 4999,
+    "condition": "Б/у",
+    "model_key": "samsung 23 ultra"
+  },
+  "25938422": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16259384_s22-ultra/",
+    "title": "Samsung Galaxy S22 ultra",
+    "price": 4000,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
   }
 }

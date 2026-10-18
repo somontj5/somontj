@@ -33123,5 +33123,14 @@
     "price": 1490,
     "condition": "Б/у",
     "model_key": "samsung not 9"
+  },
+  "02914256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17368029_apple-iphone-14-pro-max-256-gb/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb",
+    "price": 4299,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
   }
 }

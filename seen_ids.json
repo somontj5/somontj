@@ -33411,5 +33411,14 @@
     "price": 10000,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "37057717": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17370577_oppo-a17k/",
+    "title": "Oppo A17K",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "oppo a17k"
   }
 }

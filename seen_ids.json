@@ -33365,5 +33365,24 @@
     "condition": "Б/у",
     "model_key": "poco c 71 памят 128 ягон",
     "verified_model": null
+  },
+  "45517128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17370455_samsung-galaxy-a17-128gb/",
+    "title": "Samsung Galaxy A17 128GB",
+    "price": 1880,
+    "condition": "Б/у",
+    "model_key": "samsung a17",
+    "verified_model": null
+  },
+  "46612256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17370466_apple-iphone-12-pro-256-gb-graphite/",
+    "title": "Apple iPhone 12 pro, 256 gb, Graphite",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro"
   }
 }

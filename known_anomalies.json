@@ -118,5 +118,10 @@
     "first_seen": "2026-10-18",
     "ratio": 3.01,
     "kind": "wide"
+  },
+  "apple 12 pro|256": {
+    "first_seen": "2026-10-18",
+    "ratio": 3.5,
+    "kind": "wide"
   }
 }

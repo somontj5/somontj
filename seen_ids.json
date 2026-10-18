@@ -33151,5 +33151,14 @@
     "condition": "Б/у",
     "model_key": "redmi note 13 pro plus",
     "verified_model": null
+  },
+  "39706049": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/13970604_vivo-z-9-turbo-plus/",
+    "title": "Vivo z 9 turbo plus",
+    "price": 5000,
+    "condition": "Б/у",
+    "model_key": "vivo z 9 turbo plus"
   }
 }

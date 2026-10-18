@@ -33219,5 +33219,23 @@
     "price": 2330,
     "condition": "Б/у",
     "model_key": "redmi note15"
+  },
+  "36884971": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17368849_xiaomi-poco-c71/",
+    "title": "Xiaomi Poco C71",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "poco c71"
+  },
+  "36883014": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17368830_telefon-redmi-not-14-pro/",
+    "title": "Xiaomi Redmi Note 14 pro",
+    "price": 1790,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro"
   }
 }

@@ -33201,5 +33201,23 @@
     "condition": "Б/у",
     "model_key": "samsung s23",
     "verified_model": null
+  },
+  "73687458": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17368745_telefon-redmi-not-8/",
+    "title": "Xiaomi Redmi Note 8",
+    "price": 899,
+    "condition": "Б/у",
+    "model_key": "redmi note 8"
+  },
+  "71815256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17368718_telefon-redmi-not-15-256gb/",
+    "title": "Xiaomi Redmi Note15 256гб",
+    "price": 2330,
+    "condition": "Б/у",
+    "model_key": "redmi note15"
   }
 }

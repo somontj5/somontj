@@ -33384,5 +33384,14 @@
     "price": 999,
     "condition": "Б/у",
     "model_key": "apple 12 pro"
+  },
+  "73705036": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17370503_honor-x6c/",
+    "title": "Honor X6c",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "honor x6c"
   }
 }

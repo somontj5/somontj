@@ -32954,5 +32954,15 @@
     "price": 1360,
     "condition": "Б/у",
     "model_key": "samsung а51"
+  },
+  "12713256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17366127_apple-iphone-13-pro-256-gb-gold/",
+    "title": "Apple iPhone 13 Pro, 256 gb, Gold",
+    "price": 1699,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro",
+    "verified_model": null
   }
 }

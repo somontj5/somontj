@@ -32340,7 +32340,8 @@
     "title": "Xiaomi Redmi 10 pro 6/128Gb",
     "price": 1450,
     "condition": "Б/у",
-    "model_key": "redmi 10 pro"
+    "model_key": "redmi 10 pro",
+    "sold_checked": true
   },
   "11514324": {
     "logged": true,

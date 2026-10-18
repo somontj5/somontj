@@ -32380,7 +32380,8 @@
     "title": "Samsung А54 256гб Dual sim 5G",
     "price": 2250,
     "condition": "Б/у",
-    "model_key": "samsung а54"
+    "model_key": "samsung а54",
+    "sold_checked": true
   },
   "73603235": {
     "logged": true,
@@ -32784,5 +32785,24 @@
     "price": 9500,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "64757664": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17364757_apple-iphone-6-64-gb/",
+    "title": "Apple iPhone 6, 64 gb",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "apple 6",
+    "verified_model": null
+  },
+  "83007914": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16830079_xiaomi-14-global-version/",
+    "title": "Xiaomi 14 12/512 Global Version",
+    "price": 5800,
+    "condition": "Б/у",
+    "model_key": "xiaomi 14 12 512"
   }
 }

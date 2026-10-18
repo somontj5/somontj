@@ -1,1 +1,85 @@
-monitor.yml
+name: Somon Monitor
+
+on:
+  repository_dispatch:
+    types: [run-scraper]
+  # Расписание schedule УБРАНО: запуск делает внешний сервис (cron.org) каждую минуту
+  # через repository_dispatch (types: run-scraper). Прогон должен укладываться в минуту —
+  # иначе запуски выстраиваются в очередь (concurrency ниже) и уведомление приходит поздно.
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: somon-monitor
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install -r requirements.txt
+
+      - name: Run scraper
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          TAVILY_API_KEY_2: ${{ secrets.TAVILY_API_KEY_2 }}
+          TAVILY_API_KEY_3: ${{ secrets.TAVILY_API_KEY_3 }}
+          GOOGLE_SEARCH_API_KEY: ${{ secrets.GOOGLE_SEARCH_API_KEY }}
+          GOOGLE_SEARCH_API_KEY_2: ${{ secrets.GOOGLE_SEARCH_API_KEY_2 }}
+          GOOGLE_SEARCH_CX: ${{ secrets.GOOGLE_SEARCH_CX }}
+          # Запуск раз в минуту от cron.org -> 60 прогонов в час.
+          RUNS_PER_HOUR: "60"
+          # Бюджет времени прогона: не даёт прогону растянуться и заблокировать очередь.
+          RUN_TIME_BUDGET_SECONDS: "240"
+          # Пауза между лотами внутри прогона.
+          INTER_ITEM_DELAY: "0.5"
+        run: python scraper.py
+
+      - name: Save results back to repo
+        if: always()
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+
+          for f in seen_ids.json price_history.jsonl searches.json telegram_offset.json rejected_lots.jsonl search_mode.json subscribers.json gemini_daily_usage.json search_provider_usage.json exchange_rate.json health_status.json min_profit.json min_confidence.json max_price.json known_anomalies.json seller_blacklist.json remigrate_live_state.json imei_tac.json; do
+            [ -f "$f" ] && git add "$f"
+          done
+          # Копии повреждённого чёрного списка, если бот их отложил для разбора.
+          for f in seller_blacklist.json.corrupt-*.json; do
+            [ -f "$f" ] && git add "$f"
+          done
+
+          if git diff --cached --quiet; then
+            echo "Состояние не изменилось — коммит не нужен."
+          else
+            git commit -m "update state"
+          fi
+
+          # Пуш с повторами. Одна неудачная попытка (rebase-конфликт, отказ push)
+          # молча выбрасывала ВСЁ состояние прогона, включая только что добавленные
+          # записи чёрного списка: по журналу видно десятки банов за 26-28 сентября,
+          # которых в seller_blacklist.json нет. Теперь несколько попыток и явная
+          # ошибка, если сохранить не удалось.
+          for i in 1 2 3 4 5; do
+            if git pull --rebase --autostash && git push; then
+              echo "Состояние сохранено (попытка $i)."
+              exit 0
+            fi
+            echo "::warning::Попытка $i сохранить состояние не удалась — повторяю."
+            git rebase --abort || true
+            sleep $((i * 10))
+          done
+          echo "::error::Не удалось сохранить состояние после 5 попыток — изменения этого прогона могут быть потеряны."
+          exit 1

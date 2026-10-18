@@ -32390,7 +32390,8 @@
     "title": "Honor X5c plus",
     "price": 1350,
     "condition": "Б/у",
-    "model_key": "honor x5c plus"
+    "model_key": "honor x5c plus",
+    "sold_checked": true
   },
   "36034721": {
     "logged": true,
@@ -32814,5 +32815,15 @@
     "price": 6500,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "36508220": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17365082_samsung-galaxy-note-20-ultra/",
+    "title": "Samsung galaxy note 20 ultra",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "samsung note 20 ultra",
+    "verified_model": null
   }
 }

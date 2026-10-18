@@ -33393,5 +33393,14 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "honor x6c"
+  },
+  "73706106": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17370610_redmi-note-6pro/",
+    "title": "Xiaomi Redmi Note 6Pro",
+    "price": 666,
+    "condition": "Б/у",
+    "model_key": "redmi note 6pro"
   }
 }

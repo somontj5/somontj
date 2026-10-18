@@ -33314,5 +33314,36 @@
     "price": 1900,
     "condition": "Б/у",
     "model_key": "samsung s21"
+  },
+  "73511128": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17369735_apple-iphone-11-128-gb-black/",
+    "title": "Apple iPhone 11, 128 gb, Black",
+    "price": 899,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "69736225": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17369736_samsung-a22s-5g/",
+    "title": "Samsung gelaxy A22s 5G",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "samsung gelaxy a22s",
+    "verified_model": null
+  },
+  "27612128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17094276_apple-iphone-12-pro-128-gb/",
+    "title": "Apple iPhone 12 pro, 128 gb",
+    "price": 3000,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro",
+    "verified_model": null
   }
 }

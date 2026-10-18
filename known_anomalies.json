@@ -13,7 +13,8 @@
   },
   "apple 17 pro max|512": {
     "first_seen": "2026-09-24",
-    "ratio": 10.01
+    "ratio": 9.73,
+    "kind": "merged"
   },
   "apple 11 pro|256": {
     "first_seen": "2026-09-24",
@@ -33,7 +34,8 @@
   },
   "apple xr|128": {
     "first_seen": "2026-09-24",
-    "ratio": 2.9
+    "ratio": 5.5,
+    "kind": "outlier"
   },
   "samsung s20|128": {
     "first_seen": "2026-09-24",
@@ -41,11 +43,13 @@
   },
   "apple xs|256": {
     "first_seen": "2026-09-24",
-    "ratio": 2.78
+    "ratio": 3.15,
+    "kind": "wide"
   },
   "apple 8 plus|64": {
     "first_seen": "2026-09-24",
-    "ratio": 2.43
+    "ratio": 3.01,
+    "kind": "wide"
   },
   "redmi 9a|32": {
     "first_seen": "2026-09-24",
@@ -65,7 +69,8 @@
   },
   "apple xr|64": {
     "first_seen": "2026-09-24",
-    "ratio": 2.22
+    "ratio": 3.83,
+    "kind": "outlier"
   },
   "samsung a14|128": {
     "first_seen": "2026-09-24",
@@ -85,11 +90,13 @@
   },
   "samsung note 20 ultra|256": {
     "first_seen": "2026-09-24",
-    "ratio": 2.12
+    "ratio": 4.12,
+    "kind": "outlier"
   },
   "apple 7|128": {
     "first_seen": "2026-09-24",
-    "ratio": 2.0
+    "ratio": 2.17,
+    "kind": "merged"
   },
   "apple 12|128": {
     "first_seen": "2026-09-24",
@@ -105,11 +112,13 @@
   },
   "redmi note 12|128": {
     "first_seen": "2026-09-26",
-    "ratio": 3.57
+    "ratio": 3.57,
+    "kind": "wide"
   },
   "apple 12|64": {
     "first_seen": "2026-09-30",
-    "ratio": 4.0
+    "ratio": 4.0,
+    "kind": "outlier"
   },
   "samsung|128": {
     "first_seen": "2026-10-01",
@@ -117,19 +126,23 @@
   },
   "samsung s10|128": {
     "first_seen": "2026-10-03",
-    "ratio": 3.73
+    "ratio": 3.73,
+    "kind": "wide"
   },
   "samsung s21 plus|128": {
     "first_seen": "2026-10-06",
-    "ratio": 5.0
+    "ratio": 6.25,
+    "kind": "outlier"
   },
   "apple 14 pro max|128": {
     "first_seen": "2026-10-09",
-    "ratio": 3.61
+    "ratio": 3.89,
+    "kind": "outlier"
   },
   "infinix smart 9|128": {
     "first_seen": "2026-10-12",
-    "ratio": 3.3
+    "ratio": 3.3,
+    "kind": "outlier"
   },
   "samsung|256": {
     "first_seen": "2026-10-13",
@@ -138,5 +151,60 @@
   "samsung s20 ultra|256": {
     "first_seen": "2026-10-15",
     "ratio": 3.04
+  },
+  "apple 14 pro|256": {
+    "first_seen": "2026-10-18",
+    "ratio": 60.0,
+    "kind": "outlier"
+  },
+  "apple 16 pro max|256": {
+    "first_seen": "2026-10-18",
+    "ratio": 13.64,
+    "kind": "outlier"
+  },
+  "apple 13 pro max|128": {
+    "first_seen": "2026-10-18",
+    "ratio": 12.53,
+    "kind": "outlier"
+  },
+  "apple 17 pro max|256": {
+    "first_seen": "2026-10-18",
+    "ratio": 9.44,
+    "kind": "outlier"
+  },
+  "apple 11|128": {
+    "first_seen": "2026-10-18",
+    "ratio": 6.7,
+    "kind": "outlier"
+  },
+  "apple 13 pro max|256": {
+    "first_seen": "2026-10-18",
+    "ratio": 3.5,
+    "kind": "outlier"
+  },
+  "apple 15 pro max|256": {
+    "first_seen": "2026-10-18",
+    "ratio": 3.19,
+    "kind": "outlier"
+  },
+  "apple 13|128": {
+    "first_seen": "2026-10-18",
+    "ratio": 3.0,
+    "kind": "outlier"
+  },
+  "samsung s21|256": {
+    "first_seen": "2026-10-18",
+    "ratio": 3.71,
+    "kind": "wide"
+  },
+  "apple 11|64": {
+    "first_seen": "2026-10-18",
+    "ratio": 3.32,
+    "kind": "wide"
+  },
+  "apple 13 pro|256": {
+    "first_seen": "2026-10-18",
+    "ratio": 3.12,
+    "kind": "wide"
   }
 }

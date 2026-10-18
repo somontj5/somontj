@@ -33013,5 +33013,14 @@
     "condition": "Б/у",
     "model_key": "samsung a55",
     "verified_model": null
+  },
+  "65513256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17366655_apple-iphone-13-pro-256-gb-gold/",
+    "title": "Apple iPhone 13 Pro, 256 gb, Gold",
+    "price": 3499,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

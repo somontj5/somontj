@@ -1,0 +1,74 @@
+name: Somon Worker
+
+# Воркеры ТОЛЬКО находят объявления и складывают их в свои ветки. Разбор (Gemini),
+# уведомления в Telegram и запись в main делает главный процесс monitor.yml.
+#
+# Почему долгий процесс, а не "прогон раз в 10 секунд": раннер GitHub поднимается
+# 20-60 секунд, поэтому частые короткие прогоны физически невозможны. Внутри одного
+# долгого процесса паузы бесплатны, а предел раннера — 6 часов на задание.
+#
+# Старт задаёт cron-job.org через GitHub API (workflow_dispatch) каждые 6 часов.
+# Все воркеры стартуют в одну минуту, но не мешают друг другу: worker.py выравнивает
+# каждого по своему слоту внутри WORKER_INTERVAL, поэтому фиксированный sleep не нужен
+# (стартовый разброс раннеров всё равно его бы сломал).
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Страховка, если cron-job.org промолчит: GitHub может задержать cron на 5-20 минут.
+    - cron: "7 */6 * * *"
+
+permissions:
+  contents: write   # пуш находок в свою ветку worker-N
+  actions: write    # вызов workflow_dispatch главного процесса
+
+jobs:
+  worker:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350      # предел задания 6 ч, берём с запасом на финальный push
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        worker: [1, 2, 3]
+    # У каждого воркера своя группа: перезапуск одного не трогает остальных.
+    # cancel-in-progress: true — свежий запуск заменяет зависший, данные уже в ветке.
+    concurrency:
+      group: worker-${{ matrix.worker }}
+      cancel-in-progress: true
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install -r requirements.txt
+
+      - name: Забрать свою ветку
+        env:
+          WORKER_BRANCH: worker-${{ matrix.worker }}
+        run: |
+          git config user.name "somon-worker"
+          git config user.email "worker@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin "$WORKER_BRANCH" >/dev/null 2>&1; then
+            git fetch origin "$WORKER_BRANCH"
+            git checkout -B "$WORKER_BRANCH" "origin/$WORKER_BRANCH"
+          else
+            echo "Ветки $WORKER_BRANCH ещё нет — создаю от текущего состояния."
+            git checkout -B "$WORKER_BRANCH"
+          fi
+
+      - name: Цикл воркера
+        env:
+          WORKER_INDEX: ${{ matrix.worker }}
+          WORKER_COUNT: "3"
+          WORKER_INTERVAL: ${{ vars.WORKER_INTERVAL || '15' }}
+          WORKER_BRANCH: worker-${{ matrix.worker }}
+          WORKER_MAX_RUNTIME: "20400"
+          GH_REPO: ${{ github.repository }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          SOMON_URL: ${{ vars.SOMON_URL }}
+        run: python worker.py

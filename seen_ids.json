@@ -32993,5 +32993,17 @@
     "condition": "Б/у",
     "model_key": "apple 12 pro",
     "verified_model": null
+  },
+  "43317256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17366433_apple-iphone-17-pro-max-256-gb-deep-blue/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Deep Blue",
+    "price": 15900,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
+  },
+  "36641055": {
+    "logged": true
   }
 }

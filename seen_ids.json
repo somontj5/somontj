@@ -32422,7 +32422,8 @@
     "title": "Xiaomi Redmi 12C 64gb 4G",
     "price": 799,
     "condition": "Б/у",
-    "model_key": "redmi 12c"
+    "model_key": "redmi 12c",
+    "sold_checked": true
   },
   "61214256": {
     "logged": true,
@@ -32431,7 +32432,8 @@
     "title": "Apple iPhone 14 Pro, 256 gb, Space Black",
     "price": 5400,
     "condition": "Б/у",
-    "model_key": "apple 14 pro"
+    "model_key": "apple 14 pro",
+    "sold_checked": true
   },
   "62235125": {
     "logged": true,
@@ -32461,7 +32463,8 @@
     "price": 500,
     "condition": "Б/у",
     "model_key": "apple 8",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "36086030": {
     "logged": true,
@@ -32471,7 +32474,8 @@
     "price": 550,
     "condition": "Б/у",
     "model_key": "samsung a30",
-    "verified_model": null
+    "verified_model": null,
+    "sold_checked": true
   },
   "11091164": {
     "logged": true,
@@ -32845,5 +32849,32 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "samsung a51"
+  },
+  "78215256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17365678_telefon-samsung-s21-5g-256gb-carea/",
+    "title": "Samsung Galaxy S21 5G 256gb Carea",
+    "price": 1950,
+    "condition": "Б/у",
+    "model_key": "samsung s21"
+  },
+  "72013324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17365720_telefon-samsung-a13-32gb-vetnam-4g/",
+    "title": "Samsung Galaxy А13 32Gb Vetnam 4G",
+    "price": 944,
+    "condition": "Б/у",
+    "model_key": "samsung а13"
+  },
+  "64912644": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17365649_telefon-redmi-12c-64gb-4g/",
+    "title": "Xiaomi Redmi 12C 64gb 4G",
+    "price": 799,
+    "condition": "Б/у",
+    "model_key": "redmi 12c"
   }
 }

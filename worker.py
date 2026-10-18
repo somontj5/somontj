@@ -137,6 +137,24 @@ def run(cmd):
     return r.returncode
 
 
+def branch_on_remote():
+    """Есть ли ветка воркера на сервере.
+
+    Проверка обязательна: на ПЕРВОМ запуске воркера ветки ещё нет — рабочий процесс
+    создаёт её только локально (git checkout -B). Прежний код сразу делал
+    git pull origin worker-N, получал "fatal: couldn't find remote ref" и, из-за
+    короткого замыкания в условии через and, до git push дело не доходило вообще.
+    """
+    r = subprocess.run(f"git ls-remote --exit-code --heads origin {WORKER_BRANCH}",
+                       shell=True, capture_output=True, text=True)
+    return r.returncode == 0
+
+
+def rebase_running():
+    """Идёт ли сейчас rebase (иначе git rebase --abort сыплет ошибкой в лог)."""
+    return os.path.exists(".git/rebase-merge") or os.path.exists(".git/rebase-apply")
+
+
 def commit_and_push():
     """Записать находки в свою ветку. Конфликтов нет: ветка только у этого воркера."""
     run(f"git add {FINDINGS_FILE} {SEEN_FILE}")
@@ -144,13 +162,23 @@ def commit_and_push():
         return False
     run(f'git commit -q -m "worker {WORKER_INDEX}: findings"')
     for i in (1, 2, 3):
-        if run(f"git pull --rebase --autostash origin {WORKER_BRANCH}") == 0 and \
-           run(f"git push origin HEAD:{WORKER_BRANCH}") == 0:
+        ok = False
+        if branch_on_remote():
+            # Ветка уже есть: подтягиваем её состояние и пушим свои находки.
+            if run(f"git pull --rebase --autostash origin {WORKER_BRANCH}") == 0:
+                ok = run(f"git push origin HEAD:{WORKER_BRANCH}") == 0
+        else:
+            # Ветки на сервере нет — это её первое появление. pull здесь был бы
+            # ошибкой (fatal: couldn't find remote ref), поэтому создаём её пушем.
+            print(f"ℹ️ ветки {WORKER_BRANCH} на сервере нет — создаю её этим пушем")
+            ok = run(f"git push -u origin HEAD:{WORKER_BRANCH}") == 0
+        if ok:
             print(f"✅ находки в ветке {WORKER_BRANCH} (попытка {i})")
             return True
-        run("git rebase --abort")
+        if rebase_running():
+            run("git rebase --abort")
         time.sleep(5 * i)
-    print("❌ не удалось запушить находки")
+    print("❌ не удалось запушить находки — они останутся только в этом запуске")
     return False
 
 

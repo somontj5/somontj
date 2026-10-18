@@ -15,13 +15,28 @@ SEARCH_URL = os.environ.get(
 )
 MAX_NEW_ITEMS_PER_RUN = int(os.environ.get("MAX_NEW_ITEMS_PER_RUN", "5"))
 MAX_SOLD_CHECKS_PER_RUN = int(os.environ.get("MAX_SOLD_CHECKS_PER_RUN", "5"))
-SIMILAR_EXAMPLES_LIMIT = 8
+# Сколько похожих лотов из базы уходит в Gemini. Владелец просил присылать всю
+# найденную информацию, а не скупую выборку — лимиты подняты, от переполнения
+# защищает PROMPT_MAX_CHARS.
+SIMILAR_EXAMPLES_LIMIT = int(os.environ.get("SIMILAR_EXAMPLES_LIMIT", "40"))
+SIMILAR_MARKET_POINTS_LIMIT = int(os.environ.get("SIMILAR_MARKET_POINTS_LIMIT", "60"))
+# Полный текст объявления (описание продавца) — раньше обрезался до 800 символов.
+DESCRIPTION_MAX_CHARS = int(os.environ.get("DESCRIPTION_MAX_CHARS", "4000"))
+# Потолок размера промпта в символах: если база по модели огромная, лишние примеры
+# отбрасываются с явной пометкой, а не молча.
+PROMPT_MAX_CHARS = int(os.environ.get("PROMPT_MAX_CHARS", "90000"))
+# Сколько прогонов в час делает workflow (cron "*/5" = 12) — нужно, чтобы
+# равномерно расходовать суточную квоту Gemini.
+RUNS_PER_HOUR = int(os.environ.get("RUNS_PER_HOUR", "60"))
 FUZZY_MATCH_THRESHOLD = float(os.environ.get("FUZZY_MATCH_THRESHOLD", "0.78"))
 PRICE_COMMAND_LIMIT = int(os.environ.get("PRICE_COMMAND_LIMIT", "15"))
 STALE_EXAMPLE_DAYS = int(os.environ.get("STALE_EXAMPLE_DAYS", "45"))
 ANOMALY_RATIO_THRESHOLD = float(os.environ.get("ANOMALY_RATIO_THRESHOLD", "3.0"))
 ANOMALY_MIN_COUNT = int(os.environ.get("ANOMALY_MIN_COUNT", "3"))
 ANOMALY_MIN_PRICE = int(os.environ.get("ANOMALY_MIN_PRICE", "100"))
+# Во сколько раз должна отличаться цена, чтобы считать, что это уже ДРУГОЕ
+# устройство, а не разброс по состоянию/комплектации внутри одной модели.
+ANOMALY_CLUSTER_GAP = float(os.environ.get("ANOMALY_CLUSTER_GAP", "1.6"))
 GEMINI_DAILY_LIMIT_PER_COMBO = int(os.environ.get("GEMINI_DAILY_LIMIT_PER_COMBO", "450"))
 GEMINI_RETRIES_PER_COMBO = int(os.environ.get("GEMINI_RETRIES_PER_COMBO", "2"))   # попыток на одно сочетание ключ+модель при 5xx/сети
 GEMINI_RETRY_DELAY = int(os.environ.get("GEMINI_RETRY_DELAY", "3"))               # пауза между попытками, сек (×номер попытки)
@@ -34,6 +49,19 @@ ALERT_FAILURE_THRESHOLD = int(os.environ.get("ALERT_FAILURE_THRESHOLD", "3"))
 DEFAULT_MIN_PROFIT = int(os.environ.get("DEFAULT_MIN_PROFIT", "0"))
 DEFAULT_MIN_CONFIDENCE = float(os.environ.get("DEFAULT_MIN_CONFIDENCE", "0"))
 DEFAULT_MAX_PRICE = int(os.environ.get("DEFAULT_MAX_PRICE", "0"))
+# Бюджет времени прогона в секундах: разбор новых лотов прекращается, если время
+# вышло (текущий лот доводится до конца). Нужен потому, что запуски идут каждую
+# минуту, а concurrency в workflow пропускает их по одному: если прогон идёт 11
+# минут, следующие запуски ждут в очереди, и уведомление приходит по объявлению,
+# которому уже 11 минут. Короткий прогон = уведомление почти сразу.
+RUN_TIME_BUDGET_SECONDS = float(os.environ.get("RUN_TIME_BUDGET_SECONDS", "240"))
+RUN_START_TS = time.time()
+
+def run_budget_exhausted():
+    """True, если бюджет времени прогона исчерпан."""
+    return (time.time() - RUN_START_TS) > RUN_TIME_BUDGET_SECONDS
+# Пауза между лотами внутри одного прогона (была жёстко 2 сек).
+INTER_ITEM_DELAY = float(os.environ.get("INTER_ITEM_DELAY", "0.5"))
 
 # Порог "активных объявлений" продавца, начиная с которого он однозначно похож на
 # магазин/перекупщика (жёсткая эвристика — блокируем сразу, без похода к Gemini).
@@ -57,6 +85,7 @@ PHONE_WORD_RE = re.compile(
     re.I,
 )
 
+CITY_WHITELIST = []  # заполняется настоящим списком городов со страницы поиска
 SEEN_FILE = "seen_ids.json"
 PRICE_HISTORY_FILE = "price_history.jsonl"
 REJECTED_FILE = "rejected_lots.jsonl"
@@ -164,6 +193,109 @@ IMEI_REGISTERED_RE = re.compile(r"IMEI[^.]{0,60}(?<!не\s)внес", re.I)
 PUBLISHED_RE = re.compile(r"(Сегодня|Вчера|\d+\s*(?:минут\w*|час\w*|день|дн\w*|недел\w*)\s*назад)", re.I)
 CITY_RE = re.compile(r"Город\s*:?\s*([А-ЯЁ][А-ЯЁа-яё\-]{1,30})")
 
+# --- Города -----------------------------------------------------------------
+# «Город: —» в уведомлениях был потому, что на Somon.tj города почти нигде нет
+# как подписи «Город:». На странице объявления он написан строкой
+# "№17361978 in Худжанд", а в списке — в конце карточки, после времени
+# ("14 минут назад  Худжанд"). Ни один из вариантов старый код не разбирал.
+DEFAULT_CITIES = [
+    "Душанбе", "Худжанд", "Бободжон Гафуров", "Бустон", "Гулистон", "Зафарабад",
+    "Истаравшан", "Канибадам", "Спитамен", "Кайраккум", "Чкаловск", "Вахдат",
+    "Турсунзаде", "Куляб", "Бохтар", "Курган-Тюбе", "Хорог", "Пенджикент", "Нурек",
+    "Рашт", "Дангара", "Фархор", "Восе", "Хамадони", "Джиргаталь", "Шахритус",
+    "Кубодиён", "Айни", "Джалолиддини Балхи", "Левакант", "Исфара", "Ашт",
+]
+# Время публикации на карточке: "14 минут назад", "2 часа назад", "Вчера",
+# "3 дня назад", "2 недели назад", "Сегодня".
+CARD_TIME_RE = re.compile(
+    r"\b(Сегодня|Вчера)\b|\b(\d+)\s*(минут\w*|мин\.?|час\w*|ч\.)\s*назад\b|"
+    r"\b(\d+)\s*(день|дня|дней|недел\w*|месяц\w*)\s*назад\b",
+    re.I,
+)
+
+
+def parse_city_whitelist(page_text):
+    """Список городов прямо со страницы поиска: Somon в заголовке пишет
+    «Купить мобильный телефон Худжанд, Бободжон Гафуров, Бустон (Чкаловск), …» —
+    это ровно те города, по которым идёт поиск в текущем URL (location=…)."""
+    cities = set(DEFAULT_CITIES)
+    m = re.search(r"Купить[^\n]{0,40}телефон\s+(.{0,400})", page_text or "", re.I)
+    if m:
+        for part in m.group(1).split(","):
+            name = re.sub(r"\s+", " ", part.split("(")[0].strip(" .;|\t"))
+            if 3 <= len(name) <= 40 and not re.search(r"\d", name):
+                cities.add(name)
+    return sorted(cities, key=len, reverse=True)
+
+
+def find_city(text, whitelist=None):
+    """Первое упоминание города из белого списка в тексте."""
+    if not text:
+        return None
+    for city in (whitelist or DEFAULT_CITIES):
+        pattern = (r"(?<![А-Яа-яЁё0-9])" + re.escape(city) +
+                   r"(?:\s*\([^)]{0,25}\))?(?![А-Яа-яЁё])")
+        if re.search(pattern, text, re.I):
+            return city
+    return None
+
+
+def split_card_meta(raw_text, whitelist=None):
+    """Разбирает хвост карточки объявления из списка.
+
+    Карточка выглядит как «Apple iPhone 13, 128 gb, Midnight 2 часа назад
+    Гулистон (Кайраккум)» — время и город дописаны в конец заголовка. Без этого
+    город не попадал в item["city"] вовсе (в Telegram печаталось «—»), а время и
+    город засоряли заголовок, уходящий в Gemini и в model_key.
+    Возвращает (заголовок без хвоста, время публикации, город).
+    """
+    text = re.sub(r"\s+", " ", raw_text or "").strip()
+    city = None
+    for candidate in (whitelist or DEFAULT_CITIES):
+        pattern = re.compile(r"[,\-–|\s]*" + re.escape(candidate) +
+                             r"(?:\s*\([^)]{0,25}\))?\s*$", re.I)
+        m = pattern.search(text)
+        if m:
+            city = candidate
+            text = text[:m.start()].strip(" ,-–|")
+            break
+    published = None
+    m = CARD_TIME_RE.search(text)
+    if m and m.end() >= len(text) - 2:
+        if m.group(1):
+            published = m.group(1).capitalize()
+        elif m.group(2):
+            published = f"{m.group(2)} {m.group(3)} назад"
+        else:
+            published = f"{m.group(4)} {m.group(5)} назад"
+        text = text[:m.start()].strip(" ,-–|")
+    return (text or None), published, city
+
+
+def card_age_minutes(published):
+    """Возраст объявления в минутах по тексту с карточки — чтобы свежие лоты
+    уходили на анализ первыми, даже если верх страницы занят платными VIP/ТОП."""
+    if not published:
+        return 10 ** 9
+    p = published.lower()
+    if p.startswith("сегодня"):
+        return 0
+    if p.startswith("вчера"):
+        return 24 * 60
+    m = re.match(r"(\d+)\s*(минут|час|день|дня|дней|недел|месяц)", p)
+    if not m:
+        return 10 ** 9
+    value, unit = int(m.group(1)), m.group(2)
+    if unit.startswith("минут"):
+        return value
+    if unit.startswith("час"):
+        return value * 60
+    if unit.startswith("недел"):
+        return value * 7 * 24 * 60
+    if unit.startswith("месяц"):
+        return value * 30 * 24 * 60
+    return value * 24 * 60
+
 SOLD_RE = re.compile(r"(?<!не\s)\bПродано\b", re.I)
 MODES = {"all": "все объявления категории", "used": "только Б/у", "params": "только заданные параметры"}
 
@@ -175,11 +307,61 @@ RESERVATION_RE = re.compile(
     re.I,
 )
 
-NEVER_PROFITABLE_RE = re.compile(r"(?:iphone|айфон|apple)[^,;|/]{0,20}?\b(?:mini|мини)\b", re.I)
+NEVER_PROFITABLE_RE = re.compile(r"(?:iphone|айфон|apple).{0,80}?\b(?:mini|мини)\b", re.I)
 
-# Код модели в конце строки "Модель" на Somon.tj — вида "(SM-S936B)", "(A2399)",
-# "(MGA-LX9N)" — официальный номер модели устройства из базы IMEI.
+# Маркеры аксессуара/запчасти в заголовке. Такие лоты нельзя сравнивать как
+# полноценный телефон: цена чехла (380 TJS), дисплея или аккумулятора ломала
+# статистику группы и давала ложные «разбросы цен» вида 380 … 14600 TJS.
+ACCESSORY_RE = re.compile(
+    r"\bчехол\w*|\bстекл\w*|плёнк\w*|пленк\w*|защитн\w*\s+(?:стекл\w*|плёнк\w*|пленк\w*)|"
+    r"\bкабель\w*|\bшнур\w*|\bзарядк\w*|зарядное\s+устройств\w*|\bадаптер\w*|блок\s+питания|"
+    r"\bнаушник\w*|\bгарнитур\w*|\bремешок\w*|\bбрелок\w*|\bбампер\w*|\bнакладк\w*|"
+    r"\bкрышк\w*|\bматеринск\w*\s+плат\w*|\bдисплей\w*|\bматриц\w*|\bаккумулятор\w*|"
+    r"\bбатаре\w*|\bзапчаст\w*|\bпереходник\w*|\bдержател\w*|\bподставк\w*|"
+    r"\bkeychain\b|\bscreen\s+protector\b|\bcase\b|\bcharger\b|\bbattery\b", re.I)
+
+# Строка "Модель" в блоке проверки IMEI — официальное название устройства из
+# государственной базы IMEI. Живые примеры со страниц Somon.tj:
+#   "Модель: Xiaomi Redmi 5 Plus (MEE7, MET7)"
+#   "МодельApple iPhone XR (A2105)"
+# То есть полное название без опечаток, а в скобках может быть 1, 2 или больше
+# кодов варианта устройства через запятую.
+VERIFIED_MODEL_CODES_RE = re.compile(r"\(([^)]*)\)")
 VERIFIED_MODEL_CODE_RE = re.compile(r"\(([A-Za-z0-9+\-]+)\)\s*$")
+
+# IMEI со страницы объявления. Somon.tj показывает его ЗАМАСКИРОВАННЫМ:
+#   "IMEI: 8682080XXXXXX4" / "IMEI 8904909XXXXXX4"
+# Первые 8 цифр (TAC) видны, хвост закрыт буквами X. Полностью проверить номер
+# по контрольной сумме (Luhn) можно только когда видны все 15 цифр.
+IMEI_NUMBER_RE = re.compile(r"IMEI[^0-9]{0,8}([0-9Xx][0-9Xx\s\-]{8,24})")
+
+
+def parse_imei_number(text):
+    """Возвращает (номер как на странице, masked). (None, False), если IMEI нет."""
+    m = IMEI_NUMBER_RE.search(text or "")
+    if not m:
+        return None, False
+    raw = re.sub(r"[^0-9Xx]", "", m.group(1)).upper()
+    # Либо маскированный номер (есть X), либо полный 15-значный. Иначе это не IMEI
+    # (например, телефон/просмотры рядом со словом IMEI), и подставлять его нельзя.
+    if not ("X" in raw or (raw.isdigit() and len(raw) == 15)):
+        return None, False
+    return raw, ("X" in raw)
+
+
+def luhn_ok(digits):
+    """Контрольная сумма IMEI (Luhn). None — проверить нельзя (номер маскирован)."""
+    if not digits or not digits.isdigit() or len(digits) != 15:
+        return None
+    total = 0
+    for i, ch in enumerate(reversed(digits)):
+        d = int(ch)
+        if i % 2 == 1:
+            d *= 2
+            if d > 9:
+                d -= 9
+        total += d
+    return total % 10 == 0
 
 
 def is_meaningful_model_text(text):
@@ -194,6 +376,58 @@ def is_meaningful_model_text(text):
     return len(re.sub(r"[^0-9A-Za-zА-Яа-яЁё]", "", text)) >= 2
 
 
+def parse_verified_model(raw_model_text):
+    """Разбирает строку "Модель" из блока проверки IMEI.
+
+    "Xiaomi Redmi 5 Plus (MEE7, MET7)" -> ("Xiaomi Redmi 5 Plus", ["mee7", "met7"])
+    "Apple iPhone XR (A2105)"          -> ("Apple iPhone XR", ["a2105"])
+    Старый код брал ТОЛЬКО код в скобках и делал ключ "imei:mee7" — поэтому лот с
+    проверенным IMEI никогда не сравнивался с лотом той же модели без проверки
+    (у того ключ из заголовка): одна модель распадалась на два множества.
+    """
+    if not is_meaningful_model_text(raw_model_text):
+        return None, []
+    text = re.sub(r"\s+", " ", raw_model_text).strip()
+    name = VERIFIED_MODEL_CODES_RE.sub(" ", text)
+    name = re.sub(r"^модель\s*:?\s*", "", name, flags=re.I).strip(" :,-")
+    name = re.sub(r"\s+", " ", name).strip()
+    codes = []
+    for group in VERIFIED_MODEL_CODES_RE.findall(text):
+        for part in group.split(","):
+            code = re.sub(r"[^0-9A-Za-z+_-]", "", part).lower()
+            if is_meaningful_model_text(code):
+                codes.append(code)
+    return (name if is_meaningful_model_text(name) else None), codes
+
+
+def official_model_key(verified_model, title=None):
+    """model_key с приоритетом официальной модели из блока IMEI.
+
+    Порядок: официальное название (полное, без опечаток продавца) → заголовок
+    (так бывает, когда блока IMEI на странице нет вовсе) → код варианта устройства.
+    """
+    name, codes = parse_verified_model(verified_model)
+    if name:
+        key = extract_model_key(name)
+        if key:
+            return key
+    key = extract_model_key(title or "")
+    if key:
+        return key
+    if codes:
+        return f"imei:{codes[0]}"
+    return None
+
+
+def record_model_codes(rec):
+    """Коды варианта устройства у записи — чтобы находить лот той же модели, когда
+    у одного IMEI проверен, а у другого нет."""
+    codes = rec.get("model_codes")
+    if isinstance(codes, list) and codes:
+        return [str(c).lower() for c in codes]
+    return parse_verified_model(rec.get("verified_model"))[1]
+
+
 def derive_verified_model_key(verified_model):
     """Превращает строку "Модель" из блока проверки IMEI в надёжный model_key.
     Приоритет — коду в скобках (SM-S936B/A2399/MGA-LX9N): это официальный номер
@@ -205,9 +439,16 @@ def derive_verified_model_key(verified_model):
         return None
     match = VERIFIED_MODEL_CODE_RE.search(verified_model)
     if match:
-        return f"imei:{match.group(1).lower()}"
-    normalized = re.sub(r"\s+", " ", verified_model).strip().lower()
-    return f"imei:{normalized}" if normalized else None
+        code = match.group(1)
+        if not is_meaningful_model_text(code):
+            return None
+        return f"imei:{code.lower()}"
+    normalized = re.sub(r"[^0-9A-Za-zА-Яа-яЁё]+", " ", verified_model).strip().lower()
+    if not is_meaningful_model_text(normalized):
+        # Мусор вроде одного ":" давал ключ "imei::" — под него в одну группу
+        # сбивались Redmi Note 9, iPhone 14 Pro, Galaxy S21 и т.д.
+        return None
+    return f"imei:{normalized}"
 
 
 def skip_analysis_reason(title):
@@ -218,6 +459,9 @@ def skip_analysis_reason(title):
 
 def junk_title_reason(title):
     """Причина, по которой лот нельзя сравнивать как обычный экземпляр модели, или None."""
+    if ACCESSORY_RE.search(title or ""):
+        return ("В заголовке маркер аксессуара/запчасти (чехол, стекло, дисплей, батарея и т.п.) — "
+                "это не телефон целиком, в статистику цены не идёт")
     if CLONE_RE.search(title or ""):
         return "В заголовке маркер копии/реплики/дубликата — не анализируется как оригинал"
     if RESERVATION_RE.search(title or ""):
@@ -266,6 +510,48 @@ def model_keys_match(key_a, key_b, threshold=FUZZY_MATCH_THRESHOLD):
     return all(fuzzy_ratio(wa, wb) >= threshold for wa, wb in zip(words_a, words_b))
 
 
+BAD_MODEL_KEY_RE = re.compile(r"^imei:\s*$|^imei::+$")
+
+
+def is_valid_model_key(key):
+    """Годен ли model_key для группировки лотов.
+
+    Отсекает исторический мусор: пустой ключ "imei:"/"imei::" (получался, когда
+    labeled_value цеплял слово «Модель» не в блоке IMEI) и ключи из одного бренда
+    без модели — под ними в одну «группу» сбивались совершенно разные телефоны.
+    """
+    if not key or not isinstance(key, str):
+        return False
+    key = key.strip()
+    if not key or BAD_MODEL_KEY_RE.match(key):
+        return False
+    if key.startswith("imei:"):
+        return is_meaningful_model_text(key[5:])
+    return len(key.split()) >= 2
+
+
+def effective_model_key(rec):
+    """model_key записи, пригодный для группировки.
+
+    В price_history.jsonl ключ хранится таким, каким был посчитан В МОМЕНТ записи,
+    и сам не обновляется (старые записи содержат "imei::", "samsung" и т.п.).
+    Здесь берём сохранённый ключ, только если он валиден, иначе пересчитываем по
+    текущей формуле: официальная модель из базы IMEI → разбор заголовка.
+    Если и так модели не видно — None: сравнивать такой лот нельзя.
+    """
+    title = rec.get("title") or ""
+    # Заголовок, который и сегодня распознаётся как мусорный (аксессуар,
+    # копия, бронь) или заведомо невыгодный (iPhone mini) — записи не
+    # место в ценовой статистике вовсе.
+    if junk_title_reason(title) or skip_analysis_reason(title):
+        return None
+    key = rec.get("model_key")
+    if is_valid_model_key(key):
+        return key
+    recomputed = official_model_key(rec.get("verified_model"), rec.get("title") or "")
+    return recomputed if is_valid_model_key(recomputed) else None
+
+
 def word_in_text(word, text, text_words, threshold=FUZZY_MATCH_THRESHOLD):
     if word in text:
         return True
@@ -283,7 +569,10 @@ def days_since(date_str):
 
 
 def extract_model_key(title):
-    if junk_title_reason(title):
+    # Ключ нужен только для СРАВНЕНИЯ лота с другими лотами той же модели.
+    # Поэтому None отдаём и мусорным заголовкам (копия/бронь/аксессуар), и
+    # «заведомо невыгодным» iPhone mini — они не должны попадать в статистику.
+    if junk_title_reason(title) or skip_analysis_reason(title):
         return None
     title = re.sub(r"(\w)\+(?=\s|$)", r"\1 plus", title)
     title = re.sub(r"(\d{2})e\b", r"\1 e", title, flags=re.I)
@@ -313,6 +602,11 @@ def extract_model_key(title):
             if next_w in GB_WORDS:
                 break
         model_words.append(w)
+    if not model_words:
+        # В заголовке есть только бренд («Телефон Samsung», «Телефон Redmi») —
+        # модели нет. Раньше такие лоты сбивались в один ключ "samsung" / "redmi"
+        # и давали «разброс» 450 … 3700 TJS между разными аппаратами.
+        return None
     return f"{canonical_brand} {' '.join(model_words[:5])}".strip()
 
 
@@ -338,6 +632,10 @@ def log_market_point(item, model_key=None):
             "price": item["price"], "condition": item.get("condition"),
             "memory_gb": item.get("memory"), "vip": item.get("vip", False), "top": item.get("top", False),
             "model_key": model_key if model_key is not None else extract_model_key(item["title"]),
+            "verified_model": item.get("verified_model"),
+            "model_codes": item.get("model_codes") or [],
+            "city": item.get("city") or item.get("city_list"),
+            "published_at": item.get("published_at") or item.get("published_list"),
             "url": item.get("url"),
             "date": time.strftime("%Y-%m-%d"),
         }, ensure_ascii=False) + "\n")
@@ -351,6 +649,10 @@ def log_full_analysis(item, analysis, verdict, data_sources, model_key):
             "memory_gb": item.get("memory"), "description": item.get("description", ""),
             "model_key": model_key,
             "verified_model": item.get("verified_model"),
+            "model_codes": item.get("model_codes") or [],
+            "imei_number": item.get("imei_number"),
+            "imei_masked": item.get("imei_masked"),
+            "seller_name": item.get("seller_name"),
             "visible_defects": analysis.get("visible_defects", []),
             "positive_features": analysis.get("positive_features", []),
             "overall_visual_condition": analysis.get("overall_visual_condition"),
@@ -365,6 +667,9 @@ def log_full_analysis(item, analysis, verdict, data_sources, model_key):
             "estimated_resale_price": analysis.get("estimated_resale_price"),
             "questions_for_seller": analysis.get("questions_for_seller", []),
             "data_sources": data_sources,
+            # Числа выше — мнение ИИ, а не факт: в промпт следующего анализа они
+            # не передаются (sanitize_prior_analysis / PROMPT_FORBIDDEN_FIELDS).
+            "estimates_are_ai_opinion": True,
             "used_web_search": analysis.get("used_web_search", False),
             "url": item["url"], "collected_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
         }, ensure_ascii=False) + "\n")
@@ -500,9 +805,20 @@ def find_latest_analysis_by_url(url):
     return found
 
 
-def similar_full_analyses(model_key, condition, exclude_id, limit=SIMILAR_EXAMPLES_LIMIT):
-    if not model_key or not os.path.exists(PRICE_HISTORY_FILE):
+def similar_full_analyses(model_key, condition, exclude_id, limit=SIMILAR_EXAMPLES_LIMIT,
+                          model_codes=None):
+    """Все похожие лоты этой модели из базы — их получает Gemini.
+
+    Совпадение = тот же model_key ЛИБО общий код варианта устройства (MEE7/A2105).
+    Так лот с проверенным IMEI находится рядом с лотом той же модели без проверки:
+    раньше ключ строился только из кода в скобках ("imei:mee7"), и такие лоты вообще
+    не видели друг друга — одна модель распадалась на два непересекающихся множества.
+    Лоты того же состояния, что и оцениваемый, идут первыми (их цена сопоставима
+    напрямую), внутри группы — по свежести.
+    """
+    if not os.path.exists(PRICE_HISTORY_FILE):
         return []
+    codes_wanted = {str(c).lower() for c in (model_codes or [])}
     matches = []
     with open(PRICE_HISTORY_FILE, "r", encoding="utf-8") as f:
         for line in f:
@@ -514,13 +830,45 @@ def similar_full_analyses(model_key, condition, exclude_id, limit=SIMILAR_EXAMPL
                 continue
             if not is_plausible_price(rec.get("price")):
                 continue
-            if not model_keys_match(rec.get("model_key"), model_key):
-                continue
-            if condition and rec.get("condition") and rec.get("condition") != condition:
+            same_key = bool(model_key) and model_keys_match(effective_model_key(rec), model_key)
+            same_code = bool(codes_wanted) and bool(codes_wanted & set(record_model_codes(rec)))
+            if not (same_key or same_code):
                 continue
             matches.append(rec)
     matches.sort(key=lambda r: r.get("collected_at", ""), reverse=True)
+    matches.sort(key=lambda r: 0 if (condition and r.get("condition") == condition) else 1)
     return matches[:limit]
+
+
+def similar_market_points(model_key, exclude_id, limit=SIMILAR_MARKET_POINTS_LIMIT,
+                          model_codes=None):
+    """Все рыночные точки этой модели (включая лоты, по которым полного анализа не
+    было) — компактная таблица цен, которую тоже отправляем в Gemini."""
+    if not os.path.exists(PRICE_HISTORY_FILE):
+        return []
+    codes_wanted = {str(c).lower() for c in (model_codes or [])}
+    points, seen_ids = [], set()
+    with open(PRICE_HISTORY_FILE, "r", encoding="utf-8") as f:
+        for line in f:
+            try:
+                rec = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            if rec.get("type") != "market_point" or rec.get("id") == exclude_id:
+                continue
+            if not is_plausible_price(rec.get("price")):
+                continue
+            same_key = bool(model_key) and model_keys_match(effective_model_key(rec), model_key)
+            same_code = bool(codes_wanted) and bool(codes_wanted & set(record_model_codes(rec)))
+            if not (same_key or same_code):
+                continue
+            rid = rec.get("id")
+            if rid in seen_ids:
+                continue
+            seen_ids.add(rid)
+            points.append(rec)
+    points.sort(key=lambda r: r.get("date", ""), reverse=True)
+    return points[:limit]
 
 
 def remigrate_model_keys():
@@ -543,7 +891,8 @@ def remigrate_model_keys():
                 continue
             if rec.get("type") in ("market_point", "full_analysis", "confirmed_sale", "confirmed_good_call") and rec.get("title"):
                 total += 1
-                new_key = derive_verified_model_key(rec.get("verified_model")) or extract_model_key(rec["title"])
+                # «model_key": None» — принудительно пересчитываем ключ с нуля.
+                new_key = effective_model_key({**rec, "model_key": None})
                 if new_key != rec.get("model_key"):
                     rec["model_key"] = new_key
                     changed += 1
@@ -641,7 +990,7 @@ def finish_remigrate_live(state):
                     verified_model = rec.get("verified_model") or url_to_model.get(rec.get("url"))
                     if verified_model and not rec.get("verified_model"):
                         rec["verified_model"] = verified_model
-                    new_key = derive_verified_model_key(verified_model) or extract_model_key(rec["title"])
+                    new_key = official_model_key(verified_model, rec["title"])
                     if new_key != rec.get("model_key"):
                         rec["model_key"] = new_key
                         changed += 1
@@ -684,7 +1033,39 @@ def process_remigrate_live_batch(subscribers):
         json.dump(state, f, ensure_ascii=False)
 
 
+def _cluster_prices(sorted_prices, gap_ratio):
+    """Разбивает ОТСОРТИРОВАННЫЕ цены на кластеры по «разрывам».
+
+    Разрыв между соседними ценами больше gap_ratio раз означает, что это, скорее
+    всего, уже другое устройство (или приманка), а не разброс цен одной модели.
+    """
+    clusters, current = [], []
+    for price in sorted_prices:
+        if current and price > current[-1] * gap_ratio:
+            clusters.append(current)
+            current = []
+        current.append(price)
+    if current:
+        clusters.append(current)
+    return clusters
+
+
 def find_price_anomalies(ratio_threshold=ANOMALY_RATIO_THRESHOLD, min_count=ANOMALY_MIN_COUNT):
+    """Ищет группы, где в один model_key склеились РАЗНЫЕ устройства.
+
+    Раньше всё, что имело отношение max/min выше порога, объявлялось «разные модели
+    слиплись» — отсюда 11 ложных тревог подряд. Теперь ситуация разбирается по
+    кластерам цен и разделяется на три принципиально разных случая:
+
+      * kind="merged"  — в группе несколько полноценных кластеров (в каждом
+        >= min_count лотов): ключ действительно смешал разные модели — это в чат;
+      * kind="outlier" — один крупный кластер + единичные нетипичные лоты
+        (приманка, копия, запчасть): ключ чистый, пересчитывать его не нужно;
+      * kind="wide"    — один кластер, но разброс внутри него больше порога
+        (состояние/комплектация/город): тоже НЕ ошибка ключа, только информация.
+
+    Владельцу уведомление уходит только по "merged" — остальное копится в /anomalies.
+    """
     if not os.path.exists(PRICE_HISTORY_FILE):
         return []
     groups = {}
@@ -696,8 +1077,12 @@ def find_price_anomalies(ratio_threshold=ANOMALY_RATIO_THRESHOLD, min_count=ANOM
                 continue
             if rec.get("type") not in ("market_point", "full_analysis"):
                 continue
-            price, model_key = rec.get("price"), rec.get("model_key")
-            if not price or price < ANOMALY_MIN_PRICE or not model_key:
+            price = rec.get("price")
+            if not price or price < ANOMALY_MIN_PRICE:
+                continue
+            model_key = effective_model_key(rec)
+            if not model_key:
+                # «Телефон Samsung», лот без модели, аксессуар — группировать не с чем.
                 continue
             groups.setdefault((model_key, record_memory(rec)), []).append((price, rec.get("title", "")))
 
@@ -706,24 +1091,38 @@ def find_price_anomalies(ratio_threshold=ANOMALY_RATIO_THRESHOLD, min_count=ANOM
         if len(entries) < min_count:
             continue
         entries_sorted = sorted(entries, key=lambda e: e[0])
-        n = len(entries_sorted)
-        trim = n // 10 if n >= 10 else 0
-        usable = entries_sorted[trim: n - trim] if trim else entries_sorted
-        cheapest, priciest = usable[0], usable[-1]
-        if cheapest[0] <= 0:
+        prices = [e[0] for e in entries_sorted]
+        clusters = _cluster_prices(prices, ANOMALY_CLUSTER_GAP)
+        main = max(clusters, key=len)
+        full = [c for c in clusters if len(c) >= min_count]
+        ratio_core = main[-1] / main[0] if main[0] > 0 else 1.0
+        ratio_all = prices[-1] / prices[0] if prices[0] > 0 else 0.0
+
+        if len(full) >= 2:
+            kind = "merged"
+        elif len(full) == 1 and len(clusters) > 1 and ratio_all >= ratio_threshold:
+            kind = "outlier"
+        elif len(full) == 1 and ratio_core >= ratio_threshold:
+            kind = "wide"
+        else:
             continue
-        ratio = priciest[0] / cheapest[0]
-        if ratio >= ratio_threshold:
-            anomalies.append({
-                "model_key": model_key, "memory": memory,
-                "label": f"{model_key} {memory}GB" if memory else f"{model_key} (память не указана)",
-                "group_key": f"{model_key}|{memory or '?'}",
-                "count": len(entries), "ratio": ratio,
-                "min_price": cheapest[0], "min_title": cheapest[1],
-                "max_price": priciest[0], "max_title": priciest[1],
-                "trimmed": trim > 0,
-            })
-    anomalies.sort(key=lambda a: a["ratio"], reverse=True)
+        if kind == "merged" and ratio_core < 1.0:
+            continue
+
+        anomalies.append({
+            "kind": kind,
+            "model_key": model_key, "memory": memory,
+            "label": f"{model_key} {memory}GB" if memory else f"{model_key} (память не указана)",
+            "group_key": f"{model_key}|{memory or '?'}",
+            "count": len(entries),
+            "ratio": round(ratio_all if kind != "wide" else ratio_core, 2),
+            "clusters": clusters,
+            "cluster_sizes": [len(c) for c in clusters],
+            "core_min": main[0], "core_max": main[-1],
+            "min_price": prices[0], "min_title": entries_sorted[0][1],
+            "max_price": prices[-1], "max_title": entries_sorted[-1][1],
+        })
+    anomalies.sort(key=lambda a: ({"merged": 0, "outlier": 1, "wide": 2}[a["kind"]], -a["ratio"]))
     return anomalies
 
 
@@ -753,7 +1152,7 @@ def market_stats_for(query, condition, exclude_id):
             title = rec.get("title", "")
             title_low = title.lower()
             title_words = re.findall(r"[a-zа-я0-9]+", title_low)
-            match = model_keys_match(rec.get("model_key"), model_key)
+            match = model_keys_match(effective_model_key(rec), model_key)
             if not match and query_words:
                 match = all(
                     any(word_in_text(v, title_low, title_words) for v in keyword_variants(w))
@@ -787,7 +1186,7 @@ def find_market_listings(query, limit=PRICE_COMMAND_LIMIT):
             title_low = title.lower()
             title_words = re.findall(r"[a-zа-я0-9]+", title_low)
 
-            match = model_keys_match(rec.get("model_key"), model_key)
+            match = model_keys_match(effective_model_key(rec), model_key)
             if not match and query_words:
                 match = all(
                     any(word_in_text(v, title_low, title_words) for v in keyword_variants(w))
@@ -809,6 +1208,29 @@ def find_market_listings(query, limit=PRICE_COMMAND_LIMIT):
 
 
 # ---------- Минимальная выгода / уверенность / максимальная цена ----------
+
+def gemini_budget_remaining(usage):
+    """Сколько анализов ещё можно потратить сегодня по всем сочетаниям ключ+модель."""
+    total_limit = GEMINI_DAILY_LIMIT_PER_COMBO * len(GEMINI_COMBOS)
+    used = sum(int(usage.get(combo["id"], 0) or 0) for combo in GEMINI_COMBOS)
+    return max(0, total_limit - used)
+
+
+def allowed_analyses_per_run(usage):
+    """Сколько лотов анализировать в этом прогоне.
+
+    Прогоны идут каждые 5 минут, поэтому нужен лимит на прогон, иначе суточная
+    квота Gemini выгорит за пару часов: остаток бюджета делим на число прогонов
+    до конца суток. Новые объявления разбираются почти сразу, а квота тратится
+    равномерно.
+    """
+    left = gemini_budget_remaining(usage)
+    if left <= 0:
+        return 0
+    hours_left = max(1, 24 - time.gmtime().tm_hour)
+    runs_left = max(1, hours_left * RUNS_PER_HOUR)
+    return max(1, min(MAX_NEW_ITEMS_PER_RUN, left // runs_left))
+
 
 def get_min_profit():
     return load_json(MIN_PROFIT_FILE, {}).get("value", DEFAULT_MIN_PROFIT)
@@ -842,21 +1264,65 @@ def set_max_price(value):
 # ---------- Курс USD/TJS ----------
 
 def seller_key_from_url(seller_url):
-    """Стабильный ключ продавца: слаг из ссылки на его профиль/все объявления
-    (например https://m.somon.tj/c/KhushangPhones/ -> 'khushangphones')."""
+    """Стабильный ключ продавца: последний элемент ссылки на его профиль/все
+    объявления (https://m.somon.tj/items/author/322889/ -> '322889',
+    https://m.somon.tj/c/KhushangPhones/ -> 'khushangphones').
+
+    Для одного человека ссылка приходит в разных формах (/c/<слаг>/ и
+    /items/author/<номер>/), поэтому ключ нормализуем: убираем query/fragment,
+    приводим к нижнему регистру. Числовой ключ — внутренний id продавца, он
+    стабилен; именно он и печатается в уведомлениях, когда у страницы нет
+    человеческого имени аккаунта.
+    """
     if not seller_url:
         return None
-    slug = seller_url.rstrip("/").rsplit("/", 1)[-1].strip()
-    return slug.lower() or None
+    cleaned = seller_url.split("?")[0].split("#")[0].rstrip("/")
+    slug = cleaned.rsplit("/", 1)[-1].strip().lower()
+    if not slug or slug in ("items", "author", "c", "adv"):
+        return None
+    return slug
 
 
-def load_seller_blacklist():
-    return load_json(SELLER_BLACKLIST_FILE, {})
+def load_seller_blacklist(strict=False):
+    """Читает чёрный список продавцов.
+
+    strict=True (режим записи): при повреждённом или нечитаемом файле НЕ отдаём
+    пустой словарь. Код, который сохраняет список сразу после чтения, записал бы
+    поверх файла одну новую запись и уничтожил все прежние — именно так чёрный
+    список и «похудел» с сотен записей до полусотни (в журнале объявлений 150
+    событий «добавлен в чёрный список», а в файле осталось 59 записей, и ни одной
+    за 26–27 сентября). Битый файл сохраняем под другим именем и говорим владельцу.
+    """
+    if not os.path.exists(SELLER_BLACKLIST_FILE):
+        return {}
+    try:
+        with open(SELLER_BLACKLIST_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        if not isinstance(data, dict):
+            raise ValueError("ожидался JSON-объект {ключ: запись}")
+        return data
+    except (json.JSONDecodeError, ValueError, OSError) as e:
+        print(f"⚠️ Ошибка в файле {SELLER_BLACKLIST_FILE}: {e}")
+        if not strict:
+            return {}
+        backup = f"{SELLER_BLACKLIST_FILE}.corrupt-{time.strftime('%Y%m%d-%H%M%S')}"
+        try:
+            os.replace(SELLER_BLACKLIST_FILE, backup)
+            alert_owner(f"⚠️ Файл чёрного списка продавцов повреждён ({e}).\n"
+                        f"Копия сохранена как {backup} — записи не потеряны, разбери файл вручную.\n"
+                        f"Бот продолжает работать и ведёт список дальше.")
+        except OSError as backup_error:
+            print(f"⚠️ Не удалось сохранить копию битого файла: {backup_error}")
+        return {}
 
 
 def save_seller_blacklist(blacklist):
-    with open(SELLER_BLACKLIST_FILE, "w", encoding="utf-8") as f:
+    """Атомарная запись (временный файл + os.replace): обрыв раннера не может
+    оставить недописанный JSON, из-за которого следующий прогон начал бы с нуля."""
+    tmp_path = f"{SELLER_BLACKLIST_FILE}.tmp"
+    with open(tmp_path, "w", encoding="utf-8") as f:
         json.dump(blacklist, f, ensure_ascii=False, indent=2)
+    os.replace(tmp_path, SELLER_BLACKLIST_FILE)
 
 
 def is_seller_blacklisted(seller_key):
@@ -866,10 +1332,18 @@ def is_seller_blacklisted(seller_key):
 
 
 def blacklist_seller(seller_key, name, profile_url, reason, ad_url, extra=None):
-    """Добавляет продавца в чёрный список. ad_url — ссылка именно на то объявление,
-    из-за которого продавца заблокировали (обязательно сохраняем для /blacklist)."""
-    blacklist = load_seller_blacklist()
-    entry = blacklist.get(seller_key, {})
+    """Добавляет продавца в чёрный список. Возвращает (запись, is_new).
+
+    is_new=False означает, что продавец УЖЕ был в списке: обновляем причину и
+    историю объявлений, но повторное уведомление владельцу не шлём — иначе на
+    одного и того же продавца прилетают десятки одинаковых «🚫 добавлен в чёрный
+    список» (у одного и того же продавца ещё и не меняется внутренний номер,
+    который печатался вместо имени, потому что name был None).
+    """
+    blacklist = load_seller_blacklist(strict=True)
+    existing = blacklist.get(seller_key)
+    is_new = existing is None
+    entry = dict(existing or {})
     entry.update({
         "name": name or entry.get("name"),
         "profile_url": profile_url or entry.get("profile_url"),
@@ -880,13 +1354,18 @@ def blacklist_seller(seller_key, name, profile_url, reason, ad_url, extra=None):
     })
     if extra:
         entry.update(extra)
+    entry["ban_count"] = int(entry.get("ban_count") or 0) + 1
+    ads = [u for u in (entry.get("ban_ad_urls") or []) if u != ad_url]
+    if ad_url:
+        ads.append(ad_url)
+    entry["ban_ad_urls"] = ads[-10:]
     blacklist[seller_key] = entry
     save_seller_blacklist(blacklist)
-    return entry
+    return entry, is_new
 
 
 def unblacklist_seller(seller_key):
-    blacklist = load_seller_blacklist()
+    blacklist = load_seller_blacklist(strict=True)
     removed = blacklist.pop(seller_key, None)
     if removed is not None:
         save_seller_blacklist(blacklist)
@@ -1145,14 +1624,108 @@ def save_subscribers(subs):
         json.dump(subs, f, ensure_ascii=False, indent=2)
 
 
-def send_telegram(chat_id, text):
+def send_telegram(chat_id, text, reply_markup=None):
+    """reply_markup — уже готовая JSON-строка инлайн-клавиатуры (main_menu_markup)."""
     try:
+        data = {"chat_id": chat_id, "text": text}
+        if reply_markup:
+            data["reply_markup"] = reply_markup
         resp = requests.post(f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage",
-                              data={"chat_id": chat_id, "text": text}, timeout=15)
+                              data=data, timeout=15)
         if not resp.ok:
             print("Ошибка Telegram:", chat_id, resp.status_code, resp.text)
     except Exception as e:
         print("Не удалось отправить в Telegram:", chat_id, e)
+
+
+def answer_callback_query(callback_id, text=""):
+    """Обязательный ответ на нажатие кнопки — иначе Telegram крутит «часики»."""
+    try:
+        requests.post(f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/answerCallbackQuery",
+                       data={"callback_query_id": callback_id, "text": text[:200]}, timeout=15)
+    except Exception as e:
+        print("Не удалось ответить на нажатие кнопки:", e)
+
+
+def main_menu_markup():
+    """Клавиатура управления. Каждое нажатие сводится к уже существующей команде
+    (обработчики не дублируем) либо к правке порога через set_min_profit /
+    set_min_confidence / set_max_price."""
+    profit, conf, ceiling = get_min_profit(), get_min_confidence(), get_max_price()
+    rows = [
+        [{"text": "🔍 Аномалии цен", "callback_data": "anomalies"},
+         {"text": "✅ Продажи", "callback_data": "sold"}],
+        [{"text": "🚫 Чёрный список", "callback_data": "blacklist"},
+         {"text": "🔄 Пересчитать ключи", "callback_data": "remigrate"}],
+        [{"text": "🌐 Все", "callback_data": "mode:all"},
+         {"text": "🚶 Только Б/у", "callback_data": "mode:used"},
+         {"text": "⚙️ По параметрам", "callback_data": "mode:params"}],
+        [{"text": f"💰 Выгода: {profit} TJS", "callback_data": "settings:profit"},
+         {"text": "−100", "callback_data": "profit:-100"},
+         {"text": "+100", "callback_data": "profit:+100"}],
+        [{"text": f"🎯 Уверенность: {round(conf * 100)}%", "callback_data": "settings:conf"},
+         {"text": "−5%", "callback_data": "conf:-0.05"},
+         {"text": "+5%", "callback_data": "conf:+0.05"}],
+        [{"text": f"📉 Потолок: {ceiling or 'нет'}", "callback_data": "settings:ceiling"},
+         {"text": "−500", "callback_data": "ceiling:-500"},
+         {"text": "+500", "callback_data": "ceiling:+500"}],
+        [{"text": "📖 Помощь", "callback_data": "help"}],
+    ]
+    return json.dumps({"inline_keyboard": rows})
+
+
+MENU_ACK = {"anomalies": "Смотрю базу…", "sold": "Собираю продажи…",
+            "blacklist": "Открываю чёрный список…", "remigrate": "Пересчитываю ключи…",
+            "help": "Открываю помощь…", "menu": "Открываю меню…"}
+
+
+def send_main_menu(chat_id, note=None):
+    text = (note or "Управление ботом — кнопки ниже.\n"
+            "Бот запускается по расписанию GitHub Actions, поэтому ответ на нажатие "
+            "приходит в течение нескольких минут.")
+    send_telegram(chat_id, text, reply_markup=main_menu_markup())
+
+
+def handle_menu_settings(chat_id, data):
+    """Кнопки порогов: показать текущее значение и шаги −/+. Возвращает True, если
+    нажатие обработано здесь и в цепочку команд идти не нужно."""
+    if data == "settings:profit":
+        send_telegram(chat_id, f"💰 Минимальная выгода: {get_min_profit()} TJS.\n"
+                               "Меняйте кнопками −100 / +100 ниже.", reply_markup=main_menu_markup())
+        return True
+    if data == "settings:conf":
+        send_telegram(chat_id, f"🎯 Минимальная уверенность Gemini: {round(get_min_confidence() * 100)}%.\n"
+                               "Меняйте кнопками −5% / +5% ниже.", reply_markup=main_menu_markup())
+        return True
+    if data == "settings:ceiling":
+        ceiling = get_max_price()
+        shown = f"{ceiling} TJS" if ceiling else "не задан (без ограничения)"
+        send_telegram(chat_id, f"📉 Потолок цены: {shown}.\nМеняйте кнопками −500 / +500 ниже.",
+                      reply_markup=main_menu_markup())
+        return True
+    for label, prefix, getter, setter, is_percent in (
+            ("выгода", "profit:", get_min_profit, set_min_profit, False),
+            ("уверенность", "conf:", get_min_confidence, set_min_confidence, True),
+            ("потолок цены", "ceiling:", get_max_price, set_max_price, False)):
+        if not data.startswith(prefix):
+            continue
+        try:
+            delta = float(data[len(prefix):])
+        except ValueError:
+            return True
+        value = (getter() or 0) + delta
+        if is_percent:
+            value = round(min(max(value, 0.0), 1.0), 2)
+            shown = f"{round(value * 100)}%"
+        else:
+            value = int(min(max(value, 0), 10 ** 7))
+            shown = f"{value} TJS"
+        setter(value)
+        print(f"Настройка «{label}» изменена на {shown}")
+        send_telegram(chat_id, f"✅ {label.capitalize()} теперь {shown}.",
+                      reply_markup=main_menu_markup())
+        return True
+    return False
 
 
 def send_telegram_document(chat_id, filename, content_str, caption=""):
@@ -1380,19 +1953,55 @@ def check_telegram_commands(searches, subscribers):
 
     for upd in updates:
         offset = upd["update_id"] + 1
-        message = upd.get("message", {})
-        chat_id = str(message.get("chat", {}).get("id", ""))
-        text = message.get("text", "").strip()
-        if not chat_id or not text:
+
+        # Нажатия инлайн-кнопок приходят в тот же getUpdates, что и сообщения: у
+        # бота нет постоянно работающего процесса (запуск по расписанию GitHub
+        # Actions), поэтому кнопки обрабатываются в каждом прогоне, а offset
+        # сохраняется ниже — повторно то же нажатие не выполнится.
+        callback = upd.get("callback_query")
+        command, argument = "", ""
+        if callback:
+            data = (callback.get("data") or "").strip()
+            chat_id = str(callback.get("message", {}).get("chat", {}).get("id", ""))
+            if not chat_id:
+                continue
+            answer_callback_query(callback.get("id"), MENU_ACK.get(data, "Выполняю…"))
+            if chat_id not in subscribers:
+                subscribers = subscribers + [chat_id]
+                subs_changed = True
+            if handle_menu_settings(chat_id, data):
+                continue
+            if data.startswith("unbl:"):
+                command, argument = "/blacklist_del", data.split(":", 1)[1]
+            elif data.startswith("mode:"):
+                command = "/" + data.split(":", 1)[1]
+            else:
+                command = {"anomalies": "/anomalies", "sold": "/sold",
+                           "blacklist": "/blacklist", "remigrate": "/remigrate",
+                           "help": "/help"}.get(data, "")
+            if not command:
+                send_main_menu(chat_id, "Обновляю меню.")
+                continue
+        else:
+            message = upd.get("message", {})
+            chat_id = str(message.get("chat", {}).get("id", ""))
+            text = message.get("text", "").strip()
+            if not chat_id or not text:
+                continue
+
+            if chat_id not in subscribers:
+                subscribers = subscribers + [chat_id]
+                subs_changed = True
+                send_telegram(chat_id, "✅ Вы подписаны на уведомления о выгодных объявлениях. "
+                                       "Управление — кнопками: /menu",
+                              reply_markup=main_menu_markup())
+
+            command, _, argument = text.partition(" ")
+            command = command.split("@", 1)[0].lower()
+
+        if command in ("/start", "/menu"):
+            send_main_menu(chat_id, f"👋 Управление ботом. Режим поиска: {MODES[get_mode()]}.")
             continue
-
-        if chat_id not in subscribers:
-            subscribers = subscribers + [chat_id]
-            subs_changed = True
-            send_telegram(chat_id, "✅ Вы подписаны на уведомления о выгодных объявлениях. /help — список команд.")
-
-        command, _, argument = text.partition(" ")
-        command = command.split("@", 1)[0].lower()
 
         if command in ("/all", "/used", "/params"):
             mode = command[1:]
@@ -1559,7 +2168,7 @@ def check_telegram_commands(searches, subscribers):
             else:
                 groups = {}
                 for r in sales:
-                    key = r.get("model_key") or (r.get("title") or "").lower() or "—"
+                    key = effective_model_key(r) or (r.get("title") or "").lower() or "—"
                     groups.setdefault(key, []).append(r)
                 ordered = sorted(groups.values(), key=lambda recs: max(r.get("confirmed_at", "") for r in recs), reverse=True)
 
@@ -1584,21 +2193,43 @@ def check_telegram_commands(searches, subscribers):
                     send_telegram(chat_id, text)
         elif command == "/anomalies":
             anomalies = find_price_anomalies()
+            merged = [a for a in anomalies if a["kind"] == "merged"]
+            outliers = [a for a in anomalies if a["kind"] == "outlier"]
+            wide = [a for a in anomalies if a["kind"] == "wide"]
             if not anomalies:
-                send_telegram(chat_id, "Подозрительных разбросов цен не найдено — model_key выглядят чистыми.")
+                send_telegram(chat_id, "Подозрительных групп не найдено — model_key выглядят чистыми.")
             else:
-                lines = [f"🔍 Найдено подозрительных групп: {len(anomalies)} (вероятно, разные модели слиплись в один ключ)"]
-                for a in anomalies[:15]:
-                    note = " (без учёта ~10% крайних значений)" if a.get("trimmed") else ""
+                lines = [
+                    f"🔍 Склейка ключа (разные модели в одном ключе): {len(merged)}; "
+                    f"одиночные выбросы: {len(outliers)}; обычный широкий разброс: {len(wide)}",
+                    "Разбирать нужно только первую группу — остальное не ошибка ключа.",
+                ]
+                for a in merged[:10]:
                     lines.append(
-                        f"\n⚠️ {a['label']} ({a['count']} лотов, ×{a['ratio']:.1f}){note}\n"
-                        f"  мин: {a['min_price']} TJS — «{a['min_title']}»\n"
-                        f"  макс: {a['max_price']} TJS — «{a['max_title']}»"
+                        f"\n⚠️ СКЛЕЙКА: {a['label']} ({a['count']} лотов)\n"
+                        f"  основной коридор: {a['core_min']}–{a['core_max']} TJS ({a['cluster_sizes'][0]} лотов)\n"
+                        + "".join(f"  отдельный коридор: {c[0]}–{c[-1]} TJS ({len(c)} лотов)\n"
+                                  for c in a["clusters"][1:])
+                        + f"  крайние: {a['min_price']} TJS «{a['min_title']}» … "
+                          f"{a['max_price']} TJS «{a['max_title']}»"
                     )
+                for a in outliers[:5]:
+                    lines.append(
+                        f"\n• Выброс (ключ, скорее всего, чистый): {a['label']} "
+                        f"({a['count']} лотов, ×{a['ratio']:.1f})\n"
+                        f"  основной коридор: {a['core_min']}–{a['core_max']} TJS\n"
+                        f"  выбивается: {a['min_price']} TJS «{a['min_title']}»"
+                    )
+                if wide:
+                    lines.append("\n📊 Широкий, но обычный разброс внутри одной модели (не ошибка ключа):")
+                    for a in wide[:10]:
+                        lines.append(f"• {a['label']} — {a['core_min']}–{a['core_max']} TJS, "
+                                     f"{a['count']} лотов, ×{a['ratio']:.1f}")
                 text = "\n".join(lines)
                 if len(text) > 3800:
-                    send_telegram(chat_id, "\n".join(lines[:2]) + "\n\nСписок длинный — отправляю файлом.")
-                    send_telegram_document(chat_id, "anomalies.txt", text, caption=f"Подозрительные model_key: {len(anomalies)}")
+                    send_telegram(chat_id, "\n".join(lines[:3]) + "\n\nСписок длинный — отправляю файлом.")
+                    send_telegram_document(chat_id, "anomalies.txt", text,
+                                           caption=f"Подозрительные model_key: {len(anomalies)}")
                 else:
                     send_telegram(chat_id, text)
         elif command == "/remigrate":
@@ -1673,9 +2304,15 @@ def check_telegram_commands(searches, subscribers):
                     if not seller_key_m:
                         send_telegram(chat_id, "Не нашёл продавца на этой странице объявления — проверьте ссылку.")
                     else:
-                        blacklist_seller(seller_key_m, seller_name_m, seller_url_m, reason, ad_url,
-                                          extra={"active_ads_at_block": seller_active_ads_m})
-                        send_telegram(chat_id, f"✅ Продавец «{seller_name_m or seller_key_m}» добавлен в чёрный список.")
+                        entry_m, is_new_m = blacklist_seller(
+                            seller_key_m, seller_name_m, seller_url_m, reason, ad_url,
+                            extra={"active_ads_at_block": seller_active_ads_m})
+                        if is_new_m:
+                            send_telegram(chat_id, f"✅ Продавец «{seller_name_m or seller_key_m}» добавлен в чёрный список.")
+                        else:
+                            send_telegram(chat_id, f"ℹ️ Продавец «{entry_m.get('name') or seller_key_m}» уже был "
+                                                   f"в чёрном списке — обновил причину и добавил объявление "
+                                                   f"(всего поводов: {entry_m.get('ban_count')}).")
                 except Exception as e:
                     send_telegram(chat_id, f"⚠️ Не удалось обработать ссылку: {e}")
         elif command == "/blacklist_del":
@@ -1714,6 +2351,7 @@ def check_telegram_commands(searches, subscribers):
                                     "/maxprice число — потолок цены объявления, которое вообще обрабатывается (TJS, 0 — выкл.)\n"
                                     "/price Модель — грубая сводка цен по базе\n"
                                     "/sold — фактически проданные телефоны (цена, дата), по моделям\n"
+                                    "/menu — меню управления кнопками (режим, пороги, продавцы, аномалии)\n"
                                     "/anomalies — проверить базу на подозрительные разбросы цен (склеенные модели)\n"
                                     "/remigrate — пересчитать model_key всей базы по текущей формуле (только владелец)\n"
                                     "/remigrate_live — дособрать модель по IMEI со страниц старых объявлений и "
@@ -1815,30 +2453,282 @@ def labeled_value(soup, labels):
     return None
 
 
-def fetch_listings():
-    resp = requests.get(SEARCH_URL, headers=HEADERS, timeout=20)
-    resp.raise_for_status()
-    soup = BeautifulSoup(resp.text, "html.parser")
+# --- Память по IMEI ---------------------------------------------------------
+# Somon.tj показывает IMEI замаскированным ("8682080XXXXXX4"), но первые 8 цифр
+# (TAC) видны. Запоминаем связку «TAC -> официальная модель из блока проверки
+# IMEI»: если у следующего лота плашки с моделью не окажется, а IMEI есть —
+# модель возьмём из этой памяти, а не из заголовка с опечатками.
+IMEI_TAC_FILE = "imei_tac.json"
+# Сколько страниц выдачи подтягивать за прогон (1 — как было).
+SOMON_MAX_PAGES = int(os.environ.get("SOMON_MAX_PAGES", "1"))
 
-    listings, seen_links = [], set()
-    for a in soup.find_all("a", href=re.compile(r"/adv/|/item/|\d{5,}")):
-        href = absolute_url(a.get("href", ""))
-        if not href or href in seen_links:
+
+def load_tac_map():
+    return load_json(IMEI_TAC_FILE, {})
+
+
+def save_tac_map(data):
+    """Атомарная запись: обрыв прогона не оставит недописанный JSON."""
+    tmp_path = f"{IMEI_TAC_FILE}.tmp"
+    with open(tmp_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2, sort_keys=True)
+    os.replace(tmp_path, IMEI_TAC_FILE)
+
+
+def tac_from_imei(imei_number):
+    """Первые 8 цифр IMEI (TAC) — по ним идентифицируется модель устройства."""
+    if not imei_number or len(imei_number) < 8:
+        return None
+    tac = imei_number[:8]
+    return tac if tac.isdigit() else None
+
+
+def fetch_listings():
+    """Выдача со страницы поиска.
+
+    * SOMON_MAX_PAGES>1 — подтягивает следующие страницы (по умолчанию 1, поведение
+      не меняется; включается переменной окружения, если понадобится больше лотов).
+    * Город и время публикации берутся прямо с карточки (split_card_meta) — они есть
+      у каждого объявления, ещё до запроса его страницы.
+    * Белый список городов парсится из заголовка страницы поиска, чтобы не угадывать
+      названия вручную.
+    """
+    global CITY_WHITELIST
+    listings, seen_links, first_soup = [], set(), None
+    for page in range(1, SOMON_MAX_PAGES + 1):
+        url = SEARCH_URL if page == 1 else f"{SEARCH_URL}&page={page}"
+        if SOMON_MAX_PAGES > 1:
+            print(f"Загружаю страницу выдачи {page}: {url}")
+        try:
+            resp = requests.get(url, headers=HEADERS, timeout=20)
+            resp.raise_for_status()
+        except Exception as e:
+            print(f"Страница выдачи {page} не загрузилась: {e}")
+            break
+        soup = BeautifulSoup(resp.text, "html.parser")
+        if first_soup is None:
+            first_soup = soup
+            CITY_WHITELIST = parse_city_whitelist(soup.get_text(" ", strip=True))
+            print(f"Города в поиске ({len(CITY_WHITELIST)}): {', '.join(CITY_WHITELIST[:12])}")
+        added, vip_count, top_count = 0, 0, 0
+        for a in soup.find_all("a", href=re.compile(r"/adv/|/item/|\d{5,}")):
+            href = absolute_url(a.get("href", ""))
+            if not href or href in seen_links:
+                continue
+            raw_text = a.get_text(" ", strip=True)
+            if len(raw_text) < 5:
+                continue
+            card_title, card_published, card_city = split_card_meta(raw_text, CITY_WHITELIST)
+            title, price, condition, memory, is_vip, is_top, imei_verified_badge = clean_title(card_title)
+            if not title:
+                continue
+            seen_links.add(href)
+            added += 1
+            vip_count += 1 if is_vip else 0
+            top_count += 1 if is_top else 0
+            listings.append({
+                "id": re.sub(r"\D", "", href)[-8:] or href,
+                "title": title, "price": price, "condition": condition,
+                "memory": memory, "url": href, "vip": is_vip, "top": is_top,
+                "imei_verified_badge": imei_verified_badge,
+                "city_list": card_city, "published_list": card_published,
+            })
+        print(f"Страница {page}: карточек {added} (платных: VIP {vip_count}, ТОП {top_count})")
+        if added == 0:
+            break
+    if first_soup is None:
+        first_soup = BeautifulSoup("<html></html>", "html.parser")
+    return listings, first_soup
+
+
+_UNICODE_ESC_RE = re.compile(r"\\u([0-9a-fA-F]{4})")
+
+
+def decode_escapes(text):
+    """Разэкранировать текст страницы: \u0414\u0443... -> Душанбе.
+
+    Сохранённая страница объявления отдаёт подписи и значения в escape-виде
+    (в HTML буквально лежит \u041c\u043e\u0434\u0435\u043b\u044c вместо «Модель»).
+    Без этого разбора метка «Модель» не совпадала ни с одной строкой, и блок IMEI
+    выглядел пустым. Если экранирования нет, функция ничего не меняет.
+    """
+    if not isinstance(text, str) or ("\\u" not in text and "\\n" not in text):
+        return text
+    out = _UNICODE_ESC_RE.sub(lambda m: chr(int(m.group(1), 16)), text)
+    for a, b in (("\\n", " "), ("\\r", " "), ("\\t", " "), ("\\/", "/"), ('\\"', '"'), ("\\'", "'")):
+        out = out.replace(a, b)
+    return out.strip()
+
+
+def _txt(node):
+    """Весь текст узла одной строкой, с разэкранированием."""
+    return decode_escapes(node.get_text(" ", strip=True))
+
+
+def _by_class(container, prefix, limit=1):
+    """Элементы, у которых есть класс, начинающийся на prefix.
+
+    На Somon.tj имена классов содержат хеш сборки (IMEI_item__NQM7S, IMEI_name__kI06h,
+    Location_name___MpLW, Features_item__22IsR). Хеш меняется при каждой пересборке
+    сайта, а префикс — нет. Селекторы сняты с реальной сохранённой страницы
+    adv/14742183_xiaomi-redmi-15-8-8-256gb-global-versi.
+    """
+    out = []
+    for node in container.find_all(True):
+        for cls in (node.get("class") or []):
+            if cls.startswith(prefix):
+                out.append(node)
+                break
+        if len(out) >= limit:
+            break
+    return out
+
+
+def normalize_imei_value(text):
+    """IMEI из блока проверки -> (номер, замаскирован ли).
+
+    Сайт отдаёт номер кусками: 8694390<span class="cross">XXXXXX</span>3, после
+    get_text получается "8694390XXXXXX3". Полный 15-значный номер бывает у лотов
+    из чёрного/серого списка, у остальных середина закрыта.
+    """
+    if not text:
+        return None, False
+    raw = re.sub(r"[^0-9Xx]", "", str(text)).upper()
+    if len(raw) < 8:
+        return None, False
+    if "X" in raw:
+        return raw, True
+    return (raw, False) if (raw.isdigit() and len(raw) == 15) else (None, False)
+
+
+def parse_imei_block(soup):
+    """Блок проверки IMEI: component="IMEIMobile".
+
+      <div component="IMEIMobile" class="IMEI_container___D7Yq">
+        <div class="IMEI_header__yk9C6"><div>IMEI телефона в белом списке</div></div>
+        <div class="IMEI_list__2AEqJ">
+          <div class="IMEI_item__NQM7S"><div class="IMEI_name__kI06h">IMEI</div>
+               <div>8694390<span class="cross">XXXXXX</span>3</div></div>
+          <div class="IMEI_item__NQM7S"><div class="IMEI_name__kI06h">Модель</div>
+               <div>Xiaomi Redmi 12 5G</div></div>
+    """
+    container = soup.find(attrs={"component": "IMEIMobile"})
+    if not container:
+        found = _by_class(soup, "IMEI_container")
+        container = found[0] if found else None
+    if not container:
+        return {"header": None, "items": {}}
+    headers = _by_class(container, "IMEI_header")
+    header = _txt(headers[0]) if headers else None
+    items = {}
+    for item in _by_class(container, "IMEI_item", limit=10):
+        children = item.find_all("div", recursive=False)
+        if len(children) < 2:
+            children = item.find_all("div")
+        if len(children) < 2:
             continue
-        seen_links.add(href)
-        raw_text = a.get_text(" ", strip=True)
-        if len(raw_text) < 5:
+        label = _txt(children[0]).strip(" :")
+        value = _txt(children[1])
+        if label and value:
+            items[label.lower()] = value
+    return {"header": header, "items": items}
+
+
+def parse_city_block(soup):
+    """Город: component="LocationMobile" -> «Город: <span class="Location_name">Душанбе</span>».
+
+    В этом и была причина прочерка в Telegram: labeled_value() искал отдельный
+    текстовый узел, равный «Город», а подпись и значение лежат в одном узле
+    «Город: Душанбе», поэтому условие не выполнялось никогда.
+    """
+    node = soup.find(attrs={"component": "LocationMobile"})
+    if not node:
+        found = _by_class(soup, "Location_container")
+        node = found[0] if found else None
+    if not node:
+        return None
+    name = _by_class(node, "Location_name")
+    if name:
+        return _txt(name[0]) or None
+    text = _txt(node)
+    for pref in ("Город:", "Город :", "Город"):
+        if text.startswith(pref):
+            text = text[len(pref):]
+            break
+    return text.strip() or None
+
+
+def parse_features(soup):
+    """Характеристики: component="FeaturesMobile" -> Состояние / Встроенная память."""
+    out = {}
+    node = soup.find(attrs={"component": "FeaturesMobile"})
+    if not node:
+        found = _by_class(soup, "Features_item")
+        node = found[0].parent if found else None
+    if not node:
+        return out
+    for item in _by_class(node, "Features_item", limit=15):
+        value = item.find(class_=re.compile(r"^Features_value"))
+        divs = item.find_all("div", recursive=False)
+        name = divs[0] if divs else None
+        if value is None and len(divs) > 1:
+            value = divs[1]
+        if name is not None and value is not None:
+            key = _txt(name).lower()
+            if key:
+                out[key] = _txt(value)
+    return out
+
+
+def parse_info_icons(soup):
+    """Просмотры и время публикации (блоки Info_icon).
+
+    Формат времени отдаём сайта как есть («19 минут назад», «Сегодня 12:30»):
+    пересчитывать в минуты не нужно, возраст лота считает card_age_minutes().
+    """
+    views, published = None, None
+    for node in _by_class(soup, "Info_icon", limit=20):
+        txt = _txt(node)
+        if not txt:
             continue
-        title, price, condition, memory, is_vip, is_top, imei_verified_badge = clean_title(raw_text)
-        if not title:
-            continue
-        listings.append({
-            "id": re.sub(r"\D", "", href)[-8:] or href,
-            "title": title, "price": price, "condition": condition,
-            "memory": memory, "url": href, "vip": is_vip, "top": is_top,
-            "imei_verified_badge": imei_verified_badge,
-        })
-    return listings, soup
+        if re.search(r"назад|Сегодня|Вчера", txt, re.I):
+            if published is None:
+                published = txt[:40]
+        elif txt.isdigit() and views is None:
+            views = int(txt)
+    return views, published
+
+
+def parse_price(soup):
+    """Цена со страницы объявления: Price_current («2 250 c.» -> 2250)."""
+    nodes = _by_class(soup, "Price_current")
+    if not nodes:
+        return None
+    text = _txt(nodes[0])
+    m = PRICE_RE.search(text)
+    return int(m.group(1).replace(" ", "")) if m else None
+
+
+def parse_ad_page(soup):
+    """Разбор страницы объявления по структуре DOM."""
+    block = parse_imei_block(soup)
+    items = block["items"]
+    features = parse_features(soup)
+    views, published = parse_info_icons(soup)
+    imei_number, imei_masked = normalize_imei_value(items.get("imei"))
+    return {
+        "imei_header": block["header"],
+        "imei_number": imei_number,
+        "imei_masked": imei_masked,
+        "model": items.get("модель"),
+        "city": parse_city_block(soup),
+        "condition_raw": features.get("состояние"),
+        "memory_raw": features.get("встроенная память") or features.get("память"),
+        "color": features.get("цвет"),
+        "published": published,
+        "views": views,
+        "price": parse_price(soup),
+    }
 
 
 def fetch_detail(ad_url):
@@ -1846,18 +2736,29 @@ def fetch_detail(ad_url):
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "html.parser")
     full_text = soup.get_text(" ", strip=True)
+    # Сначала структура DOM, и лишь если узла нет — разбор текста.
+    dom = parse_ad_page(soup)
 
-    condition = normalize_condition(labeled_value(soup, ["Состояние"]))
-    memory_raw = labeled_value(soup, ["Встроенная память", "Память"])
+    condition = normalize_condition(dom["condition_raw"] or labeled_value(soup, ["Состояние"]))
+    memory_raw = dom["memory_raw"] or decode_escapes(labeled_value(soup, ["Встроенная память", "Память"]))
     memory_match = re.search(r"(\d+)\s*(?:gb|гб)", memory_raw or "", re.I)
     memory = int(memory_match.group(1)) if memory_match else None
-    imei_status = detect_imei_status(full_text)
-    city = labeled_value(soup, ["Город"])
+    imei_status = detect_imei_status(dom["imei_header"] or full_text)
+    # Город: подпись «Город: X», «№17361978 in Худжанд» (страница объявления),
+    # «6 дней назад Худжанд» (блок похожих).
+    city = dom["city"] or decode_escapes(labeled_value(soup, ["Город"]))
+    if not city:
+        in_match = re.search(r"№\s*\d+\s+in\s+([^\-–|\n]{2,40})", full_text)
+        if in_match:
+            found = find_city(in_match.group(1), CITY_WHITELIST)
+            city = found or in_match.group(1).strip() or None
+    if not city:
+        city = find_city(full_text[:2000], CITY_WHITELIST)
     if not city:
         city_match = CITY_RE.search(full_text)
         city = city_match.group(1) if city_match else None
     published_match = PUBLISHED_RE.search(full_text)
-    published_at = published_match.group(1) if published_match else None
+    published_at = dom["published"] or (published_match.group(1) if published_match else None)
 
     # "Модель" в блоке проверки IMEI — официальное название устройства из
     # государственной базы IMEI, а не то, что напечатал продавец в заголовке.
@@ -1866,9 +2767,19 @@ def fetch_detail(ad_url):
     # зацепил слово "Модель" не в этом блоке и подставил мусор вроде ":".
     raw_verified_model = labeled_value(soup, ["Модель"])
     verified_model = raw_verified_model if is_meaningful_model_text(raw_verified_model) else None
+    # Название модели из базы IMEI важнее заголовка продавца: на сохранённой странице
+    # заголовок «Xiaomi Redmi 15 8+8/256GB Global Version 2026», а база IMEI отдаёт
+    # «Xiaomi Redmi 12 5G» — это разные телефоны.
+    if dom["model"] and is_meaningful_model_text(dom["model"]):
+        verified_model = dom["model"]
+    imei_number, imei_masked = parse_imei_number(full_text)
+    if dom["imei_number"]:
+        imei_number, imei_masked = dom["imei_number"], dom["imei_masked"]
 
     desc_match = DESC_RE.search(full_text)
-    description = desc_match.group(1).strip() if desc_match else full_text[:500]
+    # Полное описание продавца (раньше обрезалось до 500 символов при разборе и до
+    # 800 при отправке в Gemini — терялись важные детали).
+    description = desc_match.group(1).strip() if desc_match else full_text[:DESCRIPTION_MAX_CHARS]
 
     photo_urls, seen = [], set()
     for img in soup.find_all("img"):
@@ -1877,21 +2788,42 @@ def fetch_detail(ad_url):
             seen.add(src)
             photo_urls.append(src)
 
-    seller_name, seller_url, seller_active_ads, seller_verified = extract_seller_info(soup, full_text)
+    seller_name, seller_url, seller_active_ads, seller_verified = extract_seller_info(soup, full_text, resp.text)
 
     return (condition, memory, description, photo_urls[:4], imei_status, city, published_at, verified_model,
-            seller_name, seller_url, seller_active_ads, seller_verified)
+            seller_name, seller_url, seller_active_ads, seller_verified,
+            {"number": imei_number, "masked": imei_masked, "luhn": luhn_ok(imei_number),
+             "views": dom["views"], "page_price": dom["price"], "color": dom["color"]})
 
 
-def extract_seller_info(soup, full_text):
+def extract_seller_info(soup, full_text, raw_html=""):
     """Данные о продавце со страницы объявления: имя, ссылка на его профиль/все
     объявления и число активных объявлений — ключевые сигналы для отсева
-    перекупщиков (магазин с кучей объявлений vs частник с одним телефоном)."""
+    перекупщиков (магазин с кучей объявлений vs частник с одним телефоном).
+
+    Раньше всё держалось на одном атрибуте data-marker. Если сервер отдавал
+    страницу без этого блока, продавец не опознавался вообще: name оставался None
+    (поэтому в уведомлениях вместо имени печатался внутренний номер), а без
+    seller_url не работала и проверка чёрного списка — продавец анализировался
+    заново и снова попадал в бан. Фолбэки: блок Contacts_title (имя аккаунта) и
+    ссылка на профиль прямо из HTML.
+    """
     seller_name, seller_url = None, None
     author_link = soup.find("a", attrs={"data-marker": re.compile(r"^advert-all_adverts_author-advert:")})
     if author_link:
         seller_name = (author_link.get("aria-label") or author_link.get_text(strip=True) or "").strip() or None
         seller_url = absolute_url(author_link.get("href", "")) or None
+
+    if not seller_name:
+        title_el = soup.find(class_=re.compile(r"^Contacts_title"))
+        if title_el:
+            seller_name = title_el.get_text(" ", strip=True) or None
+
+    if not seller_url and raw_html:
+        profile_match = re.search(
+            r"(/items/author/\d+/?|/c/[A-Za-z0-9_.\-]+/?|/author/[A-Za-z0-9_.\-]+/?)", raw_html)
+        if profile_match:
+            seller_url = absolute_url(profile_match.group(1)) or None
 
     active_ads_match = re.search(r"(\d+)\s*актив\w*\s*объявлен\w*", full_text, re.I)
     seller_active_ads = int(active_ads_match.group(1)) if active_ads_match else None
@@ -1913,17 +2845,60 @@ def memory_text(rec, item_memory):
     return text
 
 
+# Поля прошлого разбора, которые НЕЛЬЗЯ отдавать в следующий анализ.
+# Это догадки Gemini о цене. Если кормить ими новую оценку, она опирается на
+# собственный прошлый вывод как на факт: оценка подтверждает себя, а реальные
+# цены рынка перестают её поправлять. В базе они остаются (нужны владельцу и
+# /sold), но в промпт не попадают никогда.
+PROMPT_FORBIDDEN_FIELDS = ("estimated_total_cost", "estimated_resale_price",
+                           "estimated_repair_cost", "market_verdict", "confidence")
+
+
+def sanitize_prior_analysis(rec):
+    """Запись прошлого разбора без оценочных выводов Gemini.
+
+    Оставляем только наблюдаемое: цену объявления, состояние, память, город, дату,
+    статус IMEI, описание продавца. Дефекты по фото остаются как наблюдение.
+    """
+    return {k: v for k, v in (rec or {}).items() if k not in PROMPT_FORBIDDEN_FIELDS}
+
+
+def format_market_points(points, item_memory=None):
+    """Компактная таблица всех рыночных точек модели из базы (полный список)."""
+    if not points:
+        return ""
+    lines = ["Цены реальных объявлений из нашей базы (наших оценок стоимости тут нет, "
+             f"считай сам): {len(points)} лотов, "
+             "от новых к старым) — цена | состояние | память | город | дата | название:"
+             ]
+    for rec in points:
+        parts = [f"{rec.get('price', '—')} TJS"]
+        if rec.get("condition"):
+            parts.append(str(rec["condition"]))
+        mem = record_memory(rec)
+        if mem:
+            parts.append(f"{mem}GB" + (" ⚠️ другой объём" if item_memory and mem != item_memory else ""))
+        if rec.get("city"):
+            parts.append(str(rec["city"]))
+        if rec.get("date"):
+            parts.append(str(rec["date"]))
+        parts.append(f"«{rec.get('title', '')}»")
+        lines.append("- " + " | ".join(parts))
+    return "\n".join(lines)
+
+
 def format_similar_examples(examples, item_memory=None):
     if not examples:
         return "Похожих проверенных лотов этой модели из нашей базы пока нет."
     lines = ["Похожие проверенные лоты этой модели из нашей базы (от новых к старым, "
              "у каждого указан возраст данных) — судьи сам по каждому, чем этот лот "
-             "отличается по дефектам и цене, и учитывай, что старые примеры могли устареть по цене:"]
+             "отличается по дефектам и цене. НАШИХ прошлых оценок стоимости здесь "
+             "намеренно НЕТ — считай цену сам по ценам реальных объявлений и фото:"]
     for i, rec in enumerate(examples, 1):
         defects = ", ".join(rec.get("visible_defects") or []) or "не обнаружены"
         positives = ", ".join(rec.get("positive_features") or []) or "—"
-        repair = rec.get("estimated_repair_cost")
-        repair_text = f", оценка ремонта тогда: {repair} TJS" if repair else ""
+        # Оценка ремонта от Gemini не передаётся (PROMPT_FORBIDDEN_FIELDS).
+        repair_text = ""
         age = days_since(rec.get("collected_at"))
         if age is None:
             age_text = ", дата сбора неизвестна"
@@ -1932,10 +2907,23 @@ def format_similar_examples(examples, item_memory=None):
         else:
             age_text = f", собрано {age} дн. назад"
         title_text = f"«{rec['title']}»" if rec.get("title") else "без названия"
+        extra = []
+        if rec.get("condition"):
+            extra.append(f"состояние от продавца: {rec['condition']}")
+        if rec.get("city"):
+            extra.append(f"город: {rec['city']}")
+        if rec.get("published_at"):
+            extra.append(f"публикация: {rec['published_at']}")
+        if rec.get("imei_status"):
+            extra.append(f"IMEI: {rec['imei_status']}")
+        if rec.get("description"):
+            extra.append("описание продавца: «" + re.sub(r"\s+", " ", str(rec["description"]))[:400] + "»")
+        extra_text = ("; " + "; ".join(extra)) if extra else ""
+        link_text = f" | объявление: {rec['url']}" if rec.get("url") else ""
         lines.append(
             f"{i}. {title_text}{memory_text(rec, item_memory)}. Цена {rec.get('price', '—')} TJS, состояние по фото: "
             f"{rec.get('overall_visual_condition', 'неизвестно')}, "
-            f"дефекты: {defects}, плюсы: {positives}{repair_text}{age_text}"
+            f"дефекты: {defects}, плюсы: {positives}{repair_text}{age_text}{extra_text}{link_text}"
         )
     return "\n".join(lines)
 
@@ -2053,12 +3041,37 @@ def format_seller_block(item, has_photos):
     return "\n" + "\n".join(lines) + instruction
 
 
-def build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate, has_photos=True, condition_note=None, no_photo_reason=None):
+def build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate, has_photos=True, condition_note=None, no_photo_reason=None, market_points=None):
     try:
         item_memory = int(item.get("memory")) if item.get("memory") else None
     except (TypeError, ValueError):
         item_memory = None
+    points_text = format_market_points(market_points or [], item_memory)
+    official_name, official_codes = parse_verified_model(item.get("verified_model"))
+    title_key = extract_model_key(item.get("title") or "")
+    official_key = extract_model_key(official_name or "")
+    model_lines = [f"Заголовок от продавца (может содержать опечатки): {item['title']}"]
+    if official_name:
+        model_lines.append("Официальная модель из базы IMEI сайта (полная, БЕЗ опечаток — "
+                           f"самый надёжный источник названия): {official_name}")
+    if official_codes:
+        model_lines.append(f"Код(ы) варианта устройства: {', '.join(official_codes)}")
+    if item.get("imei_number"):
+        masked_note = (" (номер замаскирован сайтом: видны не все цифры, контрольная сумма "
+                       "недоступна)") if item.get("imei_masked") else ""
+        model_lines.append(f"IMEI со страницы: {item['imei_number']}{masked_note}")
+    if official_key and title_key and official_key != title_key:
+        model_lines.append("ВНИМАНИЕ: заголовок продавца расходится с официальной моделью "
+                           f"(из заголовка выходит «{title_key}», официально «{official_key}»). "
+                           "Доверяй официальной модели.")
+    model_text = "\n".join(model_lines)
     examples_text = format_similar_examples(similar_examples, item_memory)
+    while len(examples_text) > PROMPT_MAX_CHARS // 2 and len(similar_examples or []) > 1:
+        similar_examples = similar_examples[:-1]
+        examples_text = format_similar_examples(similar_examples, item_memory)
+    if points_text and len(points_text) > PROMPT_MAX_CHARS // 3:
+        points_text = ("\n".join(points_text.split("\n")[:80]) +
+                       "\n…(таблица обрезана по лимиту размера промпта)")
     good_calls_text = format_confirmed_good_calls(confirmed_good_calls)
     sales_text = format_confirmed_sales(confirmed_sales, item_memory)
     web_text = (
@@ -2096,21 +3109,23 @@ def build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, 
     if condition_note:
         no_photo_note += f"\n{condition_note}\n"
 
-    return f"""
+    prompt = f"""
 Ты — эксперт по оценке смартфонов для перепродажи в Таджикистане. {intro}
 Используй не только присланные данные ниже, но и свои собственные знания о рынке смартфонов.
 
-Объявление: {item['title']}
+{model_text}
 Цена: {item['price']} TJS
-Город: {item.get('city') or 'не указан'}
-Опубликовано: {item.get('published_at') or 'неизвестно'}
+Город продавца: {item.get('city') or item.get('city_list') or 'не указан'}
+Опубликовано: {item.get('published_at') or item.get('published_list') or 'неизвестно'}
 Состояние по словам продавца: {item.get('condition') or 'не указано'}
-Описание продавца: {item.get('description', '')[:800]}
+Описание продавца (полный текст): {item.get('description', '')[:DESCRIPTION_MAX_CHARS]}
 {imei_text}{seller_text}{no_photo_note}
 
 {good_calls_text}
 
 {sales_text}
+
+{points_text}
 
 {examples_text}
 
@@ -2152,6 +3167,10 @@ seller_type и seller_evidence заполняй по правилам про ф�
 контекста о продавце не было вообще (блок про продавца отсутствовал) — ставь "неясно" и оставляй
 seller_evidence пустой строкой.
 """.strip()
+    if len(prompt) > PROMPT_MAX_CHARS:
+        # Страховка от переполнения контекста: режем хвост, а не роняем вызов.
+        prompt = prompt[:PROMPT_MAX_CHARS] + "\n…(промпт обрезан по лимиту размера)"
+    return prompt
 
 
 def parse_gemini_json(text):
@@ -2168,13 +3187,19 @@ def parse_gemini_json(text):
     return {"market_verdict": "недостаточно данных", "reasoning": "не удалось разобрать ответ", "visible_defects": []}
 
 
-def analyze_listing(item, photo_urls, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate, usage, condition_note=None, no_photo_reason=None):
+def analyze_listing(item, photo_urls, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate, usage, condition_note=None, no_photo_reason=None, market_points=None):
     if not pick_available_combo(usage):
         return {"market_verdict": "недостаточно данных",
                 "reasoning": "дневной лимит Gemini исчерпан на всех сочетаниях ключ+модель, анализ отложен",
                 "visible_defects": [], "_failed": True, "_fail_reason": "лимит исчерпан"}
 
-    parts = [{"text": build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate, has_photos=bool(photo_urls), condition_note=condition_note, no_photo_reason=no_photo_reason)}]
+    prompt_text = build_prompt(item, similar_examples, confirmed_good_calls, confirmed_sales, web_results,
+                               manual_notes, usd_rate, has_photos=bool(photo_urls),
+                               condition_note=condition_note, no_photo_reason=no_photo_reason,
+                               market_points=market_points)
+    print(f"Gemini: промпт по лоту {item['id']} — {len(prompt_text)} символов, похожих лотов "
+          f"{len(similar_examples or [])}, рыночных точек {len(market_points or [])}")
+    parts = [{"text": prompt_text}]
     for url in photo_urls:
         try:
             img = requests.get(url, headers=HEADERS, timeout=15)
@@ -2431,8 +3456,6 @@ def main():
         return
 
     current_ids = {item["id"] for item in listings}
-    seen = process_disappeared_ads(seen, current_ids)
-    process_remigrate_live_batch(subscribers)
 
     usage_str = ", ".join(f"{c['id']}: {usage.get(c['id'], 0)}/{GEMINI_DAILY_LIMIT_PER_COMBO}" for c in GEMINI_COMBOS)
     search_usage = get_search_usage()
@@ -2454,12 +3477,22 @@ def main():
         item for item in listings
         if selected(item, searches, mode)
         and not seen.get(item["id"], {}).get("photo_ok")
-    ][:MAX_NEW_ITEMS_PER_RUN]
+    ]
+    # Свежие — первыми. Верх страницы выдачи занят платными VIP/ТОП-объявлениями
+    # (на живой странице первые карточки были 4-дневной давности), поэтому без
+    # такой сортировки новое объявление ждало разбора в очереди.
+    candidates.sort(key=lambda it: card_age_minutes(it.get("published_list")))
+    allowed = allowed_analyses_per_run(usage)
+    candidates = candidates[:allowed]
 
-    print(f"На полный анализ в этом прогоне: {len(candidates)}")
+    print(f"На полный анализ в этом прогоне: {len(candidates)} (лимит прогона {allowed}, "
+          f"свежие разбираются первыми)")
 
     ai_failures = 0
     for item in candidates:
+        if run_budget_exhausted():
+            print("⏱ Бюджет времени прогона исчерпан — новые лоты разберутся в следующем запуске.")
+            break
         entry = seen.get(item["id"], {})
         try:
             # Бейдж "IMEI проверен" виден уже на карточке в списке объявлений — если
@@ -2512,12 +3545,52 @@ def main():
                 continue
 
             (condition, memory, description, photo_urls, imei_status, city, published_at, verified_model,
-             seller_name, seller_url, seller_active_ads, seller_verified) = fetch_detail(item["url"])
+             seller_name, seller_url, seller_active_ads, seller_verified, imei_info) = fetch_detail(item["url"])
             item["condition"] = condition or item.get("condition")
             item["memory"] = memory or item.get("memory")
             item["description"] = description
             item["imei_status"] = imei_status
-            item["city"] = city
+            # Город со страницы объявления, а если там пусто — из карточки списка
+            # (раньше в Telegram всегда печаталось «—»).
+            # Город со страницы объявления, а если там пусто — из карточки списка
+            # (раньше в Telegram всегда печаталось «—»).
+            item["city"] = city or item.get("city_list")
+            # Печать тайминга: в логе прогона видно, когда лот обнаружен и сколько ему
+            # минут от публикации — по этому логу проверяется задержка уведомления.
+            _age = card_age_minutes(item.get("published_list"))
+            _age_txt = ("объявление опубликовано ~%d мин назад" % _age if _age < 10 ** 6
+                        else "возраст в выдаче неизвестен")
+            print("[тайминг] лот %s обнаружен %s — %s"
+                  % (item["id"], time.strftime("%H:%M:%S"), _age_txt))
+            # --- IMEI: номер со страницы и память по TAC --------------------------
+            # Somon показывает IMEI замаскированным ("8682080XXXXXX4"), первые 8 цифр
+            # видны. Запоминаем связку «TAC -> официальная модель из блока проверки
+            # IMEI»: если у следующего лота плашки с моделью не окажется, а IMEI есть —
+            # модель возьмётся из этой памяти, а не из заголовка с опечатками.
+            item["imei_number"] = (imei_info or {}).get("number")
+            item["imei_masked"] = (imei_info or {}).get("masked")
+            tac = tac_from_imei(item["imei_number"])
+            if tac:
+                tac_map = load_tac_map()
+                known = tac_map.get(tac) or {}
+                if verified_model:
+                    tac_name, tac_codes = parse_verified_model(verified_model)
+                    if tac_name or tac_codes:
+                        history = [u for u in (known.get("history") or []) if u != item["url"]]
+                        tac_map[tac] = {
+                            "model": tac_name or known.get("model"),
+                            "codes": tac_codes or known.get("codes") or [],
+                            "updated_at": time.strftime("%Y-%m-%d"),
+                            "history": (history + [item["url"]])[-5:],
+                        }
+                        save_tac_map(tac_map)
+                elif known.get("model") or known.get("codes"):
+                    verified_model = known.get("model") or verified_model
+                    item["verified_model"] = verified_model
+                    item["model_codes"] = known.get("codes") or []
+                    print(f"IMEI TAC {tac}: модель взята из памяти по IMEI — {known.get('model')}")
+            if verified_model and not item.get("model_codes"):
+                item["model_codes"] = parse_verified_model(verified_model)[1] or item.get("city_list")
             item["published_at"] = published_at
             item["verified_model"] = verified_model
             item["seller_name"] = seller_name
@@ -2556,14 +3629,18 @@ def main():
 
                 heuristic_reason = reseller_heuristic_reason(item, phone_ratio, phone_sample)
                 if heuristic_reason:
-                    blacklist_seller(seller_key, seller_name, seller_url, heuristic_reason, item["url"],
-                                      extra={"active_ads_at_block": seller_active_ads})
+                    bl_entry_new, is_new_ban = blacklist_seller(
+                        seller_key, seller_name, seller_url, heuristic_reason, item["url"],
+                        extra={"active_ads_at_block": seller_active_ads})
                     log_rejected(item, {"market_verdict": "недостаточно данных"},
                                  note=f"Продавец добавлен в чёрный список: {heuristic_reason}")
-                    alert_owner(
-                        f"🚫 Продавец «{seller_name or seller_key}» добавлен в чёрный список.\n"
-                        f"Причина: {heuristic_reason}\nОбъявление: {item['url']}"
-                    )
+                    if is_new_ban:
+                        alert_owner(
+                            f"🚫 Продавец «{seller_name or seller_key}» добавлен в чёрный список.\n"
+                            f"Причина: {heuristic_reason}\nОбъявление: {item['url']}"
+                        )
+                    else:
+                        print(f"Продавец {seller_key} уже в чёрном списке — повторно не уведомляю")
                     entry["photo_ok"] = True
                     entry["url"] = item["url"]
                     entry["title"] = item["title"]
@@ -2576,7 +3653,7 @@ def main():
             # Верифицированная модель из базы IMEI надёжнее заголовка продавца —
             # используем её, когда она есть, и падаем на разбор заголовка только
             # если проверка IMEI не дала результата (не найден в базе и т.п.).
-            model_key = derive_verified_model_key(verified_model) or extract_model_key(item["title"])
+            model_key = official_model_key(verified_model, item["title"])
             similar_examples = similar_full_analyses(model_key, item.get("condition"), item["id"])
             confirmed_good_calls = get_confirmed_good_calls(model_key)
             confirmed_sales = get_confirmed_sales(model_key)
@@ -2615,13 +3692,17 @@ def main():
             if seller_key and analysis.get("seller_type") == "похоже на перекупщика":
                 evidence = analysis.get("seller_evidence") or "по фону на фотографиях"
                 reason = f"похоже на перекупщика по фото: {evidence}"
-                blacklist_seller(seller_key, seller_name, seller_url, reason, item["url"],
-                                  extra={"active_ads_at_block": seller_active_ads})
+                bl_entry_new, is_new_ban = blacklist_seller(
+                    seller_key, seller_name, seller_url, reason, item["url"],
+                    extra={"active_ads_at_block": seller_active_ads})
                 log_rejected(item, analysis, note=f"Продавец добавлен в чёрный список: {reason}")
-                alert_owner(
-                    f"🚫 Продавец «{seller_name or seller_key}» добавлен в чёрный список (по фото).\n"
-                    f"Причина: {evidence}\nОбъявление: {item['url']}"
-                )
+                if is_new_ban:
+                    alert_owner(
+                        f"🚫 Продавец «{seller_name or seller_key}» добавлен в чёрный список (по фото).\n"
+                        f"Причина: {evidence}\nОбъявление: {item['url']}"
+                    )
+                else:
+                    print(f"Продавец {seller_key} уже в чёрном списке — повторно не уведомляю")
                 entry["photo_ok"] = True
                 entry["url"] = item["url"]
                 entry["title"] = item["title"]
@@ -2708,27 +3789,41 @@ def main():
             entry["model_key"] = model_key
             entry["verified_model"] = verified_model
             seen[item["id"]] = entry
-            time.sleep(2)
+            time.sleep(INTER_ITEM_DELAY)
         except Exception as e:
             print("Ошибка при обработке объявления", item["id"], ":", e)
         finally:
             save_seen(seen)
 
+    # Домашние дела (отметка исчезнувших объявлений и досбор ключей) идут ПОСЛЕ
+    # разбора свежих лотов: раньше они шли до него, каждое делает сетевые запросы и
+    # съедало время прогона, из-за чего уведомление о новом лоте уходило позже.
+    seen = process_disappeared_ads(seen, current_ids)
+    process_remigrate_live_batch(subscribers)
+
     known_anomalies = load_json(ANOMALY_STATE_FILE, {})
-    new_anomalies = [a for a in find_price_anomalies() if a["group_key"] not in known_anomalies]
-    if new_anomalies:
-        lines = ["🔍 Подозрительный разброс цен по некоторым model_key — либо разные модели "
-                  "слиплись в один ключ, либо просто мусорное/шуточное объявление:"]
-        for a in new_anomalies[:5]:
-            note = " без учёта выбросов" if a.get("trimmed") else ""
+    anomalies = find_price_anomalies()
+    merged = [a for a in anomalies
+              if a["kind"] == "merged"
+              and known_anomalies.get(a["group_key"], {}).get("kind") != "merged"]
+    outliers = [a for a in anomalies if a["kind"] == "outlier"]
+    if merged:
+        lines = ["🔍 Похоже, в один model_key слиплись разные модели — цены внутри ключа "
+                 "распались на несколько коридоров:"]
+        for a in merged[:5]:
             lines.append(
-                f"- {a['label']} (×{a['ratio']:.1f}, {a['count']} лотов{note}): "
-                f"{a['min_price']} TJS «{a['min_title']}» … {a['max_price']} TJS «{a['max_title']}»"
+                f"- {a['label']} ({a['count']} лотов): коридоры "
+                + ", ".join(f"{c[0]}–{c[-1]}" for c in a["clusters"])
+                + f" TJS; примеры: «{a['min_title']}» … «{a['max_title']}»"
             )
-        lines.append("\nПолный список — /anomalies")
+        lines.append(f"\nОдиночных выбросов в других группах (ключ, скорее всего, чистый): {len(outliers)}")
+        lines.append("\nПолный разбор — /anomalies")
         alert_owner("\n".join(lines))
-        for a in new_anomalies:
-            known_anomalies[a["group_key"]] = {"first_seen": time.strftime("%Y-%m-%d"), "ratio": round(a["ratio"], 2)}
+    if anomalies:
+        for a in anomalies:
+            state = known_anomalies.setdefault(a["group_key"], {"first_seen": time.strftime("%Y-%m-%d")})
+            state["ratio"] = a["ratio"]
+            state["kind"] = a["kind"]
         with open(ANOMALY_STATE_FILE, "w", encoding="utf-8") as f:
             json.dump(known_anomalies, f, ensure_ascii=False, indent=2)
 

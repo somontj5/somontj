@@ -33285,5 +33285,25 @@
     "condition": "Б/у",
     "model_key": "apple 7 plus",
     "verified_model": null
+  },
+  "15211128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17369152_apple-iphone-11-128-gb-black/",
+    "title": "Apple iPhone 11, 128 gb, Black",
+    "price": 3000,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "17369157": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17369157_poko-i-aifon-ob-teoefon-napishite-v-vatsap/",
+    "title": "Xiaomi Poco M4 Pro 5G",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "poco m4 pro",
+    "verified_model": null
   }
 }

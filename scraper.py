@@ -55,6 +55,9 @@ DEFAULT_MAX_PRICE = int(os.environ.get("DEFAULT_MAX_PRICE", "0"))
 # минут, следующие запуски ждут в очереди, и уведомление приходит по объявлению,
 # которому уже 11 минут. Короткий прогон = уведомление почти сразу.
 RUN_TIME_BUDGET_SECONDS = float(os.environ.get("RUN_TIME_BUDGET_SECONDS", "240"))
+# Входящие от воркеров: merge_workers.py складывает сюда находки всех
+# worker-N, а этот прогон их разбирает. Воркеры сами пишут только в свои ветки.
+WORKER_INBOX_FILE = os.environ.get("WORKER_INBOX", "worker_inbox.jsonl")
 RUN_START_TS = time.time()
 
 def run_budget_exhausted():
@@ -2731,6 +2734,52 @@ def parse_ad_page(soup):
     }
 
 
+def load_worker_inbox():
+    """Находки воркеров из worker_inbox.jsonl (их собрал merge_workers.py).
+
+    Воркеры опрашивают выдачу раз в 15 секунд, поэтому у них первыми оказываются
+    самые свежие объявления — их и разбираем в первую очередь. Записи без id или
+    url отбрасываем: без них лот нечем ни запомнить, ни открыть.
+    """
+    if not os.path.exists(WORKER_INBOX_FILE):
+        return []
+    out = []
+    try:
+        with open(WORKER_INBOX_FILE, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    rec = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+                if rec.get("id") and rec.get("url"):
+                    out.append(rec)
+    except Exception as e:
+        print(f"⚠️ {WORKER_INBOX_FILE} не прочитался: {e}")
+    # Свежие находки первыми.
+    out.sort(key=lambda r: r.get("found_at") or "", reverse=True)
+    return out
+
+
+def prune_worker_inbox(processed_ids):
+    """Убрать из входящих то, что этот прогон уже разобрал.
+
+    Файл перезаписывается атомарно: обрыв на середине не оставит пустой список,
+    а неразобранные находки останутся для следующего запуска.
+    """
+    if not os.path.exists(WORKER_INBOX_FILE):
+        return 0
+    rest = [r for r in load_worker_inbox() if r.get("id") not in processed_ids]
+    tmp = WORKER_INBOX_FILE + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        for r in rest:
+            f.write(json.dumps(r, ensure_ascii=False) + "\n")
+    os.replace(tmp, WORKER_INBOX_FILE)
+    return len(rest)
+
+
 def fetch_detail(ad_url):
     resp = requests.get(ad_url, headers=HEADERS, timeout=20)
     resp.raise_for_status()
@@ -3449,7 +3498,16 @@ def main():
     except Exception as e:
         print("Не удалось загрузить Somon.tj:", e)
         report_fetch_result(health, success=False)
-        return
+        # Не выходим: находки воркеров лежат в worker_inbox.jsonl и их надо разобрать
+        # даже если сама выдача сейчас недоступна.
+        listings, soup = [], BeautifulSoup("<html></html>", "html.parser")
+
+    worker_items = load_worker_inbox()
+    if worker_items:
+        have = {it["id"] for it in listings}
+        fresh = [w for w in worker_items if w["id"] not in have]
+        listings = fresh + listings
+        print(f"📥 от воркеров: {len(fresh)} новых лотов (во входящих {len(worker_items)})")
 
     if not listings:
         print("Объявления не найдены:", soup.get_text()[:2000])
@@ -3826,6 +3884,12 @@ def main():
             state["kind"] = a["kind"]
         with open(ANOMALY_STATE_FILE, "w", encoding="utf-8") as f:
             json.dump(known_anomalies, f, ensure_ascii=False, indent=2)
+
+    # Лоты, попавшие в seen_ids.json, разобраны — убираем их из входящих воркеров,
+    # чтобы следующий запуск не тянул их заново. Остальное остаётся: если прогон
+    # прервался по бюджету времени, лот разберётся в следующий раз.
+    left = prune_worker_inbox(set(seen.keys()))
+    print(f"📤 во входящих воркеров осталось {left} лотов на следующий запуск")
 
 
 if __name__ == "__main__":

@@ -33420,5 +33420,42 @@
     "price": 700,
     "condition": "Б/у",
     "model_key": "oppo a17k"
+  },
+  "37056754": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17370567_inoi-a54/",
+    "title": "Inoi A54",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "67814256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17370678_apple-iphone-14-pro-max-256-gb-space-black/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb, Space Black",
+    "price": 5700,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
+  },
+  "52516256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17370525_apple-iphone-16-pro-max-256-gb-black-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
+    "price": 7099,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
+  },
+  "73705305": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17370530_teno-pop-5/",
+    "title": "Teno Pop 5",
+    "price": 380,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
   }
 }

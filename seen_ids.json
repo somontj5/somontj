@@ -32349,7 +32349,8 @@
     "title": "Samsung Galaxy А14 32Gb Vetnam 4G",
     "price": 945,
     "condition": "Б/у",
-    "model_key": "samsung а14"
+    "model_key": "samsung а14",
+    "sold_checked": true
   },
   "60097864": {
     "logged": true,
@@ -32773,5 +32774,14 @@
     "price": 8000,
     "condition": "Б/у",
     "model_key": "apple air"
+  },
+  "04116256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17363041_apple-iphone-16-pro-max-256-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
+    "price": 9500,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   }
 }

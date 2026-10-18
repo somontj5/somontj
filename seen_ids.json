@@ -32983,5 +32983,15 @@
     "price": 3799,
     "condition": "Б/у",
     "model_key": "apple 12 pro max"
+  },
+  "24512256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17366245_apple-iphone-12-pro-256-gb-graphite/",
+    "title": "Apple iPhone 12 pro, 256 gb, Graphite",
+    "price": 2799,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro",
+    "verified_model": null
   }
 }

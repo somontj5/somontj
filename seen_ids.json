@@ -33141,5 +33141,15 @@
     "price": 5000,
     "condition": "Б/у",
     "model_key": "apple 13 pro max"
+  },
+  "36806313": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17368063_redmi-not-13-pro/",
+    "title": "Xiaomi Redmi Note 13 Pro+",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "redmi note 13 pro plus",
+    "verified_model": null
   }
 }

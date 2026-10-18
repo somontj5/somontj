@@ -32912,5 +32912,20 @@
     "price": 2200,
     "condition": "Б/у",
     "model_key": "samsung а54"
+  },
+  "01012865": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17365970_telefon-redmi-10-pro-128-6gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi 10 pro 128/6Gb Glabal Version 5G",
+    "price": 1460,
+    "condition": "Б/у",
+    "model_key": "redmi 10 pro glabal"
+  },
+  "94412644": {
+    "logged": true
+  },
+  "59048324": {
+    "logged": true
   }
 }

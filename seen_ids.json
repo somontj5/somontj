@@ -33160,5 +33160,16 @@
     "price": 5000,
     "condition": "Б/у",
     "model_key": "vivo z 9 turbo plus"
+  },
+  "36850621": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17368506_samsung-s-21-ultra/",
+    "title": "Samsung Galaxy s 21 Ultra",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "samsung s 21 ultra",
+    "verified_model": null
   }
 }

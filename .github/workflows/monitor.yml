@@ -1,31 +1,52 @@
 name: Somon Monitor
 
+# ГЛАВНЫЙ процесс: собирает находки воркеров, разбирает их через Gemini, шлёт в
+# Telegram и пишет итог в ветку main. Только он имеет право писать в main — воркеры
+# пишут каждый в свою ветку, поэтому конфликтов push нет.
+#
+# Запускается:
+#   1) воркером через workflow_dispatch, как только тот нашёл новый лот;
+#   2) cron-job.org каждые 5 минут (страховка);
+#   3) своим расписанием GitHub (вторая страховка).
+# concurrency с cancel-in-progress: false — идущий разбор не обрывается, а один
+# ожидающий запуск подхватит всё, что нашли за это время. Так ни одна находка не теряется.
+
 on:
+  workflow_dispatch: {}
   repository_dispatch:
     types: [run-scraper]
-  # Расписание schedule УБРАНО: запуск делает внешний сервис (cron.org) каждую минуту
-  # через repository_dispatch (types: run-scraper). Прогон должен укладываться в минуту —
-  # иначе запуски выстраиваются в очередь (concurrency ниже) и уведомление приходит поздно.
-  workflow_dispatch: {}
+  schedule:
+    - cron: "*/10 * * * *"
 
 permissions:
   contents: write
 
 concurrency:
-  group: somon-monitor
+  group: somon-main
   cancel-in-progress: false
 
 jobs:
   check:
     runs-on: ubuntu-latest
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
       - run: pip install -r requirements.txt
+
+      - name: Собрать находки воркеров
+        run: |
+          git config user.name "somon-worker"
+          git config user.email "worker@users.noreply.github.com"
+          # Ветки воркеров — только чтение. Если ветки ещё нет, шаг не падает.
+          git fetch --no-tags origin '+refs/heads/worker-*:refs/remotes/origin/worker-*' || true
+          python merge_workers.py
 
       - name: Run scraper
         env:
@@ -39,11 +60,10 @@ jobs:
           GOOGLE_SEARCH_API_KEY: ${{ secrets.GOOGLE_SEARCH_API_KEY }}
           GOOGLE_SEARCH_API_KEY_2: ${{ secrets.GOOGLE_SEARCH_API_KEY_2 }}
           GOOGLE_SEARCH_CX: ${{ secrets.GOOGLE_SEARCH_CX }}
-          # Запуск раз в минуту от cron.org -> 60 прогонов в час.
-          RUNS_PER_HOUR: "60"
-          # Бюджет времени прогона: не даёт прогону растянуться и заблокировать очередь.
-          RUN_TIME_BUDGET_SECONDS: "240"
-          # Пауза между лотами внутри прогона.
+          # Главный процесс запускается каждые 5 минут (cron-job.org) -> 12 прогонов в час.
+          RUNS_PER_HOUR: "12"
+          # Разбор одного лота с Gemini долгий, поэтому бюджет времени больше, чем у воркера.
+          RUN_TIME_BUDGET_SECONDS: "1500"
           INTER_ITEM_DELAY: "0.5"
         run: python scraper.py
 
@@ -53,11 +73,10 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
 
-          for f in seen_ids.json price_history.jsonl searches.json telegram_offset.json rejected_lots.jsonl search_mode.json subscribers.json gemini_daily_usage.json search_provider_usage.json exchange_rate.json health_status.json min_profit.json min_confidence.json max_price.json known_anomalies.json seller_blacklist.json remigrate_live_state.json imei_tac.json; do
+          for f in seen_ids.json price_history.jsonl searches.json telegram_offset.json rejected_lots.jsonl search_mode.json subscribers.json gemini_daily_usage.json search_provider_usage.json search_daily_usage.json exchange_rate.json health_status.json min_profit.json min_confidence.json max_price.json known_anomalies.json seller_blacklist.json remigrate_live_state.json imei_tac.json worker_inbox.jsonl; do
             [ -f "$f" ] && git add "$f"
           done
-          # Копии повреждённого чёрного списка, если бот их отложил для разбора.
-          for f in seller_blacklist.json.corrupt-*.json; do
+          for f in seller_blacklist.json.corrupt-*; do
             [ -f "$f" ] && git add "$f"
           done
 
@@ -67,11 +86,6 @@ jobs:
             git commit -m "update state"
           fi
 
-          # Пуш с повторами. Одна неудачная попытка (rebase-конфликт, отказ push)
-          # молча выбрасывала ВСЁ состояние прогона, включая только что добавленные
-          # записи чёрного списка: по журналу видно десятки банов за 26-28 сентября,
-          # которых в seller_blacklist.json нет. Теперь несколько попыток и явная
-          # ошибка, если сохранить не удалось.
           for i in 1 2 3 4 5; do
             if git pull --rebase --autostash && git push; then
               echo "Состояние сохранено (попытка $i)."

@@ -32804,5 +32804,14 @@
     "price": 5800,
     "condition": "Б/у",
     "model_key": "xiaomi 14 12 512"
+  },
+  "97014128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17364970_apple-iphone-14-pro-max-128-gb-silver/",
+    "title": "Apple iPhone 14 Pro Max, 128 gb, Silver",
+    "price": 6500,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
   }
 }

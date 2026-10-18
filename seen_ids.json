@@ -32964,5 +32964,18 @@
     "condition": "Б/у",
     "model_key": "apple 13 pro",
     "verified_model": null
+  },
+  "61941300": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17366194_narkh-1300s-bo-kamtar-muomila-dorad/",
+    "title": "Infinix smart 20",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "infinix smart 20",
+    "verified_model": null
+  },
+  "17312128": {
+    "logged": true
   }
 }

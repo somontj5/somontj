@@ -32450,7 +32450,8 @@
     "title": "Samsung Galaxy S22 ultra",
     "price": 4000,
     "condition": "Б/у",
-    "model_key": "samsung s22 ultra"
+    "model_key": "samsung s22 ultra",
+    "sold_checked": true
   },
   "60702864": {
     "logged": true,
@@ -32835,5 +32836,14 @@
     "price": 4200,
     "condition": "Б/у",
     "model_key": "honor 600"
+  },
+  "36552451": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17365524_samsung-a51/",
+    "title": "Samsung Galaxy A51",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "samsung a51"
   }
 }

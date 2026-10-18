@@ -33237,5 +33237,24 @@
     "price": 1790,
     "condition": "Б/у",
     "model_key": "redmi note 14 pro"
+  },
+  "73688658": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17368865_telefon-redmi-8/",
+    "title": "Xiaomi Redmi 8",
+    "price": 740,
+    "condition": "Б/у",
+    "model_key": "redmi 8"
+  },
+  "73411256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17368734_apple-iphone-11-pro-256-gb-silver/",
+    "title": "Apple iPhone 11 Pro, 256 gb, Silver",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
   }
 }

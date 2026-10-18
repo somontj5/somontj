@@ -33004,6 +33004,14 @@
     "model_key": "apple 17 pro max"
   },
   "36641055": {
-    "logged": true
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17366410_samsung-a55/",
+    "title": "Samsung Galaxy A55",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "samsung a55",
+    "verified_model": null
   }
 }

@@ -34060,5 +34060,14 @@
     "price": 2350,
     "condition": "Б/у",
     "model_key": "samsung 54"
+  },
+  "37635014": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17376350_redmi-note-14pro-plus/",
+    "title": "Xiaomi Redmi Note 14 Pro plus 5G",
+    "price": 3500,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro plus"
   }
 }

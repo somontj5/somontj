@@ -33485,5 +33485,24 @@
     "price": 1950,
     "condition": "Б/у",
     "model_key": "tecno spark 40 pro"
+  },
+  "71663256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17371663_apple-iphone-xr-256-gb-black/",
+    "title": "Apple iPhone Xr, 256 gb, Black",
+    "price": 1799,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
+  },
+  "73717128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17371712_xiaomi-poco-x8-pro/",
+    "title": "Xiaomi Poco x8 pro",
+    "price": 4150,
+    "condition": "Б/у",
+    "model_key": "poco x8 pro"
   }
 }

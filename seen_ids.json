@@ -34190,6 +34190,30 @@
     "model_key": "redmi pro 10"
   },
   "92212565": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17375892_samsung-galaxy-21-256gb-carea-5g/",
+    "title": "Samsung Galaxy 21 256gb Carea 5G",
+    "price": 1960,
+    "condition": "Б/у",
+    "model_key": "samsung 21"
+  },
+  "37713022": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17377130_samsung-s22/",
+    "title": "Samsung Galaxy S 22",
+    "price": 3399,
+    "condition": "Б/у",
+    "model_key": "samsung s 22"
+  },
+  "60231264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17376023_samsung-galaxy-12-64gb-dual-sim/",
+    "title": "Samsung Galaxy 12 64Gb Dual sim",
+    "price": 860,
+    "condition": "Б/у",
+    "model_key": "samsung 12"
   }
 }

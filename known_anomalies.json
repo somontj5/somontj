@@ -129,5 +129,10 @@
     "first_seen": "2026-10-18",
     "ratio": 3.5,
     "kind": "wide"
+  },
+  "apple 15|128": {
+    "first_seen": "2026-10-19",
+    "ratio": 3.41,
+    "kind": "wide"
   }
 }

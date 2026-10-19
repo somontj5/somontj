@@ -34291,5 +34291,42 @@
     "price": 4098,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "87011128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17377870_apple-iphone-11-128-gb-white/",
+    "title": "Apple iPhone 11, 128 gb, White",
+    "price": 1399,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "37789264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17377892_apple-iphone-xr-64-gb-product-red/",
+    "title": "Apple iPhone Xr, 64 gb, Product Red",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "apple xr"
+  },
+  "81616128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17377816_apple-iphone-16-pro-128-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro, 128 gb, Desert Titanium",
+    "price": 8500,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro"
+  },
+  "81514128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17377815_apple-iphone-14-pro-128-gb-space-black/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Space Black",
+    "price": 5299,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

@@ -34262,5 +34262,15 @@
     "price": 1899,
     "condition": "Б/у",
     "model_key": null
+  },
+  "37696234": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17376962_samsung-a34/",
+    "title": "Samsung Galaxy A34",
+    "price": 1450,
+    "condition": "Б/у",
+    "model_key": "samsung a34",
+    "verified_model": null
   }
 }

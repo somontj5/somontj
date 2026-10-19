@@ -34002,5 +34002,23 @@
     "condition": "Б/у",
     "model_key": "apple 11 pro",
     "verified_model": null
+  },
+  "47119256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17374711_google-pixel-9-pro-xl-256gb/",
+    "title": "Google pixel 9 pro xl 256Gb",
+    "price": 6900,
+    "condition": "Б/у",
+    "model_key": "pixel 9 pro xl"
+  },
+  "73755564": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17375556_tank-4-super-amoled-smartfon-proektorom/",
+    "title": "Телефон Tank 4 super Amoled",
+    "price": 6200,
+    "condition": "Б/у",
+    "model_key": null
   }
 }

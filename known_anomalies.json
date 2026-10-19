@@ -2,7 +2,8 @@
   "apple 17 pro max|512": {
     "first_seen": "2026-10-18",
     "ratio": 9.73,
-    "kind": "merged"
+    "kind": "reviewed",
+    "reviewed_at": "2026-10-19"
   },
   "apple 7|128": {
     "first_seen": "2026-10-18",

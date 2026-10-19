@@ -33467,5 +33467,14 @@
     "condition": "Б/у",
     "model_key": "apple 11",
     "verified_model": null
+  },
+  "52211112": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16835221_nokia-1112/",
+    "title": "Nokia 1112",
+    "price": 99,
+    "condition": "Б/у",
+    "model_key": "nokia 1112"
   }
 }

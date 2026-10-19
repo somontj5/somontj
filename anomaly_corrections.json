@@ -1,0 +1,44 @@
+{
+  "01717512": {
+    "action": "exclude",
+    "group_key": "apple 17 pro max|512",
+    "reason": "Продается копия из Тайланда по заниженной цене 1500 сомони, в IMEI указан iPhone Xr",
+    "reviewed_at": "2026-10-19T03:37:46",
+    "source": "gemini-review"
+  },
+  "10817512": {
+    "action": "exclude",
+    "group_key": "apple 17 pro max|512",
+    "reason": "Продается копия из Тайланда по заниженной цене 1500 сомони, в IMEI указан iPhone Xr",
+    "reviewed_at": "2026-10-19T03:37:46",
+    "source": "gemini-review"
+  },
+  "23317512": {
+    "action": "exclude",
+    "group_key": "apple 17 pro max|512",
+    "reason": "Продается копия из Тайланда по заниженной цене 1500 сомони, в IMEI указан iPhone Xr",
+    "reviewed_at": "2026-10-19T03:37:46",
+    "source": "gemini-review"
+  },
+  "33317512": {
+    "action": "exclude",
+    "group_key": "apple 17 pro max|512",
+    "reason": "В описании указано '17 про мах копя люкс' и 'Дубликат'",
+    "reviewed_at": "2026-10-19T03:37:46",
+    "source": "gemini-review"
+  },
+  "36117512": {
+    "action": "exclude",
+    "group_key": "apple 17 pro max|512",
+    "reason": "Страница недоступна или аналогична остальным репликам",
+    "reviewed_at": "2026-10-19T03:37:46",
+    "source": "gemini-review"
+  },
+  "39617512": {
+    "action": "exclude",
+    "group_key": "apple 17 pro max|512",
+    "reason": "Продается копия из Тайланда по заниженной цене 1599 сомони, в IMEI указан iPhone Xr",
+    "reviewed_at": "2026-10-19T03:37:46",
+    "source": "gemini-review"
+  }
+}

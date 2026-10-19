@@ -33613,5 +33613,23 @@
     "price": 1340,
     "condition": "Б/у",
     "model_key": "samsung а51"
+  },
+  "29417256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17372294_apple-iphone-17-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
+    "price": 9000,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
+  },
+  "30012645": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17372300_telefon-samsung-a12-64gb-vetnam-5g/",
+    "title": "Samsung Самсунг А12 64Gb Vetnam 5G",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "samsung самсунг а12"
   }
 }

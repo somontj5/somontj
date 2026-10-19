@@ -1,0 +1,54 @@
+name: Somon Bot
+
+# Постоянный слушатель команд Telegram. Зачем отдельный процесс: прогон главного
+# процесса идёт минутами и завершается, поэтому команды и нажатия кнопок ждали
+# следующего прогона. Здесь длинный опрос (getUpdates timeout=50) крутится
+# непрерывно, и бот отвечает сразу после нажатия.
+#
+# Обработчики не дублируются: слушатель вызывает те же функции из scraper.py.
+# В главном процессе опрос отключён (SKIP_TELEGRAM_POLL=1), чтобы два процесса не
+# делили один offset и не теряли команды.
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    # Перезапуск каждые 6 часов: GitHub ограничивает задание 6 часами,
+    # а слушатель сам выходит через 5 ч 40 мин.
+    - cron: "23 */6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: somon-bot
+  cancel-in-progress: true
+
+jobs:
+  listen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install -r requirements.txt
+
+      - name: Слушать команды
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
+          # Длинный опрос: ответ приходит сразу с командой.
+          TELEGRAM_LONG_POLL: "1"
+          BOT_MAX_RUNTIME: "20400"
+          BOT_COMMIT_EVERY: "300"
+          BOT_POLL_PAUSE: "1"
+          # Слушатель коммитит только смещение и служебный файл, остальное — прогон.
+          BOT_SKIP_FILES: "1"
+        run: python bot.py

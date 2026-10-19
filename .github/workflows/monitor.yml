@@ -65,6 +65,9 @@ jobs:
           # Разбор одного лота с Gemini долгий, поэтому бюджет времени больше, чем у воркера.
           RUN_TIME_BUDGET_SECONDS: "1500"
           INTER_ITEM_DELAY: "0.5"
+          # Команды и кнопки обрабатывает постоянный слушатель bot.py — здесь опрос
+          # отключён, иначе два процесса делили бы один offset Telegram.
+          SKIP_TELEGRAM_POLL: "1"
         run: python scraper.py
 
       - name: Save results back to repo
@@ -73,7 +76,7 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
 
-          for f in seen_ids.json price_history.jsonl searches.json telegram_offset.json rejected_lots.jsonl search_mode.json subscribers.json gemini_daily_usage.json search_provider_usage.json search_daily_usage.json exchange_rate.json health_status.json min_profit.json min_confidence.json max_price.json known_anomalies.json seller_blacklist.json remigrate_live_state.json imei_tac.json worker_inbox.jsonl; do
+          for f in seen_ids.json price_history.jsonl searches.json telegram_offset.json rejected_lots.jsonl search_mode.json subscribers.json gemini_daily_usage.json search_provider_usage.json search_daily_usage.json exchange_rate.json health_status.json min_profit.json min_confidence.json max_price.json known_anomalies.json seller_blacklist.json remigrate_live_state.json imei_tac.json worker_inbox.jsonl bot_setup.json; do
             [ -f "$f" ] && git add "$f"
           done
           for f in seller_blacklist.json.corrupt-*; do

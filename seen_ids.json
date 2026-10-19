@@ -33824,5 +33824,15 @@
     "condition": "Б/у",
     "model_key": "samsung s21",
     "verified_model": null
+  },
+  "73736858": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17373685_tecno-spark-8c/",
+    "title": "Tecno spark 8c",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "tecno spark 8c",
+    "verified_model": null
   }
 }

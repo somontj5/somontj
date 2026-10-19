@@ -40,5 +40,13 @@
     "reason": "Продается копия из Тайланда по заниженной цене 1599 сомони, в IMEI указан iPhone Xr",
     "reviewed_at": "2026-10-19T03:37:46",
     "source": "gemini-review"
+  },
+  "44237128": {
+    "group_key": "apple 7|128",
+    "memory_gb": 128,
+    "price": 390,
+    "reason": "Цена в тексте страницы составляет 390 c., а не 499 c.",
+    "reviewed_at": "2026-10-19T08:37:50",
+    "source": "gemini-review"
   }
 }

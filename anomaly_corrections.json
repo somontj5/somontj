@@ -58,6 +58,15 @@
     "reviewed_at": "2026-10-19T08:37:50",
     "source": "gemini-review"
   },
+  "45715256": {
+    "group_key": "apple 15 pro max|256",
+    "memory_gb": 256,
+    "model_key": "apple 15 pro max",
+    "price": 4500,
+    "reason": "На странице указана актуальная цена 4500 сомони вместо старой 5000 сомони",
+    "reviewed_at": "2026-10-19T10:49:43",
+    "source": "gemini-review"
+  },
   "47916256": {
     "action": "exclude",
     "group_key": "apple 16 pro max|256",

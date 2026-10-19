@@ -33928,5 +33928,32 @@
     "price": 1266,
     "condition": "Б/у",
     "model_key": "redmi 14c"
+  },
+  "73722377": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17372237_tecno-pova-7-neo/",
+    "title": "Tecno Pova 7 Neo, 256gb",
+    "price": 2150,
+    "condition": "Б/у",
+    "model_key": "tecno pova 7 neo"
+  },
+  "35102565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17372235_telefon-redmi-note-10pro-256gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 10pro, 256gb Glabal Version 5G",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "redmi note 10pro"
+  },
+  "80142565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17372180_telefon-redmi-note-14-256gb-5g/",
+    "title": "Xiaomi Redmi Note 14, 256gb 5G",
+    "price": 1699,
+    "condition": "Б/у",
+    "model_key": "redmi note 14"
   }
 }

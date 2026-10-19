@@ -20,7 +20,8 @@
   "apple 16 pro max|256": {
     "first_seen": "2026-10-18",
     "ratio": 13.64,
-    "kind": "outlier"
+    "kind": "reviewed",
+    "reviewed_at": "2026-10-19"
   },
   "apple 13 pro max|128": {
     "first_seen": "2026-10-18",

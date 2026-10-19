@@ -13,6 +13,15 @@
     "reviewed_at": "2026-10-19T03:37:46",
     "source": "gemini-review"
   },
+  "12616256": {
+    "group_key": "apple 16 pro max|256",
+    "memory_gb": 256,
+    "model_key": "apple 15 pro max",
+    "price": 880,
+    "reason": "В блоке IMEI указана модель APPLE iPhone 15 Pro Max (A3105).",
+    "reviewed_at": "2026-10-19T09:13:08",
+    "source": "gemini-review"
+  },
   "23317512": {
     "action": "exclude",
     "group_key": "apple 17 pro max|512",
@@ -47,6 +56,13 @@
     "price": 390,
     "reason": "Цена в тексте страницы составляет 390 c., а не 499 c.",
     "reviewed_at": "2026-10-19T08:37:50",
+    "source": "gemini-review"
+  },
+  "47916256": {
+    "action": "exclude",
+    "group_key": "apple 16 pro max|256",
+    "reason": "В блоке IMEI указана модель XIAOMI MI NOTE 10 (M2101K7AG).",
+    "reviewed_at": "2026-10-19T09:13:08",
     "source": "gemini-review"
   },
   "51114256": {

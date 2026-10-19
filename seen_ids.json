@@ -34143,5 +34143,53 @@
     "price": 820,
     "condition": "Б/у",
     "model_key": "redmi 12s"
+  },
+  "59461332": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17375946_samsung-galaxy-13-32gb-vetnam/",
+    "title": "Samsung Galaxy 13 32Gb Vetnam",
+    "price": 936,
+    "condition": "Б/у",
+    "model_key": "samsung 13"
+  },
+  "76009645": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17376009_xiaomi-redmi-64gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi 64Gb Glоbal Version 5G",
+    "price": 844,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "02642026": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17376002_xiaomi-poco-64gb-2026/",
+    "title": "Xiaomi poco 64gb 2026",
+    "price": 998,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "75977832": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17375977_xiaomi-redmi-note-8-32gb/",
+    "title": "Xiaomi Redmi Note 8 32Gb",
+    "price": 760,
+    "condition": "Б/у",
+    "model_key": "redmi note 8"
+  },
+  "56102565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17375956_xiaomi-redmi-pro-10-256gb-5g/",
+    "title": "Xiaomi Redmi pro 10 256gb 5G",
+    "price": 1553,
+    "condition": "Б/у",
+    "model_key": "redmi pro 10"
+  },
+  "92212565": {
+    "logged": true
   }
 }

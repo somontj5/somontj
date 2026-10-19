@@ -34097,5 +34097,24 @@
     "price": 3700,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "17376783": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17376783_bekhuda-zang-nazaned/",
+    "title": "Телефон Samsung",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
+  },
+  "37682121": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17376821_samsung-s21-ulitra/",
+    "title": "Samsung Galaxy s21 ulitra",
+    "price": 3099,
+    "condition": "Б/у",
+    "model_key": "samsung s21 ulitra"
   }
 }

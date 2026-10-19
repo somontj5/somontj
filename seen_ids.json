@@ -33786,5 +33786,33 @@
     "price": 1650,
     "condition": "Б/у",
     "model_key": "redmi note 14"
+  },
+  "73733859": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17373385_redmi-9/",
+    "title": "Xiaomi Redmi 9",
+    "price": 400,
+    "condition": "Б/у",
+    "model_key": "redmi 9",
+    "verified_model": null
+  },
+  "37336613": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17373366_redme-note-13/",
+    "title": "Xiaomi Redmi Note 13",
+    "price": 1650,
+    "condition": "Б/у",
+    "model_key": "redmi note 13"
+  },
+  "13313325": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17372133_telefon-samsung-a13-32gb-vetnam-5g/",
+    "title": "Samsung Galaxy А13 32Gb Vetnam 5G",
+    "price": 966,
+    "condition": "Б/у",
+    "model_key": "samsung а13"
   }
 }

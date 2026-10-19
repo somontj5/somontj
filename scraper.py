@@ -105,6 +105,8 @@ MIN_PROFIT_FILE = "min_profit.json"
 MIN_CONFIDENCE_FILE = "min_confidence.json"
 MAX_PRICE_FILE = "max_price.json"
 ANOMALY_STATE_FILE = "known_anomalies.json"
+ANOMALY_CORRECTIONS_FILE = "anomaly_corrections.json"   # правки полей после разбора аномалий (Gemini)
+ANOMALY_REASONS_FILE = "anomaly_reasons.jsonl"           # причины аномалий и подсказки для кода
 SELLER_BLACKLIST_FILE = "seller_blacklist.json"
 REMIGRATE_LIVE_STATE_FILE = "remigrate_live_state.json"
 REMIGRATE_LIVE_BATCH_SIZE = int(os.environ.get("REMIGRATE_LIVE_BATCH_SIZE", "20"))
@@ -1054,24 +1056,67 @@ def _cluster_prices(sorted_prices, gap_ratio):
     return clusters
 
 
-def find_price_anomalies(ratio_threshold=ANOMALY_RATIO_THRESHOLD, min_count=ANOMALY_MIN_COUNT):
+def load_corrections():
+    """Правки лотов, снятые разбором аномалий (anomaly_review.py).
+
+    Отдельный файл, а не правка журнала: price_history.jsonl — сырая история,
+    по ней видно, что парсер считал раньше. Ключ — id лота из базы.
+    """
+    data = load_json(ANOMALY_CORRECTIONS_FILE, {})
+    return data if isinstance(data, dict) else {}
+
+
+def save_corrections(corrections):
+    with open(ANOMALY_CORRECTIONS_FILE, "w", encoding="utf-8") as f:
+        json.dump(corrections, f, ensure_ascii=False, indent=2, sort_keys=True)
+
+
+def log_anomaly_reason(entry):
+    """Причина аномалии и подсказка для кода — в отдельный журнал.
+
+    Журнал читается командой /anomalyreasons: по нему правят сам парсер, чтобы
+    те же группы не приходилось разбирать снова.
+    """
+    with open(ANOMALY_REASONS_FILE, "a", encoding="utf-8") as f:
+        f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+
+
+def recent_anomaly_reasons(limit=10):
+    if not os.path.exists(ANOMALY_REASONS_FILE):
+        return []
+    rows = []
+    with open(ANOMALY_REASONS_FILE, "r", encoding="utf-8") as f:
+        for line in f:
+            try:
+                rows.append(json.loads(line))
+            except json.JSONDecodeError:
+                continue
+    return rows[-limit:]
+
+
+def find_price_anomalies(ratio_threshold=ANOMALY_RATIO_THRESHOLD, min_count=ANOMALY_MIN_COUNT, corrections=None):
     """Ищет группы, где в один model_key склеились РАЗНЫЕ устройства.
 
-    Раньше всё, что имело отношение max/min выше порога, объявлялось «разные модели
-    слиплись» — отсюда 11 ложных тревог подряд. Теперь ситуация разбирается по
-    кластерам цен и разделяется на три принципиально разных случая:
-
+    Ситуация разбирается по кластерам цен и разделяется на три случая:
       * kind="merged"  — в группе несколько полноценных кластеров (в каждом
-        >= min_count лотов): ключ действительно смешал разные модели — это в чат;
+        >= min_count лотов): ключ действительно смешал разные модели;
       * kind="outlier" — один крупный кластер + единичные нетипичные лоты
         (приманка, копия, запчасть): ключ чистый, пересчитывать его не нужно;
-      * kind="wide"    — один кластер, но разброс внутри него больше порога
-        (состояние/комплектация/город): тоже НЕ ошибка ключа, только информация.
+      * kind="wide"    — один кластер, но разброс внутри него больше порога.
 
-    Владельцу уведомление уходит только по "merged" — остальное копится в /anomalies.
+    Новое: слой исправлений ANOMALY_CORRECTIONS_FILE читается ПЕРВЫМ. Это правки,
+    которые внёс разбор аномалий через Gemini (anomaly_review.py), поэтому
+    разобранная группа больше не выглядит аномальной, а журнал price_history.jsonl
+    остаётся неизменным:
+      * {"action": "exclude"} — лот-аксессуар/приманка: в статистику не идёт;
+      * "model_key" / "memory_gb" / "price" — поле подменяется исправленным.
+
+    В каждой группе теперь лежит список lots (id, цена, ссылка, город, память,
+    состояние) — по нему разбор открывает страницы объявлений.
     """
     if not os.path.exists(PRICE_HISTORY_FILE):
         return []
+    corrections = corrections if corrections is not None else load_corrections()
     groups = {}
     with open(PRICE_HISTORY_FILE, "r", encoding="utf-8") as f:
         for line in f:
@@ -1081,21 +1126,38 @@ def find_price_anomalies(ratio_threshold=ANOMALY_RATIO_THRESHOLD, min_count=ANOM
                 continue
             if rec.get("type") not in ("market_point", "full_analysis"):
                 continue
-            price = rec.get("price")
+            lot_id = str(rec.get("id") or "")
+            corr = corrections.get(lot_id) or {}
+            if corr.get("action") == "exclude":
+                continue
+            price = corr.get("price") or rec.get("price")
             if not price or price < ANOMALY_MIN_PRICE:
                 continue
-            model_key = effective_model_key(rec)
+            try:
+                price = int(price)
+            except (TypeError, ValueError):
+                continue
+            model_key = corr.get("model_key") or effective_model_key(rec)
+            if corr.get("model_key") and not is_valid_model_key(corr["model_key"]):
+                model_key = effective_model_key(rec)
             if not model_key:
                 # «Телефон Samsung», лот без модели, аксессуар — группировать не с чем.
                 continue
-            groups.setdefault((model_key, record_memory(rec)), []).append((price, rec.get("title", "")))
+            memory = corr.get("memory_gb") or record_memory(rec)
+            groups.setdefault((model_key, memory), []).append({
+                "id": lot_id, "price": price, "title": rec.get("title") or "",
+                "url": rec.get("url") or "", "memory": memory,
+                "condition": rec.get("condition"),
+                "city": rec.get("city"), "published_at": rec.get("published_at"),
+                "corrected": bool(corr),
+            })
 
     anomalies = []
-    for (model_key, memory), entries in groups.items():
-        if len(entries) < min_count:
+    for (model_key, memory), lots in groups.items():
+        if len(lots) < min_count:
             continue
-        entries_sorted = sorted(entries, key=lambda e: e[0])
-        prices = [e[0] for e in entries_sorted]
+        lots_sorted = sorted(lots, key=lambda l: l["price"])
+        prices = [l["price"] for l in lots_sorted]
         clusters = _cluster_prices(prices, ANOMALY_CLUSTER_GAP)
         main = max(clusters, key=len)
         full = [c for c in clusters if len(c) >= min_count]
@@ -1118,18 +1180,19 @@ def find_price_anomalies(ratio_threshold=ANOMALY_RATIO_THRESHOLD, min_count=ANOM
             "model_key": model_key, "memory": memory,
             "label": f"{model_key} {memory}GB" if memory else f"{model_key} (память не указана)",
             "group_key": f"{model_key}|{memory or '?'}",
-            "count": len(entries),
+            "count": len(lots),
             "ratio": round(ratio_all if kind != "wide" else ratio_core, 2),
             "clusters": clusters,
             "cluster_sizes": [len(c) for c in clusters],
             "core_min": main[0], "core_max": main[-1],
-            "min_price": prices[0], "min_title": entries_sorted[0][1],
-            "max_price": prices[-1], "max_title": entries_sorted[-1][1],
+            "min_price": prices[0], "min_title": lots_sorted[0]["title"],
+            "max_price": prices[-1], "max_title": lots_sorted[-1]["title"],
+            "min_id": lots_sorted[0]["id"], "max_id": lots_sorted[-1]["id"],
+            "corrected": sum(1 for l in lots if l["corrected"]),
+            "lots": lots_sorted,
         })
     anomalies.sort(key=lambda a: ({"merged": 0, "outlier": 1, "wide": 2}[a["kind"]], -a["ratio"]))
     return anomalies
-
-
 def market_stats_for(query, condition, exclude_id):
     """Только для команды /price — Gemini эту сводку не получает. Принимает сырой
     текст запроса (а не готовый model_key): часть записей теперь имеет ключ вида
@@ -1720,6 +1783,8 @@ def section_markup(section):
         rows = [[{"text": "🔄 Пересчитать ключи", "callback_data": "remigrate"}],
                 [{"text": "🧩 Дособрать по IMEI", "callback_data": "remigrate_live"}],
                 [{"text": "📁 Отклонённые лоты", "callback_data": "rejected"}],
+                [{"text": "🩺 Разобрать аномалии", "callback_data": "anomaly_review"}],
+                [{"text": "📝 Причины аномалий", "callback_data": "anomaly_reasons"}],
                 [back]]
     else:
         rows = [[{"text": "🔍 Аномалии", "callback_data": "anomalies"},
@@ -2042,7 +2107,7 @@ def get_mode():
     return mode if mode in MODES else "params"
 
 
-BOT_COMMANDS = [('start', 'Начать работу, показать меню'), ('menu', 'Меню управления кнопками'), ('help', 'Полный список всех команд'), ('all', 'Режим: все объявления'), ('used', 'Режим: только б/у'), ('params', 'Режим: поиск по параметрам'), ('mode', 'Режим поиска (служебная)'), ('add', 'Добавить поиск: Название | слова | цена | память'), ('del', 'Удалить поиск по названию'), ('list', 'Список моих поисков'), ('minprofit', 'Минимальная выгода, TJS'), ('minconfidence', 'Минимальная уверенность Gemini, %'), ('maxprice', 'Потолок цены объявления, TJS'), ('price', 'Сводка цен по модели'), ('sold', 'Проданные телефоны по моделям'), ('anomalies', 'Проверить базу на разбросы цен'), ('remigrate', 'Пересчитать ключи всей базы'), ('remigrate_live', 'Дособрать модель по IMEI и пересчитать'), ('blacklist', 'Продавцы в чёрном списке'), ('blacklist_add', 'Заблокировать продавца вручную'), ('blacklist_del', 'Убрать продавца из чёрного списка'), ('stats', 'Расход лимитов и размер базы'), ('manual', 'Проверить объявление без фото'), ('bought', 'Подтвердить удачную покупку'), ('rejected', 'Файл со всеми отклонёнными лотами'), ('dbadd', 'Добавить запись в базу вручную'), ('subscribers', 'Сколько подписчиков'), ('stop', 'Отписаться от уведомлений')]
+BOT_COMMANDS = [('start', 'Начать работу, показать меню'), ('menu', 'Меню управления кнопками'), ('help', 'Полный список всех команд'), ('all', 'Режим: все объявления'), ('used', 'Режим: только б/у'), ('params', 'Режим: поиск по параметрам'), ('mode', 'Режим поиска (служебная)'), ('add', 'Добавить поиск: Название | слова | цена | память'), ('del', 'Удалить поиск по названию'), ('list', 'Список моих поисков'), ('minprofit', 'Минимальная выгода, TJS'), ('minconfidence', 'Минимальная уверенность Gemini, %'), ('maxprice', 'Потолок цены объявления, TJS'), ('price', 'Сводка цен по модели'), ('sold', 'Проданные телефоны по моделям'), ('anomalies', 'Проверить базу на разбросы цен'), ('fixanomalies', 'Разбор аномалий через Gemini: причины и правки'), ('anomalyreasons', 'Журнал причин аномалий и подсказок для кода'), ('remigrate', 'Пересчитать ключи всей базы'), ('remigrate_live', 'Дособрать модель по IMEI и пересчитать'), ('blacklist', 'Продавцы в чёрном списке'), ('blacklist_add', 'Заблокировать продавца вручную'), ('blacklist_del', 'Убрать продавца из чёрного списка'), ('stats', 'Расход лимитов и размер базы'), ('manual', 'Проверить объявление без фото'), ('bought', 'Подтвердить удачную покупку'), ('rejected', 'Файл со всеми отклонёнными лотами'), ('dbadd', 'Добавить запись в базу вручную'), ('subscribers', 'Сколько подписчиков'), ('stop', 'Отписаться от уведомлений')]
 
 HELP_TEXT = """📖 Все команды — по разделам.
 
@@ -2070,6 +2135,8 @@ HELP_TEXT = """📖 Все команды — по разделам.
 /remigrate_live — дособрать модель по IMEI и пересчитать
 /dbadd текст — добавить что угодно в базу вручную
 /rejected — файл со всеми отклонёнными лотами
+/fixanomalies — разбор аномалий: Gemini читает страницы лотов, правит поля и пишет причину
+/anomalyreasons — журнал причин аномалий и подсказок для кода
 
 ▫️ Продавцы
 /blacklist — список продавцов (причина + объявление-повод)
@@ -2191,6 +2258,9 @@ def check_telegram_commands(searches, subscribers):
             else:
                 command = {"anomalies": "/anomalies", "sold": "/sold",
                            "blacklist": "/blacklist", "remigrate": "/remigrate",
+                           "remigrate_live": "/remigrate_live", "rejected": "/rejected",
+                           "stats": "/stats", "anomaly_review": "/fixanomalies",
+                           "anomaly_reasons": "/anomalyreasons",
                            "help": "/help"}.get(data, "")
             if not command:
                 send_main_menu(chat_id, "Обновляю меню.")
@@ -2428,6 +2498,7 @@ def check_telegram_commands(searches, subscribers):
                     f"🔍 Склейка ключа (разные модели в одном ключе): {len(merged)}; "
                     f"одиночные выбросы: {len(outliers)}; обычный широкий разброс: {len(wide)}",
                     "Разбирать нужно только первую группу — остальное не ошибка ключа.",
+                    "Причины и правки по страницам лотов — /fixanomalies, журнал — /anomalyreasons.",
                 ]
                 for a in merged[:10]:
                     lines.append(
@@ -2455,6 +2526,58 @@ def check_telegram_commands(searches, subscribers):
                     send_telegram(chat_id, "\n".join(lines[:3]) + "\n\nСписок длинный — отправляю файлом.")
                     send_telegram_document(chat_id, "anomalies.txt", text,
                                            caption=f"Подозрительные model_key: {len(anomalies)}")
+                else:
+                    send_telegram(chat_id, text)
+        elif command == "/fixanomalies":
+            if chat_id != TELEGRAM_CHAT_ID:
+                send_telegram(chat_id, "⛔ Разбор аномалий доступен только владельцу бота.")
+            else:
+                send_telegram(chat_id, "🩺 Разбираю аномалии: скачиваю страницы лотов и отдаю текст Gemini…")
+                try:
+                    import anomaly_review
+                    report = anomaly_review.run_once(
+                        limit=anomaly_review.ANOMALY_REVIEW_PER_RUN,
+                        notify=lambda text: send_telegram(chat_id, text))
+                    if not report["reviewed"]:
+                        send_telegram(chat_id, f"Разбирать нечего: аномальных групп нужных типов нет "
+                                               f"(всего найдено {report['found']}).")
+                    else:
+                        lines = [f"🩺 Разобрано групп: {len(report['reviewed'])} "
+                                 f"(найдено аномалий {report['found']}, правок в базе {report['corrections_total']})."]
+                        for r in report["reviewed"]:
+                            lines.append(f"\n• {r['label']} — {r['verdict']}"
+                                         f" (правок {len(r['applied'])}, исключено {len(r['excluded'])})")
+                            if r.get("summary"):
+                                lines.append(f"  {r['summary']}")
+                            if r.get("code_hint"):
+                                lines.append(f"  💡 {r['code_hint']}")
+                        if report["errors"]:
+                            lines.append("\n⚠️ " + "; ".join(report["errors"][:3]))
+                        lines.append(f"\nЖурнал причин: {ANOMALY_REASONS_FILE}, правки: {ANOMALY_CORRECTIONS_FILE}")
+                        send_telegram(chat_id, "\n".join(lines))
+                except Exception as e:
+                    send_telegram(chat_id, f"⚠️ Разбор аномалий не удался: {type(e).__name__}: {str(e)[:200]}")
+        elif command == "/anomalyreasons":
+            rows = recent_anomaly_reasons(10)
+            if not rows:
+                send_telegram(chat_id, f"Журнал причин аномалий пуст ({ANOMALY_REASONS_FILE}). "
+                                       f"Запусти разбор: /fixanomalies")
+            else:
+                lines = [f"📝 Последние разборы аномалий ({len(rows)} из журнала):"]
+                for r in reversed(rows):
+                    lines.append(f"\n• {r.get('label') or r.get('group_key')} — {r.get('verdict')}"
+                                 f" ({r.get('reviewed_at')})")
+                    if r.get("summary"):
+                        lines.append(f"  {r['summary']}")
+                    if r.get("code_hint"):
+                        lines.append(f"  💡 {r['code_hint']}")
+                    if r.get("applied") or r.get("excluded"):
+                        lines.append(f"  правок: {len(r.get('applied') or [])}, "
+                                     f"исключено: {len(r.get('excluded') or [])}")
+                text = "\n".join(lines)
+                if len(text) > 3800:
+                    send_telegram(chat_id, "\n".join(lines[:6]) + "\n\nЖурнал длинный — отправляю файлом.")
+                    send_telegram_document(chat_id, "anomaly_reasons.txt", text, caption="Причины аномалий")
                 else:
                     send_telegram(chat_id, text)
         elif command == "/remigrate":
@@ -2585,7 +2708,7 @@ def check_telegram_commands(searches, subscribers):
                                     "/manual Название | Цена | Состояние | Описание — гипотетическая "
                                     "проверка объявления без фото (не сохраняется в базу)\n"
                                     "/bought ссылка — подтвердить удачную покупку по рекомендации бота\n"
-                                    "/rejected — файл со всеми отклонёнными лотами\n"
+                                    "/rejected — файл со всеми отклонёнными лотами\n/fixanomalies — разбор аномалий: Gemini читает страницы лотов, правит поля и пишет причину\n/anomalyreasons — журнал причин аномалий и подсказок для кода\n"
                                     "/blacklist — список продавцов в чёрном списке (причина + ссылка на "
                                     "объявление-повод)\n"
                                     "/blacklist_add ссылка_на_объявление | причина — заблокировать продавца вручную\n"
@@ -3458,6 +3581,69 @@ def parse_gemini_json(text):
     return {"market_verdict": "недостаточно данных", "reasoning": "не удалось разобрать ответ", "visible_defects": []}
 
 
+def gemini_json_call(prompt_text, usage, temperature=0.2):
+    """Один вызов Gemini с ответом строго в JSON (без фотографий).
+
+    Нужен разбору аномалий: страницы объявлений скачивает он сам (Gemini не умеет
+    ходить по ссылкам), а в модель уходят только текст страниц и служебные данные.
+    Учёт квоты, ротация сочетаний ключ+модель и повторы — те же, что в analyze_listing.
+
+    Возвращает (результат-dict, None) или (None, текст ошибки).
+    """
+    if len(prompt_text) > PROMPT_MAX_CHARS:
+        prompt_text = prompt_text[:PROMPT_MAX_CHARS] + "\n…(промпт обрезан по лимиту размера)"
+    if not pick_available_combo(usage):
+        return None, "дневный лимит Gemini исчерпан на всех сочетаниях ключ+модель"
+    payload = {
+        "contents": [{"parts": [{"text": prompt_text}]}],
+        "generationConfig": {"responseMimeType": "application/json", "temperature": temperature},
+    }
+    tried, last_error = [], None
+    while True:
+        combo = pick_available_combo(usage, exclude=tried)
+        if not combo:
+            break
+        url = ("https://generativelanguage.googleapis.com/v1beta/models/"
+               f"{combo['model']}:generateContent?key={combo['key']}")
+        combo_failed = False
+        for attempt in range(1, GEMINI_RETRIES_PER_COMBO + 1):
+            try:
+                resp = requests.post(url, json=payload, timeout=90)
+            except Exception as e:
+                last_error = f"сбой сети: {type(e).__name__}"
+                if attempt < GEMINI_RETRIES_PER_COMBO:
+                    time.sleep(GEMINI_RETRY_DELAY * attempt)
+                    continue
+                combo_failed = True
+                break
+            if resp.ok:
+                usage[combo["id"]] = usage.get(combo["id"], 0) + 1
+                save_daily_usage(GEMINI_DAILY_FILE, usage)
+                try:
+                    text = resp.json()["candidates"][0]["content"]["parts"][0]["text"]
+                except Exception as e:
+                    return None, f"ответ без разбираемого текста: {type(e).__name__}"
+                result = parse_gemini_json(text)
+                if isinstance(result, dict) and result.get("reasoning") == "не удалось разобрать ответ":
+                    return None, "Gemini вернул не JSON"
+                return result, None
+            code = resp.status_code
+            last_error = f"HTTP {code}"
+            if code == 429:
+                usage[combo["id"]] = GEMINI_DAILY_LIMIT_PER_COMBO
+                save_daily_usage(GEMINI_DAILY_FILE, usage)
+                combo_failed = True
+                break
+            if code >= 500 and attempt < GEMINI_RETRIES_PER_COMBO:
+                time.sleep(GEMINI_RETRY_DELAY * attempt)
+                continue
+            combo_failed = True
+            break
+        if combo_failed:
+            tried.append(combo["id"])
+    return None, f"все сочетания не сработали ({', '.join(tried) or 'нет доступных'}): {last_error}"
+
+
 def analyze_listing(item, photo_urls, similar_examples, confirmed_good_calls, confirmed_sales, web_results, manual_notes, usd_rate, usage, condition_note=None, no_photo_reason=None, market_points=None):
     if not pick_available_combo(usage):
         return {"market_verdict": "недостаточно данных",
@@ -4085,7 +4271,7 @@ def main():
     anomalies = find_price_anomalies()
     merged = [a for a in anomalies
               if a["kind"] == "merged"
-              and known_anomalies.get(a["group_key"], {}).get("kind") != "merged"]
+              and known_anomalies.get(a["group_key"], {}).get("kind") not in ("merged", "reviewed")]
     outliers = [a for a in anomalies if a["kind"] == "outlier"]
     if merged:
         lines = ["🔍 Похоже, в один model_key слиплись разные модели — цены внутри ключа "
@@ -4097,7 +4283,7 @@ def main():
                 + f" TJS; примеры: «{a['min_title']}» … «{a['max_title']}»"
             )
         lines.append(f"\nОдиночных выбросов в других группах (ключ, скорее всего, чистый): {len(outliers)}")
-        lines.append("\nПолный разбор — /anomalies")
+        lines.append("\nПричины и правки — /fixanomalies, сводка — /anomalies")
         alert_owner("\n".join(lines))
     if anomalies:
         for a in anomalies:
@@ -4110,6 +4296,20 @@ def main():
     # Лоты, попавшие в seen_ids.json, разобраны — убираем их из входящих воркеров,
     # чтобы следующий запуск не тянул их заново. Остальное остаётся: если прогон
     # прервался по бюджету времени, лот разберётся в следующий раз.
+    # Разбор аномалий через Gemini: открывает страницы лотов и убирает ложные
+    # аномалии. Включено по env ANOMALY_REVIEW_ENABLED=1, чтобы прогон не тратил
+    # квоту Gemini, когда разбор не нужен.
+    if os.environ.get("ANOMALY_REVIEW_ENABLED") == "1":
+        try:
+            import anomaly_review
+            review = anomaly_review.run_once(
+                limit=int(os.environ.get("ANOMALY_REVIEW_PER_RUN", "0")
+                          or anomaly_review.ANOMALY_REVIEW_PER_RUN))
+            for r in review["reviewed"]:
+                print(f"🩺 разобран {r['label']}: {r['verdict']}")
+        except Exception as e:
+            print(f"⚠️ разбор аномалий не удался: {type(e).__name__}: {str(e)[:200]}")
+
     left = prune_worker_inbox(set(seen.keys()))
     print(f"📤 во входящих воркеров осталось {left} лотов на следующий запуск")
 

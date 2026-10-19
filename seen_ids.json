@@ -514,8 +514,8 @@
   "41282025": {
     "logged": true,
     "notified": true,
-    "photo_ok": false,
-    "condition": "Новый",
+    "photo_ok": true,
+    "condition": "Б/у",
     "memory": 128,
     "official_fields": {
       "city": null,
@@ -530,7 +530,11 @@
       "overall_visual_condition": "неизвестно",
       "visible_defects": [],
       "raw_text": "Анализ не удался"
-    }
+    },
+    "url": "https://m.somon.tj/adv/17376164_xiaomi-redmi-14-128gb-2025/",
+    "title": "Xiaomi Redmi 14 128gb 2025",
+    "price": 1288,
+    "model_key": "redmi 14"
   },
   "19744864": {
     "logged": true,
@@ -34047,5 +34051,14 @@
     "price": 1460,
     "condition": "Б/у",
     "model_key": "redmi note"
+  },
+  "15554256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17376155_samsung-galaxy-54-256gb-vetnam/",
+    "title": "Samsung Galaxy 54 256gb Vetnam",
+    "price": 2350,
+    "condition": "Б/у",
+    "model_key": "samsung 54"
   }
 }

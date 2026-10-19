@@ -33814,5 +33814,15 @@
     "price": 966,
     "condition": "Б/у",
     "model_key": "samsung а13"
+  },
+  "73409215": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17373409_s-21-5g/",
+    "title": "Samsung galaxy S21 5G",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "samsung s21",
+    "verified_model": null
   }
 }

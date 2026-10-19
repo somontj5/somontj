@@ -33476,5 +33476,14 @@
     "price": 99,
     "condition": "Б/у",
     "model_key": "nokia 1112"
+  },
+  "37165340": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17371653_tecno-spark-40-pro/",
+    "title": "Tecno Spark 40 Pro",
+    "price": 1950,
+    "condition": "Б/у",
+    "model_key": "tecno spark 40 pro"
   }
 }

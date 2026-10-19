@@ -34078,5 +34078,15 @@
     "price": 3200,
     "condition": "Б/у",
     "model_key": "apple 12 pro"
+  },
+  "37670320": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17376703_samsung-not-20-ultra/",
+    "title": "Samsung Galaxy Note 20 ultra",
+    "price": 2299,
+    "condition": "Б/у",
+    "model_key": "samsung note 20 ultra",
+    "verified_model": null
   }
 }

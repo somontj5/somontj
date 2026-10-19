@@ -34116,5 +34116,32 @@
     "price": 3099,
     "condition": "Б/у",
     "model_key": "samsung s21 ulitra"
+  },
+  "58689128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17375868_samsung-galaxy-note-9-128gb-dual-sim/",
+    "title": "Samsung Galaxy Note 9 128gb Dual sim",
+    "price": 1385,
+    "condition": "Б/у",
+    "model_key": "samsung note 9"
+  },
+  "80145256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17375880_xiaomi-redmi-14-pro-5g-256/",
+    "title": "Xiaomi Redmi 14 pro 5G 256",
+    "price": 2450,
+    "condition": "Б/у",
+    "model_key": "redmi 14 pro"
+  },
+  "84812644": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17375848_telefon-redmi-12s-64gb-4g/",
+    "title": "Телефон Redmi 12S 64gb 4G",
+    "price": 820,
+    "condition": "Б/у",
+    "model_key": "redmi 12s"
   }
 }

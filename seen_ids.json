@@ -34215,5 +34215,24 @@
     "price": 860,
     "condition": "Б/у",
     "model_key": "samsung 12"
+  },
+  "76232512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17376232_apple-iphone-xr-512-gb-black/",
+    "title": "Apple iPhone Xr, 512 gb, Black",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
+  },
+  "61692565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17376169_xiaomi-redmi-not-256gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Not 256gb Glabal Version 5G",
+    "price": 1699,
+    "condition": "Б/у",
+    "model_key": "redmi not"
   }
 }

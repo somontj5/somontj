@@ -3,6 +3,7 @@ import json
 import re
 import time
 import base64
+import hashlib
 import statistics
 import requests
 from difflib import SequenceMatcher
@@ -1628,11 +1629,16 @@ def save_subscribers(subs):
 
 
 def send_telegram(chat_id, text, reply_markup=None):
-    """reply_markup — уже готовая JSON-строка инлайн-клавиатуры (main_menu_markup)."""
+    """Отправка сообщения.
+
+    reply_markup — готовая JSON-строка клавиатуры. Если её не передали, к сообщению
+    автоматически прикрепляется нижняя клавиатура разделов: раньше она уходила только
+    при /start, поэтому навигация пропадала из виду. Так кнопки остаются на месте в
+    любом ответе бота — и в уведомлениях о находках тоже.
+    """
     try:
         data = {"chat_id": chat_id, "text": text}
-        if reply_markup:
-            data["reply_markup"] = reply_markup
+        data["reply_markup"] = reply_markup if reply_markup else persistent_keyboard_markup()
         resp = requests.post(f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage",
                               data=data, timeout=15)
         if not resp.ok:
@@ -1650,36 +1656,125 @@ def answer_callback_query(callback_id, text=""):
         print("Не удалось ответить на нажатие кнопки:", e)
 
 
+REPLY_BUTTONS = [
+    ["🏠 Меню", "📖 Все команды"],
+    ["🔍 Аномалии", "✅ Продажи"],
+    ["⚙️ Режим", "💰 Пороги"],
+    ["🚫 Чёрный список", "📊 Статистика"],
+]
+
+# Нажатие текстовой кнопки приходит обычным сообщением, а не callback: переводим
+# подпись кнопки в команду или в раздел меню.
+TEXT_BUTTON_ACTIONS = {
+    "🏠 Меню": ("section", "main"),
+    "📖 Все команды": ("cmd", "/help"),
+    "🔍 Аномалии": ("cmd", "/anomalies"),
+    "✅ Продажи": ("cmd", "/sold"),
+    "⚙️ Режим": ("section", "mode"),
+    "💰 Пороги": ("section", "thresholds"),
+    "🚫 Чёрный список": ("cmd", "/blacklist"),
+    "📊 Статистика": ("cmd", "/stats"),
+}
+
+
+def persistent_keyboard_markup():
+    """Постоянная нижняя клавиатура: только разделы, по две кнопки в ряд.
+
+    Раньше вся навигация была одной инлайн-клавиатурой из 7 рядов по 3 кнопки с
+    длинными подписями — текст не помещался, а разделы были не видны, пока не
+    нажмёшь /start. Здесь подписи короткие (до 17 знаков), поэтому помещаются.
+    """
+    keyboard = [[{"text": label} for label in row] for row in REPLY_BUTTONS]
+    return json.dumps({"keyboard": keyboard, "resize_keyboard": True,
+                       "input_field_placeholder": "Команда или кнопка ниже"},
+                      ensure_ascii=False)
+
+
 def main_menu_markup():
-    """Клавиатура управления. Каждое нажатие сводится к уже существующей команде
-    (обработчики не дублируем) либо к правке порога через set_min_profit /
-    set_min_confidence / set_max_price."""
-    profit, conf, ceiling = get_min_profit(), get_min_confidence(), get_max_price()
-    rows = [
-        [{"text": "🔍 Аномалии цен", "callback_data": "anomalies"},
-         {"text": "✅ Продажи", "callback_data": "sold"}],
-        [{"text": "🚫 Чёрный список", "callback_data": "blacklist"},
-         {"text": "🔄 Пересчитать ключи", "callback_data": "remigrate"}],
-        [{"text": "🌐 Все", "callback_data": "mode:all"},
-         {"text": "🚶 Только Б/у", "callback_data": "mode:used"},
-         {"text": "⚙️ По параметрам", "callback_data": "mode:params"}],
-        [{"text": f"💰 Выгода: {profit} TJS", "callback_data": "settings:profit"},
-         {"text": "−100", "callback_data": "profit:-100"},
-         {"text": "+100", "callback_data": "profit:+100"}],
-        [{"text": f"🎯 Уверенность: {round(conf * 100)}%", "callback_data": "settings:conf"},
-         {"text": "−5%", "callback_data": "conf:-0.05"},
-         {"text": "+5%", "callback_data": "conf:+0.05"}],
-        [{"text": f"📉 Потолок: {ceiling or 'нет'}", "callback_data": "settings:ceiling"},
-         {"text": "−500", "callback_data": "ceiling:-500"},
-         {"text": "+500", "callback_data": "ceiling:+500"}],
-        [{"text": "📖 Помощь", "callback_data": "help"}],
-    ]
-    return json.dumps({"inline_keyboard": rows})
+    """Инлайн-меню разделов. Имя сохранено прежним: на него опираются все
+    существующие вызовы reply_markup=main_menu_markup()."""
+    return section_markup("main")
+
+
+def section_markup(section):
+    """Клавиатура одного раздела: подписи короткие, у каждого есть «Назад»."""
+    back = {"text": "⬅️ Назад", "callback_data": "nav:main"}
+    if section == "mode":
+        rows = [[{"text": "🌐 Все", "callback_data": "mode:all"}],
+                [{"text": "🚶 Только Б/у", "callback_data": "mode:used"}],
+                [{"text": "⚙️ По параметрам", "callback_data": "mode:params"}],
+                [back]]
+    elif section == "thresholds":
+        profit, conf, ceiling = get_min_profit(), get_min_confidence(), get_max_price()
+        rows = [[{"text": f"💰 Выгода: {profit} TJS", "callback_data": "settings:profit"}],
+                [{"text": "−100", "callback_data": "profit:-100"},
+                 {"text": "+100", "callback_data": "profit:+100"}],
+                [{"text": f"🎯 Уверенность: {round(conf * 100)}%", "callback_data": "settings:conf"}],
+                [{"text": "−5%", "callback_data": "conf:-0.05"},
+                 {"text": "+5%", "callback_data": "conf:+0.05"}],
+                [{"text": f"📉 Потолок: {ceiling or 'нет'}", "callback_data": "settings:ceiling"}],
+                [{"text": "−500", "callback_data": "ceiling:-500"},
+                 {"text": "+500", "callback_data": "ceiling:+500"}],
+                [back]]
+    elif section == "db":
+        rows = [[{"text": "🔄 Пересчитать ключи", "callback_data": "remigrate"}],
+                [{"text": "🧩 Дособрать по IMEI", "callback_data": "remigrate_live"}],
+                [{"text": "📁 Отклонённые лоты", "callback_data": "rejected"}],
+                [back]]
+    else:
+        rows = [[{"text": "🔍 Аномалии", "callback_data": "anomalies"},
+                 {"text": "✅ Продажи", "callback_data": "sold"}],
+                [{"text": "🚫 Чёрный список", "callback_data": "blacklist"},
+                 {"text": "📊 Статистика", "callback_data": "stats"}],
+                [{"text": "⚙️ Режим", "callback_data": "sec:mode"},
+                 {"text": "💰 Пороги", "callback_data": "sec:thresholds"}],
+                [{"text": "🗂 База", "callback_data": "sec:db"},
+                 {"text": "📖 Все команды", "callback_data": "help"}]]
+    return json.dumps({"inline_keyboard": rows}, ensure_ascii=False)
+
+
+SECTION_TITLE = {"mode": "⚙️ Режим поиска", "thresholds": "💰 Пороги уведомлений",
+                 "db": "🗂 Работа с базой", "main": "🏠 Разделы меню"}
+
+
+def send_section(chat_id, section):
+    """Показать раздел: заголовок + его кнопки."""
+    title = SECTION_TITLE.get(section, "🏠 Разделы меню")
+    if section == "thresholds":
+        body = (f"{title}\n\n"
+                f"Выгода: {get_min_profit()} TJS · Уверенность: {round(get_min_confidence() * 100)}% · "
+                f"Потолок: {get_max_price() or 'не задан'} TJS")
+    elif section == "mode":
+        body = f"{title}\n\nСейчас: {MODES[get_mode()]}"
+    elif section == "db":
+        body = f"{title}\n\nПересчёт ключей и досбор модели по IMEI идут по всей базе — это долго."
+    else:
+        body = f"{title}\n\nРазделы ниже. Все команды — кнопка «📖 Все команды» или /help."
+    send_telegram(chat_id, body, reply_markup=section_markup(section))
+
+
+def send_persistent_keyboard(chat_id):
+    """Включить нижнюю клавиатуру. Отправляется как отдельное сообщение, потому что
+    в одном сообщении Telegram допускает только одну клавиатуру: инлайн-меню разделов
+    и нижние кнопки вместе не отправить."""
+    send_telegram(chat_id, "⌨️ Нижние кнопки включены — они всегда под рукой.",
+                  reply_markup=persistent_keyboard_markup())
+
+
+def send_help(chat_id):
+    send_telegram(chat_id, HELP_TEXT, reply_markup=section_markup("main"))
 
 
 MENU_ACK = {"anomalies": "Смотрю базу…", "sold": "Собираю продажи…",
             "blacklist": "Открываю чёрный список…", "remigrate": "Пересчитываю ключи…",
-            "help": "Открываю помощь…", "menu": "Открываю меню…"}
+            "remigrate_live": "Собираю модели по IMEI…", "rejected": "Готовлю файл…",
+            "help": "Открываю список команд…", "menu": "Открываю меню…",
+            "stats": "Считаю статистику…", "nav:main": "Открываю меню…",
+            "sec:mode": "Открываю режим…", "sec:thresholds": "Открываю пороги…",
+            "sec:db": "Открываю работу с базой…",
+            "mode:all": "Ставлю режим «Все»…", "mode:used": "Ставлю режим «Только Б/у»…",
+            "mode:params": "Ставлю режим «По параметрам»…"}
+
 
 
 def send_main_menu(chat_id, note=None):
@@ -1690,21 +1785,29 @@ def send_main_menu(chat_id, note=None):
 
 
 def handle_menu_settings(chat_id, data):
-    """Кнопки порогов: показать текущее значение и шаги −/+. Возвращает True, если
-    нажатие обработано здесь и в цепочку команд идти не нужно."""
+    """Нажатия кнопок: разделы, «Назад» и пороги. Возвращает True, если нажатие
+    обработано здесь и в цепочку команд идти не нужно."""
+    if data == "nav:main":
+        send_section(chat_id, "main")
+        return True
+    if data.startswith("sec:"):
+        send_section(chat_id, data.split(":", 1)[1])
+        return True
     if data == "settings:profit":
         send_telegram(chat_id, f"💰 Минимальная выгода: {get_min_profit()} TJS.\n"
-                               "Меняйте кнопками −100 / +100 ниже.", reply_markup=main_menu_markup())
+                               "Шаги −100 / +100 — кнопками ниже.",
+                      reply_markup=section_markup("thresholds"))
         return True
     if data == "settings:conf":
         send_telegram(chat_id, f"🎯 Минимальная уверенность Gemini: {round(get_min_confidence() * 100)}%.\n"
-                               "Меняйте кнопками −5% / +5% ниже.", reply_markup=main_menu_markup())
+                               "Шаги −5% / +5% — кнопками ниже.",
+                      reply_markup=section_markup("thresholds"))
         return True
     if data == "settings:ceiling":
         ceiling = get_max_price()
         shown = f"{ceiling} TJS" if ceiling else "не задан (без ограничения)"
-        send_telegram(chat_id, f"📉 Потолок цены: {shown}.\nМеняйте кнопками −500 / +500 ниже.",
-                      reply_markup=main_menu_markup())
+        send_telegram(chat_id, f"📉 Потолок цены: {shown}.\nШаги −500 / +500 — кнопками ниже.",
+                      reply_markup=section_markup("thresholds"))
         return True
     for label, prefix, getter, setter, is_percent in (
             ("выгода", "profit:", get_min_profit, set_min_profit, False),
@@ -1726,10 +1829,9 @@ def handle_menu_settings(chat_id, data):
         setter(value)
         print(f"Настройка «{label}» изменена на {shown}")
         send_telegram(chat_id, f"✅ {label.capitalize()} теперь {shown}.",
-                      reply_markup=main_menu_markup())
+                      reply_markup=section_markup("thresholds"))
         return True
     return False
-
 
 def send_telegram_document(chat_id, filename, content_str, caption=""):
     try:
@@ -1940,11 +2042,119 @@ def get_mode():
     return mode if mode in MODES else "params"
 
 
+BOT_COMMANDS = [('start', 'Начать работу, показать меню'), ('menu', 'Меню управления кнопками'), ('help', 'Полный список всех команд'), ('all', 'Режим: все объявления'), ('used', 'Режим: только б/у'), ('params', 'Режим: поиск по параметрам'), ('mode', 'Режим поиска (служебная)'), ('add', 'Добавить поиск: Название | слова | цена | память'), ('del', 'Удалить поиск по названию'), ('list', 'Список моих поисков'), ('minprofit', 'Минимальная выгода, TJS'), ('minconfidence', 'Минимальная уверенность Gemini, %'), ('maxprice', 'Потолок цены объявления, TJS'), ('price', 'Сводка цен по модели'), ('sold', 'Проданные телефоны по моделям'), ('anomalies', 'Проверить базу на разбросы цен'), ('remigrate', 'Пересчитать ключи всей базы'), ('remigrate_live', 'Дособрать модель по IMEI и пересчитать'), ('blacklist', 'Продавцы в чёрном списке'), ('blacklist_add', 'Заблокировать продавца вручную'), ('blacklist_del', 'Убрать продавца из чёрного списка'), ('stats', 'Расход лимитов и размер базы'), ('manual', 'Проверить объявление без фото'), ('bought', 'Подтвердить удачную покупку'), ('rejected', 'Файл со всеми отклонёнными лотами'), ('dbadd', 'Добавить запись в базу вручную'), ('subscribers', 'Сколько подписчиков'), ('stop', 'Отписаться от уведомлений')]
+
+HELP_TEXT = """📖 Все команды — по разделам.
+
+⌨️ Клавиатура внизу всегда под рукой: разделы открываются кнопками, а любая команда ниже работает и текстом.
+
+▫️ Режим поиска
+/all /used /params — все / только б-у / по параметрам
+/mode — служебная запись режима
+
+▫️ Мои поиски
+/add Название | слова | макс_цена | мин_память — добавить
+/del Название — удалить
+/list — список поисков
+
+▫️ Пороги уведомлений
+/minprofit число — минимальная выгода, TJS (0 — выкл.)
+/minconfidence число — минимальная уверенность Gemini, % (0 — выкл.)
+/maxprice число — потолок цены объявления, TJS (0 — выкл.)
+
+▫️ База и цены
+/price Модель — грубая сводка цен по базе
+/sold — фактически проданные телефоны (цена, дата)
+/anomalies — проверить базу на разбросы цен
+/remigrate — пересчитать model_key всей базы
+/remigrate_live — дособрать модель по IMEI и пересчитать
+/dbadd текст — добавить что угодно в базу вручную
+/rejected — файл со всеми отклонёнными лотами
+
+▫️ Продавцы
+/blacklist — список продавцов (причина + объявление-повод)
+/blacklist_add ссылка | причина — заблокировать вручную
+/blacklist_del слаг_или_ссылка — убрать из чёрного списка
+
+▫️ Проверка объявления
+/manual Название | Цена | Состояние | Описание — без фото, в базу не пишется
+/bought ссылка — подтвердить удачную покупку по рекомендации
+
+▫️ Прочее
+/stats — расход лимитов и размер базы
+/subscribers — сколько подписчиков
+/stop — отписаться
+/menu — меню кнопками, /help — этот список"""
+
+BOT_SETUP_FILE = "bot_setup.json"
+# Полный список команд для /help (см. HELP_TEXT) и для setMyCommands.
+
+
+def telegram_api(method, payload=None):
+    """Вызов Bot API. Возвращает разобранный ответ или словарь с ошибкой."""
+    try:
+        r = requests.post(f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/{method}",
+                          data=payload or {}, timeout=30)
+        try:
+            body = r.json()
+        except ValueError:
+            return {"ok": False, "status": r.status_code, "text": r.text[:200]}
+        if not r.ok:
+            body.setdefault("status", r.status_code)
+        return body
+    except Exception as e:
+        return {"ok": False, "error": f"{type(e).__name__}: {str(e)[:200]}"}
+
+
+def register_bot_commands(force=False):
+    """Раз в сутки: снять webhook и опубликовать список команд для кнопки «/».
+
+    Если у бота когда-то был установлен webhook, метод getUpdates перестаёт отдавать
+    обновления — и бот «не слушает» команды вообще, хотя код исправен. Поэтому при
+    каждом запуске проверяем getWebhookInfo и снимаем webhook, а setMyCommands делает
+    все команды видимыми в списке Telegram (раньше их не было в навигации).
+    """
+    fingerprint = hashlib.md5(json.dumps(BOT_COMMANDS, ensure_ascii=False).encode()).hexdigest()
+    state = load_json(BOT_SETUP_FILE, {})
+    today = time.strftime("%Y-%m-%d")
+    if not force and state.get("fingerprint") == fingerprint and state.get("checked_on") == today:
+        return
+    info = telegram_api("getWebhookInfo")
+    had_webhook = ""
+    if isinstance(info, dict) and info.get("ok"):
+        had_webhook = ((info.get("result") or {}).get("url") or "").strip()
+    if had_webhook:
+        print(f"⚠️ У бота стоял webhook ({had_webhook}) — getUpdates не отдавал команды. Снимаю.")
+        telegram_api("deleteWebhook", {"drop_pending_updates": "false"})
+    res = telegram_api("setMyCommands", {"commands": json.dumps(
+        [{"command": c, "description": d} for c, d in BOT_COMMANDS], ensure_ascii=False)})
+    ok = bool(isinstance(res, dict) and res.get("ok"))
+    print(("✅ " if ok else "⚠️ ") + f"Список команд для Telegram: {len(BOT_COMMANDS)} шт. — "
+          + ("опубликован" if ok else str(res)[:200]))
+    state.update({"fingerprint": fingerprint, "checked_on": today,
+                  "commands": len(BOT_COMMANDS), "had_webhook": had_webhook,
+                  "updated_at": time.strftime("%Y-%m-%dT%H:%M:%S")})
+    with open(BOT_SETUP_FILE, "w", encoding="utf-8") as f:
+        json.dump(state, f, ensure_ascii=False, indent=2)
+
+
 def check_telegram_commands(searches, subscribers):
+    register_bot_commands()
+    # Постоянный слушатель bot.py забирает команды себе: иначе два процесса
+    # (прогон и слушатель) делили бы один offset и часть команд терялась.
+    if os.environ.get("SKIP_TELEGRAM_POLL") == "1":
+        print("ℹ️ Опрос Telegram пропущен: команды обрабатывает bot.py")
+        return searches, subscribers
     offset = load_json(OFFSET_FILE, {"offset": 0}).get("offset", 0)
     try:
+        params = {"offset": offset}
+        # В режиме слушателя включаем длинный опрос: запрос висит до 50 секунд и
+        # возвращается сразу с командой, поэтому реакция мгновенная, а обращений к
+        # API в десятки раз меньше.
+        if os.environ.get("TELEGRAM_LONG_POLL") == "1":
+            params["timeout"] = 50
         resp = requests.get(f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/getUpdates",
-                             params={"offset": offset}, timeout=15)
+                             params=params, timeout=60)
         resp.raise_for_status()
         updates = resp.json().get("result", [])
     except Exception as e:
@@ -1999,11 +2209,23 @@ def check_telegram_commands(searches, subscribers):
                                        "Управление — кнопками: /menu",
                               reply_markup=main_menu_markup())
 
-            command, _, argument = text.partition(" ")
-            command = command.split("@", 1)[0].lower()
+            action = TEXT_BUTTON_ACTIONS.get(text)
+            if action and action[0] == "section":
+                send_section(chat_id, action[1])
+                continue
+            if action and action[0] == "cmd":
+                command, _, argument = action[1].partition(" ")
+            else:
+                command, _, argument = text.partition(" ")
+                command = command.split("@", 1)[0].lower()
 
         if command in ("/start", "/menu"):
-            send_main_menu(chat_id, f"👋 Управление ботом. Режим поиска: {MODES[get_mode()]}.")
+            send_persistent_keyboard(chat_id)
+            send_section(chat_id, "main")
+            continue
+
+        if command == "/help":
+            send_help(chat_id)
             continue
 
         if command in ("/all", "/used", "/params"):

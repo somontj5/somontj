@@ -33540,5 +33540,33 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "realme c33"
+  },
+  "37137770": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17371377_honor-70/",
+    "title": "Huawei Honor 70",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "huawei honor 70",
+    "verified_model": null
+  },
+  "12012645": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17372120_telefon-redmi-12c-64gb-5g/",
+    "title": "Xiaomi Redmi 12C 64gb 5G",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "redmi 12c"
+  },
+  "05212565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17372105_telefon-samsung-s21-256gb-carea-5g/",
+    "title": "Samsung Galaxy S21 5G 256gb Carea 5G",
+    "price": 1899,
+    "condition": "Б/у",
+    "model_key": "samsung s21"
   }
 }

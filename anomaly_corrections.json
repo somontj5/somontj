@@ -22,6 +22,13 @@
     "reviewed_at": "2026-10-19T09:13:08",
     "source": "gemini-review"
   },
+  "21806110": {
+    "action": "exclude",
+    "group_key": "apple 15 pro max|256",
+    "reason": "В заголовке и по ссылке указана Nokia 110, не относится к iPhone 15 Pro Max",
+    "reviewed_at": "2026-10-19T11:00:02",
+    "source": "gemini-review"
+  },
   "23317512": {
     "action": "exclude",
     "group_key": "apple 17 pro max|512",

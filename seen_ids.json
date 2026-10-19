@@ -33965,5 +33965,23 @@
     "condition": "Б/у",
     "model_key": "apple 7",
     "verified_model": null
+  },
+  "23542565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17372323_telefon-samsung-a54-256gb-vetnam-5g/",
+    "title": "Samsung Galaxy A54, 256gb",
+    "price": 2265,
+    "condition": "Б/у",
+    "model_key": "samsung a54"
+  },
+  "47841112": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17374784_nokia-1112/",
+    "title": "Nokia 1112",
+    "price": 100,
+    "condition": "Б/у",
+    "model_key": "nokia 1112"
   }
 }

@@ -33834,5 +33834,24 @@
     "condition": "Б/у",
     "model_key": "tecno spark 8c",
     "verified_model": null
+  },
+  "37387314": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17373873_samsung-galaxy-a14/",
+    "title": "Samsung galaxy A14",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "samsung a14",
+    "verified_model": null
+  },
+  "73559864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17373559_apple-iphone-8-plus-64-gb-gold/",
+    "title": "Apple iPhone 8 plus, 64 gb, Gold",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "apple 8 plus"
   }
 }

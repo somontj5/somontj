@@ -33992,5 +33992,15 @@
     "price": 7500,
     "condition": "Б/у",
     "model_key": "apple 15"
+  },
+  "11711256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17375117_apple-iphone-11-pro-256-gb-space-grey/",
+    "title": "Apple iPhone 11 Pro, 256 gb, Space Grey",
+    "price": 2200,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
   }
 }

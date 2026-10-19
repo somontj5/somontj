@@ -33919,5 +33919,14 @@
     "price": 3900,
     "condition": "Б/у",
     "model_key": "apple 12 pro max"
+  },
+  "12820255": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17372338_telefon-redmi-14c-128gb-2025-5g/",
+    "title": "Xiaomi Redmi 14C 128gb 2025 5G",
+    "price": 1266,
+    "condition": "Б/у",
+    "model_key": "redmi 14c"
   }
 }

@@ -34272,5 +34272,15 @@
     "condition": "Б/у",
     "model_key": "samsung a34",
     "verified_model": null
+  },
+  "77734864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17377734_apple-iphone-8-64-gb-gold/",
+    "title": "Apple iPhone 8, 64 gb, Gold",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "apple 8",
+    "verified_model": null
   }
 }

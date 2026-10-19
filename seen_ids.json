@@ -34244,5 +34244,23 @@
     "condition": "Б/у",
     "model_key": "redmi 9",
     "verified_model": null
+  },
+  "43716256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17377437_apple-iphone-16-pro-max-256-gb-black-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
+    "price": 9200,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
+  },
+  "64421264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17376442_apple-iphone-12-mini-64-gb-blue/",
+    "title": "Apple iPhone 12 mini, 64 gb, Blue",
+    "price": 1899,
+    "condition": "Б/у",
+    "model_key": null
   }
 }

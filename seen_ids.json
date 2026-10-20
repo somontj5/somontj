@@ -34686,5 +34686,33 @@
     "price": 950,
     "condition": "Б/у",
     "model_key": "samsung а12"
+  },
+  "62911128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17381629_apple-iphone-11-128-gb-green/",
+    "title": "Apple iPhone 11, 128 gb, Green",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "96712644": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17380967_telefon-redmi-12c-64gb-4g/",
+    "title": "Xiaomi Redmi 12C 64gb 4G",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "redmi 12c"
+  },
+  "81186864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17381186_telefon-redmi-note-8-64gb-glabal-version/",
+    "title": "Xiaomi Redmi Note 8 64gb Glabal Version",
+    "price": 840,
+    "condition": "Б/у",
+    "model_key": "redmi note 8"
   }
 }

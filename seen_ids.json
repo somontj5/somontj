@@ -34969,5 +34969,15 @@
     "condition": "Б/у",
     "model_key": null,
     "verified_model": null
+  },
+  "73841587": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17384158_redmi-note-7/",
+    "title": "Xiaomi Redmi Note 7",
+    "price": 550,
+    "condition": "Б/у",
+    "model_key": "redmi note 7",
+    "verified_model": null
   }
 }

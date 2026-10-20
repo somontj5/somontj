@@ -34565,5 +34565,51 @@
     "price": 1799,
     "condition": "Б/у",
     "model_key": "samsung s21"
+  },
+  "17102565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17381117_telefon-redmi-note-10-pro-256gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 10 pro 256gb Glabal Version 5G",
+    "price": 1450,
+    "condition": "Б/у",
+    "model_key": "redmi note 10 pro"
+  },
+  "56520265": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17381102_telefon-honor-400-256gb-5g-2026-5g/",
+    "title": "Honor 400 256gb 5G 2026 5G",
+    "price": 2350,
+    "condition": "Б/у",
+    "model_key": "honor 400"
+  },
+  "08792565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17381087_telefon-honor-x9c-256gb-5g/",
+    "title": "Huawei Honor X9C 256gb 5G",
+    "price": 2650,
+    "condition": "Б/у",
+    "model_key": "huawei honor x9c"
+  },
+  "38107012": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17381070_xiaomi-redmi-note-12/",
+    "title": "Xiaomi Redmi Note 12",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "redmi note 12",
+    "verified_model": null
+  },
+  "78142565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17381078_telefon-redmi-note-14-pro-256gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 14 pro 256gb Glabal Version 5G",
+    "price": 2450,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro"
   }
 }

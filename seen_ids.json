@@ -34724,5 +34724,15 @@
     "condition": "Б/у",
     "model_key": "apple x",
     "verified_model": null
+  },
+  "20488256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17382048_apple-iphone-8-plus-256-gb-gold/",
+    "title": "Apple iPhone 8 plus, 256 gb, Gold",
+    "price": 599,
+    "condition": "Б/у",
+    "model_key": "apple 8 plus",
+    "verified_model": null
   }
 }

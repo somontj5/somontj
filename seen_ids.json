@@ -34950,5 +34950,24 @@
     "condition": "Б/у",
     "model_key": "apple 11",
     "verified_model": null
+  },
+  "19314256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17384193_apple-iphone-14-pro-256-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro, 256 gb, Deep Purple",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
+  },
+  "17384144": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17384144_telefon-v-khoroshem-sostoianii/",
+    "title": "Телефон Infinix",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
   }
 }

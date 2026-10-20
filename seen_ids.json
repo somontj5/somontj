@@ -34940,5 +34940,15 @@
     "price": 6000,
     "condition": "Б/у",
     "model_key": "apple 13 pro max"
+  },
+  "20131164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17382013_apple-iphone-11-64-gb-black/",
+    "title": "Apple iPhone 11, 64 gb, Black",
+    "price": 1699,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

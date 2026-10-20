@@ -34753,5 +34753,14 @@
     "price": 1700,
     "condition": "Б/у",
     "model_key": "samsung s10"
+  },
+  "98996125": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16989961_samsung-galaxy-s25-ultra/",
+    "title": "Samsung Galaxy S25 Ultra",
+    "price": 8700,
+    "condition": "Б/у",
+    "model_key": "samsung s25 ultra"
   }
 }

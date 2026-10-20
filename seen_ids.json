@@ -34611,5 +34611,33 @@
     "price": 2450,
     "condition": "Б/у",
     "model_key": "redmi note 14 pro"
+  },
+  "12238324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17381223_telefon-redmi-8-32gb-4g/",
+    "title": "Xiaomi Redmi 8 32Gb 4G",
+    "price": 799,
+    "condition": "Б/у",
+    "model_key": "redmi 8"
+  },
+  "71012865": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17381197_telefon-redmi-10-pro-128-6gb-5g/",
+    "title": "Xiaomi Redmi 10 pro 128/6gb 5G",
+    "price": 1455,
+    "condition": "Б/у",
+    "model_key": "redmi 10 pro"
+  },
+  "73810352": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17381035_xiaomi-mi-a2/",
+    "title": "Xiaomi Mi A2",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "xiaomi mi a2",
+    "verified_model": null
   }
 }

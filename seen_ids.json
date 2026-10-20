@@ -34510,5 +34510,14 @@
     "price": 3000,
     "condition": "Б/у",
     "model_key": "samsung a56"
+  },
+  "73793245": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17379324_tecno-pop-5-lte/",
+    "title": "Tecno Pop 5 LTE",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "tecno pop 5 lte"
   }
 }

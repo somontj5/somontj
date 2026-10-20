@@ -34734,5 +34734,15 @@
     "condition": "Б/у",
     "model_key": "apple 8 plus",
     "verified_model": null
+  },
+  "38216417": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17382164_samsung-a17/",
+    "title": "Samsung Galaxy A17",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "samsung a17",
+    "verified_model": null
   }
 }

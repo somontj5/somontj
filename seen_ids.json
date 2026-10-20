@@ -34349,9 +34349,22 @@
     "verified_model": null
   },
   "37864720": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17378647_samsung-s20/",
+    "title": "Samsung Galaxy s20 +",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "samsung s20",
+    "verified_model": null
   },
   "78556138": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17378556_apple-iphone-13-pro-8-gb-gold/",
+    "title": "Apple iPhone 13 Pro, 256 gb, Gold",
+    "price": 5200,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

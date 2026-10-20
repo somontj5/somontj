@@ -34789,5 +34789,24 @@
     "price": 6200,
     "condition": "Б/у",
     "model_key": "apple 15 pro"
+  },
+  "82891124": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17382891_redmi-note-12-4g/",
+    "title": "Xiaomi Redmi Note 12 4G",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "redmi note 12",
+    "verified_model": null
+  },
+  "88017256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17382880_apple-iphone-17-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
+    "price": 14500,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
   }
 }

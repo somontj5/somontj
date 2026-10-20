@@ -35086,5 +35086,15 @@
     "condition": "Б/у",
     "model_key": "samsung a17 6 128",
     "verified_model": null
+  },
+  "38520416": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17385204_samsung-galaxy-a16-novyi/",
+    "title": "Samsung Galaxy A16",
+    "price": 1599,
+    "condition": "Б/у",
+    "model_key": "samsung a16",
+    "verified_model": null
   }
 }

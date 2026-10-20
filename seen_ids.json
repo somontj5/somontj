@@ -34337,5 +34337,15 @@
     "price": 7000,
     "condition": "Б/у",
     "model_key": "oneplus 15"
+  },
+  "65723111": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16657231_oppo-t11/",
+    "title": "OPPO t11",
+    "price": 250,
+    "condition": "Б/у",
+    "model_key": "oppo t11",
+    "verified_model": null
   }
 }

@@ -34921,5 +34921,24 @@
     "price": 6999,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "73838201": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17383820_tecno-spark-go-1/",
+    "title": "Tecno Spark Go 1",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "tecno spark go 1",
+    "verified_model": null
+  },
+  "80113256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17383801_apple-iphone-13-pro-max-256-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro Max, 256 gb, Sierra Blue",
+    "price": 6000,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
   }
 }

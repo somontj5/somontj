@@ -34639,5 +34639,23 @@
     "condition": "Б/у",
     "model_key": "xiaomi mi a2",
     "verified_model": null
+  },
+  "92542565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17381292_telefon-samsung-a54-256gb-vetnam-5g/",
+    "title": "Samsung galaxy A54 256гб Vetnam 5G",
+    "price": 2260,
+    "condition": "Б/у",
+    "model_key": "samsung a54"
+  },
+  "26814256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17381268_telefon-redmi-14-pro-256gb/",
+    "title": "Xiaomi Redmi 14 pro 256gb",
+    "price": 1599,
+    "condition": "Б/у",
+    "model_key": "redmi 14 pro"
   }
 }

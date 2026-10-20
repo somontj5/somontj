@@ -35066,5 +35066,15 @@
     "price": 13000,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "02612644": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17385026_samsung-m12-64-4/",
+    "title": "Samsung Galaxy m12 64/4",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "samsung m12 64 4",
+    "verified_model": null
   }
 }

@@ -34903,5 +34903,23 @@
     "price": 3300,
     "condition": "Б/у",
     "model_key": "samsung s21 ultra"
+  },
+  "83509181": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17383509_apple-iphone-18-pro-max-1-tb-black/",
+    "title": "Apple iPhone 18 Pro Max, 1 tb, Black дубликат",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "27416256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17383274_apple-iphone-16-pro-max-256-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
+    "price": 6999,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   }
 }

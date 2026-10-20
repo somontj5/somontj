@@ -34657,5 +34657,25 @@
     "price": 1599,
     "condition": "Б/у",
     "model_key": "redmi 14 pro"
+  },
+  "39911128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17381399_apple-iphone-11-128-gb-green/",
+    "title": "Apple iPhone 11, 128 gb, Green",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "13941164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17381394_apple-iphone-11-pro-64-gb/",
+    "title": "Apple iPhone 11 Pro, 64 gb",
+    "price": 1799,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
   }
 }

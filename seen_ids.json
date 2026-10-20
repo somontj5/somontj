@@ -2332,7 +2332,14 @@
     "verified_model": null
   },
   "53319046": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15331904_samsung-galaxy-s6-edge/",
+    "title": "Samsung Galaxy S6 Edge",
+    "price": 300,
+    "condition": "Б/у",
+    "model_key": "samsung s6 edge",
+    "verified_model": null
   },
   "94212128": {
     "logged": true
@@ -34427,6 +34434,16 @@
     "price": 1350,
     "condition": "Б/у",
     "model_key": "apple 11",
+    "verified_model": null
+  },
+  "38023664": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17380236_apple-iphone-xs-64-gb-gold/",
+    "title": "Apple iPhone Xs, 64 gb, Gold",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "apple xs",
     "verified_model": null
   }
 }

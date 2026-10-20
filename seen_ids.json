@@ -34875,5 +34875,24 @@
     "condition": "Б/у",
     "model_key": "redmi note 13 pro plus",
     "verified_model": null
+  },
+  "15551441": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15551441_telefon-dar-kholati-khub-karok-dorad/",
+    "title": "Samsung Galaxy A11",
+    "price": 350,
+    "condition": "Б/у",
+    "model_key": "samsung a11",
+    "verified_model": null
+  },
+  "40416512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17383404_apple-iphone-16-pro-max-512-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 512 gb, Desert Titanium",
+    "price": 9800,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   }
 }

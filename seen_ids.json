@@ -2322,7 +2322,14 @@
     "logged": true
   },
   "53318063": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15331806_galaxy-a3/",
+    "title": "Samsung Galaxy A3",
+    "price": 300,
+    "condition": "Б/у",
+    "model_key": "samsung a3",
+    "verified_model": null
   },
   "53319046": {
     "logged": true
@@ -34411,5 +34418,15 @@
     "price": 6500,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "99921164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17379992_apple-iphone-11-64-gb-yellow/",
+    "title": "Apple iPhone 11, 64 gb, Yellow",
+    "price": 1350,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

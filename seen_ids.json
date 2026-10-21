@@ -35353,5 +35353,23 @@
     "price": 1344,
     "condition": "Б/у",
     "model_key": "samsung note 9"
+  },
+  "89139512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17389139_apple-iphone-x-512-gb-silver/",
+    "title": "Apple iPhone X, 512 gb, Silver",
+    "price": 799,
+    "condition": "Б/у",
+    "model_key": "apple x"
+  },
+  "51352565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17389125_telefon-redmi-note-13-pro-pilus-5g-256gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 13 pro pilus 5G 256gb Glabal Version 5G",
+    "price": 2699,
+    "condition": "Б/у",
+    "model_key": "redmi note 13 pro pilus"
   }
 }

@@ -96,6 +96,13 @@
     "reviewed_at": "2026-10-19T09:48:50",
     "source": "gemini-review"
   },
+  "82017256": {
+    "action": "exclude",
+    "group_key": "apple 17 pro max|256",
+    "reason": "Объявление недоступно, в похожих выдаются дубликаты и другие товары",
+    "reviewed_at": "2026-10-21T10:11:26",
+    "source": "gemini-review"
+  },
   "93311128": {
     "action": "exclude",
     "group_key": "apple 17 pro max|256",

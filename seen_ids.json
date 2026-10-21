@@ -35106,5 +35106,24 @@
     "condition": "Б/у",
     "model_key": "oneplus a5000",
     "verified_model": null
+  },
+  "90016128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17385900_apple-iphone-16-128-gb-teal/",
+    "title": "Apple iPhone 16, 128 gb, Teal",
+    "price": 5300,
+    "condition": "Б/у",
+    "model_key": "apple 16"
+  },
+  "38586814": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17385868_xiaomi-redmi-not-14/",
+    "title": "Xiaomi redmi not 14",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "redmi not 14",
+    "verified_model": null
   }
 }

@@ -35190,5 +35190,15 @@
     "price": 3600,
     "condition": "Б/у",
     "model_key": "samsung galxsy s23 ultra dubai"
+  },
+  "17386564": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17386564_furukhtan/",
+    "title": "Samsung Galaxy A32",
+    "price": 300,
+    "condition": "Б/у",
+    "model_key": "samsung a32",
+    "verified_model": null
   }
 }

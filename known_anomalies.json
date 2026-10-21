@@ -134,5 +134,10 @@
     "first_seen": "2026-10-19",
     "ratio": 3.41,
     "kind": "wide"
+  },
+  "samsung a32|128": {
+    "first_seen": "2026-10-21",
+    "ratio": 4.17,
+    "kind": "outlier"
   }
 }

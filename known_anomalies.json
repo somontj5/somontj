@@ -38,7 +38,8 @@
   "apple 11|128": {
     "first_seen": "2026-10-18",
     "ratio": 6.7,
-    "kind": "outlier"
+    "kind": "reviewed",
+    "reviewed_at": "2026-10-21"
   },
   "samsung s21 plus|128": {
     "first_seen": "2026-10-18",

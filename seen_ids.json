@@ -35125,5 +35125,15 @@
     "condition": "Б/у",
     "model_key": "redmi not 14",
     "verified_model": null
+  },
+  "38566814": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17385668_redmi-note-14-pro/",
+    "title": "Xiaomi Redmi 14 pro",
+    "price": 2200,
+    "condition": "Б/у",
+    "model_key": "redmi 14 pro",
+    "verified_model": null
   }
 }

@@ -35334,5 +35334,15 @@
     "price": 600,
     "condition": "Б/у",
     "model_key": "samsung j6"
+  },
+  "17388251": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17388251_bo-muomila-meshad/",
+    "title": "Samsung Galaxy А54",
+    "price": 1900,
+    "condition": "Б/у",
+    "model_key": "samsung а54",
+    "verified_model": null
   }
 }

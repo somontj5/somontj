@@ -35416,5 +35416,23 @@
     "price": 840,
     "condition": "Б/у",
     "model_key": "redmi note 8"
+  },
+  "97542565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17389397_telefon-samsung-a54-256gb-vetnam-5g/",
+    "title": "Samsung Galaxy A54 256gb Vetnam 5G",
+    "price": 2250,
+    "condition": "Б/у",
+    "model_key": "samsung a54"
+  },
+  "41413324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17389414_telefon-samsung-a13-32gb-vetnam-4g/",
+    "title": "Samsung Galaxy А13 32Gb Vetnam 4G",
+    "price": 966,
+    "condition": "Б/у",
+    "model_key": "samsung а13"
   }
 }

@@ -35306,5 +35306,14 @@
     "condition": "Б/у",
     "model_key": "apple x",
     "verified_model": null
+  },
+  "94724256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17386947_galaxy-s24-ultra-256gb-duos/",
+    "title": "Samsung Galaxy S24 ultra 256gb duos",
+    "price": 7250,
+    "condition": "Б/у",
+    "model_key": "samsung s24 ultra"
   }
 }

@@ -35276,5 +35276,15 @@
     "price": 9099,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "22111128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17387221_apple-iphone-11-128-gb-white/",
+    "title": "Apple iPhone 11, 128 gb, White",
+    "price": 2100,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

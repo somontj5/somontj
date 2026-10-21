@@ -35481,5 +35481,23 @@
     "condition": "Б/у",
     "model_key": "redmi 9a",
     "verified_model": null
+  },
+  "16914980": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16914980_knopochno-sensornyi-qinphone-white/",
+    "title": "Samsung Galaxy S22 Ultra 12/512Gb White",
+    "price": 3749,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
+  },
+  "44101284": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17389344_telefon-redmi-10-pro-128gb-4g/",
+    "title": "Xiaomi Redmi 10 pro 128gb 4G",
+    "price": 1478,
+    "condition": "Б/у",
+    "model_key": "redmi 10 pro"
   }
 }

@@ -35096,5 +35096,15 @@
     "condition": "Б/у",
     "model_key": "samsung a16",
     "verified_model": null
+  },
+  "07395000": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/14220739_oneplus-a5000/",
+    "title": "Oneplus A5000",
+    "price": 730,
+    "condition": "Б/у",
+    "model_key": "oneplus a5000",
+    "verified_model": null
   }
 }

@@ -35248,5 +35248,14 @@
     "condition": "Б/у",
     "model_key": "redmi 9a",
     "verified_model": null
+  },
+  "29514256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17387295_apple-iphone-14-pro-max-256-gb-gold/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb, Gold",
+    "price": 6500,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
   }
 }

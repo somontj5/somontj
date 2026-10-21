@@ -35471,5 +35471,15 @@
     "price": 850,
     "condition": "Б/у",
     "model_key": "samsung а12"
+  },
+  "73892319": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17389231_redmi-9a/",
+    "title": "Xiaomi Redmi 9A, 32gb",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "redmi 9a",
+    "verified_model": null
   }
 }

@@ -35209,5 +35209,25 @@
     "price": 4450,
     "condition": "Б/у",
     "model_key": "apple 13 pro"
+  },
+  "29148256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17387029_redmi-nout-14-8-256/",
+    "title": "Xiaomi Redmi 14 8/256",
+    "price": 1550,
+    "condition": "Б/у",
+    "model_key": "redmi 14 8 256",
+    "verified_model": null
+  },
+  "17387070": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17387070_m/",
+    "title": "Novey",
+    "price": 400,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
   }
 }

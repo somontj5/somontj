@@ -95,5 +95,12 @@
     "reason": "В тексте страницы указана цена 4 000 c., в базе ошибочно записано 40099 TJS",
     "reviewed_at": "2026-10-19T09:48:50",
     "source": "gemini-review"
+  },
+  "93311128": {
+    "action": "exclude",
+    "group_key": "apple 17 pro max|256",
+    "reason": "В заголовке указан iPhone 11 Pro Max, что не соответствует модели группы Apple 17 Pro Max.",
+    "reviewed_at": "2026-10-21T08:01:49",
+    "source": "gemini-review"
   }
 }

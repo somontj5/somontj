@@ -35434,5 +35434,15 @@
     "price": 966,
     "condition": "Б/у",
     "model_key": "samsung а13"
+  },
+  "16766667": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16766667_rastanoshka-dorad/",
+    "title": "Телефон Tecno",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
   }
 }

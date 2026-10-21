@@ -35238,5 +35238,15 @@
     "price": 6200,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "73871959": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17387195_redmi-9a/",
+    "title": "Xiaomi Redmi 9A",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "redmi 9a",
+    "verified_model": null
   }
 }

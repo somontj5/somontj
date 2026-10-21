@@ -17,9 +17,9 @@
     "group_key": "apple 15 pro max|256",
     "memory_gb": 256,
     "model_key": "apple 15 pro max",
-    "price": 880,
-    "reason": "В блоке IMEI указана модель APPLE iPhone 15 Pro Max (A3105), несмотря на ошибку в заголовке.",
-    "reviewed_at": "2026-10-21T06:22:00",
+    "price": 8800,
+    "reason": "В заголовке ошибочно указан iPhone 16 Pro Max, но блок IMEI и описание подтверждают модель APPLE iPhone 15 Pro Max (A3105), а цена на странице составляет 8800 сомони (в базе ошибочно 880)",
+    "reviewed_at": "2026-10-21T06:27:46",
     "source": "gemini-review"
   },
   "21806110": {

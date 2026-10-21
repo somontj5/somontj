@@ -35617,5 +35617,14 @@
     "condition": "Б/у",
     "model_key": "samsung a02s",
     "verified_model": null
+  },
+  "02212256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15100620_samsung-galaxy-s22ultra-12-256gb-white/",
+    "title": "Samsung Galaxy S22Ultra 12/256Gb Black",
+    "price": 3599,
+    "condition": "Б/у",
+    "model_key": "samsung s22ultra"
   }
 }

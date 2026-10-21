@@ -115,6 +115,33 @@
     "reviewed_at": "2026-10-19T09:08:13",
     "source": "gemini-review"
   },
+  "7324466": {
+    "group_key": "apple 11|128",
+    "memory_gb": 128,
+    "model_key": "apple 14 pro",
+    "price": 1000,
+    "reason": "В блоке IMEI указана модель APPLE iPhone 14 Pro (A2892).",
+    "reviewed_at": "2026-10-21T12:43:08",
+    "source": "gemini-review"
+  },
+  "73511128": {
+    "group_key": "apple 11|128",
+    "memory_gb": 128,
+    "model_key": "apple 7 plus",
+    "price": 899,
+    "reason": "В блоке IMEI указана модель Apple iPhone 7 Plus (A1661-5).",
+    "reviewed_at": "2026-10-21T12:43:08",
+    "source": "gemini-review"
+  },
+  "74511128": {
+    "group_key": "apple 11|128",
+    "memory_gb": 128,
+    "model_key": "samsung galaxy s9 plus",
+    "price": 999,
+    "reason": "В блоке IMEI указана модель Samsung Galaxy S9 Plus Dual.",
+    "reviewed_at": "2026-10-21T12:43:08",
+    "source": "gemini-review"
+  },
   "77113128": {
     "group_key": "apple 13 pro max|128",
     "memory_gb": 128,

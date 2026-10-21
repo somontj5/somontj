@@ -35163,5 +35163,14 @@
     "condition": "Б/у",
     "model_key": null,
     "verified_model": null
+  },
+  "38613952": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17386139_samsung-a52/",
+    "title": "Samsung Galaxy A52",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "samsung a52"
   }
 }

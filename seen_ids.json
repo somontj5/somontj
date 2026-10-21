@@ -35597,5 +35597,15 @@
     "condition": "Б/у",
     "model_key": "apple 11",
     "verified_model": null
+  },
+  "08561164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17390856_apple-iphone-11-pro-64-gb-midnight-green/",
+    "title": "Apple iPhone 11 Pro, 64 gb, Midnight Green",
+    "price": 1499,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
   }
 }

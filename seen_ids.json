@@ -35257,5 +35257,15 @@
     "price": 6500,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "87513100": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17387513_100s/",
+    "title": "Телефон Xiaomi",
+    "price": 449,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
   }
 }

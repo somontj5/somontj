@@ -35626,5 +35626,25 @@
     "price": 3599,
     "condition": "Б/у",
     "model_key": "samsung s22ultra"
+  },
+  "39114650": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17391146_tecno-camon-50/",
+    "title": "Tecno Сamon 50",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "tecno сamon 50",
+    "verified_model": null
+  },
+  "10897128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17391089_apple-iphone-7-plus-128-gb/",
+    "title": "Apple iPhone 7 plus, 128 gb",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "apple 7 plus",
+    "verified_model": null
   }
 }

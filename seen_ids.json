@@ -35509,5 +35509,15 @@
     "condition": "Б/у",
     "model_key": "redmi note 8",
     "verified_model": null
+  },
+  "90052664": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17390052_apple-iphone-6-plus-64-gb/",
+    "title": "Apple iPhone 6 plus, 64 gb",
+    "price": 400,
+    "condition": "Б/у",
+    "model_key": "apple 6 plus",
+    "verified_model": null
   }
 }

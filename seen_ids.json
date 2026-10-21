@@ -35398,5 +35398,23 @@
     "price": 1460,
     "condition": "Б/у",
     "model_key": "redmi note 10 pro"
+  },
+  "67614128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17388676_apple-iphone-14-pro-128-gb-space-black/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Space Black",
+    "price": 5299,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
+  },
+  "93608645": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17389360_telefon-redmi-note-8-64gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 8 64Gb Glabal Version 5G",
+    "price": 840,
+    "condition": "Б/у",
+    "model_key": "redmi note 8"
   }
 }

@@ -35499,5 +35499,15 @@
     "price": 1478,
     "condition": "Б/у",
     "model_key": "redmi 10 pro"
+  },
+  "73900188": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17390018_redmi-note8/",
+    "title": "Xiaomi Redmi note 8",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "redmi note 8",
+    "verified_model": null
   }
 }

@@ -35315,5 +35315,24 @@
     "price": 7250,
     "condition": "Б/у",
     "model_key": "samsung s24 ultra"
+  },
+  "77621256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17387776_galaxy-s21-256gb/",
+    "title": "Samsung Galaxy S21 256gb",
+    "price": 1950,
+    "condition": "Б/у",
+    "model_key": "samsung s21",
+    "verified_model": null
+  },
+  "73877296": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17387729_samsung-galaxy-j6/",
+    "title": "Samsung Galaxy J6",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "samsung j6"
   }
 }

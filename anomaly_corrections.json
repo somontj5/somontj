@@ -36,8 +36,8 @@
     "memory_gb": 128,
     "model_key": "apple 14 pro",
     "price": 1000,
-    "reason": "в блоке IMEI указана модель APPLE iPhone 14 Pro (A2892)",
-    "reviewed_at": "2026-10-21T12:58:47",
+    "reason": "В блоке IMEI указана модель APPLE iPhone 14 Pro (A2892).",
+    "reviewed_at": "2026-10-21T14:31:15",
     "source": "gemini-review"
   },
   "17369735": {

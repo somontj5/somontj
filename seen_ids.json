@@ -35607,5 +35607,15 @@
     "condition": "Б/у",
     "model_key": "apple 11 pro",
     "verified_model": null
+  },
+  "39057102": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17390571_samsung-galaxy-a02s/",
+    "title": "Samsung Galaxy A02s",
+    "price": 499,
+    "condition": "Б/у",
+    "model_key": "samsung a02s",
+    "verified_model": null
   }
 }

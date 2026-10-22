@@ -36529,5 +36529,24 @@
     "price": 3800,
     "condition": "Б/у",
     "model_key": null
+  },
+  "43314256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17399433_apple-iphone-14-pro-max-256-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb, Deep Purple",
+    "price": 3700,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
+  },
+  "43513128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17399435_apple-iphone-13-128-gb-blue/",
+    "title": "Apple iPhone 13, 128 gb, Blue",
+    "price": 2888,
+    "condition": "Б/у",
+    "model_key": "apple 13",
+    "verified_model": null
   }
 }

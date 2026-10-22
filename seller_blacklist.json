@@ -555,5 +555,18 @@
     "ban_ad_urls": [
       "https://m.somon.tj/adv/17398539_tecno-spark-40-pro/"
     ]
+  },
+  "5466687": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/5466687/",
+    "reason": "похоже на перекупщика по фото: На заднем плане на фотографиях четко видны витрина магазина со стендами и фирменной выкладкой чехлов и аксессуаров.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17399435_apple-iphone-13-128-gb-blue/",
+    "blocked_at": "2026-10-22T17:52:09",
+    "updated_at": "2026-10-22T17:52:09",
+    "active_ads_at_block": 10,
+    "ban_count": 1,
+    "ban_ad_urls": [
+      "https://m.somon.tj/adv/17399435_apple-iphone-13-128-gb-blue/"
+    ]
   }
 }

@@ -35845,5 +35845,25 @@
     "price": 5800,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "39458210": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17394582_honor-10x-lite/",
+    "title": "Honor 10x Lite",
+    "price": 400,
+    "condition": "Б/у",
+    "model_key": "honor 10x lite",
+    "verified_model": null
+  },
+  "39398810": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17393988_samsung-galaxy-s10/",
+    "title": "Samsung galaxy s10",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "samsung s10",
+    "verified_model": null
   }
 }

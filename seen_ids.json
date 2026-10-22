@@ -35865,5 +35865,14 @@
     "condition": "Б/у",
     "model_key": "samsung s10",
     "verified_model": null
+  },
+  "94222512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16832942_samsung-galaxy-s22-ultra-512g/",
+    "title": "Samsung Galaxy S22 ultra",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
   }
 }

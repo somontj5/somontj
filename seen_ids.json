@@ -36077,5 +36077,35 @@
     "price": 5450,
     "condition": "Б/у",
     "model_key": "samsung s24 ultra"
+  },
+  "24611128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17394246_apple-iphone-11-128-gb-yellow/",
+    "title": "Apple iPhone 11, 128 gb, Yellow",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "21811256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17394218_apple-iphone-11-pro-256-gb-midnight-green/",
+    "title": "Apple iPhone 11 Pro, 256 gb, Midnight Green",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
+  },
+  "95995256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17395995_apple-iphone-x-256-gb-silver/",
+    "title": "Apple iPhone X, 256 gb, Silver",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "apple x",
+    "verified_model": null
   }
 }

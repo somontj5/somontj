@@ -94,8 +94,8 @@
   },
   "samsung s10|128": {
     "first_seen": "2026-10-18",
-    "ratio": 3.73,
-    "kind": "wide"
+    "ratio": 6.28,
+    "kind": "outlier"
   },
   "samsung s21|256": {
     "first_seen": "2026-10-18",

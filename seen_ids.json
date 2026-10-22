@@ -36127,5 +36127,34 @@
     "condition": "Б/у",
     "model_key": "apple 11 pro",
     "verified_model": null
+  },
+  "96227155": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17396227_redmi-note-15pro-5g/",
+    "title": "Xiaomi Redmi note 15pro 5G",
+    "price": 2300,
+    "condition": "Б/у",
+    "model_key": "redmi note 15pro",
+    "verified_model": null
+  },
+  "00411128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17395004_apple-iphone-11-128-gb-black/",
+    "title": "Apple iPhone 11, 128 gb, Black",
+    "price": 1299,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "22313512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17396223_apple-iphone-13-pro-512-gb-silver/",
+    "title": "Apple iPhone 13 Pro, 512 gb, Silver",
+    "price": 4199,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

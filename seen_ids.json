@@ -35968,21 +35968,55 @@
     "model_key": "samsung а12"
   },
   "79141284": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17395179_telefon-redmi-14c-128gb-4g/",
+    "title": "Xiaomi Redmi 14C 128gb 4G",
+    "price": 1277,
+    "condition": "Б/у",
+    "model_key": "redmi 14c"
   },
   "61620265": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17395131_telefon-redmi-note-15-256-16gb-2026-5g/",
+    "title": "Xiaomi Redmi Note 15 256/16Gb 2026 5G",
+    "price": 2200,
+    "condition": "Б/у",
+    "model_key": "redmi note 15 2026"
   },
   "41142565": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17395141_telefon-redmi-14-pro-256gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi 14 pro 256gb Glabal Version 5G",
+    "price": 1660,
+    "condition": "Б/у",
+    "model_key": "redmi 14 pro"
   },
   "12511128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17395125_apple-iphone-11-128-gb-yellow/",
+    "title": "Apple iPhone 11, 128 gb, Yellow",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   },
   "81101285": {
     "logged": true
   },
   "95114864": {
     "logged": true
+  },
+  "58135256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17395158_telefon-redmi-note-13-pro-5g-256gb/",
+    "title": "Xiaomi Redmi Note 13 pro+5G 256gb",
+    "price": 2650,
+    "condition": "Б/у",
+    "model_key": "redmi note 13 pro"
   }
 }

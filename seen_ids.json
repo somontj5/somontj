@@ -36039,5 +36039,24 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "realme note 50"
+  },
+  "39556713": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17395567_mi-13-lite/",
+    "title": "Xiaomi Mi 13 lite",
+    "price": 1777,
+    "condition": "Б/у",
+    "model_key": "xiaomi mi 13 lite",
+    "verified_model": null
+  },
+  "39567225": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17395672_samsung-s25-ultra/",
+    "title": "Samsung galaxy S25 Ultra",
+    "price": 8500,
+    "condition": "Б/у",
+    "model_key": "samsung s25 ultra"
   }
 }

@@ -36548,5 +36548,24 @@
     "condition": "Б/у",
     "model_key": "apple 13",
     "verified_model": null
+  },
+  "48016256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17399480_apple-iphone-16-pro-256-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro, 256 gb, Desert Titanium",
+    "price": 8888,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro"
+  },
+  "48812128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17399488_apple-iphone-12-pro-128-gb-gold/",
+    "title": "Apple iPhone 12 pro, 128 gb, Gold",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro",
+    "verified_model": null
   }
 }

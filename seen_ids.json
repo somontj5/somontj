@@ -35722,5 +35722,15 @@
     "condition": "Б/у",
     "model_key": "apple 12 pro",
     "verified_model": null
+  },
+  "39295064": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17392950_apple-iphone-x-64-gb-silver/",
+    "title": "Apple iPhone X, 64 gb, Silver",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "apple x",
+    "verified_model": null
   }
 }

@@ -130,6 +130,13 @@
     "reviewed_at": "2026-10-19T09:08:13",
     "source": "gemini-review"
   },
+  "59211128": {
+    "action": "exclude",
+    "group_key": "apple 11|128",
+    "reason": "Телефон заблокирован (аккаунт), нет растаможки, требует разблокировки.",
+    "reviewed_at": "2026-10-22T16:55:24",
+    "source": "gemini-review"
+  },
   "7324466": {
     "group_key": "apple 11|128",
     "memory_gb": 128,

@@ -35790,5 +35790,24 @@
     "condition": "Б/у",
     "model_key": "samsung note 20 ultra 2sim",
     "verified_model": null
+  },
+  "86013128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17393860_apple-iphone-13-pro-128-gb-silver/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Silver",
+    "price": 2800,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro",
+    "verified_model": null
+  },
+  "63212256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17393632_apple-iphone-12-pro-max-256-gb-pacific-blue/",
+    "title": "Apple iPhone 12 Pro Max, 256 gb, Pacific Blue",
+    "price": 3200,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro max"
   }
 }

@@ -36323,5 +36323,15 @@
     "price": 3999,
     "condition": "Б/у",
     "model_key": "apple 13 pro max"
+  },
+  "39853940": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17398539_tecno-spark-40-pro/",
+    "title": "Tecno Spark 40 Pro",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "tecno spark 40 pro",
+    "verified_model": null
   }
 }

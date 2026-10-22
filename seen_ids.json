@@ -36633,5 +36633,15 @@
     "price": 7399,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "39993422": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17399934_samsung-galaxy-s22/",
+    "title": "Samsung Galaxy s22",
+    "price": 2600,
+    "condition": "Б/у",
+    "model_key": "samsung s22",
+    "verified_model": null
   }
 }

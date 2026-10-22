@@ -36472,5 +36472,34 @@
     "price": 5999,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "73987325": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17398732_galaxy-j5/",
+    "title": "Samsung Galaxy J5",
+    "price": 300,
+    "condition": "Б/у",
+    "model_key": "samsung j5",
+    "verified_model": null
+  },
+  "39866364": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17398663_apple-iphone-xs-64-gb-space-grey/",
+    "title": "Apple iPhone Xs, 64 gb, Space Grey",
+    "price": 1899,
+    "condition": "Б/у",
+    "model_key": "apple xs",
+    "verified_model": null
+  },
+  "68213128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17398682_apple-iphone-13-pro-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
+    "price": 4999,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

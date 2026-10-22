@@ -36295,5 +36295,15 @@
     "price": 6500,
     "condition": "Б/у",
     "model_key": "apple 15 pro"
+  },
+  "73972706": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17397270_samsung-j6-plus/",
+    "title": "Samsung Galaxy J6 plus, 32gb",
+    "price": 399,
+    "condition": "Б/у",
+    "model_key": "samsung j6 plus",
+    "verified_model": null
   }
 }

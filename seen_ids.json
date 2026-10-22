@@ -36343,5 +36343,33 @@
     "condition": "Б/у",
     "model_key": "samsung a16",
     "verified_model": null
+  },
+  "17398830": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17398830_telefon-da-kholati-khub-karor-dorad/",
+    "title": "Samsung Galaxy А52",
+    "price": 1499,
+    "condition": "Б/у",
+    "model_key": "samsung а52",
+    "verified_model": null
+  },
+  "03754256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17398037_telefon-samsung-a54-256gb/",
+    "title": "Samsung Galaxy А54 256gb",
+    "price": 2300,
+    "condition": "Б/у",
+    "model_key": "samsung а54"
+  },
+  "00914256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17398009_telefon-redmi-not-14-pro-256gb/",
+    "title": "Xiaomi Redmi Note 14 Pro",
+    "price": 2350,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro"
   }
 }

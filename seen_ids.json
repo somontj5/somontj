@@ -36107,5 +36107,15 @@
     "condition": "Б/у",
     "model_key": "apple x",
     "verified_model": null
+  },
+  "39584210": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17395842_google-pixel-10a/",
+    "title": "Google Pixel 10a",
+    "price": 2900,
+    "condition": "Б/у",
+    "model_key": "pixel 10a",
+    "verified_model": null
   }
 }

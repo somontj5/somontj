@@ -35922,6 +35922,49 @@
     "model_key": "samsung note 9"
   },
   "02142565": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17395102_telefon-redmi-note-14-pro-256gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 14 pro 256gb Glabal Version 5G",
+    "price": 2399,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro"
+  },
+  "39510164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17395101_apple-iphone-xs-64-gb-gold/",
+    "title": "Apple iPhone Xs, 64 gb, Gold",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "apple xs",
+    "verified_model": null
+  },
+  "50628324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17395062_telefon-redmi-8-32gb-4g/",
+    "title": "Xiaomi Redmi 8 32Gb 4G",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "redmi 8"
+  },
+  "02310256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17395023_telefon-redmi-note-10-pro-256gb-glabal-version/",
+    "title": "Xiaomi Redmi Note 10 pro 256gb Glabal Version",
+    "price": 1460,
+    "condition": "Б/у",
+    "model_key": "redmi note 10 pro"
+  },
+  "05312644": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17395053_telefon-samsung-a12-64gb-vetnam-4g/",
+    "title": "Samsung galaxy А12 64Gb Vetnam 4G",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "samsung а12"
   }
 }

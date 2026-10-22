@@ -36165,5 +36165,15 @@
     "price": 2260,
     "condition": "Б/у",
     "model_key": "samsung а54"
+  },
+  "69149714": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16914971_poco-f4-gt/",
+    "title": "Xiaomi Poco f4 gt",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "poco f4 gt",
+    "verified_model": null
   }
 }

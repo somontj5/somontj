@@ -36117,5 +36117,15 @@
     "condition": "Б/у",
     "model_key": "pixel 10a",
     "verified_model": null
+  },
+  "60871164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17396087_apple-iphone-11-pro-64-gb-gold/",
+    "title": "Apple iPhone 11 Pro, 64 gb, Gold",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
   }
 }

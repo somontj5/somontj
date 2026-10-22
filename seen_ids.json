@@ -35779,5 +35779,16 @@
     "condition": "Б/у",
     "model_key": "apple 8",
     "verified_model": null
+  },
+  "93652202": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17393652_samsung-note-20-ultra-2sim/",
+    "title": "Samsung Note 20 ultra 2sim",
+    "price": 2999,
+    "condition": "Б/у",
+    "model_key": "samsung note 20 ultra 2sim",
+    "verified_model": null
   }
 }

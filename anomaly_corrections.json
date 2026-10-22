@@ -109,6 +109,13 @@
     "reviewed_at": "2026-10-19T10:49:43",
     "source": "gemini-review"
   },
+  "46611128": {
+    "action": "exclude",
+    "group_key": "apple 11|128",
+    "reason": "В блоке IMEI указана модель APPLE iPhone 14 Pro, лот не является iPhone 11.",
+    "reviewed_at": "2026-10-22T13:28:39",
+    "source": "gemini-review"
+  },
   "47916256": {
     "action": "exclude",
     "group_key": "apple 16 pro max|256",

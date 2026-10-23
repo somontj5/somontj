@@ -30,6 +30,13 @@
     "reviewed_at": "2026-10-21T22:17:38",
     "source": "gemini-review"
   },
+  "17268444": {
+    "action": "exclude",
+    "group_key": "samsung s21 plus|128",
+    "reason": "В блоке IMEI указана модель SAMSUNG Galaxy S20+ SD865 и IMEI находится в черном списке, цена сильно занижена.",
+    "reviewed_at": "2026-10-23T15:28:10",
+    "source": "gemini-review"
+  },
   "17314745": {
     "group_key": "apple 11|128",
     "memory_gb": 128,

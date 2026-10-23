@@ -43,8 +43,9 @@
   },
   "samsung s21 plus|128": {
     "first_seen": "2026-10-18",
-    "ratio": 6.25,
-    "kind": "outlier"
+    "ratio": 6.5,
+    "kind": "reviewed",
+    "reviewed_at": "2026-10-23"
   },
   "apple xr|128": {
     "first_seen": "2026-10-18",
@@ -95,7 +96,7 @@
   "samsung s10|128": {
     "first_seen": "2026-10-18",
     "ratio": 6.28,
-    "kind": "reviewed",
+    "kind": "outlier",
     "reviewed_at": "2026-10-23"
   },
   "samsung s21|256": {

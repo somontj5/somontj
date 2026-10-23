@@ -36880,5 +36880,14 @@
     "price": 6000,
     "condition": "Б/у",
     "model_key": "apple 15 pro"
+  },
+  "46002568": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17401404_honor-600-lite-256-8/",
+    "title": "Honor 600 Lite 256/8gb",
+    "price": 3100,
+    "condition": "Б/у",
+    "model_key": "honor 600 lite"
   }
 }

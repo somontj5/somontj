@@ -37352,5 +37352,15 @@
     "condition": "Б/у",
     "model_key": null,
     "verified_model": null
+  },
+  "60231164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17406023_apple-iphone-11-64-gb-white/",
+    "title": "Apple iPhone 11, 64 gb, White",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

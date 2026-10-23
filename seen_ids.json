@@ -36697,5 +36697,24 @@
     "price": 2800,
     "condition": "Б/у",
     "model_key": "samsung s21 plus duos vetnam"
+  },
+  "26114256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17401261_apple-iphone-14-pro-max-256-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb, Deep Purple",
+    "price": 5299,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
+  },
+  "12071164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17401207_apple-iphone-11-pro-64-gb-midnight-green/",
+    "title": "Apple iPhone 11 Pro, 64 gb, Midnight Green",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
   }
 }

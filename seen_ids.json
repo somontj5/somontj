@@ -36995,5 +36995,24 @@
     "price": 650,
     "condition": "Б/у",
     "model_key": "redmi 9"
+  },
+  "38713128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17402387_apple-iphone-13-pro-max-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Sierra Blue",
+    "price": 4750,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
+  },
+  "40239512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17402395_samsung-m12/",
+    "title": "Samsung galaxy М12",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "samsung м12",
+    "verified_model": null
   }
 }

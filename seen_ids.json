@@ -36899,5 +36899,25 @@
     "condition": "Б/у",
     "model_key": "samsung a16",
     "verified_model": null
+  },
+  "17402711": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17402711_telifon-dar-kholati-khub-karor-dorad/",
+    "title": "Samsung galaxy S22",
+    "price": 2888,
+    "condition": "Б/у",
+    "model_key": "samsung s22",
+    "verified_model": null
+  },
+  "22103310": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17402210_nokia-3310-legenda/",
+    "title": "Nokia 3310",
+    "price": 499,
+    "condition": "Б/у",
+    "model_key": "nokia 3310",
+    "verified_model": null
   }
 }

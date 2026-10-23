@@ -37283,5 +37283,45 @@
     "condition": "Б/у",
     "model_key": "redmi 9",
     "verified_model": null
+  },
+  "06371256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17406371_apple-iphone-xs-256-gb-space-grey/",
+    "title": "Apple iPhone Xs, 256 gb, Space Grey",
+    "price": 1599,
+    "condition": "Б/у",
+    "model_key": "apple xs",
+    "verified_model": null
+  },
+  "54697128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17405469_apple-iphone-7-plus-128-gb/",
+    "title": "Apple iPhone 7 plus, 128 gb",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "apple 7 plus",
+    "verified_model": null
+  },
+  "40546745": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17405467_poko-m4-pro-5-g/",
+    "title": "Xiaomi Poco M4 Pro 5g",
+    "price": 599,
+    "condition": "Б/у",
+    "model_key": "poco m4 pro",
+    "verified_model": null
+  },
+  "05455215": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17405455_samsung-galaxy-s21-ultra-5g/",
+    "title": "Samsung Galaxy S21 Ultra 5G",
+    "price": 2900,
+    "condition": "Б/у",
+    "model_key": "samsung s21 ultra",
+    "verified_model": null
   }
 }

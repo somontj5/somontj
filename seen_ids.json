@@ -37381,5 +37381,15 @@
     "price": 3450,
     "condition": "Б/у",
     "model_key": "samsung s25 plus"
+  },
+  "06932864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17406932_apple-iphone-8-64-gb-space-grey/",
+    "title": "Apple iPhone 8, 64 gb, Space Grey",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "apple 8",
+    "verified_model": null
   }
 }

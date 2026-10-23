@@ -36966,5 +36966,34 @@
     "price": 2800,
     "condition": "Б/у",
     "model_key": "apple 13 pro"
+  },
+  "24321164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17402432_apple-iphone-11-pro-64-gb-silver/",
+    "title": "Apple iPhone 11 Pro, 64 gb, Silver",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
+  },
+  "40283440": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17402834_infinix-hot-40i/",
+    "title": "Infinix hot 40i",
+    "price": 699,
+    "condition": "Б/у",
+    "model_key": "infinix hot 40i",
+    "verified_model": null
+  },
+  "74030659": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17403065_xiaomi-redmi-9/",
+    "title": "Xiaomi Redmi 9",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "redmi 9"
   }
 }

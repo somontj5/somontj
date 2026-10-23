@@ -36938,5 +36938,33 @@
     "price": 500,
     "condition": "Б/у",
     "model_key": "redmi note 5 pro"
+  },
+  "17402867": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17402867_tel-zur-iagon-aib-nadorad/",
+    "title": "Samsung Galaxy S10",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "samsung s10",
+    "verified_model": null
+  },
+  "74021392": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17402139_samsung-galaxy-j2-prime/",
+    "title": "Samsung Galaxy J2 Prime",
+    "price": 250,
+    "condition": "Б/у",
+    "model_key": "samsung j2 prime"
+  },
+  "99713128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17402997_apple-iphone-13-pro-128-gb-silver/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Silver",
+    "price": 2800,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

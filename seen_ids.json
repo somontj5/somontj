@@ -37219,5 +37219,23 @@
     "price": 499,
     "condition": "Б/у",
     "model_key": "samsung a10"
+  },
+  "40596313": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17405963_samsung-m13/",
+    "title": "Samsung Galaxy M13",
+    "price": 901,
+    "condition": "Б/у",
+    "model_key": "samsung m13"
+  },
+  "94517256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17405945_apple-iphone-17-pro-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro, 256 gb, Silver",
+    "price": 6350,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro"
   }
 }

@@ -36921,6 +36921,22 @@
     "verified_model": null
   },
   "02511555": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17402511_a55-5g/",
+    "title": "Samsung Galaxy А55 5G",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "samsung а55",
+    "verified_model": null
+  },
+  "00821564": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17400821_xiaomi-redmo-note-5-pro-64g/",
+    "title": "Xiaomi Redmi Note 5 Pro 64gb",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "redmi note 5 pro"
   }
 }

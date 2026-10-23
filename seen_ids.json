@@ -36817,5 +36817,14 @@
     "price": 750,
     "condition": "Б/у",
     "model_key": "redmi note 8"
+  },
+  "01831355": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17401831_samsung-galaxy-m35-5g/",
+    "title": "Samsung Galaxy M35 5G",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "samsung m35"
   }
 }

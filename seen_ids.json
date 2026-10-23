@@ -36716,5 +36716,32 @@
     "condition": "Б/у",
     "model_key": "apple 11 pro",
     "verified_model": null
+  },
+  "34142565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17401334_telefon-redmi-note-14-pro-256gb-5g/",
+    "title": "Xiaomi Redmi Note 14 pro 256gb 5G",
+    "price": 2460,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro"
+  },
+  "26712645": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17401267_telefon-samsung-a12-64gb-vetnam-5g/",
+    "title": "Samsung Galaxy A12 64gb Vetnam 5G",
+    "price": 966,
+    "condition": "Б/у",
+    "model_key": "samsung a12"
+  },
+  "52121285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17401252_telefon-redmi-note-12-128gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 12 128gb Glabal Version 5G",
+    "price": 1350,
+    "condition": "Б/у",
+    "model_key": "redmi note 12"
   }
 }

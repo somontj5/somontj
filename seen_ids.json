@@ -37155,5 +37155,15 @@
     "condition": "Б/у",
     "model_key": "samsung a15",
     "verified_model": null
+  },
+  "05045400": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17405045_honor-400-lite-black/",
+    "title": "Honor 400 Lite black",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "honor 400 lite",
+    "verified_model": null
   }
 }

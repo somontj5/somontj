@@ -37210,5 +37210,14 @@
     "price": 6000,
     "condition": "Б/у",
     "model_key": "apple 15 pro"
+  },
+  "40496510": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17404965_samsung-a10/",
+    "title": "Samsung Galaxy A10",
+    "price": 499,
+    "condition": "Б/у",
+    "model_key": "samsung a10"
   }
 }

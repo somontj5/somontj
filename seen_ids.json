@@ -36772,5 +36772,23 @@
     "price": 2650,
     "condition": "Б/у",
     "model_key": "redmi note 13 pro pilus"
+  },
+  "16848324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17401684_telefon-redmi-8-32gb-4g/",
+    "title": "Xiaomi Redmi 8 32Gb 4G",
+    "price": 720,
+    "condition": "Б/у",
+    "model_key": "redmi 8"
+  },
+  "51102565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17401651_telefon-redmi-note-10-pro-256gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 10 pro 256gb Glabal Version 5G",
+    "price": 1478,
+    "condition": "Б/у",
+    "model_key": "redmi note 10 pro"
   }
 }

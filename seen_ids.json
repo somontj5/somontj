@@ -36853,5 +36853,14 @@
     "price": 1111,
     "condition": "Б/у",
     "model_key": null
+  },
+  "26442025": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17401232_telefon-redmi-12c-64gb-4g-2025/",
+    "title": "Xiaomi Redmi 12C 64gb 4G 2025",
+    "price": 820,
+    "condition": "Б/у",
+    "model_key": "redmi 12c"
   }
 }

@@ -37192,5 +37192,14 @@
     "price": 2600,
     "condition": "Б/у",
     "model_key": "samsung s21 plus"
+  },
+  "74014256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17404740_apple-iphone-14-pro-max-256-gb-space-black/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb, Space Black",
+    "price": 4350,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
   }
 }

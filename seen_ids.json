@@ -37323,5 +37323,24 @@
     "condition": "Б/у",
     "model_key": "samsung s21 ultra",
     "verified_model": null
+  },
+  "74065179": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17406517_realmi-9i/",
+    "title": "Realme 9i",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "realme 9i",
+    "verified_model": null
+  },
+  "40514256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17406405_apple-iphone-14-pro-256-gb-silver/",
+    "title": "Apple iPhone 14 Pro, 256 gb, Silver",
+    "price": 3999,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

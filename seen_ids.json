@@ -36743,5 +36743,25 @@
     "price": 1350,
     "condition": "Б/у",
     "model_key": "redmi note 12"
+  },
+  "40135332": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17401353_dar-kholati-khub-karor-dorad-a32/",
+    "title": "Samsung Galaxy A32",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "samsung a32",
+    "verified_model": null
+  },
+  "74013647": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17401364_apple-iphone-7-net-vstroennoi-pamiati/",
+    "title": "Apple iPhone 7, Нет встроенной памяти",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "apple 7 нет встроенной памяти",
+    "verified_model": null
   }
 }

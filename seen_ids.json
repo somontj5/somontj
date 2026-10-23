@@ -37135,5 +37135,25 @@
     "condition": "Б/у",
     "model_key": "redmi 9c",
     "verified_model": null
+  },
+  "52912256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17404652_honor-x9d-12-256gb/",
+    "title": "Honor X9d 12/256GB",
+    "price": 2799,
+    "condition": "Б/у",
+    "model_key": "honor x9d",
+    "verified_model": null
+  },
+  "17404627": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17404627_sroshna-pul-darkor/",
+    "title": "Samsung Galaxy A15",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "samsung a15",
+    "verified_model": null
   }
 }

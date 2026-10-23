@@ -568,5 +568,18 @@
     "ban_ad_urls": [
       "https://m.somon.tj/adv/17399435_apple-iphone-13-128-gb-blue/"
     ]
+  },
+  "686367": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/686367/",
+    "reason": "похоже на перекупщика по фото: Фотография сделана на специальном стенде/витрине с декоративными элементами и растением, что характерно для магазинов и профессиональных перекупщиков.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17404652_honor-x9d-12-256gb/",
+    "blocked_at": "2026-10-23T14:01:53",
+    "updated_at": "2026-10-23T14:01:53",
+    "active_ads_at_block": 1,
+    "ban_count": 1,
+    "ban_ad_urls": [
+      "https://m.somon.tj/adv/17404652_honor-x9d-12-256gb/"
+    ]
   }
 }

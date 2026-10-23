@@ -37032,5 +37032,14 @@
     "price": 7250,
     "condition": "Б/у",
     "model_key": "apple air"
+  },
+  "55014256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17403550_apple-iphone-14-pro-max-256-gb-space-black/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb, Space Black",
+    "price": 4890,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
   }
 }

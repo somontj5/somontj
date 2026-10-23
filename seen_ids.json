@@ -36763,5 +36763,14 @@
     "condition": "Б/у",
     "model_key": "apple 7 нет встроенной памяти",
     "verified_model": null
+  },
+  "13525616": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17401545_telefon-redmi-note-13-pro-pilus-5g-256-16gb/",
+    "title": "Xiaomi Redmi Note 13 pro pilus 5G 256/16Gb",
+    "price": 2650,
+    "condition": "Б/у",
+    "model_key": "redmi note 13 pro pilus"
   }
 }

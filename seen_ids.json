@@ -37255,5 +37255,33 @@
     "price": 8599,
     "condition": "Б/у",
     "model_key": "apple 16 pro"
+  },
+  "39312128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17406393_apple-iphone-12-pro-128-gb-pacific-blue/",
+    "title": "Apple iPhone 12 pro, 128 gb, Pacific Blue",
+    "price": 3050,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro"
+  },
+  "38014256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17405380_apple-iphone-14-pro-max-256-gb-space-black/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb, Space Black",
+    "price": 5999,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
+  },
+  "05361964": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17405361_redmi-9-pamiat-64-gb/",
+    "title": "Xiaomi Redmi 9 64 гб",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "redmi 9",
+    "verified_model": null
   }
 }

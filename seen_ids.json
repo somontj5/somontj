@@ -36669,5 +36669,14 @@
     "condition": "Б/у",
     "model_key": "apple xs",
     "verified_model": null
+  },
+  "57312128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17400573_apple-iphone-12-pro-max-128-gb-graphite/",
+    "title": "Apple iPhone 12 Pro Max, 128 gb, Graphite",
+    "price": 3300,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro max"
   }
 }

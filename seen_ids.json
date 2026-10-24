@@ -38136,5 +38136,15 @@
     "price": 5500,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "25965164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17412596_xiaomi-poco-c51-64gb/",
+    "title": "Xiaomi Poco C51 64gb",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "poco c51",
+    "verified_model": null
   }
 }

@@ -37421,5 +37421,52 @@
     "condition": "Б/у",
     "model_key": "poco x5",
     "verified_model": null
+  },
+  "72513128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17407725_apple-iphone-13-pro-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
+    "price": 6500,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
+  },
+  "07305512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17407305_apple-iphone-xs-max-512-gb-space-grey/",
+    "title": "Apple iPhone Xs Max, 512 gb, Space Grey",
+    "price": 1680,
+    "condition": "Б/у",
+    "model_key": "apple xs max",
+    "verified_model": null
+  },
+  "70216256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17407702_apple-iphone-16-pro-max-256-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
+    "price": 6499,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
+  },
+  "66117256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17407661_apple-iphone-17-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
+    "price": 11400,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
+  },
+  "40731110": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17407311_google-pixel-10a/",
+    "title": "Google Pixel 10a",
+    "price": 2950,
+    "condition": "Б/у",
+    "model_key": "pixel 10a",
+    "verified_model": null
   }
 }

@@ -37923,5 +37923,23 @@
     "condition": "Б/у",
     "model_key": "samsung a26",
     "verified_model": null
+  },
+  "13116128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17411131_apple-iphone-16-128-gb-black/",
+    "title": "Apple iPhone 16, 128 gb, Black",
+    "price": 5500,
+    "condition": "Б/у",
+    "model_key": "apple 16"
+  },
+  "10214128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17411102_apple-iphone-14-128-gb-purple/",
+    "title": "Apple iPhone 14, 128 gb, Purple",
+    "price": 3000,
+    "condition": "Б/у",
+    "model_key": "apple 14"
   }
 }

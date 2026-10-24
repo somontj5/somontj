@@ -37589,5 +37589,42 @@
     "price": 6050,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "68712644": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17408687_telefon-samsung-a12-64gb-vetnam-4g/",
+    "title": "Samsung Galaxy А12 64Gb Vetnam 4G",
+    "price": 966,
+    "condition": "Б/у",
+    "model_key": "samsung а12"
+  },
+  "02102565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17408702_telefon-redmi-note-10-pro-256gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 10 pro 256gb Glabal Version 5G",
+    "price": 1433,
+    "condition": "Б/у",
+    "model_key": "redmi note 10 pro"
+  },
+  "62111256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17408621_apple-iphone-11-pro-256-gb-midnight-green/",
+    "title": "Apple iPhone 11 Pro, 256 gb, Midnight Green",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
+  },
+  "86448324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17408644_telefon-redmi-8-32gb-4g/",
+    "title": "Xiaomi Redmi 8 32Gb 4G",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "redmi 8"
   }
 }

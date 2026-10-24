@@ -38108,5 +38108,15 @@
     "price": 150,
     "condition": "Б/у",
     "model_key": "nokia c3"
+  },
+  "39512256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17131395_apple-iphone-12-pro-256-gb-silver/",
+    "title": "Apple iPhone 12 pro, 256 gb, Silver",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro",
+    "verified_model": null
   }
 }

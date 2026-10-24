@@ -38016,5 +38016,15 @@
     "condition": "Б/у",
     "model_key": "samsung a14",
     "verified_model": null
+  },
+  "09085405": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17409085_tecno-camon-40-pro-5g/",
+    "title": "Tecno Camon 40 Pro 5G",
+    "price": 2100,
+    "condition": "Б/у",
+    "model_key": "tecno camon 40 pro",
+    "verified_model": null
   }
 }

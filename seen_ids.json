@@ -37401,5 +37401,15 @@
     "condition": "Б/у",
     "model_key": "samsung a25",
     "verified_model": "Galaxy A25"
+  },
+  "40753316": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17407533_a16/",
+    "title": "Samsung Galaxy A16",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "samsung a16",
+    "verified_model": null
   }
 }

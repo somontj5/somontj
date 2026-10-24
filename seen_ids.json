@@ -37626,5 +37626,52 @@
     "price": 750,
     "condition": "Б/у",
     "model_key": "redmi 8"
+  },
+  "88238256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17408288_samsung-s23-8-256gb/",
+    "title": "Samsung Galaxy S23 8/256gb",
+    "price": 3500,
+    "condition": "Б/у",
+    "model_key": "samsung s23"
+  },
+  "08723264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17408723_redmi-a2-64gb/",
+    "title": "Xiaomi Redmi A2+ 64Gb",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "redmi a2 plus",
+    "verified_model": null
+  },
+  "27101285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17408727_telefon-redmi-10-pro-128gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi 10 pro 128gb Glabal Version 5G",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "redmi 10 pro"
+  },
+  "15542565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17408715_telefon-samsung-a54-256gb-vetnam-5g/",
+    "title": "Samsung Galaxy А54 256gb Vetnam 5G",
+    "price": 2240,
+    "condition": "Б/у",
+    "model_key": "samsung а54"
+  },
+  "71712256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17408717_apple-iphone-12-256-gb-green/",
+    "title": "Apple iPhone 12, 256 gb, Green",
+    "price": 2799,
+    "condition": "Б/у",
+    "model_key": "apple 12",
+    "verified_model": null
   }
 }

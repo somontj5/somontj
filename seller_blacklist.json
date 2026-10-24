@@ -581,5 +581,18 @@
     "ban_ad_urls": [
       "https://m.somon.tj/adv/17404652_honor-x9d-12-256gb/"
     ]
+  },
+  "8538862": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/8538862/",
+    "reason": "похоже на перекупщика по фото: на фото четко видна витрина магазина с чехлами на крючках и брендированный стикер магазина 'sifat_mobile_' на задней панели устройства",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17408717_apple-iphone-12-256-gb-green/",
+    "blocked_at": "2026-10-24T07:08:38",
+    "updated_at": "2026-10-24T07:08:38",
+    "active_ads_at_block": 18,
+    "ban_count": 1,
+    "ban_ad_urls": [
+      "https://m.somon.tj/adv/17408717_apple-iphone-12-256-gb-green/"
+    ]
   }
 }

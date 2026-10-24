@@ -37894,5 +37894,24 @@
     "price": 965,
     "condition": "Б/у",
     "model_key": "samsung a12"
+  },
+  "10231164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17411023_apple-iphone-11-64-gb-purple/",
+    "title": "Apple iPhone 11, 64 gb, Purple",
+    "price": 1049,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "71488256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17410927_xiaomi-redmi-not-14-pro-8-8-256gb/",
+    "title": "Xiaomi Redmi Not 14 Pro 8+8/256Gb",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "redmi not 14 pro 8"
   }
 }

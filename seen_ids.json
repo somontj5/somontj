@@ -38118,5 +38118,23 @@
     "condition": "Б/у",
     "model_key": "apple 12 pro",
     "verified_model": null
+  },
+  "53416256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17412534_apple-iphone-16-pro-max-256-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
+    "price": 9999,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
+  },
+  "50314256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17412503_apple-iphone-14-pro-256-gb-space-black/",
+    "title": "Apple iPhone 14 Pro, 256 gb, Space Black",
+    "price": 5500,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

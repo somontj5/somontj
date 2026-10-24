@@ -37526,5 +37526,23 @@
     "price": 9599,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "29114128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17408291_apple-iphone-14-pro-max-128-gb-silver/",
+    "title": "Apple iPhone 14 Pro Max, 128 gb, Silver",
+    "price": 6500,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
+  },
+  "24314128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17408243_apple-iphone-14-pro-max-128-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro Max, 128 gb, Deep Purple",
+    "price": 6600,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
   }
 }

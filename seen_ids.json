@@ -37813,5 +37813,23 @@
     "price": 1344,
     "condition": "Б/у",
     "model_key": "redmi notе 12"
+  },
+  "10816324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17410816_telefon-redmi-32gb-4g/",
+    "title": "Xiaomi Redmi 32gb 4G",
+    "price": 740,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "88152565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17410788_telefon-redmi-note-15-256-5g/",
+    "title": "Xiaomi Redmi Note 15 256 5G",
+    "price": 2099,
+    "condition": "Б/у",
+    "model_key": "redmi note 15 256"
   }
 }

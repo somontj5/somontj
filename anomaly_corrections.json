@@ -99,6 +99,13 @@
     "reviewed_at": "2026-10-19T03:37:46",
     "source": "gemini-review"
   },
+  "39717512": {
+    "action": "exclude",
+    "group_key": "apple 17 pro max|512",
+    "reason": "Цена 899 TJS является приманкой или неполной стоимостью (первоначальный взнос/аренда), реальная цена скрыта или это обман",
+    "reviewed_at": "2026-10-24T15:11:26",
+    "source": "gemini-review"
+  },
   "44237128": {
     "group_key": "apple 7|128",
     "memory_gb": 128,

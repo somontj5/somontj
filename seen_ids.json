@@ -37391,5 +37391,15 @@
     "condition": "Б/у",
     "model_key": "apple 8",
     "verified_model": null
+  },
+  "07356255": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17407356_galaxy-samsung-a25-5g/",
+    "title": "Samsung Galaxy A25 5G",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "samsung a25",
+    "verified_model": "Galaxy A25"
   }
 }

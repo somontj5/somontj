@@ -38081,5 +38081,23 @@
     "price": 9700,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "26813128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17412268_apple-iphone-13-pro-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
+    "price": 3499,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
+  },
+  "22413128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17412224_apple-iphone-13-pro-128-gb-alpine-green/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Alpine Green",
+    "price": 3599,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

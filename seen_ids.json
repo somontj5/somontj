@@ -37468,5 +37468,14 @@
     "condition": "Б/у",
     "model_key": "pixel 10a",
     "verified_model": null
+  },
+  "82213256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17407822_apple-iphone-13-pro-max-256-gb-graphite/",
+    "title": "Apple iPhone 13 Pro Max, 256 gb, Graphite",
+    "price": 3500,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
   }
 }

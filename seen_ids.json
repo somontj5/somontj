@@ -38026,5 +38026,23 @@
     "condition": "Б/у",
     "model_key": "tecno camon 40 pro",
     "verified_model": null
+  },
+  "07218256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17411507_samsung-galaxy-s21-8-256gb/",
+    "title": "Samsung Galaxy S21 8/256Gb",
+    "price": 2100,
+    "condition": "Б/у",
+    "model_key": "samsung s21"
+  },
+  "63414128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17411634_apple-iphone-14-pro-128-gb-silver/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Silver",
+    "price": 4500,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

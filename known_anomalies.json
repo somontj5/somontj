@@ -1,9 +1,9 @@
 {
   "apple 17 pro max|512": {
     "first_seen": "2026-10-18",
-    "ratio": 9.73,
+    "ratio": 16.24,
     "kind": "reviewed",
-    "reviewed_at": "2026-10-19"
+    "reviewed_at": "2026-10-24"
   },
   "apple 7|128": {
     "first_seen": "2026-10-18",
@@ -96,7 +96,7 @@
   "samsung s10|128": {
     "first_seen": "2026-10-18",
     "ratio": 6.28,
-    "kind": "reviewed",
+    "kind": "outlier",
     "reviewed_at": "2026-10-24"
   },
   "samsung s21|256": {

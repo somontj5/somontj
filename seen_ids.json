@@ -37517,5 +37517,14 @@
     "price": 13500,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "12116256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17408121_apple-iphone-16-pro-max-256-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
+    "price": 9599,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   }
 }

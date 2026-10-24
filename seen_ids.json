@@ -37849,5 +37849,50 @@
     "price": 1550,
     "condition": "Б/у",
     "model_key": "redmi 14 pro"
+  },
+  "00545256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17410900_telefon-samsung-54-5g-256gb/",
+    "title": "Samsung 54 5g 256gb",
+    "price": 2270,
+    "condition": "Б/у",
+    "model_key": "samsung 54"
+  },
+  "38212565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17410938_samsung-galaxy-21s-256gb-carea-5g/",
+    "title": "Samsung Galaxy 21S 256gb Carea 5G",
+    "price": 1899,
+    "condition": "Б/у",
+    "model_key": "samsung 21s"
+  },
+  "09181285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17410918_telefon-redmi-128gb-5g/",
+    "title": "Xiaomi Redmi 128gb 5G",
+    "price": 1475,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "82102565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17410882_telefon-xiaomi-10-pro-256gb-5g/",
+    "title": "Xiaomi Redmi 10 pro 256gb 5G",
+    "price": 1490,
+    "condition": "Б/у",
+    "model_key": "redmi 10 pro"
+  },
+  "84712645": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17410847_telefon-samsung-12-64gb-vetnam-5g/",
+    "title": "Samsung Galaxy A12 64gb Vetnam 5G",
+    "price": 965,
+    "condition": "Б/у",
+    "model_key": "samsung a12"
   }
 }

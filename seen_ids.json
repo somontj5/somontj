@@ -37913,5 +37913,15 @@
     "price": 1999,
     "condition": "Б/у",
     "model_key": "redmi not 14 pro 8"
+  },
+  "11038265": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17411038_telefon-samsung-a26-5g/",
+    "title": "Samsung a26 5G",
+    "price": 2200,
+    "condition": "Б/у",
+    "model_key": "samsung a26",
+    "verified_model": null
   }
 }

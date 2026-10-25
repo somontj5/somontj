@@ -38369,5 +38369,58 @@
   },
   "12112825": {
     "logged": true
+  },
+  "40101285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17415940_telefon-redmi-note-10pro-128gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 10pro 128gb Glabal Version 5G",
+    "price": 1460,
+    "condition": "Б/у",
+    "model_key": "redmi note 10pro"
+  },
+  "59557164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17415955_telefon-poco-c71-64gb/",
+    "title": "Xiaomi poco C71 64gb",
+    "price": 977,
+    "condition": "Б/у",
+    "model_key": "poco c71"
+  },
+  "15956256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17415956_apple-iphone-xs-256-gb-space-grey/",
+    "title": "Apple iPhone Xs, 256 gb, Space Grey",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple xs",
+    "verified_model": null
+  },
+  "41591110": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17415911_honor-10/",
+    "title": "Honor 10",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "honor 10",
+    "verified_model": null
+  },
+  "14882565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17415923_telefon-redmi-note-14-pro-8-8-256gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 14 pro 8+8/256Gb Glabal Version 5G",
+    "price": 2457,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro 8 glabal"
+  },
+  "88612645": {
+    "logged": true
+  },
+  "59121285": {
+    "logged": true
   }
 }

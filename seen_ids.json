@@ -38561,5 +38561,15 @@
     "condition": "Б/у",
     "model_key": "apple xr",
     "verified_model": null
+  },
+  "17417808": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17417808_iphone/",
+    "title": "Apple iPhone 16 Pro",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro",
+    "verified_model": null
   }
 }

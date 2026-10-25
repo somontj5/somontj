@@ -38327,5 +38327,14 @@
     "condition": "Б/у",
     "model_key": "samsung м21",
     "verified_model": null
+  },
+  "61488256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17415386_xiaomi-redmi-not-14-pro-8-8-256gb/",
+    "title": "Xiaomi Redmi Not 14 Pro 8+8/256gb",
+    "price": 2450,
+    "condition": "Б/у",
+    "model_key": "redmi not 14 pro 8"
   }
 }

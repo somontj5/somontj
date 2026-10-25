@@ -38571,5 +38571,15 @@
     "condition": "Б/у",
     "model_key": "apple 16 pro",
     "verified_model": null
+  },
+  "41830910": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17418309_xiaomi-redmi-note-10/",
+    "title": "Xiaomi Redmi Note 10",
+    "price": 899,
+    "condition": "Б/у",
+    "model_key": "redmi note 10",
+    "verified_model": null
   }
 }

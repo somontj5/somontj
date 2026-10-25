@@ -153,5 +153,10 @@
     "first_seen": "2026-10-22",
     "ratio": 3.89,
     "kind": "wide"
+  },
+  "honor x9d|256": {
+    "first_seen": "2026-10-25",
+    "ratio": 3.08,
+    "kind": "outlier"
   }
 }

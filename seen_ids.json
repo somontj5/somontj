@@ -38261,5 +38261,51 @@
     "price": 4100,
     "condition": "Б/у",
     "model_key": "apple 13 pro max"
+  },
+  "43614256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15899436_redmi-note-14-pro-256gb/",
+    "title": "Xiaomi Redmi Note 14 pro plus 5g 256gb",
+    "price": 2600,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro plus"
+  },
+  "55239275": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15523927_tecno-pova-5/",
+    "title": "Tecno Spark Slim",
+    "price": 2400,
+    "condition": "Б/у",
+    "model_key": "tecno spark slim"
+  },
+  "83324225": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15683324_samsung-galaxy-s22-ultra-5g/",
+    "title": "Samsung Galaxy S22 Ultra 5G",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
+  },
+  "83354225": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15683354_samsung-galaxy-s22-ultra-5g-lll/",
+    "title": "Samsung Galaxy S22 ultra 5G",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
+  },
+  "14480135": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17414480_xiaomi-redmi-note-13-pro-5g/",
+    "title": "Xiaomi redmi Note 13 pro+ 5G",
+    "price": 2799,
+    "condition": "Б/у",
+    "model_key": "redmi note 13 pro plus",
+    "verified_model": null
   }
 }

@@ -38345,5 +38345,23 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "redmi a5"
+  },
+  "74157339": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17415733_redmi-9s/",
+    "title": "Xiaomi Redmi 9с",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "redmi 9с"
+  },
+  "70892018": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17415708_samsung-a9-2018/",
+    "title": "Samsung Galaxy A9 2018",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "samsung a9 2018"
   }
 }

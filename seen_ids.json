@@ -38307,5 +38307,15 @@
     "condition": "Б/у",
     "model_key": "redmi note 13 pro plus",
     "verified_model": null
+  },
+  "79232016": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17414792_a3-2016/",
+    "title": "Samsung Galaxy А3, 2016",
+    "price": 280,
+    "condition": "Б/у",
+    "model_key": "samsung а3 2016",
+    "verified_model": null
   }
 }

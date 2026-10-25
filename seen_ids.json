@@ -38222,5 +38222,15 @@
     "condition": "Б/у",
     "model_key": "apple xr",
     "verified_model": null
+  },
+  "93712256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17413937_apple-iphone-12-pro-max-256-gb-graphite/",
+    "title": "Apple iPhone 12 Pro Max, 256 gb, Graphite",
+    "price": 2999,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro max",
+    "verified_model": null
   }
 }

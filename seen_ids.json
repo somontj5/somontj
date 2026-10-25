@@ -38212,5 +38212,15 @@
     "condition": "Б/у",
     "model_key": "nokia 8800 sirocco",
     "verified_model": null
+  },
+  "13804128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17413804_apple-iphone-xr-128-gb-blue/",
+    "title": "Apple iPhone Xr, 128 gb, Blue",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
   }
 }

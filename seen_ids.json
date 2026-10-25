@@ -38551,5 +38551,15 @@
     "condition": "Б/у",
     "model_key": "apple 8",
     "verified_model": null
+  },
+  "41768064": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17417680_apple-iphone-xr-64-gb-black/",
+    "title": "Apple iPhone Xr, 64 gb, Black",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
   }
 }

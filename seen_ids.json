@@ -38648,5 +38648,24 @@
     "condition": "Б/у",
     "model_key": "apple x",
     "verified_model": null
+  },
+  "46215256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17419346_samsung-s21-ultra-5g-256gb-duo/",
+    "title": "Samsung Galaxy S21 Ultra 5G 256gb Duo",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "samsung s21 ultra",
+    "verified_model": null
+  },
+  "09317256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17419093_apple-iphone-17-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
+    "price": 14500,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
   }
 }

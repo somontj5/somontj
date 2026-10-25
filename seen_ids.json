@@ -38473,5 +38473,34 @@
     "price": 5300,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "41621721": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17416217_samsung-galaxy-a21s/",
+    "title": "Samsung Galaxy A21s",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "samsung a21s",
+    "verified_model": null
+  },
+  "41618123": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17416181_samsung-galaxy-a23/",
+    "title": "Samsung galaxy A23",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "samsung a23",
+    "verified_model": null
+  },
+  "19016256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17416190_apple-iphone-16-pro-max-256-gb-black-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
+    "price": 8600,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   }
 }

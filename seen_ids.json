@@ -38638,5 +38638,15 @@
     "price": 3200,
     "condition": "Б/у",
     "model_key": "apple 12 pro max"
+  },
+  "41924864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17419248_apple-iphone-x-64-gb-silver/",
+    "title": "Apple iPhone X, 64 gb, Silver",
+    "price": 779,
+    "condition": "Б/у",
+    "model_key": "apple x",
+    "verified_model": null
   }
 }

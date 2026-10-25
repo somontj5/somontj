@@ -38619,5 +38619,15 @@
     "price": 5600,
     "condition": "Б/у",
     "model_key": "apple 13 pro max"
+  },
+  "74187177": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17418717_infinix-smart-7/",
+    "title": "Infinix smart 7",
+    "price": 499,
+    "condition": "Б/у",
+    "model_key": "infinix smart 7",
+    "verified_model": null
   }
 }

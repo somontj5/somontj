@@ -38591,5 +38591,24 @@
     "condition": "Б/у",
     "model_key": "samsung a10",
     "verified_model": null
+  },
+  "45314256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17418453_apple-iphone-14-pro-max-256-gb-space-black/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb, Space Black",
+    "price": 6100,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
+  },
+  "74184349": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17418434_redmi-9c-nfc/",
+    "title": "Xiaomi Redmi 9c",
+    "price": 200,
+    "condition": "Б/у",
+    "model_key": "redmi 9c",
+    "verified_model": null
   }
 }

@@ -38182,5 +38182,15 @@
     "price": 8499,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "13532864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17413532_apple-iphone-8-plus-64-gb-space-grey/",
+    "title": "Apple iPhone 8 plus, 64 gb, Space Grey",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "apple 8 plus",
+    "verified_model": null
   }
 }

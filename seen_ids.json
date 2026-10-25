@@ -38667,5 +38667,15 @@
     "price": 14500,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "19404732": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17419404_apple-iphone-7-32-gb/",
+    "title": "Apple iPhone 7, 32 gb",
+    "price": 699,
+    "condition": "Б/у",
+    "model_key": "apple 7",
+    "verified_model": null
   }
 }

@@ -38502,5 +38502,15 @@
     "price": 8600,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "41642810": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17416428_samsung-note-10/",
+    "title": "Samsung Note 10+",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "samsung note 10 plus",
+    "verified_model": null
   }
 }

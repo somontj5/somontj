@@ -38522,5 +38522,24 @@
     "condition": "Б/у",
     "model_key": "honor x9d",
     "verified_model": null
+  },
+  "48113128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17417481_apple-iphone-13-128-gb-starlight/",
+    "title": "Apple iPhone 13, 128 gb, Starlight",
+    "price": 3000,
+    "condition": "Б/у",
+    "model_key": "apple 13"
+  },
+  "41755264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17417552_apple-iphone-x-64-gb-silver/",
+    "title": "Apple iPhone X, 64 gb, Silver",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "apple x",
+    "verified_model": null
   }
 }

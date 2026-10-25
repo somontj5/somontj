@@ -38242,5 +38242,15 @@
     "condition": "Б/у",
     "model_key": null,
     "verified_model": null
+  },
+  "40571264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17414057_apple-iphone-12-64-gb-black/",
+    "title": "Apple iPhone 12, 64 gb, Black",
+    "price": 2650,
+    "condition": "Б/у",
+    "model_key": "apple 12",
+    "verified_model": null
   }
 }

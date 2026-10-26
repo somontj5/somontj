@@ -38858,5 +38858,24 @@
     "condition": "Б/у",
     "model_key": "redmi note 11 pro",
     "verified_model": null
+  },
+  "21122562": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17421282_telefon-samsung-21-ultro-12-256gb-2sim/",
+    "title": "Samsung Galaxy S21 Ultra 12/256Gb 2sim",
+    "price": 2300,
+    "condition": "Б/у",
+    "model_key": "samsung s21 ultra 2sim"
+  },
+  "21259732": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17421259_apple-iphone-7-32-gb/",
+    "title": "Apple iPhone 7, 32 gb",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "apple 7",
+    "verified_model": null
   }
 }

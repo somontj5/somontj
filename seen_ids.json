@@ -39090,5 +39090,23 @@
     "price": 750,
     "condition": "Б/у",
     "model_key": "tecno pova 3"
+  },
+  "74234208": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17423420_redme-note-8t/",
+    "title": "Xiaomi Redmi note 8t",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "redmi note 8t"
+  },
+  "42340311": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17423403_xiaomi-mi-11lite/",
+    "title": "Xiaomi Mi 11lite",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "xiaomi mi 11lite"
   }
 }

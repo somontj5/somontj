@@ -39144,5 +39144,15 @@
     "price": 600,
     "condition": "Б/у",
     "model_key": "redmi 9c"
+  },
+  "42439061": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17424390_smartfon-realme-c61-idealnoe-sostoianie-polnyi-komplekt/",
+    "title": "Realme C61",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "realme c61",
+    "verified_model": null
   }
 }

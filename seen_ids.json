@@ -39473,5 +39473,28 @@
     "condition": "Б/у",
     "model_key": "redmi 10",
     "verified_model": null
+  },
+  "42687910": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17426879_samsung-galaxy-a10s/",
+    "title": "Samsung Galaxy a10s",
+    "price": 499,
+    "condition": "Б/у",
+    "model_key": "samsung a10s",
+    "verified_model": null
+  },
+  "85611128": {
+    "logged": true
+  },
+  "26891112": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17426891_redmi-note-11-2-sim/",
+    "title": "Xiaomi Redmi Note 11 2-Sim",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "redmi note 11 2 sim",
+    "verified_model": null
   }
 }

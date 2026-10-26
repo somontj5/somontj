@@ -38877,5 +38877,33 @@
     "condition": "Б/у",
     "model_key": "apple 7",
     "verified_model": null
+  },
+  "42226731": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17422267_a31-kareiski/",
+    "title": "Samsung Gaaxy А31",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "samsung gaaxy а31"
+  },
+  "14661164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17421466_apple-iphone-11-pro-64-gb-space-grey/",
+    "title": "Apple iPhone 11 Pro, 64 gb, Space Grey",
+    "price": 2250,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
+  },
+  "12614128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17422126_apple-iphone-14-pro-max-128-gb-space-black/",
+    "title": "Apple iPhone 14 Pro Max, 128 gb, Space Black",
+    "price": 5800,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
   }
 }

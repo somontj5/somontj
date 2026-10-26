@@ -38754,5 +38754,42 @@
     "price": 2350,
     "condition": "Б/у",
     "model_key": "samsung s21 ultra"
+  },
+  "17421047": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17421047_savdo-meshad/",
+    "title": "Samsung Galaxy A8",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "samsung a8",
+    "verified_model": null
+  },
+  "31142565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17421031_telefon-redmi-note-14pro-256gb-5g/",
+    "title": "Xiaomi Redmi Note 14pro 256gb 5G",
+    "price": 2460,
+    "condition": "Б/у",
+    "model_key": "redmi note 14pro"
+  },
+  "14101285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17421014_telefon-redmi-note-10pro-128gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 10pro 128gb Glabal Version 5G",
+    "price": 1465,
+    "condition": "Б/у",
+    "model_key": "redmi note 10pro"
+  },
+  "21128852": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17420947_telefon-samsung-s21-128-8gb-vetnam-5g-2sim/",
+    "title": "Samsung Galaxy S21+ 128/8Gb Vetnam 5G 2sim",
+    "price": 2700,
+    "condition": "Б/у",
+    "model_key": "samsung s21 plus vetnam"
   }
 }

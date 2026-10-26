@@ -39366,5 +39366,25 @@
     "price": 7500,
     "condition": "Б/у",
     "model_key": "samsung s24 ultra"
+  },
+  "42555810": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17425558_redmi-not-10s/",
+    "title": "Xiaomi Redmi note 10S",
+    "price": 1099,
+    "condition": "Б/у",
+    "model_key": "redmi note 10s",
+    "verified_model": null
+  },
+  "54958464": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17425495_redmi-note-8-4-64gb/",
+    "title": "Xiaomi Redmi Note 8 4/64gb",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "redmi note 8",
+    "verified_model": null
   }
 }

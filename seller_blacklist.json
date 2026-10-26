@@ -594,5 +594,18 @@
     "ban_ad_urls": [
       "https://m.somon.tj/adv/17408717_apple-iphone-12-256-gb-green/"
     ]
+  },
+  "12832638": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/12832638/",
+    "reason": "похоже на перекупщика по фото: Фотографии сделаны на фоне однотипного декоративного зеленого покрытия (искусственной травы), что часто используется перекупщиками для создания 'товарного' вида объявлений на природе.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17425558_redmi-not-10s/",
+    "blocked_at": "2026-10-26T15:51:37",
+    "updated_at": "2026-10-26T15:51:37",
+    "active_ads_at_block": 1,
+    "ban_count": 1,
+    "ban_ad_urls": [
+      "https://m.somon.tj/adv/17425558_redmi-not-10s/"
+    ]
   }
 }

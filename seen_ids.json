@@ -39453,5 +39453,25 @@
     "price": 2100,
     "condition": "Б/у",
     "model_key": "xiaomi mi 13 lite"
+  },
+  "42669920": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17426699_samsung-note-20-ultra/",
+    "title": "Samsung Galaxy Note 20 Ultra",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "samsung note 20 ultra",
+    "verified_model": null
+  },
+  "42670410": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17426704_xiaomi-redmi-10/",
+    "title": "Xiaomi Redmi 10",
+    "price": 799,
+    "condition": "Б/у",
+    "model_key": "redmi 10",
+    "verified_model": null
   }
 }

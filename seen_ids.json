@@ -38791,5 +38791,24 @@
     "price": 2700,
     "condition": "Б/у",
     "model_key": "samsung s21 plus vetnam"
+  },
+  "95582565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17420979_telefon-samsung-a55-8-256gb-vetnam-5g/",
+    "title": "Samsung Galaxy А55 8/256 gb 5G",
+    "price": 2750,
+    "condition": "Б/у",
+    "model_key": "samsung а55"
+  },
+  "74207663": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17420766_samsung-chi-3/",
+    "title": "Samsung Galaxy J3",
+    "price": 300,
+    "condition": "Б/у",
+    "model_key": "samsung j3",
+    "verified_model": null
   }
 }

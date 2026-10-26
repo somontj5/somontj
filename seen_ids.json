@@ -39026,5 +39026,15 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "samsung galaxsy s22"
+  },
+  "74229403": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17422940_samsund-z-flip-3/",
+    "title": "Samsung Galaxy Z flip 3",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "samsung z flip 3",
+    "verified_model": null
   }
 }

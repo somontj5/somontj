@@ -38848,5 +38848,15 @@
     "condition": "Б/у",
     "model_key": "infinix smart 8 pro",
     "verified_model": null
+  },
+  "42115011": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17421150_note-11-pro/",
+    "title": "Xiaomi Redmi Note 11 Pro",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "redmi note 11 pro",
+    "verified_model": null
   }
 }

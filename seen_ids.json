@@ -39298,5 +39298,15 @@
     "price": 2766,
     "condition": "Б/у",
     "model_key": "samsung s21 plus 2sim"
+  },
+  "24865335": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17424865_samsung-a-33-5g/",
+    "title": "Samsung Galaxy a33 5g",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "samsung a33",
+    "verified_model": null
   }
 }

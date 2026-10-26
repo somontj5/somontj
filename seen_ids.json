@@ -39226,5 +39226,14 @@
     "price": 5600,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "05558256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17424440_samsung-galaxy-a55-5g-8-256gb/",
+    "title": "Samsung Galaxy A55 5G 8/256Gb",
+    "price": 2650,
+    "condition": "Б/у",
+    "model_key": "samsung a55"
   }
 }

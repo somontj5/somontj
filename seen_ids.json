@@ -39262,5 +39262,32 @@
     "price": 940,
     "condition": "Б/у",
     "model_key": "poco 71"
+  },
+  "56882026": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17424790_xiaomi-redmi-15-note-256-8-8gb-2026/",
+    "title": "Xiaomi Redmi 15 Note 256/8+8Gb 2026",
+    "price": 2200,
+    "condition": "Б/у",
+    "model_key": "redmi 15 note 256 8"
+  },
+  "24770324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17424770_xiaomi-redmi-32gb-4g/",
+    "title": "Xiaomi Redmi 32Gb 4G",
+    "price": 760,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "42475215": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17424752_xiaomi-15-t-pro/",
+    "title": "Xiaomi 15t pro",
+    "price": 6700,
+    "condition": "Б/у",
+    "model_key": "xiaomi 15t pro"
   }
 }

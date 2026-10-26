@@ -39327,5 +39327,25 @@
     "price": 1700,
     "condition": "Б/у",
     "model_key": "apple xr"
+  },
+  "42534213": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17425342_mi-13-like/",
+    "title": "Xiaomi Mi 13 lite",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "xiaomi mi 13 lite",
+    "verified_model": null
+  },
+  "53301264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17425330_apple-iphone-12-64-gb-green/",
+    "title": "Apple iPhone 12, 64 gb, Green",
+    "price": 1950,
+    "condition": "Б/у",
+    "model_key": "apple 12",
+    "verified_model": null
   }
 }

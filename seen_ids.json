@@ -39308,5 +39308,15 @@
     "condition": "Б/у",
     "model_key": "samsung a33",
     "verified_model": null
+  },
+  "74249453": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17424945_samsung-galaxy-j3/",
+    "title": "Samsung Galaxy J3",
+    "price": 235,
+    "condition": "Б/у",
+    "model_key": "samsung j3",
+    "verified_model": null
   }
 }

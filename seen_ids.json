@@ -38989,5 +38989,42 @@
     "condition": "Б/у",
     "model_key": "samsung a15",
     "verified_model": null
+  },
+  "42286220": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17422862_samsung-s20fe/",
+    "title": "Samsung Galaxy S20FE",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "samsung s20fe",
+    "verified_model": null
+  },
+  "84014256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17422840_apple-iphone-14-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb, Silver",
+    "price": 6900,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
+  },
+  "78315256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17422783_apple-iphone-15-pro-max-256-gb-white-titanium/",
+    "title": "Apple iPhone 15 Pro Max, 256 gb, White Titanium",
+    "price": 5885,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro max"
+  },
+  "42277522": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17422775_samsung-galaxsy-s22/",
+    "title": "Samsung Galaxsy S22",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "samsung galaxsy s22"
   }
 }

@@ -39424,5 +39424,15 @@
     "price": 4150,
     "condition": "Б/у",
     "model_key": null
+  },
+  "15012128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17426150_apple-iphone-12-128-gb-green/",
+    "title": "Apple iPhone 12, 128 gb, Green",
+    "price": 2800,
+    "condition": "Б/у",
+    "model_key": "apple 12",
+    "verified_model": null
   }
 }

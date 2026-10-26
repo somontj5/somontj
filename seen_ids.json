@@ -39108,5 +39108,41 @@
     "price": 950,
     "condition": "Б/у",
     "model_key": "xiaomi mi 11lite"
+  },
+  "42347512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17423475_samsung-a12/",
+    "title": "Samsung Galaxy A12, 64gb",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "samsung a12"
+  },
+  "45912128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17423459_apple-iphone-12-pro-128-gb-graphite/",
+    "title": "Apple iPhone 12 pro, 128 gb, Graphite",
+    "price": 3300,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro"
+  },
+  "74234469": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17423446_redmi-9s/",
+    "title": "Xiaomi Redmi 9C, 128gb",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "redmi 9c"
+  },
+  "74234349": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17423434_redme-9c/",
+    "title": "Xiaomi Redmi 9c",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "redmi 9c"
   }
 }

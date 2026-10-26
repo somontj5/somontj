@@ -39542,5 +39542,15 @@
     "condition": "Б/у",
     "model_key": "samsung a20s",
     "verified_model": null
+  },
+  "59511128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17427595_apple-iphone-11-128-gb-black/",
+    "title": "Apple iPhone 11, 128 gb, Black",
+    "price": 2249,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

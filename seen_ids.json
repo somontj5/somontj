@@ -39054,5 +39054,23 @@
     "price": 1699,
     "condition": "Б/у",
     "model_key": "samsung a17"
+  },
+  "74232364": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17423236_poco-f4/",
+    "title": "Xiaomi Poco f4",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "poco f4"
+  },
+  "42318726": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17423187_samsung-a26/",
+    "title": "Samsung Galaxy A26",
+    "price": 1650,
+    "condition": "Б/у",
+    "model_key": "samsung a26"
   }
 }

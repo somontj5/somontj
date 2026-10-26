@@ -39485,7 +39485,14 @@
     "verified_model": null
   },
   "85611128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17426856_apple-iphone-11-128-gb-black/",
+    "title": "Apple iPhone 11, 128 gb, Black",
+    "price": 2600,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   },
   "26891112": {
     "logged": true,
@@ -39495,6 +39502,16 @@
     "price": 1300,
     "condition": "Б/у",
     "model_key": "redmi note 11 2 sim",
+    "verified_model": null
+  },
+  "42708540": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17427085_samsung-galaxy-a40-duos/",
+    "title": "Samsung Galaxy A40 DUOS",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "samsung a40 duos",
     "verified_model": null
   }
 }

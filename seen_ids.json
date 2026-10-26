@@ -39199,5 +39199,14 @@
     "price": 3450,
     "condition": "Б/у",
     "model_key": "honor 400"
+  },
+  "97616256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17423976_apple-iphone-16-pro-max-256-gb-white-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, White Titanium",
+    "price": 9799,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   }
 }

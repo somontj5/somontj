@@ -39235,5 +39235,32 @@
     "price": 2650,
     "condition": "Б/у",
     "model_key": "samsung a55"
+  },
+  "71310128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17424713_xiaomi-redmi-pro-10-128gb/",
+    "title": "Xiaomi Redmi pro 10 128gb",
+    "price": 1470,
+    "condition": "Б/у",
+    "model_key": "redmi pro 10"
+  },
+  "88552565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17424688_samsung-galaxy-55-256gb-dual-sim-5g/",
+    "title": "Samsung Galaxy A55 256gb Dual sim 5G",
+    "price": 2658,
+    "condition": "Б/у",
+    "model_key": "samsung a55"
+  },
+  "71520265": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17424646_xiaomi-poco-71-5g-2026-5g/",
+    "title": "Xiaomi poco 71 5G 2026 5G",
+    "price": 940,
+    "condition": "Б/у",
+    "model_key": "poco 71"
   }
 }

@@ -39190,5 +39190,14 @@
     "price": 1260,
     "condition": "Б/у",
     "model_key": "redmi 11"
+  },
+  "24010400": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17424010_honor-400/",
+    "title": "Honor 400",
+    "price": 3450,
+    "condition": "Б/у",
+    "model_key": "honor 400"
   }
 }

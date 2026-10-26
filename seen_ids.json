@@ -38959,5 +38959,25 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "apple xs"
+  },
+  "12412888": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17422584_redmi-not-12-4-g-128-ba-8-8karbka-nadorad/",
+    "title": "Xiaomi Redmi note 12 4G 128/8+8Gb",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "redmi note 12",
+    "verified_model": null
+  },
+  "42262310": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17422623_redmi-note-10/",
+    "title": "Xiaomi Redmi note 10",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "redmi note 10",
+    "verified_model": null
   }
 }

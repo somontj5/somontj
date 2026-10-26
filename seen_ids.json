@@ -39154,5 +39154,41 @@
     "condition": "Б/у",
     "model_key": "realme c61",
     "verified_model": null
+  },
+  "21122565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17424619_samsung-galaxy-21-ultra-12-256gb-vetnam-5g/",
+    "title": "Samsung Galaxy S21 Ultra 12/256Gb Vetnam 5G",
+    "price": 2250,
+    "condition": "Б/у",
+    "model_key": "samsung s21 ultra vetnam"
+  },
+  "99121285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17424599_xiaomi-redmi-12-pro-128gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi 12 pro 128gb Glabal Version 5G",
+    "price": 1355,
+    "condition": "Б/у",
+    "model_key": "redmi 12 pro"
+  },
+  "57812644": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17424578_xiaomi-redmi-12-64gb-4g/",
+    "title": "Xiaomi Redmi 12 64gb 4G",
+    "price": 820,
+    "condition": "Б/у",
+    "model_key": "redmi 12"
+  },
+  "58111285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17424558_xiaomi-redmi-11-128gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi 11 128gb Glabal Version 5G",
+    "price": 1260,
+    "condition": "Б/у",
+    "model_key": "redmi 11"
   }
 }

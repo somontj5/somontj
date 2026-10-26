@@ -38979,5 +38979,15 @@
     "condition": "Б/у",
     "model_key": "redmi note 10",
     "verified_model": null
+  },
+  "42274915": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17422749_galaxy-a15/",
+    "title": "Samsung Galaxy A15",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "samsung a15",
+    "verified_model": null
   }
 }

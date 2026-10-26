@@ -38932,5 +38932,23 @@
     "price": 3200,
     "condition": "Б/у",
     "model_key": "apple 12 pro"
+  },
+  "48217256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17422482_apple-iphone-17-pro-max-256-gb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
+    "price": 9950,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
+  },
+  "42322216": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17423222_samsung-a16/",
+    "title": "Samsung Galaxy A16",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "samsung a16"
   }
 }

@@ -39513,5 +39513,15 @@
     "condition": "Б/у",
     "model_key": "samsung a40 duos",
     "verified_model": null
+  },
+  "38345128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17427238_samsung-a34-5g-128gb/",
+    "title": "Samsung Galaxy A34 5G, 128GB",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "samsung a34",
+    "verified_model": null
   }
 }

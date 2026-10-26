@@ -39434,5 +39434,15 @@
     "condition": "Б/у",
     "model_key": "apple 12",
     "verified_model": null
+  },
+  "57014256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17426570_apple-iphone-14-pro-256-gb-gold/",
+    "title": "Apple iPhone 14 Pro, 256 gb, Gold",
+    "price": 2800,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro",
+    "verified_model": null
   }
 }

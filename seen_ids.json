@@ -39444,5 +39444,14 @@
     "condition": "Б/у",
     "model_key": "apple 14 pro",
     "verified_model": null
+  },
+  "12820265": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17426618_telefon-mi-13-lite-8-128gb-2026-5g/",
+    "title": "Xiaomi Mi 13 Lite",
+    "price": 2100,
+    "condition": "Б/у",
+    "model_key": "xiaomi mi 13 lite"
   }
 }

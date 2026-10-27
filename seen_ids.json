@@ -40006,5 +40006,23 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": "redmi 15"
+  },
+  "43189712": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17431897_xiaomi-redmi-12c/",
+    "title": "Xiaomi Redmi 12C",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "redmi 12c"
+  },
+  "18091164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17431809_apple-iphone-11-64-gb-purple/",
+    "title": "Apple iPhone 11, 64 gb, Purple",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "apple 11"
   }
 }

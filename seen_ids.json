@@ -40239,5 +40239,51 @@
     "price": 5500,
     "condition": "Б/у",
     "model_key": "apple 16 e"
+  },
+  "47218128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17433347_samsung-galaxy-s21-plus-8-128gb-duos-vetnam/",
+    "title": "Samsung Galaxy S21 Plus 8/128Gb Duos Vetnam",
+    "price": 2790,
+    "condition": "Б/у",
+    "model_key": "samsung s21 plus duos vetnam"
+  },
+  "33306135": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17433306_xiaomi-redmi-not-13-pro-plus-5g/",
+    "title": "Xiaomi Redmi Note 13 Pro Plus 5G",
+    "price": 2880,
+    "condition": "Б/у",
+    "model_key": "redmi note 13 pro plus"
+  },
+  "17433329": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17433329_telefon-khorosho-rabotaet/",
+    "title": "Телефон Redmi",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
+  },
+  "43335364": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17433353_apple-iphone-xs-64-gb-gold/",
+    "title": "Apple iPhone Xs, 64 gb, Gold",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple xs"
+  },
+  "62112256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17433326_samsung-galaxy-s21-ultra-12-256gb-duos-vetnam/",
+    "title": "Samsung Galaxy S21 Ultra 12/256Gb Duos Vetnam",
+    "price": 1990,
+    "condition": "Б/у",
+    "model_key": "samsung s21 ultra duos vetnam"
   }
 }

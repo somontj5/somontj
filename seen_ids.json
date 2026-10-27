@@ -40377,5 +40377,25 @@
     "price": 8800,
     "condition": "Б/у",
     "model_key": "samsung s25 ultra"
+  },
+  "33788732": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17433788_apple-iphone-7-plus-32-gb/",
+    "title": "Apple iPhone 7 plus, 32 gb",
+    "price": 400,
+    "condition": "Б/у",
+    "model_key": "apple 7 plus",
+    "verified_model": null
+  },
+  "48171284": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17433748_samsung-a17-128-4g/",
+    "title": "Samsung Galaxy A17 128/4g",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "samsung a17 128",
+    "verified_model": null
   }
 }

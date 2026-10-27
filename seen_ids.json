@@ -39620,5 +39620,15 @@
     "price": 700,
     "condition": "Б/у",
     "model_key": "redmi a5"
+  },
+  "42896064": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17428960_apple-iphone-x-64-gb-space-grey/",
+    "title": "Apple iPhone X, 64 gb, Space Grey",
+    "price": 1199,
+    "condition": "Б/у",
+    "model_key": "apple x",
+    "verified_model": null
   }
 }

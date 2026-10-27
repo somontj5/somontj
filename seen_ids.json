@@ -40331,5 +40331,33 @@
     "price": 4300,
     "condition": "Б/у",
     "model_key": "apple 14"
+  },
+  "50613128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17433506_apple-iphone-13-pro-128-gb/",
+    "title": "Apple iPhone 13 Pro, 128 gb",
+    "price": 4600,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
+  },
+  "43374011": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17433740_11/",
+    "title": "Samsung A20",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "samsung a20",
+    "verified_model": null
+  },
+  "17433487": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17433487_telefon-sastaianish-chotkicha/",
+    "title": "Samsung Galaxy A55",
+    "price": 3500,
+    "condition": "Б/у",
+    "model_key": "samsung a55"
   }
 }

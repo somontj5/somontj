@@ -40072,5 +40072,23 @@
     "condition": "Б/у",
     "model_key": "apple 8 plus",
     "verified_model": null
+  },
+  "74322059": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17432205_honor-9a/",
+    "title": "Honor 9A",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "honor 9a"
+  },
+  "74320823": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17432082_xiaomi-poco-x3-pro/",
+    "title": "Xiaomi Poco X3 Pro",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "poco x3 pro"
   }
 }

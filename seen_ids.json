@@ -39923,6 +39923,22 @@
     "model_key": "samsung a52"
   },
   "07201264": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17430720_apple-iphone-12-mini-64-gb-blue/",
+    "title": "Apple iPhone 12 mini, 64 gb, Blue",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "43091471": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17430914_poco-c71/",
+    "title": "Xiaomi POCO C71",
+    "price": 899,
+    "condition": "Б/у",
+    "model_key": "poco c71",
+    "verified_model": null
   }
 }

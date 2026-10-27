@@ -40108,5 +40108,34 @@
     "price": 12700,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "43235722": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17432357_tilfon-sal-sensirash-shikastgi-kame-s-22-alish-meshavad-aifon-boshad-bo-diga-tilfono/",
+    "title": "Samsung Galaxy S 22",
+    "price": 899,
+    "condition": "Б/у",
+    "model_key": "samsung s 22",
+    "verified_model": null
+  },
+  "32438128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17432438_apple-iphone-xr-128-gb-product-red/",
+    "title": "Apple iPhone Xr, 128 gb, Product Red",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
+  },
+  "17432351": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17432351_telefon-dar-kholati-khub/",
+    "title": "Samsung Galaxy S23 Ultra",
+    "price": 5999,
+    "condition": "Б/у",
+    "model_key": "samsung s23 ultra"
   }
 }

@@ -40165,5 +40165,15 @@
     "price": 1950,
     "condition": "Б/у",
     "model_key": "samsung a54"
+  },
+  "74330349": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17433034_redmi-9c-nfc/",
+    "title": "Xiaomi Redmi 9C NFC",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "redmi 9c nfc",
+    "verified_model": null
   }
 }

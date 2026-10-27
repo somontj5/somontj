@@ -39798,5 +39798,24 @@
     "price": 2456,
     "condition": "Б/у",
     "model_key": "redmi note 14 pro"
+  },
+  "74295293": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17429529_korobka-dakument-bu-3mokh-istifoda-shuda/",
+    "title": "Honor 600",
+    "price": 4200,
+    "condition": "Б/у",
+    "model_key": "honor 600"
+  },
+  "43057364": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17430573_apple-iphone-xs-64-gb-silver/",
+    "title": "Apple iPhone Xs, 64 gb, Silver",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "apple xs",
+    "verified_model": null
   }
 }

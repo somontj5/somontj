@@ -620,5 +620,18 @@
     "ban_ad_urls": [
       "https://m.somon.tj/adv/17425625_samsung-galaxy-z-flip-3/"
     ]
+  },
+  "18253096": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/18253096/",
+    "reason": "похоже на перекупщика по фото: на фотографии четко видна витрина или специальный стенд магазина телефонов с фирменной выкладкой товара",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17430192_samsung-galaxy-a20/",
+    "blocked_at": "2026-10-27T10:29:31",
+    "updated_at": "2026-10-27T10:29:31",
+    "active_ads_at_block": 2,
+    "ban_count": 1,
+    "ban_ad_urls": [
+      "https://m.somon.tj/adv/17430192_samsung-galaxy-a20/"
+    ]
   }
 }

@@ -39864,5 +39864,15 @@
     "condition": "Б/у",
     "model_key": "samsung j1",
     "verified_model": null
+  },
+  "43019220": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17430192_samsung-galaxy-a20/",
+    "title": "Samsung Galaxy A20",
+    "price": 300,
+    "condition": "Б/у",
+    "model_key": "samsung a20",
+    "verified_model": null
   }
 }

@@ -40211,5 +40211,33 @@
     "price": 1350,
     "condition": "Б/у",
     "model_key": "apple se"
+  },
+  "32774732": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17432774_apple-iphone-7-plus-32-gb/",
+    "title": "Apple iPhone 7 plus, 32 gb",
+    "price": 400,
+    "condition": "Б/у",
+    "model_key": "apple 7 plus",
+    "verified_model": null
+  },
+  "24814128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17433248_apple-iphone-14-128-gb-product-red/",
+    "title": "Apple iPhone 14, 128 gb, Product Red",
+    "price": 4150,
+    "condition": "Б/у",
+    "model_key": "apple 14"
+  },
+  "16316128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17433163_apple-iphone-16e-128-gb/",
+    "title": "Apple iPhone 16e, 128 gb",
+    "price": 5500,
+    "condition": "Б/у",
+    "model_key": "apple 16 e"
   }
 }

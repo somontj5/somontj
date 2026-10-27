@@ -39893,5 +39893,33 @@
     "price": 4899,
     "condition": "Б/у",
     "model_key": "apple 13 pro"
+  },
+  "48511128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17430485_apple-iphone-11-128-gb-white/",
+    "title": "Apple iPhone 11, 128 gb, White",
+    "price": 2200,
+    "condition": "Б/у",
+    "model_key": "apple 11"
+  },
+  "30552345": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17430552_samsung-a34-5g/",
+    "title": "Samsung Galaxy A34 5G",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "samsung a34",
+    "verified_model": null
+  },
+  "87528128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17430387_samsung-a52-8-128gb/",
+    "title": "Samsung Galaxy A52 8/128гб",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "samsung a52"
   }
 }

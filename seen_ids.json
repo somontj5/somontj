@@ -40397,5 +40397,15 @@
     "condition": "Б/у",
     "model_key": "samsung a17 128",
     "verified_model": null
+  },
+  "34752017": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17434347_samsung-a5-2017/",
+    "title": "Samsung Galaxy A5 2017",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "samsung a5 2017",
+    "verified_model": null
   }
 }

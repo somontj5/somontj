@@ -39854,5 +39854,15 @@
     "price": 4500,
     "condition": "Б/у",
     "model_key": "apple 12 pro max"
+  },
+  "74298691": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17429869_samsung-ch1/",
+    "title": "Samsung Galaxy J1",
+    "price": 200,
+    "condition": "Б/у",
+    "model_key": "samsung j1",
+    "verified_model": null
   }
 }

@@ -39673,12 +39673,39 @@
     "verified_model": null
   },
   "71613256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17427716_apple-iphone-13-pro-256-gb-gold/",
+    "title": "Apple iPhone 13 Pro, 256 gb, Gold",
+    "price": 4999,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   },
   "42858855": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17428588_realme-c55/",
+    "title": "Realme C55",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "realme c55"
   },
   "42938801": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17429388_samsung-galaxy-a01/",
+    "title": "Samsung Galaxy A01",
+    "price": 400,
+    "condition": "Б/у",
+    "model_key": "samsung a01"
+  },
+  "42867875": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17428678_xiaomi-poco-c75/",
+    "title": "Xiaomi Poco C75",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "poco c75"
   }
 }

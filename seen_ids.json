@@ -39969,5 +39969,15 @@
     "price": 3500,
     "condition": "Б/у",
     "model_key": "redmi note 14 pro"
+  },
+  "16981164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17431698_apple-iphone-11-pro-64-gb-silver/",
+    "title": "Apple iPhone 11 Pro, 64 gb, Silver",
+    "price": 2300,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
   }
 }

@@ -40193,5 +40193,23 @@
     "price": 8500,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "43313025": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17433130_samsung-s-25ultra/",
+    "title": "Samsung Galaxy S25ultra",
+    "price": 8000,
+    "condition": "Б/у",
+    "model_key": "samsung s25ultra"
+  },
+  "33132128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17433132_apple-iphone-se-128-gb/",
+    "title": "Apple iPhone SE, 128 gb",
+    "price": 1350,
+    "condition": "Б/у",
+    "model_key": "apple se"
   }
 }

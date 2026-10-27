@@ -40090,5 +40090,23 @@
     "price": 1000,
     "condition": "Б/у",
     "model_key": "poco x3 pro"
+  },
+  "31882256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17431882_apple-iphone-x-256-gb-silver/",
+    "title": "Apple iPhone X, 256 gb, Silver",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "apple x"
+  },
+  "26117256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17432261_apple-iphone-17-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
+    "price": 12700,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
   }
 }

@@ -39988,5 +39988,23 @@
     "price": 2300,
     "condition": "Б/у",
     "model_key": "samsung s21"
+  },
+  "43179010": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17431790_redme-10/",
+    "title": "Xiaomi Redmi 10",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "redmi 10"
+  },
+  "43176715": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17431767_xiaomi-redmi-15/",
+    "title": "Xiaomi Redmi 15",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "redmi 15"
   }
 }

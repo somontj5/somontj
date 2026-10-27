@@ -633,5 +633,18 @@
     "ban_ad_urls": [
       "https://m.somon.tj/adv/17430192_samsung-galaxy-a20/"
     ]
+  },
+  "17132546": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/17132546/",
+    "reason": "похоже на перекупщика по фото: На заднем плане фотографий четко видна витрина или стенд магазина с товаром, что указывает на торговую точку.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17433424_apple-iphone-11-pro-max-256-gb-space-grey/",
+    "blocked_at": "2026-10-27T17:02:01",
+    "updated_at": "2026-10-27T17:02:01",
+    "active_ads_at_block": 1,
+    "ban_count": 1,
+    "ban_ad_urls": [
+      "https://m.somon.tj/adv/17433424_apple-iphone-11-pro-max-256-gb-space-grey/"
+    ]
   }
 }

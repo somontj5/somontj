@@ -40285,5 +40285,51 @@
     "price": 1990,
     "condition": "Б/у",
     "model_key": "samsung s21 ultra duos vetnam"
+  },
+  "26824256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16180268_galaxy-s24-plus-256gb/",
+    "title": "Samsung Galaxy S24 Plus 512gb",
+    "price": 6500,
+    "condition": "Б/у",
+    "model_key": "samsung s24 plus"
+  },
+  "52024256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16168520_galaxy-s24-ultra-america-256gb/",
+    "title": "Samsung Galaxy S24 Ultra 256",
+    "price": 7950,
+    "condition": "Б/у",
+    "model_key": "samsung s24 ultra 256"
+  },
+  "37612128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17433376_telefon-redmi-not-12-128gb/",
+    "title": "Xiaomi Redmi Note 12 128gb",
+    "price": 1350,
+    "condition": "Б/у",
+    "model_key": "redmi note 12"
+  },
+  "42411256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17433424_apple-iphone-11-pro-max-256-gb-space-grey/",
+    "title": "Apple iPhone 11 Pro Max, 256 gb, Space Grey",
+    "price": 2999,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro max",
+    "verified_model": null
+  },
+  "27014128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17433270_apple-iphone-14-128-gb-purple/",
+    "title": "Apple iPhone 14, 128 gb, Purple",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "apple 14"
   }
 }

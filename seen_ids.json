@@ -39874,5 +39874,24 @@
     "condition": "Б/у",
     "model_key": "samsung a20",
     "verified_model": null
+  },
+  "43041120": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17430411_samsung-galaxy-s20/",
+    "title": "Samsung Galaxy S20",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "samsung s20",
+    "verified_model": null
+  },
+  "32413512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17430324_apple-iphone-13-pro-512-gb-silver/",
+    "title": "Apple iPhone 13 Pro, 512 gb, Silver",
+    "price": 4899,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

@@ -39761,5 +39761,23 @@
     "price": 1240,
     "condition": "Б/у",
     "model_key": "redmi note 11"
+  },
+  "27174128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17430327_samsung-a17-4-128gb/",
+    "title": "Samsung galaxy A17 4/128gb",
+    "price": 1699,
+    "condition": "Б/у",
+    "model_key": "samsung a17"
+  },
+  "43029222": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17430292_s22ultra/",
+    "title": "Samsung galaxy S22ultra",
+    "price": 3400,
+    "condition": "Б/у",
+    "model_key": "samsung s22ultra"
   }
 }

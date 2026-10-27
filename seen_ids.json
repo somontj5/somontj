@@ -39552,5 +39552,14 @@
     "condition": "Б/у",
     "model_key": "apple 11",
     "verified_model": null
+  },
+  "42770625": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17427706_samsung-galaxy-s25-ultra/",
+    "title": "Samsung Galaxy S25 Ultra",
+    "price": 9200,
+    "condition": "Б/у",
+    "model_key": "samsung s25 ultra"
   }
 }

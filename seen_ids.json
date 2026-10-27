@@ -39716,5 +39716,23 @@
     "price": 850,
     "condition": "Б/у",
     "model_key": "infinix smart 8"
+  },
+  "30101285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17429130_telefon-redmi-note-10pro-128gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 10pro 128gb Glabal Version 5G",
+    "price": 1460,
+    "condition": "Б/у",
+    "model_key": "redmi note 10pro"
+  },
+  "06512644": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17429065_telefon-redmi-12c-64gb-4g/",
+    "title": "Xiaomi Redmi 12C 64gb 4G",
+    "price": 854,
+    "condition": "Б/у",
+    "model_key": "redmi 12c"
   }
 }

@@ -40137,5 +40137,24 @@
     "price": 5999,
     "condition": "Б/у",
     "model_key": "samsung s23 ultra"
+  },
+  "08108128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17432708_samsung-galaxy-s10-plus-8-128gb-duos-vetnam/",
+    "title": "Samsung Galaxy S10 Plus 8/128Gb Duos Vietnam",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "samsung s10 plus duos"
+  },
+  "74326307": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17432630_samsung-a7-tel-toza-iagon-aib-nadorad-kharidor-boshi-navis-obmen-khai-vatsap/",
+    "title": "Samsung Galaxy A7",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "samsung a7",
+    "verified_model": null
   }
 }

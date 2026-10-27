@@ -39817,5 +39817,33 @@
     "condition": "Б/у",
     "model_key": "apple xs",
     "verified_model": null
+  },
+  "66317256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17429663_apple-iphone-17-pro-max-256-gb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
+    "price": 11500,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
+  },
+  "42968822": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17429688_samsung-galaxy-s22-ultra/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 3333,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
+  },
+  "29572215": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17429572_samsung-s21-5g/",
+    "title": "Samsung Galaxy S21 5G",
+    "price": 2100,
+    "condition": "Б/у",
+    "model_key": "samsung s21",
+    "verified_model": null
   }
 }

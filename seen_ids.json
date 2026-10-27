@@ -40042,5 +40042,35 @@
     "price": 950,
     "condition": "Б/у",
     "model_key": "infinix smart 9"
+  },
+  "43206350": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17432063_realmi-note-50/",
+    "title": "Realmе Note 50",
+    "price": 770,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
+  },
+  "20101164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17432010_apple-iphone-11-pro-64-gb-silver/",
+    "title": "Apple iPhone 11 Pro, 64 gb, Silver",
+    "price": 2299,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
+  },
+  "32008864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17432008_apple-iphone-8-plus-64-gb-gold/",
+    "title": "Apple iPhone 8 plus, 64 gb, Gold",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "apple 8 plus",
+    "verified_model": null
   }
 }

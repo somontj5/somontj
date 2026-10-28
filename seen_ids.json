@@ -41044,5 +41044,14 @@
     "condition": "Б/у",
     "model_key": "apple 14 pro",
     "verified_model": null
+  },
+  "44009915": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17440099_xiaomi-15-t-pro-titanium/",
+    "title": "Xiaomi 15 t pro titanium",
+    "price": 6699,
+    "condition": "Б/у",
+    "model_key": "xiaomi 15 t pro titanium"
   }
 }

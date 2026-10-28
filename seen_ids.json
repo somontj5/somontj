@@ -40987,5 +40987,15 @@
     "price": 4300,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "17439162": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17439162_telefon-v-khoroshem-sostoianiiotlichno-rabotaet-korobka-imeetsia/",
+    "title": "Xiaomi Redmi Note 8",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "redmi note 8",
+    "verified_model": null
   }
 }

@@ -41063,5 +41063,15 @@
     "condition": "Б/у",
     "model_key": "samsung a8",
     "verified_model": null
+  },
+  "36413256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17440364_apple-iphone-13-pro-256-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 256 gb, Sierra Blue",
+    "price": 2900,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro",
+    "verified_model": null
   }
 }

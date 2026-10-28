@@ -40750,5 +40750,32 @@
     "price": 3699,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra"
+  },
+  "37944545": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17437944_samsung-galaxy-54-5g/",
+    "title": "Samsung Galaxy 54 5G",
+    "price": 1840,
+    "condition": "Б/у",
+    "model_key": "samsung 54"
+  },
+  "37929565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17437929_samsung-galaxy-56-5g/",
+    "title": "Samsung Galaxy А56 5G",
+    "price": 3300,
+    "condition": "Б/у",
+    "model_key": "samsung а56"
+  },
+  "82613128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17437826_apple-iphone-13-pro-max-128-gb-gold/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Gold",
+    "price": 4400,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
   }
 }

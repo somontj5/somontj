@@ -659,5 +659,18 @@
     "ban_ad_urls": [
       "https://m.somon.tj/adv/16865383_apple-iphone-11-pro-64-gb-midnight-green/"
     ]
+  },
+  "17253479": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/17253479/",
+    "reason": "похоже на перекупщика по фото: На заднем плане фотографий отчетливо видна витрина или стенд с множеством парфюмерных флаконов или сопутствующих товаров, что характерно для торговой точки.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17435912_samsung-galaxy-a52-128gb/",
+    "blocked_at": "2026-10-28T07:40:31",
+    "updated_at": "2026-10-28T07:40:31",
+    "active_ads_at_block": 2,
+    "ban_count": 1,
+    "ban_ad_urls": [
+      "https://m.somon.tj/adv/17435912_samsung-galaxy-a52-128gb/"
+    ]
   }
 }

@@ -40541,5 +40541,15 @@
     "condition": "Б/у",
     "model_key": "apple 12 pro",
     "verified_model": null
+  },
+  "91252128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17435912_samsung-galaxy-a52-128gb/",
+    "title": "Samsung Galaxy A52 128GB",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "samsung a52",
+    "verified_model": null
   }
 }

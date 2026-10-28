@@ -41053,5 +41053,15 @@
     "price": 6699,
     "condition": "Б/у",
     "model_key": "xiaomi 15 t pro titanium"
+  },
+  "17440179": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17440179_furushi-fafri-va-arzon/",
+    "title": "Samsung Galaxy A8",
+    "price": 549,
+    "condition": "Б/у",
+    "model_key": "samsung a8",
+    "verified_model": null
   }
 }

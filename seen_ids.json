@@ -41131,5 +41131,14 @@
     "condition": "Б/у",
     "model_key": "apple 11",
     "verified_model": null
+  },
+  "41332256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17441332_apple-iphone-air-256-gb-space-black/",
+    "title": "Apple iPhone Air, 256 gb, Space Black",
+    "price": 9600,
+    "condition": "Б/у",
+    "model_key": "apple air"
   }
 }

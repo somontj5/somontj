@@ -40618,5 +40618,34 @@
     "price": 2499,
     "condition": "Б/у",
     "model_key": "apple 12 pro"
+  },
+  "97113128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17436971_apple-iphone-13-pro-max-128-gb-alpine-green/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Alpine Green",
+    "price": 4600,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
+  },
+  "07896773": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17436952_nomerkho-baroi-tamos-90-789-6773/",
+    "title": "Samsung Galaxy S21 FE",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "samsung s21 fe",
+    "verified_model": null
+  },
+  "69491264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17436949_apple-iphone-12-64-gb-blue/",
+    "title": "Apple iPhone 12, 64 gb, Blue",
+    "price": 2200,
+    "condition": "Б/у",
+    "model_key": "apple 12",
+    "verified_model": null
   }
 }

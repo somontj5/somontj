@@ -40850,5 +40850,51 @@
     "price": 1246,
     "condition": "Б/у",
     "model_key": "redmi 11"
+  },
+  "20210525": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17438202_samsung-galaxy-10-5g-2sim-vetnam-5g/",
+    "title": "Samsung Galaxy S10+ 5G 2sim Vetnam 5G",
+    "price": 1550,
+    "condition": "Б/у",
+    "model_key": "samsung s10 plus"
+  },
+  "74381799": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17438179_redmi-9/",
+    "title": "Xiaomi Redmi 9",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "redmi 9",
+    "verified_model": null
+  },
+  "11225625": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17438223_samsung-galaxy-21-ultra-12-256gb-2sim-vetnam-5g-silver/",
+    "title": "Samsung Galaxy S21 Ultra 12/256Gb 2sim Vetnam 5G Silver",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "samsung s21 ultra 2sim vetnam"
+  },
+  "81862125": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17438186_samsung-galaxy-21-2sim-5g-vetnam/",
+    "title": "Samsung Galaxy 21+ 2sim 5G",
+    "price": 2740,
+    "condition": "Б/у",
+    "model_key": "samsung 21 plus 2sim"
+  },
+  "64121285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17438164_xiaomi-redmi-12-note-128gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi 12 Note 128gb Glabal Version 5G",
+    "price": 1366,
+    "condition": "Б/у",
+    "model_key": "redmi 12 note"
   }
 }

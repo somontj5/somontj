@@ -40599,5 +40599,15 @@
     "price": 4950,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "43652364": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17436523_apple-iphone-x-64-gb-silver/",
+    "title": "Apple iPhone X, 64 gb, Silver",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "apple x",
+    "verified_model": null
   }
 }

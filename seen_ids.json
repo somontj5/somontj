@@ -40417,5 +40417,14 @@
     "condition": "Б/у",
     "model_key": "apple 14",
     "verified_model": null
+  },
+  "86124200": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16686124_vivo-x-200-pro-mini/",
+    "title": "Vivo X200 Pro mini",
+    "price": 6500,
+    "condition": "Б/у",
+    "model_key": "vivo x200 pro mini"
   }
 }

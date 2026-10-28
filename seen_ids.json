@@ -40407,5 +40407,15 @@
     "condition": "Б/у",
     "model_key": "samsung a5 2017",
     "verified_model": null
+  },
+  "58514128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17434585_apple-iphone-14-128-gb-purple/",
+    "title": "Apple iPhone 14, 128 gb, Purple",
+    "price": 2799,
+    "condition": "Б/у",
+    "model_key": "apple 14",
+    "verified_model": null
   }
 }

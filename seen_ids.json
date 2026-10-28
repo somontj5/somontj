@@ -40942,5 +40942,14 @@
     "price": 6999,
     "condition": "Б/у",
     "model_key": "apple air"
+  },
+  "19113128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17439191_apple-iphone-13-pro-128-gb-graphite/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Graphite",
+    "price": 4100,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

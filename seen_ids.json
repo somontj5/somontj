@@ -41111,5 +41111,15 @@
     "condition": "Б/у",
     "model_key": "apple 6",
     "verified_model": null
+  },
+  "10091280": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17441009_nokia-1280-original/",
+    "title": "Nokia 1280",
+    "price": 170,
+    "condition": "Б/у",
+    "model_key": "nokia 1280",
+    "verified_model": null
   }
 }

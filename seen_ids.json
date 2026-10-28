@@ -40665,5 +40665,23 @@
     "price": 2850,
     "condition": "Б/у",
     "model_key": "redmi note 13 pro plus"
+  },
+  "37264732": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17437264_apple-iphone-7-32-gb/",
+    "title": "Apple iPhone 7, 32 gb",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "apple 7"
+  },
+  "81081282": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17437188_samsung-galaxy-s10-plus-8-128gb-2-sim/",
+    "title": "Samsung Galaxy S10 Plus 8/128Gb 2 sim",
+    "price": 1590,
+    "condition": "Б/у",
+    "model_key": "samsung s10 plus 2 sim"
   }
 }

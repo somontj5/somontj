@@ -40896,5 +40896,32 @@
     "price": 1366,
     "condition": "Б/у",
     "model_key": "redmi 12 note"
+  },
+  "43877721": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17438777_samsung-galaxy-s21-ultra/",
+    "title": "Samsung Galaxy S21 Ultra",
+    "price": 2650,
+    "condition": "Б/у",
+    "model_key": "samsung s21 ultra"
+  },
+  "43831356": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17438313_samsung-a56/",
+    "title": "Samsung Galaxy A56, 256gb",
+    "price": 3200,
+    "condition": "Б/у",
+    "model_key": "samsung a56"
+  },
+  "75422256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17438754_samsung-galaxy-s22-256gb/",
+    "title": "Samsung Galaxy S22 256GB",
+    "price": 2550,
+    "condition": "Б/у",
+    "model_key": "samsung s22"
   }
 }

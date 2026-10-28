@@ -40683,5 +40683,33 @@
     "price": 1590,
     "condition": "Б/у",
     "model_key": "samsung s10 plus 2 sim"
+  },
+  "43739222": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17437392_samsung-s22-plius/",
+    "title": "Samsung Galaxy S22 Plus",
+    "price": 3000,
+    "condition": "Б/у",
+    "model_key": "samsung s22 plus",
+    "verified_model": null
+  },
+  "43747422": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17437474_s22ultra/",
+    "title": "Samsung Galaxy S22 ultra, 256gb",
+    "price": 3799,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
+  },
+  "99512256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17437449_honor-x9d-5g-12-256gb/",
+    "title": "Honor X9D 5G 12/256Gb",
+    "price": 3399,
+    "condition": "Б/у",
+    "model_key": "honor x9d"
   }
 }

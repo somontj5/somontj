@@ -41015,5 +41015,14 @@
     "price": 3200,
     "condition": "Б/у",
     "model_key": "samsung s21 ultra"
+  },
+  "39411256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17439411_apple-iphone-air-256-gb-space-black/",
+    "title": "Apple iPhone Air, 256 gb, Space Black",
+    "price": 6399,
+    "condition": "Б/у",
+    "model_key": "apple air"
   }
 }

@@ -40426,5 +40426,15 @@
     "price": 6500,
     "condition": "Б/у",
     "model_key": "vivo x200 pro mini"
+  },
+  "89132016": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17434891_a3-2016/",
+    "title": "Samsung Galaxy А3 2016",
+    "price": 390,
+    "condition": "Б/у",
+    "model_key": "samsung а3 2016",
+    "verified_model": null
   }
 }

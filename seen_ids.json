@@ -41024,5 +41024,15 @@
     "price": 6399,
     "condition": "Б/у",
     "model_key": "apple air"
+  },
+  "74399107": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17439910_samsung-s7/",
+    "title": "Samsung Galaxy S7",
+    "price": 350,
+    "condition": "Б/у",
+    "model_key": "samsung s7",
+    "verified_model": null
   }
 }

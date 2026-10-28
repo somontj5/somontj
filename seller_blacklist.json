@@ -646,5 +646,18 @@
     "ban_ad_urls": [
       "https://m.somon.tj/adv/17433424_apple-iphone-11-pro-max-256-gb-space-grey/"
     ]
+  },
+  "17279837": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/17279837/",
+    "reason": "похоже на перекупщика по фото: на фотографии видна фирменная подставка/стенд для демонстрации товара на черном фоне с подсветкой, что характерно для магазинов или перекупщиков",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/16865383_apple-iphone-11-pro-64-gb-midnight-green/",
+    "blocked_at": "2026-10-28T04:57:49",
+    "updated_at": "2026-10-28T04:57:49",
+    "active_ads_at_block": 1,
+    "ban_count": 1,
+    "ban_ad_urls": [
+      "https://m.somon.tj/adv/16865383_apple-iphone-11-pro-64-gb-midnight-green/"
+    ]
   }
 }

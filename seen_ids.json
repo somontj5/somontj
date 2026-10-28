@@ -40465,5 +40465,15 @@
     "condition": "Б/у",
     "model_key": "apple 11 pro",
     "verified_model": null
+  },
+  "74350499": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17435049_samsung-s9/",
+    "title": "Samsung Galaxy S9 plus",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "samsung s9 plus",
+    "verified_model": null
   }
 }

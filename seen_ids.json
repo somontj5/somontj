@@ -40923,5 +40923,24 @@
     "price": 2550,
     "condition": "Б/у",
     "model_key": "samsung s22"
+  },
+  "43863015": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17438630_redmi-15/",
+    "title": "Xiaomi Redmi 15",
+    "price": 1350,
+    "condition": "Б/у",
+    "model_key": "redmi 15",
+    "verified_model": null
+  },
+  "38691256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17438691_apple-iphone-air-256-gb-light-gold/",
+    "title": "Apple iPhone Air, 256 gb, Light Gold",
+    "price": 6999,
+    "condition": "Б/у",
+    "model_key": "apple air"
   }
 }

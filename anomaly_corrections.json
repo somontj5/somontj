@@ -30,6 +30,14 @@
     "reviewed_at": "2026-10-21T22:17:38",
     "source": "gemini-review"
   },
+  "16016512": {
+    "group_key": "apple 16 pro max|512",
+    "memory_gb": 512,
+    "price": 8500,
+    "reason": "На странице видна актуальная цена 8500 c. (старая зачеркнута как 9500 c.).",
+    "reviewed_at": "2026-10-28T06:54:59",
+    "source": "gemini-review"
+  },
   "17268444": {
     "action": "exclude",
     "group_key": "samsung s21 plus|128",
@@ -142,6 +150,13 @@
     "group_key": "apple 14 pro|256",
     "reason": "Цена 100 сомони явно является приманкой или ошибкой продавца (в описании указано 'нарх охираш бе савдо 100 c.', но реальная стоимость устройства выше).",
     "reviewed_at": "2026-10-19T09:08:13",
+    "source": "gemini-review"
+  },
+  "56416512": {
+    "action": "exclude",
+    "group_key": "apple 16 pro max|512",
+    "reason": "В описании прямо указано: «Айфони люкс копия», нет растаможки.",
+    "reviewed_at": "2026-10-28T06:54:59",
     "source": "gemini-review"
   },
   "59211128": {

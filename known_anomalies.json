@@ -167,6 +167,12 @@
   "apple xs|64": {
     "first_seen": "2026-10-25",
     "ratio": 12.12,
+    "kind": "outlier",
+    "reviewed_at": "2026-10-28"
+  },
+  "apple 16 pro max|512": {
+    "first_seen": "2026-10-28",
+    "ratio": 14.38,
     "kind": "reviewed",
     "reviewed_at": "2026-10-28"
   }

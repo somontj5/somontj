@@ -40520,5 +40520,16 @@
     "price": 2650,
     "condition": "Б/у",
     "model_key": "samsung a55"
+  },
+  "56416512": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16734564_apple-iphone-16-pro-max-512-gb-natural-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 512 gb, Natural Titanium",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max",
+    "verified_model": null
   }
 }

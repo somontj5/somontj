@@ -40531,5 +40531,15 @@
     "condition": "Б/у",
     "model_key": "apple 16 pro max",
     "verified_model": null
+  },
+  "82812256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17435828_apple-iphone-12-pro-256-gb-gold/",
+    "title": "Apple iPhone 12 pro, 256 gb, Gold",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro",
+    "verified_model": null
   }
 }

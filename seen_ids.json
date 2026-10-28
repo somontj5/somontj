@@ -40777,5 +40777,42 @@
     "price": 4400,
     "condition": "Б/у",
     "model_key": "apple 13 pro max"
+  },
+  "43803313": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17438033_samsung-galaxy-a13/",
+    "title": "Samsung Galaxy A13",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "samsung a13",
+    "verified_model": null
+  },
+  "74552565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17438074_samsung-galaxy-55-256gb-vetnam-5g/",
+    "title": "Samsung Galaxy 55 256gb Vetnam 5G",
+    "price": 2670,
+    "condition": "Б/у",
+    "model_key": "samsung 55"
+  },
+  "01352026": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17437970_xiaomi-redmi-13-pro-5g-2026/",
+    "title": "Xiaomi Redmi Note 13 pro 5G 2026",
+    "price": 2700,
+    "condition": "Б/у",
+    "model_key": "redmi note 13 pro"
+  },
+  "16101285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17438016_xiaomi-redmi-10-128gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi 10 128gb Glabal Version 5G",
+    "price": 1350,
+    "condition": "Б/у",
+    "model_key": "redmi 10"
   }
 }

@@ -41073,5 +41073,14 @@
     "condition": "Б/у",
     "model_key": "apple 13 pro",
     "verified_model": null
+  },
+  "42913512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17440429_apple-iphone-13-pro-max-512-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro Max, 512 gb, Sierra Blue",
+    "price": 5100,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
   }
 }

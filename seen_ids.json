@@ -40647,5 +40647,23 @@
     "condition": "Б/у",
     "model_key": "apple 12",
     "verified_model": null
+  },
+  "52548256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17437152_samsung-galaxy-a54-8-256gb/",
+    "title": "Samsung Galaxy A54 8/256Gb",
+    "price": 1990,
+    "condition": "Б/у",
+    "model_key": "samsung a54"
+  },
+  "13588256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17437124_xiaomi-redmi-not-13-pro-plus-5g-8-8-256gb/",
+    "title": "Xiaomi Redmi Note 13 Pro Plus 5G 8+8/256Gb",
+    "price": 2850,
+    "condition": "Б/у",
+    "model_key": "redmi note 13 pro plus"
   }
 }

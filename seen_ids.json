@@ -40580,5 +40580,15 @@
     "condition": "Б/у",
     "model_key": "apple xs",
     "verified_model": null
+  },
+  "74364477": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17436447_samsung-galaxy-a7/",
+    "title": "Samsung Galaxy A7",
+    "price": 350,
+    "condition": "Б/у",
+    "model_key": "samsung a7",
+    "verified_model": null
   }
 }

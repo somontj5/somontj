@@ -41235,5 +41235,41 @@
     "price": 7000,
     "condition": "Б/у",
     "model_key": "apple 15 pro"
+  },
+  "39542565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17444339_telefon-samsung-a54-256gb-vetnam-5g/",
+    "title": "Samsung Galaxy A54 256Gb 5G",
+    "price": 1950,
+    "condition": "Б/у",
+    "model_key": "samsung a54"
+  },
+  "24111285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17444324_telefon-redmi-note-11-128gb-glabal-version-5g/",
+    "title": "Телефон Redmi Note 11 128gb Glabal Version 5G",
+    "price": 1240,
+    "condition": "Б/у",
+    "model_key": "redmi note 11"
+  },
+  "02101285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17444302_telefon-redmi-note-10-pro-128gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 10 pro 128gb Glabal Version 5G",
+    "price": 1470,
+    "condition": "Б/у",
+    "model_key": "redmi note 10 pro"
+  },
+  "42838324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17444283_telefon-redmi-8-32gb-4g/",
+    "title": "Xiaomi Redmi 8 32gb 4G",
+    "price": 730,
+    "condition": "Б/у",
+    "model_key": "redmi 8"
   }
 }

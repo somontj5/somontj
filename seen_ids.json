@@ -41140,5 +41140,15 @@
     "price": 9600,
     "condition": "Б/у",
     "model_key": "apple air"
+  },
+  "13735128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17441373_redmi-a5-128gb/",
+    "title": "Xiaomi Redmi A5 128gb",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "redmi a5",
+    "verified_model": null
   }
 }

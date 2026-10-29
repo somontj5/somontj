@@ -6312,3 +6312,6 @@
 {"type": "confirmed_sale", "id": "41282026", "title": "Xiaomi Redmi 14C 4/128Gb 2026", "price": 1260, "condition": "Б/у", "model_key": "redmi 14c 2026", "verified_model": null, "confirmed_at": "2026-10-29T14:11:42"}
 {"type": "confirmed_sale", "id": "11091164", "title": "Apple iPhone 11 Pro Max, 64 gb, Silver", "price": 1999, "condition": "Б/у", "model_key": "apple 11 pro max", "verified_model": null, "confirmed_at": "2026-10-29T14:11:43"}
 {"type": "confirmed_sale", "id": "14311128", "title": "Apple iPhone 11, 128 gb, White", "price": 1850, "condition": "Б/у", "model_key": "apple 11", "verified_model": null, "confirmed_at": "2026-10-29T14:11:44"}
+{"type": "confirmed_sale", "id": "41282026", "title": "Xiaomi Redmi 14C 4/128Gb 2026", "price": 1260, "condition": "Б/у", "model_key": "redmi 14c 2026", "verified_model": null, "confirmed_at": "2026-10-29T14:16:45"}
+{"type": "confirmed_sale", "id": "11091164", "title": "Apple iPhone 11 Pro Max, 64 gb, Silver", "price": 1999, "condition": "Б/у", "model_key": "apple 11 pro max", "verified_model": null, "confirmed_at": "2026-10-29T14:16:46"}
+{"type": "confirmed_sale", "id": "14311128", "title": "Apple iPhone 11, 128 gb, White", "price": 1850, "condition": "Б/у", "model_key": "apple 11", "verified_model": null, "confirmed_at": "2026-10-29T14:16:48"}

@@ -724,5 +724,18 @@
     "ban_ad_urls": [
       "https://m.somon.tj/adv/17447856_apple-iphone-12-64-gb-blue/"
     ]
+  },
+  "17747654": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/17747654/",
+    "reason": "похоже на перекупщика по фото: На заднем плане фотографий четко виден студийный фон с декоративными элементами (золотые листья, искусственные растения, стойка с подсветкой), характерный для витрины или фотозоны магазина техники.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17448613_apple-iphone-11-pro-64-gb-midnight-green/",
+    "blocked_at": "2026-10-29T21:49:45",
+    "updated_at": "2026-10-29T21:49:45",
+    "active_ads_at_block": 1,
+    "ban_count": 1,
+    "ban_ad_urls": [
+      "https://m.somon.tj/adv/17448613_apple-iphone-11-pro-64-gb-midnight-green/"
+    ]
   }
 }

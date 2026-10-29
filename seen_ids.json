@@ -41349,6 +41349,13 @@
     "verified_model": null
   },
   "44496764": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17444967_apple-iphone-x-64-gb-silver/",
+    "title": "Apple iPhone X, 64 gb, Silver",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "apple x",
+    "verified_model": null
   }
 }

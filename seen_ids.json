@@ -41150,5 +41150,14 @@
     "condition": "Б/у",
     "model_key": "redmi a5",
     "verified_model": null
+  },
+  "41588161": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17441588_apple-iphone-16-pro-max-1-tb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 1 tb, Desert Titanium",
+    "price": 13000,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max 1 tb"
   }
 }

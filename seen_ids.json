@@ -41271,5 +41271,23 @@
     "price": 730,
     "condition": "Б/у",
     "model_key": "redmi 8"
+  },
+  "55525625": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17444405_telefon-samsung-a55-256gb-vetnam-2sim-5g/",
+    "title": "Samsung Galaxy А55 256гб Vetnam 2sim 5G",
+    "price": 2560,
+    "condition": "Б/у",
+    "model_key": "samsung а55"
+  },
+  "59135256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17444359_telefon-redmi-note-13-pro-pilus-5g-256gb/",
+    "title": "Xiaomi Redmi Note 13 pro + 5G 256gb",
+    "price": 2750,
+    "condition": "Б/у",
+    "model_key": "redmi note 13 pro"
   }
 }

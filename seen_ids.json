@@ -41672,5 +41672,15 @@
     "price": 2550,
     "condition": "Б/у",
     "model_key": "samsung s21 duos vetnam"
+  },
+  "44771715": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17447717_samsung-a15/",
+    "title": "Samsung Galaxy А15",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "samsung а15",
+    "verified_model": null
   }
 }

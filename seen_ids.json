@@ -41159,5 +41159,15 @@
     "price": 13000,
     "condition": "Б/у",
     "model_key": "apple 16 pro max 1 tb"
+  },
+  "44223322": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17442233_qin-f22/",
+    "title": "Xiaomi Qin f22",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "xiaomi qin f22",
+    "verified_model": null
   }
 }

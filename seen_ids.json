@@ -41216,5 +41216,15 @@
     "price": 2460,
     "condition": "Б/у",
     "model_key": "redmi note 14 pro"
+  },
+  "17443789": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17443789_otlichnoe-sostoianie/",
+    "title": "Samsung Galaxy А17 5G 128/Gb",
+    "price": 1950,
+    "condition": "Б/у",
+    "model_key": "samsung а17",
+    "verified_model": null
   }
 }

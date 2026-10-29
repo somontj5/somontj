@@ -698,5 +698,18 @@
     "ban_ad_urls": [
       "https://m.somon.tj/adv/17444767_samsung-s21/"
     ]
+  },
+  "18114690": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/18114690/",
+    "reason": "похоже на перекупщика по фото: Фотографии сделаны на фоне торговых рядов рынка (складские коробки, специфическая архитектура рынка Худжанда), что указывает на торговца с рынка.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17445695_samsung-galaxy-note-20-ultra-12-256/",
+    "blocked_at": "2026-10-29T12:39:26",
+    "updated_at": "2026-10-29T12:39:26",
+    "active_ads_at_block": 3,
+    "ban_count": 1,
+    "ban_ad_urls": [
+      "https://m.somon.tj/adv/17445695_samsung-galaxy-note-20-ultra-12-256/"
+    ]
   }
 }

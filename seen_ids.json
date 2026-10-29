@@ -41359,12 +41359,42 @@
     "verified_model": null
   },
   "17445317": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17445317_a/",
+    "title": "Xiaomi Redmi Note 14",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "redmi note 14",
+    "verified_model": null
   },
   "31214128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17445312_apple-iphone-14-pro-max-128-gb-gold/",
+    "title": "Apple iPhone 14 Pro Max, 128 gb, Gold",
+    "price": 4000,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
   },
   "52367128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17445236_apple-iphone-7-plus-128-gb/",
+    "title": "Apple iPhone 7 plus, 128 gb",
+    "price": 499,
+    "condition": "Б/у",
+    "model_key": "apple 7 plus",
+    "verified_model": null
+  },
+  "17445510": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17445510_salom-aleikum/",
+    "title": "Oppo A15",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "oppo a15",
+    "verified_model": null
   }
 }

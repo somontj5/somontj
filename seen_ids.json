@@ -41702,5 +41702,15 @@
     "condition": "Б/у",
     "model_key": "redmi note 10 pro",
     "verified_model": null
+  },
+  "44811064": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17448110_apple-iphone-xr-64-gb-black/",
+    "title": "Apple iPhone Xr, 64 gb, Black",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
   }
 }

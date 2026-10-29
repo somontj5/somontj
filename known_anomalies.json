@@ -179,7 +179,7 @@
   "samsung s20 ultra|256": {
     "first_seen": "2026-10-29",
     "ratio": 3.04,
-    "kind": "outlier"
+    "kind": "wide"
   },
   "apple 18 pro max|256": {
     "first_seen": "2026-10-29",

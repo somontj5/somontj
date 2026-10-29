@@ -41317,5 +41317,15 @@
     "price": 845,
     "condition": "Б/у",
     "model_key": "redmi 12c"
+  },
+  "44476721": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17444767_samsung-s21/",
+    "title": "Samsung Galaxy S21",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "samsung s21",
+    "verified_model": null
   }
 }

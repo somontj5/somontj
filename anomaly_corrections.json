@@ -6,6 +6,20 @@
     "reviewed_at": "2026-10-19T03:37:46",
     "source": "gemini-review"
   },
+  "01818256": {
+    "action": "exclude",
+    "group_key": "apple 18 pro max|256",
+    "reason": "В тексте указано 'Тайланди лукс копия', в блоке IMEI модель Apple iPhone XR",
+    "reviewed_at": "2026-10-29T15:59:02",
+    "source": "gemini-review"
+  },
+  "04918256": {
+    "action": "exclude",
+    "group_key": "apple 18 pro max|256",
+    "reason": "В тексте указано 'Тайланди лукс копия', в блоке IMEI модель Apple iPhone XR",
+    "reviewed_at": "2026-10-29T15:59:02",
+    "source": "gemini-review"
+  },
   "10817512": {
     "action": "exclude",
     "group_key": "apple 17 pro max|512",
@@ -119,6 +133,13 @@
     "group_key": "apple xs|64",
     "reason": "Приманка/неликвид: продавец указывает 'срочно', 'номер не работает', цена экстремально низкая для модели.",
     "reviewed_at": "2026-10-29T15:18:34",
+    "source": "gemini-review"
+  },
+  "43418256": {
+    "action": "exclude",
+    "group_key": "apple 18 pro max|256",
+    "reason": "В тексте указано 'Тайланди лукс копия' и 'Дубликат', в блоке IMEI модель Apple iPhone Xr",
+    "reviewed_at": "2026-10-29T15:59:02",
     "source": "gemini-review"
   },
   "44237128": {

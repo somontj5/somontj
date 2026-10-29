@@ -96,7 +96,7 @@
   "samsung s10|128": {
     "first_seen": "2026-10-18",
     "ratio": 6.28,
-    "kind": "reviewed",
+    "kind": "outlier",
     "reviewed_at": "2026-10-29"
   },
   "samsung s21|256": {
@@ -180,5 +180,11 @@
     "first_seen": "2026-10-29",
     "ratio": 3.04,
     "kind": "outlier"
+  },
+  "apple 18 pro max|256": {
+    "first_seen": "2026-10-29",
+    "ratio": 11.0,
+    "kind": "reviewed",
+    "reviewed_at": "2026-10-29"
   }
 }

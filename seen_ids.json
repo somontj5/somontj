@@ -41523,5 +41523,53 @@
     "price": 6500,
     "condition": "Б/у",
     "model_key": "apple 16"
+  },
+  "10512128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17447105_apple-iphone-12-pro-max-128-gb-graphite/",
+    "title": "Apple iPhone 12 Pro Max, 128 gb, Graphite",
+    "price": 3150,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro max"
+  },
+  "09718256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17447097_apple-iphone-18-pro-max-256-gb-black/",
+    "title": "Apple iPhone 18 Pro Max, 256 gb, Black дубликат",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "08718256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17447087_apple-iphone-18-pro-max-256-gb-burgundy/",
+    "title": "Apple iPhone 18 Pro Max, 256 gb, Burgundy дубликат",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "04918256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17447049_apple-iphone-18-pro-max-256-gb-burgundy/",
+    "title": "Apple iPhone 18 Pro Max, 256 gb, Burgundy",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple 18 pro max"
+  },
+  "03618256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17447036_apple-iphone-18-pro-max-256-gb-burgundy/",
+    "title": "Apple iPhone 18 Pro Max, 256 gb, Burgundy дубликат",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "01818256": {
+    "logged": true
   }
 }

@@ -41606,5 +41606,23 @@
     "condition": "Б/у",
     "model_key": "samsung s20 ultra",
     "verified_model": null
+  },
+  "17447447": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17447447_telefon/",
+    "title": "Apple IPhone 17 Pro Max дубликат",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "21825625": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17447482_telefon-samsung-s21-8-256gb-2sim-vetnam-5g/",
+    "title": "Samsung Galaxy S21 8/256Gb 2sim Vetnam 5G",
+    "price": 2650,
+    "condition": "Б/у",
+    "model_key": "samsung s21 2sim vetnam"
   }
 }

@@ -175,5 +175,10 @@
     "ratio": 14.38,
     "kind": "reviewed",
     "reviewed_at": "2026-10-28"
+  },
+  "samsung s20 ultra|256": {
+    "first_seen": "2026-10-29",
+    "ratio": 3.04,
+    "kind": "outlier"
   }
 }

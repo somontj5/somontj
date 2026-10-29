@@ -114,6 +114,13 @@
     "reviewed_at": "2026-10-24T15:11:26",
     "source": "gemini-review"
   },
+  "41974564": {
+    "action": "exclude",
+    "group_key": "apple xs|64",
+    "reason": "Приманка/неликвид: продавец указывает 'срочно', 'номер не работает', цена экстремально низкая для модели.",
+    "reviewed_at": "2026-10-29T15:18:34",
+    "source": "gemini-review"
+  },
   "44237128": {
     "group_key": "apple 7|128",
     "memory_gb": 128,

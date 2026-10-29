@@ -41504,5 +41504,15 @@
     "condition": "Б/у",
     "model_key": "apple xr",
     "verified_model": null
+  },
+  "69712128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17446697_apple-iphone-12-pro-128-gb-gold/",
+    "title": "Apple iPhone 12 pro, 128 gb, Gold",
+    "price": 2200,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro",
+    "verified_model": null
   }
 }

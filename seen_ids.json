@@ -41514,5 +41514,14 @@
     "condition": "Б/у",
     "model_key": "apple 12 pro",
     "verified_model": null
+  },
+  "42916128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16463429_apple-iphone-16-128-gb-teal/",
+    "title": "Apple iPhone 16, 128 gb, Teal",
+    "price": 6500,
+    "condition": "Б/у",
+    "model_key": "apple 16"
   }
 }

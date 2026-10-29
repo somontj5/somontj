@@ -41682,5 +41682,25 @@
     "condition": "Б/у",
     "model_key": "samsung а15",
     "verified_model": null
+  },
+  "78561264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17447856_apple-iphone-12-64-gb-blue/",
+    "title": "Apple iPhone 12, 64 gb, Blue",
+    "price": 2899,
+    "condition": "Б/у",
+    "model_key": "apple 12",
+    "verified_model": null
+  },
+  "44787310": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17447873_redmi-note-10-pro/",
+    "title": "Xiaomi Redmi Note 10 pro",
+    "price": 1450,
+    "condition": "Б/у",
+    "model_key": "redmi note 10 pro",
+    "verified_model": null
   }
 }

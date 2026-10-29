@@ -41624,5 +41624,24 @@
     "price": 2650,
     "condition": "Б/у",
     "model_key": "samsung s21 2sim vetnam"
+  },
+  "59458256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17447594_poco-f5-8-256/",
+    "title": "Xiaomi Poco F5 8/256",
+    "price": 3000,
+    "condition": "Б/у",
+    "model_key": "poco f5 8 256",
+    "verified_model": null
+  },
+  "17447574": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17447574_telefon/",
+    "title": "Samsung Galaxy Z Fold 6",
+    "price": 8500,
+    "condition": "Б/у",
+    "model_key": "samsung z fold 6"
   }
 }

@@ -41416,5 +41416,25 @@
     "condition": "Б/у",
     "model_key": "samsung note 20 ultra",
     "verified_model": null
+  },
+  "58437128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17445843_apple-iphone-7-plus-128-gb/",
+    "title": "Apple iPhone 7 plus, 128 gb",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "apple 7 plus",
+    "verified_model": null
+  },
+  "74458375": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17445837_vivo5/",
+    "title": "Vivo 5",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "vivo 5",
+    "verified_model": null
   }
 }

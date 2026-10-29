@@ -41749,5 +41749,16 @@
     "price": 5299,
     "condition": "Б/у",
     "model_key": "apple 15 pro max"
+  },
+  "44848514": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17448485_redmi-note-14/",
+    "title": "Xiaomi Redmi Note 14",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "redmi note 14",
+    "verified_model": null
   }
 }

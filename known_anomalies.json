@@ -186,5 +186,10 @@
     "ratio": 11.0,
     "kind": "reviewed",
     "reviewed_at": "2026-10-29"
+  },
+  "redmi note 14|128": {
+    "first_seen": "2026-10-29",
+    "ratio": 3.0,
+    "kind": "wide"
   }
 }

@@ -41643,5 +41643,34 @@
     "price": 8500,
     "condition": "Б/у",
     "model_key": "samsung z fold 6"
+  },
+  "44767516": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17447675_galaxy-a16/",
+    "title": "Samsung Galaxy A16",
+    "price": 1399,
+    "condition": "Б/у",
+    "model_key": "samsung a16",
+    "verified_model": null
+  },
+  "47671732": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17447671_apple-iphone-7-32-gb/",
+    "title": "Apple iPhone 7, 32 gb",
+    "price": 400,
+    "condition": "Б/у",
+    "model_key": "apple 7",
+    "verified_model": null
+  },
+  "24218256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17447624_samsung-galaxy-s21-8-256gb-duos-vetnam/",
+    "title": "Samsung Galaxy S21 8/256Gb Duos Vetnam",
+    "price": 2550,
+    "condition": "Б/у",
+    "model_key": "samsung s21 duos vetnam"
   }
 }

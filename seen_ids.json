@@ -42255,5 +42255,23 @@
     "price": 2670,
     "condition": "Б/у",
     "model_key": "samsung s21 plus"
+  },
+  "96148256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17453096_telefon-redmi-not-14-pro-8-256gb/",
+    "title": "Xiaomi Redmi Note 14 Pro",
+    "price": 1730,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro"
+  },
+  "06612464": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17453066_telefon-redmi-12s-4-64gb/",
+    "title": "Xiaomi redmi 12С 4/64гб",
+    "price": 885,
+    "condition": "Б/у",
+    "model_key": "redmi 12с"
   }
 }

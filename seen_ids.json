@@ -699,8 +699,8 @@
   "22568300": {
     "logged": true,
     "notified": true,
-    "photo_ok": false,
-    "condition": "Новый",
+    "photo_ok": true,
+    "condition": "Б/у",
     "memory": 256,
     "official_fields": {
       "city": null,
@@ -715,7 +715,11 @@
       "overall_visual_condition": "неизвестно",
       "visible_defects": [],
       "raw_text": "Анализ не удался"
-    }
+    },
+    "url": "https://m.somon.tj/adv/16470872_honor-x9d-5g-12-12-256gb-chiornogo-tsveta-8300-mach/",
+    "title": "Honor X9d 5G 12+12/256gb",
+    "price": 3800,
+    "model_key": "honor x9d"
   },
   "67316256": {
     "logged": true,

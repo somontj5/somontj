@@ -42432,5 +42432,25 @@
     "condition": "Б/у",
     "model_key": "apple 11",
     "verified_model": null
+  },
+  "45412223": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17454122_samsung-a23/",
+    "title": "Samsung Galaxy А23",
+    "price": 1899,
+    "condition": "Б/у",
+    "model_key": "samsung а23",
+    "verified_model": null
+  },
+  "45415413": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17454154_redmi13/",
+    "title": "Xiaomi Redmi 13",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "redmi 13",
+    "verified_model": null
   }
 }

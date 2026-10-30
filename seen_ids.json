@@ -41874,5 +41874,14 @@
     "price": 2550,
     "condition": "Б/у",
     "model_key": "samsung s21"
+  },
+  "45008715": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17450087_xiaomi-15-pro/",
+    "title": "Xiaomi Mi 15 pro",
+    "price": 7300,
+    "condition": "Б/у",
+    "model_key": "xiaomi mi 15 pro"
   }
 }

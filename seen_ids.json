@@ -41826,5 +41826,15 @@
     "price": 1199,
     "condition": "Б/у",
     "model_key": "apple xs"
+  },
+  "44905324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17449053_s24/",
+    "title": "Samsung Galaxy S24",
+    "price": 2800,
+    "condition": "Б/у",
+    "model_key": "samsung s24",
+    "verified_model": null
   }
 }

@@ -41838,6 +41838,22 @@
     "verified_model": null
   },
   "09114128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17449091_apple-iphone-14-pro-128-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Deep Purple",
+    "price": 4600,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
+  },
+  "44845764": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17448457_apple-iphone-x-64-gb-space-grey/",
+    "title": "Apple iPhone X, 64 gb, Space Grey",
+    "price": 1717,
+    "condition": "Б/у",
+    "model_key": "apple x",
+    "verified_model": null
   }
 }

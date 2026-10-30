@@ -41789,5 +41789,23 @@
     "price": 4999,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "88913128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17448889_apple-iphone-13-pro-max-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Sierra Blue",
+    "price": 5500,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
+  },
+  "85816256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17448858_apple-iphone-16-pro-256-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro, 256 gb, Desert Titanium",
+    "price": 8499,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro"
   }
 }

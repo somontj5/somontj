@@ -42461,5 +42461,34 @@
     "price": 9000,
     "condition": "Б/у",
     "model_key": "samsung s25 ulta vetnam"
+  },
+  "17454630": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17454630_arzon/",
+    "title": "Samsung Galaxy S10+",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "samsung s10 plus",
+    "verified_model": null
+  },
+  "45741164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17454574_apple-iphone-11-64-gb-black/",
+    "title": "Apple iPhone 11, 64 gb, Black",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "89588256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17454548_honor-x9d-5g-8-8-256gb/",
+    "title": "Honor X9D 5G 8+8/256Gb",
+    "price": 3400,
+    "condition": "Б/у",
+    "model_key": "honor x9d"
   }
 }

@@ -42357,5 +42357,43 @@
     "price": 2620,
     "condition": "Б/у",
     "model_key": "samsung a55"
+  },
+  "76612512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17453766_apple-iphone-12-pro-512-gb-graphite/",
+    "title": "Apple iPhone 12 pro, 512 gb, Graphite",
+    "price": 1199,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro",
+    "verified_model": null
+  },
+  "37237164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17453723_poco-c71-64gb/",
+    "title": "Xiaomi Poco C71, 64Gb",
+    "price": 1099,
+    "condition": "Б/у",
+    "model_key": "poco c71"
+  },
+  "45369365": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17453693_telefon-itel-p65/",
+    "title": "Телефон ITEL P65",
+    "price": 1099,
+    "condition": "Б/у",
+    "model_key": "itel p65",
+    "verified_model": null
+  },
+  "31088128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17453703_xiaomi-redmi-not-10-pro-8-8-128gb/",
+    "title": "Xiaomi Redmi Not 10 Pro 8+8/128Gb",
+    "price": 1485,
+    "condition": "Б/у",
+    "model_key": "redmi not 10 pro 8"
   }
 }

@@ -42020,5 +42020,51 @@
     "price": 3250,
     "condition": "Б/у",
     "model_key": "samsung a56"
+  },
+  "11012825": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17450441_telefon-samsung-s10-128gb-2sim-5g/",
+    "title": "Samsung Galaxy S10+ 128gb 2sim 5G",
+    "price": 1570,
+    "condition": "Б/у",
+    "model_key": "samsung s10 plus"
+  },
+  "50408500": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17450408_nokia-c5-00-novyi/",
+    "title": "Nokia c5 00",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "nokia c5 00",
+    "verified_model": null
+  },
+  "05121285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17450405_telefon-redmi-note-12-128gb-5g/",
+    "title": "Xiaomi Redmi Note 12 128gb 5G",
+    "price": 1354,
+    "condition": "Б/у",
+    "model_key": "redmi note 12"
+  },
+  "39412644": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17450394_telefon-redmi-12s-64gb-4g/",
+    "title": "Xiaomi Redmi 12S 64gb 4G",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "redmi 12s"
+  },
+  "77142565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17450377_xiaomi-redmi-note-14-256gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 14 256gb Glabal Version 5G",
+    "price": 1650,
+    "condition": "Б/у",
+    "model_key": "redmi note 14"
   }
 }

@@ -42320,5 +42320,42 @@
     "condition": "Б/у",
     "model_key": "samsung а 52",
     "verified_model": null
+  },
+  "36797128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17453679_honor-x7c-128gb/",
+    "title": "Honor X7C 128Gb",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "honor x7c"
+  },
+  "52135256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17453652_xiaomi-redmi-not-13-pro-plus-5g-256gb/",
+    "title": "Xiaomi Redmi Not 13 Pro Plus 5G 256Gb",
+    "price": 2830,
+    "condition": "Б/у",
+    "model_key": "redmi not 13 pro plus"
+  },
+  "39111128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17453391_apple-iphone-11-128-gb-white/",
+    "title": "Apple iPhone 11, 128 gb, White",
+    "price": 1199,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "62155256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17453621_samsung-galaxy-a55-256gb-duos-dubai/",
+    "title": "Samsung Galaxy A55 256Gb Duos Dubai",
+    "price": 2620,
+    "condition": "Б/у",
+    "model_key": "samsung a55"
   }
 }

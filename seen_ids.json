@@ -41901,5 +41901,50 @@
     "price": 2999,
     "condition": "Б/у",
     "model_key": "apple 12"
+  },
+  "64111285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17450264_telefon-redmi-note-11-128gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 11 128gb Glabal Version 5G",
+    "price": 1256,
+    "condition": "Б/у",
+    "model_key": "redmi note 11"
+  },
+  "24913128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17450249_apple-iphone-13-pro-max-128-gb-graphite/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Graphite",
+    "price": 3999,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
+  },
+  "32101285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17450232_telefon-redmi-10-pro-128gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi 10 pro 128gb Glabal Version 5G",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "redmi 10 pro"
+  },
+  "21142565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17450221_telefon-redmi-note-14-pro-256gb-5g/",
+    "title": "Xiaomi Redmi Note 14 pro 256gb 5G",
+    "price": 2400,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro"
+  },
+  "50208135": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17450208_telefon-redmi-note-13-pro-plus-5g/",
+    "title": "Xiaomi Redmi Note 13 pro plus 5G",
+    "price": 2650,
+    "condition": "Б/у",
+    "model_key": "redmi note 13 pro plus"
   }
 }

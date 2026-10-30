@@ -41817,5 +41817,14 @@
     "condition": "Б/у",
     "model_key": "samsung a25",
     "verified_model": null
+  },
+  "39278256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17439278_apple-iphone-xs-256-gb-space-grey/",
+    "title": "Apple iPhone Xs, 256 gb, Space Grey",
+    "price": 1199,
+    "condition": "Б/у",
+    "model_key": "apple xs"
   }
 }

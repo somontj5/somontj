@@ -42273,5 +42273,24 @@
     "price": 885,
     "condition": "Б/у",
     "model_key": "redmi 12с"
+  },
+  "45319111": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17453191_telefon-redmi-not-11/",
+    "title": "Xiaomi Redmi not 11",
+    "price": 1310,
+    "condition": "Б/у",
+    "model_key": "redmi not 11"
+  },
+  "45313352": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17453133_samsung-galaxy-a52/",
+    "title": "Samsung Galaxy A52",
+    "price": 1350,
+    "condition": "Б/у",
+    "model_key": "samsung a52",
+    "verified_model": null
   }
 }

@@ -750,5 +750,18 @@
     "ban_ad_urls": [
       "https://m.somon.tj/adv/17450408_nokia-c5-00-novyi/"
     ]
+  },
+  "11147160": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/11147160/",
+    "reason": "похоже на перекупщика по фото: На заднем плане на фотографиях четко видны витринные полки с коробками колонок и другой техники, что характерно для магазина или перекупщика.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17453133_samsung-galaxy-a52/",
+    "blocked_at": "2026-10-30T15:18:55",
+    "updated_at": "2026-10-30T15:18:55",
+    "active_ads_at_block": 1,
+    "ban_count": 1,
+    "ban_ad_urls": [
+      "https://m.somon.tj/adv/17453133_samsung-galaxy-a52/"
+    ]
   }
 }

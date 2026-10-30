@@ -42413,5 +42413,24 @@
     "price": 7400,
     "condition": "Б/у",
     "model_key": "apple air"
+  },
+  "89414256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17453894_xiaomi-redmi-not-14-pro-256gb-duos-dubai/",
+    "title": "Xiaomi Redmi Notе 14 Pro 256Gb Duos Dubai",
+    "price": 2410,
+    "condition": "Б/у",
+    "model_key": "redmi notе 14 pro"
+  },
+  "38711164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17453871_apple-iphone-11-64-gb-black/",
+    "title": "Apple iPhone 11, 64 gb, Black",
+    "price": 2200,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

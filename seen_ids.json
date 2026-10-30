@@ -42131,5 +42131,32 @@
     "condition": "Б/у",
     "model_key": "samsung m04 64g",
     "verified_model": null
+  },
+  "51961171": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17451961_apple-iphone-17-pro-max-1-tb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 1 tb, Silver дубликат",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "94315256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17451943_apple-iphone-15-pro-max-256-gb-white-titanium/",
+    "title": "Apple iPhone 15 Pro Max, 256 gb, White Titanium",
+    "price": 7800,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro max"
+  },
+  "91614512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17451916_apple-iphone-14-pro-512-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro, 512 gb, Deep Purple",
+    "price": 3777,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

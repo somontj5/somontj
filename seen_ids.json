@@ -42237,5 +42237,23 @@
     "price": 1480,
     "condition": "Б/у",
     "model_key": "samsung s10 plus duos dubai"
+  },
+  "48126128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17453048_telefon-redmi-not-12-6-128gb/",
+    "title": "Xiaomi Redmi Not 12 6/128гб",
+    "price": 1380,
+    "condition": "Б/у",
+    "model_key": "redmi not 12"
+  },
+  "02321128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17453023_samsung-galaxy-s21-plus-128gb-duos-dubai/",
+    "title": "Samsung Galaxy S21 Plus 128Gb Duos Dubai",
+    "price": 2670,
+    "condition": "Б/у",
+    "model_key": "samsung s21 plus"
   }
 }

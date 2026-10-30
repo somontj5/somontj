@@ -42066,5 +42066,24 @@
     "price": 1650,
     "condition": "Б/у",
     "model_key": "redmi note 14"
+  },
+  "50708256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17450708_apple-iphone-air-256-gb-space-black/",
+    "title": "Apple iPhone Air, 256 gb, Space Black",
+    "price": 6999,
+    "condition": "Б/у",
+    "model_key": "apple air"
+  },
+  "45060213": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17450602_redmi-not-13/",
+    "title": "Xiaomi Redmi Note 13",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "redmi note 13",
+    "verified_model": null
   }
 }

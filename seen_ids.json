@@ -42292,5 +42292,23 @@
     "condition": "Б/у",
     "model_key": "samsung a52",
     "verified_model": null
+  },
+  "06157000": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16835506_redmi-15-midnight-black-battery-7000-mah/",
+    "title": "Xiaomi Redmi 15 Midnight Black Battery 7000 mah",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "74531768": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17453176_telefon-redmi-8/",
+    "title": "Xiaomi Redmi 8",
+    "price": 710,
+    "condition": "Б/у",
+    "model_key": "redmi 8"
   }
 }

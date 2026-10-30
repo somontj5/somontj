@@ -191,5 +191,10 @@
     "first_seen": "2026-10-29",
     "ratio": 3.0,
     "kind": "wide"
+  },
+  "apple 12|128": {
+    "first_seen": "2026-10-30",
+    "ratio": 3.56,
+    "kind": "wide"
   }
 }

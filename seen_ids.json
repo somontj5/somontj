@@ -41983,5 +41983,42 @@
     "price": 2100,
     "condition": "Б/у",
     "model_key": "apple 11"
+  },
+  "72125652": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17450347_samsung-galaxy-21-256gb-5g-2sim-vetnam/",
+    "title": "Samsung Galaxy 21 256gb 5G 2sim Vetnam",
+    "price": 2577,
+    "condition": "Б/у",
+    "model_key": "samsung 21"
+  },
+  "34512128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17450345_apple-iphone-12-128-gb-green/",
+    "title": "Apple iPhone 12, 128 gb, Green",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "apple 12",
+    "verified_model": null
+  },
+  "35525685": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17450333_telefon-samsung-a55-256-8gb-dual-sim-5g/",
+    "title": "Samsung Galaxy A55",
+    "price": 2650,
+    "condition": "Б/у",
+    "model_key": "samsung a55"
+  },
+  "85612885": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17450308_telefon-samsung-a56-128-8gb-vetnam-5g/",
+    "title": "Samsung Galaxy A56",
+    "price": 3250,
+    "condition": "Б/у",
+    "model_key": "samsung a56"
   }
 }

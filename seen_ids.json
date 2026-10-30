@@ -42121,5 +42121,15 @@
     "price": 7299,
     "condition": "Б/у",
     "model_key": "apple 17 pro"
+  },
+  "96680464": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16869668_samsung-m04-64g/",
+    "title": "Samsung Galaxy M04 64g",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "samsung m04 64g",
+    "verified_model": null
   }
 }

@@ -42310,5 +42310,15 @@
     "price": 710,
     "condition": "Б/у",
     "model_key": "redmi 8"
+  },
+  "45353252": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17453532_telefon-a-52-sostoianie-nagz-pul-dakor-khamunba-mefrusham/",
+    "title": "Samsung Galaxy А 52",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "samsung а 52",
+    "verified_model": null
   }
 }

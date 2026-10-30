@@ -41946,5 +41946,42 @@
     "price": 2650,
     "condition": "Б/у",
     "model_key": "redmi note 13 pro plus"
+  },
+  "87142565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17450287_telefon-redmi-pro-14-256gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi pro 14 256gb Glabal Version 5G",
+    "price": 2250,
+    "condition": "Б/у",
+    "model_key": "redmi pro 14"
+  },
+  "02768324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17450276_telefon-redmi-8-32gb-4g/",
+    "title": "Xiaomi Redmi 8 32Gb 4G",
+    "price": 730,
+    "condition": "Б/у",
+    "model_key": "redmi 8"
+  },
+  "50272616": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17450272_apple-iphone-6-plus-16-gb/",
+    "title": "Apple iPhone 6 plus, 16 gb",
+    "price": 150,
+    "condition": "Б/у",
+    "model_key": "apple 6 plus",
+    "verified_model": null
+  },
+  "02701164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17450270_apple-iphone-11-64-gb-purple/",
+    "title": "Apple iPhone 11, 64 gb, Purple",
+    "price": 2100,
+    "condition": "Б/у",
+    "model_key": "apple 11"
   }
 }

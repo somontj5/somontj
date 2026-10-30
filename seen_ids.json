@@ -42395,5 +42395,23 @@
     "price": 1485,
     "condition": "Б/у",
     "model_key": "redmi not 10 pro 8"
+  },
+  "53823134": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17453823_apple-iphone-13-4-gb-pink/",
+    "title": "Apple iPhone 13, 4 gb, Pink",
+    "price": 3300,
+    "condition": "Б/у",
+    "model_key": "apple 13 4"
+  },
+  "53787256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17453787_apple-iphone-air-256-gb-space-black/",
+    "title": "Apple iPhone Air, 256 gb, Space Black",
+    "price": 7400,
+    "condition": "Б/у",
+    "model_key": "apple air"
   }
 }

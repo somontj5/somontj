@@ -41883,5 +41883,23 @@
     "price": 7300,
     "condition": "Б/у",
     "model_key": "xiaomi mi 15 pro"
+  },
+  "16442026": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17450188_telefon-poco-71-64gb-4g-2026/",
+    "title": "Xiaomi POCO 71 64gb 4G 2026",
+    "price": 899,
+    "condition": "Б/у",
+    "model_key": "poco 71"
+  },
+  "16612128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17450166_apple-iphone-12-128-gb-white/",
+    "title": "Apple iPhone 12, 128 gb, White",
+    "price": 2999,
+    "condition": "Б/у",
+    "model_key": "apple 12"
   }
 }

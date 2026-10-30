@@ -42094,5 +42094,14 @@
     "price": 7000,
     "condition": "Б/у",
     "model_key": "apple 15 pro max"
+  },
+  "45218256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17450945_samsung-galaxy-s21-8-256/",
+    "title": "Samsung Galaxy S21 8/256Gb",
+    "price": 1550,
+    "condition": "Б/у",
+    "model_key": "samsung s21"
   }
 }

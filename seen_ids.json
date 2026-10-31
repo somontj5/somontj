@@ -42698,5 +42698,24 @@
     "price": 550,
     "condition": "Б/у",
     "model_key": "redmi 9c"
+  },
+  "57864125": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17457864_redmi-12-5g/",
+    "title": "Xiaomi Redmi 12 5G",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "redmi 12"
+  },
+  "74578479": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17457847_redmi-9a/",
+    "title": "Xioami Redmi 9A",
+    "price": 420,
+    "condition": "Б/у",
+    "model_key": "redmi 9a",
+    "verified_model": null
   }
 }

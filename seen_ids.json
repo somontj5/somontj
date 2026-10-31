@@ -43177,5 +43177,23 @@
     "condition": "Б/у",
     "model_key": "samsung f13",
     "verified_model": null
+  },
+  "51382565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17460985_telefon-redmi-note-13-8-256gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 13 8/256Gb Glоbal Version 5G",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "redmi note 13 glоbal"
+  },
+  "95913128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17460959_apple-iphone-13-pro-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
+    "price": 4150,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

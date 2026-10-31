@@ -42996,5 +42996,14 @@
     "condition": "Б/у",
     "model_key": null,
     "verified_model": null
+  },
+  "24616256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16742246_apple-iphone-16-pro-max-256-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
+    "price": 9990,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   }
 }

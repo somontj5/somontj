@@ -43195,5 +43195,15 @@
     "price": 4150,
     "condition": "Б/у",
     "model_key": "apple 13 pro"
+  },
+  "46101214": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17461012_samsung-a14/",
+    "title": "Samsung Galaxy A14",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "samsung a14",
+    "verified_model": null
   }
 }

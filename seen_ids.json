@@ -42845,5 +42845,23 @@
     "price": 1599,
     "condition": "Б/у",
     "model_key": "redmi note 14 pro glоbal"
+  },
+  "45828121": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17458281_samsung-galaxy-a21s/",
+    "title": "Samsung Galaxy A21s",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "samsung a21s"
+  },
+  "45612885": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17458274_telefon-samsung-a56-128-8gb-vetnam-5g/",
+    "title": "Samsung Galaxy А56 128/8Gb Vetnam 5G",
+    "price": 3250,
+    "condition": "Б/у",
+    "model_key": "samsung а56 vetnam"
   }
 }

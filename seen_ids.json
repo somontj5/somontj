@@ -43062,5 +43062,24 @@
     "condition": "Б/у",
     "model_key": "oppo a55",
     "verified_model": null
+  },
+  "17514128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17460175_apple-iphone-14-128-gb-midnight/",
+    "title": "Apple iPhone 14, 128 gb, Midnight",
+    "price": 3500,
+    "condition": "Б/у",
+    "model_key": "apple 14"
+  },
+  "17460169": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17460169_telefon/",
+    "title": "Infinix smart 10",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "infinix smart 10",
+    "verified_model": null
   }
 }

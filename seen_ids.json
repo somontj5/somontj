@@ -42771,5 +42771,33 @@
     "price": 4700,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "10989577": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/10989577_knopochnyi-mobilnyi-telefon/",
+    "title": "Кнопочный мобильный телефон",
+    "price": 201,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
+  },
+  "66422026": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17458059_telefon-samsung-a06-64gb-vetnam-2sim-2026/",
+    "title": "Samsung galaxy А06 64Gb Vetnam 2sim 2026",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "samsung а06"
+  },
+  "04622645": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17458046_telefon-samsung-a22-64gb-vetnam-5g/",
+    "title": "Samsumg Galaxy А22 64Gb Vetnam 5G",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "samsung а22"
   }
 }

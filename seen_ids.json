@@ -43007,6 +43007,32 @@
     "model_key": "apple 16 pro max"
   },
   "55012256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17459550_redmi-note-12-256gb/",
+    "title": "Xiaomi Redmi note 12 256gb",
+    "price": 1520,
+    "condition": "Б/у",
+    "model_key": "redmi note 12",
+    "verified_model": null
+  },
+  "59913128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17459599_apple-iphone-13-pro-128-gb-gold/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Gold",
+    "price": 4299,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
+  },
+  "74595978": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17459597_honor-x8a/",
+    "title": "Honor X8a",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "honor x8a",
+    "verified_model": null
   }
 }

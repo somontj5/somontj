@@ -43214,5 +43214,15 @@
     "price": 3500,
     "condition": "Б/у",
     "model_key": "honor 600 lite"
+  },
+  "17461138": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17461138_rebmi/",
+    "title": "Xiaomi Redmi A5",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "redmi a5",
+    "verified_model": null
   }
 }

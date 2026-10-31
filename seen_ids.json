@@ -42689,5 +42689,14 @@
     "price": 4300,
     "condition": "Б/у",
     "model_key": "samsung s23"
+  },
+  "63645019": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16364501_redmi-9c/",
+    "title": "Xiaomi Redmi 9C",
+    "price": 550,
+    "condition": "Б/у",
+    "model_key": "redmi 9c"
   }
 }

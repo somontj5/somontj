@@ -43130,9 +43130,33 @@
     "model_key": "samsung s26 ultra"
   },
   "60723550": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17460723_550/",
+    "title": "Samsung Galaxy A32",
+    "price": 550,
+    "condition": "Б/у",
+    "model_key": "samsung a32",
+    "verified_model": null
   },
   "46072611": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17460726_xiaomi-mi-11-lite/",
+    "title": "Xiaomi Mi 11 Lite",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "xiaomi mi 11 lite",
+    "verified_model": null
+  },
+  "97982400": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15097982_honor-400-lite/",
+    "title": "Honor 400 lite",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "honor 400 lite",
+    "verified_model": null
   }
 }

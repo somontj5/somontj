@@ -42958,5 +42958,15 @@
     "condition": "Б/у",
     "model_key": "poco x3",
     "verified_model": null
+  },
+  "20811256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17459208_apple-iphone-11-256-gb-black/",
+    "title": "Apple iPhone 11, 256 gb, Black",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

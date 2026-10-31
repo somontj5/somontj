@@ -43081,5 +43081,15 @@
     "condition": "Б/у",
     "model_key": "infinix smart 10",
     "verified_model": null
+  },
+  "60279616": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17460279_apple-iphone-6s-16-gb/",
+    "title": "Apple iPhone 6s, 16 gb",
+    "price": 350,
+    "condition": "Б/у",
+    "model_key": "apple 6s",
+    "verified_model": null
   }
 }

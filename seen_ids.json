@@ -42671,5 +42671,14 @@
     "condition": "Б/у",
     "model_key": "poco c71",
     "verified_model": null
+  },
+  "81212512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15019638_xiaomi-12s-ultra-12-512gb/",
+    "title": "Xiaomi Mi 12S Ultra 12/512gb",
+    "price": 4000,
+    "condition": "Б/у",
+    "model_key": "xiaomi mi 12s ultra"
   }
 }

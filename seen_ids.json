@@ -42680,5 +42680,14 @@
     "price": 4000,
     "condition": "Б/у",
     "model_key": "xiaomi mi 12s ultra"
+  },
+  "58238256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16105058_samsung-galaxy-s23-8-256gb/",
+    "title": "Samsung Galaxy S23 8/256gb",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "samsung s23"
   }
 }

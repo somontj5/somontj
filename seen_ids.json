@@ -42565,5 +42565,24 @@
     "price": 3200,
     "condition": "Б/у",
     "model_key": "samsung s22"
+  },
+  "45611814": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17456118_remdi-note-14-pro-midnight-black/",
+    "title": "Xiaomi Redmi note 14 pro midnight black",
+    "price": 2100,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro midnight",
+    "verified_model": null
+  },
+  "11112256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17456111_apple-iphone-12-pro-256-gb-graphite/",
+    "title": "Apple iPhone 12 pro, 256 gb, Graphite",
+    "price": 3200,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro"
   }
 }

@@ -43034,5 +43034,23 @@
     "condition": "Б/у",
     "model_key": "honor x8a",
     "verified_model": null
+  },
+  "09312256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17460093_apple-iphone-12-pro-max-256-gb-gold/",
+    "title": "Apple iPhone 12 Pro Max, 256 gb, Gold",
+    "price": 5000,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro max"
+  },
+  "07713128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17460077_apple-iphone-13-pro-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
+    "price": 3800,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

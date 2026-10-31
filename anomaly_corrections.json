@@ -13,6 +13,13 @@
     "reviewed_at": "2026-10-29T15:59:02",
     "source": "gemini-review"
   },
+  "04018256": {
+    "action": "exclude",
+    "group_key": "apple 18 pro max|256",
+    "reason": "В описании указано 'Тайланди лукс копия', в блоке IMEI модель iPhone XR.",
+    "reviewed_at": "2026-10-31T08:01:39",
+    "source": "gemini-review"
+  },
   "04918256": {
     "action": "exclude",
     "group_key": "apple 18 pro max|256",
@@ -34,6 +41,13 @@
     "price": 8800,
     "reason": "В заголовке ошибочно указан iPhone 16 Pro Max, но блок IMEI и описание подтверждают модель APPLE iPhone 15 Pro Max (A3105), а цена на странице составляет 8800 сомони (в базе ошибочно 880)",
     "reviewed_at": "2026-10-21T06:27:46",
+    "source": "gemini-review"
+  },
+  "13418256": {
+    "action": "exclude",
+    "group_key": "apple 18 pro max|256",
+    "reason": "В описании указано 'Тайланди лукс копия', в блоке IMEI модель iPhone XR.",
+    "reviewed_at": "2026-10-31T08:01:39",
     "source": "gemini-review"
   },
   "13780064": {
@@ -84,6 +98,13 @@
     "price": 899,
     "reason": "В блоке IMEI указана модель Apple iPhone 7 Plus (A1661-5)",
     "reviewed_at": "2026-10-21T12:02:47",
+    "source": "gemini-review"
+  },
+  "17918256": {
+    "action": "exclude",
+    "group_key": "apple 18 pro max|256",
+    "reason": "В описании указано 'Тайланди лукс копия', в блоке IMEI модель iPhone XR.",
+    "reviewed_at": "2026-10-31T08:01:39",
     "source": "gemini-review"
   },
   "21806110": {

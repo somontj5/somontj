@@ -42938,5 +42938,25 @@
     "price": 11000,
     "condition": "Б/у",
     "model_key": "apple 17 pro"
+  },
+  "74591279": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17459127_redmi-9-a/",
+    "title": "Xiaomi Redmi 9 A",
+    "price": 400,
+    "condition": "Б/у",
+    "model_key": "redmi 9 a",
+    "verified_model": null
+  },
+  "05136128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17459051_poco-x3-6-128gb/",
+    "title": "Xiaomi POCO X3 6/128gb",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "poco x3",
+    "verified_model": null
   }
 }

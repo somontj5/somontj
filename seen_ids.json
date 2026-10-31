@@ -42929,5 +42929,14 @@
     "price": 5500,
     "condition": "Б/у",
     "model_key": "apple 14"
+  },
+  "00817256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17459008_apple-iphone-17-pro-256-gb-deep-blue/",
+    "title": "Apple iPhone 17 Pro, 256 gb, Deep Blue",
+    "price": 11000,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro"
   }
 }

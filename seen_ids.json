@@ -42901,5 +42901,15 @@
     "condition": "Б/у",
     "model_key": "apple 11",
     "verified_model": null
+  },
+  "74587995": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17458799_redmi-5-plus/",
+    "title": "Xiaomi Redmi 5 plus",
+    "price": 300,
+    "condition": "Б/у",
+    "model_key": "redmi 5 plus",
+    "verified_model": null
   }
 }

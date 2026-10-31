@@ -42661,5 +42661,15 @@
     "condition": "Б/у",
     "model_key": "apple x",
     "verified_model": null
+  },
+  "45748671": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17457486_poco-c71/",
+    "title": "Xiaomi Poco c71",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "poco c71",
+    "verified_model": null
   }
 }

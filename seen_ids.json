@@ -42986,5 +42986,15 @@
     "price": 5900,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "17459329": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17459329_rastamozhka-shudagi/",
+    "title": "Телефон Xiaomi Poco",
+    "price": 649,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
   }
 }

@@ -42528,5 +42528,14 @@
     "price": 5000,
     "condition": "Б/у",
     "model_key": "apple 13 pro"
+  },
+  "40014128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17455400_apple-iphone-14-pro-128-gb-space-black/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Space Black",
+    "price": 4900,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

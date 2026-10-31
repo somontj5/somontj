@@ -42651,5 +42651,15 @@
     "condition": "Б/у",
     "model_key": "samsung a26",
     "verified_model": null
+  },
+  "57322256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17457322_apple-iphone-x-256-gb-silver/",
+    "title": "Apple iPhone X, 256 gb, Silver",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "apple x",
+    "verified_model": null
   }
 }

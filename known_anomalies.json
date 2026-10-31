@@ -96,7 +96,7 @@
   "samsung s10|128": {
     "first_seen": "2026-10-18",
     "ratio": 6.28,
-    "kind": "outlier",
+    "kind": "reviewed",
     "reviewed_at": "2026-10-31"
   },
   "samsung s21|256": {

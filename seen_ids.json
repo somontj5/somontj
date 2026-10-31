@@ -42891,5 +42891,15 @@
     "price": 1844,
     "condition": "Б/у",
     "model_key": "samsung a54"
+  },
+  "71311128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17458713_apple-iphone-11-128-gb-black/",
+    "title": "Apple iPhone 11, 128 gb, Black",
+    "price": 2400,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

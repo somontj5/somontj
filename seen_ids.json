@@ -42584,5 +42584,15 @@
     "price": 3200,
     "condition": "Б/у",
     "model_key": "apple 12 pro"
+  },
+  "17456168": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17456168_dar-kholati-khub/",
+    "title": "Samsung Galaxy A53",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "samsung a53",
+    "verified_model": null
   }
 }

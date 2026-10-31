@@ -42920,5 +42920,14 @@
     "price": 7000,
     "condition": "Б/у",
     "model_key": "apple 15 pro max"
+  },
+  "89314128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17458893_apple-iphone-14-128-gb-purple/",
+    "title": "Apple iPhone 14, 128 gb, Purple",
+    "price": 5500,
+    "condition": "Б/у",
+    "model_key": "apple 14"
   }
 }

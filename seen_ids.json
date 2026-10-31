@@ -42873,5 +42873,14 @@
     "condition": "Б/у",
     "model_key": "samsung s21",
     "verified_model": null
+  },
+  "65525685": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17458616_telefon-samsung-a55-256-8gb-vetnam-5g/",
+    "title": "Samsung Galaxy A55 256/8Gb Vietnam 5G",
+    "price": 2600,
+    "condition": "Б/у",
+    "model_key": "samsung a55"
   }
 }

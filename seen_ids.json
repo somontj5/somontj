@@ -42799,5 +42799,15 @@
     "price": 1250,
     "condition": "Б/у",
     "model_key": "samsung а22"
+  },
+  "81161164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17458116_apple-iphone-11-64-gb-purple/",
+    "title": "Apple iPhone 11, 64 gb, Purple",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

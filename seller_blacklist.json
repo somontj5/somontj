@@ -763,5 +763,18 @@
     "ban_ad_urls": [
       "https://m.somon.tj/adv/17453133_samsung-galaxy-a52/"
     ]
+  },
+  "119360": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/119360/",
+    "reason": "похоже на перекупщика по фото: на заднем фоне фотографий четко видны витрины и стенды магазина с большим количеством коробок и мобильных аксессуаров",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17456846_infinix-smart-20/",
+    "blocked_at": "2026-10-31T07:10:25",
+    "updated_at": "2026-10-31T07:10:25",
+    "active_ads_at_block": 2,
+    "ban_count": 1,
+    "ban_ad_urls": [
+      "https://m.somon.tj/adv/17456846_infinix-smart-20/"
+    ]
   }
 }

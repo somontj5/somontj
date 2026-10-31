@@ -42594,5 +42594,25 @@
     "condition": "Б/у",
     "model_key": "samsung a53",
     "verified_model": null
+  },
+  "45684620": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17456846_infinix-smart-20/",
+    "title": "Infinix Smart 20",
+    "price": 1150,
+    "condition": "Б/у",
+    "model_key": "infinix smart 20",
+    "verified_model": null
+  },
+  "74563889": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17456388_khonor-kh9a/",
+    "title": "Honor х9а",
+    "price": 1099,
+    "condition": "Б/у",
+    "model_key": "honor х9а",
+    "verified_model": null
   }
 }

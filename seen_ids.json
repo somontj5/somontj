@@ -43160,6 +43160,22 @@
     "verified_model": null
   },
   "86414128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17460864_apple-iphone-14-pro-128-gb-silver/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Silver",
+    "price": 4500,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
+  },
+  "17460925": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17460925_samsung/",
+    "title": "Samsung Galaxy F13",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "samsung f13",
+    "verified_model": null
   }
 }

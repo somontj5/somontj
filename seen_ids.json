@@ -42744,5 +42744,32 @@
     "price": 1540,
     "condition": "Б/у",
     "model_key": "samsung s10 plus"
+  },
+  "80071282": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17458007_telefon-itel-128gb-2sim/",
+    "title": "Itel 128gb 2sim",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "96812644": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17457968_telefon-redmi-12c-64gb-4g/",
+    "title": "Xiaomi Redmi 12C 64gb 4G",
+    "price": 799,
+    "condition": "Б/у",
+    "model_key": "redmi 12c"
+  },
+  "96314128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17457963_apple-iphone-14-pro-128-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Deep Purple",
+    "price": 4700,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

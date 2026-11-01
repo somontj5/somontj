@@ -43316,5 +43316,14 @@
     "condition": "Б/у",
     "model_key": "apple 6s",
     "verified_model": null
+  },
+  "07416256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17463074_apple-iphone-16-pro-max-256-gb-natural-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Natural Titanium",
+    "price": 8500,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   }
 }

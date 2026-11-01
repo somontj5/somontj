@@ -43855,5 +43855,15 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "samsung a06"
+  },
+  "06911256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17468069_apple-iphone-11-pro-256-gb-gold/",
+    "title": "Apple iPhone 11 Pro, 256 gb, Gold",
+    "price": 2999,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
   }
 }

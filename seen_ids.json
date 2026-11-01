@@ -43875,5 +43875,15 @@
     "condition": "Б/у",
     "model_key": "samsung a52",
     "verified_model": null
+  },
+  "46846712": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17468467_samsung-galaxy-a12/",
+    "title": "Samsung Galaxy A12",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "samsung a12",
+    "verified_model": null
   }
 }

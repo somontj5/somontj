@@ -43561,5 +43561,23 @@
     "price": 750,
     "condition": "Б/у",
     "model_key": "redmi 8"
+  },
+  "16452026": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17465229_telefon-poco-71-64gb-5g-2026/",
+    "title": "Xiaomi poco 71 64gb 5G 2026",
+    "price": 970,
+    "condition": "Б/у",
+    "model_key": "poco 71"
+  },
+  "45425652": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17465184_telefon-samsung-a54-256gb-vetnam-5g-2sim/",
+    "title": "Samsung Galaxy А54 256гб Vetnam 5G 2sim",
+    "price": 1860,
+    "condition": "Б/у",
+    "model_key": "samsung а54"
   }
 }

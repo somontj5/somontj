@@ -43278,5 +43278,14 @@
     "price": 5600,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "46258011": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17462580_samsung-a11/",
+    "title": "Samsung Galaxy A11",
+    "price": 250,
+    "condition": "Б/у",
+    "model_key": "samsung a11"
   }
 }

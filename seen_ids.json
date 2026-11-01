@@ -43666,9 +43666,31 @@
     "verified_model": null
   },
   "91013128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17437910_apple-iphone-13-pro-max-128-gb-graphite/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Graphite",
+    "price": 4600,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
   },
   "66494225": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17466494_samsung-galaxy-s22-ultra-5g-vietnam/",
+    "title": "Samsung Galaxy s22 ultra 5G Vietnam",
+    "price": 3599,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
+  },
+  "46662611": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17466626_samsung-a11/",
+    "title": "Samsung Galaxy A11",
+    "price": 250,
+    "condition": "Б/у",
+    "model_key": "samsung a11",
+    "verified_model": null
   }
 }

@@ -196,5 +196,10 @@
     "first_seen": "2026-10-30",
     "ratio": 3.56,
     "kind": "wide"
+  },
+  "samsung a31|64": {
+    "first_seen": "2026-11-01",
+    "ratio": 3.64,
+    "kind": "outlier"
   }
 }

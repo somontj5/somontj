@@ -43296,5 +43296,25 @@
     "price": 8200,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "46295631": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17462956_samsung-galaxy-a31/",
+    "title": "Samsung galaxy A31",
+    "price": 550,
+    "condition": "Б/у",
+    "model_key": "samsung a31",
+    "verified_model": null
+  },
+  "62876632": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17462876_apple-iphone-6s-32-gb/",
+    "title": "Apple iPhone 6s, 32 gb",
+    "price": 399,
+    "condition": "Б/у",
+    "model_key": "apple 6s",
+    "verified_model": null
   }
 }

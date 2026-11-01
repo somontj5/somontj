@@ -43353,5 +43353,25 @@
     "condition": "Б/у",
     "model_key": "redmi note 14",
     "verified_model": null
+  },
+  "46382132": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17463821_samsung-a32/",
+    "title": "Samsung Galaxy а32",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "samsung а32",
+    "verified_model": null
+  },
+  "74638139": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17463813_redmi-9a/",
+    "title": "Xiaomi Redmi 9A",
+    "price": 400,
+    "condition": "Б/у",
+    "model_key": "redmi 9a",
+    "verified_model": null
   }
 }

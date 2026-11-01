@@ -43442,5 +43442,25 @@
     "condition": "Б/у",
     "model_key": "tecno spark 10с",
     "verified_model": null
+  },
+  "17464915": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17464915_tlfon-sakh-toza/",
+    "title": "Xiaomi Redmi Note 13 Pro",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "redmi note 13 pro",
+    "verified_model": null
+  },
+  "46486164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17464861_apple-iphone-x-64-gb-silver/",
+    "title": "Apple iPhone X, 64 gb,",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "apple x",
+    "verified_model": null
   }
 }

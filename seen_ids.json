@@ -43269,5 +43269,14 @@
     "price": 2300,
     "condition": "Б/у",
     "model_key": "apple 13 pro"
+  },
+  "50614256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17462506_apple-iphone-14-pro-max-256-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb, Deep Purple",
+    "price": 5600,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
   }
 }

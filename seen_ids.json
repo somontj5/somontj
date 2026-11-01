@@ -43894,5 +43894,14 @@
     "price": 3500,
     "condition": "Б/у",
     "model_key": "apple 12 pro"
+  },
+  "68745256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17468745_apple-iphone-xs-max-256-gb-silver/",
+    "title": "Apple iPhone Xs Max, 256 gb, Silver",
+    "price": 2200,
+    "condition": "Б/у",
+    "model_key": "apple xs max"
   }
 }

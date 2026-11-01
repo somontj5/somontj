@@ -43809,5 +43809,42 @@
     "price": 1270,
     "condition": "Б/у",
     "model_key": "redmi note 11"
+  },
+  "71155256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17467711_telefon-samsung-a55-256gb/",
+    "title": "Samsung Galaxy A55 256gb",
+    "price": 2640,
+    "condition": "Б/у",
+    "model_key": "samsung a55"
+  },
+  "05712256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17467705_poco-x7-pro-12-256/",
+    "title": "Xiaomi Poco x7 pro 12/256",
+    "price": 2550,
+    "condition": "Б/у",
+    "model_key": "poco x7 pro 12 256",
+    "verified_model": null
+  },
+  "76887164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17467688_xiaomi-poco-c71-64gb/",
+    "title": "Xiaomi Poco C71 64gb",
+    "price": 1050,
+    "condition": "Б/у",
+    "model_key": "poco c71"
+  },
+  "66706128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17467667_samsung-galaxy-a06-128gb/",
+    "title": "Samsung Galaxy A06 128Gb",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "samsung a06"
   }
 }

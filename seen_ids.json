@@ -43588,5 +43588,23 @@
     "price": 2670,
     "condition": "Б/у",
     "model_key": "redmi 13 pro"
+  },
+  "35414256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17465354_telefon-redmi-note-14-pro-256gb/",
+    "title": "Xiaomi Redmi Note 14 pro 256gb",
+    "price": 2460,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro"
+  },
+  "33522644": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17465335_telefon-samsung-a22-64gb-vetnam-4g/",
+    "title": "Samsung Galaxy А22 64gb Vetnam 4G",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "samsung а22"
   }
 }

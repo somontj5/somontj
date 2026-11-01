@@ -43480,5 +43480,23 @@
     "price": 4200,
     "condition": "Б/у",
     "model_key": "apple 13 pro max"
+  },
+  "04313128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17465043_apple-iphone-13-pro-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
+    "price": 3800,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
+  },
+  "50058324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17465005_telefon-samsung-a8-32gb-carea-4g/",
+    "title": "Samsung Galaxy А8 32Gb Carea 4G",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "samsung а8"
   }
 }

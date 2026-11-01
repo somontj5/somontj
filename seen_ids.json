@@ -43737,5 +43737,14 @@
     "price": 5999,
     "condition": "Б/у",
     "model_key": "samsung s24 ultra"
+  },
+  "46749921": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17467499_samsung-galaxy-s21-plus/",
+    "title": "Samsung Galaxy S21 Plus",
+    "price": 2570,
+    "condition": "Б/у",
+    "model_key": "samsung s21 plus"
   }
 }

@@ -43728,5 +43728,14 @@
     "price": 1100,
     "condition": "Б/у",
     "model_key": "apple 11 pro"
+  },
+  "46719924": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17467199_samsung-galaxy-s24-ultra/",
+    "title": "Samsung Galaxy S24 Ultra",
+    "price": 5999,
+    "condition": "Б/у",
+    "model_key": "samsung s24 ultra"
   }
 }

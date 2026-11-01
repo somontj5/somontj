@@ -43746,5 +43746,32 @@
     "price": 2570,
     "condition": "Б/у",
     "model_key": "samsung s21 plus"
+  },
+  "46755110": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17467551_samsung-galaxy-s10-plus/",
+    "title": "Samsung Galaxy S10 Plus",
+    "price": 1450,
+    "condition": "Б/у",
+    "model_key": "samsung s10 plus"
+  },
+  "74675328": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17467532_telefon-samsung-a8/",
+    "title": "Samsung Galaxy A8",
+    "price": 399,
+    "condition": "Б/у",
+    "model_key": "samsung a8"
+  },
+  "46751112": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17467511_telefon-redmi-12s/",
+    "title": "Xiaomi Redmi 12C",
+    "price": 870,
+    "condition": "Б/у",
+    "model_key": "redmi 12c"
   }
 }

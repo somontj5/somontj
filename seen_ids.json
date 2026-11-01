@@ -43534,5 +43534,32 @@
     "price": 800,
     "condition": "Б/у",
     "model_key": "redmi 12c"
+  },
+  "67101285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17465167_telefon-redmi-note-10pro-128gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 10pro 128gb Glabal Version 5G",
+    "price": 1370,
+    "condition": "Б/у",
+    "model_key": "redmi note 10pro"
+  },
+  "11281285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17465154_telefon-redmi-note-11-128gb-128gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 11 128gb 128gb Glabal Version 5G",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "redmi note 11"
+  },
+  "65136832": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17465136_telefon-redmi-8-32gb/",
+    "title": "Xiaomi Redmi 8, 32gb",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "redmi 8"
   }
 }

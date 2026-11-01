@@ -43885,5 +43885,14 @@
     "condition": "Б/у",
     "model_key": "samsung a12",
     "verified_model": null
+  },
+  "66112256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17468661_apple-iphone-12-pro-256-gb-pacific-blue/",
+    "title": "Apple iPhone 12 pro, 256 gb, Pacific Blue",
+    "price": 3500,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro"
   }
 }

@@ -135,6 +135,14 @@
     "reviewed_at": "2026-10-19T03:37:46",
     "source": "gemini-review"
   },
+  "39311510": {
+    "group_key": "samsung s10|128",
+    "memory_gb": 128,
+    "price": 300,
+    "reason": "В тексте страницы цена указана как 300 c., а также требуется замена экрана, что объясняет низкую стоимость.",
+    "reviewed_at": "2026-11-01T16:40:18",
+    "source": "gemini-review"
+  },
   "39617512": {
     "action": "exclude",
     "group_key": "apple 17 pro max|512",

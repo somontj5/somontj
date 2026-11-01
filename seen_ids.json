@@ -43782,5 +43782,32 @@
     "price": 720,
     "condition": "Б/у",
     "model_key": "redmi 8"
+  },
+  "64010128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17467640_telefon-redmi-not-10-pro-128gb/",
+    "title": "Редми нот 10 про 128гб",
+    "price": 1490,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "46763356": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17467633_samsung-a56/",
+    "title": "Samsung Galaxy A56",
+    "price": 3100,
+    "condition": "Б/у",
+    "model_key": "samsung a56"
+  },
+  "46761311": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17467613_telefon-redmi-not-11/",
+    "title": "Xiaomi Redmi Note 11",
+    "price": 1270,
+    "condition": "Б/у",
+    "model_key": "redmi note 11"
   }
 }

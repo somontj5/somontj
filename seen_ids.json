@@ -43402,5 +43402,15 @@
     "condition": "Б/у",
     "model_key": "poco m3",
     "verified_model": null
+  },
+  "79541864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16795418_apple-iphone-xr-64-gb-product-red/",
+    "title": "Apple iPhone Xr, 64 gb, Product Red",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
   }
 }

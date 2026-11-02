@@ -44218,19 +44218,43 @@
     "verified_model": null
   },
   "71132135": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17471132_xiaomi-redmi-not-13-pro-plus-5g/",
+    "title": "Xiaomi Redmi Notе 13 Pro Plus 5G",
+    "price": 2700,
+    "condition": "Б/у",
+    "model_key": "redmi notе 13 pro plus"
   },
   "08914256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17471089_telefon-redmi-not-14-pro-256gb/",
+    "title": "Xiaomi Redmi Note 14 Pro 256гб",
+    "price": 2410,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro"
   },
   "06521128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17471065_samsung-galaxy-s21-plus-128gb-duos-vetnam/",
+    "title": "Samsung Galaxy S21 Plus 128Gb Duos Vetnam",
+    "price": 2600,
+    "condition": "Б/у",
+    "model_key": "samsung s21 plus"
   },
   "04017128": {
     "logged": true
   },
   "26108128": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17471026_samsung-galaxy-s10-plus-8-128gb-duos-vetnam/",
+    "title": "Samsung Galaxy S10 Plus 8/128Gb Duos Vetnam",
+    "price": 1520,
+    "condition": "Б/у",
+    "model_key": "samsung s10 plus duos vetnam"
   },
   "23914256": {
     "logged": true,
@@ -44276,5 +44300,15 @@
     "price": 700,
     "condition": "Б/у",
     "model_key": "redmi 8"
+  },
+  "17471262": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17471262_zur/",
+    "title": "Xiaomi Redmi 4X, 32gb",
+    "price": 220,
+    "condition": "Б/у",
+    "model_key": "redmi 4x",
+    "verified_model": null
   }
 }

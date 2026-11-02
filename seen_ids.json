@@ -44312,7 +44312,14 @@
     "verified_model": null
   },
   "17471296": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17471296_zur/",
+    "title": "Samsung Galaxy M31",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "samsung m31",
+    "verified_model": null
   },
   "47140222": {
     "logged": true,
@@ -44360,9 +44367,31 @@
     "model_key": "samsung а54"
   },
   "31388256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17471293_telefon-redmi-not-13-8-8-256gb/",
+    "title": "Xiaomi Redmi Note 13, 256gb",
+    "price": 1650,
+    "condition": "Б/у",
+    "model_key": "redmi note 13"
   },
   "12901164": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17471290_apple-iphone-11-pro-64-gb-gold/",
+    "title": "Apple iPhone 11 Pro, 64 gb, Gold",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
+  },
+  "47145406": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17471454_telefon-samsung-a06/",
+    "title": "Samsung Galaxy А06",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "samsung а06"
   }
 }

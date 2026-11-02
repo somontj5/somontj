@@ -44637,5 +44637,14 @@
     "price": 2990,
     "condition": "Б/у",
     "model_key": "samsung s21 ultra"
+  },
+  "27213256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17474272_apple-iphone-13-pro-256-gb-silver/",
+    "title": "Apple iPhone 13 Pro, 256 gb, Silver",
+    "price": 6200,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

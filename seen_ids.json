@@ -44403,5 +44403,34 @@
     "condition": "Б/у",
     "model_key": "tecno spark go 2022",
     "verified_model": null
+  },
+  "74718888": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17471888_honor-x8d/",
+    "title": "Honor Х8d",
+    "price": 2444,
+    "condition": "Б/у",
+    "model_key": "honor х8d",
+    "verified_model": null
+  },
+  "82313256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17471823_apple-iphone-13-pro-max-256-gb-gold/",
+    "title": "Apple iPhone 13 Pro Max, 256 gb, Gold",
+    "price": 3899,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
+  },
+  "31891164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17473189_apple-iphone-11-pro-max-64-gb-space-grey/",
+    "title": "Apple iPhone 11 Pro Max, 64 gb, Space Grey",
+    "price": 2600,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro max",
+    "verified_model": null
   }
 }

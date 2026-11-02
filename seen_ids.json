@@ -44124,5 +44124,14 @@
     "price": 1400,
     "condition": "Б/у",
     "model_key": "samsung note10 plus"
+  },
+  "47063617": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17470636_xiaomi-17-pro-max/",
+    "title": "Xiaomi 17 Pro Max",
+    "price": 9300,
+    "condition": "Б/у",
+    "model_key": "xiaomi 17 pro max"
   }
 }

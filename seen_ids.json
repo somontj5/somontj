@@ -43943,5 +43943,15 @@
     "condition": "Б/у",
     "model_key": "apple x",
     "verified_model": null
+  },
+  "96030364": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17469603_samsung-galaxy-a03-64gb/",
+    "title": "Samsung Galaxy A03 64GB",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "samsung a03",
+    "verified_model": null
   }
 }

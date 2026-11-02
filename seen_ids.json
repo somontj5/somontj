@@ -44133,5 +44133,14 @@
     "price": 9300,
     "condition": "Б/у",
     "model_key": "xiaomi 17 pro max"
+  },
+  "74708228": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17470822_honor-x8c/",
+    "title": "Honor X8c",
+    "price": 1790,
+    "condition": "Б/у",
+    "model_key": "honor x8c"
   }
 }

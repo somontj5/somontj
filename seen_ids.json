@@ -44508,5 +44508,25 @@
     "condition": "Б/у",
     "model_key": "apple 12 pro max",
     "verified_model": null
+  },
+  "01911128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17473019_apple-iphone-11-128-gb-white/",
+    "title": "Apple iPhone 11, 128 gb, White",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "99411128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17472994_apple-iphone-11-128-gb-white/",
+    "title": "Apple iPhone 11, 128 gb, White",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

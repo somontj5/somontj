@@ -44310,5 +44310,59 @@
     "condition": "Б/у",
     "model_key": "redmi 4x",
     "verified_model": null
+  },
+  "17471296": {
+    "logged": true
+  },
+  "47140222": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17471402_telefon-samsung-a22/",
+    "title": "Samsung Galaxy A22, 64gb",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "samsung a22"
+  },
+  "37055256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17471370_samsung-galaxy-a55-256gb/",
+    "title": "Samsung Galaxy A55 256Gb",
+    "price": 2600,
+    "condition": "Б/у",
+    "model_key": "samsung a55"
+  },
+  "36216256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17471362_apple-iphone-16-pro-256-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro, 256 gb, Desert Titanium",
+    "price": 9300,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro"
+  },
+  "74713409": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17471340_redmi-9a/",
+    "title": "Redmi 9a",
+    "price": 399,
+    "condition": "Б/у",
+    "model_key": "redmi 9a"
+  },
+  "33554256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17471335_telefon-samsung-a54-256gb/",
+    "title": "Samsung Galaxy А54 256гб",
+    "price": 1950,
+    "condition": "Б/у",
+    "model_key": "samsung а54"
+  },
+  "31388256": {
+    "logged": true
+  },
+  "12901164": {
+    "logged": true
   }
 }

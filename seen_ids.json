@@ -44037,5 +44037,26 @@
     "price": 4500,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "74699436": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17469943_tecno-pova-6-neo/",
+    "title": "Tecno pova 6 neo",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "tecno pova 6 neo",
+    "verified_model": null
+  },
+  "47137222": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17471372_samsung-galaxy-s22-ultra/",
+    "title": "Samsung Galaxy S22 ultra",
+    "price": 2050,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra",
+    "verified_model": null
   }
 }

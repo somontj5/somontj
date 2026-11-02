@@ -44058,5 +44058,34 @@
     "condition": "Б/у",
     "model_key": "samsung s22 ultra",
     "verified_model": null
+  },
+  "01987128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17470198_apple-iphone-7-plus-128-gb/",
+    "title": "Apple iPhone 7 plus, 128 gb",
+    "price": 655,
+    "condition": "Б/у",
+    "model_key": "apple 7 plus",
+    "verified_model": null
+  },
+  "00133337": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17470157_telefon-top-toza-be-khad-zur-pul-zarur-200133337-vatsap-navised/",
+    "title": "HUAWEI PURA 80",
+    "price": 5555,
+    "condition": "Б/у",
+    "model_key": "huawei pura 80"
+  },
+  "74701539": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17470153_redmi-9a/",
+    "title": "Xiaomi redmi 9A",
+    "price": 399,
+    "condition": "Б/у",
+    "model_key": "redmi 9a",
+    "verified_model": null
   }
 }

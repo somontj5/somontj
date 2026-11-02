@@ -44432,5 +44432,24 @@
     "condition": "Б/у",
     "model_key": "apple 11 pro max",
     "verified_model": null
+  },
+  "22081164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17472208_apple-iphone-11-pro-64-gb-space-grey/",
+    "title": "Apple iPhone 11 Pro, 64 gb, Space Grey",
+    "price": 2100,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
+  },
+  "20713128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17472207_apple-iphone-13-pro-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

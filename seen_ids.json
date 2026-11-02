@@ -44479,5 +44479,24 @@
     "price": 5500,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "22513128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17472225_apple-iphone-13-pro-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
+    "price": 4300,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
+  },
+  "17472646": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17472646_dar-kholati-khub-batare-nav-kadagi/",
+    "title": "Телефон Xiaomi",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
   }
 }

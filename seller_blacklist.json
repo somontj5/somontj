@@ -789,5 +789,18 @@
     "ban_ad_urls": [
       "https://m.somon.tj/adv/17470380_samsung-galaxy-a36-5g/"
     ]
+  },
+  "18326782": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/18326782/",
+    "reason": "похоже на перекупщика по фото: На заднем плане фотографий отчетливо видна витрина или стенд магазина с чехлами, коробками и аксессуарами.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17473172_tecno-spark-go-2022/",
+    "blocked_at": "2026-11-02T10:48:41",
+    "updated_at": "2026-11-02T10:48:41",
+    "active_ads_at_block": 2,
+    "ban_count": 1,
+    "ban_ad_urls": [
+      "https://m.somon.tj/adv/17473172_tecno-spark-go-2022/"
+    ]
   }
 }

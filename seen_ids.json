@@ -44393,5 +44393,15 @@
     "price": 1250,
     "condition": "Б/у",
     "model_key": "samsung а06"
+  },
+  "31722022": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17473172_tecno-spark-go-2022/",
+    "title": "Tecno spark go 2022",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "tecno spark go 2022",
+    "verified_model": null
   }
 }

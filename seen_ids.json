@@ -44142,5 +44142,57 @@
     "price": 1790,
     "condition": "Б/у",
     "model_key": "honor x8c"
+  },
+  "72682105": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17472682_samsung-galaxy-note-10-5g/",
+    "title": "Samsung galaxy note 10 5g",
+    "price": 1111,
+    "condition": "Б/у",
+    "model_key": "samsung note 10",
+    "verified_model": null
+  },
+  "17470985": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17470985_lg/",
+    "title": "Телефон LG",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "74709538": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17470953_telefon-samsung-a8/",
+    "title": "Samsung Galaxy А8",
+    "price": 440,
+    "condition": "Б/у",
+    "model_key": "samsung а8"
+  },
+  "47092812": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17470928_telefon-redmi-12s/",
+    "title": "Xiaomi Redmi 12С",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "redmi 12с"
+  },
+  "09157164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17470915_poco-c71-64gb/",
+    "title": "Xiaomi Poco C71 64Gb",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "poco c71"
+  },
+  "70900400": {
+    "logged": true
+  },
+  "47259516": {
+    "logged": true
   }
 }

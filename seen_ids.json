@@ -44106,5 +44106,14 @@
     "condition": "Б/у",
     "model_key": "xiaomi 11 lite",
     "verified_model": null
+  },
+  "47046695": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17470466_realme-9-pro-5g/",
+    "title": "realme 9 Pro 5G",
+    "price": 1190,
+    "condition": "Б/у",
+    "model_key": "realme 9 pro"
   }
 }

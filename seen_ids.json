@@ -44791,7 +44791,14 @@
     "model_key": "apple 12 pro"
   },
   "14122953": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16141229_a53/",
+    "title": "Samsung Galaxy A53",
+    "price": 780,
+    "condition": "Б/у",
+    "model_key": "samsung a53",
+    "verified_model": null
   },
   "76026632": {
     "logged": true,

@@ -44231,5 +44231,50 @@
   },
   "26108128": {
     "logged": true
+  },
+  "23914256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17471239_apple-iphone-14-pro-256-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro, 256 gb, Deep Purple",
+    "price": 5200,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
+  },
+  "71221154": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17471221_samsung-galaxy-a15-4g/",
+    "title": "Samsung Galaxy A15 4G",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "samsung a15"
+  },
+  "21710128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17471217_telefon-redmi-not-10-pro-128gb/",
+    "title": "Xiaomi Redmi Note 10 Pro 128гб",
+    "price": 1499,
+    "condition": "Б/у",
+    "model_key": "redmi note 10 pro"
+  },
+  "18506128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17471185_samsung-galaxy-a06-128gb/",
+    "title": "Samsung Galaxy A06 128Gb",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "samsung a06"
+  },
+  "74711558": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17471155_telefon-redmi-8/",
+    "title": "Xiaomi Redmi 8",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "redmi 8"
   }
 }

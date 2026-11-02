@@ -44190,9 +44190,31 @@
     "model_key": "poco c71"
   },
   "70900400": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17470900_honor-400-lite/",
+    "title": "Honor 400 Lite",
+    "price": 2190,
+    "condition": "Б/у",
+    "model_key": "honor 400 lite"
   },
   "47259516": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17472595_samsung-a16/",
+    "title": "Самсунг А16",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "69148256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16979169_xiaomi-redmi-note-14-pro-8-256/",
+    "title": "Xiaomi Redmi Note 14 Pro 8/256GB",
+    "price": 2250,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro",
+    "verified_model": null
   }
 }

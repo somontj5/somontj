@@ -44789,5 +44789,18 @@
     "price": 3500,
     "condition": "Б/у",
     "model_key": "apple 12 pro"
+  },
+  "14122953": {
+    "logged": true
+  },
+  "76026632": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17476026_apple-iphone-6s-32-gb/",
+    "title": "Apple iPhone 6s, 32 gb",
+    "price": 470,
+    "condition": "Б/у",
+    "model_key": "apple 6s",
+    "verified_model": null
   }
 }

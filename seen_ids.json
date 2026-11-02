@@ -44619,5 +44619,14 @@
     "price": 11900,
     "condition": "Б/у",
     "model_key": "apple 17 pro"
+  },
+  "06217256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17474062_apple-iphone-17-pro-max-256-gb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
+    "price": 11999,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
   }
 }

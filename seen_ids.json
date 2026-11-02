@@ -44802,5 +44802,15 @@
     "condition": "Б/у",
     "model_key": "apple 6s",
     "verified_model": null
+  },
+  "17476136": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17476136_sarlava/",
+    "title": "Телефон Xiaomi Redmi",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
   }
 }

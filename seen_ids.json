@@ -44451,5 +44451,33 @@
     "price": 4300,
     "condition": "Б/у",
     "model_key": "apple 13 pro"
+  },
+  "73732128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17473732_apple-iphone-xr-128-gb-black/",
+    "title": "Apple iPhone Xr, 128 gb, Black",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
+  },
+  "46114128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17472461_apple-iphone-14-128-gb-starlight/",
+    "title": "Apple iPhone 14, 128 gb, Starlight",
+    "price": 3800,
+    "condition": "Б/у",
+    "model_key": "apple 14"
+  },
+  "44714256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17472447_apple-iphone-14-pro-max-256-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb, Deep Purple",
+    "price": 5500,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
   }
 }

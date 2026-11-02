@@ -43999,5 +43999,15 @@
     "condition": "Б/у",
     "model_key": "samsung a36",
     "verified_model": null
+  },
+  "47095616": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17470956_a16/",
+    "title": "Samsung galaxy a16 4/128",
+    "price": 1599,
+    "condition": "Б/у",
+    "model_key": "samsung a16 4 128",
+    "verified_model": null
   }
 }

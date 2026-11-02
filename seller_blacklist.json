@@ -776,5 +776,18 @@
     "ban_ad_urls": [
       "https://m.somon.tj/adv/17456846_infinix-smart-20/"
     ]
+  },
+  "16638163": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/16638163/",
+    "reason": "похоже на перекупщика по фото: На задней панели телефона наклеен фирменный ценник магазина с полными характеристиками и контактами, на заднем фоне отчётливо видна витрина с чехлами и аксессуарами.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17470380_samsung-galaxy-a36-5g/",
+    "blocked_at": "2026-11-02T06:27:49",
+    "updated_at": "2026-11-02T06:27:49",
+    "active_ads_at_block": 4,
+    "ban_count": 1,
+    "ban_ad_urls": [
+      "https://m.somon.tj/adv/17470380_samsung-galaxy-a36-5g/"
+    ]
   }
 }

@@ -44665,5 +44665,25 @@
     "price": 3600,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra"
+  },
+  "47466324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17474663_galaxy-a24/",
+    "title": "Samsung Galaxy a24",
+    "price": 1299,
+    "condition": "Б/у",
+    "model_key": "samsung a24",
+    "verified_model": null
+  },
+  "46091164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17474609_apple-iphone-11-64-gb-black/",
+    "title": "Apple iPhone 11, 64 gb, Black",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

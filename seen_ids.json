@@ -44780,5 +44780,14 @@
     "condition": "Б/у",
     "model_key": "redmi a5",
     "verified_model": null
+  },
+  "84512512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17475845_apple-iphone-12-pro-512-gb-gold/",
+    "title": "Apple iPhone 12 pro, 512 gb, Gold",
+    "price": 3500,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro"
   }
 }

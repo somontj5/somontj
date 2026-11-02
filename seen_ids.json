@@ -44770,5 +44770,15 @@
     "condition": "Б/у",
     "model_key": "apple xs",
     "verified_model": null
+  },
+  "75700564": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17475700_redmi-a5-aibash-dar-surat-malum-diga-aib-nadorad-64gb-rastamozhka-shudagi/",
+    "title": "Xiaomi Redmi A5",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "redmi a5",
+    "verified_model": null
   }
 }

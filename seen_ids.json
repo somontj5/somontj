@@ -44096,5 +44096,15 @@
     "price": 1250,
     "condition": "Б/у",
     "model_key": "samsung а22"
+  },
+  "69589115": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17469589_xiaomi-11-lite-5g/",
+    "title": "Xiaomi 11 lite 5g",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "xiaomi 11 lite",
+    "verified_model": null
   }
 }

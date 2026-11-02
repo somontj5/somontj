@@ -44115,5 +44115,14 @@
     "price": 1190,
     "condition": "Б/у",
     "model_key": "realme 9 pro"
+  },
+  "47052310": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17470523_samsung-galaxy-note10/",
+    "title": "Samsung Galaxy Note10+",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "samsung note10 plus"
   }
 }

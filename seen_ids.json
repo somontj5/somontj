@@ -44724,6 +44724,41 @@
     "model_key": "apple 13 pro max"
   },
   "11815256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17475118_apple-iphone-15-pro-256-gb-natural-titanium/",
+    "title": "Apple iPhone 15 Pro, 256 gb, Natural Titanium",
+    "price": 6400,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro"
+  },
+  "64408128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17475264_itel-p40-8-128-gb/",
+    "title": "Itel p40 8/128 gb",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "itel p40",
+    "verified_model": null
+  },
+  "18515256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17475185_apple-iphone-15-pro-max-256-gb-natural-titanium/",
+    "title": "Apple iPhone 15 Pro Max, 256 gb, Natural Titanium",
+    "price": 7555,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro max"
+  },
+  "53138256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17475153_redmi-13c-8-256/",
+    "title": "Xiaomi Redmi 13C",
+    "price": 699,
+    "condition": "Б/у",
+    "model_key": "redmi 13c",
+    "verified_model": null
   }
 }

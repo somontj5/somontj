@@ -45043,5 +45043,62 @@
     "price": 1488,
     "condition": "Б/у",
     "model_key": "samsung s10 plus vetnam"
+  },
+  "60114256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17478601_telefon-redmi-note-14-pro-256gb/",
+    "title": "Xiaomi Redmi Note 14 pro 256gb",
+    "price": 2460,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro"
+  },
+  "58606128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17478586_telefon-samsung-a06-128gb-dual-sim/",
+    "title": "Samsung Galaxy А06 128Gb Dual sim",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "samsung а06"
+  },
+  "05425685": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17478570_telefon-samsung-a54-256-8gb-vetnam-5g/",
+    "title": "Samsung Galaxy А54 256/8Gb Vetnam 5G",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "samsung а54 vetnam"
+  },
+  "05525685": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17478550_telefon-samsung-a55-256-8gb-vetnam-5g/",
+    "title": "Samsung Galaxy А55 256/8Gb Vetnam 5G",
+    "price": 2600,
+    "condition": "Б/у",
+    "model_key": "samsung а55 vetnam"
+  },
+  "85382264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17478538_telefon-samsung-a22-64gb-vetnam/",
+    "title": "Samsung Galaxy A22 64Gb Vetnam",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "samsung a22"
+  },
+  "78523832": {
+    "logged": true
+  },
+  "85088324": {
+    "logged": true
+  },
+  "84642025": {
+    "logged": true
+  },
+  "09218512": {
+    "logged": true
   }
 }

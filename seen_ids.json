@@ -45328,5 +45328,14 @@
     "condition": "Б/у",
     "model_key": "xiaomi qin 2 pro 4 64",
     "verified_model": null
+  },
+  "48103440": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17481034_samsung-galaxy-a40/",
+    "title": "Samsung Galaxy A40",
+    "price": 799,
+    "condition": "Б/у",
+    "model_key": "samsung a40"
   }
 }

@@ -45007,5 +45007,32 @@
     "condition": "Б/у",
     "model_key": "xiaomi 13 lite",
     "verified_model": null
+  },
+  "82792125": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17478279_telefon-samsung-s21-2sim-vetnam-5g/",
+    "title": "Samsung galaxy S21+ 2sim Vetnam 5G",
+    "price": 2670,
+    "condition": "Б/у",
+    "model_key": "samsung s21 plus 2sim vetnam"
+  },
+  "82301264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17478230_telefon-redmi-12c-64gb/",
+    "title": "Xiaomi Redmi 12C 64gb",
+    "price": 780,
+    "condition": "Б/у",
+    "model_key": "redmi 12c"
+  },
+  "20313256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17478203_apple-iphone-13-pro-256-gb-silver/",
+    "title": "Apple iPhone 13 Pro, 256 gb, Silver",
+    "price": 5980,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
   }
 }

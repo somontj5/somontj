@@ -45664,5 +45664,35 @@
     "condition": "Б/у",
     "model_key": "apple 7",
     "verified_model": null
+  },
+  "61412256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17483614_apple-iphone-12-pro-max-256-gb-pacific-blue/",
+    "title": "Apple iPhone 12 Pro Max, 256 gb, Pacific Blue",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro max",
+    "verified_model": null
+  },
+  "36031164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17483603_apple-iphone-11-64-gb-white/",
+    "title": "Apple iPhone 11, 64 gb, White",
+    "price": 2400,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "17483584": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17483584_zur/",
+    "title": "Samsung Galaxy S22",
+    "price": 2450,
+    "condition": "Б/у",
+    "model_key": "samsung s22",
+    "verified_model": null
   }
 }

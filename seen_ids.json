@@ -45491,5 +45491,25 @@
     "condition": "Б/у",
     "model_key": "redmi note 14s",
     "verified_model": null
+  },
+  "64653333": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17482230_samsung-s21-sostoiani-nagz-pamiat-256-imei-khast-vatsap-064653333/",
+    "title": "Samsung Galaxy S21",
+    "price": 2200,
+    "condition": "Б/у",
+    "model_key": "samsung s21",
+    "verified_model": null
+  },
+  "22712128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17482227_apple-iphone-12-128-gb-blue/",
+    "title": "Apple iPhone 12, 128 gb, Blue",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "apple 12",
+    "verified_model": null
   }
 }

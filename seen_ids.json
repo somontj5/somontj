@@ -45242,5 +45242,34 @@
     "price": 7999,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "48041324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17480413_samsung-s-24-ultra/",
+    "title": "Samsung Galaxy S24 ultra, 256gb",
+    "price": 8000,
+    "condition": "Б/у",
+    "model_key": "samsung s24 ultra"
+  },
+  "36622256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17480366_samsung-s22-256gb/",
+    "title": "Samsung Galaxy S22 256GB",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "samsung s22",
+    "verified_model": null
+  },
+  "48038413": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17480384_redmi-13c/",
+    "title": "Xiaomi Redmi 13C",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "redmi 13c",
+    "verified_model": null
   }
 }

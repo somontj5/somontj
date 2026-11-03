@@ -45568,5 +45568,24 @@
     "condition": "Б/у",
     "model_key": "samsung s21 plus",
     "verified_model": null
+  },
+  "48321004": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17483210_samsung-galaxy-a04/",
+    "title": "Samsung Galaxy A04",
+    "price": 350,
+    "condition": "Б/у",
+    "model_key": "samsung a04",
+    "verified_model": null
+  },
+  "83192171": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17483192_apple-iphone-17-pro-max-1-tb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 1 tb, Silver",
+    "price": 12000,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max 1 tb"
   }
 }

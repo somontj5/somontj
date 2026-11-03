@@ -107,6 +107,20 @@
     "reviewed_at": "2026-10-31T08:01:39",
     "source": "gemini-review"
   },
+  "18856171": {
+    "action": "exclude",
+    "group_key": "apple 17 pro max 1 tb|1024",
+    "reason": "В заголовке и описании указано 'Дубликат', в IMEI указан Samsung GALAXY A54.",
+    "reviewed_at": "2026-11-03T17:32:55",
+    "source": "gemini-review"
+  },
+  "19849171": {
+    "action": "exclude",
+    "group_key": "apple 17 pro max 1 tb|1024",
+    "reason": "Страница не загрузилась, но по цене и контексту аналогичных объявлений это дешевая копия.",
+    "reviewed_at": "2026-11-03T17:32:55",
+    "source": "gemini-review"
+  },
   "21806110": {
     "action": "exclude",
     "group_key": "apple 15 pro max|256",
@@ -223,6 +237,13 @@
     "reviewed_at": "2026-10-22T16:55:24",
     "source": "gemini-review"
   },
+  "69940171": {
+    "action": "exclude",
+    "group_key": "apple 17 pro max 1 tb|1024",
+    "reason": "Нереально низкая цена для iPhone 17 Pro Max 1TB, продавец использует популярную модель для привлечения внимания.",
+    "reviewed_at": "2026-11-03T17:32:55",
+    "source": "gemini-review"
+  },
   "7324466": {
     "group_key": "apple 11|128",
     "memory_gb": 128,
@@ -263,6 +284,13 @@
     "group_key": "apple 17 pro max|256",
     "reason": "Объявление недоступно, в похожих выдаются дубликаты и другие товары",
     "reviewed_at": "2026-10-21T10:11:26",
+    "source": "gemini-review"
+  },
+  "83192171": {
+    "action": "exclude",
+    "group_key": "apple 17 pro max 1 tb|1024",
+    "reason": "В блоке IMEI указана модель SAMSUNG Galaxy A17 5G, что говорит о подделке или переклеенном IMEI.",
+    "reviewed_at": "2026-11-03T17:32:55",
     "source": "gemini-review"
   },
   "93311128": {

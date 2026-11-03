@@ -44997,5 +44997,15 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": null
+  },
+  "47976313": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17479763_xiaomi-13-lite/",
+    "title": "Xiaomi 13 Lite",
+    "price": 1650,
+    "condition": "Б/у",
+    "model_key": "xiaomi 13 lite",
+    "verified_model": null
   }
 }

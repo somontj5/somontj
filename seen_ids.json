@@ -45090,13 +45090,31 @@
     "model_key": "samsung a22"
   },
   "78523832": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17478523_telefon-redmi-8-32gb/",
+    "title": "Xiaomi Redmi 8 32gb",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "redmi 8"
   },
   "85088324": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17478508_telefon-samsung-a8-32gb-carea-4g/",
+    "title": "Samsung Galaxy А8 32Gb Carea 4G",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "samsung а8"
   },
   "84642025": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17478464_telefon-lg-2025/",
+    "title": "Телефон LG 2025",
+    "price": 350,
+    "condition": "Б/у",
+    "model_key": null
   },
   "09218512": {
     "logged": true
@@ -45147,6 +45165,21 @@
     "model_key": "redmi note 13 pro"
   },
   "86450564": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17478645_telefon-samsung-05-64gb-vetnam/",
+    "title": "Samsung Galaxy 05 64Gb Vetnam",
+    "price": 1260,
+    "condition": "Б/у",
+    "model_key": "samsung 05"
+  },
+  "47909960": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17479099_realme-note-60/",
+    "title": "Realme Note 60",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "realme note 60"
   }
 }

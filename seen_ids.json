@@ -45443,5 +45443,34 @@
     "condition": "Б/у",
     "model_key": "samsung a51",
     "verified_model": null
+  },
+  "86414256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17481864_apple-iphone-14-256-gb-blue/",
+    "title": "Apple iPhone 14, 256 gb, Blue",
+    "price": 3250,
+    "condition": "Б/у",
+    "model_key": "apple 14"
+  },
+  "17481841": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17481841_srochchna/",
+    "title": "Samsung Galaxy A17",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "samsung a17",
+    "verified_model": null
+  },
+  "81803128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17481803_apple-iphone-xr-128-gb-white/",
+    "title": "Apple iPhone Xr, 128 gb, White",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
   }
 }

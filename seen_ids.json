@@ -44895,5 +44895,15 @@
     "price": 6150,
     "condition": "Б/у",
     "model_key": "samsung s25 ultra"
+  },
+  "01288256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17478160_redmi-not-12s-8-8-256gb/",
+    "title": "Redmi not 12s 8+8/256Gb",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "redmi not 12s 8",
+    "verified_model": null
   }
 }

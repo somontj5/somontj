@@ -45318,5 +45318,15 @@
     "price": 3999,
     "condition": "Б/у",
     "model_key": "apple 13 pro max"
+  },
+  "09902464": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17480990_xiaomi-qin-2-pro-4-64/",
+    "title": "Xiaomi Qin 2 Pro 4/64",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "xiaomi qin 2 pro 4 64",
+    "verified_model": null
   }
 }

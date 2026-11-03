@@ -44905,5 +44905,26 @@
     "condition": "Б/у",
     "model_key": "redmi not 12s 8",
     "verified_model": null
+  },
+  "61670172": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16167017_tecno-go-2/",
+    "title": "Tecno Spark Go 2",
+    "price": 1150,
+    "condition": "Б/у",
+    "model_key": "tecno spark go 2"
+  },
+  "73716667": {
+    "logged": true
+  },
+  "31814256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17478318_apple-iphone-14-pro-max-256-gb-space-black/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb, Space Black",
+    "price": 5700,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
   }
 }

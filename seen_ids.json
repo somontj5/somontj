@@ -45291,5 +45291,14 @@
     "condition": "Б/у",
     "model_key": "samsung а53",
     "verified_model": null
+  },
+  "48066913": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17480669_xiaomi-13-lite/",
+    "title": "Xiaomi 13 Lite",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "xiaomi 13 lite"
   }
 }

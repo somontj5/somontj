@@ -45704,5 +45704,24 @@
     "condition": "Б/у",
     "model_key": "apple 11",
     "verified_model": null
+  },
+  "13921256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17484139_s21-256gb-white/",
+    "title": "Samsung Galax S21, 256gb, White",
+    "price": 2099,
+    "condition": "Б/у",
+    "model_key": "samsung galax s21",
+    "verified_model": null
+  },
+  "11316512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17484113_apple-iphone-16-pro-max-512-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 512 gb, Desert Titanium",
+    "price": 8500,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   }
 }

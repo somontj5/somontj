@@ -45271,5 +45271,25 @@
     "condition": "Б/у",
     "model_key": "redmi 13c",
     "verified_model": null
+  },
+  "55611256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17480556_apple-iphone-11-pro-256-gb-midnight-green/",
+    "title": "Apple iPhone 11 Pro, 256 gb, Midnight Green",
+    "price": 1999,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
+  },
+  "80530535": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17480530_a53-5g/",
+    "title": "Samsung Galaxy А53 5G",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "samsung а53",
+    "verified_model": null
   }
 }

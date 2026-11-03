@@ -44969,5 +44969,15 @@
     "price": 3500,
     "condition": "Б/у",
     "model_key": "samsung z fold 5"
+  },
+  "82012128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17479238_samsung-galaxy-s20-12-128/",
+    "title": "Samsung Galaxy S20 12/128",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "samsung s20 12 128",
+    "verified_model": null
   }
 }

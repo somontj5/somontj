@@ -45587,5 +45587,56 @@
     "price": 12000,
     "condition": "Б/у",
     "model_key": "apple 17 pro max 1 tb"
+  },
+  "48337122": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17483371_samsung-galaxy-s22-ultra/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 3250,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
+  },
+  "36411128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17483364_apple-iphone-11-128-gb-green/",
+    "title": "Apple iPhone 11, 128 gb, Green",
+    "price": 1800,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "33114128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17483331_apple-iphone-14-pro-128-gb-space-black/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Space Black",
+    "price": 3500,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
+  },
+  "17483291": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17483291_telefon-dar-kholati-nagz-karor-dorad/",
+    "title": "Телефон Samsung",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
+  },
+  "74832906": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17483290_samsung-galaxy-a6-plus/",
+    "title": "Samsung galaxy A6 plus",
+    "price": 299,
+    "condition": "Б/у",
+    "model_key": "samsung a6 plus",
+    "verified_model": null
+  },
+  "26916256": {
+    "logged": true
   }
 }

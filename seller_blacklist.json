@@ -802,5 +802,18 @@
     "ban_ad_urls": [
       "https://m.somon.tj/adv/17473172_tecno-spark-go-2022/"
     ]
+  },
+  "548555": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/548555/",
+    "reason": "похоже на перекупщика по фото: На заднем плане фотографий четко видна витрина или стеллаж магазина техники с коробками и товарами, что характерно для торговой точки или перекупщика.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17482059_redmi-note-14s/",
+    "blocked_at": "2026-11-03T15:29:28",
+    "updated_at": "2026-11-03T15:29:28",
+    "active_ads_at_block": 1,
+    "ban_count": 1,
+    "ban_ad_urls": [
+      "https://m.somon.tj/adv/17482059_redmi-note-14s/"
+    ]
   }
 }

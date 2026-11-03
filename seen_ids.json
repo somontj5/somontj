@@ -45481,5 +45481,15 @@
     "price": 3999,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "48205914": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17482059_redmi-note-14s/",
+    "title": "Xiaomi Redmi note 14S",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "redmi note 14s",
+    "verified_model": null
   }
 }

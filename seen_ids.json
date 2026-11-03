@@ -45539,5 +45539,34 @@
     "condition": "Б/у",
     "model_key": "samsung a05s",
     "verified_model": null
+  },
+  "28916005": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17482891_honor-600-5g/",
+    "title": "Honor 600 5G",
+    "price": 4500,
+    "condition": "Б/у",
+    "model_key": "honor 600"
+  },
+  "17482854": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17482854_savdo-meshad/",
+    "title": "Samsung Galaxy A16",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "samsung a16",
+    "verified_model": null
+  },
+  "17482812": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17482812_sroni/",
+    "title": "Samsung Galaxy S21+",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "samsung s21 plus",
+    "verified_model": null
   }
 }

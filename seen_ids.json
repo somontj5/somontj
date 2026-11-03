@@ -45413,5 +45413,35 @@
     "price": 3200,
     "condition": "Б/у",
     "model_key": "apple 13 pro max"
+  },
+  "48178014": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17481780_redmi-note-14/",
+    "title": "Xiaomi Redmi note 14",
+    "price": 1450,
+    "condition": "Б/у",
+    "model_key": "redmi note 14",
+    "verified_model": null
+  },
+  "17911164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17481791_apple-iphone-11-64-gb-purple/",
+    "title": "Apple iPhone 11, 64 gb, Purple",
+    "price": 1950,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "48177751": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17481777_samsung-a51-b-u-zadnii-panelash-kamtar-shikastagi-digar-khamash-sad-foiz-savdo-meshad/",
+    "title": "Samsung Galaxy A51",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "samsung a51",
+    "verified_model": null
   }
 }

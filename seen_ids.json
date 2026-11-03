@@ -45337,5 +45337,24 @@
     "price": 799,
     "condition": "Б/у",
     "model_key": "samsung a40"
+  },
+  "08212128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17481082_apple-iphone-12-pro-128-gb-pacific-blue/",
+    "title": "Apple iPhone 12 pro, 128 gb, Pacific Blue",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro",
+    "verified_model": null
+  },
+  "06815256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17481068_apple-iphone-15-pro-max-256-gb-white-titanium/",
+    "title": "Apple iPhone 15 Pro Max, 256 gb, White Titanium",
+    "price": 5600,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro max"
   }
 }

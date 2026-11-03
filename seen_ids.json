@@ -45529,5 +45529,15 @@
     "price": 4500,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "17482633": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17482633_telfon-dar-kholati-khub-karor-dorad/",
+    "title": "Samsung Galaxy A05s",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "samsung a05s",
+    "verified_model": null
   }
 }

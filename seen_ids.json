@@ -46369,5 +46369,23 @@
     "condition": "Б/у",
     "model_key": "apple x",
     "verified_model": null
+  },
+  "74214256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17489742_apple-iphone-14-pro-max-256-gb-space-black/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb, Space Black",
+    "price": 5300,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
+  },
+  "97132264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17489713_samsung-galaxy-a22-64gb/",
+    "title": "Samsung Galaxy A22 64Gb",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "samsung a22"
   }
 }

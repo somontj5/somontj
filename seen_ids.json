@@ -46174,5 +46174,14 @@
     "price": 3400,
     "condition": "Б/у",
     "model_key": "apple 14"
+  },
+  "88133256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17488133_apple-iphone-air-256-gb-sky-blue/",
+    "title": "Apple iPhone Air, 256 gb, Sky Blue",
+    "price": 7500,
+    "condition": "Б/у",
+    "model_key": "apple air"
   }
 }

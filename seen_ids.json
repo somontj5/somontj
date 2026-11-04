@@ -46050,5 +46050,15 @@
     "condition": "Б/у",
     "model_key": "redmi 12 с",
     "verified_model": null
+  },
+  "78265128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17486678_samsung-galaxy-a26-5g-128gb/",
+    "title": "Samsung Galaxy A26 5G 128GB",
+    "price": 1599,
+    "condition": "Б/у",
+    "model_key": "samsung a26",
+    "verified_model": null
   }
 }

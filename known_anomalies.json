@@ -50,7 +50,7 @@
   "apple xr|128": {
     "first_seen": "2026-10-18",
     "ratio": 5.5,
-    "kind": "reviewed",
+    "kind": "outlier",
     "reviewed_at": "2026-11-04"
   },
   "samsung note 20 ultra|256": {

@@ -841,5 +841,18 @@
     "ban_ad_urls": [
       "https://m.somon.tj/adv/17487281_apple-iphone-11-64-gb-product-red/"
     ]
+  },
+  "16892312": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/16892312/",
+    "reason": "похоже на перекупщика по фото: на фотографии виден специальный деревянный стенд-подставка для демонстрации телефона и характерный задний фон с подсветкой, что типично для витрин магазинов.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17491376_apple-iphone-11-pro-256-gb-silver/",
+    "blocked_at": "2026-11-04T17:51:49",
+    "updated_at": "2026-11-04T17:51:49",
+    "active_ads_at_block": 1,
+    "ban_count": 1,
+    "ban_ad_urls": [
+      "https://m.somon.tj/adv/17491376_apple-iphone-11-pro-256-gb-silver/"
+    ]
   }
 }

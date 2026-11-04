@@ -46359,5 +46359,15 @@
     "price": 1330,
     "condition": "Б/у",
     "model_key": "redmi notе 11"
+  },
+  "48963264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17489632_apple-iphone-x-64-gb-silver/",
+    "title": "Apple iPhone X, 64 gb, Silver",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "apple x",
+    "verified_model": null
   }
 }

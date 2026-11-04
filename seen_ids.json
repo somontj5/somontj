@@ -45940,5 +45940,23 @@
     "price": 1150,
     "condition": "Б/у",
     "model_key": "samsung а06"
+  },
+  "60282264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17486028_telefon-samsung-a22-64gb-vetnam/",
+    "title": "Samsung Galaxy А22 64gb Vetnam",
+    "price": 1050,
+    "condition": "Б/у",
+    "model_key": "samsung а22"
+  },
+  "01314128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17486013_apple-iphone-14-pro-128-gb-deep-purple/",
+    "title": "Apple iPhone 14 Pro, 128 gb, Deep Purple",
+    "price": 4700,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro"
   }
 }

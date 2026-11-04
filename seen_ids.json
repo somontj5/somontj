@@ -46257,5 +46257,23 @@
     "price": 620,
     "condition": "Б/у",
     "model_key": "samsung a03 core"
+  },
+  "48883115": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17488831_redmi-15c/",
+    "title": "Xiaomi Redmi 15C",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "redmi 15c"
+  },
+  "48874410": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17488744_tecno-spark-10c/",
+    "title": "Tecno Spark 10C, 64gb",
+    "price": 630,
+    "condition": "Б/у",
+    "model_key": "tecno spark 10c"
   }
 }

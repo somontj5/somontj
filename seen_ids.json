@@ -46165,5 +46165,14 @@
     "condition": "Б/у",
     "model_key": "redmi 15 pro",
     "verified_model": null
+  },
+  "91514128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17487915_apple-iphone-14-128-gb-starlight/",
+    "title": "Apple iPhone 14, 128 gb, Starlight",
+    "price": 3400,
+    "condition": "Б/у",
+    "model_key": "apple 14"
   }
 }

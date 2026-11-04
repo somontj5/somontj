@@ -46097,5 +46097,44 @@
     "price": 11499,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "31212128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17487312_apple-iphone-12-pro-128-gb-pacific-blue/",
+    "title": "Apple iPhone 12 pro, 128 gb, Pacific Blue",
+    "price": 3099,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro"
+  },
+  "72811164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17487281_apple-iphone-11-64-gb-product-red/",
+    "title": "Apple iPhone 11, 64 gb, Product Red",
+    "price": 2200,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "74872979": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17487297_honor-x9d/",
+    "title": "Honor X9d",
+    "price": 2300,
+    "condition": "Б/у",
+    "model_key": "honor x9d",
+    "verified_model": null
+  },
+  "17487231": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17487231_telefon-v-khoroshem-sostoianie/",
+    "title": "Телефон Xiaomi",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
   }
 }

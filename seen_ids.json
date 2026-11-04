@@ -46275,5 +46275,34 @@
     "price": 630,
     "condition": "Б/у",
     "model_key": "tecno spark 10c"
+  },
+  "74890078": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17489007_xiaomi-redmi-note-8t/",
+    "title": "Xiaomi Redmi Note 8T",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "redmi note 8t"
+  },
+  "74889946": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17488994_samsung-galaxy-j6/",
+    "title": "Samsung Galaxy J6",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "samsung j6",
+    "verified_model": null
+  },
+  "48853422": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17488534_samsung-a22/",
+    "title": "Samsung Galaxy A22, 64gb",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "samsung a22",
+    "verified_model": null
   }
 }

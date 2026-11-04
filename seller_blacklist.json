@@ -815,5 +815,18 @@
     "ban_ad_urls": [
       "https://m.somon.tj/adv/17482059_redmi-note-14s/"
     ]
+  },
+  "6250270": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/6250270/",
+    "reason": "похоже на перекупщика по фото: на заднем плане видна фирменная коробка с логотипом и искусственная зелень в горшке, что характерно для витрины или постановочной съемки магазинов.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17486104_samsung-a03s/",
+    "blocked_at": "2026-11-04T07:30:29",
+    "updated_at": "2026-11-04T07:30:29",
+    "active_ads_at_block": 1,
+    "ban_count": 1,
+    "ban_ad_urls": [
+      "https://m.somon.tj/adv/17486104_samsung-a03s/"
+    ]
   }
 }

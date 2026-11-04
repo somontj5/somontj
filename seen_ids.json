@@ -46239,5 +46239,23 @@
     "price": 1300,
     "condition": "Б/у",
     "model_key": "redmi 14c"
+  },
+  "48870813": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17488708_redmi-hote-13/",
+    "title": "Xiaomi Redmi Note 13",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": "redmi note 13"
+  },
+  "48866303": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17488663_samsung-galaxy-a03-core/",
+    "title": "Samsung Galaxy A03 Core",
+    "price": 620,
+    "condition": "Б/у",
+    "model_key": "samsung a03 core"
   }
 }

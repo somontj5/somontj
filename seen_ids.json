@@ -46439,6 +46439,32 @@
     "logged": true
   },
   "90520256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17490520_apple-iphone-air-256-gb-cloud-white/",
+    "title": "Apple iPhone Air, 256 gb, Cloud White",
+    "price": 8700,
+    "condition": "Б/у",
+    "model_key": "apple air"
+  },
+  "17490737": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17490737_bo-kamtar-muomila-dorad/",
+    "title": "Honor X6c",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "honor x6c",
+    "verified_model": null
+  },
+  "67612256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17490676_apple-iphone-12-pro-256-gb-graphite/",
+    "title": "Apple iPhone 12 pro, 256 gb, Graphite",
+    "price": 1950,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro",
+    "verified_model": null
   }
 }

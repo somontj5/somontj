@@ -45789,5 +45789,25 @@
     "condition": "Б/у",
     "model_key": "samsung note 10",
     "verified_model": null
+  },
+  "85338124": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17485338_redmi-note-12-pro-4g/",
+    "title": "Redmi note 12 pro 4G",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": "redmi note 12 pro",
+    "verified_model": null
+  },
+  "48521713": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17485217_a13/",
+    "title": "Samsung Galaxy A13",
+    "price": 699,
+    "condition": "Б/у",
+    "model_key": "samsung a13",
+    "verified_model": null
   }
 }

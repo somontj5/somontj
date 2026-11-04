@@ -46040,5 +46040,15 @@
     "price": 700,
     "condition": "Б/у",
     "model_key": "xiaomi 13lite"
+  },
+  "48659012": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17486590_redmi-12-s/",
+    "title": "Xiaomi Redmi 12 С",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "redmi 12 с",
+    "verified_model": null
   }
 }

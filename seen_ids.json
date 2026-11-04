@@ -46183,5 +46183,34 @@
     "price": 7500,
     "condition": "Б/у",
     "model_key": "apple air"
+  },
+  "88371105": {
+    "logged": true,
+    "notified": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17488371_samsung-note-10-5g/",
+    "title": "Samsung Galaxy note 10 5G",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "samsung note 10",
+    "verified_model": null
+  },
+  "74883476": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17488347_redmi-note-6-pro/",
+    "title": "Xiaomi Redmi Note 6 Pro",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "redmi note 6 pro"
+  },
+  "48833013": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17488330_samsung-a-13/",
+    "title": "Samsung Galaxy A13",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "samsung a13"
   }
 }

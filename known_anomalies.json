@@ -207,5 +207,10 @@
     "ratio": 15.0,
     "kind": "reviewed",
     "reviewed_at": "2026-11-03"
+  },
+  "samsung note 10|256": {
+    "first_seen": "2026-11-04",
+    "ratio": 3.41,
+    "kind": "wide"
   }
 }

@@ -45875,5 +45875,32 @@
     "price": 1500,
     "condition": "Б/у",
     "model_key": null
+  },
+  "59332025": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17485933_telefon-lg-2025/",
+    "title": "Телефон LG 2025",
+    "price": 350,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "59148324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17485914_telefon-samsung-a8-32gb-carea-4g/",
+    "title": "Samsung Galaxy А8 32Gb Carea 4G",
+    "price": 450,
+    "condition": "Б/у",
+    "model_key": "samsung а8"
+  },
+  "42112825": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17485904_telefon-samsung-s21-128gb-2sim-5g-vetnam/",
+    "title": "Samsung galaxy S21+ 128gb 2sim 5G Vetnam",
+    "price": 2670,
+    "condition": "Б/у",
+    "model_key": "samsung s21 plus"
   }
 }

@@ -45821,6 +45821,31 @@
     "verified_model": null
   },
   "48575256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/15204857_z-flip-5-256gb/",
+    "title": "Samsung Galaxy Z Flip 7 256gb",
+    "price": 9500,
+    "condition": "Б/у",
+    "model_key": "samsung z flip 7"
+  },
+  "48552621": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17485526_samsung-s21/",
+    "title": "Samsung Galaxy S21",
+    "price": 2400,
+    "condition": "Б/у",
+    "model_key": "samsung s21"
+  },
+  "48548212": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17485482_infinix-not-12i/",
+    "title": "Infinix not 12i",
+    "price": 499,
+    "condition": "Б/у",
+    "model_key": "infinix not 12i",
+    "verified_model": null
   }
 }

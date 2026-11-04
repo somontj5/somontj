@@ -46031,5 +46031,14 @@
     "price": 3400,
     "condition": "Б/у",
     "model_key": "apple 14"
+  },
+  "48652013": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17486520_xiaomi-13lite/",
+    "title": "Xiaomi 13Lite",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "xiaomi 13lite"
   }
 }

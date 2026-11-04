@@ -46530,5 +46530,14 @@
     "condition": "Б/у",
     "model_key": "apple 14",
     "verified_model": null
+  },
+  "91458256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17491458_apple-iphone-air-256-gb-light-gold/",
+    "title": "Apple iPhone Air, 256 gb, Light Gold",
+    "price": 10500,
+    "condition": "Б/у",
+    "model_key": "apple air"
   }
 }

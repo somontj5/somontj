@@ -45760,5 +45760,15 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "apple xr"
+  },
+  "16490917": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16490917_khoroshii-telefon-legenda-sredi-nokia/",
+    "title": "Nokia C6-01",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "nokia c6 01",
+    "verified_model": null
   }
 }

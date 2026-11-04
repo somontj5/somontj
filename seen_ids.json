@@ -46155,5 +46155,15 @@
     "condition": "Б/у",
     "model_key": "apple x",
     "verified_model": null
+  },
+  "87741150": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17487741_redmi-150pro/",
+    "title": "Xiaomi Redmi 15 Pro",
+    "price": 3000,
+    "condition": "Б/у",
+    "model_key": "redmi 15 pro",
+    "verified_model": null
   }
 }

@@ -46406,5 +46406,15 @@
     "condition": "Б/у",
     "model_key": "redmi note 15",
     "verified_model": null
+  },
+  "49002151": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17490021_poco-c51/",
+    "title": "Xiaomi Poco C51",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "poco c51",
+    "verified_model": null
   }
 }

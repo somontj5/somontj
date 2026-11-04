@@ -46004,5 +46004,23 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "samsung 06"
+  },
+  "29313256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17486293_apple-iphone-13-pro-256-gb-silver/",
+    "title": "Apple iPhone 13 Pro, 256 gb, Silver",
+    "price": 5850,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
+  },
+  "05525652": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17486270_telefon-samsung-a55-256gb-vetnam-5g-2sim-silver/",
+    "title": "Samsung Galaxy А55 256Gb Vetnam 5G 2sim Silver",
+    "price": 2650,
+    "condition": "Б/у",
+    "model_key": "samsung а55"
   }
 }

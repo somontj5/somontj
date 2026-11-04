@@ -46436,7 +46436,13 @@
     "model_key": "samsung s25"
   },
   "74905483": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17490548_telefon-nothing-3a-pro/",
+    "title": "Nothing 3а Pro",
+    "price": 5899,
+    "condition": "Б/у",
+    "model_key": null
   },
   "90520256": {
     "logged": true,
@@ -46475,5 +46481,24 @@
     "price": 5300,
     "condition": "Б/у",
     "model_key": "samsung s23 ultra"
+  },
+  "13817256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17491138_apple-iphone-17-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
+    "price": 12600,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
+  },
+  "11301164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17491130_apple-iphone-11-64-gb-black/",
+    "title": "Apple iPhone 11, 64 gb, Black",
+    "price": 1799,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

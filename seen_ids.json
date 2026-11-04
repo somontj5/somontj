@@ -46304,5 +46304,23 @@
     "condition": "Б/у",
     "model_key": "samsung a22",
     "verified_model": null
+  },
+  "30403324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17489304_telefon-samsung-a03-32gb-vetnam-4g/",
+    "title": "Samsung galaxy А03 32Gb Vetnam 4G",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "samsung а03"
+  },
+  "81712825": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17489278_telefon-samsung-a17-128gb-vetnam-2sim-5g/",
+    "title": "Samsung Galaxy А17 128Gb Vetnam 2sim 5G",
+    "price": 1850,
+    "condition": "Б/у",
+    "model_key": "samsung а17"
   }
 }

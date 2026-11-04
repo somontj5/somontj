@@ -46341,5 +46341,14 @@
     "condition": "Б/у",
     "model_key": "apple 11 pro max",
     "verified_model": null
+  },
+  "12862025": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16737414_telefon-redmi-note-13-128-6gb-2025/",
+    "title": "Xiaomi Redmi Note 13 256 2025",
+    "price": 1680,
+    "condition": "Б/у",
+    "model_key": "redmi note 13 256 2025"
   }
 }

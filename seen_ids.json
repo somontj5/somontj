@@ -46548,5 +46548,25 @@
     "price": 6999,
     "condition": "Б/у",
     "model_key": "apple air"
+  },
+  "91644128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17491644_apple-iphone-xr-128-gb-yellow/",
+    "title": "Apple iPhone Xr, 128 gb, Yellow",
+    "price": 1489,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
+  },
+  "91606064": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17491606_samsung-a06-4g/",
+    "title": "Samsung Galaxy A06 4G",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "samsung a06",
+    "verified_model": null
   }
 }

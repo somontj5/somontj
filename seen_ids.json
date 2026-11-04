@@ -46060,5 +46060,14 @@
     "condition": "Б/у",
     "model_key": "samsung a26",
     "verified_model": null
+  },
+  "48699011": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17486990_samsung-a11/",
+    "title": "Samsung Galaxy A11",
+    "price": 200,
+    "condition": "Б/у",
+    "model_key": "samsung a11"
   }
 }

@@ -46230,5 +46230,14 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": null
+  },
+  "48861314": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17488613_redmi-14c/",
+    "title": "Xiaomi Redmi 14C, 256gb",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "redmi 14c"
   }
 }

@@ -50,7 +50,8 @@
   "apple xr|128": {
     "first_seen": "2026-10-18",
     "ratio": 5.5,
-    "kind": "outlier"
+    "kind": "reviewed",
+    "reviewed_at": "2026-11-04"
   },
   "samsung note 20 ultra|256": {
     "first_seen": "2026-10-18",
@@ -95,8 +96,8 @@
   },
   "samsung s10|128": {
     "first_seen": "2026-10-18",
-    "ratio": 7.33,
-    "kind": "reviewed",
+    "ratio": 3.73,
+    "kind": "wide",
     "reviewed_at": "2026-11-04"
   },
   "samsung s21|256": {

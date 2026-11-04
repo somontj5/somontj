@@ -46587,5 +46587,23 @@
     "price": 7000,
     "condition": "Б/у",
     "model_key": "apple air"
+  },
+  "49206175": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17492061_tecno-pova-7-pro-5g/",
+    "title": "Tecno Pova 7 Pro 5G",
+    "price": 2600,
+    "condition": "Б/у",
+    "model_key": "tecno pova 7 pro"
+  },
+  "49205524": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17492055_samsung-s24ultra/",
+    "title": "Samsung Galaxy S24ultra",
+    "price": 6950,
+    "condition": "Б/у",
+    "model_key": "samsung s24ultra"
   }
 }

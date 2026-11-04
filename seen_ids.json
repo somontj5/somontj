@@ -46212,5 +46212,23 @@
     "price": 850,
     "condition": "Б/у",
     "model_key": "samsung a13"
+  },
+  "48857914": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17488579_redmi-14c/",
+    "title": "Xiaomi Redmi 14C",
+    "price": 920,
+    "condition": "Б/у",
+    "model_key": "redmi 14c"
+  },
+  "85381264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17488538_apple-iphone-12-mini-64-gb-blue/",
+    "title": "Apple iPhone 12 mini, 64 gb, Blue",
+    "price": 2000,
+    "condition": "Б/у",
+    "model_key": null
   }
 }

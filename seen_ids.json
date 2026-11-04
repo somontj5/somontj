@@ -45847,5 +45847,33 @@
     "condition": "Б/у",
     "model_key": "infinix not 12i",
     "verified_model": null
+  },
+  "64418256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17485644_apple-iphone-18-pro-max-256-gb-black/",
+    "title": "Apple iPhone 18 Pro Max, 256 gb, Black дубликат",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "62112128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17485621_apple-iphone-12-pro-128-gb-graphite/",
+    "title": "Apple iPhone 12 pro, 128 gb, Graphite",
+    "price": 2400,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro",
+    "verified_model": null
+  },
+  "57418256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17485574_apple-iphone-18-pro-max-256-gb-glacier/",
+    "title": "Apple iPhone 18 Pro Max, 256 gb, Glacier дубликат",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": null
   }
 }

@@ -47170,5 +47170,15 @@
     "price": 10500,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "17497289": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17497289_mefurasham/",
+    "title": "Xiaomi Redmi 14С",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "redmi 14с",
+    "verified_model": null
   }
 }

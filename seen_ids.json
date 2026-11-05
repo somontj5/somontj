@@ -46946,5 +46946,15 @@
     "price": 5000,
     "condition": "Б/у",
     "model_key": "samsung z fold 5 512g"
+  },
+  "74954818": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17495481_xiaomi-redmi-8t/",
+    "title": "Xiaomi Redmi 8T, 32gb",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "redmi 8t",
+    "verified_model": null
   }
 }

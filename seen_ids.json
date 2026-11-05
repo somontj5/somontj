@@ -47003,5 +47003,33 @@
     "price": 1400,
     "condition": "Б/у",
     "model_key": null
+  },
+  "49602251": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17496022_samsung-a51/",
+    "title": "Samsung Galaxy A51",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "samsung a51",
+    "verified_model": null
+  },
+  "49599333": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17495993_samsung-a33/",
+    "title": "Samsung Galaxy A33",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "samsung a33"
+  },
+  "74959753": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17495975_poco-m3/",
+    "title": "Xiaomi Poco M3, 128gb",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "poco m3"
   }
 }

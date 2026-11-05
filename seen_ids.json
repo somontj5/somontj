@@ -47208,5 +47208,41 @@
     "condition": "Б/у",
     "model_key": "apple xr",
     "verified_model": null
+  },
+  "81461285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17497628_telefon-redmi-note-14-6-128gb-glabal-version-5g/",
+    "title": "Xiaomi Redmi Note 14 6/128Gb Glabal Version 5G",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 glabal"
+  },
+  "24122565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17497614_telefon-samsung-s24-ultra-12-256gb-vetnam-5g/",
+    "title": "Samsung Galaxy S24 Ultra, 12/256Gb Vetnam 5G",
+    "price": 7850,
+    "condition": "Б/у",
+    "model_key": "samsung s24 ultra vetnam"
+  },
+  "21282025": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17497597_telefon-redmi-12-128gb-2025/",
+    "title": "Xiaomi Redmi 12, 128gb, 2025",
+    "price": 1260,
+    "condition": "Б/у",
+    "model_key": "redmi 12"
+  },
+  "25620255": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17497586_telefon-honor-90-8-5-256gb-2025-5g/",
+    "title": "Honor 90 8+5/256Gb 2025 5G",
+    "price": 1350,
+    "condition": "Б/у",
+    "model_key": "honor 90 8 2025"
   }
 }

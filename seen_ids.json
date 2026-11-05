@@ -46684,13 +46684,31 @@
     "model_key": "redmi note 11"
   },
   "33132568": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17493333_telefon-redmi-note-13-256-8gb-glabal-version/",
+    "title": "Xiaomi Redmi Note 13 256/8Gb Glabal Version",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "redmi note 13 glabal"
   },
   "32106644": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17493321_telefon-samsung-06-64gb-vetnam-4g/",
+    "title": "Samsung Galaxy A06 64Gb Vietnam 4G",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "samsung a06"
   },
   "61712825": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17493306_telefon-samsung-a17-128gb-vetnam-2sim-5g/",
+    "title": "Samsung Galaxy А17 128Gb Vetnam 2sim 5G",
+    "price": 1860,
+    "condition": "Б/у",
+    "model_key": "samsung а17"
   },
   "32938324": {
     "logged": true
@@ -46736,5 +46754,23 @@
     "price": 1450,
     "condition": "Б/у",
     "model_key": "redmi note 10 pro"
+  },
+  "35525652": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17493523_telefon-samsung-a55-256gb-vetnam-5g-2sim/",
+    "title": "Samsung Galaxy А55 256Gb Vetnam 5G 2sim",
+    "price": 2550,
+    "condition": "Б/у",
+    "model_key": "samsung а55"
+  },
+  "46516256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17493465_apple-iphone-16-pro-max-256-gb-black-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Black Titanium",
+    "price": 9200,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   }
 }

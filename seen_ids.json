@@ -46832,5 +46832,15 @@
     "price": 4250,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra"
+  },
+  "17271027": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17271027_telefon-tekno/",
+    "title": "Tecno Spark Go 1",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "tecno spark go 1",
+    "verified_model": null
   }
 }

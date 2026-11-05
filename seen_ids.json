@@ -47300,5 +47300,25 @@
     "condition": "Б/у",
     "model_key": "redmi note 14 pro plus",
     "verified_model": null
+  },
+  "98146256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17498146_apple-iphone-xs-256-gb-gold/",
+    "title": "Apple iPhone Xs, 256 gb, Gold",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "apple xs",
+    "verified_model": null
+  },
+  "95992164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16769599_samsung-galaxy-m21-64gb/",
+    "title": "Samsung Galaxy M21 64ГБ",
+    "price": 630,
+    "condition": "Б/у",
+    "model_key": "samsung m21",
+    "verified_model": null
   }
 }

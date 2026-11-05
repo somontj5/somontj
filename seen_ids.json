@@ -46956,5 +46956,25 @@
     "condition": "Б/у",
     "model_key": "redmi 8t",
     "verified_model": null
+  },
+  "95585256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17495585_apple-iphone-xs-256-gb-silver/",
+    "title": "Apple iPhone Xs, 256 gb, Silver",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "apple xs",
+    "verified_model": null
+  },
+  "49556322": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17495563_samsung-galaxy-s22/",
+    "title": "Samsung Galaxy S22",
+    "price": 2100,
+    "condition": "Б/у",
+    "model_key": "samsung s22",
+    "verified_model": null
   }
 }

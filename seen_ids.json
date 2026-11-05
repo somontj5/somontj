@@ -46672,7 +46672,13 @@
     "model_key": "samsung а8"
   },
   "16003324": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17493160_telefon-samsung-a03-32gb-vetnam-4g/",
+    "title": "Samsung Galaxy А03 32Gb Vetnam 4G",
+    "price": 670,
+    "condition": "Б/у",
+    "model_key": "samsung а03"
   },
   "34111128": {
     "logged": true,
@@ -46711,13 +46717,31 @@
     "model_key": "samsung а17"
   },
   "32938324": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17493293_telefon-redmi-8-32gb-4g/",
+    "title": "Xiaomi Redmi 8 32Gb 4G",
+    "price": 699,
+    "condition": "Б/у",
+    "model_key": "redmi 8"
   },
   "88061282": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17493288_telefon-samsung-a06-128gb-vetnam-2sim/",
+    "title": "Samsung Galaxy A06 128Gb Vietnam 2sim",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": "samsung a06"
   },
   "27522645": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17493275_telefon-samsung-a22-64gb-vetnam-5g/",
+    "title": "Samsung Galaxy А22 64Gb Vetnam 5G",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "samsung а22"
   },
   "51213256": {
     "logged": true,
@@ -46772,5 +46796,14 @@
     "price": 9200,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "75612885": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17493537_telefon-samsung-a56-128-8gb-vetnam-5g/",
+    "title": "Samsung gallaxy А56 128/8Gb Vetnam 5G",
+    "price": 3240,
+    "condition": "Б/у",
+    "model_key": "samsung gallaxy а56 vetnam"
   }
 }

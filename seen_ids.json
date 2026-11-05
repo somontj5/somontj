@@ -47031,5 +47031,24 @@
     "price": 900,
     "condition": "Б/у",
     "model_key": "poco m3"
+  },
+  "96154128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17496154_apple-iphone-xr-128-gb-product-red/",
+    "title": "Apple iPhone Xr, 128 gb, Product Red",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "apple xr"
+  },
+  "17496074": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17496074_du-simkarta-vetnam-dubai-megud-khamma/",
+    "title": "Samsung Galaxy S21",
+    "price": 2700,
+    "condition": "Б/у",
+    "model_key": "samsung s21",
+    "verified_model": null
   }
 }

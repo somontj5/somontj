@@ -236,6 +236,13 @@
     "reviewed_at": "2026-10-22T16:55:24",
     "source": "gemini-review"
   },
+  "67854128": {
+    "action": "exclude",
+    "group_key": "apple xr|128",
+    "reason": "Цена 600 TJS является аномально низкой для данной модели, вероятно, лот-приманка или неисправное устройство.",
+    "reviewed_at": "2026-11-05T12:30:22",
+    "source": "gemini-review"
+  },
   "69940171": {
     "action": "exclude",
     "group_key": "apple 17 pro max 1 tb|1024",

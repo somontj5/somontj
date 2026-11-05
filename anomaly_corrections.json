@@ -58,12 +58,26 @@
     "reviewed_at": "2026-10-21T22:17:38",
     "source": "gemini-review"
   },
+  "15101675": {
+    "action": "exclude",
+    "group_key": "apple 12|64",
+    "reason": "Заголовок и описание указывают на Samsung Galaxy S23 8/256GB, лот попал в группу ошибочно.",
+    "reviewed_at": "2026-11-05T13:02:36",
+    "source": "gemini-review"
+  },
   "16016512": {
     "group_key": "apple 16 pro max|512",
     "memory_gb": 512,
     "price": 8500,
     "reason": "На странице видна актуальная цена 8500 c. (старая зачеркнута как 9500 c.).",
     "reviewed_at": "2026-10-28T06:54:59",
+    "source": "gemini-review"
+  },
+  "17235126": {
+    "action": "exclude",
+    "group_key": "apple 12|64",
+    "reason": "Блок IMEI указывает на Apple iPhone XR (A1984), а не iPhone 12.",
+    "reviewed_at": "2026-11-05T13:02:36",
     "source": "gemini-review"
   },
   "17268444": {

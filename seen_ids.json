@@ -47059,5 +47059,32 @@
     "price": 6700,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "37214128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17496372_apple-iphone-14-128-gb-starlight/",
+    "title": "Apple iPhone 14, 128 gb, Starlight",
+    "price": 3500,
+    "condition": "Б/у",
+    "model_key": "apple 14"
+  },
+  "49633020": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17496330_note-20-ultra/",
+    "title": "Samsung Galaxy Note 20 ultra",
+    "price": 3300,
+    "condition": "Б/у",
+    "model_key": "samsung note 20 ultra"
+  },
+  "49629121": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17496291_samsung-galaxy-s21-ultra-vetnam/",
+    "title": "Samsung Galaxy S21 ultra",
+    "price": 2499,
+    "condition": "Б/у",
+    "model_key": "samsung s21 ultra"
   }
 }

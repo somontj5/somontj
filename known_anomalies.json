@@ -73,7 +73,7 @@
   "apple xr|64": {
     "first_seen": "2026-10-18",
     "ratio": 3.83,
-    "kind": "outlier"
+    "kind": "wide"
   },
   "apple 13 pro max|256": {
     "first_seen": "2026-10-18",

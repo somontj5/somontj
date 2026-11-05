@@ -47189,5 +47189,24 @@
     "price": 3799,
     "condition": "Б/у",
     "model_key": "samsung s22ultra"
+  },
+  "82562025": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17497552_telefon-samsung-s10-5g-8-256gb-2025/",
+    "title": "Samsung Galaxy S10 5G, 8/256Gb",
+    "price": 1550,
+    "condition": "Б/у",
+    "model_key": "samsung s10"
+  },
+  "49750664": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17497506_apple-iphone-xr-64-gb-product-red/",
+    "title": "Apple iPhone Xr, 64 gb, Product Red",
+    "price": 800,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
   }
 }

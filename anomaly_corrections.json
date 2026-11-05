@@ -261,6 +261,15 @@
     "reviewed_at": "2026-10-19T09:08:13",
     "source": "gemini-review"
   },
+  "51261264": {
+    "group_key": "apple 12|64",
+    "memory_gb": 64,
+    "model_key": "apple xr",
+    "price": 1599,
+    "reason": "В блоке IMEI указана модель: Apple iPhone XR (A1984)",
+    "reviewed_at": "2026-11-05T13:57:51",
+    "source": "gemini-review"
+  },
   "56416512": {
     "action": "exclude",
     "group_key": "apple 16 pro max|512",

@@ -47180,5 +47180,14 @@
     "condition": "Б/у",
     "model_key": "redmi 14с",
     "verified_model": null
+  },
+  "42225612": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17497404_samsung-s22ultra-256-12/",
+    "title": "Samsung Galaxy S22ultra 256/12gb",
+    "price": 3799,
+    "condition": "Б/у",
+    "model_key": "samsung s22ultra"
   }
 }

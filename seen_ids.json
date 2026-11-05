@@ -46860,5 +46860,14 @@
     "price": 1850,
     "condition": "Б/у",
     "model_key": "samsung a17"
+  },
+  "49437610": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17494376_xiaomi-redmi-10/",
+    "title": "Xiaomi Redmi 10",
+    "price": 1250,
+    "condition": "Б/у",
+    "model_key": "redmi 10"
   }
 }

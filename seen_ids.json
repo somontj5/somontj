@@ -47271,5 +47271,34 @@
     "price": 4200,
     "condition": "Б/у",
     "model_key": "pixel 8 pro"
+  },
+  "79517256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17497795_apple-iphone-17-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Silver",
+    "price": 11999,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
+  },
+  "79101164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17497910_apple-iphone-11-64-gb-black/",
+    "title": "Apple iPhone 11, 64 gb, Black",
+    "price": 1399,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
+  },
+  "49787114": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17497871_redmi-not-14-pro-plus/",
+    "title": "Xiaomi Redmi Note 14 Pro Plus",
+    "price": 2600,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro plus",
+    "verified_model": null
   }
 }

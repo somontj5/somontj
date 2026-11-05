@@ -47244,5 +47244,23 @@
     "price": 1350,
     "condition": "Б/у",
     "model_key": "honor 90 8 2025"
+  },
+  "32225256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17497632_samsung-galaxy-s22-ultra-5g-256gb/",
+    "title": "Samsung Galaxy S22 Ultra 5G 256GB",
+    "price": 3100,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
+  },
+  "11712825": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17497641_telefon-samsung-17-128gb-vetnam-2sim-5g/",
+    "title": "Samsung Galaxy A17 128Gb Vetnam 2sim 5G",
+    "price": 1856,
+    "condition": "Б/у",
+    "model_key": "samsung a17"
   }
 }

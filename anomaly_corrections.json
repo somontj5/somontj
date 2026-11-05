@@ -41,6 +41,13 @@
     "reviewed_at": "2026-10-19T03:37:46",
     "source": "gemini-review"
   },
+  "11510512": {
+    "action": "exclude",
+    "group_key": "samsung note 20 ultra|256",
+    "reason": "Блок IMEI указывает на модель Samsung Galaxy S10 Plus (SM-G975N-1), а не Note 20 Ultra.",
+    "reviewed_at": "2026-11-05T15:09:07",
+    "source": "gemini-review"
+  },
   "12616256": {
     "group_key": "apple 15 pro max|256",
     "memory_gb": 256,

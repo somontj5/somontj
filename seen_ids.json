@@ -47339,5 +47339,15 @@
     "price": 3450,
     "condition": "Б/у",
     "model_key": "apple 13"
+  },
+  "49879612": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17498796_redmi-note-12/",
+    "title": "Xiaomi Redmi Note 12",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "redmi note 12",
+    "verified_model": null
   }
 }

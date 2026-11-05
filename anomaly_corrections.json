@@ -74,10 +74,12 @@
     "source": "gemini-review"
   },
   "17235126": {
-    "action": "exclude",
     "group_key": "apple 12|64",
-    "reason": "Блок IMEI указывает на Apple iPhone XR (A1984), а не iPhone 12.",
-    "reviewed_at": "2026-11-05T13:02:36",
+    "memory_gb": 64,
+    "model_key": "apple xr",
+    "price": 1599,
+    "reason": "В блоке IMEI указана модель Apple iPhone XR (A1984), а не iPhone 12",
+    "reviewed_at": "2026-11-05T13:22:15",
     "source": "gemini-review"
   },
   "17268444": {
@@ -119,6 +121,15 @@
     "group_key": "samsung a32|128",
     "reason": "Лот имеет критические дефекты: экран разбит, IMEI в черном списке, нет растаможки.",
     "reviewed_at": "2026-11-05T12:40:10",
+    "source": "gemini-review"
+  },
+  "17447856": {
+    "group_key": "apple 12|64",
+    "memory_gb": 64,
+    "model_key": "apple 12",
+    "price": 2500,
+    "reason": "Актуальная цена на странице 2500 сомони вместо старой 2899",
+    "reviewed_at": "2026-11-05T13:22:15",
     "source": "gemini-review"
   },
   "17460723": {

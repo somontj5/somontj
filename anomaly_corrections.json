@@ -20,6 +20,13 @@
     "reviewed_at": "2026-10-31T08:01:39",
     "source": "gemini-review"
   },
+  "04341264": {
+    "action": "exclude",
+    "group_key": "apple 12|64",
+    "reason": "Цена 700 TJS является неадекватной для iPhone 12, вероятно, приманка или ошибка.",
+    "reviewed_at": "2026-11-05T14:59:21",
+    "source": "gemini-review"
+  },
   "04918256": {
     "action": "exclude",
     "group_key": "apple 18 pro max|256",
@@ -323,6 +330,15 @@
     "price": 999,
     "reason": "В блоке IMEI указана модель Samsung Galaxy S9 Plus Dual.",
     "reviewed_at": "2026-10-21T12:43:08",
+    "source": "gemini-review"
+  },
+  "75238256": {
+    "group_key": "apple 12|64",
+    "memory_gb": 256,
+    "model_key": "samsung galaxy s23",
+    "price": 2799,
+    "reason": "В заголовке и по ссылке указан Samsung Galaxy S23, ошибочно попал в группу Apple 12.",
+    "reviewed_at": "2026-11-05T14:59:21",
     "source": "gemini-review"
   },
   "77113128": {

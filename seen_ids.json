@@ -46614,5 +46614,15 @@
     "price": 10500,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "69312256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17492693_apple-iphone-12-pro-max-256-gb/",
+    "title": "Apple iPhone 12 Pro Max, 256 gb",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro max",
+    "verified_model": null
   }
 }

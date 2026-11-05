@@ -46624,5 +46624,54 @@
     "condition": "Б/у",
     "model_key": "apple 12 pro max",
     "verified_model": null
+  },
+  "81612825": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17493248_telefon-samsung-a16-128gb-vetnam-2sim-5g/",
+    "title": "Samsung Gallaxy А16 128Gb Vetnam 2sim 5G",
+    "price": 1650,
+    "condition": "Б/у",
+    "model_key": "samsung gallaxy а16"
+  },
+  "12112885": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17493221_telefon-samsung-s21-128-8gb-vetnam-5g-silver/",
+    "title": "Samsung Galaxy S21+ 128/8Gb Vetnam 5G Silver",
+    "price": 2654,
+    "condition": "Б/у",
+    "model_key": "samsung s21 plus vetnam"
+  },
+  "32002025": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17493200_telefon-lg-2025/",
+    "title": "Телефон LG 2025",
+    "price": 350,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "31871164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17493187_apple-iphone-11-pro-64-gb-midnight-green/",
+    "title": "Apple iPhone 11 Pro, 64 gb, Midnight Green",
+    "price": 2550,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
+  },
+  "31768324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17493176_telefon-samsung-a8-32gb-carea-4g/",
+    "title": "Samsung Galaxy А8 32Gb Carea 4G",
+    "price": 350,
+    "condition": "Б/у",
+    "model_key": "samsung а8"
+  },
+  "16003324": {
+    "logged": true
   }
 }

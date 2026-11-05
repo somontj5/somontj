@@ -46842,5 +46842,23 @@
     "condition": "Б/у",
     "model_key": "tecno spark go 1",
     "verified_model": null
+  },
+  "49431113": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17494311_xiaomi-redmi-note-13/",
+    "title": "Xiaomi Redmi Note 13",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "redmi note 13"
+  },
+  "49428617": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17494286_samsung-galaxy-a17/",
+    "title": "Samsung Galaxy A17",
+    "price": 1850,
+    "condition": "Б/у",
+    "model_key": "samsung a17"
   }
 }

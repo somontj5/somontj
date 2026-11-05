@@ -46976,5 +46976,32 @@
     "condition": "Б/у",
     "model_key": "samsung s22",
     "verified_model": null
+  },
+  "49594911": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17495949_redme-note-11/",
+    "title": "Xiaomi Redmi note 11",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "redmi note 11"
+  },
+  "95916105": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17495916_samsung-s105g/",
+    "title": "Samsung Galaxy S10 5g, 256gb",
+    "price": 1700,
+    "condition": "Б/у",
+    "model_key": "samsung s10"
+  },
+  "90117256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17495901_apple-iphone-17-pro-max-256-gb-silver/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Silver дубликат",
+    "price": 1400,
+    "condition": "Б/у",
+    "model_key": null
   }
 }

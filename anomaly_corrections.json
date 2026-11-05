@@ -100,6 +100,20 @@
     "reviewed_at": "2026-10-21T12:02:47",
     "source": "gemini-review"
   },
+  "17386564": {
+    "action": "exclude",
+    "group_key": "samsung a32|128",
+    "reason": "Лот имеет критические дефекты: экран разбит, IMEI в черном списке, нет растаможки.",
+    "reviewed_at": "2026-11-05T12:40:10",
+    "source": "gemini-review"
+  },
+  "17460723": {
+    "action": "exclude",
+    "group_key": "samsung a32|128",
+    "reason": "Объявление помечено как 'Продано', не является актуальным предложением.",
+    "reviewed_at": "2026-11-05T12:40:10",
+    "source": "gemini-review"
+  },
   "17918256": {
     "action": "exclude",
     "group_key": "apple 18 pro max|256",

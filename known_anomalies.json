@@ -143,7 +143,8 @@
   "samsung a32|128": {
     "first_seen": "2026-10-21",
     "ratio": 4.17,
-    "kind": "outlier"
+    "kind": "reviewed",
+    "reviewed_at": "2026-11-05"
   },
   "samsung s22|256": {
     "first_seen": "2026-10-22",

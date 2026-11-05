@@ -47104,5 +47104,15 @@
     "price": 750,
     "condition": "Б/у",
     "model_key": "samsung a12"
+  },
+  "49655223": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17496552_samsung-galaxy-a23/",
+    "title": "Samsung galaxy А23",
+    "price": 899,
+    "condition": "Б/у",
+    "model_key": "samsung а23",
+    "verified_model": null
   }
 }

@@ -61,8 +61,8 @@
   "15101675": {
     "action": "exclude",
     "group_key": "apple 12|64",
-    "reason": "Заголовок и описание указывают на Samsung Galaxy S23 8/256GB, лот попал в группу ошибочно.",
-    "reviewed_at": "2026-11-05T13:02:36",
+    "reason": "Лот содержит Samsung Galaxy S23, ошибочно попал в группу iPhone 12.",
+    "reviewed_at": "2026-11-05T13:48:22",
     "source": "gemini-review"
   },
   "16016512": {
@@ -76,10 +76,10 @@
   "17235126": {
     "group_key": "apple 12|64",
     "memory_gb": 64,
-    "model_key": "apple xr",
+    "model_key": "apple iphone xr",
     "price": 1599,
-    "reason": "В блоке IMEI указана модель Apple iPhone XR (A1984), а не iPhone 12",
-    "reviewed_at": "2026-11-05T13:22:15",
+    "reason": "Блок IMEI указывает на модель Apple iPhone XR (A1984), а не iPhone 12.",
+    "reviewed_at": "2026-11-05T13:48:22",
     "source": "gemini-review"
   },
   "17268444": {

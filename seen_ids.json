@@ -46927,5 +46927,15 @@
     "condition": "Б/у",
     "model_key": "apple x",
     "verified_model": null
+  },
+  "74954095": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17495409_redmi-5/",
+    "title": "Xiaomi Redmi 5",
+    "price": 250,
+    "condition": "Б/у",
+    "model_key": "redmi 5",
+    "verified_model": null
   }
 }

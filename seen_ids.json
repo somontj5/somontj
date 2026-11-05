@@ -46814,5 +46814,23 @@
     "price": 8200,
     "condition": "Б/у",
     "model_key": "apple 16 pro max"
+  },
+  "17494132": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17494132_telfoni-furushi/",
+    "title": "Honor X9d",
+    "price": 3499,
+    "condition": "Б/у",
+    "model_key": "honor x9d"
+  },
+  "49412122": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17494121_samsung-galaxy-s22-ultra/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 4250,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
   }
 }

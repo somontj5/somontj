@@ -48014,5 +48014,23 @@
     "condition": "Б/у",
     "model_key": "apple 8",
     "verified_model": null
+  },
+  "08617128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17505086_samsung-galaxy-a17-128gb-duos-dubai/",
+    "title": "Samsung Galaxy A17 128Gb Duos Dubai",
+    "price": 1900,
+    "condition": "Б/у",
+    "model_key": "samsung a17"
+  },
+  "02910128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17505029_xiaomi-redmi-not-10-pro-128gb/",
+    "title": "Xiaomi Redmi Notе 10 Pro 128Gb",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "redmi notе 10 pro"
   }
 }

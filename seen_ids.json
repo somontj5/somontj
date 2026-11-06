@@ -47453,5 +47453,15 @@
     "price": 1650,
     "condition": "Б/у",
     "model_key": "samsung a16"
+  },
+  "05281164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17500528_apple-iphone-11-64-gb-yellow/",
+    "title": "Apple iPhone 11, 64 gb, Yellow",
+    "price": 1899,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

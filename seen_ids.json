@@ -47920,5 +47920,33 @@
     "condition": "Б/у",
     "model_key": "apple xr",
     "verified_model": null
+  },
+  "91108128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17368891_telefon-redmi-not-10-pro-8-128gb/",
+    "title": "Xiaomi Redmi Note 10 про 8/128гб",
+    "price": 1499,
+    "condition": "Б/у",
+    "model_key": "redmi note 10 про"
+  },
+  "36611128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17504366_apple-iphone-11-128-gb-white/",
+    "title": "Apple iPhone 11, 128 gb, White",
+    "price": 2499,
+    "condition": "Б/у",
+    "model_key": "apple 11"
+  },
+  "04357345": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17504357_samsung-a34-5g/",
+    "title": "Samsung Galaxy а34 5G",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "samsung а34",
+    "verified_model": null
   }
 }

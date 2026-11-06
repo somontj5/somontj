@@ -47825,5 +47825,14 @@
     "condition": "Б/у",
     "model_key": "apple 11 pro max",
     "verified_model": null
+  },
+  "50293215": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17502932_redmi-note-15/",
+    "title": "Xiaomi Redmi Note 15",
+    "price": 1950,
+    "condition": "Б/у",
+    "model_key": "redmi note 15"
   }
 }

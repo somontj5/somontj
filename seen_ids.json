@@ -47581,5 +47581,32 @@
     "price": 4560,
     "condition": "Б/у",
     "model_key": "samsung gallaxy s23 ultra"
+  },
+  "35552565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17501035_telefon-samsung-a55-256gb-vetnam-5g/",
+    "title": "Samsung gallaxy А55 256гб Vetnam 5G",
+    "price": 2640,
+    "condition": "Б/у",
+    "model_key": "samsung gallaxy а55"
+  },
+  "01213256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17501012_telefon-redmi-note-13-256gb-glabal-version/",
+    "title": "Xiaomi Redmi Note 13 256gb Glabal Version",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "redmi note 13"
+  },
+  "91561285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17500991_telefon-samsung-a56-128-vetnam-5g/",
+    "title": "Samsung gallaxy А56 128 Vetnam 5G",
+    "price": 3200,
+    "condition": "Б/у",
+    "model_key": "samsung gallaxy а56 128 vetnam"
   }
 }

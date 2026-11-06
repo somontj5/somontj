@@ -48126,5 +48126,34 @@
     "price": 10999,
     "condition": "Б/у",
     "model_key": "apple 17 pro max"
+  },
+  "87355105": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/16987355_redmi-note-10-5g/",
+    "title": "Xiaomi Redmi Note 10 5G",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "redmi note 10",
+    "verified_model": null
+  },
+  "94413512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17505944_apple-iphone-13-pro-max-512-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro Max, 512 gb, Sierra Blue",
+    "price": 4999,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
+  },
+  "05932128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17505932_apple-iphone-xr-128-gb-white/",
+    "title": "Apple iPhone Xr, 128 gb, White",
+    "price": 1379,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
   }
 }

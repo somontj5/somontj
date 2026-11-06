@@ -47608,5 +47608,15 @@
     "price": 3200,
     "condition": "Б/у",
     "model_key": "samsung gallaxy а56 128 vetnam"
+  },
+  "50110613": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17501106_redmi-note-13/",
+    "title": "Xiaomi Redmi note 13",
+    "price": 1000,
+    "condition": "Б/у",
+    "model_key": "redmi note 13",
+    "verified_model": null
   }
 }

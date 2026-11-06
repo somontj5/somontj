@@ -47721,5 +47721,42 @@
     "price": 600,
     "condition": "Б/у",
     "model_key": "samsung a12"
+  },
+  "17501836": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17501836_ideal-tel/",
+    "title": "Samsung Galaxy A56",
+    "price": 3999,
+    "condition": "Б/у",
+    "model_key": "samsung a56"
+  },
+  "01769256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17501769_apple-iphone-air-256-gb-space-black/",
+    "title": "Apple iPhone Air, 256 gb, Space Black",
+    "price": 7000,
+    "condition": "Б/у",
+    "model_key": "apple air"
+  },
+  "01802256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17501802_apple-iphone-air-256-gb-space-black/",
+    "title": "Apple iPhone Air, 256 gb, Space Black",
+    "price": 7000,
+    "condition": "Б/у",
+    "model_key": "apple air"
+  },
+  "50178602": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17501786_samsung-galaxy-a02/",
+    "title": "Samsung Galaxy A02",
+    "price": 399,
+    "condition": "Б/у",
+    "model_key": "samsung a02",
+    "verified_model": null
   }
 }

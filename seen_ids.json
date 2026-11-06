@@ -47472,5 +47472,32 @@
     "price": 7850,
     "condition": "Б/у",
     "model_key": "samsung s24 ultra vetnam"
+  },
+  "01225625": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17500767_telefon-samsung-s20-ultra-12-256gb-2sim-vetnam-5g/",
+    "title": "Samsung Galaxy S20 Ultra 12/256Gb 2sim Vetnam 5G",
+    "price": 1950,
+    "condition": "Б/у",
+    "model_key": "samsung s20 ultra 2sim vetnam"
+  },
+  "01058256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17500740_telefon-samsung-s10-5g-8-256gb-carea/",
+    "title": "Samsung galaxy S10 5G 8/256Gb Carea",
+    "price": 1550,
+    "condition": "Б/у",
+    "model_key": "samsung s10"
+  },
+  "71903324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17500719_telefon-samsung-a03-32gb-vetnam-4g/",
+    "title": "Samsung Galaxy А03 32Gb Vetnam 4G",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "samsung а03"
   }
 }

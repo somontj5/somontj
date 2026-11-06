@@ -47976,5 +47976,43 @@
     "price": 9500,
     "condition": "Б/у",
     "model_key": "samsung s25"
+  },
+  "01138256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17505001_xiaomi-redmi-not-13-8-256gb/",
+    "title": "Xiaomi Redmi Note 13 8/256Gb",
+    "price": 1690,
+    "condition": "Б/у",
+    "model_key": "redmi note 13"
+  },
+  "04971764": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17504971_apple-iphone-7-64-gb/",
+    "title": "Apple iPhone 7, 64 gb",
+    "price": 749,
+    "condition": "Б/у",
+    "model_key": "apple 7",
+    "verified_model": null
+  },
+  "68146128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17504968_xiaomi-redmi-not-14-6-128gb/",
+    "title": "Xiaomi Redmi Note 14 6/128Gb",
+    "price": 1730,
+    "condition": "Б/у",
+    "model_key": "redmi note 14"
+  },
+  "04871864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17504871_apple-iphone-8-64-gb-silver/",
+    "title": "Apple iPhone 8, 64 gb, Silver",
+    "price": 799,
+    "condition": "Б/у",
+    "model_key": "apple 8",
+    "verified_model": null
   }
 }

@@ -47891,5 +47891,14 @@
     "condition": "Б/у",
     "model_key": "samsung s8 plus",
     "verified_model": null
+  },
+  "50391722": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17503917_samsung-galaktiki-s-22-ultra/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 4500,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra"
   }
 }

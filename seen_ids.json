@@ -47499,5 +47499,41 @@
     "price": 650,
     "condition": "Б/у",
     "model_key": "samsung а03"
+  },
+  "08642264": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17500864_telefon-samsung-a22-64gb-vetnam/",
+    "title": "Samsung Gallaxy А22 64Gb Vetnam",
+    "price": 1150,
+    "condition": "Б/у",
+    "model_key": "samsung gallaxy а22"
+  },
+  "42562025": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17500850_telefon-redmi-note-14-pro-256gb-2025/",
+    "title": "Телефон Redmi Note 14 pro 256gb 2025",
+    "price": 2430,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro"
+  },
+  "08398324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17500839_telefon-redmi-8-32gb-4g/",
+    "title": "Xiaomi Redmi 8 32gb 4G",
+    "price": 730,
+    "condition": "Б/у",
+    "model_key": "redmi 8"
+  },
+  "08248324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17500824_telefon-samsung-a8-32gb-carea-4g/",
+    "title": "Samsung Galaxy А8 32Gb Carea 4G",
+    "price": 399,
+    "condition": "Б/у",
+    "model_key": "samsung а8"
   }
 }

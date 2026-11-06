@@ -48108,5 +48108,23 @@
     "condition": "Б/у",
     "model_key": "apple xs",
     "verified_model": null
+  },
+  "91112256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17505911_apple-iphone-12-pro-max-256-gb-pacific-blue/",
+    "title": "Apple iPhone 12 Pro Max, 256 gb, Pacific Blue",
+    "price": 3300,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro max"
+  },
+  "87917256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17505879_apple-iphone-17-pro-max-256-gb-cosmic-orange/",
+    "title": "Apple iPhone 17 Pro Max, 256 gb, Cosmic Orange",
+    "price": 10999,
+    "condition": "Б/у",
+    "model_key": "apple 17 pro max"
   }
 }

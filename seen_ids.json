@@ -47674,5 +47674,23 @@
     "condition": "Б/у",
     "model_key": "redmi not 9",
     "verified_model": null
+  },
+  "75017227": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17501722_honor-x7d/",
+    "title": "Honor X7d",
+    "price": 1850,
+    "condition": "Б/у",
+    "model_key": "honor x7d"
+  },
+  "66310464": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17501663_redmi-10c-4-64gb/",
+    "title": "Xiaomi Redmi 10c 4/64gb",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "redmi 10c"
   }
 }

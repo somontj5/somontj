@@ -47692,5 +47692,34 @@
     "price": 700,
     "condition": "Б/у",
     "model_key": "redmi 10c"
+  },
+  "50177316": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17501773_samsung-galaxy-a16/",
+    "title": "Samsung Galaxy A16",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "samsung a16",
+    "verified_model": null
+  },
+  "75017569": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17501756_xiaomi-redmi-9a/",
+    "title": "Xiaomi Redmi 9A",
+    "price": 399,
+    "condition": "Б/у",
+    "model_key": "redmi 9a",
+    "verified_model": null
+  },
+  "50172912": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17501729_samsung-a12/",
+    "title": "Samsung Galaxy A12",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "samsung a12"
   }
 }

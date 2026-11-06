@@ -47618,5 +47618,15 @@
     "condition": "Б/у",
     "model_key": "redmi note 13",
     "verified_model": null
+  },
+  "50115415": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17501154_novyi-tel-xiaomi-mi-15c/",
+    "title": "Xiaomi Redmi Mi 15C",
+    "price": 1399,
+    "condition": "Б/у",
+    "model_key": "redmi mi 15c",
+    "verified_model": null
   }
 }

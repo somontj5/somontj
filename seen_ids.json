@@ -47834,5 +47834,14 @@
     "price": 1950,
     "condition": "Б/у",
     "model_key": "redmi note 15"
+  },
+  "18212128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17503182_xiaomi-redmi-12-128gb/",
+    "title": "Xiaomi Redmi 12 128Gb",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "redmi 12"
   }
 }

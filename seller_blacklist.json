@@ -880,5 +880,18 @@
     "ban_ad_urls": [
       "https://m.somon.tj/adv/17496552_samsung-galaxy-a23/"
     ]
+  },
+  "8664647": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/8664647/",
+    "reason": "похоже на перекупщика по фото: на заднем фоне видна витрина магазина электроники/парфюмерии",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17502522_apple-iphone-xs-64-gb-gold/",
+    "blocked_at": "2026-11-06T10:47:12",
+    "updated_at": "2026-11-06T10:47:12",
+    "active_ads_at_block": 1,
+    "ban_count": 1,
+    "ban_ad_urls": [
+      "https://m.somon.tj/adv/17502522_apple-iphone-xs-64-gb-gold/"
+    ]
   }
 }

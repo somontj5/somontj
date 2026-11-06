@@ -47758,5 +47758,23 @@
     "condition": "Б/у",
     "model_key": "samsung a02",
     "verified_model": null
+  },
+  "50202310": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17502023_redmi-10/",
+    "title": "Xiaomi Redmi 10",
+    "price": 950,
+    "condition": "Б/у",
+    "model_key": "redmi 10"
+  },
+  "50195014": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17501950_samsung-galaxy-a14/",
+    "title": "Samsung Galaxy A14",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "samsung a14"
   }
 }

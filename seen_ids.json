@@ -47776,5 +47776,15 @@
     "price": 1200,
     "condition": "Б/у",
     "model_key": "samsung a14"
+  },
+  "13878256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17502138_honor-x7d-8-256/",
+    "title": "Huawei Honor X7d 8/256",
+    "price": 2099,
+    "condition": "Б/у",
+    "model_key": "huawei honor x7d 8 256",
+    "verified_model": null
   }
 }

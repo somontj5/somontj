@@ -47900,5 +47900,15 @@
     "price": 4500,
     "condition": "Б/у",
     "model_key": "samsung s22 ultra"
+  },
+  "03996215": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17503996_samsung-galaxy-s21-ultra-5g/",
+    "title": "Samsung Galaxy S21 Ultra 5G",
+    "price": 2600,
+    "condition": "Б/у",
+    "model_key": "samsung s21 ultra",
+    "verified_model": null
   }
 }

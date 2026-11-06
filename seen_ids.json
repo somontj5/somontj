@@ -47843,5 +47843,15 @@
     "price": 1300,
     "condition": "Б/у",
     "model_key": "redmi 12"
+  },
+  "50334364": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17503343_apple-iphone-xs-max-64-gb-silver/",
+    "title": "Apple iPhone Xs Max, 64 gb, Silver",
+    "price": 1300,
+    "condition": "Б/у",
+    "model_key": "apple xs max",
+    "verified_model": null
   }
 }

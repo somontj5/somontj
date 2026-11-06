@@ -47628,5 +47628,23 @@
     "condition": "Б/у",
     "model_key": "redmi mi 15c",
     "verified_model": null
+  },
+  "23913128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17501239_apple-iphone-13-pro-128-gb-sierra-blue/",
+    "title": "Apple iPhone 13 Pro, 128 gb, Sierra Blue",
+    "price": 4000,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro"
+  },
+  "21282026": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17501213_telefon-redmi-12-128gb-2026/",
+    "title": "Xiaomi Redmi 12 128gb 2026",
+    "price": 1260,
+    "condition": "Б/у",
+    "model_key": "redmi 12"
   }
 }

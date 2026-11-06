@@ -47664,5 +47664,15 @@
     "price": 4700,
     "condition": "Б/у",
     "model_key": "apple 14 pro"
+  },
+  "75016009": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17501600_xiaomi-redmi-not-9/",
+    "title": "Xiaomi Redmi not 9",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "redmi not 9",
+    "verified_model": null
   }
 }

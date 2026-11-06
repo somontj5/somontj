@@ -48041,5 +48041,34 @@
     "price": 4300,
     "condition": "Б/у",
     "model_key": "apple 14 pro max"
+  },
+  "50512834": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17505128_samsung-a34/",
+    "title": "Samsung Galaxy А34",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "samsung а34",
+    "verified_model": null
+  },
+  "17505365": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17505365_telefoni-furushi/",
+    "title": "Samsung Galaxy J2",
+    "price": 200,
+    "condition": "Б/у",
+    "model_key": "samsung j2",
+    "verified_model": null
+  },
+  "05358256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17505358_apple-iphone-air-256-gb-light-gold/",
+    "title": "Apple iPhone Air, 256 gb, Light Gold",
+    "price": 11100,
+    "condition": "Б/у",
+    "model_key": "apple air"
   }
 }

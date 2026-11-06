@@ -56,7 +56,7 @@
   "samsung note 20 ultra|256": {
     "first_seen": "2026-10-18",
     "ratio": 4.12,
-    "kind": "reviewed",
+    "kind": "outlier",
     "reviewed_at": "2026-11-06"
   },
   "apple 12|64": {
@@ -221,5 +221,11 @@
     "first_seen": "2026-11-06",
     "ratio": 3.18,
     "kind": "wide"
+  },
+  "samsung а34|128": {
+    "first_seen": "2026-11-06",
+    "ratio": 2.47,
+    "kind": "reviewed",
+    "reviewed_at": "2026-11-06"
   }
 }

@@ -893,5 +893,18 @@
     "ban_ad_urls": [
       "https://m.somon.tj/adv/17502522_apple-iphone-xs-64-gb-gold/"
     ]
+  },
+  "18315545": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/18315545/",
+    "reason": "похоже на перекупщика по фото: На заднем плане на фотографиях отчетливо видна витрина магазина с подсветкой и выставленными рядами смартфонов.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17504135_apple-iphone-xr-64-gb-product-red/",
+    "blocked_at": "2026-11-06T15:29:14",
+    "updated_at": "2026-11-06T15:29:14",
+    "active_ads_at_block": 1,
+    "ban_count": 1,
+    "ban_ad_urls": [
+      "https://m.somon.tj/adv/17504135_apple-iphone-xr-64-gb-product-red/"
+    ]
   }
 }

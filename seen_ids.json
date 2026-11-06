@@ -47910,5 +47910,15 @@
     "condition": "Б/у",
     "model_key": "samsung s21 ultra",
     "verified_model": null
+  },
+  "50413564": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17504135_apple-iphone-xr-64-gb-product-red/",
+    "title": "Apple iPhone Xr, 64 gb, Product Red",
+    "price": 2100,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
   }
 }

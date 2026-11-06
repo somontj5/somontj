@@ -47948,5 +47948,14 @@
     "condition": "Б/у",
     "model_key": "samsung а34",
     "verified_model": null
+  },
+  "57610512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17504576_samsung-galaxy-s10-plus-512gb/",
+    "title": "Samsung Galaxy S10 Plus, 512Gb",
+    "price": 1900,
+    "condition": "Б/у",
+    "model_key": "samsung s10 plus"
   }
 }

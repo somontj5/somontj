@@ -47396,5 +47396,34 @@
     "condition": "Б/у",
     "model_key": "samsung a06",
     "verified_model": null
+  },
+  "15712128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17499157_apple-iphone-12-pro-128-gb-graphite/",
+    "title": "Apple iPhone 12 pro, 128 gb, Graphite",
+    "price": 1099,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro",
+    "verified_model": null
+  },
+  "15312128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17499153_apple-iphone-12-pro-128-gb-graphite/",
+    "title": "Apple iPhone 12 pro, 128 gb, Graphite",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro",
+    "verified_model": null
+  },
+  "14614128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17499146_apple-iphone-14-pro-max-128-gb-silver/",
+    "title": "Apple iPhone 14 Pro Max, 128 gb, Silver",
+    "price": 4700,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
   }
 }

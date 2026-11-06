@@ -47853,5 +47853,24 @@
     "condition": "Б/у",
     "model_key": "apple xs max",
     "verified_model": null
+  },
+  "72312512": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17503437_samsung-galaxy-s23-ultra-12-512gb/",
+    "title": "Samsung Galaxy S23 ultra 12/512gb",
+    "price": 4699,
+    "condition": "Б/у",
+    "model_key": "samsung s23 ultra"
+  },
+  "50328112": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17503281_redmi-note-12-pro/",
+    "title": "Xiaomi Redmi note 12 pro, 8/256 gb , IMEI дорад",
+    "price": 1550,
+    "condition": "Б/у",
+    "model_key": "redmi note 12 pro imei дорад",
+    "verified_model": null
   }
 }

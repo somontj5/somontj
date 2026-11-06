@@ -48155,5 +48155,15 @@
     "condition": "Б/у",
     "model_key": "apple xr",
     "verified_model": null
+  },
+  "27112256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17506271_apple-iphone-12-pro-256-gb-pacific-blue/",
+    "title": "Apple iPhone 12 pro, 256 gb, Pacific Blue",
+    "price": 2100,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro",
+    "verified_model": null
   }
 }

@@ -906,5 +906,18 @@
     "ban_ad_urls": [
       "https://m.somon.tj/adv/17504135_apple-iphone-xr-64-gb-product-red/"
     ]
+  },
+  "11104098": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/11104098/",
+    "reason": "похоже на перекупщика по фото: на фото четко видна витрина магазина телефонов с коробками от других смартфонов и фирменной выкладкой товара",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17507630_apple-iphone-11-64-gb/",
+    "blocked_at": "2026-11-07T06:31:52",
+    "updated_at": "2026-11-07T06:31:52",
+    "active_ads_at_block": 2,
+    "ban_count": 1,
+    "ban_ad_urls": [
+      "https://m.somon.tj/adv/17507630_apple-iphone-11-64-gb/"
+    ]
   }
 }

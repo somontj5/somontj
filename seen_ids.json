@@ -48442,5 +48442,14 @@
     "price": 2000,
     "condition": "Б/у",
     "model_key": "samsung s 105g"
+  },
+  "76616256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17509766_apple-iphone-16-pro-max-256-gb-desert-titanium/",
+    "title": "Apple iPhone 16 Pro Max, 256 gb, Desert Titanium",
+    "price": 9300,
+    "condition": "Б/у",
+    "model_key": "apple 16 pro max"
   }
 }

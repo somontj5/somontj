@@ -48174,5 +48174,15 @@
     "price": 4400,
     "condition": "Б/у",
     "model_key": "apple 13 pro"
+  },
+  "06554864": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17506554_apple-iphone-8-64-gb-silver/",
+    "title": "Apple iPhone 8, 64 gb, Silver",
+    "price": 749,
+    "condition": "Б/у",
+    "model_key": "apple 8",
+    "verified_model": null
   }
 }

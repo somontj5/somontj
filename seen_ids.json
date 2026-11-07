@@ -48596,5 +48596,25 @@
     "price": 5150,
     "condition": "Б/у",
     "model_key": "samsung s24 ultra"
+  },
+  "51171521": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17511715_samsung-s21-plus/",
+    "title": "Samsung Galaxy S21 plus",
+    "price": 2300,
+    "condition": "Б/у",
+    "model_key": "samsung s21 plus",
+    "verified_model": null
+  },
+  "11699256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17511699_apple-iphone-xs-256-gb-gold/",
+    "title": "Apple iPhone Xs, 256 gb, Gold",
+    "price": 1550,
+    "condition": "Б/у",
+    "model_key": "apple xs",
+    "verified_model": null
   }
 }

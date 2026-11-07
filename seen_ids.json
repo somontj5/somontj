@@ -48250,5 +48250,15 @@
     "condition": "Б/у",
     "model_key": "samsung f13",
     "verified_model": null
+  },
+  "50853764": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17508537_apple-iphone-xr-64-gb/",
+    "title": "Apple iPhone Xr, 64 gb",
+    "price": 1050,
+    "condition": "Б/у",
+    "model_key": "apple xr",
+    "verified_model": null
   }
 }

@@ -48324,5 +48324,14 @@
     "condition": "Б/у",
     "model_key": "samsung s23 plus",
     "verified_model": null
+  },
+  "18135256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17509318_telefon-redmi-note-13-pro-5g-256gb/",
+    "title": "Телефон Redmi Note 13 pro+5G 256gb",
+    "price": 2600,
+    "condition": "Б/у",
+    "model_key": "redmi note 13 pro"
   }
 }

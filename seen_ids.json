@@ -48567,5 +48567,15 @@
     "price": 3300,
     "condition": "Б/у",
     "model_key": "samsung s24"
+  },
+  "17511398": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17511398_telefon-dar-kholati-khub-karor-dorad/",
+    "title": "Смартфон Infinix",
+    "price": 1100,
+    "condition": "Б/у",
+    "model_key": null,
+    "verified_model": null
   }
 }

@@ -48616,5 +48616,15 @@
     "condition": "Б/у",
     "model_key": "apple xs",
     "verified_model": null
+  },
+  "17431116": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17511743_apple-iphone-11-pro-16-gb-midnight-green/",
+    "title": "Apple iPhone 11 Pro, 16 gb, Midnight Green",
+    "price": 1600,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
   }
 }

@@ -48202,5 +48202,24 @@
     "price": 7500,
     "condition": "Б/у",
     "model_key": "apple 13 pro max"
+  },
+  "55615256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17507556_apple-iphone-15-pro-max-256-gb-blue-titanium/",
+    "title": "Apple iPhone 15 Pro Max, 256 gb, Blue Titanium",
+    "price": 7299,
+    "condition": "Б/у",
+    "model_key": "apple 15 pro max"
+  },
+  "50754920": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17507549_samsung-note-20/",
+    "title": "Samsung Galaxy Note 20",
+    "price": 2444,
+    "condition": "Б/у",
+    "model_key": "samsung note 20",
+    "verified_model": null
   }
 }

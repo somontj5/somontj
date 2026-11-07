@@ -919,5 +919,18 @@
     "ban_ad_urls": [
       "https://m.somon.tj/adv/17507630_apple-iphone-11-64-gb/"
     ]
+  },
+  "10069681": {
+    "name": null,
+    "profile_url": "https://m.somon.tj/items/author/10069681/",
+    "reason": "похоже на перекупщика по фото: На фотографиях виден характерный искусственный газон (зеленый коврик), который часто используется магазинами и профессиональными перекупщиками для красивой предметной съёмки товаров на витрине или стенде.",
+    "blocked_by_ad_url": "https://m.somon.tj/adv/17512304_samsung-galaxy-a3/",
+    "blocked_at": "2026-11-07T17:47:23",
+    "updated_at": "2026-11-07T17:47:23",
+    "active_ads_at_block": 1,
+    "ban_count": 1,
+    "ban_ad_urls": [
+      "https://m.somon.tj/adv/17512304_samsung-galaxy-a3/"
+    ]
   }
 }

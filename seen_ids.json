@@ -48287,5 +48287,42 @@
     "price": 1650,
     "condition": "Б/у",
     "model_key": "redmi note 14"
+  },
+  "16111284": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17509216_telefon-redmi-note-11-128gb-glabal-version-4g/",
+    "title": "Телефон Redmi Note 11,128gb",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "redmi note 11"
+  },
+  "91978324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17509197_telefon-samsung-a8-32gb-carea-4g/",
+    "title": "Samsung Galaxy A8 32gb Carea 4G",
+    "price": 399,
+    "condition": "Б/у",
+    "model_key": "samsung a8"
+  },
+  "69105125": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17509169_telefon-samsung-s10-512gb-carea-5g/",
+    "title": "Samsusng Galaxy S10+ 512Gb",
+    "price": 1970,
+    "condition": "Б/у",
+    "model_key": "samsung s10 plus"
+  },
+  "50914523": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17509145_samsung-s23/",
+    "title": "Samsung Galaxy S23+",
+    "price": 2700,
+    "condition": "Б/у",
+    "model_key": "samsung s23 plus",
+    "verified_model": null
   }
 }

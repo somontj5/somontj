@@ -48351,5 +48351,51 @@
     "price": 1250,
     "condition": "Б/у",
     "model_key": "samsung а22"
+  },
+  "45313128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17509453_apple-iphone-13-pro-max-128-gb-silver/",
+    "title": "Apple iPhone 13 Pro Max, 128 gb, Silver",
+    "price": 4299,
+    "condition": "Б/у",
+    "model_key": "apple 13 pro max"
+  },
+  "51142565": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17509451_telefon-redmi-note-14-pro-256gb-glabal-version-5g/",
+    "title": "Телефон Redmi Note 14 pro 256gb Glabal Version 5G",
+    "price": 2477,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro"
+  },
+  "17509436": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17509436_iagom-aibash-nest-fakat-ekran-kamtar-rakh-dodagi-tamom/",
+    "title": "Realme note 50",
+    "price": 620,
+    "condition": "Б/у",
+    "model_key": "realme note 50",
+    "verified_model": null
+  },
+  "17128425": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17509424_telefon-samsung-a17-128-4gb-vetnam-2sim-5g/",
+    "title": "Samsung Galaxy А17 128/4Gb Vetnam 2sim 5G",
+    "price": 1854,
+    "condition": "Б/у",
+    "model_key": "samsung а17 vetnam 2sim"
+  },
+  "08561285": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17509408_telefon-samsung-a56-128-vetnam-5g/",
+    "title": "Samsung Galaxy А56, 128 gb, Vetnam 5G",
+    "price": 3240,
+    "condition": "Б/у",
+    "model_key": "samsung а56"
   }
 }

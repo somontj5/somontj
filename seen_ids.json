@@ -48673,5 +48673,15 @@
     "price": 3600,
     "condition": "Б/у",
     "model_key": "apple 15"
+  },
+  "51301013": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17513010_redmi-note-13-pro-plus/",
+    "title": "Redmi Note 13 pro Plus",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "redmi note 13 pro plus",
+    "verified_model": null
   }
 }

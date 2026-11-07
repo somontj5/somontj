@@ -48558,5 +48558,14 @@
     "condition": "Б/у",
     "model_key": "apple 12 pro max",
     "verified_model": null
+  },
+  "83224256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17511832_samsung-galaxy-s24-256gb/",
+    "title": "Samsung Galaxy S24 256GB",
+    "price": 3300,
+    "condition": "Б/у",
+    "model_key": "samsung s24"
   }
 }

@@ -48626,5 +48626,15 @@
     "condition": "Б/у",
     "model_key": "apple 11 pro",
     "verified_model": null
+  },
+  "75118477": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17511847_redmi-not-7/",
+    "title": "Xiaomi Redmi Note 7",
+    "price": 750,
+    "condition": "Б/у",
+    "model_key": "redmi note 7",
+    "verified_model": null
   }
 }

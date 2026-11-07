@@ -48184,5 +48184,14 @@
     "condition": "Б/у",
     "model_key": "apple 8",
     "verified_model": null
+  },
+  "76812128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17506768_apple-iphone-12-pro-128-gb-silver/",
+    "title": "Apple iPhone 12 pro, 128 gb, Silver",
+    "price": 3299,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro"
   }
 }

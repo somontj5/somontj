@@ -48548,5 +48548,15 @@
     "condition": "Б/у",
     "model_key": "samsung a11",
     "verified_model": null
+  },
+  "11412128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17511114_apple-iphone-12-pro-max-128-gb-silver/",
+    "title": "Apple iPhone 12 Pro Max, 128 gb, Silver",
+    "price": 1900,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro max",
+    "verified_model": null
   }
 }

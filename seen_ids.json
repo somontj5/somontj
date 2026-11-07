@@ -48577,5 +48577,15 @@
     "condition": "Б/у",
     "model_key": null,
     "verified_model": null
+  },
+  "15606000": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17511560_nokia-t6000/",
+    "title": "Nokia T6000",
+    "price": 199,
+    "condition": "Б/у",
+    "model_key": "nokia t6000",
+    "verified_model": null
   }
 }

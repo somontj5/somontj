@@ -48231,5 +48231,24 @@
     "condition": "Б/у",
     "model_key": "apple 11",
     "verified_model": null
+  },
+  "50784321": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17507843_samsung-s21/",
+    "title": "Samsung Galaxy S21",
+    "price": 1900,
+    "condition": "Б/у",
+    "model_key": "samsung s21"
+  },
+  "17507872": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17507872_bo-narkhi-arzon/",
+    "title": "Samsung galaxy F13",
+    "price": 650,
+    "condition": "Б/у",
+    "model_key": "samsung f13",
+    "verified_model": null
   }
 }

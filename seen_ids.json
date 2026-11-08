@@ -48850,6 +48850,22 @@
     "verified_model": null
   },
   "79514256": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17515795_apple-iphone-14-pro-max-256-gb-space-black/",
+    "title": "Apple iPhone 14 Pro Max, 256 gb, Space Black",
+    "price": 5700,
+    "condition": "Б/у",
+    "model_key": "apple 14 pro max"
+  },
+  "15939732": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17515939_apple-iphone-7-32-gb/",
+    "title": "Apple iPhone 7, 32 gb",
+    "price": 349,
+    "condition": "Б/у",
+    "model_key": "apple 7",
+    "verified_model": null
   }
 }

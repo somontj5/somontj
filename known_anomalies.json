@@ -225,6 +225,12 @@
   "samsung а34|128": {
     "first_seen": "2026-11-06",
     "ratio": 2.47,
+    "kind": "merged",
+    "reviewed_at": "2026-11-08"
+  },
+  "redmi 9|32": {
+    "first_seen": "2026-11-08",
+    "ratio": 2.8,
     "kind": "reviewed",
     "reviewed_at": "2026-11-08"
   }

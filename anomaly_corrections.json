@@ -330,6 +330,15 @@
     "reviewed_at": "2026-10-21T12:43:08",
     "source": "gemini-review"
   },
+  "73762729": {
+    "group_key": "redmi 9|32",
+    "memory_gb": 32,
+    "model_key": "redmi 9a",
+    "price": 250,
+    "reason": "В блоке IMEI указана модель REDMI 9A (M2006C3LG)",
+    "reviewed_at": "2026-11-08T17:21:09",
+    "source": "gemini-review"
+  },
   "74511128": {
     "group_key": "apple 11|128",
     "memory_gb": 128,
@@ -337,6 +346,15 @@
     "price": 999,
     "reason": "В блоке IMEI указана модель Samsung Galaxy S9 Plus Dual.",
     "reviewed_at": "2026-10-21T12:43:08",
+    "source": "gemini-review"
+  },
+  "75189039": {
+    "group_key": "redmi 9|32",
+    "memory_gb": 32,
+    "model_key": "samsung galaxy a34",
+    "price": 700,
+    "reason": "В блоке IMEI указана модель SAMSUNG Galaxy A34 (SM-A346E)",
+    "reviewed_at": "2026-11-08T17:21:09",
     "source": "gemini-review"
   },
   "75238256": {

@@ -48887,5 +48887,24 @@
     "condition": "Б/у",
     "model_key": "samsung а34",
     "verified_model": null
+  },
+  "64014256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17516640_telefon-redmi-note-14-pro-256gb-glabal-version/",
+    "title": "Xiaomi Redmi Note 14 pro 256gb Glabal Version",
+    "price": 2360,
+    "condition": "Б/у",
+    "model_key": "redmi note 14 pro"
+  },
+  "51662511": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17516625_redmi-note-11-pro/",
+    "title": "Xiaomi Redmi Note 11 Pro",
+    "price": 1500,
+    "condition": "Б/у",
+    "model_key": "redmi note 11 pro",
+    "verified_model": null
   }
 }

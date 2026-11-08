@@ -48808,5 +48808,15 @@
     "price": 700,
     "condition": "Б/у",
     "model_key": "tecno spark 10c 4 64"
+  },
+  "51558251": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17515582_samsung-galaxy-a51/",
+    "title": "Samsung Galaxy A51",
+    "price": 600,
+    "condition": "Б/у",
+    "model_key": "samsung a51",
+    "verified_model": null
   }
 }

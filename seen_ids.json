@@ -49151,5 +49151,15 @@
     "condition": "Б/у",
     "model_key": "samsung s22",
     "verified_model": null
+  },
+  "75188296": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17518829_j6/",
+    "title": "Samsung Galaxy J6+",
+    "price": 299,
+    "condition": "Б/у",
+    "model_key": "samsung j6 plus",
+    "verified_model": null
   }
 }

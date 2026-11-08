@@ -48760,5 +48760,25 @@
     "price": 4200,
     "condition": "Б/у",
     "model_key": "apple 13"
+  },
+  "17514149": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17514149_prodazha/",
+    "title": "Huawei nova Y61",
+    "price": 850,
+    "condition": "Б/у",
+    "model_key": "huawei nova y61",
+    "verified_model": null
+  },
+  "75141463": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17514146_telefon-google-pixel-3-xl-pochti-kak-novyi/",
+    "title": "Google Pixel 3 XL",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "pixel 3 xl",
+    "verified_model": null
   }
 }

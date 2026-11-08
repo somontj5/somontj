@@ -49318,5 +49318,14 @@
     "condition": "Б/у",
     "model_key": "samsung a32",
     "verified_model": null
+  },
+  "36415128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17520364_apple-iphone-15-128-gb-black/",
+    "title": "Apple iPhone 15, 128 gb, Black",
+    "price": 3873,
+    "condition": "Б/у",
+    "model_key": "apple 15"
   }
 }

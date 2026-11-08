@@ -49298,5 +49298,15 @@
     "condition": "Б/у",
     "model_key": "apple 11",
     "verified_model": null
+  },
+  "52018216": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17520182_samsung-galaxy-a16/",
+    "title": "Samsung Galaxy a16",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "samsung a16",
+    "verified_model": null
   }
 }

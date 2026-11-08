@@ -233,5 +233,10 @@
     "ratio": 2.8,
     "kind": "reviewed",
     "reviewed_at": "2026-11-08"
+  },
+  "samsung a16|128": {
+    "first_seen": "2026-11-08",
+    "ratio": 3.52,
+    "kind": "wide"
   }
 }

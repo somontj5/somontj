@@ -48933,5 +48933,15 @@
     "price": 299,
     "condition": "Б/у",
     "model_key": "samsung a8"
+  },
+  "51682461": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17516824_huawei-nova-y61/",
+    "title": "Huawei Nova Y61",
+    "price": 500,
+    "condition": "Б/у",
+    "model_key": "huawei nova y61",
+    "verified_model": null
   }
 }

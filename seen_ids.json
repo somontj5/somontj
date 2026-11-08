@@ -49122,5 +49122,15 @@
     "condition": "Б/у",
     "model_key": "samsung a51",
     "verified_model": null
+  },
+  "51612128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17518516_apple-iphone-12-pro-128-gb-silver/",
+    "title": "Apple iPhone 12 pro, 128 gb, Silver",
+    "price": 2700,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro",
+    "verified_model": null
   }
 }

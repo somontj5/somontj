@@ -49007,5 +49007,15 @@
     "price": 999,
     "condition": "Б/у",
     "model_key": "redmi note 12 glabal"
+  },
+  "51767871": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17517678_poco-c71/",
+    "title": "Xiaomi Poco c71",
+    "price": 1200,
+    "condition": "Б/у",
+    "model_key": "poco c71",
+    "verified_model": null
   }
 }

@@ -48979,5 +48979,14 @@
     "price": 2999,
     "condition": "Б/у",
     "model_key": "apple 12 pro"
+  },
+  "22012128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17517220_apple-iphone-12-pro-max-128-gb-gold/",
+    "title": "Apple iPhone 12 Pro Max, 128 gb, Gold",
+    "price": 3800,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro max"
   }
 }

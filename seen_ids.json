@@ -49279,5 +49279,14 @@
     "condition": "Б/у",
     "model_key": "samsung a21s",
     "verified_model": null
+  },
+  "77016128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17519770_apple-iphone-16e-128-gb/",
+    "title": "Apple iPhone 16e, 128 gb",
+    "price": 3500,
+    "condition": "Б/у",
+    "model_key": "apple 16 e"
   }
 }

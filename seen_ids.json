@@ -49308,5 +49308,15 @@
     "condition": "Б/у",
     "model_key": "samsung a16",
     "verified_model": null
+  },
+  "52031032": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17520310_a32/",
+    "title": "Samsung Galaxy A32",
+    "price": 699,
+    "condition": "Б/у",
+    "model_key": "samsung a32",
+    "verified_model": null
   }
 }

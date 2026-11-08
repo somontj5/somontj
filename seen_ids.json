@@ -48791,6 +48791,22 @@
     "model_key": "apple 13"
   },
   "13207864": {
-    "logged": true
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17513207_apple-iphone-8-64-gb-silver/",
+    "title": "Apple iPhone 8, 64 gb, Silver",
+    "price": 949,
+    "condition": "Б/у",
+    "model_key": "apple 8",
+    "verified_model": null
+  },
+  "26210464": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17515262_tecno-spark-10c-4-64/",
+    "title": "Tecno Spark 10C 4/64",
+    "price": 700,
+    "condition": "Б/у",
+    "model_key": "tecno spark 10c 4 64"
   }
 }

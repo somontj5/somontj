@@ -49259,5 +49259,25 @@
     "price": 3499,
     "condition": "Б/у",
     "model_key": "apple 12 pro max"
+  },
+  "60511256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17519605_apple-iphone-11-pro-256-gb-midnight-green/",
+    "title": "Apple iPhone 11 Pro, 256 gb, Midnight Green",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro",
+    "verified_model": null
+  },
+  "19559100": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17519559_khamash-100/",
+    "title": "Samsung Galaxy A21s",
+    "price": 900,
+    "condition": "Б/у",
+    "model_key": "samsung a21s",
+    "verified_model": null
   }
 }

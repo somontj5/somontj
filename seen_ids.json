@@ -48915,5 +48915,23 @@
     "price": 1650,
     "condition": "Б/у",
     "model_key": "samsung s10"
+  },
+  "67182025": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17516718_telefon-lg-2025/",
+    "title": "Телефон LG 2025",
+    "price": 250,
+    "condition": "Б/у",
+    "model_key": null
+  },
+  "67048324": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17516704_samsung-galaxy-a8-32gb-carea-4g/",
+    "title": "Samsung Galaxy A8 32Gb Carea 4G",
+    "price": 299,
+    "condition": "Б/у",
+    "model_key": "samsung a8"
   }
 }

@@ -48780,5 +48780,14 @@
     "condition": "Б/у",
     "model_key": "pixel 3 xl",
     "verified_model": null
+  },
+  "49613128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17514496_apple-iphone-13-128-gb-blue/",
+    "title": "Apple iPhone 13, 128 gb, Blue",
+    "price": 2800,
+    "condition": "Б/у",
+    "model_key": "apple 13"
   }
 }

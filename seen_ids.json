@@ -48751,5 +48751,14 @@
     "price": 1650,
     "condition": "Б/у",
     "model_key": "samsung s10"
+  },
+  "04613128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17514046_apple-iphone-13-128-gb-blue/",
+    "title": "Apple iPhone 13, 128 gb, Blue",
+    "price": 4200,
+    "condition": "Б/у",
+    "model_key": "apple 13"
   }
 }

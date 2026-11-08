@@ -48943,5 +48943,32 @@
     "condition": "Б/у",
     "model_key": "huawei nova y61",
     "verified_model": null
+  },
+  "07011256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17517070_apple-iphone-11-pro-256-gb-midnight-green/",
+    "title": "Apple iPhone 11 Pro, 256 gb, Midnight Green",
+    "price": 2250,
+    "condition": "Б/у",
+    "model_key": "apple 11 pro"
+  },
+  "03611128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17517036_apple-iphone-11-128-gb-black/",
+    "title": "Apple iPhone 11, 128 gb, Black",
+    "price": 2100,
+    "condition": "Б/у",
+    "model_key": "apple 11"
+  },
+  "69941164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17516994_apple-iphone-11-64-gb-product-red/",
+    "title": "Apple iPhone 11, 64 gb, Product Red",
+    "price": 1750,
+    "condition": "Б/у",
+    "model_key": "apple 11"
   }
 }

@@ -49181,5 +49181,34 @@
     "condition": "Б/у",
     "model_key": "apple 11",
     "verified_model": null
+  },
+  "17513128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17519175_apple-iphone-13-128-gb-green/",
+    "title": "Apple iPhone 13, 128 gb, Green",
+    "price": 4000,
+    "condition": "Б/у",
+    "model_key": "apple 13"
+  },
+  "91538128": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17519153_redmi-note-8-128gb/",
+    "title": "Xiaomi Redmi Note 8 128gb",
+    "price": 999,
+    "condition": "Б/у",
+    "model_key": "redmi note 8",
+    "verified_model": null
+  },
+  "91291164": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17519129_apple-iphone-11-64-gb-black/",
+    "title": "Apple iPhone 11, 64 gb, Black",
+    "price": 1900,
+    "condition": "Б/у",
+    "model_key": "apple 11",
+    "verified_model": null
   }
 }

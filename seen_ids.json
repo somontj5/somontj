@@ -49017,5 +49017,35 @@
     "condition": "Б/у",
     "model_key": "poco c71",
     "verified_model": null
+  },
+  "51786521": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17517865_samsung-galaxy-s21/",
+    "title": "Samsung Galaxy S21+",
+    "price": 2500,
+    "condition": "Б/у",
+    "model_key": "samsung s21 plus",
+    "verified_model": null
+  },
+  "75178592": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17517859_samsung-galaxy-j2-core/",
+    "title": "Samsung Galaxy J2 Core",
+    "price": 300,
+    "condition": "Б/у",
+    "model_key": "samsung j2 core",
+    "verified_model": null
+  },
+  "78952016": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17517789_samsung-j5-2016/",
+    "title": "Samsung J5 2016",
+    "price": 350,
+    "condition": "Б/у",
+    "model_key": "samsung j5 2016",
+    "verified_model": null
   }
 }

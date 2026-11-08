@@ -48988,5 +48988,15 @@
     "price": 3800,
     "condition": "Б/у",
     "model_key": "apple 12 pro max"
+  },
+  "75173262": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17517326_telefon-v-idealnom-sostoianii-2sim/",
+    "title": "Xiaomi POCO M3 Pro 5G",
+    "price": 200,
+    "condition": "Б/у",
+    "model_key": "poco m3 pro",
+    "verified_model": null
   }
 }

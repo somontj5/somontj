@@ -49161,5 +49161,15 @@
     "condition": "Б/у",
     "model_key": "samsung j6 plus",
     "verified_model": null
+  },
+  "51902115": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17519021_redmi-note-15-pro/",
+    "title": "Xiaomi Redmi Note 15 Pro",
+    "price": 2650,
+    "condition": "Б/у",
+    "model_key": "redmi note 15 pro",
+    "verified_model": null
   }
 }

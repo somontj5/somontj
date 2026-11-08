@@ -49240,5 +49240,24 @@
     "condition": "Б/у",
     "model_key": "redmi 9",
     "verified_model": null
+  },
+  "51952722": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17519527_samsung-galaxy-s22ultra/",
+    "title": "Samsung Galaxy S22 Ultra",
+    "price": 2600,
+    "condition": "Б/у",
+    "model_key": "samsung s22 ultra",
+    "verified_model": null
+  },
+  "44012256": {
+    "logged": true,
+    "photo_ok": true,
+    "url": "https://m.somon.tj/adv/17519440_apple-iphone-12-pro-max-256-gb-gold/",
+    "title": "Apple iPhone 12 Pro Max, 256 gb, Gold",
+    "price": 3499,
+    "condition": "Б/у",
+    "model_key": "apple 12 pro max"
   }
 }

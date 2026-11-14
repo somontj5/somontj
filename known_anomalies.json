@@ -13,8 +13,8 @@
   },
   "apple 14 pro|256": {
     "first_seen": "2026-10-18",
-    "ratio": 60.0,
-    "kind": "reviewed",
+    "ratio": 3.0,
+    "kind": "wide",
     "reviewed_at": "2026-10-19"
   },
   "apple 16 pro max|256": {
@@ -238,5 +238,10 @@
     "first_seen": "2026-11-08",
     "ratio": 3.52,
     "kind": "wide"
+  },
+  "samsung s10|256": {
+    "first_seen": "2026-11-14",
+    "ratio": 3.38,
+    "kind": "outlier"
   }
 }

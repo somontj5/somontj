@@ -243,5 +243,10 @@
     "first_seen": "2026-11-14",
     "ratio": 3.38,
     "kind": "outlier"
+  },
+  "apple 7 plus|128": {
+    "first_seen": "2026-11-20",
+    "ratio": 3.67,
+    "kind": "outlier"
   }
 }

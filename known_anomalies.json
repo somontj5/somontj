@@ -94,7 +94,7 @@
   "apple 13|128": {
     "first_seen": "2026-10-18",
     "ratio": 3.0,
-    "kind": "outlier"
+    "kind": "wide"
   },
   "samsung s10|128": {
     "first_seen": "2026-10-18",

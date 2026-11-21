@@ -402,11 +402,25 @@
     "reviewed_at": "2026-11-03T17:32:55",
     "source": "gemini-review"
   },
+  "89105256": {
+    "action": "exclude",
+    "group_key": "samsung s10|256",
+    "reason": "Приманка/услуга растаможки (Carea), цена не соответствует рыночной стоимости устройства.",
+    "reviewed_at": "2026-11-21T16:02:28",
+    "source": "gemini-review"
+  },
   "93311128": {
     "action": "exclude",
     "group_key": "apple 17 pro max|256",
     "reason": "В заголовке указан iPhone 11 Pro Max, что не соответствует модели группы Apple 17 Pro Max.",
     "reviewed_at": "2026-10-21T08:01:49",
+    "source": "gemini-review"
+  },
+  "98102565": {
+    "action": "exclude",
+    "group_key": "samsung s10|256",
+    "reason": "Приманка/услуга растаможки (Carea), цена не соответствует рыночной стоимости устройства.",
+    "reviewed_at": "2026-11-21T16:02:28",
     "source": "gemini-review"
   }
 }

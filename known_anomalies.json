@@ -248,5 +248,10 @@
     "first_seen": "2026-11-20",
     "ratio": 3.67,
     "kind": "outlier"
+  },
+  "apple x|256": {
+    "first_seen": "2026-11-21",
+    "ratio": 3.34,
+    "kind": "wide"
   }
 }

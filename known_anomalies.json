@@ -242,7 +242,8 @@
   "samsung s10|256": {
     "first_seen": "2026-11-14",
     "ratio": 4.89,
-    "kind": "outlier"
+    "kind": "reviewed",
+    "reviewed_at": "2026-11-21"
   },
   "apple 7 plus|128": {
     "first_seen": "2026-11-20",

@@ -27,6 +27,13 @@
     "reviewed_at": "2026-11-05T14:59:21",
     "source": "gemini-review"
   },
+  "04357345": {
+    "action": "exclude",
+    "group_key": "samsung а34|128",
+    "reason": "Устройство имеет неисправность (камера не работает), цена является аномально низкой из-за дефекта.",
+    "reviewed_at": "2026-11-21T12:24:07",
+    "source": "gemini-review"
+  },
   "04918256": {
     "action": "exclude",
     "group_key": "apple 18 pro max|256",
@@ -266,6 +273,13 @@
     "group_key": "apple 16 pro max|256",
     "reason": "В блоке IMEI указана модель XIAOMI MI NOTE 10 (M2101K7AG).",
     "reviewed_at": "2026-10-19T09:13:08",
+    "source": "gemini-review"
+  },
+  "50512834": {
+    "action": "exclude",
+    "group_key": "samsung а34|128",
+    "reason": "Устройство имеет неисправность (камера не работает), цена является аномально низкой из-за дефекта.",
+    "reviewed_at": "2026-11-21T12:24:07",
     "source": "gemini-review"
   },
   "51114256": {

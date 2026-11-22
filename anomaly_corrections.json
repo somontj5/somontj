@@ -55,6 +55,13 @@
     "reviewed_at": "2026-11-05T15:09:07",
     "source": "gemini-review"
   },
+  "12418256": {
+    "action": "exclude",
+    "group_key": "apple 18 pro max|256",
+    "reason": "В блоке IMEI указан Apple iPhone XR, в описании упоминается 'Тайланди лукс копия'",
+    "reviewed_at": "2026-11-22T07:17:24",
+    "source": "gemini-review"
+  },
   "12616256": {
     "group_key": "apple 15 pro max|256",
     "memory_gb": 256,
@@ -167,6 +174,13 @@
     "reviewed_at": "2026-10-31T08:01:39",
     "source": "gemini-review"
   },
+  "18718256": {
+    "action": "exclude",
+    "group_key": "apple 18 pro max|256",
+    "reason": "В блоке IMEI указан Apple iPhone XR, в описании упоминается 'Тайланди лукс копия'",
+    "reviewed_at": "2026-11-22T07:17:24",
+    "source": "gemini-review"
+  },
   "18856171": {
     "action": "exclude",
     "group_key": "apple 17 pro max 1 tb|1024",
@@ -235,6 +249,13 @@
     "group_key": "apple 17 pro max|512",
     "reason": "Цена 899 TJS является приманкой или неполной стоимостью (первоначальный взнос/аренда), реальная цена скрыта или это обман",
     "reviewed_at": "2026-10-24T15:11:26",
+    "source": "gemini-review"
+  },
+  "40918256": {
+    "action": "exclude",
+    "group_key": "apple 18 pro max|256",
+    "reason": "Страница недоступна, подозрительно низкая цена для новой модели",
+    "reviewed_at": "2026-11-22T07:17:24",
     "source": "gemini-review"
   },
   "41974564": {
@@ -310,6 +331,13 @@
     "group_key": "apple 16 pro max|512",
     "reason": "В описании прямо указано: «Айфони люкс копия», нет растаможки.",
     "reviewed_at": "2026-10-28T06:54:59",
+    "source": "gemini-review"
+  },
+  "58718256": {
+    "action": "exclude",
+    "group_key": "apple 18 pro max|256",
+    "reason": "В блоке IMEI указан Apple iPhone XR, в описании упоминается 'Тайланди лукс копия'",
+    "reviewed_at": "2026-11-22T07:17:24",
     "source": "gemini-review"
   },
   "59211128": {

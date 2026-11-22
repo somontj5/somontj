@@ -347,6 +347,13 @@
     "reviewed_at": "2026-10-22T16:55:24",
     "source": "gemini-review"
   },
+  "62105256": {
+    "action": "exclude",
+    "group_key": "samsung s10|256",
+    "reason": "Аномально низкая цена 350 сомони для телефона S10 5G, вероятно цена за услугу проверки IMEI или приманка, страница недоступна.",
+    "reviewed_at": "2026-11-22T14:43:21",
+    "source": "gemini-review"
+  },
   "67854128": {
     "action": "exclude",
     "group_key": "apple xr|128",

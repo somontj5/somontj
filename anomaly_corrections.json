@@ -237,6 +237,13 @@
     "reviewed_at": "2026-10-19T03:37:46",
     "source": "gemini-review"
   },
+  "36508220": {
+    "action": "exclude",
+    "group_key": "samsung note 20 ultra|256",
+    "reason": "Страница недоступна (404/HTTPError), невозможно подтвердить состояние и модель.",
+    "reviewed_at": "2026-11-24T20:09:41",
+    "source": "gemini-review"
+  },
   "39311510": {
     "action": "exclude",
     "group_key": "samsung s10|128",

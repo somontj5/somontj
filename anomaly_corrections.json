@@ -486,6 +486,15 @@
     "reviewed_at": "2026-11-21T16:02:28",
     "source": "gemini-review"
   },
+  "91847128": {
+    "group_key": "apple 7 plus|128",
+    "memory_gb": 128,
+    "model_key": "apple 14 pro max",
+    "price": 499,
+    "reason": "В блоке IMEI указана модель Apple iPhone 14 Pro Max (A2651)",
+    "reviewed_at": "2026-11-25T09:07:40",
+    "source": "gemini-review"
+  },
   "93311128": {
     "action": "exclude",
     "group_key": "apple 17 pro max|256",

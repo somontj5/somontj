@@ -415,12 +415,10 @@
     "source": "gemini-review"
   },
   "73511128": {
-    "group_key": "apple 11|128",
-    "memory_gb": 128,
-    "model_key": "apple 7 plus",
-    "price": 899,
-    "reason": "В блоке IMEI указана модель Apple iPhone 7 Plus (A1661-5).",
-    "reviewed_at": "2026-10-21T12:43:08",
+    "action": "exclude",
+    "group_key": "apple 7 plus|128",
+    "reason": "В заголовке и тексте указан другой телефон — Apple iPhone 11.",
+    "reviewed_at": "2026-11-25T08:52:55",
     "source": "gemini-review"
   },
   "73762729": {

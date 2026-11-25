@@ -261,5 +261,10 @@
     "ratio": 3.2,
     "kind": "reviewed",
     "reviewed_at": "2026-11-23"
+  },
+  "samsung a52|128": {
+    "first_seen": "2026-11-25",
+    "ratio": 3.28,
+    "kind": "outlier"
   }
 }

@@ -136,12 +136,12 @@
     "source": "gemini-review"
   },
   "17369735": {
-    "group_key": "apple 11|128",
+    "group_key": "apple 7 plus|128",
     "memory_gb": 128,
-    "model_key": "apple 7 plus",
+    "model_key": "apple 11",
     "price": 899,
-    "reason": "В блоке IMEI указана модель Apple iPhone 7 Plus (A1661-5)",
-    "reviewed_at": "2026-10-21T12:02:47",
+    "reason": "В заголовке и описании явно указана другая модель: Apple iPhone 11.",
+    "reviewed_at": "2026-11-25T00:10:50",
     "source": "gemini-review"
   },
   "17386564": {
@@ -165,6 +165,15 @@
     "group_key": "samsung a32|128",
     "reason": "Объявление помечено как 'Продано', не является актуальным предложением.",
     "reviewed_at": "2026-11-05T12:40:10",
+    "source": "gemini-review"
+  },
+  "17609184": {
+    "group_key": "apple 7 plus|128",
+    "memory_gb": 128,
+    "model_key": "apple 14 pro max",
+    "price": 499,
+    "reason": "В блоке IMEI указана модель APPLE IPHONE 14 PRO MAX.",
+    "reviewed_at": "2026-11-25T00:10:50",
     "source": "gemini-review"
   },
   "17918256": {
@@ -338,6 +347,13 @@
     "price": 1599,
     "reason": "В блоке IMEI указана модель: Apple iPhone XR (A1984)",
     "reviewed_at": "2026-11-05T13:57:51",
+    "source": "gemini-review"
+  },
+  "52367128": {
+    "action": "exclude",
+    "group_key": "apple 7 plus|128",
+    "reason": "Страница отдала ошибку 404 (объявление неактивно).",
+    "reviewed_at": "2026-11-25T00:10:50",
     "source": "gemini-review"
   },
   "56416512": {
